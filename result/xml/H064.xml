@@ -1,0 +1,38 @@
+<description>
+  <SuccessCriteria>
+    <number>7.4.1.2</number>
+    <name>プログラムが解釈可能な識別名，役割及び設定可能な値に関する達成基準</name>
+    <level>A</level>
+  </SuccessCriteria>
+  <testType>HTMLandXHTML</testType>
+  <rownumber>3</rownumber>
+  <id>H064</id>
+  <実装方法タイトル>H64： frame要素及びiframe要素のtitle属性を用いる</実装方法タイトル>
+  <対象>frame要素/iframe要素のtitle属性</対象>
+  <見解>達成可能</見解>
+  <代替もしくは推奨する方法>
+    <body>スクリーンリーダーではJAWSとHPRしかサポートされていないが、フレームやインラインフレームを使用する際には、title属性で名前を提供しておくべきである。</body>
+  </代替もしくは推奨する方法>
+  <注意点>
+    <body>フレームを使用したサイトにおいては、他のアクセシビリティ上の問題を引き起こすことが多いため、フレームの使用は推奨しない。</body>
+  </注意点>
+  <備考>フレームやインラインフレームの識別名を提供するメカニズムとしては機能しうるが、機能しない環境もある。今後の支援技術の機能向上に期待する。</備考>
+  <testDetail>
+    <result useragent="Internet Explorer 6.0" />
+    <result useragent="Internet Explorer 7.0" />
+    <result useragent="Internet Explorer 8.0" />
+    <result useragent="Internet Explorer 9" />
+    <result useragent="Firefox 3.5" />
+    <result useragent="Firefox 4.0" />
+    <result useragent="Firefox 9.0" />
+    <result useragent="Safari 3.2" />
+    <result useragent="Safari 5.0.3" />
+    <result useragent="JAWS for Windows 9.0" />
+    <result useragent="ホームページ・リーダー 3.04" />
+    <result useragent="PC-Talker XP 3.06" />
+    <result useragent="PC-Talker XP 3.06 + NetReader 1.18" />
+    <result useragent="FocusTalk V3" />
+    <result useragent="NVDA 2010.1j" />
+    <result useragent="NVDA 2011.1" />
+  </testDetail>
+</description>

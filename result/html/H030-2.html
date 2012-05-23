@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="ja" lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="ウェブ,アクセシビリティ,基盤,委員会,WAIC,web,accessibility,infrastructure,committee,アクセシビリティ,サポーテッド,AS,情報" />
+    <meta name="description" content="アクセシビリティ・サポーテッド（AS）情報に関する解説文書" />
+    <link rel="stylesheet" type="text/css" href="http://waic.jp/cmn/css/docs.css" />
+    <title>アクセシビリティ・サポーテッド（AS）情報：H030-2</title>
+    <style type="text/css">table{empty-cells: show;}</style>
+  </head>
+  <body>
+    <div id="logo">
+      <a href="http://waic.jp/">
+        <img src="http://waic.jp/cmn/img/header/logo.png" alt="ウェブアクセシビリティ基盤委員会 / WAIC: Web Accessibility Infrastructure Committee" width="334" height="77" />
+      </a>
+    </div>
+    <h1>アクセシビリティ・サポーテッド（AS）情報：H030-2</h1>
+    <ul>
+      <li>公開日：2012年5月15日</li>
+      <li>作成者：ウェブアクセシビリティ基盤委員会（WAIC）実装ワーキンググループ（WG2）</li>
+    </ul>
+    <h2>H030-2: a 要素のリンクの目的を説明するリンクテキストを提供する</h2>
+    <h3>関連する達成基準の実装方法一覧</h3>
+    <p>
+      <a href="7.1.1.1.html">7.1.1.1非テキストコンテンツに関する達成基準 (等級A)</a>
+    </p>
+    <p>
+      <a href="7.2.4.4.html">7.2.4.4文脈におけるリンクの目的に関する達成基準 (等級A)</a>
+    </p>
+    <h3>テストファイル</h3>
+    <p>
+      <a href="&#xA;http://waic.jp/docs/jis2010-as-tests/201008/A/HTMLandXHTML/H030-2.html">H030-2のテストファイル</a>
+    </p>
+    <div class="ok">
+      <h3>見解</h3>
+      <p>達成可能</p>
+    </div>
+    <h3>対象</h3>
+    <p>a要素内にあるimg要素のalt属性</p>
+    <h3>注意点</h3>
+    <p>Safariでは画像を非表示にすると代替テキストが表示されない。</p>
+    <h3>テスト結果の詳細</h3>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">ユーザエージェント</th>
+          <th scope="col">検証結果</th>
+          <th scope="col">操作手順</th>
+          <th scope="col">備考</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="ok">
+          <td>Internet Explorer 6.0</td>
+          <td>○</td>
+          <td>ツール→インターネットオプション→詳細設定で画像の非表示設定を行った。<br />「東京駅構内の最新のルート」と表示された。</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 7.0</td>
+          <td>○</td>
+          <td>リンク画像の代わりに代替テキストが表示された。</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 8.0</td>
+          <td>○</td>
+          <td>リンク画像の代わりに代替テキスト「東京駅校内の最新のルート」が表示された。</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 9</td>
+          <td>○</td>
+          <td>画像を以下のやり方で非表示。<br />ツールメニュー＞インターネットオプション＞詳細設定＞マルチメディア<br />「画像を表示する」のチェックをオフにする<br />ブラウザの設定を変更して画像非表示にした際に、リンク画像の代わりに代替テキストが表示されるかを確認</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 3.5</td>
+          <td>○</td>
+          <td>ツール→オプションから、コンテンツタブの画像を自動的に読み込むのチェックを外したところ、「東京駅構内の最新のルート」と表示</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 4.0</td>
+          <td>○</td>
+          <td>1:画像を以下のやり方で非表示。<br />ツールメニュー＞オプション＞コンテンツパネル<br />「画像を自動的に読み込む」のチェックをオフにする。<br />リンク画像の代わりに代替テキスト「東京駅構内の最新のルート」が表示されることを確認</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 9.0</td>
+          <td>○</td>
+          <td>画像を以下のやり方で非表示にした。<br />ツール＞オプション＞コンテンツ<br />「画像を自動的に読み込む」のチェックをオフにする<br />リンク画像の代わりに代替テキストが表示されるかを確認</td>
+          <td></td>
+        </tr>
+        <tr class="ng">
+          <td>Safari 3.2</td>
+          <td>×</td>
+          <td>開発メニューからイメージを無効にする、で画像を非表示にしたところ何も表示されなくなる。</td>
+          <td></td>
+        </tr>
+        <tr class="ng">
+          <td>Safari 5.0.3</td>
+          <td>×</td>
+          <td>開発メニューからイメージを無効にする、で画像を非表示にしたところ何も表示されなくなる。</td>
+          <td>もともと表示されていた部分にカーソルを当てると矢印の表示がかわるが（ミッキーマウスの手）、代替テキストは出ない。</td>
+        </tr>
+        <tr class="ok">
+          <td>JAWS for Windows 9.0</td>
+          <td>○</td>
+          <td>■操作手順<br />「東京駅構内の最新のルート リンク 画像」と読み上げた。<br />■音声読み上げ<br />「東京駅構内の最新のルート リンク 画像」</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>ホームページ・リーダー 3.04</td>
+          <td>○</td>
+          <td>■操作手順<br />リンク音声で「東京駅構内の最新のルート。」と読み上げる<br />■音声読み上げ<br />「東京駅構内の最新のルート。」</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>PC-Talker XP 3.06</td>
+          <td>○</td>
+          <td>■操作手順<br />「東京駅構内の最新のルート、リンク」　と読み上げる。<br />■音声読み上げ<br />「東京駅構内の最新のルート、リンク」</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>PC-Talker XP 3.06 + NetReader 1.18</td>
+          <td>○</td>
+          <td>■操作手順<br />リンクにフォーカスを移動させた際に、「東京駅構内の最新のルート」と読み上げた。<br />■音声読み上げ<br />「東京駅構内の最新のルート」</td>
+          <td>Tabキーでフォーカスを移動させた際は、下記のように読み上げた。<br />「東京駅構内の最新のルート　リンク」</td>
+        </tr>
+        <tr class="ok">
+          <td>FocusTalk V3</td>
+          <td>○</td>
+          <td>■操作手順<br />画像リンクにフォーカスが移動すると、「東京駅構内の最新のルート」と読み上げられた。<br />■音声読み上げ<br />「東京駅構内の最新のルート、未訪問のリンク」</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>NVDA 2010.1j</td>
+          <td>○</td>
+          <td>■操作手順<br />リンク項目にフォーカスを移動した際、「リンク画像東京駅構内の最新のルート」と読み上げられた。<br />■音声読み上げ<br />「リンク画像東京駅構内の最新のルート」</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>NVDA 2011.1</td>
+          <td>○</td>
+          <td>■操作手順<br />リンク項目にフォーカスを移動した際、「リンク画像東京駅構内の最新のルート」と読み上げられた。<br />■音声読み上げ<br />「リンク画像東京駅構内の最新のルート」</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

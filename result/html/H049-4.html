@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="ja" lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="ウェブ,アクセシビリティ,基盤,委員会,WAIC,web,accessibility,infrastructure,committee,アクセシビリティ,サポーテッド,AS,情報" />
+    <meta name="description" content="アクセシビリティ・サポーテッド（AS）情報に関する解説文書" />
+    <link rel="stylesheet" type="text/css" href="http://waic.jp/cmn/css/docs.css" />
+    <title>アクセシビリティ・サポーテッド（AS）情報：H049-4</title>
+    <style type="text/css">table{empty-cells: show;}</style>
+  </head>
+  <body>
+    <div id="logo">
+      <a href="http://waic.jp/">
+        <img src="http://waic.jp/cmn/img/header/logo.png" alt="ウェブアクセシビリティ基盤委員会 / WAIC: Web Accessibility Infrastructure Committee" width="334" height="77" />
+      </a>
+    </div>
+    <h1>アクセシビリティ・サポーテッド（AS）情報：H049-4</h1>
+    <ul>
+      <li>公開日：2012年5月15日</li>
+      <li>作成者：ウェブアクセシビリティ基盤委員会（WAIC）実装ワーキンググループ（WG2）</li>
+    </ul>
+    <h2>H049-4: セマンティックなマークアップを用いて、強調又は特別なテキストをマークアップする</h2>
+    <h3>関連する達成基準の実装方法一覧</h3>
+    <p>
+      <a href="7.1.3.1.html">7.1.3.1情報及び関係性に関する達成基準 (等級A)</a>
+    </p>
+    <h3>テストファイル</h3>
+    <p>
+      <a href="&#xA;http://waic.jp/docs/jis2010-as-tests/201008/A/HTMLandXHTML/H049-4.html">H049-4のテストファイル</a>
+    </p>
+    <div class="warn">
+      <h3>見解</h3>
+      <p>要注意</p>
+    </div>
+    <h3>対象</h3>
+    <p>sup要素、sub要素</p>
+    <h3>注意点</h3>
+    <p>そもそもセマンティックとはいえない。例えば、同じ上付き文字の "2" でも、2乗、平方メートルなど様々な意味を持つ。<br />ブラウザやスクリーンリーダーのサポート状況からすると、セマンティックな情報は伝えられないので、代替手法を用いたほうがよい場合がある。</p>
+    <h3>代替もしくは推奨する方法</h3>
+    <p>数式を正確に読ませるためには、画像にして代替テキストに記述するのが現時点では最も確実である。<br />「平方メートル」を正確に読ませるためには、画像にして代替テキストに記述するのが現時点では最も確実である。<br />「TM」には実体参照を用いる。<br />「2乗」は画像にして代替テキストに記述するか、直後に括弧書きで「（10の2乗）」というように書く。</p>
+    <h3>備考</h3>
+    <p>上付き/下付き文字であることが分からなくても、コンテンツを理解する上で問題ない場合、sup要素またはsub要素を使用してもよい。たとえば「注1」の「1」を上付き文字にしたり、 「CO2」の「2」を下付き文字にするなど。</p>
+    <h3>テスト結果の詳細</h3>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">ユーザエージェント</th>
+          <th scope="col">検証結果</th>
+          <th scope="col">操作手順</th>
+          <th scope="col">備考</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="ok">
+          <td>Internet Explorer 6.0</td>
+          <td>○</td>
+          <td>1. 表示： sup要素でマークアップされた"Zn2+"の"2+"が、上付き文字として表示された。<br />2. 表示： sub要素でマークアップされた"H2O"の"2"が、下付き文字で表示された。</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 7.0</td>
+          <td>○</td>
+          <td>マークアップされた"Zn2+"の"2+"が、上付き文字として表示されている。 <br />マークアップされた"H2O"の"2"が、下付き文字で表示されている。</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 8.0</td>
+          <td>○</td>
+          <td>1.マークアップされた"Zn2+"の"2+"が、上付き文字として表示されている。 <br />2.マークアップされた"H2O"の"2"が、下付き文字で表示されている。</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 9</td>
+          <td>○</td>
+          <td>1:sup要素でマークアップされた"Zn2+"の"2+"が、上付き文字として表示されていることを確認<br />2:sub要素でマークアップされた"H2O"の"2"が、下付き文字で表示されていることを確認</td>
+          <td>1:○<br />2:○</td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 3.5</td>
+          <td>○</td>
+          <td>1. 表示： sup要素でマークアップされた"Zn2+"の"2+"が、上付き文字として表示された。<br />2. 表示： sub要素でマークアップされた"H2O"の"2"が、下付き文字で表示された。</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 4.0</td>
+          <td>○</td>
+          <td>1:sup要素でマークアップされた"Zn2+"の"2+"が、上付き文字として表示されていることを確認<br />2:sub要素でマークアップされた"H2O"の"2"が、下付き文字で表示されていることを確認</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 9.0</td>
+          <td>○</td>
+          <td>1:sup要素でマークアップされた"Zn2+"の"2+"が、上付き文字として表示されていることを確認<br />2:sub要素でマークアップされた"H2O"の"2"が、下付き文字で表示されていることを確認</td>
+          <td>1:○<br />2:○</td>
+        </tr>
+        <tr class="ok">
+          <td>Safari 3.2</td>
+          <td>○</td>
+          <td>Zn2+の2+は上付き文字で表示される<br />H2Oの2は下付き文字で表示される</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Safari 5.0.3</td>
+          <td>○</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="ng">
+          <td>JAWS for Windows 9.0</td>
+          <td>×</td>
+          <td>■音声読み上げ<br />「アエンイオン　ハ　ゼット　エヌ　ニ　プラス」<br />「ザ　ケミカル　ノーテイション　フォー　ウォーター　イズ　エイチ　ニ　オー　ピリオド」</td>
+          <td>※言語は日本語で設定して読み上げた（英語でも同じ結果になる）</td>
+        </tr>
+        <tr class="warn">
+          <td>ホームページ・リーダー 3.04</td>
+          <td>△</td>
+          <td>■操作手順<br />1. "Zn2+"が「ゼット エヌ ニ プラス」と読み上げられなかった。<br />2. "H2O"が「エイチ ツー オー」と読み上げられなかった。<br />■音声読み上げ<br />「Zn（ゼット エヌ） 肩文字 2+（ニ）」<br />「H2O（エイチ ニ オー）」</td>
+          <td>テスト方法で示す通りの読み上げがされなかったので、△にしました。</td>
+        </tr>
+        <tr class="ng">
+          <td>PC-Talker XP 3.06</td>
+          <td>×</td>
+          <td>■操作手順<br />意図通りに読み上げなかったため、×とした。<br />■音声読み上げ<br />"Zn2+"　「ゼット エヌ ニ」　<br />"H2O"　「エイチ ニ オー」</td>
+          <td>なめらか読みの設定で「記号を読む」にチェックを入れておくことで、「プラス」を読み上げるようになる。</td>
+        </tr>
+        <tr class="ng">
+          <td>PC-Talker XP 3.06 + NetReader 1.18</td>
+          <td>×</td>
+          <td>■操作手順<br />"Zn2+"は「ゼット　エヌ　ニ　プラス」と読み上げられず、「ゼット（ズィー）　エヌ　ツー　プラス」と読み上げた。<br />"H2O"は「エイチ　ツー　オー」と読み上げられた。<br />■音声読み上げ<br />Zn2+：「ゼット（ズィー）　エヌ　ツー　プラス」<br />H2O：「エイチ　ツー　オー」</td>
+          <td>PC Talker XPの英語音声の設定で「なめらか読みに英語音声を使用する」にチェックが入っていると、左記のように読み上げる。<br />が、チェックが入っていないと、"Zn2+"を「ゼット　エヌ　ニ　プラス」と読み上げ（テスト方法通り）、"H2O"を「エイチ　ニ　オー」と読み上げた。</td>
+        </tr>
+        <tr class="warn">
+          <td>FocusTalk V3</td>
+          <td>△</td>
+          <td>■操作手順<br />1. "Zn2+"が「ゼット エヌ ニ プラス」と読み上げた。<br />2. "H2O"が「エイチ ツー オー」と読み上げなかった。<br />■音声読み上げ<br />「Zn（ゼット エヌ） 2（ニ） +（プラス）」<br />「H2O（エイチ ニ オー）」</td>
+          <td>1：○<br />2：×<br />左記は全文読みで読み上げた場合。<br />一文ずつ読み上げると、下記のように読み上げる。<br />「Zn（ゼット エヌ） 2+（ニ プラス）上付き」<br />「H（エイチ） 2（ニ）下付き O（オー）」</td>
+        </tr>
+        <tr class="ng">
+          <td>NVDA 2010.1j</td>
+          <td>×</td>
+          <td>■操作手順<br />1. "Zn2+"が「ゼット エヌ ニ プラス」と読み上げられた。<br />2. "H2O"はが「エイチ ニ オー」と読み上げられた<br />■音声読み上げ</td>
+          <td></td>
+        </tr>
+        <tr class="warn">
+          <td>NVDA 2011.1</td>
+          <td>△</td>
+          <td>■操作手順<br />1. "Zn2+"が「ゼット エヌ ニ プラス」と読み上げられた。<br />2. "H2O"が「エイチ ニ オー」と読み上げられた<br />■音声読み上げ<br />亜鉛イオンは ゼットエヌにプラス<br />The chemical notation for water is エイチにオー.</td>
+          <td>記号の読み方及び特定の単語の読み方は、使用する音声読み上げ環境及び音声エンジンの辞書に依存するので、テストで読み上げさせる項目について再度検討すべきである。</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

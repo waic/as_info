@@ -1,0 +1,143 @@
+<description>
+  <SuccessCriteria>
+    <number>7.1.1.1</number>
+    <name>非テキストコンテンツに関する達成基準</name>
+    <level>A</level>
+  </SuccessCriteria>
+  <testType>HTMLandXHTML</testType>
+  <rownumber>12</rownumber>
+  <id>H053-1</id>
+  <実装方法タイトル>object要素のボディに代替テキストを記述する</実装方法タイトル>
+  <対象>object要素のボディ</対象>
+  <見解>達成不可能</見解>
+  <代替もしくは推奨する方法>
+    <body>object要素はFlashを埋め込む際に使うことが多いが、JavaScriptを用いて埋め込むことが多い。
+アドビシステムズによれば、FlashをHTMLのWebページに埋め込む際にはSWFObjectを用いる方法を推奨している（http://www.adobe.com/jp/devnet/flashplayer/articles/swfobject.html）。</body>
+  </代替もしくは推奨する方法>
+  <備考>事例 1と事例 2は、IE8とJAWS 9の組み合わせでは代替テキストを読み上げる。</備考>
+  <testDetail>
+    <result useragent="Internet Explorer 6.0">
+      <rownumber>80</rownumber>
+      <id>H053-1</id>
+      <検証結果>×</検証結果>
+      <操作手順>イントラネットゾーンでの検証。</操作手順>
+      <備考>代替テキストは表示されない。</備考>
+    </result>
+    <result useragent="Internet Explorer 7.0">
+      <rownumber>80</rownumber>
+      <id>H053-1</id>
+      <検証結果>×</検証結果>
+      <操作手順>代替テキストが表示されない。</操作手順>
+    </result>
+    <result useragent="Internet Explorer 8.0">
+      <rownumber>80</rownumber>
+      <id>H053-1</id>
+      <検証結果>×</検証結果>
+      <操作手順>代替テキストが表示されない。</操作手順>
+    </result>
+    <result useragent="Internet Explorer 9">
+      <rownumber>80</rownumber>
+      <id>H053-1</id>
+      <検証結果>×</検証結果>
+      <操作手順>「ここには、オブジェクトとその動作についての説明が入ります。」という代替テキストが表示されるかを確認</操作手順>
+      <備考>×：何も表示されない</備考>
+    </result>
+    <result useragent="Firefox 3.5">
+      <rownumber>80</rownumber>
+      <id>H053-1</id>
+      <検証結果>○</検証結果>
+      <操作手順>「ここには、オブジェクトとその動作についての説明が入ります。」という代替テキストが表示されている。</操作手順>
+    </result>
+    <result useragent="Firefox 4.0">
+      <rownumber>80</rownumber>
+      <id>H053-1</id>
+      <検証結果>○</検証結果>
+      <操作手順>1:：「ここには、オブジェクトとその動作についての説明が入ります。」という代替テキストが表示されていることを確認</操作手順>
+    </result>
+    <result useragent="Firefox 9.0">
+      <rownumber>80</rownumber>
+      <id>H053-1</id>
+      <検証結果>○</検証結果>
+      <操作手順>「ここには、オブジェクトとその動作についての説明が入ります。」という代替テキストが表示されるかを確認</操作手順>
+    </result>
+    <result useragent="Safari 3.2">
+      <rownumber>80</rownumber>
+      <id>H053-1</id>
+      <検証結果>○</検証結果>
+      <操作手順>「ここには、オブジェクトとその動作についての説明が入ります。」という代替テキストが表示される。</操作手順>
+    </result>
+    <result useragent="Safari 5.0.3">
+      <rownumber>80</rownumber>
+      <id>H053-1</id>
+      <検証結果>○</検証結果>
+    </result>
+    <result useragent="JAWS for Windows 9.0">
+      <rownumber>80</rownumber>
+      <id>H053-1</id>
+      <検証結果>×</検証結果>
+      <操作手順>■操作手順
+代替テキストを読み上げない。
+■音声読み上げ
+なし</操作手順>
+      <備考>代替テキストを読み上げなかった。</備考>
+    </result>
+    <result useragent="ホームページ・リーダー 3.04">
+      <rownumber>80</rownumber>
+      <id>H053-1</id>
+      <検証結果>○</検証結果>
+      <操作手順>■操作手順
+「ここには、オブジェクトとその動作についての説明が入ります。」と読み上げされた。
+■音声読み上げ
+「ここには、オブジェクトとその動作についての説明が入ります。」</操作手順>
+    </result>
+    <result useragent="PC-Talker XP 3.06">
+      <rownumber>80</rownumber>
+      <id>H053-1</id>
+      <検証結果>×</検証結果>
+      <操作手順>■操作手順
+「テスト開始」→「テスト終了」と読み上げる。
+■音声読み上げ
+読み上げない。</操作手順>
+      <備考>代替テキストが読み上げられない（テキスト表示もされない）。</備考>
+    </result>
+    <result useragent="PC-Talker XP 3.06 + NetReader 1.18">
+      <rownumber>80</rownumber>
+      <id>H053-1</id>
+      <検証結果>×</検証結果>
+      <操作手順>■操作手順
+「ここには、オブジェクトとその動作についての説明が入ります。」という代替テキストを読み上げなかった。
+■音声読み上げ
+「カクカッコ　オブジェクトに移動　カクカッコ閉じ」</操作手順>
+      <備考>■補足
+Alt＋F3キー（カーソル位置の情報読み上げ）で読み上げた際には、下記のように読み上げた。
+「認識できないオブジェクト　開けません」</備考>
+    </result>
+    <result useragent="FocusTalk V3">
+      <rownumber>80</rownumber>
+      <id>H053-1</id>
+      <検証結果>○</検証結果>
+      <操作手順>■操作手順
+表記どおり、「ここには、オブジェクトとその動作についての説明が入ります。」と読み上げられた。
+■音声読み上げ
+「ここには、オブジェクトとその動作についての説明が入ります。」</操作手順>
+    </result>
+    <result useragent="NVDA 2010.1j">
+      <rownumber>80</rownumber>
+      <id>H053-1</id>
+      <検証結果>○</検証結果>
+      <操作手順>■操作手順
+テスト開始と読まれる見出しのところで下矢印キーを押すと、「ここには、オブジェクトとその動作についての説明が入ります」と読まれた。
+■音声読み上げ
+「ここには　オブジェクトとその動作についての説明が入ります」</操作手順>
+    </result>
+    <result useragent="NVDA 2011.1">
+      <rownumber>80</rownumber>
+      <id>H053-1</id>
+      <検証結果>○</検証結果>
+      <操作手順>■操作手順
+テスト開始と読まれる見出しのところで下矢印キーを押すと、「ここには、オブジェクトとその動作についての説明が入ります」と読まれた。
+■音声読み上げ
+「ここには　オブジェクトとその動作についての説明が入ります」</操作手順>
+    </result>
+  </testDetail>
+</description>

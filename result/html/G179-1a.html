@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="ja" lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="ウェブ,アクセシビリティ,基盤,委員会,WAIC,web,accessibility,infrastructure,committee,アクセシビリティ,サポーテッド,AS,情報" />
+    <meta name="description" content="アクセシビリティ・サポーテッド（AS）情報に関する解説文書" />
+    <link rel="stylesheet" type="text/css" href="http://waic.jp/cmn/css/docs.css" />
+    <title>アクセシビリティ・サポーテッド（AS）情報：G179-1a</title>
+    <style type="text/css">table{empty-cells: show;}</style>
+  </head>
+  <body>
+    <div id="logo">
+      <a href="http://waic.jp/">
+        <img src="http://waic.jp/cmn/img/header/logo.png" alt="ウェブアクセシビリティ基盤委員会 / WAIC: Web Accessibility Infrastructure Committee" width="334" height="77" />
+      </a>
+    </div>
+    <h1>アクセシビリティ・サポーテッド（AS）情報：G179-1a</h1>
+    <ul>
+      <li>公開日：2012年5月15日</li>
+      <li>作成者：ウェブアクセシビリティ基盤委員会（WAIC）実装ワーキンググループ（WG2）</li>
+    </ul>
+    <h2>G179-1a: 文字サイズを変更しても、テキストコンテナのサイズが変更されない際に、コンテンツ又は機能が損なわれないようにする</h2>
+    <h3>関連する達成基準の実装方法一覧</h3>
+    <p>
+      <a href="7.1.4.4.html">7.1.4.4テキストのサイズ変更に関する達成基準 (等級AA)</a>
+    </p>
+    <h3>テストファイル</h3>
+    <p>
+      <a href="&#xA;http://waic.jp/docs/jis2010-as-tests/201008/AA/General/G179-1a.html">G179-1aのテストファイル</a>
+    </p>
+    <div class="ng">
+      <h3>見解</h3>
+      <p>達成不可能</p>
+    </div>
+    <h3>対象</h3>
+    <p>overflow:scroll</p>
+    <h3>代替もしくは推奨する方法</h3>
+    <p>一部のブラウザでスクロールバーのキーボード操作ができないため、例えば、C28のように、テキストコンテナのサイズを固定しない実装方法を用いることが望ましい。</p>
+    <h3>備考</h3>
+    <p>インラインフレーム（iframe要素）のスクロールバーは、キーボード操作が可能である。</p>
+    <h3>テスト結果の詳細</h3>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">ユーザエージェント</th>
+          <th scope="col">検証結果</th>
+          <th scope="col">操作手順</th>
+          <th scope="col">備考</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="warn">
+          <td>Internet Explorer 6.0</td>
+          <td>△</td>
+          <td>手順<br />1.メニューの[表示]－[文字サイズの変更]で、「最大」を選択して文字サイズを大きくする。<br />2.スクロールバーが出現するので、一番下までスクロールさせる。<br />3.最後の文「ここで1(2)列目のカラム終了です。」まで表示されているか確認する。</td>
+          <td>文字サイズを大きくすることは可能だが、スクロールバーをキーボードで操作できない。</td>
+        </tr>
+        <tr class="warn">
+          <td>Internet Explorer 7.0</td>
+          <td>△</td>
+          <td>メニューの[表示]－[文字サイズの変更]で、「大」「最大」を選択して文字サイズを大きくして確認しました<br />左右に並んだテキストのブロックにスクロールバーが出現し、それをスクロールすることによって、最後の文「ここで1(2)列目のカラム終了です。」まで表示されていることを確認</td>
+          <td>文字サイズの拡大自体は可能だが、　キーボードではスクロールバーが操作できず、最後の文まで表示されていることが確認できなかった。</td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 8.0</td>
+          <td>○</td>
+          <td>メニューの[表示]－[文字サイズの変更]で、「大」「最大」を選択して文字サイズを大きくして確認しました<br />1.左右に並んだテキストのブロックにスクロールバーが出現し、それをマウス操作で、スクロールすることによって、最後の文「ここで1(2)列目のカラム終了です。」まで表示されていることを確認<br />2.「F7]カーソルブラウズを有効にしてから、矢印キーでキーボード操作。テキストのブロックに入ったら、「↓」でスクロールすることによって、最後の文「ここで1(2)列目のカラム終了です。」まで表示されていることを確認</td>
+          <td>「F7」カーソルブラウズモードを有効にして操作。</td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 9</td>
+          <td>○</td>
+          <td>1.メニューの[表示]－[文字サイズ]で、「大」「最大」を選択し、200％にする<br />2.左右に並んだテキストのブロックにスクロールバーが出現し、それをスクロールすることによって、最後の文「ここで1(2)列目のカラム終了です。」まで表示されているか確認</td>
+          <td>1:○<br />2:○</td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 3.5</td>
+          <td>○</td>
+          <td>手順<br />1.メニューの[表示]－[ズーム]－[文字サイズだけ変更]を選択してから、Ctrlと＋キーを押して文字サイズを大きする。<br />2.スクロールバーが出現するので、一番下までスクロールさせる（キーボード操作では矢印キー）。<br />3.最後の文「ここで1(2)列目のカラム終了です。」まで表示されているか確認する。</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 4.0</td>
+          <td>○</td>
+          <td>1:メニューの[表示]－[ズーム]－[文字サイズだけ変更]を選択し、文字サイズを200%まで拡大すると、テキストのブロックにスクロールバーが出現し、最後の文「ここで1(2)列目のカラム終了です。」まで表示されることを確認</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 9.0</td>
+          <td>○</td>
+          <td>1.メニューの[表示]－[文字サイズ]で、「大」「最大」を選択し、200％にする<br />2.左右に並んだテキストのブロックにスクロールバーが出現し、それをスクロールすることによって、最後の文「ここで1(2)列目のカラム終了です。」まで表示されているか確認</td>
+          <td>1:○<br />2:○</td>
+        </tr>
+        <tr class="warn">
+          <td>Safari 3.2</td>
+          <td>△</td>
+          <td>1. メニューの[表示]-「テキストのみ拡大／縮小」を選択してから、[拡大]を選択（複数回）。<br />2. 左右に並んだテキストのブロックにスクロールバーが出現し、それをスクロールすることによって、最後の文「ここで1(2)行目のカラム終了です。」まで表示された。<br />ただし、マウス操作ではスクロールが可能だが、キーボードではスクロールができなかった。</td>
+          <td></td>
+        </tr>
+        <tr class="warn">
+          <td>Safari 5.0.3</td>
+          <td>△</td>
+          <td>1. メニューの[表示]-「テキストのみ拡大／縮小」を選択してから、[拡大]を選択（複数回）。<br />2. 左右に並んだテキストのブロックにスクロールバーが出現し、それをスクロールすることによって、最後の文「ここで1(2)行目のカラム終了です。」まで表示された。<br />ただし、マウス操作ではスクロールが可能だが、キーボードではスクロールができなかった。</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>JAWS for Windows 9.0</td>
+          <td>-</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>ホームページ・リーダー 3.04</td>
+          <td>-</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>PC-Talker XP 3.06</td>
+          <td>-</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>PC-Talker XP 3.06 + NetReader 1.18</td>
+          <td>-</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>FocusTalk V3</td>
+          <td>-</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>NVDA 2010.1j</td>
+          <td>-</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>NVDA 2011.1</td>
+          <td>-</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

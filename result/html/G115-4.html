@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="ja" lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="ウェブ,アクセシビリティ,基盤,委員会,WAIC,web,accessibility,infrastructure,committee,アクセシビリティ,サポーテッド,AS,情報" />
+    <meta name="description" content="アクセシビリティ・サポーテッド（AS）情報に関する解説文書" />
+    <link rel="stylesheet" type="text/css" href="http://waic.jp/cmn/css/docs.css" />
+    <title>アクセシビリティ・サポーテッド（AS）情報：G115-4</title>
+    <style type="text/css">table{empty-cells: show;}</style>
+  </head>
+  <body>
+    <div id="logo">
+      <a href="http://waic.jp/">
+        <img src="http://waic.jp/cmn/img/header/logo.png" alt="ウェブアクセシビリティ基盤委員会 / WAIC: Web Accessibility Infrastructure Committee" width="334" height="77" />
+      </a>
+    </div>
+    <h1>アクセシビリティ・サポーテッド（AS）情報：G115-4</h1>
+    <ul>
+      <li>公開日：2012年5月15日</li>
+      <li>作成者：ウェブアクセシビリティ基盤委員会（WAIC）実装ワーキンググループ（WG2）</li>
+    </ul>
+    <h2>G115-4: セマンティックな要素を用いて、構造をマークアップする</h2>
+    <h3>関連する達成基準の実装方法一覧</h3>
+    <p>
+      <a href="7.1.3.1.html">7.1.3.1情報及び関係性に関する達成基準 (等級A)</a>
+    </p>
+    <h3>テストファイル</h3>
+    <p>
+      <a href="&#xA;http://waic.jp/docs/jis2010-as-tests/201008/A/General/G115-4.html">G115-4のテストファイル</a>
+    </p>
+    <div class="warn">
+      <h3>見解</h3>
+      <p>要注意</p>
+    </div>
+    <h3>対象</h3>
+    <p>em要素</p>
+    <h3>注意点</h3>
+    <p>blockquote要素などとは異なり、文脈だけでは利用者は判断できない。</p>
+    <h3>代替もしくは推奨する方法</h3>
+    <p>強調されている箇所が分からないとコンテンツを理解できない場合には、何らかの方法で示さなければならない。<br />また、em要素とstrong要素の違いが分からないとコンテンツを理解できない場合には、その違いが分かるように何らかの方法で示さなければならない。</p>
+    <h3>備考</h3>
+    <p>使用することによる悪影響はなく、スクリーンリーダーによる今後の機能向上に期待する。</p>
+    <h3>テスト結果の詳細</h3>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">ユーザエージェント</th>
+          <th scope="col">検証結果</th>
+          <th scope="col">操作手順</th>
+          <th scope="col">備考</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="ok">
+          <td>Internet Explorer 6.0</td>
+          <td>○</td>
+          <td>1. CSSをオフにした状態で、em要素（「本当に」）又はstrong要素（「素晴らしい」）でマークアップした箇所が、他とは区別のつく見た目でレンダリングされた。<br />2. em要素とstrong要素との区別も付くようにレンダリングされた<br />（em要素はイタリック、strong要素は太字）</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 7.0</td>
+          <td>○</td>
+          <td>em要素（「本当に」）又はstrong要素（「素晴らしい」）がマークアップした箇所を他とは区別のつく見た目でなおかつ、この二つの要素が区別できる状態でレンダリングされている。</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 8.0</td>
+          <td>○</td>
+          <td>1.em要素（「本当に」）又はstrong要素（「素晴らしい」）がマークアップした箇所を他とは区別のつく見た目になる。<br />2.この二つの要素が区別できる状態でレンダリングされている。em：太字・イタリック、strong：太字</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 9</td>
+          <td>○</td>
+          <td>以下の方法でスタイルシートを無効にした。<br />表示メニュー＞スタイル＞スタイルを使用しないを選択<br />1:em要素（「本当に」）又はstrong要素（「素晴らしい」）でマークアップした箇所を他とは区別のつく見た目で表示されることを確認<br />2:em要素とstrong要素のと区別がつくようには表示されることを確認</td>
+          <td>1:○：「素晴らしい」の部分が太字になっていることを確認<br />2:○：「本当に」がイタリックで、「素晴らしい」が太字になっていることを確認</td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 3.5</td>
+          <td>○</td>
+          <td>1. CSSをオフにした状態で、em要素（「本当に」）又はstrong要素（「素晴らしい」）でマークアップした箇所が他とは区別のつく見た目でレンダリングされた。<br />2. em要素とstrong要素との区別も付くようにレンダリングされた。<br />（em要素はイタリック、strong要素は太字）</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 4.0</td>
+          <td>○</td>
+          <td>以下の方法でスタイルシートを無効にした。<br />表示メニュー＞スタイルシート＞スタイルシートを使用しないを選択<br />1:em要素（「本当に」）又はstrong要素（「素晴らしい」）でマークアップした箇所を他とは区別のつく見た目で表示されることを確認<br />2:em要素とstrong要素のと区別がつくようには表示されることを確認</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 9.0</td>
+          <td>○</td>
+          <td>以下の方法でスタイルシートを無効にした。<br />表示メニュー＞スタイル＞スタイルを使用しないを選択<br />1:em要素（「本当に」）又はstrong要素（「素晴らしい」）でマークアップした箇所を他とは区別のつく見た目で表示されることを確認<br />2:em要素とstrong要素のと区別がつくようには表示されることを確認</td>
+          <td>1:○：「素晴らしい」の部分が太字になっていることを確認<br />2:○：「本当に」がイタリックで、「素晴らしい」が太字になっていることを確認</td>
+        </tr>
+        <tr class="ok">
+          <td>Safari 3.2</td>
+          <td>○</td>
+          <td>メニューバー「開発」からスタイルを無効にするにしてCSSオフに設定<br />本当：斜体に<br />素晴らしい：太字　で変わらずに表示されている</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Safari 5.0.3</td>
+          <td>○</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="ng">
+          <td>JAWS for Windows 9.0</td>
+          <td>×</td>
+          <td>■操作手順<br />次のように読み上げる<br />■音声読み上げ<br />「ドットドットドット　彼女が本当に言いたかったのは　テン　コーテーション　これは良いどころではなく　テン　むしろすばらしい　コーテーション　ということだった　カンタンフ　ドットドットドット」（音声による変化はなかった）</td>
+          <td>em要素も、strong要素の部分も強調されていることがわかるようには読み上げない、JAWSオプションの調整で「画面エコー」を「強調表示」にして確認したが変わらず</td>
+        </tr>
+        <tr class="ng">
+          <td>ホームページ・リーダー 3.04</td>
+          <td>×</td>
+          <td>■操作手順<br />em要素もstrong要素も、他との区別なく読み上げられたため、強調されている箇所がわからなかった。<br />■音声読み上げ<br />「彼女が本当に言いたかったのは、"これは良いどころではなく、むしろ素晴らしい"ということだった」</td>
+          <td>em要素もstrong要素も解釈していないようだったので、×にしました。</td>
+        </tr>
+        <tr class="ng">
+          <td>PC-Talker XP 3.06</td>
+          <td>×</td>
+          <td>■操作手順<br />斜体と太字の部分は強調されて読み上げられなかった。<br />■音声読み上げ<br />...彼女が本当に言いたかったのは、"これは良いどころではなく、むしろ素晴らしい"ということだった！…</td>
+          <td>強調した読み上げはしない</td>
+        </tr>
+        <tr class="ng">
+          <td>PC-Talker XP 3.06 + NetReader 1.18</td>
+          <td>×</td>
+          <td>■操作手順<br />em要素（「本当に」）、strong要素（「素晴らしい」）ともに、強調されている箇所であることが分かるようには読み上げなかった。。<br />■音声読み上げ<br />「ピリオド　彼女が本当に言いたかったのは　テン　コーテーション　これは良いどころではなく　テン　むしろ素晴らしい　コーテーション　ということだった　カンタンフ　ピリオド」</td>
+          <td></td>
+        </tr>
+        <tr class="warn">
+          <td>FocusTalk V3</td>
+          <td>△</td>
+          <td>■操作手順<br />「彼女が本当に 強調 言いたかったのは、"これは良いどころではなく、むしろ素晴らしい 強調 "ということだった」と強調箇所の後に「強調」と読み上げ、強調していることが分かる。<br />■音声読み上げ<br />「彼女が本当に 強調 言いたかったのは、"これは良いどころではなく、むしろ素晴らしい 強調 "ということだった」</td>
+          <td>左記は、一文ずつ読み上げた結果。<br />全文読みで読み上げた場合、「本当に」や「素晴らしい」の後に「強調」とは発声されない。</td>
+        </tr>
+        <tr class="ng">
+          <td>NVDA 2010.1j</td>
+          <td>×</td>
+          <td>■操作手順<br />該当項目は通常の本文と同じように読み上げられた。<br />■音声読み上げ<br />「...彼女が本当に言いたかったのは、"これは良いどころではなく、むしろ素晴らしい"ということだった！...」</td>
+          <td></td>
+        </tr>
+        <tr class="ng">
+          <td>NVDA 2011.1</td>
+          <td>×</td>
+          <td>■操作手順<br />該当項目は通常の本文と同じように読み上げられた。<br />■音声読み上げ<br />「...彼女が本当に言いたかったのは、"これは良いどころではなく、むしろ素晴らしい"ということだった！...」</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

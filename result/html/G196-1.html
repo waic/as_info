@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="ja" lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="ウェブ,アクセシビリティ,基盤,委員会,WAIC,web,accessibility,infrastructure,committee,アクセシビリティ,サポーテッド,AS,情報" />
+    <meta name="description" content="アクセシビリティ・サポーテッド（AS）情報に関する解説文書" />
+    <link rel="stylesheet" type="text/css" href="http://waic.jp/cmn/css/docs.css" />
+    <title>アクセシビリティ・サポーテッド（AS）情報：G196-1</title>
+    <style type="text/css">table{empty-cells: show;}</style>
+  </head>
+  <body>
+    <div id="logo">
+      <a href="http://waic.jp/">
+        <img src="http://waic.jp/cmn/img/header/logo.png" alt="ウェブアクセシビリティ基盤委員会 / WAIC: Web Accessibility Infrastructure Committee" width="334" height="77" />
+      </a>
+    </div>
+    <h1>アクセシビリティ・サポーテッド（AS）情報：G196-1</h1>
+    <ul>
+      <li>公開日：2012年5月15日</li>
+      <li>作成者：ウェブアクセシビリティ基盤委員会（WAIC）実装ワーキンググループ（WG2）</li>
+    </ul>
+    <h2>G196-1: 画像のグループにある一つの画像に代替テキストを提供して、そのグループの全ての画像を説明する</h2>
+    <h3>関連する達成基準の実装方法一覧</h3>
+    <p>
+      <a href="7.1.1.1.html">7.1.1.1非テキストコンテンツに関する達成基準 (等級A)</a>
+    </p>
+    <h3>テストファイル</h3>
+    <p>
+      <a href="&#xA;http://waic.jp/docs/jis2010-as-tests/201008/A/General/G196-1.html">G196-1のテストファイル</a>
+    </p>
+    <div class="warn">
+      <h3>見解</h3>
+      <p>要注意</p>
+    </div>
+    <h3>対象</h3>
+    <p>img要素のalt属性</p>
+    <h3>代替もしくは推奨する方法</h3>
+    <p>可能なかぎり、一つの画像にしたほうがよい。</p>
+    <h3>備考</h3>
+    <p>どうしても画像を別々にしなければならない場合は、この実装方法を用いてもよい。</p>
+    <h3>テスト結果の詳細</h3>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">ユーザエージェント</th>
+          <th scope="col">検証結果</th>
+          <th scope="col">操作手順</th>
+          <th scope="col">備考</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="ok">
+          <td>Internet Explorer 6.0</td>
+          <td>○</td>
+          <td>画像の残像があるので、代替テキストは表示されない。（隠れている？）</td>
+          <td>[インターネットオプション]-[詳細設定]-[ユーザー補助]にある「常にイメージのALTテキストを展開する」にチェックを入れると、代替テキストが表示される。必要に応じて、利用者はこの設定によって代替テキストを表示できる。</td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 7.0</td>
+          <td>○</td>
+          <td>画像非表示にすると画像用のアイコンが５つ表示される</td>
+          <td>[インターネットオプション]-[詳細設定]-[ユーザー補助]にある「常にイメージのALTテキストを展開する」にチェックを入れると、代替テキストが表示される。必要に応じて、利用者はこの設定によって代替テキストを表示できる。</td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 8.0</td>
+          <td>○</td>
+          <td>画像非表示にすると画像用のアイコンが５つ表示される</td>
+          <td>[インターネットオプション]-[詳細設定]-[ユーザー補助]にある「常にイメージのALTテキストを展開する」にチェックを入れると、代替テキストが表示される。必要に応じて、利用者はこの設定によって代替テキストを表示できる。</td>
+        </tr>
+        <tr class="ng">
+          <td>Internet Explorer 9</td>
+          <td>×</td>
+          <td>ブラウザの設定を変更して画像非表示にした際、画像の代わりに代替テキスト「5つ星中、星3個」が表示されるかを確認</td>
+          <td>代替テキストが全て表示されていない為、NG判定</td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 3.5</td>
+          <td>○</td>
+          <td>「評価：5つ星中、星3個」と表示された。</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 4.0</td>
+          <td>○</td>
+          <td>1:画像の代わりに代替テキスト「5つ星中、星3個」が表示されることを確認</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 9.0</td>
+          <td>○</td>
+          <td>画像を以下のやり方で非表示にした。<br />ツール＞オプション＞コンテンツ<br />「画像を自動的に読み込む」のチェックをオフにする<br />画像の代わりに代替テキスト「5つ星中、星3個」が表示されるかを確認</td>
+          <td></td>
+        </tr>
+        <tr class="ng">
+          <td>Safari 3.2</td>
+          <td>×</td>
+          <td>画像非表示にすると何も表示されなくなる。</td>
+          <td>ブラウザが対応していないと思われる。</td>
+        </tr>
+        <tr class="ng">
+          <td>Safari 5.0.3</td>
+          <td>×</td>
+          <td>画像非表示にすると何も表示されなくなる。</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>JAWS for Windows 9.0</td>
+          <td>○</td>
+          <td>■操作手順<br />「5つ星中、星3個」のみ読み上げられ、他の画像は読み上げられなかった<br />■音声読み上げ<br />「評価　コロン　画像　イツツボシチュウ　テン　ホシサンコ」</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>ホームページ・リーダー 3.04</td>
+          <td>○</td>
+          <td>■操作手順<br />テスト開始　『評価５つ星中、星３個』　テスト終了と読み上げる。<br />■音声読み上げ<br />「評価５つ星中、星３個」</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>PC-Talker XP 3.06</td>
+          <td>○</td>
+          <td>■操作手順<br />「5つ星中、星3個」、画像　と読み上げた。<br />■音声読み上げ<br />「評価　5つ星中、星3個」</td>
+          <td></td>
+        </tr>
+        <tr class="warn">
+          <td>PC-Talker XP 3.06 + NetReader 1.18</td>
+          <td>△</td>
+          <td>■操作手順<br />代替テキスト「5つ星中、星3個」が読み上げられ、残り四つの画像は無視されなかった。<br />（残り四つの画像は、ファイル名（拡張子除く）を読み上げた）<br />■音声読み上げ<br />「イツつ星中　テン　星サン個」<br />「Gワンナインティーシックス　マイナス　ワンa」<br />「Gワンナインティーシックス　マイナス　ワンa」<br />「Gワンナインティーシックス　マイナス　ワンb」<br />「Gワンナインティーシックス　マイナス　ワンb」</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>FocusTalk V3</td>
+          <td>○</td>
+          <td>■操作手順<br />ページ全文読みモードで「5つ星（せい）中、星3個」と読み上げた。他の画像は読み上げられなかった。<br />■音声読み上げ<br />「イツツセイチュウ、星3個」</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>NVDA 2010.1j</td>
+          <td>○</td>
+          <td>■操作手順<br />下矢印キーで移動すると「評価： 5つ星中、星3個」と読み上げられた。<br />■音声読み上げ<br />「評価：画像 5つ星中、星3個」</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>NVDA 2011.1</td>
+          <td>○</td>
+          <td>■操作手順<br />下矢印キーで移動すると「評価： 5つ星中、星3個」と読み上げられた。<br />■音声読み上げ<br />「評価：画像 5つ星中、星3個」</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

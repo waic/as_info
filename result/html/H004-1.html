@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="ja" lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="ウェブ,アクセシビリティ,基盤,委員会,WAIC,web,accessibility,infrastructure,committee,アクセシビリティ,サポーテッド,AS,情報" />
+    <meta name="description" content="アクセシビリティ・サポーテッド（AS）情報に関する解説文書" />
+    <link rel="stylesheet" type="text/css" href="http://waic.jp/cmn/css/docs.css" />
+    <title>アクセシビリティ・サポーテッド（AS）情報：H004-1</title>
+    <style type="text/css">table{empty-cells: show;}</style>
+  </head>
+  <body>
+    <div id="logo">
+      <a href="http://waic.jp/">
+        <img src="http://waic.jp/cmn/img/header/logo.png" alt="ウェブアクセシビリティ基盤委員会 / WAIC: Web Accessibility Infrastructure Committee" width="334" height="77" />
+      </a>
+    </div>
+    <h1>アクセシビリティ・サポーテッド（AS）情報：H004-1</h1>
+    <ul>
+      <li>公開日：2012年5月15日</li>
+      <li>作成者：ウェブアクセシビリティ基盤委員会（WAIC）実装ワーキンググループ（WG2）</li>
+    </ul>
+    <h2>H004-1: リンク、フォームのコントロール、及びオブジェクトには、論理的なタブ移動順序を作成する</h2>
+    <h3>関連する達成基準の実装方法一覧</h3>
+    <p>
+      <a href="7.2.4.3.html">7.2.4.3フォーカス順序に関する達成基準 (等級A)</a>
+    </p>
+    <h3>テストファイル</h3>
+    <p>
+      <a href="&#xA;http://waic.jp/docs/jis2010-as-tests/201008/A/HTMLandXHTML/H004-1.html">H004-1のテストファイル</a>
+    </p>
+    <div class="warn">
+      <h3>見解</h3>
+      <p>要注意</p>
+    </div>
+    <h3>対象</h3>
+    <p>tabindex属性</p>
+    <h3>備考</h3>
+    <p>FocusTalkの今後の機能向上に期待する。</p>
+    <h3>テスト結果の詳細</h3>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">ユーザエージェント</th>
+          <th scope="col">検証結果</th>
+          <th scope="col">操作手順</th>
+          <th scope="col">備考</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="ok">
+          <td>Internet Explorer 6.0</td>
+          <td>○</td>
+          <td>tabを押すと、以下の順でフォーカスが移動した。<br />1.夫の姓 <br />2.夫の名 <br />3.夫の出身地 <br />4.妻の姓 <br />5.妻の名 <br />6.妻の出身地</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 7.0</td>
+          <td>○</td>
+          <td>Tabで進めてゆくと夫の「姓」「名」「出身地」へと縦に移動し、そのあとで妻の「姓」「名」「出身地」へと移動してゆく</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 8.0</td>
+          <td>○</td>
+          <td>Tabで進めてゆくと夫の「姓」「名」「出身地」へと縦に移動し、そのあとで妻の「姓」「名」「出身地」へと移動してゆく</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 9</td>
+          <td>○</td>
+          <td>1:以下のようにフォーカスが移動することを確認<br />「夫の姓」→「夫の名」→「夫の出身地」→「妻の姓」→「妻の名」→「妻の出身地 」</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 3.5</td>
+          <td>○</td>
+          <td>夫の姓、 夫の名、 夫の出身地、妻の姓、妻の名、妻の出身地の順にフォーカスが移動した。</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 4.0</td>
+          <td>○</td>
+          <td>1:以下のようにフォーカスが移動することを確認<br />「夫の姓」→「夫の名」→「夫の出身地」→「妻の姓」→「妻の名」→「妻の出身地 」</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 9.0</td>
+          <td>○</td>
+          <td>以下のようにフォーカスが移動することを確認<br />「夫の姓」→「夫の名」→「夫の出身地」→「妻の姓」→「妻の名」→「妻の出身地 」</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Safari 3.2</td>
+          <td>○</td>
+          <td>夫の姓 、夫の名、夫の出身地、妻の姓、妻の名、妻の出身地 の順に移動した。</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Safari 5.0.3</td>
+          <td>○</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>JAWS for Windows 9.0</td>
+          <td>○</td>
+          <td>■操作手順<br />tabを押すと、以下の順でフォーカスが移動した。<br />1.夫の姓 <br />2.夫の名 <br />3.夫の出身地 <br />4.妻の姓 <br />5.妻の名 <br />6.妻の出身地 <br />■音声読み上げ<br />1「.夫の姓　エディット 」<br />2「.夫の名　エディット 」<br />3「.夫の出身地　エディット 」<br />4.「妻の姓　エディット 」<br />5.「妻の名　エディット 」<br />6.「妻の出身地　エディット」</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>ホームページ・リーダー 3.04</td>
+          <td>○</td>
+          <td>■操作手順<br />「夫の姓」「テキスト」、「夫の名」「テキスト」、「夫の出身地」「テキスト」、「妻の姓」「テキスト」、「妻の名」「テキスト」、「妻の出身地」「テキスト」と順番どおり読み上げる<br />■音声読み上げ<br />「夫の姓　テキスト　夫の名　テキスト　　夫の出身地　テキスト　妻の姓　テキスト　　妻の名　テキスト　妻の出身地　テキスト」</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>PC-Talker XP 3.06</td>
+          <td>○</td>
+          <td>■操作手順<br />夫の姓、 夫の名、 夫の出身地、妻の姓、妻の名、妻の出身地の順にフォーカスが移動した。<br />■音声読み上げ<br />「夫の姓のエディット文字入力、夫の名のエディット文字入力、夫の出身地のエディット文字入力、妻の姓のエディット文字入力、妻の名のエディット文字入力、妻の出身地のエディット文字入力」</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>PC-Talker XP 3.06 + NetReader 1.18</td>
+          <td>○</td>
+          <td>■操作手順<br />Tabキーを押下すると、次の順序ではフォーカスが移動した。<br />1.夫の姓 <br />2.夫の名 <br />3.夫の出身地 <br />4.妻の姓 <br />5.妻の名 <br />6.妻の出身地 <br />■音声読み上げ<br />「夫の姓の　文字入力　夫の名の　文字入力　夫の出身地の　文字入力　妻の姓の　文字入力　妻の名の　文字入力　妻の出身地の　文字入力」</td>
+          <td>ただし、tabキーで移動しないときの読み上げ順序は、通常のテーブルの読み上げ順である。</td>
+        </tr>
+        <tr class="ng">
+          <td>FocusTalk V3</td>
+          <td>×</td>
+          <td>■操作手順<br />「夫の姓のエディット」、「妻の姓のエディット」、「夫の名のエディット」、「妻の名のエディット」、「夫の出身地のエディット」、「妻の出身地のエディット」と読み上げる<br />■音声読み上げ<br />「夫の姓のエディット　妻の姓のエディット　夫の名のエディット　妻の名のエディット 夫の出身地のエディット　妻の出身地のエディット」</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>NVDA 2010.1j</td>
+          <td>○</td>
+          <td>■操作手順<br />1.Tabキーを押下すると、指定された順序でフォーカスが移動した。<br />■音声読み上げ<br />「夫の姓　エディットオートコンプリート付空行<br />3行2列　夫の名　エディットオートコンプリート付空行<br />4行2列　夫の出身地　エディットオートコンプリート付空行<br />2行3列　妻の姓　エディットオートコンプリート付空行<br />3行3列　妻の名　エディットオートコンプリート付空行<br />4行3列　妻の出身地　エディットオートコンプリート付空行」</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>NVDA 2011.1</td>
+          <td>○</td>
+          <td>■操作手順<br />1.Tabキーを押下すると、指定された順序でフォーカスが移動した。<br />■音声読み上げ<br />「夫の姓　エディットオートコンプリート空行<br />3行2列　夫の名　エディットオートコンプリート空行<br />4行2列　夫の出身地　エディットオートコンプリート空行<br />2行3列　妻の姓　エディットオートコンプリート空行<br />3行3列　妻の名　エディットオートコンプリート空行<br />4行3列　妻の出身地　エディットオートコンプリート空行」</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

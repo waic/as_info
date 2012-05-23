@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="ja" lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="ウェブ,アクセシビリティ,基盤,委員会,WAIC,web,accessibility,infrastructure,committee,アクセシビリティ,サポーテッド,AS,情報" />
+    <meta name="description" content="アクセシビリティ・サポーテッド（AS）情報に関する解説文書" />
+    <link rel="stylesheet" type="text/css" href="http://waic.jp/cmn/css/docs.css" />
+    <title>アクセシビリティ・サポーテッド（AS）情報：H048-3</title>
+    <style type="text/css">table{empty-cells: show;}</style>
+  </head>
+  <body>
+    <div id="logo">
+      <a href="http://waic.jp/">
+        <img src="http://waic.jp/cmn/img/header/logo.png" alt="ウェブアクセシビリティ基盤委員会 / WAIC: Web Accessibility Infrastructure Committee" width="334" height="77" />
+      </a>
+    </div>
+    <h1>アクセシビリティ・サポーテッド（AS）情報：H048-3</h1>
+    <ul>
+      <li>公開日：2012年5月15日</li>
+      <li>作成者：ウェブアクセシビリティ基盤委員会（WAIC）実装ワーキンググループ（WG2）</li>
+    </ul>
+    <h2>H048-3: リストに、ol要素、ul要素、dl要素を用いる</h2>
+    <h3>関連する達成基準の実装方法一覧</h3>
+    <p>
+      <a href="7.1.3.1.html">7.1.3.1情報及び関係性に関する達成基準 (等級A)</a>
+    </p>
+    <h3>テストファイル</h3>
+    <p>
+      <a href="&#xA;http://waic.jp/docs/jis2010-as-tests/201008/A/HTMLandXHTML/H048-3.html">H048-3のテストファイル</a>
+    </p>
+    <div class="ok">
+      <h3>見解</h3>
+      <p>達成可能</p>
+    </div>
+    <h3>対象</h3>
+    <p>dl, dt, dd要素</p>
+    <h3>注意点</h3>
+    <p>定義リストは、本来の用途（仕様上の定義）とは異なる用途で使われているケースが多いのが現状である。<br />また、定義リストには、そもそもdt要素とdd要素の関連付けができないという問題がある。</p>
+    <h3>代替もしくは推奨する方法</h3>
+    <p>代替方法としては、文書構造に応じて見出しとパラグラフを用いるか、またはテーブルを用いる方法が考えられる。</p>
+    <h3>備考</h3>
+    <p>スクリーンリーダーでは、JAWSのみがサポートしていて、HPRは一部サポート、他はサポートしていない。しかし、使用することによる悪影響はなく、スクリーンリーダーの今後の機能向上に期待する。</p>
+    <h3>テスト結果の詳細</h3>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">ユーザエージェント</th>
+          <th scope="col">検証結果</th>
+          <th scope="col">操作手順</th>
+          <th scope="col">備考</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="ok">
+          <td>Internet Explorer 6.0</td>
+          <td>○</td>
+          <td>定義がインデントされ表示されている。</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 7.0</td>
+          <td>○</td>
+          <td>用語と定義が区別できるように定義がインデントされていた。</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 8.0</td>
+          <td>○</td>
+          <td>用語と定義が区別できるように定義がインデントされていた。</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 9</td>
+          <td>○</td>
+          <td>用語と定義が区別できるように表示されるか（例：定義がインデントされる） を確認</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 3.5</td>
+          <td>○</td>
+          <td>用語と定義が区別できるように定義がインデントされていた。</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 4.0</td>
+          <td>○</td>
+          <td>1用語と定義が区別できるように表示されるか確認（例：定義がインデントされる）。</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 9.0</td>
+          <td>○</td>
+          <td>用語と定義が区別できるように表示されるか（例：定義がインデントされる） を確認</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Safari 3.2</td>
+          <td>○</td>
+          <td>定義（一秒間に…）がインデントされて（3文字程度）表示される。</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Safari 5.0.3</td>
+          <td>○</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>JAWS for Windows 9.0</td>
+          <td>○</td>
+          <td>■操作手順<br />1個の定義リスト点滅一秒間に…」と読み上げる<br />■音声読み上げ<br />「1個の定義リスト　点滅　一秒間に3～5回点いたり消えたりすること　マル　リスト終了」</td>
+          <td></td>
+        </tr>
+        <tr class="warn">
+          <td>ホームページ・リーダー 3.04</td>
+          <td>△</td>
+          <td>■操作手順<br />行読みモード、←→キー、↓キー、スペースキーで読み上げを確認する。<br />各任意の行にフォーカスをあて、Alt+F1（２回）を押すと項目数と項目中の何番目かを知ることはできる。<br />検証結果）以下の行でAlt+F1(２回)押す<br />点滅<br />　→「１用語中の１番目の用語」と読み上げる<br />一秒間に3～5回点いたり消えたりすること。 <br />　→「１定義中の１番目の定義」と読み上げる<br />■音声読み上げ<br />「点滅 　一秒間に3～5回点いたり消えたりすること。 」</td>
+          <td>リスト項目を読み上げる前には、リスト項目数と何項目かを読み上げしない。<br />Alt+F1（２回）を押すことで項目数と項目中の何番目かを知ることができる。</td>
+        </tr>
+        <tr class="ng">
+          <td>PC-Talker XP 3.06</td>
+          <td>×</td>
+          <td>■操作手順<br />「点滅」「一秒間に3…」とそのまま読み上げた<br />■音声読み上げ<br />「点滅」「一秒間に3～5回点いたり消えたりすること。 」</td>
+          <td>リスト項目を読み上げず、何項目中の何項目の読み上げもしなかった。</td>
+        </tr>
+        <tr class="ng">
+          <td>PC-Talker XP 3.06 + NetReader 1.18</td>
+          <td>×</td>
+          <td>■操作手順<br />リスト項目（一組の定義と用語とで1項目）を読み上げる前に、リスト項目数が幾つあるかが分かるように読み上げず（例：「3項目のリスト」）、又、何項目中の何項目めなのかが分かるように読み上げなかった（例：「3項目中の2項目め」）。<br />■音声読み上げ<br />（全文読みでフォーカスが移動した場合）「点滅　一秒間に　サン　ナミセン　ゴ回テンいたり消えたりすること　マル」<br />（Lキーでフォーカスを移動させた場合）「点滅　ジュウゴの　イチ　箇条書き　サン　定義リスト」</td>
+          <td>■補足<br />全文読みの場合の読み上げと、Lキー操作の場合の読み上げが異なる。</td>
+        </tr>
+        <tr class="ng">
+          <td>FocusTalk V3</td>
+          <td>×</td>
+          <td>■操作手順<br />単に表記どおり「点滅　一秒間に3～5回点いたり消えたりすること。」と読み上げる。（全文、行読みともに）<br />■音声読み上げ<br />「点滅　一秒間に3～5回点いたり消えたりすること。」</td>
+          <td></td>
+        </tr>
+        <tr class="ng">
+          <td>NVDA 2010.1j</td>
+          <td>×</td>
+          <td>■操作手順<br />下矢印キーで定義リストに移動しても、リストであることが通知されない。<br />■音声読み上げ<br />「点滅<br />一秒間に3～5回点いたり消えたりすること」</td>
+          <td></td>
+        </tr>
+        <tr class="ng">
+          <td>NVDA 2011.1</td>
+          <td>×</td>
+          <td>■操作手順<br />下矢印キーで定義リストに移動しても、定義リストであることが通知されなかった。<br />■音声読み上げ<br />リストⅡ項目<br />「点滅<br />一秒間に3～5回点いたり消えたりすること」<br />リスト終了</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

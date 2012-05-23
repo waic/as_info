@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="ja" lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="ウェブ,アクセシビリティ,基盤,委員会,WAIC,web,accessibility,infrastructure,committee,アクセシビリティ,サポーテッド,AS,情報" />
+    <meta name="description" content="アクセシビリティ・サポーテッド（AS）情報に関する解説文書" />
+    <link rel="stylesheet" type="text/css" href="http://waic.jp/cmn/css/docs.css" />
+    <title>アクセシビリティ・サポーテッド（AS）情報：H049-1</title>
+    <style type="text/css">table{empty-cells: show;}</style>
+  </head>
+  <body>
+    <div id="logo">
+      <a href="http://waic.jp/">
+        <img src="http://waic.jp/cmn/img/header/logo.png" alt="ウェブアクセシビリティ基盤委員会 / WAIC: Web Accessibility Infrastructure Committee" width="334" height="77" />
+      </a>
+    </div>
+    <h1>アクセシビリティ・サポーテッド（AS）情報：H049-1</h1>
+    <ul>
+      <li>公開日：2012年5月15日</li>
+      <li>作成者：ウェブアクセシビリティ基盤委員会（WAIC）実装ワーキンググループ（WG2）</li>
+    </ul>
+    <h2>H049-1: セマンティックなマークアップを用いて、強調又は特別なテキストをマークアップする</h2>
+    <h3>関連する達成基準の実装方法一覧</h3>
+    <p>
+      <a href="7.1.3.1.html">7.1.3.1情報及び関係性に関する達成基準 (等級A)</a>
+    </p>
+    <h3>テストファイル</h3>
+    <p>
+      <a href="&#xA;http://waic.jp/docs/jis2010-as-tests/201008/A/HTMLandXHTML/H049-1.html">H049-1のテストファイル</a>
+    </p>
+    <div class="warn">
+      <h3>見解</h3>
+      <p>要注意</p>
+    </div>
+    <h3>対象</h3>
+    <p>em, strong要素</p>
+    <h3>注意点</h3>
+    <p>blockquote要素などとは異なり、文脈だけでは利用者は判断できない。<br />また、em要素とstrong要素の違いが分からないとコンテンツを理解できない場合には、その違いが分かるように何らかの方法で示さなければならない。</p>
+    <h3>代替もしくは推奨する方法</h3>
+    <p>強調されている箇所が分からないとコンテンツを理解できない場合には、何らかの方法で示さなければならない。</p>
+    <h3>備考</h3>
+    <p>使用することによる悪影響はなく、スクリーンリーダーによる今後の機能向上に期待する。</p>
+    <h3>テスト結果の詳細</h3>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">ユーザエージェント</th>
+          <th scope="col">検証結果</th>
+          <th scope="col">操作手順</th>
+          <th scope="col">備考</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="ok">
+          <td>Internet Explorer 6.0</td>
+          <td>○</td>
+          <td>CSSを外した状態でも「本当に」は太字斜体、「素晴らしい」は太字と、別々に表示された</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 7.0</td>
+          <td>-</td>
+          <td>IEはCSSオフにできないので、ローカルにあるテストファイルのスタイルシートのファイル名を変更して実施。<br />「本当に」がイタリック、「素晴らしい」が太字で表示され、他と区別がつき、かつお互いの区別もつく見た目になっていることを確認</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 8.0</td>
+          <td>○</td>
+          <td>表示＞スタイル＞スタイルなしで実施。<br />「本当に」がイタリック、「素晴らしい」が太字で表示され、他と区別がつき、かつお互いの区別もつく見た目になっていることを確認</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 9</td>
+          <td>○</td>
+          <td>表示メニュー＞スタイル＞「スタイルなし」を選択して実施<br />１:「本当に」がイタリック、「素晴らしい」が太字で表示され、他と区別がつき、かつお互いの区別もつく見た目になっていることを確認<br />2:「本当に」がイタリック、「素晴らしい」が太字区別がつくかを確認</td>
+          <td>1:○<br />2:○</td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 3.5</td>
+          <td>○</td>
+          <td>Firefoxの機能「スタイルシートを使用しない」を使用して実施。<br />「本当に」がイタリック、「素晴らしい」が太字で表示され、他と区別がつき、かつお互いの区別もつく見た目になっていることを確認</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 4.0</td>
+          <td>○</td>
+          <td>1表示メニュー＞スタイルシート＞「スタイルシートを使用しない」を選択して実施。<br />「本当に」がイタリック、「素晴らしい」が太字で表示され、他と区別がつき、かつお互いの区別もつく見た目になっていることを確認。<br />2:「本当に」がイタリック、「素晴らしい」が太字区別がつくかを確認</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 9.0</td>
+          <td>○</td>
+          <td>スタイルシート適用を以下のやり方でオフにした。<br />表示＞スタイルシート<br />「スタイルシートを使用しない」を選択して実施<br />1:「本当に」がイタリック、「素晴らしい」が太字で表示され、他と区別がつき、かつお互いの区別もつく見た目になっていることを確認<br />2:「本当に」がイタリック、「素晴らしい」が太字区別がつくかを確認</td>
+          <td>1:○（em要素、strong要素共にOK）<br />2:○（em要素、strong要素共にOK）</td>
+        </tr>
+        <tr class="ok">
+          <td>Safari 3.2</td>
+          <td>○</td>
+          <td>htmlファイルだけをローカルに落としてきてCSSをオフにした状態をつくり、検証。区別のつくレンダリングだった。</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Safari 5.0.3</td>
+          <td>○</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="ng">
+          <td>JAWS for Windows 9.0</td>
+          <td>×</td>
+          <td>■操作手順<br />全体の文章と同じように読み上げる<br />■音声読み上げ<br />「ドットドットドット　彼女が本当に言いたかったのは　テン　コーテーション　これは良いどころではなく　テン　むしろすばらしい　コーテーション　ということだった　カンタンフ　ドットドットドット」（音声による変化はなかった）</td>
+          <td>音声による変化はなかった</td>
+        </tr>
+        <tr class="ng">
+          <td>ホームページ・リーダー 3.04</td>
+          <td>×</td>
+          <td>■操作手順<br />同じ音声で読み上げる<br />■音声読み上げ<br />「...彼女が本当に言いたかったのは、"これは良いどころではなく、むしろ素晴らしい"ということだった！...」</td>
+          <td>Homepage Readerでは対応していない模様</td>
+        </tr>
+        <tr class="ng">
+          <td>PC-Talker XP 3.06</td>
+          <td>×</td>
+          <td>■操作手順<br />特に強調した読み方はしていない。強調部分は区切って読んでいるだけである。<br />■音声読み上げ<br />「彼女が本当に言いたかったのは、"これは良いどころではなく、むしろ素晴らしい"ということだった」</td>
+          <td>Ctrl+矢印で読み上げると強調部分のところは続けて読まず、「本当に」と前後で区切っているが、読み上げの区別はつかない。</td>
+        </tr>
+        <tr class="ng">
+          <td>PC-Talker XP 3.06 + NetReader 1.18</td>
+          <td>×</td>
+          <td>■操作手順<br />em要素（「本当に」）は強調箇所を示し、strong要素（「素晴らしい」）はさらに強調している箇所であることが分かるように読み上げなかった。<br />■音声読み上げ<br />「ピリオド　彼女が本当に言いたかったのは　テン　クォーテーション　これは良いどころではなく　テン　むしろ素晴らしい　クォーテーション　ということだった　感嘆符　ピリオド」</td>
+          <td></td>
+        </tr>
+        <tr class="warn">
+          <td>FocusTalk V3</td>
+          <td>△</td>
+          <td>■操作手順<br />１．ページ全文読みモードでは、特に強調した読み方はしていない。<br />２．1行読みでは、em、strongでマークアップした箇所の手前で読み上げが止まり、更に↓を押すと、マークアップしたテキストに”強調”という読み上げが加わる。<br />■音声読み上げ<br />１．「彼女が本当に言いたかったのは、"これは良いどころではなく、むしろ素晴らしい"ということだった」<br />２．「...彼女が」「本当に 強調」「言いたかったのは、"これは良いどころではなく、むしろ」「素晴らしい 強調...」「"ということだった！...」</td>
+          <td>・em、strongともに「強調」と同じトーンで読み上げられるため、区別はつかない。</td>
+        </tr>
+        <tr class="ng">
+          <td>NVDA 2010.1j</td>
+          <td>×</td>
+          <td>■操作手順<br />テキストを読み上げさせても、通常のテキストと変わりなく読み上げられる。<br />■音声読み上げ<br />「彼女が本当に言いたかったのは これは良いどころではなく むしろ素晴らしいということだった」</td>
+          <td></td>
+        </tr>
+        <tr class="ng">
+          <td>NVDA 2011.1</td>
+          <td>×</td>
+          <td>■操作手順<br />テキストを読み上げさせても、通常のテキストと変わりなく読み上げられた。<br />■音声読み上げ<br />「彼女が本当に言いたかったのは これは良いどころではなく むしろ素晴らしいということだった」</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

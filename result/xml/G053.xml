@@ -1,0 +1,139 @@
+<description>
+  <SuccessCriteria>
+    <number>7.2.4.4</number>
+    <name>文脈におけるリンクの目的に関する達成基準</name>
+    <level>A</level>
+  </SuccessCriteria>
+  <testType>General</testType>
+  <rownumber>1</rownumber>
+  <id>G053</id>
+  <実装方法タイトル>リンクテキストとそれが含まれている文章中のテキストとを組み合わせて、リンクの目的を特定する</実装方法タイトル>
+  <対象>文中のリンク</対象>
+  <見解>達成可能</見解>
+  <代替もしくは推奨する方法>
+    <body>できるかぎり、等級AAAの「リンクテキストだけ」でリンクの目的が分かるようにするとよい。それができない場合に等級Aの「プログラムが解釈可能なリンクの文脈」として、リンクが含まれる文を用いる。</body>
+  </代替もしくは推奨する方法>
+  <注意点>
+    <body>WCAG 2.0解説書に「利用者があるリンクにやってきて、その位置にいたままで、リンクに関するより多くの情報を探し出すことができる必要がある。」とあるが、HPRやFocusTalkではフォーカスが移動してしまう。
+しかし、行読みモード（矢印キー等）で前後に移動すれば文脈をたどることができるため、実用上の問題はほとんどないと考えることができる。</body>
+  </注意点>
+  <備考>PC-Talker7では、Ctrl＋上または下矢印キーで仮想カーソルを前後に移動させてもフォーカスは移動しない。</備考>
+  <testDetail>
+    <result useragent="Internet Explorer 6.0">
+      <rownumber>14</rownumber>
+      <id>G053</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Internet Explorer 7.0">
+      <rownumber>14</rownumber>
+      <id>G053</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Internet Explorer 8.0">
+      <rownumber>14</rownumber>
+      <id>G053</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Internet Explorer 9">
+      <rownumber>14</rownumber>
+      <id>G053</id>
+      <検証結果>‐</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Firefox 3.5">
+      <rownumber>14</rownumber>
+      <id>G053</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Firefox 4.0">
+      <rownumber>14</rownumber>
+      <id>G053</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Firefox 9.0">
+      <rownumber>14</rownumber>
+      <id>G053</id>
+      <検証結果>‐</検証結果>
+    </result>
+    <result useragent="Safari 3.2">
+      <rownumber>14</rownumber>
+      <id>G053</id>
+      <検証結果>-</検証結果>
+      <備考>Safari　5.1でのみ再検証実施</備考>
+    </result>
+    <result useragent="Safari 5.0.3">
+      <rownumber>14</rownumber>
+      <id>G053</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="JAWS for Windows 9.0">
+      <rownumber>14</rownumber>
+      <id>G053</id>
+      <検証結果>○</検証結果>
+      <操作手順>■読み上げ
+「ウェブアクセシビリティ基盤委員会の詳細は、リンクここをクリック。」
+1.alt　+　5キー　で全文を読み上げた
+2.読み上げたあと、Enterを押下すると、リンク先に遷移する。</操作手順>
+      <備考>2012年4月修正</備考>
+    </result>
+    <result useragent="ホームページ・リーダー 3.04">
+      <rownumber>14</rownumber>
+      <id>G053</id>
+      <検証結果>△</検証結果>
+      <操作手順>1.リンク「ここをクリック」にフォーカスを移動させた状態で、何らかのキー操作により、リンクが含まれている文「ウェブアクセシビリティ基盤委員会の詳細は、ここをクリック。」を読み上げることができるかを確認
+2.読み上げることができた場合、そのままの状態でEnterキーを押すとリンク先に遷移するかを確認（（フォーカスがリンクから移動していないことを確認する）</操作手順>
+      <備考>2012年4月修正
+■読み上げ
+「ここをクリック」
+1.○：Ctrl + ←で「ウェブアクセシビリティ基盤委員会の詳細は、こちら」と読み上げる
+2.×：読みあげたあと、そのままの状態でEnterを押すとリンク先に遷移するが、フォーカスがリンクから移動してしまうため、×。</備考>
+    </result>
+    <result useragent="PC-Talker XP 3.06">
+      <rownumber>14</rownumber>
+      <id>G053</id>
+      <検証結果>×</検証結果>
+      <操作手順>■読み上げ
+「ウェブアクセシビリティ基盤委員会の詳細は、」
+1.×：「ここをクリック」にフォーカスを移動させた状態で、「Ctrl+↑」でフォーカスがあたっている前文を読むことは可能だが、フォーカスがあたっている全文を読み上げることができないので、×
+2.×：リンクを含めた1文を読み上げることができないので、×</操作手順>
+      <備考>2012年4月修正</備考>
+    </result>
+    <result useragent="PC-Talker XP 3.06 + NetReader 1.18">
+      <rownumber>14</rownumber>
+      <id>G053</id>
+      <検証結果>△</検証結果>
+      <操作手順>■読み上げ（テキスト画面）
+「ウェブアクセシビリティ基盤委員会の詳細は、ここをクリック、改行」（Alt + F9）
+1.△：デフォルトをグラフィック画面にしているが、テキスト画面のみ操作して読み上げることが可能
+2.○：テキスト画面での読み上げのところからリンク先に遷移することは可能</操作手順>
+      <備考>2012年4月修正</備考>
+    </result>
+    <result useragent="FocusTalk V3">
+      <rownumber>14</rownumber>
+      <id>G053</id>
+      <検証結果>×</検証結果>
+      <操作手順>リンク「ここをクリック」にフォーカスを移動させた状態で、↑キーを操作すると、「ウェブアクセシビリティ基盤委員会の詳細は」を読み上げるが、Enterキーを押下してもリンク先に遷移しない。</操作手順>
+    </result>
+    <result useragent="NVDA 2010.1j">
+      <rownumber>14</rownumber>
+      <id>G053</id>
+      <検証結果>-</検証結果>
+      <備考>NVDA 2011.1 でのみ再検証実施</備考>
+    </result>
+    <result useragent="NVDA 2011.1">
+      <rownumber>14</rownumber>
+      <id>G053</id>
+      <検証結果>○</検証結果>
+      <操作手順>Tabキー（またはKキー）でフォーカスを[ここをクリック]リンクへ移動させると、「ここをクリック　リンク」と詠みあげる。
+1. NVDAキー（テンキー０等）＋上矢印キーを押すと、リンクを含む行、「ウェブアクセシビリティ基盤委員会の詳細は、ここをクリック。」を読み上げる
+2. そのままの状態でEnterキーを押すと、ページが遷移する</操作手順>
+      <備考>2012年4月修正</備考>
+    </result>
+  </testDetail>
+</description>

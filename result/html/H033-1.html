@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="ja" lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="ウェブ,アクセシビリティ,基盤,委員会,WAIC,web,accessibility,infrastructure,committee,アクセシビリティ,サポーテッド,AS,情報" />
+    <meta name="description" content="アクセシビリティ・サポーテッド（AS）情報に関する解説文書" />
+    <link rel="stylesheet" type="text/css" href="http://waic.jp/cmn/css/docs.css" />
+    <title>アクセシビリティ・サポーテッド（AS）情報：H033-1</title>
+    <style type="text/css">table{empty-cells: show;}</style>
+  </head>
+  <body>
+    <div id="logo">
+      <a href="http://waic.jp/">
+        <img src="http://waic.jp/cmn/img/header/logo.png" alt="ウェブアクセシビリティ基盤委員会 / WAIC: Web Accessibility Infrastructure Committee" width="334" height="77" />
+      </a>
+    </div>
+    <h1>アクセシビリティ・サポーテッド（AS）情報：H033-1</h1>
+    <ul>
+      <li>公開日：2012年5月15日</li>
+      <li>作成者：ウェブアクセシビリティ基盤委員会（WAIC）実装ワーキンググループ（WG2）</li>
+    </ul>
+    <h2>H033-1: H33： title属性を用いて、リンクテキストの文言を補足する</h2>
+    <h3>関連する達成基準の実装方法一覧</h3>
+    <p>
+      <a href="7.2.4.4.html">7.2.4.4文脈におけるリンクの目的に関する達成基準 (等級A)</a>
+    </p>
+    <h3>テストファイル</h3>
+    <p>
+      <a href="&#xA;http://waic.jp/docs/jis2010-as-tests/201008/A/HTMLandXHTML/H033-1.html">H033-1のテストファイル</a>
+    </p>
+    <div class="warn">
+      <h3>見解</h3>
+      <p>要注意</p>
+    </div>
+    <h3>対象</h3>
+    <p>a要素のtitle属性値</p>
+    <h3>注意点</h3>
+    <p>マウス操作をしているユーザーにはツールチップで表示されるので有用な場面もあるが、キーボード操作ではtitle属性値がツールチップで表示されない。また、一部のスクリーンリーダーではtitle属性値を確認することは可能だが、title属性値の記述があることを知らせてくれる機能はない。</p>
+    <h3>備考</h3>
+    <p>使用することによる悪影響はなく、キーボード操作時も画面にツールチップが表示されるように、ブラウザの今後の機能向上に期待する。</p>
+    <h3>テスト結果の詳細</h3>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">ユーザエージェント</th>
+          <th scope="col">検証結果</th>
+          <th scope="col">操作手順</th>
+          <th scope="col">備考</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="warn">
+          <td>Internet Explorer 6.0</td>
+          <td>△</td>
+          <td>マウスポインタをでリンクに合わせるとツールチップが表示された。<br />キーボード操作でリンクにあわせてもツールチップは表示されなかった。</td>
+          <td>キーボード操作の場合、ツールチップは表示されなかったため。</td>
+        </tr>
+        <tr class="warn">
+          <td>Internet Explorer 7.0</td>
+          <td>△</td>
+          <td>マウスでは『富士通株式会社の公式サイト』が表示されるがキーボード操作ではフォーカスを当てても何も表示されない</td>
+          <td>キーボードでは対応しない</td>
+        </tr>
+        <tr class="warn">
+          <td>Internet Explorer 8.0</td>
+          <td>△</td>
+          <td>1.マウスでは『富士通株式会社の公式サイト』が表示されるが<br />2.キーボード操作ではフォーカスを当てても何も表示されない</td>
+          <td>1：○<br />2：.×　キーボードでは対応しない</td>
+        </tr>
+        <tr class="warn">
+          <td>Internet Explorer 9</td>
+          <td>△</td>
+          <td>1:マウス操作：マウスポインタをリンク上に置いた際に、ツールチップでtitle属性値「富士通株式会社の公式サイト」が表示されるかを確認 <br />2:キーボード操作：リンクにフォーカスを移動させた際に、ツールチップでtitle属性値「富士通株式会社の公式サイト」が表示されるかを確認</td>
+          <td>１:○<br />２:×：リンクにフォーカスを移動させても、ツールチップでtitle属性は表示されなかった</td>
+        </tr>
+        <tr class="warn">
+          <td>Firefox 3.5</td>
+          <td>△</td>
+          <td>マウスオーバーすると「富士通株式会社の公式サイト」がツールチップで表示される。</td>
+          <td>キーボードのタブ移動でフォーカスを当てても、ツールチップテキストは表示されなかった。</td>
+        </tr>
+        <tr class="warn">
+          <td>Firefox 4.0</td>
+          <td>△</td>
+          <td>1:マウスポインタをリンク上に置いた際に、ツールチップでtitle属性値「富士通株式会社の公式サイト」が表示されることを確認<br />2:キーボード操作でリンクにフォーカスを移動させた際に、ツールチップでtitle属性値が表示されるか確認</td>
+          <td>1:○<br />2:×：キーボード操作でフォーカスを当てても、ツールチップは表示されなかった。</td>
+        </tr>
+        <tr class="warn">
+          <td>Firefox 9.0</td>
+          <td>△</td>
+          <td>1:マウス操作：マウスポインタをリンク上に置いた際に、ツールチップでtitle属性値「富士通株式会社の公式サイト」が表示されるかを確認 <br />2:キーボード操作：リンクにフォーカスを移動させた際に、ツールチップでtitle属性値「富士通株式会社の公式サイト」が表示されるかを確認</td>
+          <td>1:○<br />2:×：リンクにフォーカスを移動させても、ツールチップでtitle属性は表示されなかった</td>
+        </tr>
+        <tr class="warn">
+          <td>Safari 3.2</td>
+          <td>△</td>
+          <td>マウスでは『富士通株式会社の公式サイト』が表示されるがキーボード操作ではフォーカスを当てても何も表示されない</td>
+          <td>1：○<br />2：×　キーボード操作が非対応</td>
+        </tr>
+        <tr class="warn">
+          <td>Safari 5.0.3</td>
+          <td>△</td>
+          <td>マウスでは『富士通株式会社の公式サイト』が表示されるがキーボード操作ではフォーカスを当てても何も表示されない。</td>
+          <td>1：○<br />2：×</td>
+        </tr>
+        <tr class="ng">
+          <td>JAWS for Windows 9.0</td>
+          <td>×</td>
+          <td>■操作手順<br />フォーカスを当てただけでは「富士通 リンク」と読み上げるが、Ins+Tabで「富士通株式会社の公式サイト」title属性値を読み上げさせることができた。<br />JAWSオプションの調整の、「テキストリンクの読み上げ」で設定の変更が可能<br />■音声読み上げ<br />「富士通　リンク」（リンク読み上げが表示されたテキストの場合）<br />「富士通株式会社の公式サイト　リンク」（リンク読み上げがタイトル属性の場合）</td>
+          <td></td>
+        </tr>
+        <tr class="ng">
+          <td>ホームページ・リーダー 3.04</td>
+          <td>×</td>
+          <td>■操作手順<br />富士通にフォーカスをあてた後、ステータスの読み上げのキー操作[Ctrl]+[Shift]+[F1]によってアドレスの後に『富士通株式会社の公式サイト』を読み上げる<br />■音声読み上げ<br />「http://jp.fujitsu.com/　富士通株式会社の公式サイト」</td>
+          <td></td>
+        </tr>
+        <tr class="ng">
+          <td>PC-Talker XP 3.06</td>
+          <td>×</td>
+          <td>■操作手順<br />リンクラベルの「富士通」は読み上げず、title属性の「富士通株式会社の公式サイト」リンク、とを読み上げていた。title属性による補足説明があることも特にない。また、キー操作による読み上げもない。<br />■音声読み上げ<br />「富士通株式会社の公式サイト　リンク」</td>
+          <td></td>
+        </tr>
+        <tr class="ng">
+          <td>PC-Talker XP 3.06 + NetReader 1.18</td>
+          <td>×</td>
+          <td>■操作手順<br />テキストリンクにフォーカスを移動させた際に、リンクのラベル「富士通」に加えて title属性値「富士通株式会社の公式サイト」を読み上げなかった。<br />又、title属性による補足説明があることを音声で知らせず、何らかのキー操作によりtitle属性値「富士通株式会社の公式サイト」を読み上げなかった。<br />■音声読み上げ<br />「富士通　リンク」</td>
+          <td>■補足<br />（NetReaderのテキスト画面で）<br />フォーカスが当たっている状態で、Alt＋F3キー（カーソル位置の情報読み上げ）を押すと、下記のように読み上げた（title属性値を読み上げた）。<br />「富士通　訪問済みリンク　リンク先は　http://jp.fujitsu.com/　エンターは　リンク先を開く　タイトルは　富士通　株式会社の　公式サイト」</td>
+        </tr>
+        <tr class="ng">
+          <td>FocusTalk V3</td>
+          <td>×</td>
+          <td>■操作手順<br />Tabキーでフォーカスを移動させると、「富士通株式会社の公式サイト 未訪問のリンク」と読み上げた。テキスト「富士通」は読み上げられなかった。Title属性による補足説明があることは説明されない。<br />■音声読み上げ<br />「富士通株式会社の公式サイト 未訪問のリンク」</td>
+          <td></td>
+        </tr>
+        <tr class="ng">
+          <td>NVDA 2010.1j</td>
+          <td>×</td>
+          <td>■操作手順<br />Kキーを用いてリンクにフォーカスすると、「富士通」だけが読み上げられた。<br />■音声読み上げ<br />「既読リンク富士通」</td>
+          <td></td>
+        </tr>
+        <tr class="ng">
+          <td>NVDA 2011.1</td>
+          <td>×</td>
+          <td>■操作手順<br />リンクにフォーカスすると、「富士通」だけが読み上げられた。<br />■音声読み上げ<br />「リンク富士通」</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<AsDescription target="7.2.2.2">
+  <SuccessCriteria>
+    <number>7.2.2.2</number>
+    <name>一時停止，停止及び非表示に関する達成基準</name>
+    <level>A</level>
+  </SuccessCriteria>
+  <item>
+    <rownumber>1</rownumber>
+    <id>G187</id>
+    <実装方法タイトル>ユーザーエージェントによって点滅するコンテンツを停止できるウェブコンテンツ技術を用いる</実装方法タイトル>
+    <対象>GIFアニメ</対象>
+    <見解>要注意</見解>
+    <注意点>
+      <body>現時点では、Escapeキーで停止できることを知らないユーザーも少なくないと考えられ、Safariなど一部のブラウザではユーザーが一時停止または停止させることができないため、GIFアニメを使用する際には注意が必要である。</body>
+    </注意点>
+    <備考>W3CのUAAG 2.0の「2.11.6 Stop/Pause/Resume Time-Based Media(Level A)」で、ユーザーがanimated imagesを一時停止、停止および再開できることがユーザーエージェントに要求されているので、Safariの今後の機能向上に期待する。</備考>
+  </item>
+</AsDescription>

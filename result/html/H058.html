@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="ja" lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="ウェブ,アクセシビリティ,基盤,委員会,WAIC,web,accessibility,infrastructure,committee,アクセシビリティ,サポーテッド,AS,情報" />
+    <meta name="description" content="アクセシビリティ・サポーテッド（AS）情報に関する解説文書" />
+    <link rel="stylesheet" type="text/css" href="http://waic.jp/cmn/css/docs.css" />
+    <title>アクセシビリティ・サポーテッド（AS）情報：H058</title>
+    <style type="text/css">table{empty-cells: show;}</style>
+  </head>
+  <body>
+    <div id="logo">
+      <a href="http://waic.jp/">
+        <img src="http://waic.jp/cmn/img/header/logo.png" alt="ウェブアクセシビリティ基盤委員会 / WAIC: Web Accessibility Infrastructure Committee" width="334" height="77" />
+      </a>
+    </div>
+    <h1>アクセシビリティ・サポーテッド（AS）情報：H058</h1>
+    <ul>
+      <li>公開日：2012年5月15日</li>
+      <li>作成者：ウェブアクセシビリティ基盤委員会（WAIC）実装ワーキンググループ（WG2）</li>
+    </ul>
+    <h2>H058: 言語属性を用いて、自然言語の変更を指定する</h2>
+    <h3>関連する達成基準の実装方法一覧</h3>
+    <p>
+      <a href="7.3.1.2.html">7.3.1.2部分的に用いられている言語に関する達成基準 (等級AA)</a>
+    </p>
+    <h3>テストファイル</h3>
+    <p>
+      <a href="&#xA;http://waic.jp/docs/jis2010-as-tests/201008/AA/HTMLandXHTML/H058.html">H058のテストファイル</a>
+    </p>
+    <div class="ok">
+      <h3>見解</h3>
+      <p>達成可能</p>
+    </div>
+    <h3>対象</h3>
+    <p>lang属性</p>
+    <h3>代替もしくは推奨する方法</h3>
+    <p>ユーザーエージェントによるサポートは十分とは言えないが、サポートしているユーザーエージェント（例：lang属性値に応じて音声エンジンを切り替えるスクリーンリーダー）もあるので、異なる言語を使用している箇所にはlang属性でその言語を指定しておいたほうがよい。</p>
+    <h3>備考</h3>
+    <p>JAWSでは、読上げオプション＞言語判定をオンにすると音声エンジンが切り替わる。</p>
+    <h3>テスト結果の詳細</h3>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">ユーザエージェント</th>
+          <th scope="col">検証結果</th>
+          <th scope="col">操作手順</th>
+          <th scope="col">備考</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="ok">
+          <td>Internet Explorer 6.0</td>
+          <td>-</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 7.0</td>
+          <td>‐</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 8.0</td>
+          <td>-</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 9</td>
+          <td>‐</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 3.5</td>
+          <td>-</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 4.0</td>
+          <td>-</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 9.0</td>
+          <td>‐</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Safari 3.2</td>
+          <td>-</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Safari 5.0.3</td>
+          <td>-</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>JAWS for Windows 9.0</td>
+          <td>○</td>
+          <td>Ins+Vで「JAWSオプションの調整」ダイアログを開く。<br />読上げオプション＞言語判定をオンにする</td>
+          <td></td>
+        </tr>
+        <tr class="ng">
+          <td>ホームページ・リーダー 3.04</td>
+          <td>×</td>
+          <td>手順<br />1.「ここまで日本語です」から読み上げをスタートし、英文の箇所が英語の音声エンジンに切り替わって読み上げられる確認する。<br />2.英文が読み上げられた後、「ここから日本語です」の箇所が日本語の音声エンジンに切り替わって読み上げられるか確認する。<br />2について、手動で英語の音声エンジンに切替えて読み上げをさせてみたが、日本語の音声エンジンには切り替わらなかった。<br />■英文の読み上げ<br />「ふじとす　いず　こんとりびゅーてぃんぐ　とー　えー　せーふ,　はっぴー　えんど　りっち　りふぇすたいる　えんど　そさいええてぃ　ばい　くりええーてぃんぐ　じぇんとる　りれーしょんしっぷす　びとうぃーん　ぴーぷる　えんど　あいてぃー」<br />「ざ　えいむ　ふぉー　あん　あいてぃー　そさいええてぃ　いん　ふぃっち　えにいわん　かん　ぱーてぃしぺーと　いん　おーる　でざいん　あくてぃびてぃず　ゆーじんぐ　ひゅーまん　せんたーど　でざいん　ふぃっち　ぷりおりたいぜず　ぴーぷる」</td>
+          <td>音声エンジンは手動での切り替えのみ</td>
+        </tr>
+        <tr class="ng">
+          <td>PC-Talker XP 3.06</td>
+          <td>×</td>
+          <td>英文（"Fujitsu is contributing..."以下）を読み上げる際に、英語の音声エンジンに切り替えられず、日本語の音声エンジンのまま読み上げられた。</td>
+          <td>lang属性を解釈していないと思われたため、×にした。<br />【補足】<br />英語音声を使用する設定（Ctrl＋Alt＋E）にしてから再度検証を行うと、英語の箇所については英語の音声エンジンに切り替えて読み上げられた。<br />しかし、これはlang属性で自然言語を指定された箇所だけでなく、英語で記述された箇所すべてに対して有効であったため、lang属性を解釈したものではないと思われる。</td>
+        </tr>
+        <tr class="ng">
+          <td>PC-Talker XP 3.06 + NetReader 1.18</td>
+          <td>×</td>
+          <td>英文（"Fujitsu is contributing..."以下）を読み上げる際に、英語の音声エンジンに切り替えられず、日本語の音声エンジンのまま読み上げられた。</td>
+          <td>■補足<br />lang属性を解釈していないと思われたため、×にした。<br />【補足】<br />PC-Talker XPの英語音声の設定で「なめらか読みに英語音声を使用する」にチェックが入っていると、英語の箇所については英語の音声エンジンに切り替えて読み上げられる。<br />しかし、これは、lang属性を解釈した上での処理ではないと見られる。<br />なぜなら、lang属性で自然言語が指定された箇所だけでなく、英語で記述された箇所すべてに対して上記の処理がされているためである。</td>
+        </tr>
+        <tr class="ng">
+          <td>FocusTalk V3</td>
+          <td>×</td>
+          <td></td>
+          <td>英語エンジンを搭載していない</td>
+        </tr>
+        <tr class="ng">
+          <td>NVDA 2010.1j</td>
+          <td>×</td>
+          <td>■操作手順<br />1. 英文（"Fujitsu is contributing..."以下）を読み上げる際に、英語の音声エンジンに切り替えて読み上げられなかった。<br />2. 英文の後に日本語（「ここから日本語です。」）を読み上げる際に、音声エンジンは変更されなかった。</td>
+          <td></td>
+        </tr>
+        <tr class="ng">
+          <td>NVDA 2011.1</td>
+          <td>×</td>
+          <td>■操作手順<br />1. 英文（"Fujitsu is contributing..."以下）を読み上げる際に、英語の音声エンジンに切り替えて読み上げられなかった。<br />2. 英文の後に日本語（「ここから日本語です。」）を読み上げる際に、音声エンジンは変更されなかった。<br />■音声読み上げ<br />「ここまで日本語です。<br />引用<br />Fujitsu is contributing to a safe, happy, and rich lifestyle and society by creating gentle relationships between people and IT. <br />The aim for an IT society in which anyone can participate in all design activities using "Human Centered Design", which prioritizes people. <br />引用終了<br />ここから日本語です。」</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="ja" lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="ウェブ,アクセシビリティ,基盤,委員会,WAIC,web,accessibility,infrastructure,committee,アクセシビリティ,サポーテッド,AS,情報" />
+    <meta name="description" content="アクセシビリティ・サポーテッド（AS）情報に関する解説文書" />
+    <link rel="stylesheet" type="text/css" href="http://waic.jp/cmn/css/docs.css" />
+    <title>アクセシビリティ・サポーテッド（AS）情報：G115-5</title>
+    <style type="text/css">table{empty-cells: show;}</style>
+  </head>
+  <body>
+    <div id="logo">
+      <a href="http://waic.jp/">
+        <img src="http://waic.jp/cmn/img/header/logo.png" alt="ウェブアクセシビリティ基盤委員会 / WAIC: Web Accessibility Infrastructure Committee" width="334" height="77" />
+      </a>
+    </div>
+    <h1>アクセシビリティ・サポーテッド（AS）情報：G115-5</h1>
+    <ul>
+      <li>公開日：2012年5月15日</li>
+      <li>作成者：ウェブアクセシビリティ基盤委員会（WAIC）実装ワーキンググループ（WG2）</li>
+    </ul>
+    <h2>G115-5: セマンティックな要素を用いて、構造をマークアップする</h2>
+    <h3>関連する達成基準の実装方法一覧</h3>
+    <p>
+      <a href="7.1.3.1.html">7.1.3.1情報及び関係性に関する達成基準 (等級A)</a>
+    </p>
+    <h3>テストファイル</h3>
+    <p>
+      <a href="&#xA;http://waic.jp/docs/jis2010-as-tests/201008/A/General/G115-5.html">G115-5のテストファイル</a>
+    </p>
+    <div class="warn">
+      <h3>見解</h3>
+      <p>要注意</p>
+    </div>
+    <h3>対象</h3>
+    <p>em要素</p>
+    <h3>注意点</h3>
+    <p>blockquote要素などとは異なり、文脈だけでは利用者は判断できない。</p>
+    <h3>代替もしくは推奨する方法</h3>
+    <p>強調されている箇所が分からないとコンテンツを理解できない場合には、何らかの方法で示さなければならない。<br />また、em要素とstrong要素の違いが分からないとコンテンツを理解できない場合には、その違いが分かるように何らかの方法で示さなければならない。</p>
+    <h3>備考</h3>
+    <p>使用することによる悪影響はなく、スクリーンリーダーによる今後の機能向上に期待する。</p>
+    <h3>テスト結果の詳細</h3>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">ユーザエージェント</th>
+          <th scope="col">検証結果</th>
+          <th scope="col">操作手順</th>
+          <th scope="col">備考</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="ok">
+          <td>Internet Explorer 6.0</td>
+          <td>○</td>
+          <td>1.「痛烈な」の背景色がCSSで指定したシアンで表示された<br />2.「痛烈な」が標準のフォントスタイルで表示された</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 7.0</td>
+          <td>○</td>
+          <td>「痛烈な」のエリアがシアン色で表示され、フォント自体は他のテキストと変わらない標準フォントで表示されている。</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 8.0</td>
+          <td>○</td>
+          <td>「痛烈な」のエリアがシアン色で表示され、フォント自体は他のテキストと変わらない標準フォントで表示されている。</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 9</td>
+          <td>○</td>
+          <td>1.em要素でマークアップされた「痛烈な」の背景色がCSSで指定したシアンで表示されていることを確認<br />2.em要素でマークアップされた「痛烈な」が標準のフォントスタイルで表示されていることを確認</td>
+          <td>1:○<br />2:○</td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 3.5</td>
+          <td>○</td>
+          <td>1.em要素でマークアップされた「痛烈な」の背景色がCSSで指定したシアンで表示されている。<br />2.em要素でマークアップされた「痛烈な」が標準のフォントスタイルで表示されている。</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 4.0</td>
+          <td>○</td>
+          <td>1.em要素でマークアップされた「痛烈な」の背景色がCSSで指定したシアンで表示されている。<br />2.em要素でマークアップされた「痛烈な」が標準のフォントスタイルで表示されている。</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 9.0</td>
+          <td>○</td>
+          <td>1.em要素でマークアップされた「痛烈な」の背景色がCSSで指定したシアンで表示されていることを確認<br />2.em要素でマークアップされた「痛烈な」が標準のフォントスタイルで表示されていることを確認</td>
+          <td>1:○<br />2:○</td>
+        </tr>
+        <tr class="ok">
+          <td>Safari 3.2</td>
+          <td>○</td>
+          <td>1.「痛烈な」の背景色がシアンで表示されている。<br />2.「痛烈な」が標準フォントで表示されている。</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Safari 5.0.3</td>
+          <td>○</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="ng">
+          <td>JAWS for Windows 9.0</td>
+          <td>×</td>
+          <td>■操作手順<br />JAWSオプションの調整で「画面エコー」を「強調表示」にして確認した。<br />■音声読み上げ<br />「新しい単語は　テン　背景色をシアンにしてハイライトかつ強調されます　マル　そのプレー対する痛烈な批評は　テン　少々厳しすぎるように思われました　マル」（音声による変化はなかった）</td>
+          <td>em要素の部分が強調されていることがわかるようには読み上げなかった。</td>
+        </tr>
+        <tr class="ng">
+          <td>ホームページ・リーダー 3.04</td>
+          <td>×</td>
+          <td>■操作手順<br />「そのプレー対する痛烈な批評は、少々厳しすぎるように思われました」と同じ読み上げ方をするので、強調していることが分からない<br />■音声読み上げ<br />「そのプレー対する痛烈な批評は、少々厳しすぎるように思われました」</td>
+          <td>強調していることを分かるように読み上げない</td>
+        </tr>
+        <tr class="ng">
+          <td>PC-Talker XP 3.06</td>
+          <td>×</td>
+          <td>■操作手順<br />ハイライト部分は特に強調されていない。<br />■音声読み上げ<br />「新しい単語は、背景色をシアンにしてハイライトかつ強調されています。そのプレー対する痛烈な批評は、少々厳しすぎるように思われました。」</td>
+          <td>強調されて読み上げられなかったため、×。</td>
+        </tr>
+        <tr class="ng">
+          <td>PC-Talker XP 3.06 + NetReader 1.18</td>
+          <td>×</td>
+          <td>■操作手順<br />em要素でマークアップされた「痛烈な」が、強調されていることが分かるように読み上げなかった。<br />■音声読み上げ<br />「新しい単語は　テン　背景色をシアンにしてハイライトかつ強調されています　マル<br />そのプレー対する痛烈な批評は　テン・・・」</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>FocusTalk V3</td>
+          <td>○</td>
+          <td>■操作手順<br />「そのプレー対する痛烈な 強調 批評は、少々厳しすぎるように思われました」と強調箇所の後に「強調」と読み上げ、強調していることが分かる。<br />■音声読み上げ<br />「そのプレー対する痛烈な 強調 批評は、少々厳しすぎるように思われました」</td>
+          <td>左記は、一文ずつ読み上げた結果。<br />全文読みで読み上げた場合、「痛烈な」の後に「強調」とは発声されない。</td>
+        </tr>
+        <tr class="ng">
+          <td>NVDA 2010.1j</td>
+          <td>×</td>
+          <td>■操作手順<br />該当項目は通常の本文と同じように読み上げられた。<br />■音声読み上げ<br />「そのプレー対する痛烈な批評は、少々厳しすぎるように思われました。」</td>
+          <td></td>
+        </tr>
+        <tr class="ng">
+          <td>NVDA 2011.1</td>
+          <td>×</td>
+          <td>■操作手順<br />該当項目は通常の本文と同じように読み上げられた。<br />■音声読み上げ<br />「そのプレー対する痛烈な批評は、少々厳しすぎるように思われました。」</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,456 @@
+start.
+
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\7.1.1.1.csv
+Loaded: 21 rows (AsDescriptionTable : 7.1.1.1)
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\7.1.3.1.csv
+Loaded: 30 rows (AsDescriptionTable : 7.1.3.1)
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\7.1.4.4.csv
+Loaded: 2 rows (AsDescriptionTable : 7.1.4.4)
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\7.2.1.1.csv
+Loaded: 6 rows (AsDescriptionTable : 7.2.1.1)
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\7.2.1.2.csv
+Loaded: 1 rows (AsDescriptionTable : 7.2.1.2)
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\7.2.2.2.csv
+Loaded: 1 rows (AsDescriptionTable : 7.2.2.2)
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\7.2.4.1.csv
+Loaded: 14 rows (AsDescriptionTable : 7.2.4.1)
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\7.2.4.3.csv
+Loaded: 4 rows (AsDescriptionTable : 7.2.4.3)
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\7.2.4.4.csv
+Loaded: 16 rows (AsDescriptionTable : 7.2.4.4)
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\7.2.4.7.csv
+Loaded: 9 rows (AsDescriptionTable : 7.2.4.7)
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\7.3.1.1.csv
+Loaded: 1 rows (AsDescriptionTable : 7.3.1.1)
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\7.3.1.2.csv
+Loaded: 1 rows (AsDescriptionTable : 7.3.1.2)
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\7.3.3.1.csv
+Loaded: 1 rows (AsDescriptionTable : 7.3.3.1)
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\7.3.3.2.csv
+Loaded: 4 rows (AsDescriptionTable : 7.3.3.2)
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\7.3.3.3.csv
+Loaded: 1 rows (AsDescriptionTable : 7.3.3.3)
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\7.4.1.2.csv
+Loaded: 5 rows (AsDescriptionTable : 7.4.1.2)
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\AS検証結果一覧-Firefox3.5-等級A-201204.csv
+Loaded: 157 rows (AsTestResultTable : Firefox 3.5 - A)
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\AS検証結果一覧-Firefox3.5-等級AA-201204.csv
+Loaded: 21 rows (AsTestResultTable : Firefox 3.5 - AA)
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\AS検証結果一覧-Firefox4.0-等級A-201204.csv
+Loaded: 157 rows (AsTestResultTable : Firefox 4.0 - A)
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\AS検証結果一覧-Firefox4.0-等級AA-201204.csv
+Loaded: 22 rows (AsTestResultTable : Firefox 4.0 - AA)
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\AS検証結果一覧-Firefox9.0-等級A-201204.csv
+Loaded: 157 rows (AsTestResultTable : Firefox 9.0 - A)
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\AS検証結果一覧-Firefox9.0-等級AA-201204.csv
+Loaded: 21 rows (AsTestResultTable : Firefox 9.0 - AA)
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\AS検証結果一覧-FocusTalkV3-等級A-201204.csv
+Loaded: 157 rows (AsTestResultTable : FocusTalk V3 - A)
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\AS検証結果一覧-FocusTalkV3-等級AA-201204.csv
+Loaded: 22 rows (AsTestResultTable : FocusTalk V3 - AA)
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\AS検証結果一覧-HPR-等級A-201204.csv
+Loaded: 157 rows (AsTestResultTable : ホームページ・リーダー 3.04 - A)
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\AS検証結果一覧-HPR-等級AA-201204.csv
+Loaded: 21 rows (AsTestResultTable : ホームページ・リーダー 3.04 - AA)
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\AS検証結果一覧-IE6-等級A-201204.csv
+Loaded: 157 rows (AsTestResultTable : Internet Explorer 6.0 - A)
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\AS検証結果一覧-IE6-等級AA-201204.csv
+Loaded: 22 rows (AsTestResultTable : Internet Explorer 6.0 - AA)
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\AS検証結果一覧-IE7-等級A-201204.csv
+Loaded: 157 rows (AsTestResultTable : Internet Explorer 7.0 - A)
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\AS検証結果一覧-IE7-等級AA-201204.csv
+Loaded: 21 rows (AsTestResultTable : Internet Explorer 7.0 - AA)
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\AS検証結果一覧-IE8-等級A-201204.csv
+Loaded: 158 rows (AsTestResultTable : Internet Explorer 8.0 - A)
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\AS検証結果一覧-IE8-等級AA-201204.csv
+Loaded: 22 rows (AsTestResultTable : Internet Explorer 8.0 - AA)
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\AS検証結果一覧-IE9-等級A-201204.csv
+Loaded: 157 rows (AsTestResultTable : Internet Explorer 9 - A)
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\AS検証結果一覧-IE9-等級AA-201204.csv
+Loaded: 22 rows (AsTestResultTable : Internet Explorer 9 - AA)
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\AS検証結果一覧-JAWS-等級A-201204.csv
+Loaded: 157 rows (AsTestResultTable : JAWS for Windows 9.0 - A)
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\AS検証結果一覧-JAWS-等級AA-201204.csv
+Loaded: 22 rows (AsTestResultTable : JAWS for Windows 9.0 - AA)
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\AS検証結果一覧-NetReader-等級A-201204.csv
+Loaded: 157 rows (AsTestResultTable : PC-Talker XP 3.06 + NetReader 1.18 - A)
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\AS検証結果一覧-NetReader-等級AA-201204.csv
+Loaded: 21 rows (AsTestResultTable : PC-Talker XP 3.06 + NetReader 1.18 - AA)
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\AS検証結果一覧-NVDA2010.1j-等級A-201204.csv
+Loaded: 157 rows (AsTestResultTable : NVDA 2010.1j - A)
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\AS検証結果一覧-NVDA2010.1j-等級AA-201204.csv
+Loaded: 21 rows (AsTestResultTable : NVDA 2010.1j - AA)
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\AS検証結果一覧-NVDA2011.1-等級A-201204.csv
+Loaded: 157 rows (AsTestResultTable : NVDA 2011.1 - A)
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\AS検証結果一覧-NVDA2011.1-等級AA-201204.csv
+Loaded: 22 rows (AsTestResultTable : NVDA 2011.1 - AA)
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\AS検証結果一覧-PCTalkerXP-等級A-201204.csv
+Loaded: 157 rows (AsTestResultTable : PC-Talker XP 3.06 - A)
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\AS検証結果一覧-PCTalkerXP-等級AA-201204.csv
+Loaded: 21 rows (AsTestResultTable : PC-Talker XP 3.06 - AA)
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\AS検証結果一覧-Safari3.2-等級A-201204.csv
+Loaded: 157 rows (AsTestResultTable : Safari 3.2 - A)
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\AS検証結果一覧-Safari3.2-等級AA-201204.csv
+Loaded: 21 rows (AsTestResultTable : Safari 3.2 - AA)
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\AS検証結果一覧-Safari5.0.3-等級A-201204.csv
+Loaded: 157 rows (AsTestResultTable : Safari 5.0.3 - A)
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\AS検証結果一覧-Safari5.0.3-等級AA-201204.csv
+Loaded: 21 rows (AsTestResultTable : Safari 5.0.3 - AA)
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\AS検証結果一覧-等級A-201204.csv
+Loaded: 0 rows (SuccessCriteriaTable : )
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\AS検証結果一覧-等級AA-201204.csv
+Loaded: 0 rows (SuccessCriteriaTable : )
+Load start: D:\web\work\stud\WAIC\as_html_generator\data\csv\success_criteria.csv
+Load Error: Cannot Read ファイル有無 from: 7.1.1.1,A,非テキストコンテンツに関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.1.2.1,A,収録済みの音声しか含まないメディア及び収録済みの映像しか含まないメディアに関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.1.2.2,A,収録済みの音声コンテンツのキャプションに関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.1.2.3,A,収録済みの映像コンテンツの代替コンテンツ又は音声ガイドに関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.1.3.1,A,情報及び関係性に関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.1.3.2,A,意味のある順序に関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.1.3.3,A,感覚的な特徴に関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.1.4.1,A,色の使用に関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.2.1.1,A,キーボード操作に関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.2.1.2,A,フォーカス移動に関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.2.2.1,A,調整可能な制限時間に関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.2.2.2,A,一時停止，停止及び非表示に関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.2.3.1,A,3回のせん（閃）光又はいき（閾）値以下に関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.2.4.1,A,ブロックスキップに関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.2.4.2,A,ページタイトルに関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.2.4.3,A,フォーカス順序に関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.2.4.4,A,文脈におけるリンクの目的に関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.3.1.1,A,ページの言語に関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.3.2.1,A,オンフォーカスに関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.3.2.2,A,ユーザインタフェースコンポーネントによる状況の変化に関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.3.3.1,A,入力エラー箇所の特定に関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.3.3.2,A,ラベル又は説明文に関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.4.1.1,A,構文解析に関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.4.1.2,A,プログラムが解釈可能な識別名，役割及び設定可能な値に関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.1.2.4,AA,ライブの音声コンテンツのキャプションに関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.1.2.5,AA,収録済みの映像コンテンツの音声ガイドに関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.1.4.3,AA,最低限のコントラストに関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.1.4.4,AA,テキストのサイズ変更に関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.1.4.5,AA,画像化された文字に関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.2.4.5,AA,複数の到達手段に関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.2.4.6,AA,見出し及びラベルに関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.2.4.7,AA,視覚的に認識可能なフォーカスに関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.3.1.2,AA,部分的に用いられている言語に関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.3.2.3,AA,一貫したナビゲーションに関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.3.2.4,AA,一貫した識別性に関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.3.3.3,AA,入力エラー修正方法の提示に関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.3.3.4,AA,法的義務，金銭的取引，データ変更及び回答送信のエラー回避に関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.1.2.6,AAA,収録済みの音声コンテンツの手話通訳に関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.1.2.7,AAA,収録済みの映像コンテンツの拡張した音声ガイドに関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.1.2.8,AAA,収録済みのメディアの代替コンテンツに関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.1.2.9,AAA,ライブの音声しか含まないコンテンツの代替コンテンツに関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.1.4.6,AAA,より十分なコントラストに関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.1.4.7,AAA,小さい背景音又は背景音なしに関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.1.4.8,AAA,視覚的な表現に関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.1.4.9,AAA,画像化された文字に関する例外のない達成基準
+Load Error: Cannot Read ファイル有無 from: 7.2.1.3,AAA,キーボード操作に関する例外のない達成基準
+Load Error: Cannot Read ファイル有無 from: 7.2.2.3,AAA,制限時間なしに関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.2.2.4,AAA,中断に関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.2.2.5,AAA,再認証に関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.2.3.2,AAA,3回のせん（閃）光に関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.2.4.8,AAA,現在位置に関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.2.4.9,AAA,リンクの目的に関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.2.4.10,AAA,セクション見出しに関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.3.1.3,AAA,一般的ではない用語に関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.3.1.4,AAA,略語に関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.3.1.5,AAA,読解レベルに関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.3.1.6,AAA,発音及び読み仮名に関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.3.2.5,AAA,利用者の要求による状況の変化に関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.3.3.5,AAA,ヘルプに関する達成基準
+Load Error: Cannot Read ファイル有無 from: 7.3.3.6,AAA,エラー回避に関する例外のない達成基準
+Loaded: 60 rows (SuccessCriteriaTable : )
+以下のUserAgentのテスト結果をロードしました:
+Internet Explorer 6.0
+Internet Explorer 7.0
+Internet Explorer 8.0
+Internet Explorer 9
+Firefox 3.5
+Firefox 4.0
+Firefox 9.0
+Safari 3.2
+Safari 5.0.3
+JAWS for Windows 9.0
+ホームページ・リーダー 3.04
+PC-Talker XP 3.06
+PC-Talker XP 3.06 + NetReader 1.18
+FocusTalk V3
+NVDA 2010.1j
+NVDA 2011.1
+Load Completed.
+Saved: D:\web\work\stud\WAIC\as_html_generator\result\xml\7.1.1.1.xml
+ID:G196-1, UA:Internet Explorer 6.0の詳細テストデータを検索します。
+テーブル:Firefox 3.5 - A (UA:Firefox 3.5)を検索。
+テーブル:Firefox 3.5 - AA (UA:Firefox 3.5)を検索。
+テーブル:Firefox 4.0 - A (UA:Firefox 4.0)を検索。
+テーブル:Firefox 4.0 - AA (UA:Firefox 4.0)を検索。
+テーブル:Firefox 9.0 - A (UA:Firefox 9.0)を検索。
+テーブル:Firefox 9.0 - AA (UA:Firefox 9.0)を検索。
+テーブル:FocusTalk V3 - A (UA:FocusTalk V3)を検索。
+テーブル:FocusTalk V3 - AA (UA:FocusTalk V3)を検索。
+テーブル:ホームページ・リーダー 3.04 - A (UA:ホームページ・リーダー 3.04)を検索。
+テーブル:ホームページ・リーダー 3.04 - AA (UA:ホームページ・リーダー 3.04)を検索。
+テーブル:Internet Explorer 6.0 - A (UA:Internet Explorer 6.0)を検索。
+ID:G196-1, UA:Internet Explorer 7.0の詳細テストデータを検索します。
+テーブル:Firefox 3.5 - A (UA:Firefox 3.5)を検索。
+テーブル:Firefox 3.5 - AA (UA:Firefox 3.5)を検索。
+テーブル:Firefox 4.0 - A (UA:Firefox 4.0)を検索。
+テーブル:Firefox 4.0 - AA (UA:Firefox 4.0)を検索。
+テーブル:Firefox 9.0 - A (UA:Firefox 9.0)を検索。
+テーブル:Firefox 9.0 - AA (UA:Firefox 9.0)を検索。
+テーブル:FocusTalk V3 - A (UA:FocusTalk V3)を検索。
+テーブル:FocusTalk V3 - AA (UA:FocusTalk V3)を検索。
+テーブル:ホームページ・リーダー 3.04 - A (UA:ホームページ・リーダー 3.04)を検索。
+テーブル:ホームページ・リーダー 3.04 - AA (UA:ホームページ・リーダー 3.04)を検索。
+テーブル:Internet Explorer 6.0 - A (UA:Internet Explorer 6.0)を検索。
+テーブル:Internet Explorer 6.0 - AA (UA:Internet Explorer 6.0)を検索。
+テーブル:Internet Explorer 7.0 - A (UA:Internet Explorer 7.0)を検索。
+ID:G196-1, UA:Internet Explorer 8.0の詳細テストデータを検索します。
+テーブル:Firefox 3.5 - A (UA:Firefox 3.5)を検索。
+テーブル:Firefox 3.5 - AA (UA:Firefox 3.5)を検索。
+テーブル:Firefox 4.0 - A (UA:Firefox 4.0)を検索。
+テーブル:Firefox 4.0 - AA (UA:Firefox 4.0)を検索。
+テーブル:Firefox 9.0 - A (UA:Firefox 9.0)を検索。
+テーブル:Firefox 9.0 - AA (UA:Firefox 9.0)を検索。
+テーブル:FocusTalk V3 - A (UA:FocusTalk V3)を検索。
+テーブル:FocusTalk V3 - AA (UA:FocusTalk V3)を検索。
+テーブル:ホームページ・リーダー 3.04 - A (UA:ホームページ・リーダー 3.04)を検索。
+テーブル:ホームページ・リーダー 3.04 - AA (UA:ホームページ・リーダー 3.04)を検索。
+テーブル:Internet Explorer 6.0 - A (UA:Internet Explorer 6.0)を検索。
+テーブル:Internet Explorer 6.0 - AA (UA:Internet Explorer 6.0)を検索。
+テーブル:Internet Explorer 7.0 - A (UA:Internet Explorer 7.0)を検索。
+テーブル:Internet Explorer 7.0 - AA (UA:Internet Explorer 7.0)を検索。
+テーブル:Internet Explorer 8.0 - A (UA:Internet Explorer 8.0)を検索。
+ID:G196-1, UA:Internet Explorer 9の詳細テストデータを検索します。
+テーブル:Firefox 3.5 - A (UA:Firefox 3.5)を検索。
+テーブル:Firefox 3.5 - AA (UA:Firefox 3.5)を検索。
+テーブル:Firefox 4.0 - A (UA:Firefox 4.0)を検索。
+テーブル:Firefox 4.0 - AA (UA:Firefox 4.0)を検索。
+テーブル:Firefox 9.0 - A (UA:Firefox 9.0)を検索。
+テーブル:Firefox 9.0 - AA (UA:Firefox 9.0)を検索。
+テーブル:FocusTalk V3 - A (UA:FocusTalk V3)を検索。
+テーブル:FocusTalk V3 - AA (UA:FocusTalk V3)を検索。
+テーブル:ホームページ・リーダー 3.04 - A (UA:ホームページ・リーダー 3.04)を検索。
+テーブル:ホームページ・リーダー 3.04 - AA (UA:ホームページ・リーダー 3.04)を検索。
+テーブル:Internet Explorer 6.0 - A (UA:Internet Explorer 6.0)を検索。
+テーブル:Internet Explorer 6.0 - AA (UA:Internet Explorer 6.0)を検索。
+テーブル:Internet Explorer 7.0 - A (UA:Internet Explorer 7.0)を検索。
+テーブル:Internet Explorer 7.0 - AA (UA:Internet Explorer 7.0)を検索。
+テーブル:Internet Explorer 8.0 - A (UA:Internet Explorer 8.0)を検索。
+テーブル:Internet Explorer 8.0 - AA (UA:Internet Explorer 8.0)を検索。
+テーブル:Internet Explorer 9 - A (UA:Internet Explorer 9)を検索。
+ID:G196-1, UA:Firefox 3.5の詳細テストデータを検索します。
+テーブル:Firefox 3.5 - A (UA:Firefox 3.5)を検索。
+ID:G196-1, UA:Firefox 4.0の詳細テストデータを検索します。
+テーブル:Firefox 3.5 - A (UA:Firefox 3.5)を検索。
+テーブル:Firefox 3.5 - AA (UA:Firefox 3.5)を検索。
+テーブル:Firefox 4.0 - A (UA:Firefox 4.0)を検索。
+ID:G196-1, UA:Firefox 9.0の詳細テストデータを検索します。
+テーブル:Firefox 3.5 - A (UA:Firefox 3.5)を検索。
+テーブル:Firefox 3.5 - AA (UA:Firefox 3.5)を検索。
+テーブル:Firefox 4.0 - A (UA:Firefox 4.0)を検索。
+テーブル:Firefox 4.0 - AA (UA:Firefox 4.0)を検索。
+テーブル:Firefox 9.0 - A (UA:Firefox 9.0)を検索。
+ID:G196-1, UA:Safari 3.2の詳細テストデータを検索します。
+テーブル:Firefox 3.5 - A (UA:Firefox 3.5)を検索。
+テーブル:Firefox 3.5 - AA (UA:Firefox 3.5)を検索。
+テーブル:Firefox 4.0 - A (UA:Firefox 4.0)を検索。
+テーブル:Firefox 4.0 - AA (UA:Firefox 4.0)を検索。
+テーブル:Firefox 9.0 - A (UA:Firefox 9.0)を検索。
+テーブル:Firefox 9.0 - AA (UA:Firefox 9.0)を検索。
+テーブル:FocusTalk V3 - A (UA:FocusTalk V3)を検索。
+テーブル:FocusTalk V3 - AA (UA:FocusTalk V3)を検索。
+テーブル:ホームページ・リーダー 3.04 - A (UA:ホームページ・リーダー 3.04)を検索。
+テーブル:ホームページ・リーダー 3.04 - AA (UA:ホームページ・リーダー 3.04)を検索。
+テーブル:Internet Explorer 6.0 - A (UA:Internet Explorer 6.0)を検索。
+テーブル:Internet Explorer 6.0 - AA (UA:Internet Explorer 6.0)を検索。
+テーブル:Internet Explorer 7.0 - A (UA:Internet Explorer 7.0)を検索。
+テーブル:Internet Explorer 7.0 - AA (UA:Internet Explorer 7.0)を検索。
+テーブル:Internet Explorer 8.0 - A (UA:Internet Explorer 8.0)を検索。
+テーブル:Internet Explorer 8.0 - AA (UA:Internet Explorer 8.0)を検索。
+テーブル:Internet Explorer 9 - A (UA:Internet Explorer 9)を検索。
+テーブル:Internet Explorer 9 - AA (UA:Internet Explorer 9)を検索。
+テーブル:JAWS for Windows 9.0 - A (UA:JAWS for Windows 9.0)を検索。
+テーブル:JAWS for Windows 9.0 - AA (UA:JAWS for Windows 9.0)を検索。
+テーブル:PC-Talker XP 3.06 + NetReader 1.18 - A (UA:PC-Talker XP 3.06 + NetReader 1.18)を検索。
+テーブル:PC-Talker XP 3.06 + NetReader 1.18 - AA (UA:PC-Talker XP 3.06 + NetReader 1.18)を検索。
+テーブル:NVDA 2010.1j - A (UA:NVDA 2010.1j)を検索。
+テーブル:NVDA 2010.1j - AA (UA:NVDA 2010.1j)を検索。
+テーブル:NVDA 2011.1 - A (UA:NVDA 2011.1)を検索。
+テーブル:NVDA 2011.1 - AA (UA:NVDA 2011.1)を検索。
+テーブル:PC-Talker XP 3.06 - A (UA:PC-Talker XP 3.06)を検索。
+テーブル:PC-Talker XP 3.06 - AA (UA:PC-Talker XP 3.06)を検索。
+テーブル:Safari 3.2 - A (UA:Safari 3.2)を検索。
+ID:G196-1, UA:Safari 5.0.3の詳細テストデータを検索します。
+テーブル:Firefox 3.5 - A (UA:Firefox 3.5)を検索。
+テーブル:Firefox 3.5 - AA (UA:Firefox 3.5)を検索。
+テーブル:Firefox 4.0 - A (UA:Firefox 4.0)を検索。
+テーブル:Firefox 4.0 - AA (UA:Firefox 4.0)を検索。
+テーブル:Firefox 9.0 - A (UA:Firefox 9.0)を検索。
+テーブル:Firefox 9.0 - AA (UA:Firefox 9.0)を検索。
+テーブル:FocusTalk V3 - A (UA:FocusTalk V3)を検索。
+テーブル:FocusTalk V3 - AA (UA:FocusTalk V3)を検索。
+テーブル:ホームページ・リーダー 3.04 - A (UA:ホームページ・リーダー 3.04)を検索。
+テーブル:ホームページ・リーダー 3.04 - AA (UA:ホームページ・リーダー 3.04)を検索。
+テーブル:Internet Explorer 6.0 - A (UA:Internet Explorer 6.0)を検索。
+テーブル:Internet Explorer 6.0 - AA (UA:Internet Explorer 6.0)を検索。
+テーブル:Internet Explorer 7.0 - A (UA:Internet Explorer 7.0)を検索。
+テーブル:Internet Explorer 7.0 - AA (UA:Internet Explorer 7.0)を検索。
+テーブル:Internet Explorer 8.0 - A (UA:Internet Explorer 8.0)を検索。
+テーブル:Internet Explorer 8.0 - AA (UA:Internet Explorer 8.0)を検索。
+テーブル:Internet Explorer 9 - A (UA:Internet Explorer 9)を検索。
+テーブル:Internet Explorer 9 - AA (UA:Internet Explorer 9)を検索。
+テーブル:JAWS for Windows 9.0 - A (UA:JAWS for Windows 9.0)を検索。
+テーブル:JAWS for Windows 9.0 - AA (UA:JAWS for Windows 9.0)を検索。
+テーブル:PC-Talker XP 3.06 + NetReader 1.18 - A (UA:PC-Talker XP 3.06 + NetReader 1.18)を検索。
+テーブル:PC-Talker XP 3.06 + NetReader 1.18 - AA (UA:PC-Talker XP 3.06 + NetReader 1.18)を検索。
+テーブル:NVDA 2010.1j - A (UA:NVDA 2010.1j)を検索。
+テーブル:NVDA 2010.1j - AA (UA:NVDA 2010.1j)を検索。
+テーブル:NVDA 2011.1 - A (UA:NVDA 2011.1)を検索。
+テーブル:NVDA 2011.1 - AA (UA:NVDA 2011.1)を検索。
+テーブル:PC-Talker XP 3.06 - A (UA:PC-Talker XP 3.06)を検索。
+テーブル:PC-Talker XP 3.06 - AA (UA:PC-Talker XP 3.06)を検索。
+テーブル:Safari 3.2 - A (UA:Safari 3.2)を検索。
+テーブル:Safari 3.2 - AA (UA:Safari 3.2)を検索。
+テーブル:Safari 5.0.3 - A (UA:Safari 5.0.3)を検索。
+ID:G196-1, UA:JAWS for Windows 9.0の詳細テストデータを検索します。
+テーブル:Firefox 3.5 - A (UA:Firefox 3.5)を検索。
+テーブル:Firefox 3.5 - AA (UA:Firefox 3.5)を検索。
+テーブル:Firefox 4.0 - A (UA:Firefox 4.0)を検索。
+テーブル:Firefox 4.0 - AA (UA:Firefox 4.0)を検索。
+テーブル:Firefox 9.0 - A (UA:Firefox 9.0)を検索。
+テーブル:Firefox 9.0 - AA (UA:Firefox 9.0)を検索。
+テーブル:FocusTalk V3 - A (UA:FocusTalk V3)を検索。
+テーブル:FocusTalk V3 - AA (UA:FocusTalk V3)を検索。
+テーブル:ホームページ・リーダー 3.04 - A (UA:ホームページ・リーダー 3.04)を検索。
+テーブル:ホームページ・リーダー 3.04 - AA (UA:ホームページ・リーダー 3.04)を検索。
+テーブル:Internet Explorer 6.0 - A (UA:Internet Explorer 6.0)を検索。
+テーブル:Internet Explorer 6.0 - AA (UA:Internet Explorer 6.0)を検索。
+テーブル:Internet Explorer 7.0 - A (UA:Internet Explorer 7.0)を検索。
+テーブル:Internet Explorer 7.0 - AA (UA:Internet Explorer 7.0)を検索。
+テーブル:Internet Explorer 8.0 - A (UA:Internet Explorer 8.0)を検索。
+テーブル:Internet Explorer 8.0 - AA (UA:Internet Explorer 8.0)を検索。
+テーブル:Internet Explorer 9 - A (UA:Internet Explorer 9)を検索。
+テーブル:Internet Explorer 9 - AA (UA:Internet Explorer 9)を検索。
+テーブル:JAWS for Windows 9.0 - A (UA:JAWS for Windows 9.0)を検索。
+ID:G196-1, UA:ホームページ・リーダー 3.04の詳細テストデータを検索します。
+テーブル:Firefox 3.5 - A (UA:Firefox 3.5)を検索。
+テーブル:Firefox 3.5 - AA (UA:Firefox 3.5)を検索。
+テーブル:Firefox 4.0 - A (UA:Firefox 4.0)を検索。
+テーブル:Firefox 4.0 - AA (UA:Firefox 4.0)を検索。
+テーブル:Firefox 9.0 - A (UA:Firefox 9.0)を検索。
+テーブル:Firefox 9.0 - AA (UA:Firefox 9.0)を検索。
+テーブル:FocusTalk V3 - A (UA:FocusTalk V3)を検索。
+テーブル:FocusTalk V3 - AA (UA:FocusTalk V3)を検索。
+テーブル:ホームページ・リーダー 3.04 - A (UA:ホームページ・リーダー 3.04)を検索。
+ID:G196-1, UA:PC-Talker XP 3.06の詳細テストデータを検索します。
+テーブル:Firefox 3.5 - A (UA:Firefox 3.5)を検索。
+テーブル:Firefox 3.5 - AA (UA:Firefox 3.5)を検索。
+テーブル:Firefox 4.0 - A (UA:Firefox 4.0)を検索。
+テーブル:Firefox 4.0 - AA (UA:Firefox 4.0)を検索。
+テーブル:Firefox 9.0 - A (UA:Firefox 9.0)を検索。
+テーブル:Firefox 9.0 - AA (UA:Firefox 9.0)を検索。
+テーブル:FocusTalk V3 - A (UA:FocusTalk V3)を検索。
+テーブル:FocusTalk V3 - AA (UA:FocusTalk V3)を検索。
+テーブル:ホームページ・リーダー 3.04 - A (UA:ホームページ・リーダー 3.04)を検索。
+テーブル:ホームページ・リーダー 3.04 - AA (UA:ホームページ・リーダー 3.04)を検索。
+テーブル:Internet Explorer 6.0 - A (UA:Internet Explorer 6.0)を検索。
+テーブル:Internet Explorer 6.0 - AA (UA:Internet Explorer 6.0)を検索。
+テーブル:Internet Explorer 7.0 - A (UA:Internet Explorer 7.0)を検索。
+テーブル:Internet Explorer 7.0 - AA (UA:Internet Explorer 7.0)を検索。
+テーブル:Internet Explorer 8.0 - A (UA:Internet Explorer 8.0)を検索。
+テーブル:Internet Explorer 8.0 - AA (UA:Internet Explorer 8.0)を検索。
+テーブル:Internet Explorer 9 - A (UA:Internet Explorer 9)を検索。
+テーブル:Internet Explorer 9 - AA (UA:Internet Explorer 9)を検索。
+テーブル:JAWS for Windows 9.0 - A (UA:JAWS for Windows 9.0)を検索。
+テーブル:JAWS for Windows 9.0 - AA (UA:JAWS for Windows 9.0)を検索。
+テーブル:PC-Talker XP 3.06 + NetReader 1.18 - A (UA:PC-Talker XP 3.06 + NetReader 1.18)を検索。
+テーブル:PC-Talker XP 3.06 + NetReader 1.18 - AA (UA:PC-Talker XP 3.06 + NetReader 1.18)を検索。
+テーブル:NVDA 2010.1j - A (UA:NVDA 2010.1j)を検索。
+テーブル:NVDA 2010.1j - AA (UA:NVDA 2010.1j)を検索。
+テーブル:NVDA 2011.1 - A (UA:NVDA 2011.1)を検索。
+テーブル:NVDA 2011.1 - AA (UA:NVDA 2011.1)を検索。
+テーブル:PC-Talker XP 3.06 - A (UA:PC-Talker XP 3.06)を検索。
+ID:G196-1, UA:PC-Talker XP 3.06 + NetReader 1.18の詳細テストデータを検索します。
+テーブル:Firefox 3.5 - A (UA:Firefox 3.5)を検索。
+テーブル:Firefox 3.5 - AA (UA:Firefox 3.5)を検索。
+テーブル:Firefox 4.0 - A (UA:Firefox 4.0)を検索。
+テーブル:Firefox 4.0 - AA (UA:Firefox 4.0)を検索。
+テーブル:Firefox 9.0 - A (UA:Firefox 9.0)を検索。
+テーブル:Firefox 9.0 - AA (UA:Firefox 9.0)を検索。
+テーブル:FocusTalk V3 - A (UA:FocusTalk V3)を検索。
+テーブル:FocusTalk V3 - AA (UA:FocusTalk V3)を検索。
+テーブル:ホームページ・リーダー 3.04 - A (UA:ホームページ・リーダー 3.04)を検索。
+テーブル:ホームページ・リーダー 3.04 - AA (UA:ホームページ・リーダー 3.04)を検索。
+テーブル:Internet Explorer 6.0 - A (UA:Internet Explorer 6.0)を検索。
+テーブル:Internet Explorer 6.0 - AA (UA:Internet Explorer 6.0)を検索。
+テーブル:Internet Explorer 7.0 - A (UA:Internet Explorer 7.0)を検索。
+テーブル:Internet Explorer 7.0 - AA (UA:Internet Explorer 7.0)を検索。
+テーブル:Internet Explorer 8.0 - A (UA:Internet Explorer 8.0)を検索。
+テーブル:Internet Explorer 8.0 - AA (UA:Internet Explorer 8.0)を検索。
+テーブル:Internet Explorer 9 - A (UA:Internet Explorer 9)を検索。
+テーブル:Internet Explorer 9 - AA (UA:Internet Explorer 9)を検索。
+テーブル:JAWS for Windows 9.0 - A (UA:JAWS for Windows 9.0)を検索。
+テーブル:JAWS for Windows 9.0 - AA (UA:JAWS for Windows 9.0)を検索。
+テーブル:PC-Talker XP 3.06 + NetReader 1.18 - A (UA:PC-Talker XP 3.06 + NetReader 1.18)を検索。
+ID:G196-1, UA:FocusTalk V3の詳細テストデータを検索します。
+テーブル:Firefox 3.5 - A (UA:Firefox 3.5)を検索。
+テーブル:Firefox 3.5 - AA (UA:Firefox 3.5)を検索。
+テーブル:Firefox 4.0 - A (UA:Firefox 4.0)を検索。
+テーブル:Firefox 4.0 - AA (UA:Firefox 4.0)を検索。
+テーブル:Firefox 9.0 - A (UA:Firefox 9.0)を検索。
+テーブル:Firefox 9.0 - AA (UA:Firefox 9.0)を検索。
+テーブル:FocusTalk V3 - A (UA:FocusTalk V3)を検索。
+ID:G196-1, UA:NVDA 2010.1jの詳細テストデータを検索します。
+テーブル:Firefox 3.5 - A (UA:Firefox 3.5)を検索。
+テーブル:Firefox 3.5 - AA (UA:Firefox 3.5)を検索。
+テーブル:Firefox 4.0 - A (UA:Firefox 4.0)を検索。
+テーブル:Firefox 4.0 - AA (UA:Firefox 4.0)を検索。
+テーブル:Firefox 9.0 - A (UA:Firefox 9.0)を検索。
+テーブル:Firefox 9.0 - AA (UA:Firefox 9.0)を検索。
+テーブル:FocusTalk V3 - A (UA:FocusTalk V3)を検索。
+テーブル:FocusTalk V3 - AA (UA:FocusTalk V3)を検索。
+テーブル:ホームページ・リーダー 3.04 - A (UA:ホームページ・リーダー 3.04)を検索。
+テーブル:ホームページ・リーダー 3.04 - AA (UA:ホームページ・リーダー 3.04)を検索。
+テーブル:Internet Explorer 6.0 - A (UA:Internet Explorer 6.0)を検索。
+テーブル:Internet Explorer 6.0 - AA (UA:Internet Explorer 6.0)を検索。
+テーブル:Internet Explorer 7.0 - A (UA:Internet Explorer 7.0)を検索。
+テーブル:Internet Explorer 7.0 - AA (UA:Internet Explorer 7.0)を検索。
+テーブル:Internet Explorer 8.0 - A (UA:Internet Explorer 8.0)を検索。
+テーブル:Internet Explorer 8.0 - AA (UA:Internet Explorer 8.0)を検索。
+テーブル:Internet Explorer 9 - A (UA:Internet Explorer 9)を検索。
+テーブル:Internet Explorer 9 - AA (UA:Internet Explorer 9)を検索。
+テーブル:JAWS for Windows 9.0 - A (UA:JAWS for Windows 9.0)を検索。
+テーブル:JAWS for Windows 9.0 - AA (UA:JAWS for Windows 9.0)を検索。
+テーブル:PC-Talker XP 3.06 + NetReader 1.18 - A (UA:PC-Talker XP 3.06 + NetReader 1.18)を検索。
+テーブル:PC-Talker XP 3.06 + NetReader 1.18 - AA (UA:PC-Talker XP 3.06 + NetReader 1.18)を検索。
+テーブル:NVDA 2010.1j - A (UA:NVDA 2010.1j)を検索。
+ID:G196-1, UA:NVDA 2011.1の詳細テストデータを検索します。
+テーブル:Firefox 3.5 - A (UA:Firefox 3.5)を検索。
+テーブル:Firefox 3.5 - AA (UA:Firefox 3.5)を検索。
+テーブル:Firefox 4.0 - A (UA:Firefox 4.0)を検索。
+テーブル:Firefox 4.0 - AA (UA:Firefox 4.0)を検索。
+テーブル:Firefox 9.0 - A (UA:Firefox 9.0)を検索。
+テーブル:Firefox 9.0 - AA (UA:Firefox 9.0)を検索。
+テーブル:FocusTalk V3 - A (UA:FocusTalk V3)を検索。
+テーブル:FocusTalk V3 - AA (UA:FocusTalk V3)を検索。
+テーブル:ホームページ・リーダー 3.04 - A (UA:ホームページ・リーダー 3.04)を検索。
+テーブル:ホームページ・リーダー 3.04 - AA (UA:ホームページ・リーダー 3.04)を検索。
+テーブル:Internet Explorer 6.0 - A (UA:Internet Explorer 6.0)を検索。
+テーブル:Internet Explorer 6.0 - AA (UA:Internet Explorer 6.0)を検索。
+テーブル:Internet Explorer 7.0 - A (UA:Internet Explorer 7.0)を検索。
+テーブル:Internet Explorer 7.0 - AA (UA:Internet Explorer 7.0)を検索。
+テーブル:Internet Explorer 8.0 - A (UA:Internet Explorer 8.0)を検索。
+テーブル:Internet Explorer 8.0 - AA (UA:Internet Explorer 8.0)を検索。
+テーブル:Internet Explorer 9 - A (UA:Internet Explorer 9)を検索。
+テーブル:Internet Explorer 9 - AA (UA:Internet Explorer 9)を検索。
+テーブル:JAWS for Windows 9.0 - A (UA:JAWS for Windows 9.0)を検索。
+テーブル:JAWS for Windows 9.0 - AA (UA:JAWS for Windows 9.0)を検索。
+テーブル:PC-Talker XP 3.06 + NetReader 1.18 - A (UA:PC-Talker XP 3.06 + NetReader 1.18)を検索。
+テーブル:PC-Talker XP 3.06 + NetReader 1.18 - AA (UA:PC-Talker XP 3.06 + NetReader 1.18)を検索。
+テーブル:NVDA 2010.1j - A (UA:NVDA 2010.1j)を検索。
+テーブル:NVDA 2010.1j - AA (UA:NVDA 2010.1j)を検索。
+テーブル:NVDA 2011.1 - A (UA:NVDA 2011.1)を検索。
+Saved: D:\web\work\stud\WAIC\as_html_generator\result\xml\G196-1.xml

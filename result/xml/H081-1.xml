@@ -1,0 +1,136 @@
+<description>
+  <SuccessCriteria>
+    <number>7.2.4.4</number>
+    <name>文脈におけるリンクの目的に関する達成基準</name>
+    <level>A</level>
+  </SuccessCriteria>
+  <testType>HTMLandXHTML</testType>
+  <rownumber>15</rownumber>
+  <id>H081-1</id>
+  <実装方法タイトル>入れ子になったリスト項目にあるリンクテキストとその親のリスト項目とを組み合わせて、リンクの目的を特定する</実装方法タイトル>
+  <対象>入れ子のli要素内にあるa要素</対象>
+  <見解>達成不可能</見解>
+  <代替もしくは推奨する方法>
+    <body>等級AAAの「リンクテキストだけ」でリンクの目的が分かるようにするとよい。それができない場合には、等級Aの「プログラムが解釈可能なリンクの文脈」のうち、親のリスト項目以外の文脈を用いる。</body>
+  </代替もしくは推奨する方法>
+  <備考>親のリスト項目を読み上げるキー操作を提供しているスクリーンリーダーがない。今後の支援技術の機能向上に期待するが、現時点では利用者が親のリスト項目を文脈の一つとして利用することは困難である。</備考>
+  <testDetail>
+    <result useragent="Internet Explorer 6.0">
+      <rownumber>109</rownumber>
+      <id>H081-1</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Internet Explorer 7.0">
+      <rownumber>109</rownumber>
+      <id>H081-1</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Internet Explorer 8.0">
+      <rownumber>109</rownumber>
+      <id>H081-1</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Internet Explorer 9">
+      <rownumber>109</rownumber>
+      <id>H081-1</id>
+      <検証結果>‐</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Firefox 3.5">
+      <rownumber>109</rownumber>
+      <id>H081-1</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Firefox 4.0">
+      <rownumber>109</rownumber>
+      <id>H081-1</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Firefox 9.0">
+      <rownumber>109</rownumber>
+      <id>H081-1</id>
+      <検証結果>‐</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Safari 3.2">
+      <rownumber>109</rownumber>
+      <id>H081-1</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Safari 5.0.3">
+      <rownumber>109</rownumber>
+      <id>H081-1</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="JAWS for Windows 9.0">
+      <rownumber>109</rownumber>
+      <id>H081-1</id>
+      <検証結果>×</検証結果>
+      <操作手順>■読み上げ
+「なかてん、年次報告書　2010年版」
+1.○：&lt; + Shiftで親のリスト項目「なかてん、年次報告書　2010年版」を読み上げる
+2.×：読み上げたあとその状態でEnterを押下すると「なかてん」といってフォーカスがPDFからはずれてしまい、リンク先に遷移しないため、×。</操作手順>
+      <備考>2012年4月修正</備考>
+    </result>
+    <result useragent="ホームページ・リーダー 3.04">
+      <rownumber>109</rownumber>
+      <id>H081-1</id>
+      <検証結果>×</検証結果>
+      <操作手順>1.一つ目のリスト項目（年次報告書 2010年版）でネストされたリスト項目の二つ目にあるリンク「(PDF)」にフォーカスを移動させた状態で、何らかのキー操作により、その親のリスト項目「年次報告書 2010年版」を読み上げることができるかを確認
+2.読み上げることができた場合、そのままの状態でEnterキーを押すとリンク先（WAICのサイト）に遷移するか（フォーカスがリンクから移動していないことを確認する）</操作手順>
+      <備考>2012年4月修正
+■読み上げ
+「年次報告書 2010年版 　HTML、PDF、RTF 」
+1.×：「(PDF)」にフォーカスを移動させた状態で、読み上げることができないため、×。
+2.1番を読み上げることができないため、×。</備考>
+    </result>
+    <result useragent="PC-Talker XP 3.06">
+      <rownumber>109</rownumber>
+      <id>H081-1</id>
+      <検証結果>×</検証結果>
+      <操作手順>1.×：該当するキー操作がない
+2.×：1番が読み上げることができなかったため、×。</操作手順>
+      <備考>2012年4月修正</備考>
+    </result>
+    <result useragent="PC-Talker XP 3.06 + NetReader 1.18">
+      <rownumber>109</rownumber>
+      <id>H081-1</id>
+      <検証結果>×</検証結果>
+      <操作手順>■読み上げ
+「年次報告書 2010年版 改行、(HTML)改行、(PDF)改行、 （RTF)改行、年次報告書 2011年版 改行、(HTML)改行、 
+(PDF) 改行、(RTF) 」
+1.×：読み上げるための機能がないため、×。
+2.×：1番で読み上げることができなかったため、×</操作手順>
+      <備考>2012年4月修正</備考>
+    </result>
+    <result useragent="FocusTalk V3">
+      <rownumber>109</rownumber>
+      <id>H081-1</id>
+      <検証結果>×</検証結果>
+      <操作手順>対象のリンク内容は読み上げるが、その親のリスト項目を読み上げるすべがない。</操作手順>
+      <備考>2012年4月修正</備考>
+    </result>
+    <result useragent="NVDA 2010.1j">
+      <rownumber>109</rownumber>
+      <id>H081-1</id>
+      <検証結果>-</検証結果>
+      <備考>NVDA 2011.1 でのみ再検証実施</備考>
+    </result>
+    <result useragent="NVDA 2011.1">
+      <rownumber>109</rownumber>
+      <id>H081-1</id>
+      <検証結果>×</検証結果>
+      <操作手順>Tabキー（またはKキー）でフォーカスを[PDF]リンクへ移動させると、「PDF　リンク」と詠みあげる。
+1. 機能未実装のため懸賞不可
+2. 機能未実装のため懸賞不可</操作手順>
+      <備考>2012年4月修正</備考>
+    </result>
+  </testDetail>
+</description>

@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="ja" lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="ウェブ,アクセシビリティ,基盤,委員会,WAIC,web,accessibility,infrastructure,committee,アクセシビリティ,サポーテッド,AS,情報" />
+    <meta name="description" content="アクセシビリティ・サポーテッド（AS）情報に関する解説文書" />
+    <link rel="stylesheet" type="text/css" href="http://waic.jp/cmn/css/docs.css" />
+    <title>アクセシビリティ・サポーテッド（AS）情報：SCR020-2</title>
+    <style type="text/css">table{empty-cells: show;}</style>
+  </head>
+  <body>
+    <div id="logo">
+      <a href="http://waic.jp/">
+        <img src="http://waic.jp/cmn/img/header/logo.png" alt="ウェブアクセシビリティ基盤委員会 / WAIC: Web Accessibility Infrastructure Committee" width="334" height="77" />
+      </a>
+    </div>
+    <h1>アクセシビリティ・サポーテッド（AS）情報：SCR020-2</h1>
+    <ul>
+      <li>公開日：2012年5月15日</li>
+      <li>作成者：ウェブアクセシビリティ基盤委員会（WAIC）実装ワーキンググループ（WG2）</li>
+    </ul>
+    <h2>SCR020-2: キーボードとその他のデバイス特有の機能を両方とも用いる</h2>
+    <h3>関連する達成基準の実装方法一覧</h3>
+    <p>
+      <a href="7.2.1.1.html">7.2.1.1キーボード操作に関する達成基準 (等級A)</a>
+    </p>
+    <h3>テストファイル</h3>
+    <p>
+      <a href="&#xA;http://waic.jp/docs/jis2010-as-tests/201008/A/Client-sideScripting/SCR020-2.html">SCR020-2のテストファイル</a>
+    </p>
+    <div class="ng">
+      <h3>見解</h3>
+      <p>達成不可能</p>
+    </div>
+    <h3>対象</h3>
+    <p>イベントハンドラ（mouseup + keyup）</p>
+    <h3>備考</h3>
+    <p>スクリーンリーダーによるサポートが全般的に不十分である。</p>
+    <h3>テスト結果の詳細</h3>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">ユーザエージェント</th>
+          <th scope="col">検証結果</th>
+          <th scope="col">操作手順</th>
+          <th scope="col">備考</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="ok">
+          <td>Internet Explorer 6.0</td>
+          <td>○</td>
+          <td>1.マウス操作：リンク「ダイアログを表示」をクリックすると（押しているときではなく、押し終えてマウスから指を離したら）、ダイアログが表示されることを確認<br />2.キーボード操作：リンク「ダイアログを表示」にTabキーでフォーカスを移動させるとダイアログ「JavaScriptは有効です」が表示されることを確認</td>
+          <td>2012年4月修正</td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 7.0</td>
+          <td>○</td>
+          <td>1.マウス操作：リンク「ダイアログを表示」をクリックすると（押しているときではなく、押し終えてマウスから指を離したら）、ダイアログが表示されるかを確認<br />2.キーボード操作：リンク「ダイアログを表示」にフォーカスを移動させてEnterキーを押し下げてキーから指を離すと（キーを押し下げたときではなく、押し下げたキーが元に戻るときに）、ダイアログが表示されるかを確認</td>
+          <td>2012年4月修正</td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 8.0</td>
+          <td>○</td>
+          <td>1.マウス操作：リンク「ダイアログを表示」をクリックすると（押しているときではなく、押し終えてマウスから指を離したら）、ダイアログが表示されるかを確認<br />2.キーボード操作：リンク「ダイアログを表示」にフォーカスを移動させてEnterキーを押し下げてキーから指を離すと（キーを押し下げたときではなく、押し下げたキーが元に戻るときに）、ダイアログが表示されるかを確認</td>
+          <td>2012年4月修正</td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 9</td>
+          <td>○</td>
+          <td>いずれもJavaScript有効時<br />1.マウス操作：.マウスカーソルをリンク「ダイアログを表示」上に移動させる。マウスをクリックしリンク「ダイアログを表示」を押下。マウスクリック状態が解除された時にダイアログが表示されることを確認。<br />2.キーボード操作：Tabキーを使いフォーカスをリンク「ダイアログを表示」上に移動させる。Enterキーでリンク「ダイアログを表示」を押下。Enterキー押下状態が解除された時にダイアログが表示されることを確認。</td>
+          <td>2012年4月修正<br />JavaScript無効時もマウス及びキーボード操作のどちらでもダイアログが表示されないことを確認。</td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 3.5</td>
+          <td>○</td>
+          <td>1.マウス操作：リンク「ダイアログを表示」をクリックすると（押しているときではなく、押し終えてマウスから指を離したら）、ダイアログが表示されることを確認<br />2.キーボード操作：リンク「ダイアログを表示」にフォーカスを移動させてEnterキーを押し下げてキーから指を離すと（キーを押し下げたときではなく、押し下げたキーが元に戻るときに）、ダイアログが表示されることを確認</td>
+          <td>2012年4月修正</td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 4.0</td>
+          <td>○</td>
+          <td>いずれもJavaScript有効時<br />1.マウス操作：マウスカーソルをリンク「ダイアログを表示」上に移動させる。マウスをクリックしリンク「ダイアログを表示」を押下。マウスクリック状態が解除された時にダイアログが表示されることを確認。<br />2.キーボード操作：Tabキーを使いフォーカスをリンク「ダイアログを表示」上に移動させる。Enterキーでリンク「ダイアログを表示」を押下。Enterキー押下状態が解除された時にダイアログが表示されることを確認。</td>
+          <td>2012年4月修正<br />JavaScript無効時もマウス及びキーボード操作のどちらでもダイアログが表示されないことを確認。</td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 9.0</td>
+          <td>-</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Safari 3.2</td>
+          <td>-</td>
+          <td></td>
+          <td>Safari　5.1でのみ再検証実施</td>
+        </tr>
+        <tr class="warn">
+          <td>Safari 5.0.3</td>
+          <td>△</td>
+          <td>Tabキーでフォーカスした時点でダイアログが開く。</td>
+          <td>2012年4月修正<br />Mac OSのシステム環境設定のキーボード＞キーボードショートカットにある「フルキーボードアクセス」は「すべてのコントロール」を選択<br />Safariの環境設定＞詳細にある「Tabキーを押したときにWebページ上の各項目を強調表示」をON</td>
+        </tr>
+        <tr class="ng">
+          <td>JAWS for Windows 9.0</td>
+          <td>×</td>
+          <td>■読み上げ<br />「マイクロソフトインターネットエクスプローラーダイアログ、ＪａｖaScriptは有効です。OKボタン、ボタンを押す時はスペースキーをおします。」<br />「ダイアログを表示」のところにフォーカスが当たるとEnterキーなどを押す前にダイアログが表示されてしまうため、×。</td>
+          <td>2012年4月修正</td>
+        </tr>
+        <tr class="ng">
+          <td>ホームページ・リーダー 3.04</td>
+          <td>×</td>
+          <td>リンク「ダイアログを表示」にフォーカスを移動させてEnterキーを押し下げてキーから指を離すと（キーを押し下げたときではなく、押し下げたキーが元に戻るときに）、ダイアログが表示されてダイアログの内容を読み上げるかを確認</td>
+          <td>2012年4月追加<br />■読み上げ<br />「ダイアログを表示、イベント。」<br />1.×：キーを押すとすぐにダイアログが表示されてしまうため、×。</td>
+        </tr>
+        <tr class="warn">
+          <td>PC-Talker XP 3.06</td>
+          <td>△</td>
+          <td>1.×：キーボード操作<br />フォーカスが当たるとすぐにダイアログが表示されてしまう。その後Ｅｎｔerおしてキーをはなすとダイアログが表示される。<br />求めている動きはできるが、その手前で違う動きをしたために×とした<br />■読み上げ<br />「ダイアログを表示」を読み上げる前にダイアログが出てきて「マイクロソフトインターネットエクスプローラーの警告メッセージ、ＪａｖaScriptは有効です。ＥｎｔｅｒはＯＫ」と読み上げる。</td>
+          <td>2012年4月修正</td>
+        </tr>
+        <tr class="ok">
+          <td>PC-Talker XP 3.06 + NetReader 1.18</td>
+          <td>○</td>
+          <td>■読み上げ<br />「ダイアログを表示、リンク　マイクロソフトインターネットエクスプローラーの警告メッセージ、ＪａｖaScriptは有効です。ＥｎｔｅｒはＯＫ」</td>
+          <td>2012年4月修正</td>
+        </tr>
+        <tr class="ok">
+          <td>FocusTalk V3</td>
+          <td>○</td>
+          <td>「キー操作モード」がON/OFF両方の時に、ダイアログは表示されるが、Enterキーではなく対象箇所にフォーカスが当たるためのキー操作(Tabキーなど)のキーアップに反応してダイアログが表示されている。</td>
+          <td>2012年4月修正<br />「Webページからのメッセージ JavaScriptは有効です。」と読み上げる。<br />本テストは、Enterキーに関わらずキーアップに関してのテストだと思われるため、判定を○にしている。</td>
+        </tr>
+        <tr class="ok">
+          <td>NVDA 2010.1j</td>
+          <td>-</td>
+          <td></td>
+          <td>NVDA 2011.1 でのみ再検証実施</td>
+        </tr>
+        <tr class="ng">
+          <td>NVDA 2011.1</td>
+          <td>×</td>
+          <td>Tabキー（またはKキー）でフォーカスを[ダイアログを表示]リンクへ移動させると、「ダイアログを表示　リンク」と詠みあげる。<br />そこでEnterキーを押し下げると、「ダイアログ　JavaScriptは有効です　OKボタン」と読み上げる。<br />Enterキーを押し下げた状態にすると、ダイアログが表示されたり閉じたりを繰り返しているように聞こえることから、ダイアログはEnterキーから指を離したときではなく、Enterキーを押した瞬間に表示されているものと考えられる。</td>
+          <td>2012年4月修正</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

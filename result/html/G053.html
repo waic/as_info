@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="ja" lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="ウェブ,アクセシビリティ,基盤,委員会,WAIC,web,accessibility,infrastructure,committee,アクセシビリティ,サポーテッド,AS,情報" />
+    <meta name="description" content="アクセシビリティ・サポーテッド（AS）情報に関する解説文書" />
+    <link rel="stylesheet" type="text/css" href="http://waic.jp/cmn/css/docs.css" />
+    <title>アクセシビリティ・サポーテッド（AS）情報：G053</title>
+    <style type="text/css">table{empty-cells: show;}</style>
+  </head>
+  <body>
+    <div id="logo">
+      <a href="http://waic.jp/">
+        <img src="http://waic.jp/cmn/img/header/logo.png" alt="ウェブアクセシビリティ基盤委員会 / WAIC: Web Accessibility Infrastructure Committee" width="334" height="77" />
+      </a>
+    </div>
+    <h1>アクセシビリティ・サポーテッド（AS）情報：G053</h1>
+    <ul>
+      <li>公開日：2012年5月15日</li>
+      <li>作成者：ウェブアクセシビリティ基盤委員会（WAIC）実装ワーキンググループ（WG2）</li>
+    </ul>
+    <h2>G053: リンクテキストとそれが含まれている文章中のテキストとを組み合わせて、リンクの目的を特定する</h2>
+    <h3>関連する達成基準の実装方法一覧</h3>
+    <p>
+      <a href="7.2.4.4.html">7.2.4.4文脈におけるリンクの目的に関する達成基準 (等級A)</a>
+    </p>
+    <h3>テストファイル</h3>
+    <p>
+      <a href="&#xA;http://waic.jp/docs/jis2010-as-tests/201008/A/General/G053.html">G053のテストファイル</a>
+    </p>
+    <div class="ok">
+      <h3>見解</h3>
+      <p>達成可能</p>
+    </div>
+    <h3>対象</h3>
+    <p>文中のリンク</p>
+    <h3>注意点</h3>
+    <p>WCAG 2.0解説書に「利用者があるリンクにやってきて、その位置にいたままで、リンクに関するより多くの情報を探し出すことができる必要がある。」とあるが、HPRやFocusTalkではフォーカスが移動してしまう。<br />しかし、行読みモード（矢印キー等）で前後に移動すれば文脈をたどることができるため、実用上の問題はほとんどないと考えることができる。</p>
+    <h3>代替もしくは推奨する方法</h3>
+    <p>できるかぎり、等級AAAの「リンクテキストだけ」でリンクの目的が分かるようにするとよい。それができない場合に等級Aの「プログラムが解釈可能なリンクの文脈」として、リンクが含まれる文を用いる。</p>
+    <h3>備考</h3>
+    <p>PC-Talker7では、Ctrl＋上または下矢印キーで仮想カーソルを前後に移動させてもフォーカスは移動しない。</p>
+    <h3>テスト結果の詳細</h3>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">ユーザエージェント</th>
+          <th scope="col">検証結果</th>
+          <th scope="col">操作手順</th>
+          <th scope="col">備考</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="ok">
+          <td>Internet Explorer 6.0</td>
+          <td>-</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 7.0</td>
+          <td>-</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 8.0</td>
+          <td>-</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 9</td>
+          <td>‐</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 3.5</td>
+          <td>-</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 4.0</td>
+          <td>-</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 9.0</td>
+          <td>‐</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Safari 3.2</td>
+          <td>-</td>
+          <td></td>
+          <td>Safari　5.1でのみ再検証実施</td>
+        </tr>
+        <tr class="ok">
+          <td>Safari 5.0.3</td>
+          <td>-</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>JAWS for Windows 9.0</td>
+          <td>○</td>
+          <td>■読み上げ<br />「ウェブアクセシビリティ基盤委員会の詳細は、リンクここをクリック。」<br />1.alt　+　5キー　で全文を読み上げた<br />2.読み上げたあと、Enterを押下すると、リンク先に遷移する。</td>
+          <td>2012年4月修正</td>
+        </tr>
+        <tr class="warn">
+          <td>ホームページ・リーダー 3.04</td>
+          <td>△</td>
+          <td>1.リンク「ここをクリック」にフォーカスを移動させた状態で、何らかのキー操作により、リンクが含まれている文「ウェブアクセシビリティ基盤委員会の詳細は、ここをクリック。」を読み上げることができるかを確認<br />2.読み上げることができた場合、そのままの状態でEnterキーを押すとリンク先に遷移するかを確認（（フォーカスがリンクから移動していないことを確認する）</td>
+          <td>2012年4月修正<br />■読み上げ<br />「ここをクリック」<br />1.○：Ctrl + ←で「ウェブアクセシビリティ基盤委員会の詳細は、こちら」と読み上げる<br />2.×：読みあげたあと、そのままの状態でEnterを押すとリンク先に遷移するが、フォーカスがリンクから移動してしまうため、×。</td>
+        </tr>
+        <tr class="ng">
+          <td>PC-Talker XP 3.06</td>
+          <td>×</td>
+          <td>■読み上げ<br />「ウェブアクセシビリティ基盤委員会の詳細は、」<br />1.×：「ここをクリック」にフォーカスを移動させた状態で、「Ctrl+↑」でフォーカスがあたっている前文を読むことは可能だが、フォーカスがあたっている全文を読み上げることができないので、×<br />2.×：リンクを含めた1文を読み上げることができないので、×</td>
+          <td>2012年4月修正</td>
+        </tr>
+        <tr class="warn">
+          <td>PC-Talker XP 3.06 + NetReader 1.18</td>
+          <td>△</td>
+          <td>■読み上げ（テキスト画面）<br />「ウェブアクセシビリティ基盤委員会の詳細は、ここをクリック、改行」（Alt + F9）<br />1.△：デフォルトをグラフィック画面にしているが、テキスト画面のみ操作して読み上げることが可能<br />2.○：テキスト画面での読み上げのところからリンク先に遷移することは可能</td>
+          <td>2012年4月修正</td>
+        </tr>
+        <tr class="ng">
+          <td>FocusTalk V3</td>
+          <td>×</td>
+          <td>リンク「ここをクリック」にフォーカスを移動させた状態で、↑キーを操作すると、「ウェブアクセシビリティ基盤委員会の詳細は」を読み上げるが、Enterキーを押下してもリンク先に遷移しない。</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>NVDA 2010.1j</td>
+          <td>-</td>
+          <td></td>
+          <td>NVDA 2011.1 でのみ再検証実施</td>
+        </tr>
+        <tr class="ok">
+          <td>NVDA 2011.1</td>
+          <td>○</td>
+          <td>Tabキー（またはKキー）でフォーカスを[ここをクリック]リンクへ移動させると、「ここをクリック　リンク」と詠みあげる。<br />1. NVDAキー（テンキー０等）＋上矢印キーを押すと、リンクを含む行、「ウェブアクセシビリティ基盤委員会の詳細は、ここをクリック。」を読み上げる<br />2. そのままの状態でEnterキーを押すと、ページが遷移する</td>
+          <td>2012年4月修正</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

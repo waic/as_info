@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="ja" lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="ウェブ,アクセシビリティ,基盤,委員会,WAIC,web,accessibility,infrastructure,committee,アクセシビリティ,サポーテッド,AS,情報" />
+    <meta name="description" content="アクセシビリティ・サポーテッド（AS）情報に関する解説文書" />
+    <link rel="stylesheet" type="text/css" href="http://waic.jp/cmn/css/docs.css" />
+    <title>アクセシビリティ・サポーテッド（AS）情報：H035</title>
+    <style type="text/css">table{empty-cells: show;}</style>
+  </head>
+  <body>
+    <div id="logo">
+      <a href="http://waic.jp/">
+        <img src="http://waic.jp/cmn/img/header/logo.png" alt="ウェブアクセシビリティ基盤委員会 / WAIC: Web Accessibility Infrastructure Committee" width="334" height="77" />
+      </a>
+    </div>
+    <h1>アクセシビリティ・サポーテッド（AS）情報：H035</h1>
+    <ul>
+      <li>公開日：2012年5月15日</li>
+      <li>作成者：ウェブアクセシビリティ基盤委員会（WAIC）実装ワーキンググループ（WG2）</li>
+    </ul>
+    <h2>H035: applet要素に代替テキストを提供する</h2>
+    <h3>関連する達成基準の実装方法一覧</h3>
+    <p>
+      <a href="7.1.1.1.html">7.1.1.1非テキストコンテンツに関する達成基準 (等級A)</a>
+    </p>
+    <h3>テストファイル</h3>
+    <p>
+      <a href="&#xA;http://waic.jp/docs/jis2010-as-tests/201008/A/HTMLandXHTML/H035.html">H035のテストファイル</a>
+    </p>
+    <div class="warn">
+      <h3>見解</h3>
+      <p>要注意</p>
+    </div>
+    <h3>対象</h3>
+    <p>applet要素のalt属性とボディ</p>
+    <h3>注意点</h3>
+    <p>近年ではapplet要素を使用するケースはかなり少ない。<br />アプレットを埋め込む際には、applet要素を用いる方法とobject要素を用いる方法とが考えられるが、想定される閲覧環境に応じて検証を行い、サポート状況を確認すること。</p>
+    <h3>備考</h3>
+    <p>参考：検証する際のブラウザの設定変更方法<br />オラクル：Web ブラウザで Java Runtime Environment (JRE) を使用可能にする(http://www.java.com/ja/download/help/enable_browser.xml)<br />マイクロソフト：Internet Explorer のアクティブ コンテンツを無効にする方法(http://support.microsoft.com/kb/154036/ja)<br />Firefox ヘルプ：Java アプレットを無効にするには(http://support.mozilla.com/ja/kb/Java%20%E3%82%A2%E3%83%97%E3%83%AC%E3%83%83%E3%83%88%E3%82%92%E7%84%A1%E5%8A%B9%E3%81%AB%E3%81%99%E3%82%8B%E3%81%AB%E3%81%AF?s=Java+%E7%84%A1%E5%8A%B9&amp;as=s)</p>
+    <h3>テスト結果の詳細</h3>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">ユーザエージェント</th>
+          <th scope="col">検証結果</th>
+          <th scope="col">操作手順</th>
+          <th scope="col">備考</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="ng">
+          <td>Internet Explorer 6.0</td>
+          <td>×</td>
+          <td>インターネットオプションのセキュリティでレベルのカスタマイズのところのJavaのアプレットスクリプトを無効にする、という設定で、実行。<br />alt属性とarea要素のどちらも表示されない。</td>
+          <td>リンク先のページにはファイルに「！」がついたものが表示されているのみだったので、×。</td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 7.0</td>
+          <td>○</td>
+          <td>プラグインを有効にするのチェックボックスを外してリンク先へ進んだところ、正しく「三目並べゲーム（applet要素のボディ）が表示された</td>
+          <td>※メニューバーのツールからJavaを無効にして設定した。</td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 8.0</td>
+          <td>○</td>
+          <td>プラグインを有効にするのチェックボックスを外してリンク先へ進んだところ、正しく「三目並べゲーム（applet要素のボディ）が表示された</td>
+          <td>※メニューバーのツールからJavaを無効にして設定した。</td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 9</td>
+          <td>○</td>
+          <td>以下のやり方でappletを非表示にする<br />ツール &gt; インターネットオプション &gt; セキュリティ &gt; レベルのカスタマイズ &gt; スクリプト &gt; アクティブスクリプトのラジオボタンを切り替える<br />アプレットを非表示にした際に、alt属性「三目並べゲーム(alt属性値)」又はapplet要素のボディに記述した代替テキスト「三目並べゲーム(applet要素のボディ)」が表示されるかを確認</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 3.5</td>
+          <td>○</td>
+          <td>Javaアプレットを以下の方法で無効にした。<br />ツールメニュー＞オプション＞コンテンツパネル<br />「Javaを有効にする」のチェックをオフにする<br />ナレッジベースで記述されていたやり方です。<br />http://support.mozilla.com/ja/kb/Java%20%E3%82%A2%E3%83%97%E3%83%AC%E3%83%83%E3%83%88%E3%82%92%E7%84%A1%E5%8A%B9%E3%81%AB%E3%81%99%E3%82%8B%E3%81%AB%E3%81%AF<br />「三目並べゲーム(applet要素のボディ)」と表示された。</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 4.0</td>
+          <td>○</td>
+          <td>Javaアプレットを以下の方法で無効にした<br />ツールメニュー＞オプション＞コンテンツパネル<br />「Javaを有効にする」のチェックをオフにする<br />1:「三目並べゲーム(applet要素のボディ)」と表示されることを確認</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 9.0</td>
+          <td>○</td>
+          <td>以下のやり方でappletを非表示（無効）にする<br />&gt; ツール &gt; アドオン &gt; プラグイン &gt; Java? Platform SE 6 を無効化。<br />アプレットを非表示（無効）にした際に、alt属性「三目並べゲーム(alt属性値)」又はapplet要素のボディに記述した代替テキスト「三目並べゲーム(applet要素のボディ)」が表示されるかを確認</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Safari 3.2</td>
+          <td>○</td>
+          <td>プラグインを有効にするのチェックボックスを外してリンク先へ進んだところ、正しく「三目並べゲーム（applet要素のボディ）が表示された</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Safari 5.0.3</td>
+          <td>○</td>
+          <td>プラグインを有効にするのチェックボックスを外してリンク先へ進んだところ、正しく「三目並べゲーム（applet要素のボディ）が表示された。</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>JAWS for Windows 9.0</td>
+          <td>○</td>
+          <td>■操作手順<br />仮想PCカーソルではフォーカスを当てることができない。<br />JAWSカーソルでappletの端を指定するも「ブランク」と読み上げるのみ。<br />■音声読み上げ<br />「サンメナラベゲーム　ページに０個のリンクがあります　サンメナラベゲーム」</td>
+          <td>appletを認識していない。</td>
+        </tr>
+        <tr class="ok">
+          <td>ホームページ・リーダー 3.04</td>
+          <td>○</td>
+          <td>■操作手順<br />（Javaアプレット：三目並べゲーム（alt属性値）と読み上げる。<br />■音声読み上げ<br />「Javaアプレット：三目並べゲーム（alt属性値」</td>
+          <td></td>
+        </tr>
+        <tr class="ng">
+          <td>PC-Talker XP 3.06</td>
+          <td>×</td>
+          <td>■操作手順<br />タイトルバーは読むが、それ以外の要素は読み上げない。<br />■音声読み上げ<br />読み上げない。</td>
+          <td></td>
+        </tr>
+        <tr class="ng">
+          <td>PC-Talker XP 3.06 + NetReader 1.18</td>
+          <td>×</td>
+          <td>■操作手順<br />アプレットの代わりに、alt属性「三目並べゲーム(alt属性値)」又はapplet要素のボディに記述した代替テキスト「三目並べゲーム(applet要素のボディ)」を読み上げなかった。<br />■音声読み上げ<br />「空行」</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>FocusTalk V3</td>
+          <td>○</td>
+          <td>■操作手順<br />ページに遷移すると、「三目並べゲーム(applet要素のボディ)」と読み上げられた。<br />■音声読み上げ<br />「三目並べゲーム(applet要素のボディ)」</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>NVDA 2010.1j</td>
+          <td>○</td>
+          <td>■操作手順<br />ページを開くと、三目並べゲーム(applet要素のボディ)と読み上げられた。<br />■音声読み上げ<br />「H35のサンプル　三目並べゲーム(applet要素のボディ)」</td>
+          <td></td>
+        </tr>
+        <tr class="ng">
+          <td>NVDA 2011.1</td>
+          <td>×</td>
+          <td>■操作手順<br />ページを開いてもなにも読み上げられなかった。<br />■音声読み上げ</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

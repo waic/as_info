@@ -1,0 +1,161 @@
+<description>
+  <SuccessCriteria>
+    <number>7.2.1.1</number>
+    <name>キーボード操作に関する達成基準</name>
+    <level>A</level>
+  </SuccessCriteria>
+  <SuccessCriteria>
+    <number>7.4.1.2</number>
+    <name>プログラムが解釈可能な識別名，役割及び設定可能な値に関する達成基準</name>
+    <level>A</level>
+  </SuccessCriteria>
+  <testType>HTMLandXHTML</testType>
+  <rownumber>4</rownumber>
+  <id>H091-1c</id>
+  <実装方法タイトル>HTMLのフォーム・コントロール及びリンクを用いる</実装方法タイトル>
+  <対象>a要素</対象>
+  <見解>要注意</見解>
+  <注意点>
+    <body>一つのリンク内で画像とテキストを両方用いる場合、画像のalt属性値に代替テキストが記述されている場合、スクリーンリーダーのPC-Talker XPとNetReader、FocusTalkではその代替テキストが読み上げられないので注意が必要。
+可能な場合には、リンクをすべて画像にするか、またはすべてテキストにしたほうがよい。</body>
+  </注意点>
+  <備考>今後の支援技術の機能向上に期待する（PC-Talker 7では、代替テキストも読み上げられるように改善されている）。</備考>
+  <testDetail>
+    <result useragent="Internet Explorer 6.0">
+      <rownumber>120</rownumber>
+      <id>H091-1c</id>
+      <検証結果>○</検証結果>
+      <操作手順>1．○：カーソルを画像または『富士通』部分に合わせてクリックで、リンク先に移動。
+2．○：Tabキーで画像または『富士通』部分にフォーカスを合わせてEnterでリンク先に移動。</操作手順>
+    </result>
+    <result useragent="Internet Explorer 7.0">
+      <rownumber>120</rownumber>
+      <id>H091-1c</id>
+      <検証結果>○</検証結果>
+      <操作手順>１．マウスクリックで画面遷移できた。
+２．リンクにフォーカスを当てて、Enter押下で画面遷移できた。</操作手順>
+    </result>
+    <result useragent="Internet Explorer 8.0">
+      <rownumber>120</rownumber>
+      <id>H091-1c</id>
+      <検証結果>○</検証結果>
+      <操作手順>１．マウスクリックで画面遷移できた。
+２．リンクにフォーカスを当てて、Enter押下で画面遷移できた。</操作手順>
+    </result>
+    <result useragent="Internet Explorer 9">
+      <rownumber>120</rownumber>
+      <id>H091-1c</id>
+      <検証結果>○</検証結果>
+      <操作手順>1:マウス操作：リンクをクリックして、リンク先に移動することを確認
+2:キーボード操作：リンクにフォーカスを移動させた後、押下してリンク先に移動することを確認</操作手順>
+      <備考>1:○
+2:○</備考>
+    </result>
+    <result useragent="Firefox 3.5">
+      <rownumber>120</rownumber>
+      <id>H091-1c</id>
+      <検証結果>○</検証結果>
+      <操作手順>1．○：カーソルを画像またはテキスト部分に合わせてクリックで、リンク先に移動。
+2．○：Tabキーで画像またはテキスト部分にフォーカスを合わせてEnterでリンク先に移動。</操作手順>
+    </result>
+    <result useragent="Firefox 4.0">
+      <rownumber>120</rownumber>
+      <id>H091-1c</id>
+      <検証結果>○</検証結果>
+      <操作手順>1:マウス操作：リンクをクリックして、リンク先に移動することを確認
+2:キーボード操作：リンクにフォーカスを移動させた後、押下してリンク先に移動することを確認</操作手順>
+    </result>
+    <result useragent="Firefox 9.0">
+      <rownumber>120</rownumber>
+      <id>H091-1c</id>
+      <検証結果>○</検証結果>
+      <操作手順>1:マウス操作：リンクをクリックして、リンク先に移動することを確認
+2:キーボード操作：リンクにフォーカスを移動させた後、押下してリンク先に移動することを確認</操作手順>
+      <備考>1:○
+2:○</備考>
+    </result>
+    <result useragent="Safari 3.2">
+      <rownumber>120</rownumber>
+      <id>H091-1c</id>
+      <検証結果>○</検証結果>
+      <操作手順>マウス操作でクリックすると、リンク先に飛ぶ。キーボード操作はOption+tabで移動し、クリックしてリック先にとぶ。</操作手順>
+    </result>
+    <result useragent="Safari 5.0.3">
+      <rownumber>120</rownumber>
+      <id>H091-1c</id>
+      <検証結果>○</検証結果>
+    </result>
+    <result useragent="JAWS for Windows 9.0">
+      <rownumber>120</rownumber>
+      <id>H091-1c</id>
+      <検証結果>○</検証結果>
+      <操作手順>■操作手順
+「既読、リンク、画像、富士通公式ウェブサイト」と読み上げた。
+■音声読み上げ
+「富士通公式ウェブサイト　リンク　画像」</操作手順>
+    </result>
+    <result useragent="ホームページ・リーダー 3.04">
+      <rownumber>120</rownumber>
+      <id>H091-1c</id>
+      <検証結果>○</検証結果>
+      <操作手順>■操作手順
+Tab移動又は行読みモードで読み上げたところ、「富士通　公式サイト」という代替テキストとテキストが読み上げられた。
+■音声読み上げ
+「富士通公式ウェブサイト」</操作手順>
+      <備考>1．○：リンク読み上げモードにした場合はリンクだと理解可能。前文読み上げでもリンクは声質が変わるので理解できる。
+2．○</備考>
+    </result>
+    <result useragent="PC-Talker XP 3.06">
+      <rownumber>120</rownumber>
+      <id>H091-1c</id>
+      <検証結果>△</検証結果>
+      <操作手順>■操作手順
+フォーカスをあてると「公式ウェブサイト リンク」と読み上げた
+■音声読み上げ
+「公式ウェブサイト リンク」</操作手順>
+      <備考>画像の代替テキスト「富士通は読み上げられなかった</備考>
+    </result>
+    <result useragent="PC-Talker XP 3.06 + NetReader 1.18">
+      <rownumber>120</rownumber>
+      <id>H091-1c</id>
+      <検証結果>△</検証結果>
+      <操作手順>■操作手順
+1. リンクにフォーカスを移動させた際に、リンクであることが分かるように読み上げた。
+2. リンクにフォーカスを移動させた際に、リンク画像の代替テキストとリンクテキストを続けて読み上げなかった。
+   （ひとつのリンクとして扱われなかった）
+■音声読み上げ
+1. 「富士通　リンク」
+   「公式ウェブサイト　リンク」
+2. 「富士通　リンク」
+   「公式ウェブサイト　リンク」</操作手順>
+    </result>
+    <result useragent="FocusTalk V3">
+      <rownumber>120</rownumber>
+      <id>H091-1c</id>
+      <検証結果>△</検証結果>
+      <操作手順>■操作手順
+リンクにフォーカスが移動すると、「公式ウェブサイト、未訪問のリンク」と読み上げたが、「富士通」は読み上げなかった。
+■音声読み上げ
+「公式ウェブサイト、未訪問のリンク」</操作手順>
+      <備考>２：×　alt「富士通」が読み上げられなかった。</備考>
+    </result>
+    <result useragent="NVDA 2010.1j">
+      <rownumber>120</rownumber>
+      <id>H091-1c</id>
+      <検証結果>○</検証結果>
+      <操作手順>■操作手順
+Kキーでリンク項目に移動したところ、「富士通画像公式ウェブサイト既読リンク」と読み上げられた
+■音声読み上げ
+「富士通画像公式ウェブサイト既読リンク」</操作手順>
+    </result>
+    <result useragent="NVDA 2011.1">
+      <rownumber>120</rownumber>
+      <id>H091-1c</id>
+      <検証結果>○</検証結果>
+      <操作手順>■操作手順
+リンク項目に移動したところ、「富士通画像公式ウェブサイトリンク」と読み上げられた
+■音声読み上げ
+「富士通画像公式ウェブサイトリンク」</操作手順>
+    </result>
+  </testDetail>
+</description>
