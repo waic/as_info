@@ -9,8 +9,8 @@ using System.Xml;
 public abstract class CsvDataTable : DataTable{
 
 	private static Regex CsvFragmentReg = new Regex("(\"(?:[^\"]|\"\")*\"|[^,]*),");
-	private static Regex IdReg = new Regex("^[A-Za-z]+[-0-9]+[a-z]?$");
-	private static Encoding Sjis = Encoding.GetEncoding("Shift_JIS");
+	public static Regex IdReg = new Regex("^[A-Za-z]+[-0-9]+[a-z]?$");
+	public static Encoding Sjis = Encoding.GetEncoding("Shift_JIS");
 	public const string IdColumnName = "id";
 	public const string NumberColumnName = "rownumber";
 
