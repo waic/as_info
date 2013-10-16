@@ -131,5 +131,55 @@
 2. そのままの状態でEnterキーを押すと、ページが遷移する</操作手順>
       <備考>2012年4月修正</備考>
     </result>
+    <result useragent="Firefox18.0.1">
+      <rownumber>102</rownumber>
+      <id>H077-1</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Google Chrome 25">
+      <rownumber>102</rownumber>
+      <id>H077-1</id>
+      <検証結果>‐</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Safari 6.0.5">
+      <rownumber>102</rownumber>
+      <id>H077-1</id>
+      <検証結果>‐</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="NVDA 2012.3">
+      <rownumber>102</rownumber>
+      <id>H077-1</id>
+      <検証結果>○</検証結果>
+      <操作手順>■操作手順
+Tabキーを用いて「こちら」リンクに移動し、NVDA+上矢印キー（アプリケーションカーソルのある現在行の通知）を実行すると「?ウェブアクセシビリティ基盤委員会の詳細はこちら。」と読み上げた。その状態でEnterキーを押すと、ページを遷移させることができた。
+■音声読み上げ
+?ウェブアクセシビリティ基盤委員会の詳細はこちら。</操作手順>
+    </result>
+    <result useragent="PC-Talker 7 2.12">
+      <rownumber>102</rownumber>
+      <id>H077-1</id>
+      <検証結果>△</検証結果>
+      <操作手順>■操作手順
+Ctrl＋上（下）矢印キー
+■音声読み上げ
+Ctrl＋下矢印キー、またはTabキー
+「こちら　リンク」
+Ctrl＋上矢印キー
+「ウェブアクセシビリティ基盤委員会の詳細は、」
+Enterキー押下でリンク先へ移動</操作手順>
+      <備考>リスト項目全体を読み上げることはできないものの、Ctrl＋上下矢印キーでリンクの前後を確認でき、フォーカスはリンクに残ったままなので：△</備考>
+    </result>
+    <result useragent="VoiceOver">
+      <rownumber>102</rownumber>
+      <id>H077-1</id>
+      <検証結果>×</検証結果>
+      <操作手順>■操作手順
+フォーカスの当たっている個所以外の情報を読み上げることができない。
+■音声読み上げ
+「こちら リンク」</操作手順>
+    </result>
   </testDetail>
 </description>

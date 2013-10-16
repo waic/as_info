@@ -114,5 +114,44 @@
       <検証結果>-</検証結果>
       <操作手順>テスト不要</操作手順>
     </result>
+    <result useragent="Firefox18.0.1">
+      <rownumber>39</rownumber>
+      <id>G187</id>
+      <検証結果>○</検証結果>
+      <操作手順>何らかのキー操作により、画像の点滅を静止できるかを確認</操作手順>
+      <備考>○：escを押下すると点滅を止めることができる</備考>
+    </result>
+    <result useragent="Google Chrome 25">
+      <rownumber>39</rownumber>
+      <id>G187</id>
+      <検証結果>×</検証結果>
+      <操作手順>【1】何らかのキー操作により、画像の点滅を静止できるかを確認する。</操作手順>
+      <備考>【1】○
+何らかのキー操作により、画像の点滅を静止できないことを確認した。</備考>
+    </result>
+    <result useragent="Safari 6.0.5">
+      <rownumber>39</rownumber>
+      <id>G187</id>
+      <検証結果>×</検証結果>
+      <備考>あらゆるキー操作を実行したわけではないが、一通り試した範囲では不可能</備考>
+    </result>
+    <result useragent="NVDA 2012.3">
+      <rownumber>39</rownumber>
+      <id>G187</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="PC-Talker 7 2.12">
+      <rownumber>39</rownumber>
+      <id>G187</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="VoiceOver">
+      <rownumber>39</rownumber>
+      <id>G187</id>
+      <検証結果>－</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
   </testDetail>
 </description>

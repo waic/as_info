@@ -35,7 +35,7 @@
   </item>
   <item>
     <rownumber>3</rownumber>
-    <id>H064</id>
+    <id>H064-1</id>
     <実装方法タイトル>H64： frame要素及びiframe要素のtitle属性を用いる</実装方法タイトル>
     <対象>frame要素/iframe要素のtitle属性</対象>
     <見解>達成可能</見解>

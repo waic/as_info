@@ -139,5 +139,57 @@ The aim for an IT society in which anyone can participate in all design activiti
 引用終了
 ここから日本語です。」</操作手順>
     </result>
+    <result useragent="Firefox18.0.1">
+      <rownumber>19</rownumber>
+      <id>H058</id>
+      <検証結果>‐</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Google Chrome 25">
+      <rownumber>19</rownumber>
+      <id>H058</id>
+      <検証結果>‐</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Safari 6.0.5">
+      <rownumber>19</rownumber>
+      <id>H058</id>
+      <検証結果>‐</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="NVDA 2012.3">
+      <rownumber>19</rownumber>
+      <id>H058</id>
+      <検証結果>×</検証結果>
+      <操作手順>■操作手順
+1. 英文（"Fujitsu is contributing..."以下）を読み上げる際に、英語の音声エンジンに切り替えて読み上げられなかった。
+2. 英文の後に日本語（「ここから日本語です。」）を読み上げる際に、音声エンジンは変更されなかった。
+■音声読み上げ
+「ここまで日本語です。
+引用
+Fujitsu is contributing to a safe, happy, and rich lifestyle and society by creating gentle relationships between people and IT. 
+The aim for an IT society in which anyone can participate in all design activities using "Human Centered Design", which prioritizes people. 
+引用終了
+ここから日本語です。」</操作手順>
+    </result>
+    <result useragent="PC-Talker 7 2.12">
+      <rownumber>19</rownumber>
+      <id>H058</id>
+      <検証結果>×</検証結果>
+      <操作手順>英文（"Fujitsu is contributing..."以下）を読み上げる際に、英語の音声エンジンに切り替えられず、日本語の音声エンジンのまま読み上げた。</操作手順>
+    </result>
+    <result useragent="VoiceOver">
+      <rownumber>19</rownumber>
+      <id>H058</id>
+      <検証結果>×</検証結果>
+      <操作手順>■操作手順
+1. 2本指フリック、1本指フリックともに、日本語→英語として読んでいるが、日本語音声と変化はなかった。 
+2. 2本指フリック、1本指フリックともに、英語→日本語として読んでいるが、日本語音声と変化はなかった。 
+■音声読み上げ
+「ここまで日本語です。
+Fujitsu is contributing to a safe, happy, and rich lifestyle and society by creating gentle relationships between people and IT. 
+The aim for an IT society in which anyone can participate in all design activities using "Human Centered Design", which prioritizes people. 
+ここから日本語です。」</操作手順>
+    </result>
   </testDetail>
 </description>

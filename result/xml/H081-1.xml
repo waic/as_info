@@ -132,5 +132,54 @@
 2. 機能未実装のため懸賞不可</操作手順>
       <備考>2012年4月修正</備考>
     </result>
+    <result useragent="Firefox18.0.1">
+      <rownumber>109</rownumber>
+      <id>H081-1</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Google Chrome 25">
+      <rownumber>109</rownumber>
+      <id>H081-1</id>
+      <検証結果>‐</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Safari 6.0.5">
+      <rownumber>109</rownumber>
+      <id>H081-1</id>
+      <検証結果>‐</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="NVDA 2012.3">
+      <rownumber>109</rownumber>
+      <id>H081-1</id>
+      <検証結果>×</検証結果>
+      <操作手順>機能未実装のため懸賞不可</操作手順>
+    </result>
+    <result useragent="PC-Talker 7 2.12">
+      <rownumber>109</rownumber>
+      <id>H081-1</id>
+      <検証結果>×</検証結果>
+      <操作手順>■操作手順
+Ctrl＋上矢印キー
+■音声読み上げ
+Ctrl＋下矢印キー、またはTabキー
+「PDF　リンク」
+Ctrl＋上矢印キー
+「HTML　リンク」
+Ctrl＋上矢印キー
+「年次報告書 2010年版」
+Enterキー押下すると、フォーカスが「HTML」に移動しているため、リンク先へ移動しない</操作手順>
+      <備考>親のリスト項目を確認できるキー操作がない。</備考>
+    </result>
+    <result useragent="VoiceOver">
+      <rownumber>109</rownumber>
+      <id>H081-1</id>
+      <検証結果>×</検証結果>
+      <操作手順>■操作手順
+フォーカスの当たっている個所以外の情報を読み上げることができない。
+■音声読み上げ
+「PDF リンク」</操作手順>
+    </result>
   </testDetail>
 </description>

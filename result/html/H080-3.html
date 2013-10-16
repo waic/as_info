@@ -147,6 +147,42 @@
           <td>Tabキー（またはKキー）でフォーカスを[続きを読む...]リンクへ移動させると、「続きを読む...　リンク」と詠みあげる。<br />1.　その状態でShift+Hキーを押すと、「約5年半ぶりにJIS X 8341-3が改定」と読み上げる<br />2. その状態でEnterキーを押すと、リンク先に遷移する</td>
           <td>2012年4月修正</td>
         </tr>
+        <tr class="ok">
+          <td>Firefox18.0.1</td>
+          <td>-</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Google Chrome 25</td>
+          <td>‐</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Safari 6.0.5</td>
+          <td>‐</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>NVDA 2012.3</td>
+          <td>○</td>
+          <td>■操作手順<br />Tabキーを用いて「[続きを読む]」というリンク項目に移動し、Shift+Hキーを押すと「約5年半ぶりにJIS X 8341-3が改定」と読み上げた。<br />■音声読み上げ<br />約5年半ぶりにJIS X 8341-3が改定</td>
+          <td></td>
+        </tr>
+        <tr class="warn">
+          <td>PC-Talker 7 2.12</td>
+          <td>△</td>
+          <td>■操作手順<br />Shift＋Hキー<br />■音声読み上げ<br />Ctrl＋下矢印キー、またはTabキー<br />「続きを読む　リンク」<br />Shift＋Hキー<br />「約5年半ぶりにJIS X 8341-3が改定　リンク　17の位置　見出しレベル2」<br />Enterキー押下すると、フォーカスも移動しているため、リンク先へ移動しない</td>
+          <td>H080-1、H080-2のように見出しがリンクでなければ問題ないが、リンクの場合にはフォーカスが移動してしまう。</td>
+        </tr>
+        <tr class="ng">
+          <td>VoiceOver</td>
+          <td>×</td>
+          <td>■操作手順<br />フォーカスの当たっている個所以外の情報を読み上げることができない。<br />■音声読み上げ<br />「続きを読む リンク」</td>
+          <td></td>
+        </tr>
       </tbody>
     </table>
   </body>

@@ -145,6 +145,42 @@
           <td>■操作手順<br />Mキーを押してiframeに移動しても、「広告」というフレームタイトルは読み上げられなかった。<br />■音声読み上げ<br />「iframeリンク画像　本文へジャンプ」</td>
           <td></td>
         </tr>
+        <tr class="ok">
+          <td>Firefox18.0.1</td>
+          <td>-</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Google Chrome 25</td>
+          <td>‐</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Safari 6.0.5</td>
+          <td>‐</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>NVDA 2012.3</td>
+          <td>○</td>
+          <td>■操作手順<br />Mキーを押してiframeに移動した際、「広告」というフレームタイトルを読み上げた。<br />■音声読み上げ<br />「広告 iframe」</td>
+          <td></td>
+        </tr>
+        <tr class="ng">
+          <td>PC-Talker 7 2.12</td>
+          <td>×</td>
+          <td>■操作手順<br />Ctrl＋下矢印キーで行読み、Tabキーで移動、またはShiftキーで全文読み<br />■音声読み上げ<br />Tabキーでインラインフレームに移動した際には、インラインフレームに読み込まれるHTMLファイルのtitle要素を読み上げる。<br />＊F6でも同様。</td>
+          <td>title属性値を読み上げない。</td>
+        </tr>
+        <tr class="ng">
+          <td>VoiceOver</td>
+          <td>×</td>
+          <td>■操作手順<br />2本指フリック、1本指フリックともに、「広告」というtitle属性値を読み上げなかった。<br />■音声読み上げ<br />「iFrameの使い方 見出しレベル1<br />このページの本文へ移動 ページ内リンク<br />：」</td>
+          <td></td>
+        </tr>
       </tbody>
     </table>
   </body>

@@ -156,5 +156,58 @@ Au5tトンN r0xx0rzをそのまま読み上げた。</操作手順>
 ■音声読み上げ
 「Au5t1N r0xx0rz」</操作手順>
     </result>
+    <result useragent="Firefox18.0.1">
+      <rownumber>117</rownumber>
+      <id>H086-3</id>
+      <検証結果>○</検証結果>
+      <操作手順>1:「Au5t1N r0xx0rz」にtitle属性値があることわかるように破線のアンダーラインが表示されているかを確認
+2:マウスポインタを「Au5t1N r0xx0rz」の上におくと「Austin Rocks」というツールチップが表示されるかを確認</操作手順>
+    </result>
+    <result useragent="Google Chrome 25">
+      <rownumber>117</rownumber>
+      <id>H086-3</id>
+      <検証結果>△</検証結果>
+      <操作手順>【1】テキスト「Au5t1N r0xx0rz」にtitle属性値があることが分かるように表示されるか（例：破線のアンダーラインや囲み罫線など）を確認する。
+【2】マウスポインタをテキスト「Au5t1N r0xx0rz」の上に置くと、title属性値「Austin Rocks」がツールチップで表示されるかを確認する。</操作手順>
+      <備考>【1】×
+title属性を示すような破線の下線や囲み罫線がついていないことを確認した。
+【2】○
+顔文字にマウスポインタを置くと「Austin Rocks」と書かれたツールチップが表示されることを確認した。</備考>
+    </result>
+    <result useragent="Safari 6.0.5">
+      <rownumber>117</rownumber>
+      <id>H086-3</id>
+      <検証結果>△</検証結果>
+      <備考>1,はNG、2.はOK</備考>
+    </result>
+    <result useragent="NVDA 2012.3">
+      <rownumber>117</rownumber>
+      <id>H086-3</id>
+      <検証結果>×</検証結果>
+      <操作手順>■操作手順
+上下の矢印キーで該当箇所を読み上げると、「Au5t1N r0xx0rz」とだけ読み上げられた。
+■音声読み上げ
+「Au5t1N r0xx0rz」</操作手順>
+    </result>
+    <result useragent="PC-Talker 7 2.12">
+      <rownumber>117</rownumber>
+      <id>H086-3</id>
+      <検証結果>×</検証結果>
+      <操作手順>■操作手順
+Ctrl＋下矢印キーで行読み、Shiftキーで全文読み
+■音声読み上げ
+Ctrl＋下矢印キー、またはShiftキー
+「Au5t1N r0xx0rz 」</操作手順>
+      <備考>title属性値を読み上げない。</備考>
+    </result>
+    <result useragent="VoiceOver">
+      <rownumber>117</rownumber>
+      <id>H086-3</id>
+      <検証結果>×</検証結果>
+      <操作手順>■操作手順
+1本指フリックで該当箇所を読み上げると、「Au5t1N r0xx0rz」とだけ読み上げられた。
+■音声読み上げ
+「Au5t1N r0xx0rz」</操作手順>
+    </result>
   </testDetail>
 </description>

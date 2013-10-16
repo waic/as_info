@@ -131,5 +131,54 @@ Enterを押下してもリンク先に遷移しない。</操作手順>
 2. 機能未実装のためテスト不可</操作手順>
       <備考>2012年4月修正</備考>
     </result>
+    <result useragent="Firefox18.0.1">
+      <rownumber>107</rownumber>
+      <id>H080-2</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Google Chrome 25">
+      <rownumber>107</rownumber>
+      <id>H080-2</id>
+      <検証結果>‐</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Safari 6.0.5">
+      <rownumber>107</rownumber>
+      <id>H080-2</id>
+      <検証結果>‐</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="NVDA 2012.3">
+      <rownumber>107</rownumber>
+      <id>H080-2</id>
+      <検証結果>○</検証結果>
+      <操作手順>■操作手順
+Tabキーを用いて「(RTF)」というリンク項目に移動し、Shift+Hキーを押すと「年次報告書 2010年版」と読み上げた。
+■音声読み上げ
+年次報告書 2010年版</操作手順>
+    </result>
+    <result useragent="PC-Talker 7 2.12">
+      <rownumber>107</rownumber>
+      <id>H080-2</id>
+      <検証結果>○</検証結果>
+      <操作手順>■操作手順
+Shift＋Hキー
+■音声読み上げ
+Ctrl＋下矢印キー、またはTabキー
+「PDF　リンク」
+Shift＋Hキー
+「年次報告書 2010年版　17の位置　見出しレベル2」
+Enterキー押下でリンク先へ移動</操作手順>
+    </result>
+    <result useragent="VoiceOver">
+      <rownumber>107</rownumber>
+      <id>H080-2</id>
+      <検証結果>×</検証結果>
+      <操作手順>■操作手順
+フォーカスの当たっている個所以外の情報を読み上げることができない。
+■音声読み上げ
+「PDF リンク」</操作手順>
+    </result>
   </testDetail>
 </description>

@@ -136,5 +136,54 @@ Mキーを押してiframeに移動しても、「広告」というフレーム�
 ■音声読み上げ
 「iframeリンク画像　本文へジャンプ」</操作手順>
     </result>
+    <result useragent="Firefox18.0.1">
+      <rownumber>89</rownumber>
+      <id>H064-2</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Google Chrome 25">
+      <rownumber>89</rownumber>
+      <id>H064-2</id>
+      <検証結果>‐</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Safari 6.0.5">
+      <rownumber>89</rownumber>
+      <id>H064-2</id>
+      <検証結果>‐</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="NVDA 2012.3">
+      <rownumber>89</rownumber>
+      <id>H064-2</id>
+      <検証結果>○</検証結果>
+      <操作手順>■操作手順
+Mキーを押してiframeに移動した際、「広告」というフレームタイトルを読み上げた。
+■音声読み上げ
+「広告 iframe」</操作手順>
+    </result>
+    <result useragent="PC-Talker 7 2.12">
+      <rownumber>89</rownumber>
+      <id>H064-2</id>
+      <検証結果>×</検証結果>
+      <操作手順>■操作手順
+Ctrl＋下矢印キーで行読み、Tabキーで移動、またはShiftキーで全文読み
+■音声読み上げ
+Tabキーでインラインフレームに移動した際には、インラインフレームに読み込まれるHTMLファイルのtitle要素を読み上げる。
+＊F6でも同様。</操作手順>
+      <備考>title属性値を読み上げない。</備考>
+    </result>
+    <result useragent="VoiceOver">
+      <rownumber>89</rownumber>
+      <id>H064-2</id>
+      <検証結果>×</検証結果>
+      <操作手順>■操作手順
+2本指フリック、1本指フリックともに、「広告」というtitle属性値を読み上げなかった。
+■音声読み上げ
+「iFrameの使い方 見出しレベル1
+このページの本文へ移動 ページ内リンク
+：」</操作手順>
+    </result>
   </testDetail>
 </description>

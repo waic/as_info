@@ -149,6 +149,42 @@
           <td>テスト不可</td>
           <td>どの部分が「選択肢をグルーピングしているoptgroup要素のlabel属性値」なのかがわからないため検証できない。</td>
         </tr>
+        <tr class="ok">
+          <td>Firefox18.0.1</td>
+          <td>○</td>
+          <td>optgroup要素のlabel属性値（General Techniques、HTML Techniques）が、そのグループのラベルであることが分かるように太字で表示されることを確認</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Google Chrome 25</td>
+          <td>○</td>
+          <td>【1】選択肢をグルーピングしているoptgroup要素のlabel属性値が、そのグループのラベルであることが分かるように表示されるかを確認する。</td>
+          <td>【1】○<br />次の文言（General Techniques、HTML Techniques、CSS Techniques、SMIL Techniques、ARIA Techniques、Common Techniques）が、そのグループのラベルであることが分かるように太字で表示されることを確認した。</td>
+        </tr>
+        <tr class="ok">
+          <td>Safari 6.0.5</td>
+          <td>○</td>
+          <td></td>
+          <td>optgroup要素のlabel属性値は太字で表示される</td>
+        </tr>
+        <tr class="ok">
+          <td>NVDA 2012.3</td>
+          <td>？</td>
+          <td>テスト不可</td>
+          <td>どの部分が「選択肢をグルーピングしているoptgroup要素のlabel属性値」なのかがわからないため検証できません。</td>
+        </tr>
+        <tr class="ng">
+          <td>PC-Talker 7 2.12</td>
+          <td>×</td>
+          <td>■操作手順<br />1.複数選択式リストに移動後、上下矢印キーで選択肢を変更。その後、[実行]ボタンに移動してEnterキーを押下。<br />■音声読み上げ<br />Ctrl＋下矢印キー、またはTabキー<br />「関連テクニック一覧：　のリストボックス　選択」<br />下矢印キー<br />「G4：（以下略）」<br />下矢印キー<br />「G5：（以下略）」<br />下矢印キー<br />「G8：（以下略）」<br />下矢印キー<br />「G9：（以下略）」<br />下矢印キー<br />「G10：（以下略）」<br />下矢印キー<br />「H2：（以下略）」</td>
+          <td>optgroup要素を完全に無視している。<br />また、最初の選択肢(G1)を読み上げないが、別の選択肢に移動後にCtrl＋上矢印キーで戻ると読み上げる。</td>
+        </tr>
+        <tr class="ng">
+          <td>VoiceOver</td>
+          <td>×</td>
+          <td>■操作手順<br />1.複数選択式リストの読み上げ開始時に、optgroup要素がいくつあるかを読み上げない。<br />2.optgroup要素のラベルを読み上げる際、optgroup要素がいくつあって、そのoptgroup要素が全体の中で何番目のoptgroup要素なのかが分かるように読み上げない。<br />3.optgroup要素の切り替わる位置が分かるように読み上げない。<br />4.各選択肢を読み上げる際、同じoptgroup要素内にoption要素がいくつあって、そのoption要素が何番目のoption要素なのかが分かるように読み上げない。<br />5.キーボード操作でoptgroup要素間をジャンプできない。<br />■音声読み上げ<br />「General Techniques ピッカー項目 調整可能 値を調整するには1本指で上または下にスワイプします」</td>
+          <td>ピッカー上でスワイプするだけで、どんどん項目が選択されてしまう（かつ選択されたことが読み上げられない）ので、そもそもmultiple="multiple"の実装にVoiceOverが対応できていないと思われます。</td>
+        </tr>
       </tbody>
     </table>
   </body>

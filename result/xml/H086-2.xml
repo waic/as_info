@@ -138,5 +138,56 @@ Kキーを用いて「ASCIIアートをスキップする」というリンク�
 ■音声読み上げ
 「ASCIIアートをスキップする」　「テスト終了」</操作手順>
     </result>
+    <result useragent="Firefox18.0.1">
+      <rownumber>116</rownumber>
+      <id>H086-2</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Google Chrome 25">
+      <rownumber>116</rownumber>
+      <id>H086-2</id>
+      <検証結果>‐</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Safari 6.0.5">
+      <rownumber>116</rownumber>
+      <id>H086-2</id>
+      <検証結果>‐</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="NVDA 2012.3">
+      <rownumber>116</rownumber>
+      <id>H086-2</id>
+      <検証結果>○</検証結果>
+      <操作手順>■操作手順
+下矢印キーを押して「ASCIIアートをスキップする」というリンクに移動してエンターキーを押すと、アスキーアートをスキップできた。
+■音声読み上げ
+「ASCIIアートをスキップする」　「テスト終了」</操作手順>
+    </result>
+    <result useragent="PC-Talker 7 2.12">
+      <rownumber>116</rownumber>
+      <id>H086-2</id>
+      <検証結果>○</検証結果>
+      <操作手順>■操作手順
+スキップリンクでEnterキーを押下
+■音声読み上げ
+「ASCIIアートをスキップする　リンク」
+Enterキー
+「テスト終了」
+Ctrl＋下矢印キーで続きのコンテンツを読む。
+ただし、Tabキーを押下するとページの先頭に戻ってしまう</操作手順>
+      <備考>スキップリンクのリンク先のアンカーにid属性を追加</備考>
+    </result>
+    <result useragent="VoiceOver">
+      <rownumber>116</rownumber>
+      <id>H086-2</id>
+      <検証結果>×</検証結果>
+      <操作手順>■操作手順
+1本指フリックで「ASCIIアートをスキップする」というリンクに移動してダブルタップすると、アスキーアートをスキップできるが、意図しない個所にフォーカスが移動する。
+■音声読み上げ
+「ASCIIアートをスキップする ページ内リンク」　
+「「図1：蝶の絵のASCIIアート」を読み上げた後、「ASCIIアートをスキップする」のリンクでASCIIアート部分の読み上げをスキップできるか」</操作手順>
+    </result>
   </testDetail>
 </description>

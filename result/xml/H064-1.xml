@@ -4,15 +4,24 @@
     <name>ブロックスキップに関する達成基準</name>
     <level>A</level>
   </SuccessCriteria>
+  <SuccessCriteria>
+    <number>7.4.1.2</number>
+    <name>プログラムが解釈可能な識別名，役割及び設定可能な値に関する達成基準</name>
+    <level>A</level>
+  </SuccessCriteria>
   <testType>HTMLandXHTML</testType>
-  <rownumber>11</rownumber>
+  <rownumber>3</rownumber>
   <id>H064-1</id>
   <実装方法タイトル>H64： frame要素及びiframe要素のtitle属性を用いる</実装方法タイトル>
-  <対象>frame要素のtitle属性</対象>
-  <見解>達成不可能</見解>
+  <対象>frame要素/iframe要素のtitle属性</対象>
+  <見解>達成可能</見解>
+  <代替もしくは推奨する方法>
+    <body>スクリーンリーダーではJAWSとHPRしかサポートされていないが、フレームやインラインフレームを使用する際には、title属性で名前を提供しておくべきである。</body>
+  </代替もしくは推奨する方法>
   <注意点>
-    <body>H70を参照。</body>
+    <body>フレームを使用したサイトにおいては、他のアクセシビリティ上の問題を引き起こすことが多いため、フレームの使用は推奨しない。</body>
   </注意点>
+  <備考>フレームやインラインフレームの識別名を提供するメカニズムとしては機能しうるが、機能しない環境もある。今後の支援技術の機能向上に期待する。</備考>
   <testDetail>
     <result useragent="Internet Explorer 6.0">
       <rownumber>88</rownumber>
@@ -150,6 +159,59 @@ Mキーでフレーム間を移動した際、「メニューフレーム」と�
 ■音声読み上げ
 「iframe終了　メニュー見出しレベル1」
 「iframe終了　本文へジャンプ画像」</操作手順>
+    </result>
+    <result useragent="Firefox18.0.1">
+      <rownumber>88</rownumber>
+      <id>H064-1</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Google Chrome 25">
+      <rownumber>88</rownumber>
+      <id>H064-1</id>
+      <検証結果>‐</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Safari 6.0.5">
+      <rownumber>88</rownumber>
+      <id>H064-1</id>
+      <検証結果>‐</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="NVDA 2012.3">
+      <rownumber>88</rownumber>
+      <id>H064-1</id>
+      <検証結果>○</検証結果>
+      <操作手順>■操作手順
+Mキーを押してフレーム間を移動した際、「メニュー」と「メインコンテンツ」というフレームタイトルを読み上げた.
+■音声読み上げ
+「iframe終了　メニュー」
+「iframe終了　メインコンテンツ」
+「iframe終了　本文へジャンプ画像」</操作手順>
+    </result>
+    <result useragent="PC-Talker 7 2.12">
+      <rownumber>88</rownumber>
+      <id>H064-1</id>
+      <検証結果>×</検証結果>
+      <操作手順>■操作手順
+F6（逆順はShift＋F6）でフレーム間を移動、またはTabキーで移動
+■音声読み上げ
+各フレームのHTMLファイルのtitle要素を読み上げる。</操作手順>
+      <備考>title属性値を読み上げない。</備考>
+    </result>
+    <result useragent="VoiceOver">
+      <rownumber>88</rownumber>
+      <id>H064-1</id>
+      <検証結果>×</検証結果>
+      <操作手順>■操作手順
+2本指フリック、1本指フリックともに、「メニュー」と「メインコンテンツ」というフレームタイトルを読み上げなかった。
+■音声読み上げ
+「メニュー 見出しレベル1
+行頭記号 リストの開始位置です トップページ リンク
+行頭記号 お問い合わせ リンク
+行頭記号 アクセシビリティ リンク
+このページの本文へ移動 ページ内リンク
+：」</操作手順>
     </result>
   </testDetail>
 </description>

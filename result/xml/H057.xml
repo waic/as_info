@@ -30,5 +30,11 @@
     <result useragent="FocusTalk V3" />
     <result useragent="NVDA 2010.1j" />
     <result useragent="NVDA 2011.1" />
+    <result useragent="Firefox18.0.1" />
+    <result useragent="Google Chrome 25" />
+    <result useragent="Safari 6.0.5" />
+    <result useragent="NVDA 2012.3" />
+    <result useragent="PC-Talker 7 2.12" />
+    <result useragent="VoiceOver" />
   </testDetail>
 </description>

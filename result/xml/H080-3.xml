@@ -130,5 +130,55 @@
 2. その状態でEnterキーを押すと、リンク先に遷移する</操作手順>
       <備考>2012年4月修正</備考>
     </result>
+    <result useragent="Firefox18.0.1">
+      <rownumber>108</rownumber>
+      <id>H080-3</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Google Chrome 25">
+      <rownumber>108</rownumber>
+      <id>H080-3</id>
+      <検証結果>‐</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Safari 6.0.5">
+      <rownumber>108</rownumber>
+      <id>H080-3</id>
+      <検証結果>‐</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="NVDA 2012.3">
+      <rownumber>108</rownumber>
+      <id>H080-3</id>
+      <検証結果>○</検証結果>
+      <操作手順>■操作手順
+Tabキーを用いて「[続きを読む]」というリンク項目に移動し、Shift+Hキーを押すと「約5年半ぶりにJIS X 8341-3が改定」と読み上げた。
+■音声読み上げ
+約5年半ぶりにJIS X 8341-3が改定</操作手順>
+    </result>
+    <result useragent="PC-Talker 7 2.12">
+      <rownumber>108</rownumber>
+      <id>H080-3</id>
+      <検証結果>△</検証結果>
+      <操作手順>■操作手順
+Shift＋Hキー
+■音声読み上げ
+Ctrl＋下矢印キー、またはTabキー
+「続きを読む　リンク」
+Shift＋Hキー
+「約5年半ぶりにJIS X 8341-3が改定　リンク　17の位置　見出しレベル2」
+Enterキー押下すると、フォーカスも移動しているため、リンク先へ移動しない</操作手順>
+      <備考>H080-1、H080-2のように見出しがリンクでなければ問題ないが、リンクの場合にはフォーカスが移動してしまう。</備考>
+    </result>
+    <result useragent="VoiceOver">
+      <rownumber>108</rownumber>
+      <id>H080-3</id>
+      <検証結果>×</検証結果>
+      <操作手順>■操作手順
+フォーカスの当たっている個所以外の情報を読み上げることができない。
+■音声読み上げ
+「続きを読む リンク」</操作手順>
+    </result>
   </testDetail>
 </description>

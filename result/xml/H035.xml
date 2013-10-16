@@ -153,5 +153,56 @@ JAWSカーソルでappletの端を指定するも「ブランク」と読み上�
 ページを開いてもなにも読み上げられなかった。
 ■音声読み上げ</操作手順>
     </result>
+    <result useragent="Firefox18.0.1">
+      <rownumber>59</rownumber>
+      <id>H035</id>
+      <検証結果>×</検証結果>
+      <操作手順>以下のやり方でappletを非表示（無効）にする
+&gt; ツール &gt; アドオン &gt; プラグイン &gt; Java? Platform SE 6 を無効化。
+アプレットを非表示（無効）にした際に、alt属性「三目並べゲーム(alt属性値)」又はapplet要素のボディに記述した代替テキスト「三目並べゲーム(applet要素のボディ)」が表示されるかを確認</操作手順>
+      <備考>「プラグインが無効化されています。」と表示され代替テキストが表示されない</備考>
+    </result>
+    <result useragent="Google Chrome 25">
+      <rownumber>59</rownumber>
+      <id>H035</id>
+      <検証結果>×</検証結果>
+      <操作手順>【1】アプレットを非表示にした際に、alt属性「三目並べゲーム(alt属性値)」又はapplet要素のボディに記述した代替テキスト「三目並べゲーム(applet要素のボディ)」が表示されるかを確認する。</操作手順>
+      <備考>【1】×
+chromeのデフォルト状態ではアプレットの表示機能が提供されておらず、alt属性、代替テキストの表示は確認できない。</備考>
+    </result>
+    <result useragent="Safari 6.0.5">
+      <rownumber>59</rownumber>
+      <id>H035</id>
+      <検証結果>○</検証結果>
+      <備考>「三目並べゲーム(applet要素のボディ)」が表示された</備考>
+    </result>
+    <result useragent="NVDA 2012.3">
+      <rownumber>59</rownumber>
+      <id>H035</id>
+      <検証結果>×</検証結果>
+      <操作手順>■操作手順
+ページを開いても、「埋め込みオブジェクト」という文言以外なにも読み上げられなかった。
+■音声読み上げ
+埋め込みオブジェクト</操作手順>
+    </result>
+    <result useragent="PC-Talker 7 2.12">
+      <rownumber>59</rownumber>
+      <id>H035</id>
+      <検証結果>×</検証結果>
+      <操作手順>■操作手順
+Ctrl＋下矢印キーで行読み、またはShiftキーで全文読み
+■音声読み上げ
+Ctrl＋下矢印キーで行読み：　何も読み上げない
+Shiftキーで全文読み：「終わり」</操作手順>
+    </result>
+    <result useragent="VoiceOver">
+      <rownumber>59</rownumber>
+      <id>H035</id>
+      <検証結果>○</検証結果>
+      <操作手順>■操作手順
+2本指フリック、1本指フリックともに、「三目並べゲーム applet要素のボディ」が読み上げられた。
+■音声読み上げ
+「三目並べゲーム applet要素のボディ」</操作手順>
+    </result>
   </testDetail>
 </description>

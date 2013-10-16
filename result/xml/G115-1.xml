@@ -136,5 +136,52 @@ Kキーを押して、リンク項目「ダウンロードページ」という�
 ■音声読み上げ
 「リンクダウンロードページ」</操作手順>
     </result>
+    <result useragent="Firefox18.0.1">
+      <rownumber>27</rownumber>
+      <id>G115-1</id>
+      <検証結果>○</検証結果>
+      <操作手順>リンクであることが分かるように文字色が変わり、下線があることを確認</操作手順>
+    </result>
+    <result useragent="Google Chrome 25">
+      <rownumber>27</rownumber>
+      <id>G115-1</id>
+      <検証結果>○</検証結果>
+      <操作手順>【1】リンク「ダウンロードページ」がリンクであることが分かるように表示されるか（例：他の部分とは文字色が異なり、下線が付いている）を確認する。</操作手順>
+      <備考>【1】○
+リンクであることが分かるように文字色が異なり（青）、下線が付いていることを確認した。</備考>
+    </result>
+    <result useragent="Safari 6.0.5">
+      <rownumber>27</rownumber>
+      <id>G115-1</id>
+      <検証結果>○</検証結果>
+    </result>
+    <result useragent="NVDA 2012.3">
+      <rownumber>27</rownumber>
+      <id>G115-1</id>
+      <検証結果>○</検証結果>
+      <操作手順>■操作手順
+Kキーを押して、リンク項目「ダウンロードページ」というリンクに移動することができた。
+■音声読み上げ
+「リンクダウンロードページ」</操作手順>
+    </result>
+    <result useragent="PC-Talker 7 2.12">
+      <rownumber>27</rownumber>
+      <id>G115-1</id>
+      <検証結果>○</検証結果>
+      <操作手順>■操作手順
+Ctrl＋下矢印キー、またはTabキーでリンクへ移動
+■音声読み上げ
+Ctrl＋下矢印キー、またはTabキー
+「ダウンロードページ　リンク」</操作手順>
+    </result>
+    <result useragent="VoiceOver">
+      <rownumber>27</rownumber>
+      <id>G115-1</id>
+      <検証結果>○</検証結果>
+      <操作手順>■操作手順
+1本指フリック、2本指フリックともにリンク項目「ダウンロードページ」に移動することができた。
+■音声読み上げ
+「ダウンロードページ　リンク」</操作手順>
+    </result>
   </testDetail>
 </description>

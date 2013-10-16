@@ -146,5 +146,53 @@
 ■音声読み上げ
 「画像　富士通」</操作手順>
     </result>
+    <result useragent="Firefox18.0.1">
+      <rownumber>81</rownumber>
+      <id>H053-2</id>
+      <検証結果>○</検証結果>
+      <操作手順>富士通のロゴ画像が表示されることを確認</操作手順>
+    </result>
+    <result useragent="Google Chrome 25">
+      <rownumber>81</rownumber>
+      <id>H053-2</id>
+      <検証結果>○</検証結果>
+      <操作手順>【1】富士通のロゴ画像（H53-2.gif）が表示されるかを確認する。</操作手順>
+      <備考>【1】○
+富士通のロゴ画像（H53-2.gif）が表示されることを確認した。</備考>
+    </result>
+    <result useragent="Safari 6.0.5">
+      <rownumber>81</rownumber>
+      <id>H053-2</id>
+      <検証結果>○</検証結果>
+    </result>
+    <result useragent="NVDA 2012.3">
+      <rownumber>81</rownumber>
+      <id>H053-2</id>
+      <検証結果>×</検証結果>
+      <操作手順>■操作手順
+「画像　富士通」と読み上げられた。
+■音声読み上げ
+「画像　富士通」</操作手順>
+    </result>
+    <result useragent="PC-Talker 7 2.12">
+      <rownumber>81</rownumber>
+      <id>H053-2</id>
+      <検証結果>×</検証結果>
+      <操作手順>■操作手順
+Ctrl＋下矢印キーで行読み、Tabキーで移動、またはShiftキーで全文読み
+■音声読み上げ
+Tabキーで移動時のみフォーカスを受け取り、「ウェブ」と読み上げる。
+他は何も読み上げない。</操作手順>
+      <備考>代替テキストを読み上げない。</備考>
+    </result>
+    <result useragent="VoiceOver">
+      <rownumber>81</rownumber>
+      <id>H053-2</id>
+      <検証結果>○</検証結果>
+      <操作手順>■操作手順
+2本指フリック、1本指フリックともに、「富士通 イメージ」と読み上げられた。
+■音声読み上げ
+「富士通 イメージ」</操作手順>
+    </result>
   </testDetail>
 </description>

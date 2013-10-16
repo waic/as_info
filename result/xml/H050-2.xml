@@ -142,5 +142,62 @@ map要素のtitle属性値「メインメニュー」を読み上げることが
 ■音声読み上げ
 「[リンクホーム]　[リンク検索]　[リンク更新情報]　[リンクサイトマップ] 」</操作手順>
     </result>
+    <result useragent="Firefox18.0.1">
+      <rownumber>78</rownumber>
+      <id>H050-2</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Google Chrome 25">
+      <rownumber>78</rownumber>
+      <id>H050-2</id>
+      <検証結果>‐</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Safari 6.0.5">
+      <rownumber>78</rownumber>
+      <id>H050-2</id>
+      <検証結果>‐</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="NVDA 2012.3">
+      <rownumber>78</rownumber>
+      <id>H050-2</id>
+      <検証結果>×</検証結果>
+      <操作手順>■操作手順
+map要素のtitle属性値「メインメニュー」を読み上げることができなかった。また、4つのリンク項目を読み飛ばすことはできなかった。
+■音声読み上げ
+「[リンクホーム]　[リンク検索]　[リンク更新情報]　[リンクサイトマップ] 」</操作手順>
+    </result>
+    <result useragent="PC-Talker 7 2.12">
+      <rownumber>78</rownumber>
+      <id>H050-2</id>
+      <検証結果>×</検証結果>
+      <操作手順>■操作手順
+Ctrl＋下矢印キーで行読み、またはShiftキーで全文読み
+■音声読み上げ
+「ホーム」
+Ctrl＋下矢印キー
+「検索」
+Ctrl＋下矢印キー
+「更新情報」
+Ctrl＋下矢印キー
+「サイトマップ」</操作手順>
+      <備考>map要素のtitle属性値を読み上げない。また読み飛ばす機能がない。</備考>
+    </result>
+    <result useragent="VoiceOver">
+      <rownumber>78</rownumber>
+      <id>H050-2</id>
+      <検証結果>×</検証結果>
+      <操作手順>■操作手順
+map要素のtitle属性値「メインメニュー」を読み上げることができなかった。また、4つのリンク項目を読み飛ばすことはできなかった。
+■音声読み上げ
+「左角かっこ
+ホーム リンク
+検索 リンク
+更新情報 リンク
+サイトマップ リンク
+右角かっこ」</操作手順>
+    </result>
   </testDetail>
 </description>

@@ -129,5 +129,62 @@ Ctrl+Alt+テンキーの5でテーブルの現在地を読み上げるはずだ�
 2. 機能未実装のためテスト不可</操作手順>
       <備考>2012年4月修正</備考>
     </result>
+    <result useragent="Firefox18.0.1">
+      <rownumber>105</rownumber>
+      <id>H079</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Google Chrome 25">
+      <rownumber>105</rownumber>
+      <id>H079</id>
+      <検証結果>‐</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Safari 6.0.5">
+      <rownumber>105</rownumber>
+      <id>H079</id>
+      <検証結果>‐</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="NVDA 2012.3">
+      <rownumber>105</rownumber>
+      <id>H079</id>
+      <検証結果>○</検証結果>
+      <操作手順>■操作手順
+Tabキーを用いて最初のリンク項目に移動すると「軽自動車 A社 2列 6,700円」と読み上げる。さらにTabキーを押すと「B社 3列 6,800円」と読み上げ、もう一度Tabキーを押すと「D社4列 7,200円」と読み上げた。
+■音声読み上げ
+「軽自動車 A社 2列 6,700円」
+「B社 3列 6,800円」
+「D社 4列 7,200円」</操作手順>
+    </result>
+    <result useragent="PC-Talker 7 2.12">
+      <rownumber>105</rownumber>
+      <id>H079</id>
+      <検証結果>×</検証結果>
+      <操作手順>■操作手順
+Ctrl＋上（下）矢印キー
+■音声読み上げ
+Ctrl＋下矢印キー
+「6,700円　リンク」
+Ctrl＋下矢印キー
+「6,800円　リンク」
+Ctrl＋下矢印キー
+「7,200円　リンク」
+Ctrl＋下矢印キー
+「7,400円　リンク」
+Ctrl＋下矢印キー
+「7,400円　リンク」</操作手順>
+      <備考>データセルと関連付けられている見出しセルを読み上げない。</備考>
+    </result>
+    <result useragent="VoiceOver">
+      <rownumber>105</rownumber>
+      <id>H079</id>
+      <検証結果>○</検証結果>
+      <操作手順>■操作手順
+2本指フリック、1本指フリックともに「D社 セダン 8,500円」とは読み上げないが、「8,500円」をダイレクトにタップすると「D社 セダン 8,500円」が読み上げられた。
+■音声読み上げ
+「D社 セダン 8,500円 リンク」</操作手順>
+    </result>
   </testDetail>
 </description>
