@@ -1,0 +1,195 @@
+<description>
+  <SuccessCriteria>
+    <number>7.3.1.2</number>
+    <name>部分的に用いられている言語に関する達成基準</name>
+    <level>AA</level>
+  </SuccessCriteria>
+  <testType>HTMLandXHTML</testType>
+  <rownumber>1</rownumber>
+  <id>H58</id>
+  <実装方法タイトル>言語属性を用いて、自然言語の変更を指定する</実装方法タイトル>
+  <対象>lang属性</対象>
+  <見解>達成可能</見解>
+  <代替もしくは推奨する方法>
+    <body>ユーザーエージェントによるサポートは十分とは言えないが、サポートしているユーザーエージェント（例：lang属性値に応じて音声エンジンを切り替えるスクリーンリーダー）もあるので、異なる言語を使用している箇所にはlang属性でその言語を指定しておいたほうがよい。</body>
+  </代替もしくは推奨する方法>
+  <備考>JAWSでは、読上げオプション＞言語判定をオンにすると音声エンジンが切り替わる。</備考>
+  <testDetail>
+    <result useragent="Internet Explorer 6.0">
+      <rownumber>19</rownumber>
+      <id>H58</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Internet Explorer 7.0">
+      <rownumber>19</rownumber>
+      <id>H58</id>
+      <検証結果>‐</検証結果>
+    </result>
+    <result useragent="Internet Explorer 8.0">
+      <rownumber>19</rownumber>
+      <id>H58</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Internet Explorer 9">
+      <rownumber>19</rownumber>
+      <id>H58</id>
+      <検証結果>‐</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Firefox 3.5">
+      <rownumber>19</rownumber>
+      <id>H58</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Firefox 4.0">
+      <rownumber>19</rownumber>
+      <id>H58</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Firefox 9.0">
+      <rownumber>19</rownumber>
+      <id>H58</id>
+      <検証結果>‐</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Safari 3.2">
+      <rownumber>19</rownumber>
+      <id>H58</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Safari 5.0.3">
+      <rownumber>19</rownumber>
+      <id>H58</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="JAWS for Windows 9.0">
+      <rownumber>19</rownumber>
+      <id>H58</id>
+      <検証結果>○</検証結果>
+      <操作手順>Ins+Vで「JAWSオプションの調整」ダイアログを開く。
+読上げオプション＞言語判定をオンにする</操作手順>
+    </result>
+    <result useragent="ホームページ・リーダー 3.04">
+      <rownumber>19</rownumber>
+      <id>H58</id>
+      <検証結果>×</検証結果>
+      <操作手順>手順
+1.「ここまで日本語です」から読み上げをスタートし、英文の箇所が英語の音声エンジンに切り替わって読み上げられる確認する。
+2.英文が読み上げられた後、「ここから日本語です」の箇所が日本語の音声エンジンに切り替わって読み上げられるか確認する。
+2について、手動で英語の音声エンジンに切替えて読み上げをさせてみたが、日本語の音声エンジンには切り替わらなかった。
+■英文の読み上げ
+「ふじとす　いず　こんとりびゅーてぃんぐ　とー　えー　せーふ,　はっぴー　えんど　りっち　りふぇすたいる　えんど　そさいええてぃ　ばい　くりええーてぃんぐ　じぇんとる　りれーしょんしっぷす　びとうぃーん　ぴーぷる　えんど　あいてぃー」
+「ざ　えいむ　ふぉー　あん　あいてぃー　そさいええてぃ　いん　ふぃっち　えにいわん　かん　ぱーてぃしぺーと　いん　おーる　でざいん　あくてぃびてぃず　ゆーじんぐ　ひゅーまん　せんたーど　でざいん　ふぃっち　ぷりおりたいぜず　ぴーぷる」</操作手順>
+      <備考>音声エンジンは手動での切り替えのみ</備考>
+    </result>
+    <result useragent="PC-Talker XP 3.06">
+      <rownumber>19</rownumber>
+      <id>H58</id>
+      <検証結果>×</検証結果>
+      <操作手順>英文（"Fujitsu is contributing..."以下）を読み上げる際に、英語の音声エンジンに切り替えられず、日本語の音声エンジンのまま読み上げられた。</操作手順>
+      <備考>lang属性を解釈していないと思われたため、×にした。
+【補足】
+英語音声を使用する設定（Ctrl＋Alt＋E）にしてから再度検証を行うと、英語の箇所については英語の音声エンジンに切り替えて読み上げられた。
+しかし、これはlang属性で自然言語を指定された箇所だけでなく、英語で記述された箇所すべてに対して有効であったため、lang属性を解釈したものではないと思われる。</備考>
+    </result>
+    <result useragent="PC-Talker XP 3.06 + NetReader 1.18">
+      <rownumber>19</rownumber>
+      <id>H58</id>
+      <検証結果>×</検証結果>
+      <操作手順>英文（"Fujitsu is contributing..."以下）を読み上げる際に、英語の音声エンジンに切り替えられず、日本語の音声エンジンのまま読み上げられた。</操作手順>
+      <備考>■補足
+lang属性を解釈していないと思われたため、×にした。
+【補足】
+PC-Talker XPの英語音声の設定で「なめらか読みに英語音声を使用する」にチェックが入っていると、英語の箇所については英語の音声エンジンに切り替えて読み上げられる。
+しかし、これは、lang属性を解釈した上での処理ではないと見られる。
+なぜなら、lang属性で自然言語が指定された箇所だけでなく、英語で記述された箇所すべてに対して上記の処理がされているためである。</備考>
+    </result>
+    <result useragent="FocusTalk V3">
+      <rownumber>19</rownumber>
+      <id>H58</id>
+      <検証結果>×</検証結果>
+      <備考>英語エンジンを搭載していない</備考>
+    </result>
+    <result useragent="NVDA 2010.1j">
+      <rownumber>19</rownumber>
+      <id>H58</id>
+      <検証結果>×</検証結果>
+      <操作手順>■操作手順
+1. 英文（"Fujitsu is contributing..."以下）を読み上げる際に、英語の音声エンジンに切り替えて読み上げられなかった。
+2. 英文の後に日本語（「ここから日本語です。」）を読み上げる際に、音声エンジンは変更されなかった。</操作手順>
+    </result>
+    <result useragent="NVDA 2011.1">
+      <rownumber>19</rownumber>
+      <id>H58</id>
+      <検証結果>×</検証結果>
+      <操作手順>■操作手順
+1. 英文（"Fujitsu is contributing..."以下）を読み上げる際に、英語の音声エンジンに切り替えて読み上げられなかった。
+2. 英文の後に日本語（「ここから日本語です。」）を読み上げる際に、音声エンジンは変更されなかった。
+■音声読み上げ
+「ここまで日本語です。
+引用
+Fujitsu is contributing to a safe, happy, and rich lifestyle and society by creating gentle relationships between people and IT. 
+The aim for an IT society in which anyone can participate in all design activities using "Human Centered Design", which prioritizes people. 
+引用終了
+ここから日本語です。」</操作手順>
+    </result>
+    <result useragent="Firefox18.0.1">
+      <rownumber>19</rownumber>
+      <id>H58</id>
+      <検証結果>‐</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Google Chrome 25">
+      <rownumber>19</rownumber>
+      <id>H58</id>
+      <検証結果>‐</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Safari 6.0.5">
+      <rownumber>19</rownumber>
+      <id>H58</id>
+      <検証結果>‐</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="NVDA 2012.3">
+      <rownumber>19</rownumber>
+      <id>H58</id>
+      <検証結果>×</検証結果>
+      <操作手順>■操作手順
+1. 英文（"Fujitsu is contributing..."以下）を読み上げる際に、英語の音声エンジンに切り替えて読み上げられなかった。
+2. 英文の後に日本語（「ここから日本語です。」）を読み上げる際に、音声エンジンは変更されなかった。
+■音声読み上げ
+「ここまで日本語です。
+引用
+Fujitsu is contributing to a safe, happy, and rich lifestyle and society by creating gentle relationships between people and IT. 
+The aim for an IT society in which anyone can participate in all design activities using "Human Centered Design", which prioritizes people. 
+引用終了
+ここから日本語です。」</操作手順>
+    </result>
+    <result useragent="PC-Talker 7 2.12">
+      <rownumber>19</rownumber>
+      <id>H58</id>
+      <検証結果>×</検証結果>
+      <操作手順>英文（"Fujitsu is contributing..."以下）を読み上げる際に、英語の音声エンジンに切り替えられず、日本語の音声エンジンのまま読み上げた。</操作手順>
+    </result>
+    <result useragent="VoiceOver">
+      <rownumber>19</rownumber>
+      <id>H58</id>
+      <検証結果>×</検証結果>
+      <操作手順>■操作手順
+1. 2本指フリック、1本指フリックともに、日本語→英語として読んでいるが、日本語音声と変化はなかった。 
+2. 2本指フリック、1本指フリックともに、英語→日本語として読んでいるが、日本語音声と変化はなかった。 
+■音声読み上げ
+「ここまで日本語です。
+Fujitsu is contributing to a safe, happy, and rich lifestyle and society by creating gentle relationships between people and IT. 
+The aim for an IT society in which anyone can participate in all design activities using "Human Centered Design", which prioritizes people. 
+ここから日本語です。」</操作手順>
+    </result>
+  </testDetail>
+</description>

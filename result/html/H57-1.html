@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="ja" lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="ウェブ,アクセシビリティ,基盤,委員会,WAIC,web,accessibility,infrastructure,committee,アクセシビリティ,サポーテッド,AS,情報" />
+    <meta name="description" content="アクセシビリティ・サポーテッド（AS）情報に関する解説文書" />
+    <link rel="stylesheet" type="text/css" href="http://waic.jp/cmn/css/docs.css" />
+    <title>アクセシビリティ・サポーテッド（AS）情報：H57-1</title>
+    <style type="text/css">table{empty-cells: show;}tr.warn{background: #ffd;}tr.ng{background: #fdd;}</style>
+  </head>
+  <body>
+    <div id="logo">
+      <a href="http://waic.jp/">
+        <img src="http://waic.jp/cmn/img/header/logo.png" alt="ウェブアクセシビリティ基盤委員会 / WAIC: Web Accessibility Infrastructure Committee" width="334" height="77" />
+      </a>
+    </div>
+    <h1>アクセシビリティ・サポーテッド（AS）情報：H57-1</h1>
+    <ul>
+      <li>公開日：2012年5月15日</li>
+      <li>作成者：ウェブアクセシビリティ基盤委員会（WAIC）実装ワーキンググループ（WG2）</li>
+    </ul>
+    <h2>H57-1: H57： html要素の言語属性を用いる</h2>
+    <h3>関連する達成基準の実装方法一覧</h3>
+    <p>
+      <a href="7.3.1.1.html">7.3.1.1ページの言語に関する達成基準 (等級A)</a>
+    </p>
+    <h3>テストファイル</h3>
+    <p>
+      <a href="&#xA;http://waic.jp/docs/jis2010-as-tests/201205/A/HTMLandXHTML/H57-1.html">H57-1のテストファイル</a>
+    </p>
+    <div class="ok">
+      <h3>見解</h3>
+      <p>達成可能</p>
+    </div>
+    <h3>対象</h3>
+    <p>html要素のlang属性</p>
+    <h3>代替もしくは推奨する方法</h3>
+    <p>ユーザーエージェントによるサポートは十分とは言えないが、サポートしているユーザーエージェント（例：lang属性値に応じて音声エンジンを切り替えるスクリーンリーダー）もあるので、html要素のlang属性で言語を指定しておいたほうがよい。</p>
+    <h3>テスト結果の詳細</h3>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">ユーザエージェント</th>
+          <th scope="col">検証結果</th>
+          <th scope="col">操作手順</th>
+          <th scope="col">備考</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="ok">
+          <td>Internet Explorer 6.0</td>
+          <td>○</td>
+          <td>英語で表示されている。</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 7.0</td>
+          <td>○</td>
+          <td>英語で表示されている</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 8.0</td>
+          <td>○</td>
+          <td>英語で表示されている</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 9</td>
+          <td>○</td>
+          <td>「本テスト対象のコードは別ファイルになっています。」のリンク先のページが英語「The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect.」で表示されるか確認</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 3.5</td>
+          <td>○</td>
+          <td>英語で表示されている。</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 4.0</td>
+          <td>○</td>
+          <td>「本テスト対象のコードは別ファイルになっています。」のリンク先のページが英語「The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect.」で表示されるか確認。</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 9.0</td>
+          <td>○</td>
+          <td>「本テスト対象のコードは別ファイルになっています。」のリンク先のページが英語「The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect.」で表示されるか確認</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Safari 3.2</td>
+          <td>○</td>
+          <td>英語で表示される</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Safari 5.0.3</td>
+          <td>○</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>JAWS for Windows 9.0</td>
+          <td>-</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>ホームページ・リーダー 3.04</td>
+          <td>-</td>
+          <td></td>
+          <td>エンジンの切り替えは手動でしかできない</td>
+        </tr>
+        <tr class="ok">
+          <td>PC-Talker XP 3.06</td>
+          <td>-</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>PC-Talker XP 3.06 + NetReader 1.18</td>
+          <td>-</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>FocusTalk V3</td>
+          <td>-</td>
+          <td></td>
+          <td>デフォルトのFocus Talkには、英語のエンジンは搭載されていない。</td>
+        </tr>
+        <tr class="ok">
+          <td>NVDA 2010.1j</td>
+          <td>-</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ng">
+          <td>NVDA 2011.1</td>
+          <td>×</td>
+          <td>■操作手順<br />ページを開いても、音声エンジンがフランス語に切り替わらなかった。<br />■音声読み上げ<br />「document ?crit en fran?ais」</td>
+          <td>テスト内容が不明瞭なためテスト不可。</td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox18.0.1</td>
+          <td>○</td>
+          <td>「本テスト対象のコードは別ファイルになっています。」のリンク先のページが英語「The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect.」で表示されるか確認</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Google Chrome 25</td>
+          <td>○</td>
+          <td>【1】リンク先のページが英語で表示されるかを確認する。</td>
+          <td>【1】○<br />「The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect.」という内容のページが表示されることを確認した。</td>
+        </tr>
+        <tr class="ok">
+          <td>Safari 6.0.5</td>
+          <td>○</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>NVDA 2012.3</td>
+          <td>○</td>
+          <td>■操作手順<br />対応している音声エンジンを使用している場合は、ページを開くとフランス語の音声エンジンに切り替えて内容をよむことができた. <br />■音声読み上げ<br />「document ?crit en fran?ais」</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>PC-Talker 7 2.12</td>
+          <td>-</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ng">
+          <td>VoiceOver</td>
+          <td>×</td>
+          <td>■操作手順<br />2本指フリック、1本指フリックともに、英語として読んでいるが、日本語音声と変化はなかった。 <br />■音声読み上げ<br />「The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect.」</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

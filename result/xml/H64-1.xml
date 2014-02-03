@@ -1,0 +1,218 @@
+<description>
+  <SuccessCriteria>
+    <number>7.2.4.1</number>
+    <name>ブロックスキップに関する達成基準</name>
+    <level>A</level>
+  </SuccessCriteria>
+  <SuccessCriteria>
+    <number>7.4.1.2</number>
+    <name>プログラムが解釈可能な識別名，役割及び設定可能な値に関する達成基準</name>
+    <level>A</level>
+  </SuccessCriteria>
+  <testType>HTMLandXHTML</testType>
+  <rownumber>1</rownumber>
+  <id>H64-1</id>
+  <実装方法タイトル>H64： frame要素及びiframe要素のtitle属性を用いる</実装方法タイトル>
+  <対象>frame要素のtitle属性</対象>
+  <見解>要注意</見解>
+  <代替もしくは推奨する方法>
+    <body>フレームを使用する際には、title属性で名前を提供しておくべきである。ただし、フレームは他のアクセシビリティ上の問題を引き起こすことが多いため、フレームの使用自体は推奨しない。
+フレームはブロックスキップのメカニズムとしては機能しない。達成基準7.2.4.1の実装方法としては、H69を推奨する。</body>
+  </代替もしくは推奨する方法>
+  <注意点>
+    <body>スクリーンリーダーではJAWSとHPRしかサポートされていない。フレームの識別名を提供するメカニズムとしては機能しうるが、機能しない環境もある。今後の支援技術の機能向上に期待する。
+ブロックスキップのメカニズムとしては機能しない。</body>
+  </注意点>
+  <testDetail>
+    <result useragent="Internet Explorer 6.0">
+      <rownumber>88</rownumber>
+      <id>H64-1</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Internet Explorer 7.0">
+      <rownumber>88</rownumber>
+      <id>H64-1</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Internet Explorer 8.0">
+      <rownumber>88</rownumber>
+      <id>H64-1</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Internet Explorer 9">
+      <rownumber>88</rownumber>
+      <id>H64-1</id>
+      <検証結果>‐</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Firefox 3.5">
+      <rownumber>88</rownumber>
+      <id>H64-1</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Firefox 4.0">
+      <rownumber>88</rownumber>
+      <id>H64-1</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Firefox 9.0">
+      <rownumber>88</rownumber>
+      <id>H64-1</id>
+      <検証結果>‐</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Safari 3.2">
+      <rownumber>88</rownumber>
+      <id>H64-1</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Safari 5.0.3">
+      <rownumber>88</rownumber>
+      <id>H64-1</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="JAWS for Windows 9.0">
+      <rownumber>88</rownumber>
+      <id>H64-1</id>
+      <検証結果>○</検証結果>
+      <操作手順>■操作手順
+F6でフレーム間を移動（IEの機能）
+Ctrl+Tab,Ctrl+Shift+Tab(Jawsの機能)
+「メニューフレーム」
+「メインコンテンツフレーム」
+とそれぞれ読み上げた。
+また、Ins+F9でフレームリストを表示できる
+メニュー
+メインコンテンツ
+とリストに表示された
+■音声読み上げ
+「ページに２個のフレーム　テン　１３個の見出し　テン　５５個のリンクがあります」
+Ｆ６で確認
+「メニュー　フレーム」
+「メインコンテンツ　フレーム」</操作手順>
+    </result>
+    <result useragent="ホームページ・リーダー 3.04">
+      <rownumber>88</rownumber>
+      <id>H64-1</id>
+      <検証結果>○</検証結果>
+      <操作手順>■操作手順
+Ctrl+Tabでフレームを移動した際に、「メニュー」「メインコンテンツ」が最初に読み上げられる
+Ctrl+Eでフレーム選択ダイアログが表示される
+■音声読み上げ
+「メニュー」「メインコンテンツ」</操作手順>
+    </result>
+    <result useragent="PC-Talker XP 3.06">
+      <rownumber>88</rownumber>
+      <id>H64-1</id>
+      <検証結果>×</検証結果>
+      <操作手順>■操作手順
+フレームセットのタイトルを「H64：例1のサンプルファイル」と読み上げた。
+■音声読み上げ
+「H64：例1のサンプルファイル」</操作手順>
+      <備考>各フレームについてはTab+Ctrlで、「ナビゲーションメニュー」「富士通、Fujitsu JAPAN」と読み上げる。</備考>
+    </result>
+    <result useragent="PC-Talker XP 3.06 + NetReader 1.18">
+      <rownumber>88</rownumber>
+      <id>H64-1</id>
+      <検証結果>×</検証結果>
+      <操作手順>■操作手順
+リンクをクリックしてページが表示されると、「 フレーム数　ニ　メニュー」と読み上げられた。
+それぞれのフレームにフォーカスを移動すると、左側のフレームでは「フレーム　ニのイチ」、右側のフレームでは「フレーム　ニのニ」と読み上げた後に本文の読み上げを開始する。
+■音声読み上げ
+「ホンバコの フレーム数　ニ　メニュー」
+「フレーム　ニのイチ」
+「フレーム　ニのニ」</操作手順>
+      <備考>それぞれのtitle属性値「メニュー」、「メインコンテンツ」は読み上げられないため、×とした。</備考>
+    </result>
+    <result useragent="FocusTalk V3">
+      <rownumber>88</rownumber>
+      <id>H64-1</id>
+      <検証結果>×</検証結果>
+      <操作手順>■操作手順
+Ctrl+Shift+↑（↓）でフレームの移動を行ったが、「メニュー」、「メインコンテンツ」が読み上げられなかった。
+■音声読み上げ
+「ページの先頭です メニュー 2フレームちゅう2フレーム メニュー トップページ アクセシビリティ」</操作手順>
+      <備考>・インターネット接続不可のため、frame２にはテストファイルを指定して行った。</備考>
+    </result>
+    <result useragent="NVDA 2010.1j">
+      <rownumber>88</rownumber>
+      <id>H64-1</id>
+      <検証結果>×</検証結果>
+      <操作手順>■操作手順
+Mキーでフレーム間を移動した際、「メニューフレーム」というタイトルは読まれるものの、「メインコンテンツ」というタイトルは読み上げられなかった。
+■音声読み上げ
+「iFrame終了　メニュー見出しレベル1」
+「iFrame終了　本文へジャンプ画像」</操作手順>
+    </result>
+    <result useragent="NVDA 2011.1">
+      <rownumber>88</rownumber>
+      <id>H64-1</id>
+      <検証結果>×</検証結果>
+      <操作手順>■操作手順
+フレーム間を移動した際、「メニューフレーム」というタイトルは読まれるものの、「メインコンテンツ」というタイトルは読み上げられなかった。
+■音声読み上げ
+「iframe終了　メニュー見出しレベル1」
+「iframe終了　本文へジャンプ画像」</操作手順>
+    </result>
+    <result useragent="Firefox18.0.1">
+      <rownumber>88</rownumber>
+      <id>H64-1</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Google Chrome 25">
+      <rownumber>88</rownumber>
+      <id>H64-1</id>
+      <検証結果>‐</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Safari 6.0.5">
+      <rownumber>88</rownumber>
+      <id>H64-1</id>
+      <検証結果>‐</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="NVDA 2012.3">
+      <rownumber>88</rownumber>
+      <id>H64-1</id>
+      <検証結果>○</検証結果>
+      <操作手順>■操作手順
+Mキーを押してフレーム間を移動した際、「メニュー」と「メインコンテンツ」というフレームタイトルを読み上げた.
+■音声読み上げ
+「iframe終了　メニュー」
+「iframe終了　メインコンテンツ」
+「iframe終了　本文へジャンプ画像」</操作手順>
+    </result>
+    <result useragent="PC-Talker 7 2.12">
+      <rownumber>88</rownumber>
+      <id>H64-1</id>
+      <検証結果>×</検証結果>
+      <操作手順>■操作手順
+F6（逆順はShift＋F6）でフレーム間を移動、またはTabキーで移動
+■音声読み上げ
+各フレームのHTMLファイルのtitle要素を読み上げる。</操作手順>
+      <備考>title属性値を読み上げない。</備考>
+    </result>
+    <result useragent="VoiceOver">
+      <rownumber>88</rownumber>
+      <id>H64-1</id>
+      <検証結果>×</検証結果>
+      <操作手順>■操作手順
+2本指フリック、1本指フリックともに、「メニュー」と「メインコンテンツ」というフレームタイトルを読み上げなかった。
+■音声読み上げ
+「メニュー 見出しレベル1
+行頭記号 リストの開始位置です トップページ リンク
+行頭記号 お問い合わせ リンク
+行頭記号 アクセシビリティ リンク
+このページの本文へ移動 ページ内リンク
+：」</操作手順>
+    </result>
+  </testDetail>
+</description>

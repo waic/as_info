@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="ja" lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="ウェブ,アクセシビリティ,基盤,委員会,WAIC,web,accessibility,infrastructure,committee,アクセシビリティ,サポーテッド,AS,情報" />
+    <meta name="description" content="アクセシビリティ・サポーテッド（AS）情報に関する解説文書" />
+    <link rel="stylesheet" type="text/css" href="http://waic.jp/cmn/css/docs.css" />
+    <title>アクセシビリティ・サポーテッド（AS）情報：H4-2</title>
+    <style type="text/css">table{empty-cells: show;}tr.warn{background: #ffd;}tr.ng{background: #fdd;}</style>
+  </head>
+  <body>
+    <div id="logo">
+      <a href="http://waic.jp/">
+        <img src="http://waic.jp/cmn/img/header/logo.png" alt="ウェブアクセシビリティ基盤委員会 / WAIC: Web Accessibility Infrastructure Committee" width="334" height="77" />
+      </a>
+    </div>
+    <h1>アクセシビリティ・サポーテッド（AS）情報：H4-2</h1>
+    <ul>
+      <li>公開日：2012年5月15日</li>
+      <li>作成者：ウェブアクセシビリティ基盤委員会（WAIC）実装ワーキンググループ（WG2）</li>
+    </ul>
+    <h2>H4-2: リンク、フォームのコントロール、及びオブジェクトには、論理的なタブ移動順序を作成する</h2>
+    <h3>関連する達成基準の実装方法一覧</h3>
+    <p>
+      <a href="7.2.4.3.html">7.2.4.3フォーカス順序に関する達成基準 (等級A)</a>
+    </p>
+    <h3>テストファイル</h3>
+    <p>
+      <a href="&#xA;http://waic.jp/docs/jis2010-as-tests/201205/A/HTMLandXHTML/H4-2.html">H4-2のテストファイル</a>
+    </p>
+    <div class="warn">
+      <h3>見解</h3>
+      <p>要注意</p>
+    </div>
+    <h3>対象</h3>
+    <p>リンクより後に出現したinput要素のtabindex属性</p>
+    <h3>注意点</h3>
+    <p>NetReader、VoiceOverでは想定通りの動作をしない。</p>
+    <h3>備考</h3>
+    <p>NetReader、VoiceOverの今後の機能向上に期待する。</p>
+    <h3>テスト結果の詳細</h3>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">ユーザエージェント</th>
+          <th scope="col">検証結果</th>
+          <th scope="col">操作手順</th>
+          <th scope="col">備考</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="ok">
+          <td>Internet Explorer 6.0</td>
+          <td>○</td>
+          <td>Tabキーで移動すると、テキストフィールド、検索ボタン、”携帯サイト”、”サイトマップ”の順で移動する。</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 7.0</td>
+          <td>○</td>
+          <td>テキストフィールド →検索ボタン→携帯サイト→サイトマップの順でフォーカスが移動した</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 8.0</td>
+          <td>○</td>
+          <td>テキストフィールド →検索ボタン→携帯サイト→サイトマップの順でフォーカスが移動した</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 9</td>
+          <td>○</td>
+          <td>1:以下のようにフォーカスが移動することを確認<br />「テキストフィールド」→「[検索ボタン]」→「携帯サイト」→「サイトマップ」</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 3.5</td>
+          <td>○</td>
+          <td>Tabキーで移動すると、テキストフィールド、検索ボタン、”携帯サイト”、”サイトマップ”の順で移動した。</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 4.0</td>
+          <td>○</td>
+          <td>1:以下のようにフォーカスが移動することを確認<br />「テキストフィールド」→「[検索ボタン]」→「携帯サイト」→「サイトマップ」</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 9.0</td>
+          <td>○</td>
+          <td>以下のようにフォーカスが移動することを確認<br />「テキストフィールド」→「[検索ボタン]」→「携帯サイト」→「サイトマップ」</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Safari 3.2</td>
+          <td>○</td>
+          <td>Option+tabで移動すると順番とおり、テキストフィールド→[検索ボタン]→携帯サイト→サイトマップ</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Safari 5.0.3</td>
+          <td>○</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>JAWS for Windows 9.0</td>
+          <td>○</td>
+          <td>■操作手順<br />テキストフィールド、[検索ボタン]、"携帯サイト"、サイトマップの順に読み上げた。 <br />■音声読み上げ<br />「エディット」<br />｢検索　ボタン」<br />「携帯サイト　ページ内リンク」<br />「サイトマップ　ページ内リンク」</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>ホームページ・リーダー 3.04</td>
+          <td>○</td>
+          <td>■操作手順<br />Tabキーで移動すると、テキストフィールド、検索ボタン、”携帯サイト”、”サイトマップ”の順で移動する。<br />■音声読み上げ<br />「携帯サイト　サイトマップ (フォーム1 の先頭。)　 [テキスト。]  [検索: 実行ボタン。]  (フォーム1 の終わり。)」</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>PC-Talker XP 3.06</td>
+          <td>○</td>
+          <td>■操作手順<br />Tabキで、テキストフィールド 、検索ボタン、携帯サイト、サイトマップの順でフォーカスが移動した。 <br />■音声読み上げ<br />「携帯サイト サイトマップ   サイトマップのエディット文字入力　検索のプッシュボタン　確認」</td>
+          <td></td>
+        </tr>
+        <tr class="ng">
+          <td>PC-Talker XP 3.06 + NetReader 1.18</td>
+          <td>×</td>
+          <td>■操作手順<br />Tabキーを押下し、次の順序でフォーカスが移動しなかった。<br />    1. テキストフィールド <br />    2. [検索ボタン] <br />    3. "携帯サイト" <br />    4. "サイトマップ" <br />■音声読み上げ<br />「携帯サイト　ページ内リンク」<br />「サイトマップ　ページ内リンク」<br />「文字入力　エンター　で　入力」<br />「検索　確認」</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>FocusTalk V3</td>
+          <td>○</td>
+          <td>■操作手順<br />Tabキーで移動すると、テキストフィールド、検索ボタン、携帯サイト、サイトマップの　順でフォーカスが移動する。<br />■音声よみあげ<br />「サイトマップのエディット　検索のボタン　携帯サイト　サイトマップ」</td>
+          <td>FocusTalkの「キー操作モード」がオフの場合。<br />　「キー操作モード」がオンの場合は、携帯サイト、サイトマップ、テキストフィールド、　検索ボタンの順でフォーカスが移動する。</td>
+        </tr>
+        <tr class="ok">
+          <td>NVDA 2010.1j</td>
+          <td>○</td>
+          <td>■操作手順<br />タブキーで移動したとき、指定された順番でコンテンツが読み上げられた。<br />■音声読み上げ<br />「エディットオートコンプリート付　空行<br />検索ボタン<br />リスト3項目　携帯サイト　リンク<br />サイトマップ　リンク」</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>NVDA 2011.1</td>
+          <td>○</td>
+          <td>■操作手順<br />タブキーで移動したとき、指定された順番でコンテンツが読み上げられた。<br />■音声読み上げ<br />「エディットオートコンプリート　空行<br />検索ボタン<br />リスト3項目　携帯サイト　リンク<br />サイトマップ　リンク」</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox18.0.1</td>
+          <td>○</td>
+          <td>以下のようにフォーカスが移動することを確認<br />「テキストフィールド」→「[検索ボタン]」→「携帯サイト」→「サイトマップ」</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Google Chrome 25</td>
+          <td>○</td>
+          <td>【1】以下のようにフォーカスが移動することを確認する。<br />「テキストフィールド」→「[検索ボタン]」→「携帯サイト」→「サイトマップ」</td>
+          <td>【1】○<br />「テキストフィールド」→「[検索ボタン]」→「携帯サイト」→「サイトマップ」の順でフォーカスが移動することを確認した。</td>
+        </tr>
+        <tr class="ok">
+          <td>Safari 6.0.5</td>
+          <td>○</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>NVDA 2012.3</td>
+          <td>○</td>
+          <td>■操作手順<br />タブキーで移動したとき、指定された順番でコンテンツが読み上げられた。<br />■音声読み上げ<br />「エディットオートコンプリート　空行<br />検索ボタン<br />リスト3項目　携帯サイト　リンク<br />サイトマップ　リンク」</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>PC-Talker 7 2.12</td>
+          <td>○</td>
+          <td>■操作手順<br />Tabキーで移動<br />■音声読み上げ<br />Tabキー<br />「サイトマップ　のエディット　文字入力」<br />Tabキー<br />「検索　のプッシュボタン　確認」<br />Tabキー<br />「携帯サイト　リンク」<br />Tabキー<br />「サイトマップ  リンク 」</td>
+          <td></td>
+        </tr>
+        <tr class="ng">
+          <td>VoiceOver</td>
+          <td>×</td>
+          <td>■操作手順<br />2本指フリック、1本指フリックともに、指定された順序にはフォーカスは移動しなかった。<br />■音声読み上げ<br />「携帯サイト リンク リストの開始位置です<br />サイトマップ リンク リストの終了位置です<br />テキストフィールド ダブルタップして編集します<br />検索 ボタン」</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

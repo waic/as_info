@@ -6,7 +6,7 @@
   </SuccessCriteria>
   <item>
     <rownumber>1</rownumber>
-    <id>H058</id>
+    <id>H58</id>
     <実装方法タイトル>言語属性を用いて、自然言語の変更を指定する</実装方法タイトル>
     <対象>lang属性</対象>
     <見解>達成可能</見解>

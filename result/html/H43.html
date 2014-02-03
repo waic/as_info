@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="ja" lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="ウェブ,アクセシビリティ,基盤,委員会,WAIC,web,accessibility,infrastructure,committee,アクセシビリティ,サポーテッド,AS,情報" />
+    <meta name="description" content="アクセシビリティ・サポーテッド（AS）情報に関する解説文書" />
+    <link rel="stylesheet" type="text/css" href="http://waic.jp/cmn/css/docs.css" />
+    <title>アクセシビリティ・サポーテッド（AS）情報：H43</title>
+    <style type="text/css">table{empty-cells: show;}tr.warn{background: #ffd;}tr.ng{background: #fdd;}</style>
+  </head>
+  <body>
+    <div id="logo">
+      <a href="http://waic.jp/">
+        <img src="http://waic.jp/cmn/img/header/logo.png" alt="ウェブアクセシビリティ基盤委員会 / WAIC: Web Accessibility Infrastructure Committee" width="334" height="77" />
+      </a>
+    </div>
+    <h1>アクセシビリティ・サポーテッド（AS）情報：H43</h1>
+    <ul>
+      <li>公開日：2012年5月15日</li>
+      <li>作成者：ウェブアクセシビリティ基盤委員会（WAIC）実装ワーキンググループ（WG2）</li>
+    </ul>
+    <h2>H43: id属性及びheaders属性を用いて、データテーブルのデータセルを見出しセルと関連付ける</h2>
+    <h3>関連する達成基準の実装方法一覧</h3>
+    <p>
+      <a href="7.1.3.1.html">7.1.3.1情報及び関係性に関する達成基準 (等級A)</a>
+    </p>
+    <h3>テストファイル</h3>
+    <p>
+      <a href="&#xA;http://waic.jp/docs/jis2010-as-tests/201205/A/HTMLandXHTML/H43.html">H43のテストファイル</a>
+    </p>
+    <div class="warn">
+      <h3>見解</h3>
+      <p>要注意</p>
+    </div>
+    <h3>対象</h3>
+    <p>th要素のid属性とtd要素のheaders属性</p>
+    <h3>注意点</h3>
+    <p>スクリーンリーダーによるサポートが十分とはいえない。<br />ただし、複雑な構造になってしまう場合は、この実装方法のようにid属性とheaders属性を用いてデータセルと見出しセルとの関連付けを行う。</p>
+    <h3>代替もしくは推奨する方法</h3>
+    <p>id属性とheaders属性を使わないですむように、できるかぎり単純な構造にしたほうがよい。例えば、見出しセルを複数行/複数列にしない、セルを結合しないなど。</p>
+    <h3>備考</h3>
+    <p>使用することによる悪影響はなく、スクリーンリーダーの今後の機能向上に期待する。</p>
+    <h3>テスト結果の詳細</h3>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">ユーザエージェント</th>
+          <th scope="col">検証結果</th>
+          <th scope="col">操作手順</th>
+          <th scope="col">備考</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="ok">
+          <td>Internet Explorer 6.0</td>
+          <td>-</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 7.0</td>
+          <td>-</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 8.0</td>
+          <td>-</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 9</td>
+          <td>‐</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 3.5</td>
+          <td>-</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 4.0</td>
+          <td>-</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 9.0</td>
+          <td>‐</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Safari 3.2</td>
+          <td>-</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Safari 5.0.3</td>
+          <td>-</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>JAWS for Windows 9.0</td>
+          <td>○</td>
+          <td>■操作手順<br />１．Ctrl+Alt+テンキー（６なら右へセル移動、４なら左へセル移動）で確認した。<br />1つ目のデータセル「15％」から2つ目のデータセル「5％」に移動した際には、「東京　男性　5％ ２列」と読み上げた<br />２．Ctrl+Alt+テンキー５で確認した。<br />２つ目のデータセル「5％」を「２行カンマ３列 東京　男性　5%」と読み上げた （JAWSオプションの調整で、テーブルのタイトル読み上げを'マークされたタイトル'に設定しておくことが条件）<br />■音声読み上げ<br />１．例１「東京　男性　５％　２列」<br />１．例２「東京　女性　１５％　３列」<br />２．「２行　カンマ　３列　東京　男性　５％」</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>ホームページ・リーダー 3.04</td>
+          <td>○</td>
+          <td>■操作手順<br />テーブル読み上げモードで「東京男性5%」から→すると「東京女性15%」と読み上げる※重なる「東京」を読み上げさせない機能はない<br />テーブル読み上げモードでスペースを押すことで、現在のセルを再度フォーカス移動時と同じように読み上げる<br />■音声読み上げ<br />（テーブル読み上げモードで15％にカーソルを合わせる）「東京男性5%」</td>
+          <td></td>
+        </tr>
+        <tr class="ng">
+          <td>PC-Talker XP 3.06</td>
+          <td>×</td>
+          <td>■操作手順<br />テーブル読み上げ機能がない。<br />■音声読み上げ<br />「全国 東京 大阪 男性　女性　合計　男性 女性 合計 　15％・・・」</td>
+          <td>テーブル読み上げ機能がないので、セルデータについての読み上げができない。</td>
+        </tr>
+        <tr class="ng">
+          <td>PC-Talker XP 3.06 + NetReader 1.18</td>
+          <td>×</td>
+          <td>■操作手順<br />テーブル読み上げ機能がない。<br />また、[T]キーで次のテーブルで移動した際は、「全国　東京　大阪　ジュウゴ　の　ニ　テーブル　イチ」と読み上げた。<br />■音声読み上げ<br />「全国　東京　大阪　男性　女性　合計　男性　女性　合計　ジュウゴ　パーセント　ゴ　パーセント・・・」<br />「全国　東京　大阪　ジュウゴ　の　ニ　テーブル　イチ」</td>
+          <td>テーブル読み上げ機能（テーブルモード）はあるが、検証結果は×である。</td>
+        </tr>
+        <tr class="ng">
+          <td>FocusTalk V3</td>
+          <td>×</td>
+          <td>■操作手順<br />Ctrl＋Tてテーブル読み上げモードにするが、見出しを読み上げない<br />■音声読み上げ<br />「R３C2　５％」</td>
+          <td></td>
+        </tr>
+        <tr class="ng">
+          <td>NVDA 2010.1j</td>
+          <td>×</td>
+          <td>■操作手順<br />Ctrl+Alt+左右矢印キーでセル間を移動した際、移動先のセルの内容は読み上げられるが、関連する見出しなどは読み上げられなかった。<br />■音声読み上げ<br />「1列15%　2列5%　3列15%」</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>NVDA 2011.1</td>
+          <td>○</td>
+          <td>■操作手順<br />Ctrl+Alt+左右矢印キーでセル間を移動した際、移動先のセルの内容とともに関連する見出しを読み上げた。<br />■音声読み上げ<br />15%　東京男性2列5%　東京女性３列15%　東京合計４列１０％」</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox18.0.1</td>
+          <td>-</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Google Chrome 25</td>
+          <td>‐</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Safari 6.0.5</td>
+          <td>‐</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>NVDA 2012.3</td>
+          <td>○</td>
+          <td>■操作手順<br />Ctrl+Alt+左右矢印キーでセル間を移動した際、移動先のセルの内容とともに関連する見出しを読み上げた。<br />■音声読み上げ<br />15%　東京男性2列5%　東京女性３列15%　東京合計４列１０％」</td>
+          <td></td>
+        </tr>
+        <tr class="ng">
+          <td>PC-Talker 7 2.12</td>
+          <td>×</td>
+          <td>■操作手順<br />Ctrl＋下矢印キーで行読み<br />■音声読み上げ<br />Ctrl＋下矢印キーで読み進めると、<br />「全国」、「東京」、「大阪」、「男性」、「女性」、「合計」、「男性」、「女性」、「合計」、「15％」・・・<br />の順で読み上げる</td>
+          <td>テーブル読み上げ機能がないので、データセルと見出しセルを関連付けての読み上げができない。</td>
+        </tr>
+        <tr class="warn">
+          <td>VoiceOver</td>
+          <td>△</td>
+          <td>■操作手順<br />2本指フリックでは、データセルと見出しセルの関連付けはされなかった。<br />1本指フリックでは、関連付けはされるものの一部のみ。<br />■音声読み上げ<br />2本指フリック<br />「全国 表の開始位置です 東京 大阪<br />男性 女性 合計 男性 女性 合計<br />15% 5% 15% 10% 15% 25% 20%<br />表の終了位置です」<br />1本指フリック<br />「全国 表の開始位置です<br />東京<br />大阪<br />東京 男性<br />女性<br />合計<br />大阪 男性<br />女性<br />合計<br />全国 15%<br />東京 5%<br />15%<br />10%<br />大阪 15%<br />25%<br />20%<br />表の終了位置です」</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

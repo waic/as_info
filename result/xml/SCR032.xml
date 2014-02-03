@@ -1,10 +1,5 @@
 <description>
   <SuccessCriteria>
-    <number>7.3.3.1</number>
-    <name>入力エラー箇所の特定に関する達成基準</name>
-    <level>A</level>
-  </SuccessCriteria>
-  <SuccessCriteria>
     <number>7.3.3.3</number>
     <name>入力エラー修正方法の提示に関する達成基準</name>
     <level>AA</level>

@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="ja" lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="ウェブ,アクセシビリティ,基盤,委員会,WAIC,web,accessibility,infrastructure,committee,アクセシビリティ,サポーテッド,AS,情報" />
+    <meta name="description" content="アクセシビリティ・サポーテッド（AS）情報に関する解説文書" />
+    <link rel="stylesheet" type="text/css" href="http://waic.jp/cmn/css/docs.css" />
+    <title>アクセシビリティ・サポーテッド（AS）情報：H53-3</title>
+    <style type="text/css">table{empty-cells: show;}tr.warn{background: #ffd;}tr.ng{background: #fdd;}</style>
+  </head>
+  <body>
+    <div id="logo">
+      <a href="http://waic.jp/">
+        <img src="http://waic.jp/cmn/img/header/logo.png" alt="ウェブアクセシビリティ基盤委員会 / WAIC: Web Accessibility Infrastructure Committee" width="334" height="77" />
+      </a>
+    </div>
+    <h1>アクセシビリティ・サポーテッド（AS）情報：H53-3</h1>
+    <ul>
+      <li>公開日：2012年5月15日</li>
+      <li>作成者：ウェブアクセシビリティ基盤委員会（WAIC）実装ワーキンググループ（WG2）</li>
+    </ul>
+    <h2>H53-3: object要素のボディに代替テキストを記述する</h2>
+    <h3>関連する達成基準の実装方法一覧</h3>
+    <p>
+      <a href="7.1.1.1.html">7.1.1.1非テキストコンテンツに関する達成基準 (等級A)</a>
+    </p>
+    <h3>テストファイル</h3>
+    <p>
+      <a href="&#xA;http://waic.jp/docs/jis2010-as-tests/201205/A/HTMLandXHTML/H53-3.html">H53-3のテストファイル</a>
+    </p>
+    <div class="ng">
+      <h3>見解</h3>
+      <p>達成不可能</p>
+    </div>
+    <h3>対象</h3>
+    <p>object要素で画像を表示し、内容にp要素で入れた代替テキスト</p>
+    <h3>注意点</h3>
+    <p>対応していないスクリーンリーダーが多い。</p>
+    <h3>代替もしくは推奨する方法</h3>
+    <p>フォールバックが必要ない場合はimg要素を用いることが望ましい。</p>
+    <h3>テスト結果の詳細</h3>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">ユーザエージェント</th>
+          <th scope="col">検証結果</th>
+          <th scope="col">操作手順</th>
+          <th scope="col">備考</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="ng">
+          <td>Internet Explorer 6.0</td>
+          <td>×</td>
+          <td>1．×：テスト開始とテスト終了の間に何も表示されない<br />2．×：画像をインターネットオプションで「表示しない」に設定して実行しても変わらず何も表示されない。</td>
+          <td>画像非表示にして更新のF5を押すと、一瞬アイコンのようなものが見えるが、すぐに消えて表示がなくなる</td>
+        </tr>
+        <tr class="ng">
+          <td>Internet Explorer 7.0</td>
+          <td>×</td>
+          <td>１．ロゴの画像が表示されない <br />２．画像非表示に変更した場合も、画像の代わりに代替テキストが表示されなかった</td>
+          <td></td>
+        </tr>
+        <tr class="ng">
+          <td>Internet Explorer 8.0</td>
+          <td>×</td>
+          <td>１．ロゴの画像が表示されない <br />２．画像非表示に変更した場合も、画像の代わりに代替テキストが表示されなかった</td>
+          <td></td>
+        </tr>
+        <tr class="ng">
+          <td>Internet Explorer 9</td>
+          <td>×</td>
+          <td>1:富士通のロゴ画像が表示されることを確認<br />2:画像を以下のやり方で非表示。<br />画像を以下のやり方で非表示にした。<br />ツールメニュー＞インターネットオプション＞詳細設定＞マルチメディア<br />「画像を表示する」のチェックをオフにする<br />画像非表示にすると、代替テキスト「富士通」が表示されることを確認</td>
+          <td>１:×：富士通のロゴは表示されない<br />２:×：代替テキストの「富士通」が表示されない</td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 3.5</td>
+          <td>○</td>
+          <td>1．○：画像が表示された。<br />2．○：『富士通』と表示された。</td>
+          <td>※ただし、ローカルではブラウザ設定の画像非表示で対応できず、参照imgファイルを隠すことで対応。</td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 4.0</td>
+          <td>○</td>
+          <td>1:富士通のロゴ画像が表示されることを確認<br />2:画像を以下のやり方で非表示。<br />ツールメニュー＞オプション＞コンテンツパネル<br />「画像を自動的に読み込む」のチェックをオフにする。<br />画像非表示にすると、代替テキスト「富士通」が表示されることを確認</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 9.0</td>
+          <td>○</td>
+          <td>1:富士通のロゴ画像が表示されることを確認<br />2:画像を以下のやり方で非表示にした。<br />ツール＞オプション＞コンテンツ<br />「画像を自動的に読み込む」のチェックをオフにする<br />画像非表示にすると、代替テキスト「富士通」が表示されることを確認</td>
+          <td>1:○<br />2:○</td>
+        </tr>
+        <tr class="warn">
+          <td>Safari 3.2</td>
+          <td>△</td>
+          <td>ロゴの画像は表示されている。イメージを無効にする、をしても代替テキストの「富士通」は表示されない。</td>
+          <td>代替テキストが表示されない</td>
+        </tr>
+        <tr class="warn">
+          <td>Safari 5.0.3</td>
+          <td>△</td>
+          <td>ロゴの画像は表示されている。イメージを無効にする、をしても代替テキストの「富士通」は表示されない。</td>
+          <td>1：○<br />2：×</td>
+        </tr>
+        <tr class="ng">
+          <td>JAWS for Windows 9.0</td>
+          <td>×</td>
+          <td>■操作手順<br />テスト開始からテスト終了までの間に「富士通」と読み上げられてなかった。<br />■音声読み上げ<br />なし</td>
+          <td>読み上げない</td>
+        </tr>
+        <tr class="ok">
+          <td>ホームページ・リーダー 3.04</td>
+          <td>○</td>
+          <td>■操作手順<br />『オブジェクト：富士通』と読み上げる。<br />■音声読み上げ<br />「オブジェクト：富士通」</td>
+          <td>※セキュリティブロックが表示されるので、出ないように設定が必要</td>
+        </tr>
+        <tr class="ng">
+          <td>PC-Talker XP 3.06</td>
+          <td>×</td>
+          <td>■操作手順<br />「テスト開始」→「テスト終了」と読み上げる。<br />■音声読み上げ<br />読み上げない。</td>
+          <td>読み上げない</td>
+        </tr>
+        <tr class="ng">
+          <td>PC-Talker XP 3.06 + NetReader 1.18</td>
+          <td>×</td>
+          <td>■操作手順<br />「富士通」という代替テキストが読み上げなかった。<br />■音声読み上げ<br />「画像」</td>
+          <td></td>
+        </tr>
+        <tr class="ng">
+          <td>FocusTalk V3</td>
+          <td>×</td>
+          <td>■操作手順<br />ページ全文読み、1行読みのどちらの読み方でも、テスト開始からテスト終了までの間、何も読み上げなかった。<br />■音声読み上げ<br />なし</td>
+          <td></td>
+        </tr>
+        <tr class="ng">
+          <td>NVDA 2010.1j</td>
+          <td>×</td>
+          <td>■操作手順<br />「テスト開始」と「テスト終了」の間を矢印キーで移動すると、「空行」と読み上げられ、代替テキストは確認できなかった。<br />■音声読み上げ<br />「空行」</td>
+          <td></td>
+        </tr>
+        <tr class="ng">
+          <td>NVDA 2011.1</td>
+          <td>×</td>
+          <td>■操作手順<br />「テスト開始」と「テスト終了」の間を矢印キーで移動すると、「空行」と読み上げられ、代替テキストは確認できなかった。<br />■音声読み上げ<br />「空行」</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox18.0.1</td>
+          <td>○</td>
+          <td>1:富士通のロゴ画像が表示されることを確認<br />2:画像を以下のやり方で非表示にした。<br />ツール＞オプション＞コンテンツ<br />「画像を自動的に読み込む」のチェックをオフにする<br />画像非表示にすると、代替テキスト「富士通」が表示されることを確認</td>
+          <td></td>
+        </tr>
+        <tr class="warn">
+          <td>Google Chrome 25</td>
+          <td>△</td>
+          <td>【1】ロゴの画像が表示されるかを確認する。<br />【2】ブラウザの設定を画像非表示に変更した場合、画像の代わりに代替テキスト「富士通」が表示されるかを確認する。<br />画像非表示の設定は下記の通り実施<br />ブラウザ右上のボタン→[コンテンツの設定]→“画像”[すべての画像を表示しない]にチェック</td>
+          <td>【1】○<br />富士通のロゴ画像が表示されることを確認した。<br />【2】×<br />画像の代わりの代替テキストも何も表示されないことを確認した。</td>
+        </tr>
+        <tr class="warn">
+          <td>Safari 6.0.5</td>
+          <td>△</td>
+          <td></td>
+          <td>1.はOK、2.はNG</td>
+        </tr>
+        <tr class="ng">
+          <td>NVDA 2012.3</td>
+          <td>×</td>
+          <td>■操作手順<br />「テスト開始」と「テスト終了」の間を矢印キーで移動すると、「空行」と読み上げられ、代替テキストは確認できなかった。<br />■音声読み上げ<br />「空行」</td>
+          <td></td>
+        </tr>
+        <tr class="ng">
+          <td>PC-Talker 7 2.12</td>
+          <td>×</td>
+          <td>■操作手順<br />Ctrl＋下矢印キーで行読み、またはShiftキーで全文読み<br />■音声読み上げ<br />何も読み上げない。</td>
+          <td></td>
+        </tr>
+        <tr class="ng">
+          <td>VoiceOver</td>
+          <td>×</td>
+          <td>■操作手順<br />2本指フリック、1本指フリックともに、「イメージ」と読み上げられ、代替テキストは確認できなかった。<br />■音声読み上げ<br />「イメージ」</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

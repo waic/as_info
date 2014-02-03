@@ -1,0 +1,195 @@
+<description>
+  <SuccessCriteria>
+    <number>7.1.1.1</number>
+    <name>非テキストコンテンツに関する達成基準</name>
+    <level>A</level>
+  </SuccessCriteria>
+  <testType>HTMLandXHTML</testType>
+  <rownumber>20</rownumber>
+  <id>H86-2</id>
+  <実装方法タイトル>ASCIIアート、顔文字、及びリート語に代替テキストを提供する</実装方法タイトル>
+  <対象>ASCIIアートのスキップリンク</対象>
+  <見解>要注意</見解>
+  <代替もしくは推奨する方法>
+    <body>アクセシビリティを確保するためには、ASCIIアートを画像にしてalt属性で代替テキストを提供したほうがよい。</body>
+  </代替もしくは推奨する方法>
+  <注意点>
+    <body>ASCIIアートを用いる際には、それを説明する代替テキストを提供することが不可欠である。また、スクリーンリーダーでASCIIアートの無意味な文字の連続を聞かないですむように、スキップできる手段を提供するとよい。
+ただし、フラグメントIDを指定したページ内リンクにはうまく対応できていないスクリーンリーダーが多い。</body>
+  </注意点>
+  <備考>PC-Talker7では、a要素のname属性でフラグメントIDを指定しても動作しないが、id属性で指定した場合は動作する。</備考>
+  <testDetail>
+    <result useragent="Internet Explorer 6.0">
+      <rownumber>116</rownumber>
+      <id>H86-2</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Internet Explorer 7.0">
+      <rownumber>116</rownumber>
+      <id>H86-2</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Internet Explorer 8.0">
+      <rownumber>116</rownumber>
+      <id>H86-2</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Internet Explorer 9">
+      <rownumber>116</rownumber>
+      <id>H86-2</id>
+      <検証結果>‐</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Firefox 3.5">
+      <rownumber>116</rownumber>
+      <id>H86-2</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Firefox 4.0">
+      <rownumber>116</rownumber>
+      <id>H86-2</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Firefox 9.0">
+      <rownumber>116</rownumber>
+      <id>H86-2</id>
+      <検証結果>‐</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Safari 3.2">
+      <rownumber>116</rownumber>
+      <id>H86-2</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Safari 5.0.3">
+      <rownumber>116</rownumber>
+      <id>H86-2</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="JAWS for Windows 9.0">
+      <rownumber>116</rownumber>
+      <id>H86-2</id>
+      <検証結果>○</検証結果>
+      <操作手順>■操作手順
+「ページ内リンクASCIIアートをスキップする」でEnterを押すと「9個の見出しと9個のリンク…」とジャンプする。
+■音声読み上げ
+「図１　コロン　蝶の絵のアスキーアート」
+「ページ内リンク　アスキーアートをスキップする」</操作手順>
+    </result>
+    <result useragent="ホームページ・リーダー 3.04">
+      <rownumber>116</rownumber>
+      <id>H86-2</id>
+      <検証結果>○</検証結果>
+      <操作手順>■操作手順
+「図1：蝶の絵のASCIIアート」を読み上げた後、「ASCIIアートをスキップする」でEnterを押すとASCIIアート部分の読み上げをスキップした。
+■音声読み上げ
+「図1：蝶の絵のASCIIアート　ASCIIアートをスキップする」</操作手順>
+    </result>
+    <result useragent="PC-Talker XP 3.06">
+      <rownumber>116</rownumber>
+      <id>H86-2</id>
+      <検証結果>×</検証結果>
+      <操作手順>■操作手順
+crl+↓でASCIIアートをスキップするまで進み、リンクをEnterすると「…代替テキストを利用するアート2」と読み上げスキップされる、その次には「テスト方法」が読み上げられる。
+■音声読み上げ
+「図1：蝶の絵のASCIIアート　ASCIIアートをスキップする」</操作手順>
+    </result>
+    <result useragent="PC-Talker XP 3.06 + NetReader 1.18">
+      <rownumber>116</rownumber>
+      <id>H86-2</id>
+      <検証結果>○</検証結果>
+      <操作手順>■操作手順
+「図1：蝶の絵のASCIIアート」を読み上げた後、「ASCIIアートをスキップする」のリンクでASCIIアート部分の読み上げをスキップできた。
+■音声読み上げ
+「図　イチ　コロン　蝶の絵の　アスキー　アート」
+「アスキー　アートをスキップする　ページ内リンク」
+「テスト終了」</操作手順>
+    </result>
+    <result useragent="FocusTalk V3">
+      <rownumber>116</rownumber>
+      <id>H86-2</id>
+      <検証結果>×</検証結果>
+      <操作手順>■操作手順
+キー操作モードで「図1：蝶の絵のASCIIアート」を読み上げた後、「↓」キーで「ASCIIアートをスキップする」にフォーカスが当たり、読み上げ始めたとこで、「Enter」キーを押と、フォーカスはスキップするが、「エルエルエルエル・・・」と読み上げてしまう。
+■音声読み上げ
+「エルエルエルエル・・・」</操作手順>
+      <備考>テキストとリンクの操作の両方を行える操作モードを、「↓」で行ごとに読み進める方法以外に見つけられなかった。</備考>
+    </result>
+    <result useragent="NVDA 2010.1j">
+      <rownumber>116</rownumber>
+      <id>H86-2</id>
+      <検証結果>○</検証結果>
+      <操作手順>■操作手順
+Kキーを用いて「ASCIIアートをスキップする」というリンクに移動してエンターキーを押すと、アスキーアートをスキップできた。
+■音声読み上げ
+「ASCIIアートをスキップする　テスト終了」</操作手順>
+    </result>
+    <result useragent="NVDA 2011.1">
+      <rownumber>116</rownumber>
+      <id>H86-2</id>
+      <検証結果>○</検証結果>
+      <操作手順>■操作手順
+下矢印キーを押して「ASCIIアートをスキップする」というリンクに移動してエンターキーを押すと、アスキーアートをスキップできた。
+■音声読み上げ
+「ASCIIアートをスキップする」　「テスト終了」</操作手順>
+    </result>
+    <result useragent="Firefox18.0.1">
+      <rownumber>116</rownumber>
+      <id>H86-2</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Google Chrome 25">
+      <rownumber>116</rownumber>
+      <id>H86-2</id>
+      <検証結果>‐</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Safari 6.0.5">
+      <rownumber>116</rownumber>
+      <id>H86-2</id>
+      <検証結果>‐</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="NVDA 2012.3">
+      <rownumber>116</rownumber>
+      <id>H86-2</id>
+      <検証結果>○</検証結果>
+      <操作手順>■操作手順
+下矢印キーを押して「ASCIIアートをスキップする」というリンクに移動してエンターキーを押すと、アスキーアートをスキップできた。
+■音声読み上げ
+「ASCIIアートをスキップする」　「テスト終了」</操作手順>
+    </result>
+    <result useragent="PC-Talker 7 2.12">
+      <rownumber>116</rownumber>
+      <id>H86-2</id>
+      <検証結果>×</検証結果>
+      <操作手順>■操作手順
+スキップリンクでEnterキーを押下
+■音声読み上げ
+「ASCIIアートをスキップする　リンク」
+Enterキー
+「テスト終了」
+Ctrl＋下矢印キーで続きのコンテンツを読む。
+ただし、Tabキーを押下するとページの先頭に戻ってしまう</操作手順>
+      <備考>スキップリンクのリンク先のアンカーにid属性を追加</備考>
+    </result>
+    <result useragent="VoiceOver">
+      <rownumber>116</rownumber>
+      <id>H86-2</id>
+      <検証結果>×</検証結果>
+      <操作手順>■操作手順
+1本指フリックで「ASCIIアートをスキップする」というリンクに移動してダブルタップすると、アスキーアートをスキップできるが、意図しない個所にフォーカスが移動する。
+■音声読み上げ
+「ASCIIアートをスキップする ページ内リンク」　
+「「図1：蝶の絵のASCIIアート」を読み上げた後、「ASCIIアートをスキップする」のリンクでASCIIアート部分の読み上げをスキップできるか」</操作手順>
+    </result>
+  </testDetail>
+</description>

@@ -8,7 +8,7 @@
     <meta name="description" content="アクセシビリティ・サポーテッド（AS）情報に関する解説文書" />
     <link rel="stylesheet" type="text/css" href="http://waic.jp/cmn/css/docs.css" />
     <title>アクセシビリティ・サポーテッド（AS）情報：G138</title>
-    <style type="text/css">table{empty-cells: show;}</style>
+    <style type="text/css">table{empty-cells: show;}tr.warn{background: #ffd;}tr.ng{background: #fdd;}</style>
   </head>
   <body>
     <div id="logo">
@@ -28,7 +28,7 @@
     </p>
     <h3>テストファイル</h3>
     <p>
-      <a href="&#xA;http://waic.jp/docs/jis2010-as-tests/201008/A/General/G138.html">G138のテストファイル</a>
+      <a href="&#xA;http://waic.jp/docs/jis2010-as-tests/201205/A/General/G138.html">G138のテストファイル</a>
     </p>
     <div class="warn">
       <h3>見解</h3>
@@ -39,7 +39,7 @@
     <h3>注意点</h3>
     <p>セマンティックなマークアップとしてstrong要素を用いたとしても、スクリーンリーダーによるサポートが十分ではないので、それだけでは不十分なことがある。</p>
     <h3>代替もしくは推奨する方法</h3>
-    <p>色の違いで情報を伝える際には、G138だけではなく、達成基準7.1.4.1を満たすことのできる実装方法も用いるべきである。<br />例えば、（X)HTMLでテキストを赤色の太字にする際には、font要素とb要素を用いるのではなく、strong要素を用いてCSSで文字色を指定すべきである。</p>
+    <p>強調されている箇所が分からないとコンテンツを理解できない場合には、強調されている箇所が分かるように何らかの方法で示さなければならない。strong要素を使用するだけでなく、文脈から分かるようにすることが望ましい。</p>
     <h3>テスト結果の詳細</h3>
     <table>
       <thead>

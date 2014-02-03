@@ -8,7 +8,7 @@
     <meta name="description" content="アクセシビリティ・サポーテッド（AS）情報に関する解説文書" />
     <link rel="stylesheet" type="text/css" href="http://waic.jp/cmn/css/docs.css" />
     <title>アクセシビリティ・サポーテッド（AS）情報：G123-4b</title>
-    <style type="text/css">table{empty-cells: show;}</style>
+    <style type="text/css">table{empty-cells: show;}tr.warn{background: #ffd;}tr.ng{background: #fdd;}</style>
   </head>
   <body>
     <div id="logo">
@@ -28,18 +28,18 @@
     </p>
     <h3>テストファイル</h3>
     <p>
-      <a href="&#xA;http://waic.jp/docs/jis2010-as-tests/201008/A/General/G123-4b.html">G123-4bのテストファイル</a>
+      <a href="&#xA;http://waic.jp/docs/jis2010-as-tests/201205/A/General/G123-4b.html">G123-4bのテストファイル</a>
     </p>
     <div class="warn">
       <h3>見解</h3>
       <p>要注意</p>
     </div>
     <h3>対象</h3>
-    <p>複数のウェブページ上で繰り返されているコンテンツのブロック</p>
+    <p>フォーカスがあたると表示されるナビゲーションスキップ</p>
     <h3>注意点</h3>
-    <p>過度なスキップリンクの使用は、逆にアクセシビリティやユーザビリティを損なう恐れがあるので避けたほうがよい。</p>
+    <p>スクリーンリーダーのPC-Talkerがサポートしておらず、VoiceOverでもうまく動作しない。FirefoxとSafariはサポートしているが、IE6, IE7によるサポートが不十分。なお、IE8ならばキャレットブラウジングでキーボード操作していれば、メインコンテンツへ移動できる。<br />過度なスキップリンクの使用は、逆にアクセシビリティやユーザビリティを損なう恐れがあるので避けたほうがよい。</p>
     <h3>代替もしくは推奨する方法</h3>
-    <p>達成基準7.2.4.1を満たすためにスキップできるメカニズムを提供するのであれば、G1とH69を併用することを推奨する。</p>
+    <p>WAI-ARIAのlandmarkを使用し、ブロックに対して適切なlandmarkを指定することで、JAWS等のスクリーンリーダーではそのブロックの読み飛ばしが可能になる場合がある。<br />※ただし、WAI-ARIAのlandmarkを使用した実装については、Techniques for WCAG 2.0に記載がなく、本委員会でも試験を実施していない。</p>
     <h3>テスト結果の詳細</h3>
     <table>
       <thead>

@@ -8,7 +8,7 @@
     <meta name="description" content="アクセシビリティ・サポーテッド（AS）情報に関する解説文書" />
     <link rel="stylesheet" type="text/css" href="http://waic.jp/cmn/css/docs.css" />
     <title>アクセシビリティ・サポーテッド（AS）情報：G115-2</title>
-    <style type="text/css">table{empty-cells: show;}</style>
+    <style type="text/css">table{empty-cells: show;}tr.warn{background: #ffd;}tr.ng{background: #fdd;}</style>
   </head>
   <body>
     <div id="logo">
@@ -28,20 +28,20 @@
     </p>
     <h3>テストファイル</h3>
     <p>
-      <a href="&#xA;http://waic.jp/docs/jis2010-as-tests/201008/A/General/G115-2.html">G115-2のテストファイル</a>
+      <a href="&#xA;http://waic.jp/docs/jis2010-as-tests/201205/A/General/G115-2.html">G115-2のテストファイル</a>
     </p>
     <div class="warn">
       <h3>見解</h3>
       <p>要注意</p>
     </div>
     <h3>対象</h3>
-    <p>blockquote要素</p>
+    <p>cite要素、blockquote要素</p>
     <h3>注意点</h3>
-    <p>blockquote要素を用いずに、CSSだけで引用部分であることを示してはいけない。</p>
+    <p>PC-TalkerやVoiceOverでは、blockquoteが引用であると分かるようには読み上げられない。また、cite要素を引用元として読み上げるスクリーンリーダーはほとんどない。</p>
     <h3>代替もしくは推奨する方法</h3>
-    <p>blockquote要素を使用する際には、文脈から引用部分であることが分かるようにすべきである。</p>
+    <p>引用文献等のタイトルを示す際にはcite要素を使用できるが、見た目にはそれが引用元であることが伝わらないので、「」をつけたり、"出典"、”引用元”などの文言を補足したほうがよい。<br />blockquote要素を使用する際には、文脈から引用部分であることが分かるようにすべきである。</p>
     <h3>備考</h3>
-    <p>スクリーンリーダーでは、サポートしているのはJAWSとNVDAだけだが、使用することによる悪影響はなく、今後の機能向上に期待する。</p>
+    <p>使用することによる悪影響はなく、スクリーンリーダーによる今後の機能向上に期待する。</p>
     <h3>テスト結果の詳細</h3>
     <table>
       <thead>

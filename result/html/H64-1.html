@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="ja" lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="ウェブ,アクセシビリティ,基盤,委員会,WAIC,web,accessibility,infrastructure,committee,アクセシビリティ,サポーテッド,AS,情報" />
+    <meta name="description" content="アクセシビリティ・サポーテッド（AS）情報に関する解説文書" />
+    <link rel="stylesheet" type="text/css" href="http://waic.jp/cmn/css/docs.css" />
+    <title>アクセシビリティ・サポーテッド（AS）情報：H64-1</title>
+    <style type="text/css">table{empty-cells: show;}tr.warn{background: #ffd;}tr.ng{background: #fdd;}</style>
+  </head>
+  <body>
+    <div id="logo">
+      <a href="http://waic.jp/">
+        <img src="http://waic.jp/cmn/img/header/logo.png" alt="ウェブアクセシビリティ基盤委員会 / WAIC: Web Accessibility Infrastructure Committee" width="334" height="77" />
+      </a>
+    </div>
+    <h1>アクセシビリティ・サポーテッド（AS）情報：H64-1</h1>
+    <ul>
+      <li>公開日：2012年5月15日</li>
+      <li>作成者：ウェブアクセシビリティ基盤委員会（WAIC）実装ワーキンググループ（WG2）</li>
+    </ul>
+    <h2>H64-1: H64： frame要素及びiframe要素のtitle属性を用いる</h2>
+    <h3>関連する達成基準の実装方法一覧</h3>
+    <p>
+      <a href="7.2.4.1.html">7.2.4.1ブロックスキップに関する達成基準 (等級A)</a>
+    </p>
+    <p>
+      <a href="7.4.1.2.html">7.4.1.2プログラムが解釈可能な識別名，役割及び設定可能な値に関する達成基準 (等級A)</a>
+    </p>
+    <h3>テストファイル</h3>
+    <p>
+      <a href="&#xA;http://waic.jp/docs/jis2010-as-tests/201205/A/HTMLandXHTML/H64-1.html">H64-1のテストファイル</a>
+    </p>
+    <div class="warn">
+      <h3>見解</h3>
+      <p>要注意</p>
+    </div>
+    <h3>対象</h3>
+    <p>frame要素のtitle属性</p>
+    <h3>注意点</h3>
+    <p>スクリーンリーダーではJAWSとHPRしかサポートされていない。フレームの識別名を提供するメカニズムとしては機能しうるが、機能しない環境もある。今後の支援技術の機能向上に期待する。<br />ブロックスキップのメカニズムとしては機能しない。</p>
+    <h3>代替もしくは推奨する方法</h3>
+    <p>フレームを使用する際には、title属性で名前を提供しておくべきである。ただし、フレームは他のアクセシビリティ上の問題を引き起こすことが多いため、フレームの使用自体は推奨しない。<br />フレームはブロックスキップのメカニズムとしては機能しない。達成基準7.2.4.1の実装方法としては、H69を推奨する。</p>
+    <h3>テスト結果の詳細</h3>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">ユーザエージェント</th>
+          <th scope="col">検証結果</th>
+          <th scope="col">操作手順</th>
+          <th scope="col">備考</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="ok">
+          <td>Internet Explorer 6.0</td>
+          <td>-</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 7.0</td>
+          <td>-</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 8.0</td>
+          <td>-</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 9</td>
+          <td>‐</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 3.5</td>
+          <td>-</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 4.0</td>
+          <td>-</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 9.0</td>
+          <td>‐</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Safari 3.2</td>
+          <td>-</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Safari 5.0.3</td>
+          <td>-</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>JAWS for Windows 9.0</td>
+          <td>○</td>
+          <td>■操作手順<br />F6でフレーム間を移動（IEの機能）<br />Ctrl+Tab,Ctrl+Shift+Tab(Jawsの機能)<br />「メニューフレーム」<br />「メインコンテンツフレーム」<br />とそれぞれ読み上げた。<br />また、Ins+F9でフレームリストを表示できる<br />メニュー<br />メインコンテンツ<br />とリストに表示された<br />■音声読み上げ<br />「ページに２個のフレーム　テン　１３個の見出し　テン　５５個のリンクがあります」<br />Ｆ６で確認<br />「メニュー　フレーム」<br />「メインコンテンツ　フレーム」</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>ホームページ・リーダー 3.04</td>
+          <td>○</td>
+          <td>■操作手順<br />Ctrl+Tabでフレームを移動した際に、「メニュー」「メインコンテンツ」が最初に読み上げられる<br />Ctrl+Eでフレーム選択ダイアログが表示される<br />■音声読み上げ<br />「メニュー」「メインコンテンツ」</td>
+          <td></td>
+        </tr>
+        <tr class="ng">
+          <td>PC-Talker XP 3.06</td>
+          <td>×</td>
+          <td>■操作手順<br />フレームセットのタイトルを「H64：例1のサンプルファイル」と読み上げた。<br />■音声読み上げ<br />「H64：例1のサンプルファイル」</td>
+          <td>各フレームについてはTab+Ctrlで、「ナビゲーションメニュー」「富士通、Fujitsu JAPAN」と読み上げる。</td>
+        </tr>
+        <tr class="ng">
+          <td>PC-Talker XP 3.06 + NetReader 1.18</td>
+          <td>×</td>
+          <td>■操作手順<br />リンクをクリックしてページが表示されると、「 フレーム数　ニ　メニュー」と読み上げられた。<br />それぞれのフレームにフォーカスを移動すると、左側のフレームでは「フレーム　ニのイチ」、右側のフレームでは「フレーム　ニのニ」と読み上げた後に本文の読み上げを開始する。<br />■音声読み上げ<br />「ホンバコの フレーム数　ニ　メニュー」<br />「フレーム　ニのイチ」<br />「フレーム　ニのニ」</td>
+          <td>それぞれのtitle属性値「メニュー」、「メインコンテンツ」は読み上げられないため、×とした。</td>
+        </tr>
+        <tr class="ng">
+          <td>FocusTalk V3</td>
+          <td>×</td>
+          <td>■操作手順<br />Ctrl+Shift+↑（↓）でフレームの移動を行ったが、「メニュー」、「メインコンテンツ」が読み上げられなかった。<br />■音声読み上げ<br />「ページの先頭です メニュー 2フレームちゅう2フレーム メニュー トップページ アクセシビリティ」</td>
+          <td>・インターネット接続不可のため、frame２にはテストファイルを指定して行った。</td>
+        </tr>
+        <tr class="ng">
+          <td>NVDA 2010.1j</td>
+          <td>×</td>
+          <td>■操作手順<br />Mキーでフレーム間を移動した際、「メニューフレーム」というタイトルは読まれるものの、「メインコンテンツ」というタイトルは読み上げられなかった。<br />■音声読み上げ<br />「iFrame終了　メニュー見出しレベル1」<br />「iFrame終了　本文へジャンプ画像」</td>
+          <td></td>
+        </tr>
+        <tr class="ng">
+          <td>NVDA 2011.1</td>
+          <td>×</td>
+          <td>■操作手順<br />フレーム間を移動した際、「メニューフレーム」というタイトルは読まれるものの、「メインコンテンツ」というタイトルは読み上げられなかった。<br />■音声読み上げ<br />「iframe終了　メニュー見出しレベル1」<br />「iframe終了　本文へジャンプ画像」</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox18.0.1</td>
+          <td>-</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Google Chrome 25</td>
+          <td>‐</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Safari 6.0.5</td>
+          <td>‐</td>
+          <td>テスト不要</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>NVDA 2012.3</td>
+          <td>○</td>
+          <td>■操作手順<br />Mキーを押してフレーム間を移動した際、「メニュー」と「メインコンテンツ」というフレームタイトルを読み上げた.<br />■音声読み上げ<br />「iframe終了　メニュー」<br />「iframe終了　メインコンテンツ」<br />「iframe終了　本文へジャンプ画像」</td>
+          <td></td>
+        </tr>
+        <tr class="ng">
+          <td>PC-Talker 7 2.12</td>
+          <td>×</td>
+          <td>■操作手順<br />F6（逆順はShift＋F6）でフレーム間を移動、またはTabキーで移動<br />■音声読み上げ<br />各フレームのHTMLファイルのtitle要素を読み上げる。</td>
+          <td>title属性値を読み上げない。</td>
+        </tr>
+        <tr class="ng">
+          <td>VoiceOver</td>
+          <td>×</td>
+          <td>■操作手順<br />2本指フリック、1本指フリックともに、「メニュー」と「メインコンテンツ」というフレームタイトルを読み上げなかった。<br />■音声読み上げ<br />「メニュー 見出しレベル1<br />行頭記号 リストの開始位置です トップページ リンク<br />行頭記号 お問い合わせ リンク<br />行頭記号 アクセシビリティ リンク<br />このページの本文へ移動 ページ内リンク<br />：」</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

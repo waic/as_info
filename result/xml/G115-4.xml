@@ -5,7 +5,7 @@
     <level>A</level>
   </SuccessCriteria>
   <testType>General</testType>
-  <rownumber>4</rownumber>
+  <rownumber>3</rownumber>
   <id>G115-4</id>
   <実装方法タイトル>セマンティックな要素を用いて、構造をマークアップする</実装方法タイトル>
   <対象>em要素</対象>

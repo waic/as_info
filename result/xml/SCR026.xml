@@ -1,15 +1,5 @@
 <description>
   <SuccessCriteria>
-    <number>7.2.1.1</number>
-    <name>キーボード操作に関する達成基準</name>
-    <level>A</level>
-  </SuccessCriteria>
-  <SuccessCriteria>
-    <number>7.2.4.3</number>
-    <name>フォーカス順序に関する達成基準</name>
-    <level>A</level>
-  </SuccessCriteria>
-  <SuccessCriteria>
     <number>7.2.4.7</number>
     <name>視覚的に認識可能なフォーカスに関する達成基準</name>
     <level>AA</level>

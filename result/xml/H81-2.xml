@@ -1,0 +1,189 @@
+<description>
+  <SuccessCriteria>
+    <number>7.2.4.4</number>
+    <name>文脈におけるリンクの目的に関する達成基準</name>
+    <level>A</level>
+  </SuccessCriteria>
+  <testType>HTMLandXHTML</testType>
+  <rownumber>13</rownumber>
+  <id>H81-2</id>
+  <実装方法タイトル>入れ子になったリスト項目にあるリンクテキストとその親のリスト項目とを組み合わせて、リンクの目的を特定する</実装方法タイトル>
+  <対象>入れ子のリスト項目で、子階層の中にあるa要素 (親のリスト項目がリンクになっている場合)</対象>
+  <見解>達成不可能</見解>
+  <代替もしくは推奨する方法>
+    <body>できるかぎり、「リンクテキストだけ」でリンクの目的が分かるようにするとよい。</body>
+  </代替もしくは推奨する方法>
+  <備考>親のリスト項目を読み上げるキー操作を提供しているスクリーンリーダーがない。今後の支援技術の機能向上に期待するが、現時点では利用者が親のリスト項目を文脈の一つとして利用することは困難である。</備考>
+  <testDetail>
+    <result useragent="Internet Explorer 6.0">
+      <rownumber>110</rownumber>
+      <id>H81-2</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Internet Explorer 7.0">
+      <rownumber>110</rownumber>
+      <id>H81-2</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Internet Explorer 8.0">
+      <rownumber>110</rownumber>
+      <id>H81-2</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Internet Explorer 9">
+      <rownumber>110</rownumber>
+      <id>H81-2</id>
+      <検証結果>‐</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Firefox 3.5">
+      <rownumber>110</rownumber>
+      <id>H81-2</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Firefox 4.0">
+      <rownumber>110</rownumber>
+      <id>H81-2</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Firefox 9.0">
+      <rownumber>110</rownumber>
+      <id>H81-2</id>
+      <検証結果>‐</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Safari 3.2">
+      <rownumber>110</rownumber>
+      <id>H81-2</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Safari 5.0.3">
+      <rownumber>110</rownumber>
+      <id>H81-2</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="JAWS for Windows 9.0">
+      <rownumber>110</rownumber>
+      <id>H81-2</id>
+      <検証結果>×</検証結果>
+      <操作手順>■読み上げ
+「1ピリオド、リンクロイヤルパームホテル」
+1.：○
+2.×：読み上げたあとその状態でEnterを押下する「ロイヤルパームホテル　リンク　ページに9個の見出しと26個のリンクがあります。。。」となり、リンク先に遷移しないため、×。</操作手順>
+      <備考>2012年4月修正</備考>
+    </result>
+    <result useragent="ホームページ・リーダー 3.04">
+      <rownumber>110</rownumber>
+      <id>H81-2</id>
+      <検証結果>×</検証結果>
+      <操作手順>1.一つ目のリスト項目（ロイヤルパームホテル）でネストされたリスト項目の二つ目にあるリンク「お客様の声」にフォーカスを移動させた状態で、何らかのキー操作により、その親のリスト項目「ロイヤルパームホテル」を読み上げることができるかを確認
+2.読み上げることができた場合、そのままの状態でEnterキーを押すとリンク先（WAICのサイト）に遷移するか（フォーカスがリンクから移動していないことを確認する）を確認</操作手順>
+      <備考>2012年4月修正
+■読み上げ
+「1.ロイヤルパームホテル 、1.地図、2.写真、3.アクセス、4.お客様の声、5.予約」
+1. ×：「お客様の声」にフォーカスを移動させた状態で、読み上げることができないため、×。
+2.1番を読み上げることができないため、×。</備考>
+    </result>
+    <result useragent="PC-Talker XP 3.06">
+      <rownumber>110</rownumber>
+      <id>H81-2</id>
+      <検証結果>×</検証結果>
+      <操作手順>1.×：該当するキー操作がない
+2.×：1番が読み上げることができなかったため、×。</操作手順>
+      <備考>2012年4月修正</備考>
+    </result>
+    <result useragent="PC-Talker XP 3.06 + NetReader 1.18">
+      <rownumber>110</rownumber>
+      <id>H81-2</id>
+      <検証結果>×</検証結果>
+      <操作手順>■読み上げ
+「1.ロイヤルパームホテル 改行　1.地図　改行　2.写真 
+改行　3.アクセス　改行　4.お客様の声　改行　5.予約 、2.ホテル スリーリバーズ 改行　1.地図　改行 2.写真 改行　3.アクセス 　改行　4.お客様の声　5.予約 」
+1.×：読み上げるための機能がないため、×。
+2.×：1番で読み上げることができなかったため、×。</操作手順>
+      <備考>2012年4月修正</備考>
+    </result>
+    <result useragent="FocusTalk V3">
+      <rownumber>110</rownumber>
+      <id>H81-2</id>
+      <検証結果>×</検証結果>
+      <操作手順>対象のリンク内容は読み上げるが、その親のリスト項目を読み上げるすべがない。</操作手順>
+      <備考>2012年4月修正</備考>
+    </result>
+    <result useragent="NVDA 2010.1j">
+      <rownumber>110</rownumber>
+      <id>H81-2</id>
+      <検証結果>-</検証結果>
+      <備考>NVDA 2011.1 でのみ再検証実施</備考>
+    </result>
+    <result useragent="NVDA 2011.1">
+      <rownumber>110</rownumber>
+      <id>H81-2</id>
+      <検証結果>×</検証結果>
+      <操作手順>Tabキー（またはKキー）でフォーカスを[お客様の声]リンクへ移動させると、「お客様の声　リンク」と詠みあげる。1. 機能未実装のため懸賞不可
+1. 機能未実装のため懸賞不可
+2. 機能未実装のため懸賞不可</操作手順>
+      <備考>2012年4月修正</備考>
+    </result>
+    <result useragent="Firefox18.0.1">
+      <rownumber>110</rownumber>
+      <id>H81-2</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Google Chrome 25">
+      <rownumber>110</rownumber>
+      <id>H81-2</id>
+      <検証結果>‐</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Safari 6.0.5">
+      <rownumber>110</rownumber>
+      <id>H81-2</id>
+      <検証結果>‐</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="NVDA 2012.3">
+      <rownumber>110</rownumber>
+      <id>H81-2</id>
+      <検証結果>×</検証結果>
+      <操作手順>機能未実装のため懸賞不可</操作手順>
+    </result>
+    <result useragent="PC-Talker 7 2.12">
+      <rownumber>110</rownumber>
+      <id>H81-2</id>
+      <検証結果>×</検証結果>
+      <操作手順>■操作手順
+Ctrl＋上矢印キー
+■音声読み上げ
+Ctrl＋下矢印キー、またはTabキー
+「お客様の声　リンク」
+Ctrl＋上矢印キー
+「アクセス　リンク」
+Ctrl＋上矢印キー
+「写真　リンク」
+Ctrl＋上矢印キー
+「地図　リンク」
+Ctrl＋上矢印キー
+「ロイヤルパームホテル　リンク」
+Enterキー押下すると、フォーカスが移動しているため、リンク先へ移動しない</操作手順>
+      <備考>親のリスト項目を確認できるキー操作がない。また、Ctrl＋上矢印キーで親のリスト項目まで戻ることはできるが、それが親のリスト項目であることは分からないのに加え、別のリンクがあればフォーカスが移動してしまう。</備考>
+    </result>
+    <result useragent="VoiceOver">
+      <rownumber>110</rownumber>
+      <id>H81-2</id>
+      <検証結果>×</検証結果>
+      <操作手順>■操作手順
+フォーカスの当たっている個所以外の情報を読み上げることができない。
+■音声読み上げ
+「お客様の声 リンク」</操作手順>
+    </result>
+  </testDetail>
+</description>

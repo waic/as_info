@@ -1,0 +1,184 @@
+<description>
+  <SuccessCriteria>
+    <number>7.2.4.4</number>
+    <name>文脈におけるリンクの目的に関する達成基準</name>
+    <level>A</level>
+  </SuccessCriteria>
+  <testType>HTMLandXHTML</testType>
+  <rownumber>11</rownumber>
+  <id>H80-3</id>
+  <実装方法タイトル>リンクテキストとその直前にある見出し要素とを組み合わせて、リンクの目的を特定する</実装方法タイトル>
+  <対象>見出しの後のp要素内にあるa要素 (見出しがリンクになっている場合)</対象>
+  <見解>要注意</見解>
+  <代替もしくは推奨する方法>
+    <body>できるかぎり、「リンクテキストだけ」でリンクの目的が分かるようにするとよい。それができない場合にこの実装方法を用いる。</body>
+  </代替もしくは推奨する方法>
+  <備考>サポートしていないスクリーンリーダーでも見出しジャンプの逆順（Shift＋Hキー）で前にある見出しを確認することはできる (ただし、この場合はフォーカスも移動してしまう)。</備考>
+  <testDetail>
+    <result useragent="Internet Explorer 6.0">
+      <rownumber>108</rownumber>
+      <id>H80-3</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Internet Explorer 7.0">
+      <rownumber>108</rownumber>
+      <id>H80-3</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Internet Explorer 8.0">
+      <rownumber>108</rownumber>
+      <id>H80-3</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Internet Explorer 9">
+      <rownumber>108</rownumber>
+      <id>H80-3</id>
+      <検証結果>‐</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Firefox 3.5">
+      <rownumber>108</rownumber>
+      <id>H80-3</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Firefox 4.0">
+      <rownumber>108</rownumber>
+      <id>H80-3</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Firefox 9.0">
+      <rownumber>108</rownumber>
+      <id>H80-3</id>
+      <検証結果>‐</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Safari 3.2">
+      <rownumber>108</rownumber>
+      <id>H80-3</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Safari 5.0.3">
+      <rownumber>108</rownumber>
+      <id>H80-3</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="JAWS for Windows 9.0">
+      <rownumber>108</rownumber>
+      <id>H80-3</id>
+      <検証結果>○</検証結果>
+      <操作手順>■読み上げ
+「見出し　イコール　約5年半ぶりにJIS X 8341-3が改定　タイトルは　H80　コロン リンクのラベルとその直前にある見出し要素とを組み合わせて　テン　リンクの目的を特定する　ハイフン　例３」
+1.○：Ins + Tで読み上げる。</操作手順>
+      <備考>2012年4月修正</備考>
+    </result>
+    <result useragent="ホームページ・リーダー 3.04">
+      <rownumber>108</rownumber>
+      <id>H80-3</id>
+      <検証結果>×</検証結果>
+      <操作手順>1.一つ目のセクション（約5年半ぶりにJIS X 8341-3が改定）にあるリンク「[続きを読む...]」にフォーカスを移動させた状態で、何らかのキー操作により、そのセクションの見出し「約5年半ぶりにJIS X 8341-3が改定」を読み上げることができるかを確認</操作手順>
+      <備考>2012年4月修正
+■読み上げ
+約5年半ぶりにJIS X 8341-3が改定
+このたび、2004年に公示された日本工業規格のJIS X 8341-3が改定された。 [続きを読む]
+1.「[続きを読む...]」にフォーカスを移動させた状態で、読み上げることができないため、×。
+2.1番を読み上げることができないため、×。</備考>
+    </result>
+    <result useragent="PC-Talker XP 3.06">
+      <rownumber>108</rownumber>
+      <id>H80-3</id>
+      <検証結果>×</検証結果>
+      <操作手順>1.×：該当するキー操作がない
+2.×：1番が読み上げることができなかったため、×。</操作手順>
+      <備考>2012年4月修正</備考>
+    </result>
+    <result useragent="PC-Talker XP 3.06 + NetReader 1.18">
+      <rownumber>108</rownumber>
+      <id>H80-3</id>
+      <検証結果>△</検証結果>
+      <操作手順>■読み上げ（テキスト画面）
+「約5年半ぶりにJIS X 8341-3が改定、改行16の1、レベル２」（Shift + H）
+1.△：デフォルトをグラフィック画面にしているが、テキスト画面のみ操作して読み上げることが可能
+2.×：テキスト画面で上記読み上げるが、フォーカスが見出しの方にあるため、リンク先に遷移しない。</操作手順>
+      <備考>2012年4月修正</備考>
+    </result>
+    <result useragent="FocusTalk V3">
+      <rownumber>108</rownumber>
+      <id>H80-3</id>
+      <検証結果>×</検証結果>
+      <操作手順>一つ目のセクション（約5年半ぶりにJIS X 8341-3が改定）にあるリンク「[続きを読む...]」にフォーカスを移動させた状態で、そのセクションの見出し「約5年半ぶりにJIS X 8341-3が改定」を読み上げる方法がない。(「テスト開始」を読み上げる。)</操作手順>
+      <備考>2012年4月修正</備考>
+    </result>
+    <result useragent="NVDA 2010.1j">
+      <rownumber>108</rownumber>
+      <id>H80-3</id>
+      <検証結果>-</検証結果>
+      <備考>NVDA 2011.1 でのみ再検証実施</備考>
+    </result>
+    <result useragent="NVDA 2011.1">
+      <rownumber>108</rownumber>
+      <id>H80-3</id>
+      <検証結果>○</検証結果>
+      <操作手順>Tabキー（またはKキー）でフォーカスを[続きを読む...]リンクへ移動させると、「続きを読む...　リンク」と詠みあげる。
+1.　その状態でShift+Hキーを押すと、「約5年半ぶりにJIS X 8341-3が改定」と読み上げる
+2. その状態でEnterキーを押すと、リンク先に遷移する</操作手順>
+      <備考>2012年4月修正</備考>
+    </result>
+    <result useragent="Firefox18.0.1">
+      <rownumber>108</rownumber>
+      <id>H80-3</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Google Chrome 25">
+      <rownumber>108</rownumber>
+      <id>H80-3</id>
+      <検証結果>‐</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="Safari 6.0.5">
+      <rownumber>108</rownumber>
+      <id>H80-3</id>
+      <検証結果>‐</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="NVDA 2012.3">
+      <rownumber>108</rownumber>
+      <id>H80-3</id>
+      <検証結果>○</検証結果>
+      <操作手順>■操作手順
+Tabキーを用いて「[続きを読む]」というリンク項目に移動し、Shift+Hキーを押すと「約5年半ぶりにJIS X 8341-3が改定」と読み上げた。
+■音声読み上げ
+約5年半ぶりにJIS X 8341-3が改定</操作手順>
+    </result>
+    <result useragent="PC-Talker 7 2.12">
+      <rownumber>108</rownumber>
+      <id>H80-3</id>
+      <検証結果>△</検証結果>
+      <操作手順>■操作手順
+Shift＋Hキー
+■音声読み上げ
+Ctrl＋下矢印キー、またはTabキー
+「続きを読む　リンク」
+Shift＋Hキー
+「約5年半ぶりにJIS X 8341-3が改定　リンク　17の位置　見出しレベル2」
+Enterキー押下すると、フォーカスも移動しているため、リンク先へ移動しない</操作手順>
+      <備考>H80-1、H80-2のように見出しがリンクでなければ問題ないが、リンクの場合にはフォーカスが移動してしまう。</備考>
+    </result>
+    <result useragent="VoiceOver">
+      <rownumber>108</rownumber>
+      <id>H80-3</id>
+      <検証結果>×</検証結果>
+      <操作手順>■操作手順
+フォーカスの当たっている個所以外の情報を読み上げることができない。
+■音声読み上げ
+「続きを読む リンク」</操作手順>
+    </result>
+  </testDetail>
+</description>

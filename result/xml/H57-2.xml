@@ -1,0 +1,160 @@
+<description>
+  <SuccessCriteria>
+    <number>7.3.1.1</number>
+    <name>ページの言語に関する達成基準</name>
+    <level>A</level>
+  </SuccessCriteria>
+  <testType>HTMLandXHTML</testType>
+  <rownumber>2</rownumber>
+  <id>H57-2</id>
+  <実装方法タイトル>H57： html要素の言語属性を用いる</実装方法タイトル>
+  <対象>html要素のlang属性とxml:lang属性の併用</対象>
+  <見解>達成可能</見解>
+  <代替もしくは推奨する方法>
+    <body>ユーザーエージェントによるサポートは十分とは言えないが、サポートしているユーザーエージェント（例：lang属性値に応じて音声エンジンを切り替えるスクリーンリーダー）もあるので、html要素のlang属性で言語を指定しておいたほうがよい。</body>
+  </代替もしくは推奨する方法>
+  <testDetail>
+    <result useragent="Internet Explorer 6.0">
+      <rownumber>85</rownumber>
+      <id>H57-2</id>
+      <検証結果>○</検証結果>
+      <操作手順>英語で表示されている。</操作手順>
+    </result>
+    <result useragent="Internet Explorer 7.0">
+      <rownumber>85</rownumber>
+      <id>H57-2</id>
+      <検証結果>○</検証結果>
+      <操作手順>英語で表示されている</操作手順>
+    </result>
+    <result useragent="Internet Explorer 8.0">
+      <rownumber>85</rownumber>
+      <id>H57-2</id>
+      <検証結果>○</検証結果>
+      <操作手順>英語で表示されている</操作手順>
+    </result>
+    <result useragent="Internet Explorer 9">
+      <rownumber>85</rownumber>
+      <id>H57-2</id>
+      <検証結果>○</検証結果>
+      <操作手順>「本テスト対象のコードは別ファイルになっています。」のリンク先のページが英語「The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect.」で表示されるか確認</操作手順>
+    </result>
+    <result useragent="Firefox 3.5">
+      <rownumber>85</rownumber>
+      <id>H57-2</id>
+      <検証結果>○</検証結果>
+      <操作手順>英語で表示されている。</操作手順>
+    </result>
+    <result useragent="Firefox 4.0">
+      <rownumber>85</rownumber>
+      <id>H57-2</id>
+      <検証結果>○</検証結果>
+      <操作手順>「本テスト対象のコードは別ファイルになっています。」のリンク先のページが英語「The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect.」で表示されるか確認。</操作手順>
+    </result>
+    <result useragent="Firefox 9.0">
+      <rownumber>85</rownumber>
+      <id>H57-2</id>
+      <検証結果>○</検証結果>
+      <操作手順>「本テスト対象のコードは別ファイルになっています。」のリンク先のページが英語「The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect.」で表示されるか確認</操作手順>
+    </result>
+    <result useragent="Safari 3.2">
+      <rownumber>85</rownumber>
+      <id>H57-2</id>
+      <検証結果>○</検証結果>
+      <操作手順>英語で表示される</操作手順>
+    </result>
+    <result useragent="Safari 5.0.3">
+      <rownumber>85</rownumber>
+      <id>H57-2</id>
+      <検証結果>○</検証結果>
+    </result>
+    <result useragent="JAWS for Windows 9.0">
+      <rownumber>85</rownumber>
+      <id>H57-2</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="ホームページ・リーダー 3.04">
+      <rownumber>85</rownumber>
+      <id>H57-2</id>
+      <検証結果>-</検証結果>
+      <備考>エンジンの切り替えは手動でしかできない</備考>
+    </result>
+    <result useragent="PC-Talker XP 3.06">
+      <rownumber>85</rownumber>
+      <id>H57-2</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="PC-Talker XP 3.06 + NetReader 1.18">
+      <rownumber>85</rownumber>
+      <id>H57-2</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="FocusTalk V3">
+      <rownumber>85</rownumber>
+      <id>H57-2</id>
+      <検証結果>-</検証結果>
+      <備考>デフォルトのFocus Talkには、英語のエンジンは搭載されていない。</備考>
+    </result>
+    <result useragent="NVDA 2010.1j">
+      <rownumber>85</rownumber>
+      <id>H57-2</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="NVDA 2011.1">
+      <rownumber>85</rownumber>
+      <id>H57-2</id>
+      <検証結果>×</検証結果>
+      <操作手順>■操作手順
+ページを開いても、音声エンジンがフランス語に切り替わらなかった。
+■音声読み上げ
+「document ?crit en fran?ais」</操作手順>
+      <備考>テスト内容が不明瞭なためテスト不可。</備考>
+    </result>
+    <result useragent="Firefox18.0.1">
+      <rownumber>85</rownumber>
+      <id>H57-2</id>
+      <検証結果>○</検証結果>
+      <操作手順>「本テスト対象のコードは別ファイルになっています。」のリンク先のページが英語「The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect.」で表示されるか確認</操作手順>
+    </result>
+    <result useragent="Google Chrome 25">
+      <rownumber>85</rownumber>
+      <id>H57-2</id>
+      <検証結果>○</検証結果>
+      <操作手順>【1】リンク先のページが英語で表示されるかを確認する。</操作手順>
+      <備考>【1】○
+「The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect.」という内容のページが表示されることを確認した。</備考>
+    </result>
+    <result useragent="Safari 6.0.5">
+      <rownumber>85</rownumber>
+      <id>H57-2</id>
+      <検証結果>○</検証結果>
+    </result>
+    <result useragent="NVDA 2012.3">
+      <rownumber>85</rownumber>
+      <id>H57-2</id>
+      <検証結果>○</検証結果>
+      <操作手順>■操作手順
+対応している音声エンジンを使用している場合は、ページを開くとフランス語の音声エンジンに切り替えて内容をよむことができた. 
+■音声読み上げ
+「document ?crit en fran?ais」</操作手順>
+    </result>
+    <result useragent="PC-Talker 7 2.12">
+      <rownumber>85</rownumber>
+      <id>H57-2</id>
+      <検証結果>-</検証結果>
+      <操作手順>テスト不要</操作手順>
+    </result>
+    <result useragent="VoiceOver">
+      <rownumber>85</rownumber>
+      <id>H57-2</id>
+      <検証結果>×</検証結果>
+      <操作手順>■操作手順
+2本指フリック、1本指フリックともに、英語として読んでいるが、日本語音声と変化はなかった。 
+■音声読み上げ
+「The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect.」</操作手順>
+    </result>
+  </testDetail>
+</description>

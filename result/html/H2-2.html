@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="ja" lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="ウェブ,アクセシビリティ,基盤,委員会,WAIC,web,accessibility,infrastructure,committee,アクセシビリティ,サポーテッド,AS,情報" />
+    <meta name="description" content="アクセシビリティ・サポーテッド（AS）情報に関する解説文書" />
+    <link rel="stylesheet" type="text/css" href="http://waic.jp/cmn/css/docs.css" />
+    <title>アクセシビリティ・サポーテッド（AS）情報：H2-2</title>
+    <style type="text/css">table{empty-cells: show;}tr.warn{background: #ffd;}tr.ng{background: #fdd;}</style>
+  </head>
+  <body>
+    <div id="logo">
+      <a href="http://waic.jp/">
+        <img src="http://waic.jp/cmn/img/header/logo.png" alt="ウェブアクセシビリティ基盤委員会 / WAIC: Web Accessibility Infrastructure Committee" width="334" height="77" />
+      </a>
+    </div>
+    <h1>アクセシビリティ・サポーテッド（AS）情報：H2-2</h1>
+    <ul>
+      <li>公開日：2012年5月15日</li>
+      <li>作成者：ウェブアクセシビリティ基盤委員会（WAIC）実装ワーキンググループ（WG2）</li>
+    </ul>
+    <h2>H2-2: 隣り合った画像とテキストリンクを同じリンクの中に入れる</h2>
+    <h3>関連する達成基準の実装方法一覧</h3>
+    <p>
+      <a href="7.1.1.1.html">7.1.1.1非テキストコンテンツに関する達成基準 (等級A)</a>
+    </p>
+    <h3>テストファイル</h3>
+    <p>
+      <a href="&#xA;http://waic.jp/docs/jis2010-as-tests/201205/A/HTMLandXHTML/H2-2.html">H2-2のテストファイル</a>
+    </p>
+    <div class="warn">
+      <h3>見解</h3>
+      <p>要注意</p>
+    </div>
+    <h3>対象</h3>
+    <p>a要素内にあるimg要素のalt属性</p>
+    <h3>注意点</h3>
+    <p>alt属性値に代替テキストが記述されている場合、スクリーンリーダーのPC-Talker XPとNetReader、iOS6のVoiceOverではその代替テキストが読み上げられない。画像が装飾を目的にしていて、そのalt属性値が空の場合には問題ない。</p>
+    <h3>代替もしくは推奨する方法</h3>
+    <p>可能な場合には、リンクをすべて画像にするか、またはすべてテキストにしたほうがよい。</p>
+    <h3>テスト結果の詳細</h3>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">ユーザエージェント</th>
+          <th scope="col">検証結果</th>
+          <th scope="col">操作手順</th>
+          <th scope="col">備考</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="ok">
+          <td>Internet Explorer 6.0</td>
+          <td>○</td>
+          <td>ツール→インターネットオプション→詳細設定で画像の非表示設定を行った。<br />代替テキスト「富士通株式会社」が表示された。</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 7.0</td>
+          <td>○</td>
+          <td>画像非表示にした際、アイコン画像の代わりに代替テキスト「富士通株式会社」と思われるものが表示されている。</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 8.0</td>
+          <td>○</td>
+          <td>画像非表示にした際、アイコン画像の代わりに代替テキスト「富士通株式会社」が表示されている。</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Internet Explorer 9</td>
+          <td>○</td>
+          <td>1:アイコン画像の代わりに、代替テキスト「富士通株式会社」が表示されることを確認</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 3.5</td>
+          <td>○</td>
+          <td>ツール→オプションから、コンテンツタブの画像を自動的に読み込むのチェックを外したところ、画像の部分に「富士通株式会社」と代替テキストが表示される</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 4.0</td>
+          <td>○</td>
+          <td>1:アイコン画像の代わりに、代替テキスト「富士通株式会社」が表示されることを確認</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox 9.0</td>
+          <td>○</td>
+          <td>アイコン画像の代わりに、代替テキスト「富士通株式会社」が表示されることを確認</td>
+          <td></td>
+        </tr>
+        <tr class="ng">
+          <td>Safari 3.2</td>
+          <td>×</td>
+          <td>開発メニューからイメージを無効にする、で画像を非表示にしたところ代替テキストは表示されず、公式サイトのテキストだけが残る</td>
+          <td>もともと画像があった部分にアンダーラインの表示は残っている</td>
+        </tr>
+        <tr class="ng">
+          <td>Safari 5.0.3</td>
+          <td>×</td>
+          <td>画像を非表示にしたところ代替テキストは表示されず、公式サイトのテキストだけが残る。</td>
+          <td>もともと画像があった部分にアンダーラインの表示は残っている。</td>
+        </tr>
+        <tr class="ok">
+          <td>JAWS for Windows 9.0</td>
+          <td>○</td>
+          <td>■操作手順<br />「富士通株式会社　公式サイト リンク 画像」と読み上げた。<br />■音声読み上げ<br />「富士通株式会社　公式サイト リンク 画像」</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>ホームページ・リーダー 3.04</td>
+          <td>○</td>
+          <td>■操作手順<br />リンクにフォーカスを合わせると「富士通株式会社 公式サイト」と読み上げる<br />■音声読み上げ<br />「富士通株式会社 公式サイト」</td>
+          <td></td>
+        </tr>
+        <tr class="ng">
+          <td>PC-Talker XP 3.06</td>
+          <td>×</td>
+          <td>「公式サイト、リンク」とだけ読み上げられた。<br />■音声読み上げ<br />「公式サイト、リンク」</td>
+          <td>富士通株式会社という代替テキストは読み上げられなかった。</td>
+        </tr>
+        <tr class="warn">
+          <td>PC-Talker XP 3.06 + NetReader 1.18</td>
+          <td>△</td>
+          <td>■操作手順<br />リンクにフォーカスを移動させた際に、アイコン画像の代替テキストとリンクテキストが一緒に「富士通株式会社　公式サイト」と読み上げられた。<br />■音声読み上げ<br />「富士通株式会社　公式サイト」</td>
+          <td>テキスト画面で、全文読み上げでフォーカスが移動した際は、「富士通株式会社　公式サイト」と読み上げた。<br />しかし、（同テキスト画面で）Tabキーでフォーカスを移動させた際は、「富士通株式会社」と読み上げ、「公式サイト」を読み上げなかったため、△とした。<br />おそらく、同じリンク（ひとつのリンク）として認識されていないのだと思う。</td>
+        </tr>
+        <tr class="ng">
+          <td>FocusTalk V3</td>
+          <td>×</td>
+          <td>■操作手順<br />Tabを押してリンクにフォーカスを合わせると「公式サイト」と読み上げる<br />■音声読み上げ<br />「公式サイト」</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>NVDA 2010.1j</td>
+          <td>○</td>
+          <td>■操作手順<br />Kキーなどを用いてリンク項目にフォーカスを移動させたところ、「富士通株式会社公式サイト」と読み上げられた<br />■音声読み上げ<br />「画像富士通株式会社公式サイト」</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>NVDA 2011.1</td>
+          <td>○</td>
+          <td>■操作手順<br />リンク項目にフォーカスを移動させたところ、「富士通株式会社公式サイト」と読み上げられた<br />■音声読み上げ<br />「画像富士通株式会社公式サイト」</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>Firefox18.0.1</td>
+          <td>○</td>
+          <td>アイコン画像の代わりに、代替テキスト「富士通株式会社」が表示されることを確認</td>
+          <td></td>
+        </tr>
+        <tr class="ng">
+          <td>Google Chrome 25</td>
+          <td>×</td>
+          <td>【1】ブラウザの設定を変更して画像非表示にした際、アイコン画像の代わりに、代替テキスト「富士通株式会社」が表示されるかを確認する。<br />画像非表示の設定は下記の通り実施<br />ブラウザ右上のボタン→[コンテンツの設定]→“画像”[すべての画像を表示しない]にチェック</td>
+          <td>【1】×<br />アイコン画像も代替テキストも表示されないことを確認した。</td>
+        </tr>
+        <tr class="ng">
+          <td>Safari 6.0.5</td>
+          <td>×</td>
+          <td>画像の非表示はあらかじめ環境設定の詳細で「メニューバーに"開発"メニューを表示」を選択したうえで 開発→イメージを無効にする を選択</td>
+          <td>画像の表示されていた場所には何も表示されないものの、画像相当の大きさの空白は認められる</td>
+        </tr>
+        <tr class="ok">
+          <td>NVDA 2012.3</td>
+          <td>○</td>
+          <td>■操作手順<br />リンク項目にフォーカスを移動させたところ、「富士通株式会社公式サイト」と読み上げられた<br />■音声読み上げ<br />「画像富士通株式会社公式サイト」</td>
+          <td></td>
+        </tr>
+        <tr class="ok">
+          <td>PC-Talker 7 2.12</td>
+          <td>○</td>
+          <td>■操作手順<br />Ctrl＋下矢印キーで行読み、Tabキーで移動、またはShiftキーで全文読み<br />■音声読み上げ（Ctrl＋下矢印キーで行読み、またはTabキーで移動の場合）<br />「富士通株式会社　公式サイト　リンク」</td>
+          <td>Shiftキーの全文読みでは「富士通株式会社　公式サイト」とだけ読み上げる</td>
+        </tr>
+        <tr class="ng">
+          <td>VoiceOver</td>
+          <td>×</td>
+          <td>■操作手順<br />2本指フリック、1本指フリックともに「富士通株式会社 リンク イメージ」のみ読み上げられ、「公式サイト」にはフォーカスが移動しなかった。<br />■音声読み上げ<br />「富士通株式会社 リンク イメージ」</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
