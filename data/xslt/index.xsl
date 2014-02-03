@@ -34,6 +34,7 @@
 <thead>
 <tr>
 <th scope="col">実装方法およびテスト項目</th>
+<th scope="col">対象</th>
 <th scope="col">達成可否</th>
 </tr>
 </thead>
@@ -58,6 +59,7 @@
 </xsl:choose>
 </xsl:attribute>
 <td><a><xsl:attribute name="href"><xsl:value-of select="id"/>.html</xsl:attribute><xsl:value-of select="id"/>: <xsl:value-of select="実装方法タイトル"/></a></td>
+<td><xsl:value-of select="対象"/></td>
 <td><xsl:value-of select="見解"/></td>
 </tr>
 </xsl:template>

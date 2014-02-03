@@ -16,7 +16,7 @@
 <meta name="description" content="アクセシビリティ・サポーテッド（AS）情報に関する解説文書" />
 <link rel="stylesheet" type="text/css" href="http://waic.jp/cmn/css/docs.css" />
 <title>アクセシビリティ・サポーテッド（AS）情報：<xsl:value-of select="description/id" /></title>
-<style type="text/css">table{empty-cells: show;}</style>
+<style type="text/css">table{empty-cells: show;}tr.warn{background: #ffd;}tr.ng{background: #fdd;}</style>
 </head>
 <body>
 <div id="logo"><a href="http://waic.jp/"><img src="http://waic.jp/cmn/img/header/logo.png" alt="ウェブアクセシビリティ基盤委員会 / WAIC: Web Accessibility Infrastructure Committee" width="334" height="77" /></a></div>
@@ -46,7 +46,7 @@
 
 <h3>テストファイル</h3>
 <p><a><xsl:attribute name="href">
-http://waic.jp/docs/jis2010-as-tests/201008/<xsl:value-of select="SuccessCriteria/level"/>/<xsl:value-of select="testType"/>/<xsl:value-of select="id"/>.html</xsl:attribute>
+http://waic.jp/docs/jis2010-as-tests/201205/<xsl:value-of select="SuccessCriteria/level"/>/<xsl:value-of select="testType"/>/<xsl:value-of select="id"/>.html</xsl:attribute>
 <xsl:value-of select="id"/>のテストファイル</a></p>
 
 <div>
