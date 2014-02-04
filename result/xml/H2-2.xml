@@ -14,7 +14,7 @@
     <body>可能な場合には、リンクをすべて画像にするか、またはすべてテキストにしたほうがよい。</body>
   </代替もしくは推奨する方法>
   <注意点>
-    <body>alt属性値に代替テキストが記述されている場合、スクリーンリーダーのPC-Talker XPとNetReader、iOS6のVoiceOverではその代替テキストが読み上げられない。画像が装飾を目的にしていて、そのalt属性値が空の場合には問題ない。</body>
+    <body>一つのリンクの中に画像とテキストがあり、その画像のalt属性値に代替テキストが記述されている場合、スクリーンリーダーのPC-Talker XPとNetReader、iOS6のVoiceOverではその代替テキストが読み上げられない。画像が装飾を目的にしていて、そのalt属性値が空の場合には問題ない。</body>
   </注意点>
   <testDetail>
     <result useragent="Internet Explorer 6.0">
