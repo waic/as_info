@@ -2455,41 +2455,41 @@ ID:G1-2, UA:PC-Talker 7 2.12の詳細テストデータを検索します。
 ID:G1-2, UA:VoiceOverの詳細テストデータを検索します。
 Saved: D:\web\work\stud\WAIC\as_html_generator\result\xml\G1-2.xml
 Generated: D:\web\work\stud\WAIC\as_html_generator\result\html\G1-2.html
-ID:H69-1, UA:Internet Explorer 6.0の詳細テストデータを検索します。
-ID:H69-1, UA:Internet Explorer 7.0の詳細テストデータを検索します。
-テーブルInternet Explorer 7.0 - AAにID:H69-1のデータが見つかりませんでした。
-ID:H69-1, UA:Internet Explorer 8.0の詳細テストデータを検索します。
-テーブルInternet Explorer 8.0 - AAにID:H69-1のデータが見つかりませんでした。
-ID:H69-1, UA:Internet Explorer 9の詳細テストデータを検索します。
-テーブルInternet Explorer 9 - AAにID:H69-1のデータが見つかりませんでした。
-ID:H69-1, UA:Firefox 3.5の詳細テストデータを検索します。
-ID:H69-1, UA:Firefox 4.0の詳細テストデータを検索します。
-テーブルFirefox 4.0 - AAにID:H69-1のデータが見つかりませんでした。
-ID:H69-1, UA:Firefox 9.0の詳細テストデータを検索します。
-ID:H69-1, UA:Safari 3.2の詳細テストデータを検索します。
-テーブルSafari 3.2 - AAにID:H69-1のデータが見つかりませんでした。
-ID:H69-1, UA:Safari 5.0.3の詳細テストデータを検索します。
-ID:H69-1, UA:JAWS for Windows 9.0の詳細テストデータを検索します。
-ID:H69-1, UA:ホームページ・リーダー 3.04の詳細テストデータを検索します。
-テーブルホームページ・リーダー 3.04 - AAにID:H69-1のデータが見つかりませんでした。
-ID:H69-1, UA:PC-Talker XP 3.06の詳細テストデータを検索します。
-ID:H69-1, UA:PC-Talker XP 3.06 + NetReader 1.18の詳細テストデータを検索します。
-テーブルPC-Talker XP 3.06 + NetReader 1.18 - AAにID:H69-1のデータが見つかりませんでした。
-ID:H69-1, UA:FocusTalk V3の詳細テストデータを検索します。
-ID:H69-1, UA:NVDA 2010.1jの詳細テストデータを検索します。
-ID:H69-1, UA:NVDA 2011.1の詳細テストデータを検索します。
-ID:H69-1, UA:Firefox18.0.1の詳細テストデータを検索します。
-テーブルFirefox18.0.1 - AAにID:H69-1のデータが見つかりませんでした。
-ID:H69-1, UA:Google Chrome 25の詳細テストデータを検索します。
-テーブルGoogle Chrome 25 - AAにID:H69-1のデータが見つかりませんでした。
-ID:H69-1, UA:Safari 6.0.5の詳細テストデータを検索します。
-テーブルSafari 6.0.5 - AAにID:H69-1のデータが見つかりませんでした。
-ID:H69-1, UA:NVDA 2012.3の詳細テストデータを検索します。
-テーブルNVDA 2012.3 - AAにID:H69-1のデータが見つかりませんでした。
-ID:H69-1, UA:PC-Talker 7 2.12の詳細テストデータを検索します。
-ID:H69-1, UA:VoiceOverの詳細テストデータを検索します。
-Saved: D:\web\work\stud\WAIC\as_html_generator\result\xml\H69-1.xml
-Generated: D:\web\work\stud\WAIC\as_html_generator\result\html\H69-1.html
+ID:H69, UA:Internet Explorer 6.0の詳細テストデータを検索します。
+ID:H69, UA:Internet Explorer 7.0の詳細テストデータを検索します。
+テーブルInternet Explorer 7.0 - AAにID:H69のデータが見つかりませんでした。
+ID:H69, UA:Internet Explorer 8.0の詳細テストデータを検索します。
+テーブルInternet Explorer 8.0 - AAにID:H69のデータが見つかりませんでした。
+ID:H69, UA:Internet Explorer 9の詳細テストデータを検索します。
+テーブルInternet Explorer 9 - AAにID:H69のデータが見つかりませんでした。
+ID:H69, UA:Firefox 3.5の詳細テストデータを検索します。
+ID:H69, UA:Firefox 4.0の詳細テストデータを検索します。
+テーブルFirefox 4.0 - AAにID:H69のデータが見つかりませんでした。
+ID:H69, UA:Firefox 9.0の詳細テストデータを検索します。
+ID:H69, UA:Safari 3.2の詳細テストデータを検索します。
+テーブルSafari 3.2 - AAにID:H69のデータが見つかりませんでした。
+ID:H69, UA:Safari 5.0.3の詳細テストデータを検索します。
+ID:H69, UA:JAWS for Windows 9.0の詳細テストデータを検索します。
+ID:H69, UA:ホームページ・リーダー 3.04の詳細テストデータを検索します。
+テーブルホームページ・リーダー 3.04 - AAにID:H69のデータが見つかりませんでした。
+ID:H69, UA:PC-Talker XP 3.06の詳細テストデータを検索します。
+ID:H69, UA:PC-Talker XP 3.06 + NetReader 1.18の詳細テストデータを検索します。
+テーブルPC-Talker XP 3.06 + NetReader 1.18 - AAにID:H69のデータが見つかりませんでした。
+ID:H69, UA:FocusTalk V3の詳細テストデータを検索します。
+ID:H69, UA:NVDA 2010.1jの詳細テストデータを検索します。
+ID:H69, UA:NVDA 2011.1の詳細テストデータを検索します。
+ID:H69, UA:Firefox18.0.1の詳細テストデータを検索します。
+テーブルFirefox18.0.1 - AAにID:H69のデータが見つかりませんでした。
+ID:H69, UA:Google Chrome 25の詳細テストデータを検索します。
+テーブルGoogle Chrome 25 - AAにID:H69のデータが見つかりませんでした。
+ID:H69, UA:Safari 6.0.5の詳細テストデータを検索します。
+テーブルSafari 6.0.5 - AAにID:H69のデータが見つかりませんでした。
+ID:H69, UA:NVDA 2012.3の詳細テストデータを検索します。
+テーブルNVDA 2012.3 - AAにID:H69のデータが見つかりませんでした。
+ID:H69, UA:PC-Talker 7 2.12の詳細テストデータを検索します。
+ID:H69, UA:VoiceOverの詳細テストデータを検索します。
+Saved: D:\web\work\stud\WAIC\as_html_generator\result\xml\H69.xml
+Generated: D:\web\work\stud\WAIC\as_html_generator\result\html\H69.html
 ID:G123-4a, UA:Internet Explorer 6.0の詳細テストデータを検索します。
 ID:G123-4a, UA:Internet Explorer 7.0の詳細テストデータを検索します。
 テーブルInternet Explorer 7.0 - AAにID:G123-4aのデータが見つかりませんでした。
