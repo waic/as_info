@@ -168,8 +168,15 @@ public class CsvLoader{
 		List<string> result = new List<string>();
 		XmlDocument tempXml = new XmlDocument(){XmlResolver=null};
 		foreach(string s in lines){
+			// s の値はIDとそれ以外の玉石混交
+			// IDらしき値だった場合、sをIDとしてテスト結果を取得
+			// ID以外は無視してそのまま出力
 			if(CsvDataTable.IdReg.IsMatch(s)){
+
+				// まずは行頭にIDを書く
 				string resultLine = s;
+
+				// UAごとの検証結果をタブ区切りで出力
 				foreach(string userAgent in UserAgentList){
 					string resultMark = null;
 					foreach(var table in AsTestResultTables){
@@ -184,6 +191,16 @@ public class CsvLoader{
 					}
 					resultLine += "\t" + resultMark;
 				}
+
+				// 見解を出力
+				foreach(AsDescriptionTable adt in AsDescriptionTables){
+					DataRow resultRow = adt.Rows.Find(s);
+					if(resultRow != null){
+						string opinion = resultRow["見解"] as string;
+						if(opinion != null) resultLine += "\t" + opinion;
+					}
+				}
+
 				result.Add(resultLine);
 			} else {
 				result.Add(s);
