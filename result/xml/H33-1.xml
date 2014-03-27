@@ -5,7 +5,7 @@
     <level>A</level>
   </SuccessCriteria>
   <testType>HTMLandXHTML</testType>
-  <rownumber>3</rownumber>
+  <rownumber>6</rownumber>
   <id>H33-1</id>
   <実装方法タイトル>H33： title属性を用いて、リンクテキストの文言を補足する</実装方法タイトル>
   <対象>リンクのラベルを補足するtitle属性</対象>

@@ -5,7 +5,7 @@
     <level>A</level>
   </SuccessCriteria>
   <testType>HTMLandXHTML</testType>
-  <rownumber>7</rownumber>
+  <rownumber>10</rownumber>
   <id>H78</id>
   <実装方法タイトル>リンクテキストとそれが含まれているパラグラフとを組み合わせて、リンクの目的を特定する</実装方法タイトル>
   <対象>p要素内にあるa要素</対象>

@@ -4,8 +4,13 @@
     <name>非テキストコンテンツに関する達成基準</name>
     <level>A</level>
   </SuccessCriteria>
+  <SuccessCriteria>
+    <number>7.2.4.4</number>
+    <name>文脈におけるリンクの目的に関する達成基準</name>
+    <level>A</level>
+  </SuccessCriteria>
   <testType>HTMLandXHTML</testType>
-  <rownumber>3</rownumber>
+  <rownumber>2</rownumber>
   <id>H2-2</id>
   <実装方法タイトル>隣り合った画像とテキストリンクを同じリンクの中に入れる</実装方法タイトル>
   <対象>a要素内にあるimg要素のalt属性</対象>

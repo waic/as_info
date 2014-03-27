@@ -4,8 +4,13 @@
     <name>非テキストコンテンツに関する達成基準</name>
     <level>A</level>
   </SuccessCriteria>
+  <SuccessCriteria>
+    <number>7.2.4.4</number>
+    <name>文脈におけるリンクの目的に関する達成基準</name>
+    <level>A</level>
+  </SuccessCriteria>
   <testType>HTMLandXHTML</testType>
-  <rownumber>6</rownumber>
+  <rownumber>5</rownumber>
   <id>H30-5</id>
   <実装方法タイトル>a 要素のリンクの目的を説明するリンクテキストを提供する</実装方法タイトル>
   <対象>a要素内にテキストがあり、その後ろにimg要素があるケース</対象>

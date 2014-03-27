@@ -10,7 +10,7 @@
     <level>A</level>
   </SuccessCriteria>
   <testType>HTMLandXHTML</testType>
-  <rownumber>2</rownumber>
+  <rownumber>3</rownumber>
   <id>H24</id>
   <実装方法タイトル>イメージマップのarea要素に代替テキストを提供する</実装方法タイトル>
   <対象>イメージマップのarea要素のalt属性</対象>

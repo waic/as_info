@@ -5,7 +5,7 @@
     <level>A</level>
   </SuccessCriteria>
   <testType>HTMLandXHTML</testType>
-  <rownumber>10</rownumber>
+  <rownumber>13</rownumber>
   <id>H80-2</id>
   <実装方法タイトル>リンクテキストとその直前にある見出し要素とを組み合わせて、リンクの目的を特定する</実装方法タイトル>
   <対象>見出しの後のp要素内にあるa要素</対象>

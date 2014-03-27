@@ -5,7 +5,7 @@
     <level>A</level>
   </SuccessCriteria>
   <testType>HTMLandXHTML</testType>
-  <rownumber>13</rownumber>
+  <rownumber>16</rownumber>
   <id>H81-2</id>
   <実装方法タイトル>入れ子になったリスト項目にあるリンクテキストとその親のリスト項目とを組み合わせて、リンクの目的を特定する</実装方法タイトル>
   <対象>入れ子のリスト項目で、子階層の中にあるa要素 (親のリスト項目がリンクになっている場合)</対象>
