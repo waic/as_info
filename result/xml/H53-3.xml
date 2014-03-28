@@ -4,8 +4,13 @@
     <name>非テキストコンテンツに関する達成基準</name>
     <level>A</level>
   </SuccessCriteria>
+  <SuccessCriteria>
+    <number>7.1.2.3</number>
+    <name>収録済みの映像コンテンツの代替コンテンツ又は音声ガイドに関する達成基準</name>
+    <level>A</level>
+  </SuccessCriteria>
   <testType>HTMLandXHTML</testType>
-  <rownumber>14</rownumber>
+  <rownumber>3</rownumber>
   <id>H53-3</id>
   <実装方法タイトル>object要素のボディに代替テキストを記述する</実装方法タイトル>
   <対象>object要素で画像を表示し、内容にp要素で入れた代替テキスト</対象>

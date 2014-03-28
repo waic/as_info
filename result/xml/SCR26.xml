@@ -9,13 +9,8 @@
     <name>フォーカス順序に関する達成基準</name>
     <level>A</level>
   </SuccessCriteria>
-  <SuccessCriteria>
-    <number>7.2.4.7</number>
-    <name>視覚的に認識可能なフォーカスに関する達成基準</name>
-    <level>AA</level>
-  </SuccessCriteria>
   <testType>Client-sideScripting</testType>
-  <rownumber>9</rownumber>
+  <rownumber>3</rownumber>
   <id>SCR26</id>
   <実装方法タイトル>動的なコンテンツをDOMのそのトリガーとなる要素の直後に挿入する</実装方法タイトル>
   <対象>DOM操作でリンクの後に挿入される要素</対象>
