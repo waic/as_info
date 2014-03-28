@@ -327,8 +327,8 @@
 
 <xsl:template match="item">
 <li>
-<xsl:if test="ファイル有無='True'"><a><xsl:attribute name="href"><xsl:value-of select="id"/>.html</xsl:attribute><xsl:value-of select="id"/> <xsl:value-of select="name"/></a></xsl:if>
-<xsl:if test="ファイル有無='False'"><xsl:value-of select="id"/> <xsl:value-of select="name"/></xsl:if>
+<xsl:if test="ファイル有無='True'"><a><xsl:attribute name="href"><xsl:value-of select="id"/>.html</xsl:attribute><xsl:value-of select="id"/><xsl:text> </xsl:text><xsl:value-of select="name"/></a></xsl:if>
+<xsl:if test="ファイル有無='False'"><xsl:value-of select="id"/><xsl:text> </xsl:text><xsl:value-of select="name"/></xsl:if>
 </li>
 </xsl:template>
 
