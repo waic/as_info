@@ -14,12 +14,12 @@
 <meta name="robots" content="index, follow" />
 <meta name="keywords" content="ウェブ,アクセシビリティ,基盤,委員会,WAIC,web,accessibility,infrastructure,committee,アクセシビリティ,サポーテッド,AS,情報" />
 <meta name="description" content="アクセシビリティ・サポーテッド（AS）情報に関する解説文書" />
-<link rel="stylesheet" type="text/css" href="http://www.ciaj.or.jp/access/web/cmn/css/docs.css" />
+<link rel="stylesheet" type="text/css" href="http://waic.jp/cmn/css/docs.css" />
 <title>アクセシビリティ・サポーテッド（AS）情報：2014年3月版 <xsl:value-of select="/AsDescription/@target" /></title>
 <style type="text/css">table{empty-cells: show;}tr.warn{background: #ffd;}tr.ng{background: #fdd;}</style>
 </head>
 <body>
-<div id="logo"><a href="http://www.ciaj.or.jp/access/web/"><img src="http://www.ciaj.or.jp/access/web/cmn/img/header/logo.png" alt="ウェブアクセシビリティ基盤委員会 / WAIC: Web Accessibility Infrastructure Committee" width="334" height="77" /></a></div>
+<div id="logo"><a href="http://waic.jp/"><img src="http://waic.jp/cmn/img/header/logo.png" alt="ウェブアクセシビリティ基盤委員会 / WAIC: Web Accessibility Infrastructure Committee" width="334" height="77" /></a></div>
 <h1>アクセシビリティ・サポーテッド（AS）情報：2014年3月版</h1>
 
 <ul>
@@ -102,7 +102,7 @@
 
 <h2>5. 達成基準ごとの解説</h2>
 
-<p>ウェブアクセシビリティ基盤委員会（WAIC）実装ワーキンググループ（WG2）では、「<a href="/access/web/docs/jis2010/as.html">アクセシビリティ・サポーテッド検証結果 2014年3月版</a>」をもとに、それぞれの達成基準を満たすことのできる実装方法についての解説を作成した。なお、検証結果において全てのブラウザおよび支援技術によってサポートされている実装方法（前述の「4-2. 検証結果が全て「○」となっている実装方法」を参照）は、解説を作成していない。</p>
+<p>ウェブアクセシビリティ基盤委員会（WAIC）実装ワーキンググループ（WG2）では、「<a href="http://waic.jp/docs/jis2010/as.html">アクセシビリティ・サポーテッド検証結果 2014年3月版</a>」をもとに、それぞれの達成基準を満たすことのできる実装方法についての解説を作成した。なお、検証結果において全てのブラウザおよび支援技術によってサポートされている実装方法（前述の「4-2. 検証結果が全て「○」となっている実装方法」を参照）は、解説を作成していない。</p>
 
 <p>なお、JIS X 8341-3:2010の規格票（「6.3 制作・開発」の注記）にも明記されているように、「WCAG 2.0実装方法集」にはない方法もアクセシビリティ・サポーテッドであると判断できるものは用いてもよい。</p>
 <blockquote class="box1">
