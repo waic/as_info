@@ -171,29 +171,29 @@
 <p>2012年9月版と2014年3月版の間の主な変更点は以下の通りである。</p>
 
 <h3>見解の変更</h3>
-<p>「アクセシビリティ・サポーテッド検証結果」 2014年3月版に基づいて見解の見直しを実施した。見直しの結果見解を変更した項目を以下に示す。</p>
+<p>「アクセシビリティ・サポーテッド検証結果」2014年3月版に基づいて見解の見直しを実施した。見直しの結果、見解を変更した項目を以下に示す。</p>
 
 <h4>7.1.1.1 非テキストコンテンツに関する達成基準</h4>
 <table>
 <tr>
-<th>実装方法</th>
+<th>テストファイルNo.</th>
 <th>2012年9月版での見解</th>
 <th>2014年3月版での見解</th>
 </tr>
 <tr>
 <td>H37-2</td>
-<td>達成可能</td>
-<td>要注意</td>
+<td class="ok">達成可能</td>
+<td class="warn">要注意</td>
 </tr>
 <tr>
 <td>H53-1</td>
-<td>達成不可能</td>
-<td>要注意</td>
+<td class="ng">達成不可能</td>
+<td class="warn">要注意</td>
 </tr>
 <tr>
 <td>H53-2</td>
-<td>達成不可能</td>
-<td>要注意</td>
+<td class="ng">達成不可能</td>
+<td class="warn">要注意</td>
 </tr>
 </table>
 
@@ -201,13 +201,13 @@
 
 <table>
 <tr>
-<th>実装方法</th>
+<th>テストファイルNo.</th>
 <th>2012年9月版での見解</th>
 <th>2014年3月版での見解</th>
 </tr>
 <tr>
 <td>G115-1</td>
-<td>要注意</td>
+<td class="warn">要注意</td>
 <td>見解削除</td>
 </tr>
 </table>
@@ -216,14 +216,14 @@
 
 <table>
 <tr>
-<th>実装方法</th>
+<th>テストファイルNo.</th>
 <th>2012年9月版での見解</th>
 <th>2014年3月版での見解</th>
 </tr>
 <tr>
 <td>SCR26</td>
-<td>要注意</td>
-<td>達成可能</td>
+<td class="warn">要注意</td>
+<td class="ok">達成可能</td>
 </tr>
 </table>
 
@@ -231,29 +231,29 @@
 
 <table>
 <tr>
-<th>実装方法</th>
+<th>テストファイルNo.</th>
 <th>2012年9月版での見解</th>
 <th>2014年3月版での見解</th>
 </tr>
 <tr>
 <td>H64-1</td>
-<td>達成不可能</td>
-<td>要注意</td>
+<td class="ng">達成不可能</td>
+<td class="warn">要注意</td>
 </tr>
 <tr>
 <td>H64-2</td>
-<td>達成不可能</td>
-<td>要注意</td>
+<td class="ng">達成不可能</td>
+<td class="warn">要注意</td>
 </tr>
 <tr>
 <td>SCR28-1</td>
-<td>達成不可能</td>
-<td>要注意</td>
+<td class="ng">達成不可能</td>
+<td class="warn">要注意</td>
 </tr>
 <tr>
 <td>SCR28-2</td>
-<td>達成不可能</td>
-<td>要注意</td>
+<td class="ng">達成不可能</td>
+<td class="warn">要注意</td>
 </tr>
 </table>
 
@@ -261,14 +261,14 @@
 
 <table>
 <tr>
-<th>実装方法</th>
+<th>テストファイルNo.</th>
 <th>2012年9月版での見解</th>
 <th>2014年3月版での見解</th>
 </tr>
 <tr>
 <td>SCR26</td>
-<td>要注意</td>
-<td>達成可能</td>
+<td class="warn">要注意</td>
+<td class="ok">達成可能</td>
 </tr>
 </table>
 
@@ -276,19 +276,19 @@
 
 <table>
 <tr>
-<th>実装方法</th>
+<th>テストファイルNo.</th>
 <th>2012年9月版での見解</th>
 <th>2014年3月版での見解</th>
 </tr>
 <tr>
 <td>H64-1</td>
 <td></td>
-<td>要注意</td>
+<td class="warn">要注意</td>
 </tr>
 <tr>
 <td>H64-2</td>
 <td></td>
-<td>要注意</td>
+<td class="warn">要注意</td>
 </tr>
 </table>
 
@@ -297,19 +297,19 @@
 
 <table>
 <tr>
-<th>実装方法</th>
+<th>テストファイルNo.</th>
 <th>2012年9月版での見解</th>
 <th>2014年3月版での見解</th>
 </tr>
 <tr>
 <td>G179-1a</td>
-<td>達成不可能</td>
-<td>達成可能</td>
+<td class="ng">達成不可能</td>
+<td class="ok">達成可能</td>
 </tr>
 <tr>
 <td>G179-1b</td>
-<td>達成不可能</td>
-<td>達成可能</td>
+<td class="ng">達成不可能</td>
+<td class="ok">達成可能</td>
 </tr>
 </table>
 
@@ -317,9 +317,9 @@
 <h3>その他の変更</h3>
 
 <ul>
-<li>実装方法のIDの表記で、0を前置しないようにした (例: h-037 → H-37)</li>
-<li>実装方法のIDを、テストファイルのものと一致するようにした</li>
-<li>その他、データの不備を改善</li>
+<li>2013年版のアクセシビリティ・サポーテッド検証結果に対応</li>
+<li>実装方法のIDおよびテストファイルNo.の表記について、0を前置しないようにした (例: H037 → H37)</li>
+<li>表記ゆれ、データの抜け、その他データの不備を改善</li>
 </ul>
 
 </body></html>
