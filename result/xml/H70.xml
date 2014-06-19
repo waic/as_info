@@ -5,7 +5,7 @@
     <level>A</level>
   </SuccessCriteria>
   <testType>HTMLandXHTML</testType>
-  <rownumber>10</rownumber>
+  <rownumber>12</rownumber>
   <id>H70</id>
   <実装方法タイトル>フレームを用いて、繰り返されているコンテンツのブロックをグループ化する</実装方法タイトル>
   <対象>フレーム</対象>
