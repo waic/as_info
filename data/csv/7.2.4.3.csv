@@ -1,6 +1,6 @@
-�e�X�g�t�@�C��No.,�������@�^�C�g��,�Ώ�,����,��ւ������͐���������@,���ӓ_,���l
-�B��� 7.2.4.3 �t�H�[�J�X����,,,,,,
-H4-1,H4: �����N�A�t�H�[���̃R���g���[���A�y�уI�u�W�F�N�g�ɂ́A�_���I�ȃ^�u�ړ��������쐬����,table����input�v�f��tabindex����,�v����,,FocusTalk�AVoiceOver�ł͑z��ʂ�̓�������Ȃ��B,FocusTalk�AVoiceOver�̍���̋@�\����Ɋ��҂���B
-H4-2,H4: �����N�A�t�H�[���̃R���g���[���A�y�уI�u�W�F�N�g�ɂ́A�_���I�ȃ^�u�ړ��������쐬����,�����N����ɏo������input�v�f��tabindex����,�v����,,NetReader�AVoiceOver�ł͑z��ʂ�̓�������Ȃ��B,NetReader�AVoiceOver�̍���̋@�\����Ɋ��҂���B
-SCR26,SCR26: ���I�ȃR���e���c��DOM�̂��̃g���K�[�ƂȂ�v�f�̒���ɑ}������,DOM����Ń����N�̌�ɑ}�������v�f,�B���\,,�قƂ�ǂ̃X�N���[�����[�_�[�ł͖��Ȃ����AHPR�ł͓ǂݏグ���y�[�W�̐擪�ɖ߂��Ă��܂��Ƃ�����肪����BHPR�͊��ɃT�|�[�g����Ă��Ȃ��Â��X�N���[�����[�_�[�ł��邪�A�Ή�������K�v������ꍇ�͒��ӂ��K�v�B,
-SCR37,SCR37: �f�o�C�X��ˑ��ȕ��@�ŃJ�X�^���E�_�C�A���O���쐬����,onclick�C�x���g,�v����,�X�N���[�����[�_�[�ł́A�_�C�A���O���J�������ŉ����ǂݏグ���A�_�C�A���O���J�������Ƃ������ł͕�����Ȃ��B���̂��߁A���̃{�^���������ƃ_�C�A���O���J�����Ƃ𖾎�����Ȃǂ����ق����悢�B,,
+﻿テストファイルNo.,実装方法タイトル,対象,見解,代替もしくは推奨する方法,注意点,備考
+達成基準 7.2.4.3 フォーカス順序,,,,,,
+H4-1,H4: リンク、フォームのコントロール、及びオブジェクトには、論理的なタブ移動順序を作成する,table内のinput要素のtabindex属性,要注意,,FocusTalk、VoiceOverでは想定通りの動作をしない。,FocusTalk、VoiceOverの今後の機能向上に期待する。
+H4-2,H4: リンク、フォームのコントロール、及びオブジェクトには、論理的なタブ移動順序を作成する,リンクより後に出現したinput要素のtabindex属性,要注意,,NetReader、VoiceOverでは想定通りの動作をしない。,NetReader、VoiceOverの今後の機能向上に期待する。
+SCR26,SCR26: 動的なコンテンツをDOMのそのトリガーとなる要素の直後に挿入する,DOM操作でリンクの後に挿入される要素,達成可能,,ほとんどのスクリーンリーダーでは問題ないが、HPRでは読み上げがページの先頭に戻ってしまうという問題がある。HPRは既にサポートされていない古いスクリーンリーダーであるが、対応させる必要がある場合は注意が必要。,
+SCR37,SCR37: デバイス非依存な方法でカスタム・ダイアログを作成する,onclickイベント,要注意,スクリーンリーダーでは、ダイアログを開くだけで何も読み上げず、ダイアログが開いたことも音声では分からない。そのため、そのボタンを押すとダイアログが開くことを明示するなどしたほうがよい。,,

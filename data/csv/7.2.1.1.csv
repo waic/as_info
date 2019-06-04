@@ -1,11 +1,11 @@
-�e�X�g�t�@�C��No.,�������@�^�C�g��,�Ώ�,����,��ւ������͐���������@,���ӓ_,���l,
-�B��� 7.2.1.1 �L�[�{�[�h����,,,,,,,
-H91-1c,H91: HTML�̃t�H�[���E�R���g���[���y�у����N��p����,a�v�f,�v����,�\�ȏꍇ�ɂ́A�����N�����ׂĉ摜�ɂ��邩�A�܂��͂��ׂăe�L�X�g�ɂ����ق����悢�B,"��̃����N���ŉ摜�ƃe�L�X�g�𗼕��p����ꍇ�A�摜��alt�����l�ɑ�փe�L�X�g���L�q����Ă���ꍇ�A�X�N���[�����[�_�[��PC-Talker XP��NetReader�AFocusTalk�AVoiceOver�ł͂��̑�փe�L�X�g���ǂݏグ���Ȃ��B
-",����̎x���Z�p�̋@�\����Ɋ��҂���iPC-Talker 7�ł́A��փe�L�X�g���ǂݏグ����悤�ɉ��P����Ă���j�B,
-SCR20-1,SCR20: �L�[�{�[�h�Ƃ��̑��̃f�o�C�X���L�̋@�\�𗼕��Ƃ��p����,�C�x���g�n���h���imousedown + keydown�j,�v����,,"JAWS�ł̓T�|�[�g����Ă��Ȃ��B
-�������@�ɂ���ẮA���̃����N�ֈړ����悤�Ƃ���Tab�L�[�������Ă��������Ă��܂����Ƃ�����B�p�r�ɂ���ẮATab�L�[�ɂ͔������Ȃ��悤�ɂ���Ȃǂ̍H�v���K�v�ł���B",,
-SCR20-2,SCR20: �L�[�{�[�h�Ƃ��̑��̃f�o�C�X���L�̋@�\�𗼕��Ƃ��p����,�C�x���g�n���h���imouseup + keyup�j,�B���s�\,,�X�N���[�����[�_�[�ɂ��T�|�[�g���S�ʓI�ɕs�\���ł���B,,
-SCR20-4,SCR20: �L�[�{�[�h�Ƃ��̑��̃f�o�C�X���L�̋@�\�𗼕��Ƃ��p����,�C�x���g�n���h���imouseover + focus�j,�v����,,"HPR�ł̓T�|�[�g����Ă��Ȃ��B
-�������@�ɂ���Ă̓L�[�{�[�h����Ńt�H�[�J�X�������߂��Ă��܂����Ƃ�����̂ŁA��������Ɠ���m�F���s���K�v������B�܂��Aonmouseover��onkeypress�́AiPhone��iPad�Ȃǂ̃^�b�`�p�l���E�C���^�t�F�[�X�ł͈Ӑ}�ʂ�ɓ��삵�Ȃ����Ƃ����邽�߁A���ӂ��K�v�ł���B",,
-SCR20-5,SCR20: �L�[�{�[�h�Ƃ��̑��̃f�o�C�X���L�̋@�\�𗼕��Ƃ��p����,�C�x���g�n���h���imouseout + blur�j,�v����,,�X�N���[�����[�_�[�ɂ���ẮA�K�؂ɓ��삵�Ȃ����Ƃ�����B,,
-SCR26,SCR26: ���I�ȃR���e���c��DOM�̂��̃g���K�[�ƂȂ�v�f�̒���ɑ}������,DOM����Ń����N�̌�ɑ}�������v�f,�B���\,,�قƂ�ǂ̃X�N���[�����[�_�[�ł͖��Ȃ����AHPR�ł͓ǂݏグ���y�[�W�̐擪�ɖ߂��Ă��܂��Ƃ�����肪����BHPR�͊��ɃT�|�[�g����Ă��Ȃ��Â��X�N���[�����[�_�[�ł��邪�A�Ή�������K�v������ꍇ�͒��ӂ��K�v�B,,
+﻿テストファイルNo.,実装方法タイトル,対象,見解,代替もしくは推奨する方法,注意点,備考,
+達成基準 7.2.1.1 キーボード操作,,,,,,,
+H91-1c,H91: HTMLのフォーム・コントロール及びリンクを用いる,a要素,要注意,可能な場合には、リンクをすべて画像にするか、またはすべてテキストにしたほうがよい。,"一つのリンク内で画像とテキストを両方用いる場合、画像のalt属性値に代替テキストが記述されている場合、スクリーンリーダーのPC-Talker XPとNetReader、FocusTalk、VoiceOverではその代替テキストが読み上げられない。
+",今後の支援技術の機能向上に期待する（PC-Talker 7では、代替テキストも読み上げられるように改善されている）。,
+SCR20-1,SCR20: キーボードとその他のデバイス特有の機能を両方とも用いる,イベントハンドラ（mousedown + keydown）,要注意,,"JAWSではサポートされていない。
+実装方法によっては、次のリンクへ移動しようとしてTabキーを押しても反応してしまうことがある。用途によっては、Tabキーには反応しないようにするなどの工夫が必要である。",,
+SCR20-2,SCR20: キーボードとその他のデバイス特有の機能を両方とも用いる,イベントハンドラ（mouseup + keyup）,達成不可能,,スクリーンリーダーによるサポートが全般的に不十分である。,,
+SCR20-4,SCR20: キーボードとその他のデバイス特有の機能を両方とも用いる,イベントハンドラ（mouseover + focus）,要注意,,"HPRではサポートされていない。
+実装方法によってはキーボード操作でフォーカスが閉じ込められてしまうこともあるので、しっかりと動作確認を行う必要がある。また、onmouseoverとonkeypressは、iPhoneやiPadなどのタッチパネル・インタフェースでは意図通りに動作しないことがあるため、注意が必要である。",,
+SCR20-5,SCR20: キーボードとその他のデバイス特有の機能を両方とも用いる,イベントハンドラ（mouseout + blur）,要注意,,スクリーンリーダーによっては、適切に動作しないことがある。,,
+SCR26,SCR26: 動的なコンテンツをDOMのそのトリガーとなる要素の直後に挿入する,DOM操作でリンクの後に挿入される要素,達成可能,,ほとんどのスクリーンリーダーでは問題ないが、HPRでは読み上げがページの先頭に戻ってしまうという問題がある。HPRは既にサポートされていない古いスクリーンリーダーであるが、対応させる必要がある場合は注意が必要。,,

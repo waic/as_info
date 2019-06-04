@@ -1,3 +1,3 @@
-�e�X�g�t�@�C��No.,�������@�^�C�g��,�Ώ�,����,��ւ������͐���������@,���ӓ_,���l,
-�B��� 7.2.1.2 �t�H�[�J�X�ړ�,,,,,,,
-G21,G21: ���[�U�[���R���e���c���ɕ����߂��Ȃ��悤�ɂ���,�v���O�C���iFlash���j,�v����,HTML�̃E�F�u�y�[�W��Flash�𖄂ߍ��ލۂɂ́AFLASH17�̎������@���Q�l�ɂ���Ƃ悢�B�������AFLASH17��AS���؂͂܂��s���Ă��Ȃ����߁A����m�F���K�v�ł���B,Firefox��Safari�ł́A�L�[�{�[�h����ł�Flash���Ƀt�H�[�J�X���ړ��ł��Ȃ��Ƃ������m�̕s�������B,,
+﻿テストファイルNo.,実装方法タイトル,対象,見解,代替もしくは推奨する方法,注意点,備考,
+達成基準 7.2.1.2 フォーカス移動,,,,,,,
+G21,G21: ユーザーがコンテンツ内に閉じ込められないようにする,プラグイン（Flash等）,要注意,HTMLのウェブページにFlashを埋め込む際には、FLASH17の実装方法を参考にするとよい。ただし、FLASH17のAS検証はまだ行っていないため、動作確認が必要である。,FirefoxとSafariでは、キーボード操作ではFlash内にフォーカスを移動できないという既知の不具合がある。,,
