@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="ja" lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="ウェブ,アクセシビリティ,基盤,委員会,WAIC,web,accessibility,infrastructure,committee,アクセシビリティ,サポーテッド,AS,情報" />
+    <meta name="description" content="アクセシビリティ・サポーテッド（AS）情報に関する解説文書" />
+    <link rel="stylesheet" type="text/css" href="http://waic.jp/cmn/css/docs.css" />
+    <title>アクセシビリティ・サポーテッド（AS）情報：H2-2</title>
+    <style type="text/css">table{empty-cells: show;}tr.warn{background: #ffd;}tr.ng{background: #fdd;}</style>
+  </head>
+  <body>
+    <div id="logo">
+      <a href="http://waic.jp/">
+        <img src="http://waic.jp/cmn/img/header/logo.png" alt="ウェブアクセシビリティ基盤委員会 / WAIC: Web Accessibility Infrastructure Committee" width="334" height="77" />
+      </a>
+    </div>
+    <h1>アクセシビリティ・サポーテッド（AS）情報：テスト0001-01</h1>
+    <ul>
+      <li>公開日：2019年*月*日</li>
+      <li>作成者：ウェブアクセシビリティ基盤委員会（WAIC）実装ワーキンググループ（WG2）</li>
+    </ul>
+    <h2>テスト0001-01: 同じリンクの中に入れた画像 (代替テキストなし) とテキスト (1. 画像 2. テキスト)</h2>
+    <h3>関連する達成基準の実装方法一覧</h3>
+    <p>
+      <a href="1.1.1.html">1.1.1非テキストコンテンツに関する達成基準 (等級A)</a>
+    </p>
+    <p>
+      <a href="2.4.4.html">2.4.4文脈におけるリンクの目的に関する達成基準 (等級A)</a>
+    </p>
+    <h3>関連する達成方法</h3>
+    <p>
+      <a href="H2.html">H2: 隣り合った画像とテキストリンクを同じリンクの中に入れる</a>
+    </p>
+    <p>
+      <a href="H30.html">H30: a 要素のリンクの目的を説明するリンクテキストを提供する</a>
+    </p>
+    <h3>テストファイル</h3>
+    <p>
+      <a href="https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0001-01.md">0001-01のテストの目的、テスト手順、期待される結果、テスト実施時の注意点など</a>
+    </p>
+    <p>
+      <a href="https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0001-01">0001-01のテストファイル</a>
+    </p>
+    
+    <h3>対象</h3>
+    <p>a要素内にあるimg要素のalt属性</p>
+    <h3>テスト結果の詳細</h3>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">ユーザエージェント</th>
+          <th scope="col">検証結果</th>
+          <th scope="col">操作手順</th>
+          <th scope="col">備考</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="ok">
+          <td>macOS Mojave 10.14.2 + Firefox 64.0 + VoiceOver</td>
+          <td>○</td>
+          <td>リンク「ウェブアクセシビリティ基盤委員会公開サイト」にVoiceOverキー+右矢印キーで移動した。</td>
+          <td>(作業コメント テスト結果ID 0003)</td>
+        </tr>
+        <!--
+        <tr class="warn">
+          <td>PC-Talker XP 3.06 + NetReader 1.18</td>
+          <td>△</td>
+          <td>■操作手順<br />リンクにフォーカスを移動させた際に、アイコン画像の代替テキストとリンクテキストが一緒に「富士通株式会社　公式サイト」と読み上げられた。<br />■音声読み上げ<br />「富士通株式会社　公式サイト」</td>
+          <td>テキスト画面で、全文読み上げでフォーカスが移動した際は、「富士通株式会社　公式サイト」と読み上げた。<br />しかし、（同テキスト画面で）Tabキーでフォーカスを移動させた際は、「富士通株式会社」と読み上げ、「公式サイト」を読み上げなかったため、△とした。<br />おそらく、同じリンク（ひとつのリンク）として認識されていないのだと思う。</td>
+        </tr>
+        <tr class="ng">
+          <td>FocusTalk V3</td>
+          <td>×</td>
+          <td>■操作手順<br />Tabを押してリンクにフォーカスを合わせると「公式サイト」と読み上げる<br />■音声読み上げ<br />「公式サイト」</td>
+          <td></td>
+        </tr>
+        -->
+      </tbody>
+    </table>
+  </body>
+</html>
