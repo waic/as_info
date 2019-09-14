@@ -15,7 +15,7 @@
 <meta name="keywords" content="ウェブ,アクセシビリティ,基盤,委員会,WAIC,web,accessibility,infrastructure,committee,アクセシビリティ,サポーテッド,AS,情報" />
 <meta name="description" content="アクセシビリティ サポーテッド（AS）情報に関する解説文書" />
 <link rel="stylesheet" type="text/css" href="http://waic.jp/cmn/css/docs.css" />
-<title>アクセシビリティ サポーテッド（AS）情報：2014年6月版 <xsl:value-of select="/AsDescription/@target" /></title>
+<title>アクセシビリティ サポーテッド（AS）情報：2019年m月版 <xsl:value-of select="/AsDescription/@target" /></title>
 <style type="text/css">table{empty-cells: show;}tr.warn{background: #ffd;}tr.ng{background: #fdd;}</style>
 </head>
 <body>
