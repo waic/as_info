@@ -31,14 +31,7 @@
 <h2>達成基準ごとの検証結果</h2>
 
 <ul>
-<xsl:for-each select="SuccessCriteria/SuccessCriteriaGroup[@level='A']/item">
-<xsl:sort select="id" order="ascending" />
-<xsl:apply-templates select="." />
-</xsl:for-each>
-</ul>
-
-<ul>
-<xsl:for-each select="SuccessCriteria/SuccessCriteriaGroup[@level='AA']/item">
+<xsl:for-each select="SuccessCriteria/SuccessCriteriaGroup[@level='A' or @level='AA']/item">
 <xsl:sort select="id" order="ascending" />
 <xsl:apply-templates select="." />
 </xsl:for-each>
