@@ -1,0 +1,610 @@
+0001-01:
+  title: 同じリンクの中に入れた画像 (代替テキストなし) とテキスト (1. 画像 2. テキスト)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0001-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0001-01.md
+  criteria:
+  - 1.1.1
+  - 2.4.4
+  - 2.4.9
+  techs:
+  - H2
+  - H30
+0001-02:
+  title: 同じリンクの中に入れた画像 (代替テキストなし) とテキスト (1. テキスト 2. 画像)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0001-02.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0001-02.md
+  criteria:
+  - 1.1.1
+  - 2.4.4
+  - 2.4.9
+  techs:
+  - H2
+  - H30
+0001-03:
+  title: 同じ段落の中に入れた画像 (代替テキストなし) とテキスト
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0001-03.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0001-03.md
+  criteria:
+  - 1.1.1
+  techs:
+  - H67
+0002-01:
+  title: 同じリンクの中に入れた画像 (代替テキストあり) とテキスト (1. 画像 2. テキスト)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0002-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0002-01.md
+  criteria:
+  - 1.1.1
+  - 2.4.4
+  - 2.4.9
+  techs:
+  - H2
+0002-02:
+  title: 同じリンクの中に入れた画像 (代替テキストあり) とテキスト (1. テキスト 2. 画像)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0002-02.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0002-02.md
+  criteria:
+  - 1.1.1
+  - 2.4.4
+  - 2.4.9
+  techs:
+  - H30
+0003-01:
+  title: フォーカス移動順序を指定した複数のフォームコントロール (マークアップ順)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0003-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0003-01.md
+  criteria:
+  - 2.4.3
+  techs:
+  - H4
+0003-02:
+  title: フォーカス移動順序を指定した複数のフォームコントロール (非マークアップ順)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0003-02.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0003-02.md
+  criteria:
+  - 2.4.3
+  techs:
+  - H4
+0003-03:
+  title: フォーカス移動順序を指定した複数のリンク (マークアップ順)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0003-03.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0003-03.md
+  criteria:
+  - 2.4.3
+  techs:
+  - H4
+0003-04:
+  title: フォーカス移動順序を指定した複数のリンク (順序に重複あり)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0003-04.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0003-04.md
+  criteria:
+  - 2.4.3
+  techs:
+  - H4
+0004-01:
+  title: イメージマップ (マップの判別)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0004-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0004-01.md
+  criteria:
+  - 1.1.1
+  - 2.4.4
+  - 2.4.9
+  techs:
+  - H37
+0004-02:
+  title: イメージマップ (代替テキストあり)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0004-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0004-02.md
+  criteria:
+  - 1.1.1
+  techs:
+  - H37
+0004-03:
+  title: イメージマップ内の area 要素 (代替テキストあり)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0004-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0004-03.md
+  criteria:
+  - 1.1.1
+  - 2.4.4
+  - 2.4.9
+  techs:
+  - H24
+0004-04:
+  title: イメージマップ内の area 要素 (リンク機能)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0004-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0004-04.md
+  criteria:
+  - 1.1.1
+  - 2.4.4
+  - 2.4.9
+  techs:
+  - H24
+0004-05:
+  title: イメージマップ内の area 要素 (リンクの判別)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0004-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0004-05.md
+  criteria:
+  - 1.1.1
+  - 2.4.4
+  - 2.4.9
+  techs:
+  - H24
+0005-01:
+  title: ページタイトルを指定した title 要素
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0005-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0005-01.md
+  criteria:
+  - 2.4.2
+  techs:
+  - H25
+0006-01:
+  title: a 要素に指定したテキスト
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0006-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0006-01.md
+  criteria:
+  - 2.4.4
+  - 2.4.9
+  techs:
+  - H30
+0006-02:
+  title: a 要素に指定した画像 (代替テキストあり)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0006-02.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0006-02.md
+  criteria:
+  - 1.1.1
+  - 2.4.4
+  - 2.4.9
+  techs:
+  - H30
+0006-03:
+  title: a 要素に指定したテキスト (title 属性あり)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0006-03.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0006-03.md
+  criteria:
+  - 2.4.4
+  - 2.4.9
+  techs:
+  - H33
+0007-01:
+  title: テキスト入力フィールドと送信ボタン
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0007-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0007-01.md
+  criteria:
+  - 3.2.2
+  techs:
+  - H32
+0007-02:
+  title: セレクトメニューと送信ボタン
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0007-02.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0007-02.md
+  criteria:
+  - 3.2.2
+  techs:
+  - H32
+0008-01:
+  title: 送信ボタンに指定した画像 (代替テキストあり)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0008-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0008-01.md
+  criteria:
+  - 1.1.1
+  techs:
+  - H36
+0009-01:
+  title: 代替テキストを指定した画像
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0009-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0009-01.md
+  criteria:
+  - 1.1.1
+  techs:
+  - H37
+0010-01:
+  title: 表題を指定した caption 要素
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0010-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0010-01.md
+  criteria:
+  - 1.3.1
+  techs:
+  - H39
+0010-02:
+  title: テーブルの開始位置及び終了位置
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0010-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0010-02.md
+  criteria:
+  - 1.3.1
+  techs:
+  - H51
+0010-03:
+  title: テーブルの行数及び列数
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0010-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0010-03.md
+  criteria:
+  - 1.3.1
+  techs:
+  - H51
+0010-04:
+  title: データセルと見出しセル (行見出し)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0010-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0010-04.md
+  criteria:
+  - 1.3.1
+  techs:
+  - H51
+0010-05:
+  title: データセルと見出しセル (列見出し)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0010-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0010-05.md
+  criteria:
+  - 1.3.1
+  techs:
+  - H51
+0010-06:
+  title: 'データセルと見出しセル (scope 属性あり : 行見出し)'
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0010-02.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0010-06.md
+  criteria:
+  - 1.3.1
+  techs:
+  - H63
+0010-07:
+  title: 'データセルと見出しセル (scope 属性あり : 列見出し)'
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0010-02.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0010-07.md
+  criteria:
+  - 1.3.1
+  techs:
+  - H63
+0010-08:
+  title: データセルと見出しセル (id 属性及び headers 属性)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0010-03.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0010-08.md
+  criteria:
+  - 1.3.1
+  techs:
+  - H43
+0011-01:
+  title: h1 要素〜 h6 要素
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0011-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0011-01.md
+  criteria:
+  - 1.3.1
+  techs:
+  - H42
+0011-02:
+  title: section 要素内の h1 要素
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0011-02.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0011-02.md
+  criteria:
+  - 1.3.1
+  techs:
+  - H42
+0011-03:
+  title: h1 要素〜 h6 要素への直接移動
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0011-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0011-03.md
+  criteria:
+  - 2.4.1
+  - 2.4.10
+  techs:
+  - H69
+0012-01:
+  title: テキスト入力フィールドとラベル (label 要素)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0012-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0012-01.md
+  criteria:
+  - 1.1.1
+  - 1.3.1
+  - 3.3.2
+  - 4.1.2
+  techs:
+  - H44
+0012-02:
+  title: チェックボックスとラベル (label 要素)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0012-02.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0012-02.md
+  criteria:
+  - 1.1.1
+  - 1.3.1
+  - 3.3.2
+  - 4.1.2
+  techs:
+  - H44
+0012-03:
+  title: ラジオボタンとラベル (label 要素)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0012-03.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0012-03.md
+  criteria:
+  - 1.1.1
+  - 1.3.1
+  - 3.3.2
+  - 4.1.2
+  techs:
+  - H44
+0012-04:
+  title: セレクトメニューとラベル (title 属性)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0012-04.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0012-04.md
+  criteria:
+  - 1.1.1
+  - 1.3.1
+  - 3.3.2
+  - 4.1.2
+  techs:
+  - H65
+0012-05:
+  title: テキスト入力フィールドとラベル (title 属性)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0012-05.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0012-05.md
+  criteria:
+  - 1.1.1
+  - 1.3.1
+  - 3.3.2
+  - 4.1.2
+  techs:
+  - H65
+0013-01:
+  title: longdesc 属性
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0013-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0013-01.md
+  criteria:
+  - 1.1.1
+  techs:
+  - H45
+0014-01:
+  title: 順序付きリスト (ol 要素)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0014-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0014-01.md
+  criteria:
+  - 1.3.1
+  techs:
+  - H48
+0014-02:
+  title: 順序なしリスト (ul 要素)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0014-02.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0014-02.md
+  criteria:
+  - 1.3.1
+  techs:
+  - H48
+0014-03:
+  title: 説明リスト (dl 要素)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0014-03.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0014-03.md
+  criteria:
+  - 1.3.1
+  techs:
+  - H48
+0015-01:
+  title: 強調 (em 要素)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0015-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0015-01.md
+  criteria:
+  - 1.3.1
+  techs:
+  - H49
+0015-02:
+  title: 重要 (strong 要素)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0015-02.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0015-02.md
+  criteria:
+  - 1.3.1
+  techs:
+  - H49
+0015-03:
+  title: 引用 (blockquote 要素)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0015-03.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0015-03.md
+  criteria:
+  - 1.3.1
+  techs:
+  - H49
+0015-04:
+  title: 引用 (q 要素)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0015-04.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0015-04.md
+  criteria:
+  - 1.3.1
+  techs:
+  - H49
+0015-05:
+  title: 上付き文字 (sup 要素)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0015-05.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0015-05.md
+  criteria:
+  - 1.3.1
+  techs:
+  - H49
+0015-06:
+  title: 下付き文字 (sub 要素)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0015-06.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0015-06.md
+  criteria:
+  - 1.3.1
+  techs:
+  - H49
+0016-01:
+  title: ページの言語
+  code:
+  - https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0016-01.html
+  - https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0016-02.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0016-01.md
+  criteria:
+  - 3.1.1
+  techs:
+  - H57
+0017-01:
+  title: インラインフレームの説明 (title 属性)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0017-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0017-01.md
+  criteria:
+  - 1.3.1
+  - 4.1.2
+  techs:
+  - H64
+0017-02:
+  title: インラインフレームによるブロックスキップ
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0017-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0017-02.md
+  criteria:
+  - 2.4.1
+  techs:
+  - H64
+  - H70
+0018-01:
+  title: fieldset 要素及び legend 要素によるグループ化 (ラジオボタン)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0018-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0018-01.md
+  criteria:
+  - 1.3.1
+  - 3.3.2
+  techs:
+  - H71
+0018-02:
+  title: fieldset 要素及び legend 要素によるグループ化 (チェックボックス)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0018-02.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0018-02.md
+  criteria:
+  - 1.3.1
+  - 3.3.2
+  techs:
+  - H71
+0018-03:
+  title: fieldset 要素及び legend 要素によるグループ化 (テキスト入力フィールド)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0018-03.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0018-03.md
+  criteria:
+  - 1.3.1
+  - 3.3.2
+  techs:
+  - H71
+0019-01:
+  title: リンクの目的の特定 (リスト項目)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0019-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0019-01.md
+  criteria:
+  - 2.4.4
+  techs:
+  - H77
+0019-02:
+  title: リンクの目的の特定 (段落)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0019-02.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0019-02.md
+  criteria:
+  - 2.4.4
+  techs:
+  - H78
+0019-03:
+  title: リンクの目的の特定 (テーブル)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0010-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0019-03.md
+  criteria:
+  - 2.4.4
+  techs:
+  - H79
+0019-04:
+  title: リンクの目的の特定 (見出し)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0019-04.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0019-04.md
+  criteria:
+  - 2.4.4
+  techs:
+  - H80
+0019-05:
+  title: リンクの目的の特定 (リストの入れ子)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0019-05.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0019-05.md
+  criteria:
+  - 2.4.4
+  techs:
+  - H81
+0022-01:
+  title: セレクトメニュー内のグループ化 (optgroup 要素)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0022-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0022-01.md
+  criteria:
+  - 1.3.1
+  techs:
+  - H85
+0024-01:
+  title: nav 要素
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0024-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0024-01.md
+  criteria:
+  - 1.3.1
+  techs:
+  - H97
+0024-02:
+  title: nav 要素への直接移動
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0024-02.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0024-02.md
+  criteria:
+  - 2.4.1
+  techs: []
+0025-01:
+  title: コンテンツのグループ化 (figure 要素及び figcaption 要素)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0025-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0025-01.md
+  criteria:
+  - 1.3.1
+  techs: []
+0026-01:
+  title: main ランドマークの判別 (div 要素の role 属性)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0026-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0026-01.md
+  criteria:
+  - 1.3.1
+  techs: []
+0026-02:
+  title: main ランドマークの判別 (main 要素)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0026-02.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0026-02.md
+  criteria:
+  - 1.3.1
+  techs: []
+0026-03:
+  title: main ランドマークの判別 (main 要素の role 属性)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0026-03.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0026-03.md
+  criteria:
+  - 1.3.1
+  techs: []
+0027-01:
+  title: 'main ランドマークへの直接移動 (div 要素と role 属性 : main のみ)'
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0026-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0027-01.md
+  criteria:
+  - 2.4.1
+  techs: []
+0027-02:
+  title: 'main ランドマークへの直接移動 (div 要素と role 属性 : main 以外のランドマークあり)'
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0027-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0027-02.md
+  criteria:
+  - 2.4.1
+  techs: []
+0027-03:
+  title: 'main ランドマークへの直接移動 (main 要素 : main のみ)'
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0026-02.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0027-03.md
+  criteria:
+  - 2.4.1
+  techs: []
+0027-04:
+  title: 'main ランドマークへの直接移動 (main 要素 : main 以外のランドマークあり)'
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0027-02.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0027-04.md
+  criteria:
+  - 2.4.1
+  techs: []
+0027-05:
+  title: 'main ランドマークへの直接移動 (main 要素の role 属性 : main のみ)'
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0026-03.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0027-05.md
+  criteria:
+  - 2.4.1
+  techs: []
+0027-06:
+  title: 'main ランドマークへの直接移動 (main 要素の role 属性 : main 以外のランドマークあり)'
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0027-03.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0027-06.md
+  criteria:
+  - 2.4.1
+  techs: []

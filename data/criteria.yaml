@@ -1,0 +1,164 @@
+---
+1.1.1:
+  title: 非テキストコンテンツ
+  level: A
+  techs:
+  - H2
+  - H24
+  - H30
+  - H36
+  - H37
+  - H44
+  - H45
+  - H65
+  - H67
+  # - G73
+# 1.2.1:
+#   title: 音声のみ及び映像のみ (収録済)
+#   level: A
+#   techs: []
+# 1.2.2:
+#   title: キャプション (収録済)
+#   level: A
+#   techs: []
+# 1.2.3:
+#   title: 音声解説、又はメディアに対する代替 (収録済)
+#   level: A
+#   techs: []
+# 1.2.4:
+#   title: キャプション (ライブ)
+#   level: AA
+#   techs: []
+# 1.2.5:
+#   title: 音声解説 (収録済)
+#   level: AA
+#   techs: []
+# 1.2.6:
+#   title: 手話 (収録済)
+#   level: AAA
+#   techs: []
+# 1.2.7:
+#   title: 拡張音声解説 (収録済)
+#   level: AAA
+#   techs: []
+# 1.2.8:
+#   title: メディアに対する代替 (収録済)
+#   level: AAA
+#   techs: []
+# 1.2.9:
+#   title: 音声のみ (ライブ)
+#   level: AAA
+#   techs: []
+1.3.1:
+  title: 情報及び関係性
+  level: A
+  techs:
+  # - F2
+  # - G115
+  - H39
+  - H42
+  - H43
+  - H44
+  - H48
+  - H49
+  - H51
+  - H63
+  - H65
+  - H71
+  # - H73
+  - H85
+  - H97
+# 1.3.2:
+#   title: 意味のある順序
+#   level: A
+#   techs: []
+# 1.3.3:
+#   title: 感覚的な特徴
+#   level: A
+#   techs: []
+# 1.4.1:
+#   title: 色の使用
+#   level: A
+#   techs: []
+# 1.4.2:
+#   title: 音声の制御
+#   level: A
+#   techs: []
+2.4.1:
+  title: ブロックスキップ
+  level: A
+  techs:
+  - H64
+  - H69
+  - H70
+  # - ARIA11
+2.4.2:
+  title: ページタイトル
+  level: A
+  techs:
+  # - G88
+  - H25
+2.4.3:
+  title: フォーカス順序
+  level: A
+  techs:
+  # - F44
+  # - G59
+  - H4
+2.4.4:
+  title: リンクの目的（コンテクスト内）
+  level: A
+  techs:
+  # - G91
+  - H24
+  - H30
+  - H33
+  - H77
+  - H78
+  - H79
+  - H80
+  - H81
+2.4.9:
+  title: リンクの目的 (リンクのみ)
+  level: AAA
+  techs:
+  # - G91
+  - H24
+  - H30
+  - H33
+2.4.10:
+  title: セクション見出し
+  level: A
+  techs:
+  # - G141
+  - H69
+3.1.1:
+  title: ページの言語
+  level: A
+  techs:
+  - H57
+3.2.2:
+  title: 入力時
+  level: A
+  techs:
+  # - F36
+  # - F37
+  # - G13
+  - H32
+3.3.2:
+  title: ラベル又は説明
+  level: A
+  techs:
+  - H44
+  - H65
+  - H71
+4.1.2:
+  title: 名前・役割及び値
+  level: A
+  techs:
+  # - F59
+  # - F68
+  - H44
+  - H64
+  - H65
+  # - H91

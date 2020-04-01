@@ -1,0 +1,16 @@
+{
+  "addons": [
+  ],
+  "buildpacks": [
+  ],
+  "env": {
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "name": "as-info-next-review-app",
+  "scripts": {
+  }
+}
