@@ -8,11 +8,10 @@ JIS X 8341-3 や WCAG2.0 における「アクセシビリティ サポーテッ
 
 GitHub 上でのディレクトリ構成は以下の通りです。
 
- - as_info/
- - as_info/app/ # AS テスト結果の Excel から HTML を生成するためのプログラム（現在使用していません）
- - as_info/data/ # AS テスト結果の Excel／CSV ファイル（現在使用していません）、成型用の XSL ファイルなど
- - as_info/result/ # プログラム実行の結果、生成された HTML／XML ファイル
- - as_info/src/ # プログラムのソースファイル（現在使用していません）
+ - as_info/ # HTML 生成プログラム（使用方法は development.md 参照）
+ - as_info/conponents/ # プログラムの使用するコンポーネント
+ - as_info/data/ # AS テスト結果の YAML ファイル
+ - as_info/pages/ # プログラムの使用するテンプレート
 
 ## テストケース・テストコードに対するコメントや修正提案の送信方法
 
