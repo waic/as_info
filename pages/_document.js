@@ -3,7 +3,7 @@ import Document, { Head, Main, NextScript } from 'next/document'
 export default class MyDocument extends Document {
   render () {
     return (
-      <html>
+      <html lang="ja">
         <Head>
           <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
           <meta name="robots" content="index, follow" />
