@@ -1,0 +1,40 @@
+{
+  "name": "as-info-next",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "start": "next start -p $PORT",
+    "build": "next build",
+    "export": "next export --outdir=./docs",
+    "format": "prettier-stylelint --quiet --write ./styles/global.scss",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.22",
+    "@fortawesome/free-brands-svg-icons": "^5.10.2",
+    "@fortawesome/free-solid-svg-icons": "^5.10.2",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-sass": "^1.0.1",
+    "js-yaml-loader": "^1.2.2",
+    "next": "^9.0.5",
+    "next-seo": "^1.12.0",
+    "node-sass": "^4.12.0",
+    "normalize.css": "^8.0.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "devDependencies": {
+    "file-loader": "^4.2.0",
+    "prettier": "^1.18.2",
+    "prettier-eslint-cli": "^5.0.0",
+    "prettier-stylelint": "^0.4.2",
+    "styled-jsx": "^3.2.2",
+    "styled-jsx-css-loader": "^0.3.0",
+    "stylelint-config-standard": "^18.3.0"
+  }
+}
