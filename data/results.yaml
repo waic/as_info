@@ -5880,3 +5880,838 @@
       \ 9分の9\n （下矢印キーを押しても反応しない）"
     judgment: 満たしていない
   comment: null
+- id: 334
+  test: 0024-01
+  os: Windows 10 Pro 2004
+  user_agent: FireFox 83.0
+  assistive_tech: PC-Talker10 V1.41
+  assistive_tech_config: null
+  contents:
+  - procedure: テストファイルを読み上げ、内容を確認
+    actual: 'リンク「ホーム」を選択した時、「ナビゲーション ランドマーク」と読み上げた。
+
+      リンク「ニュース一覧」を選択した後、リンク「お問合せ」を選択すると、「ナビゲーション ランドマーク」と読み上げた。'
+    judgment: 満たしている
+  comment: null
+  tester: 諸熊
+- id: 335
+  test: 0024-01
+  os: Windows 10 Pro 2004
+  user_agent: Google chrome 87.0
+  assistive_tech: PC-Talker10 V1.41
+  assistive_tech_config: null
+  contents:
+  - procedure: テストファイルを読み上げ、内容を確認
+    actual: 'リンク「ホーム」を選択した時、「ナビゲーション ランドマーク」と読み上げた。
+
+      リンク「ニュース一覧」を選択した後、リンク「お問合せ」を選択すると、「ナビゲーション ランドマーク」と読み上げた。'
+    judgment: 満たしている
+  comment: null
+  tester: 諸熊
+- id: 336
+  test: 0024-01
+  os: Windows 10 Pro 2004
+  user_agent: Microsoft edge 87.0
+  assistive_tech: PC-Talker10 V1.41
+  assistive_tech_config: null
+  contents:
+  - procedure: テストファイルを読み上げ、内容を確認
+    actual: 'リンク「ホーム」を選択した時、「ナビゲーション ランドマーク」と読み上げた。
+
+      リンク「ニュース一覧」を選択した後、リンク「お問合せ」を選択すると、「ナビゲーション ランドマーク」と読み上げた。'
+    judgment: 満たしている
+  comment: null
+  tester: 諸熊
+- id: 337
+  test: 0014-03
+  os: iOS 14.2
+  user_agent: Safari
+  assistive_tech: VoiceOver
+  assistive_tech_config: null
+  contents:
+  - procedure: 右スワイプで順を追って読み上げ
+    actual: '略語（abbreviation), 定義リストの始まり, 用語
+
+      '
+    judgment: ×
+  - procedure: 右スワイプで順を追って読み上げ
+    actual: 略語（abbreviation), 定義リストの始まり, 用語
+    judgment: ○
+  - procedure: 定義リストの要素まで右スワイプで読み上げる
+    actual: 似ている言葉として閃光がある。, 定義リストの終わり, 定義
+    judgment: ○
+  - procedure: 定義リスト全体右スワイプでを読み上げる
+    actual: '略語（abbreviation), 定義リストの始まり, 用語
+
+      単語、語句、又は名称の短縮形で、その略語が言語の一部になっていないもの。, 定義
+
+      ASCII アート (ASCII art), 用語 文字やグリフの空間的配置によって作られた図画 (典型的には、ASCIIで定義されている95の印字可能文字から作られる)。,
+      定義
+
+      点滅 (blinking), 用語 注意を引く意図で、二つの視覚的な状態を交互に切り替えること。, 定義
+
+      似ている言葉として閃光がある。, 定義リストの終わり, 定義'
+    judgment: ○
+  comment: null
+  tester: 桝田 草一
+- id: 338
+  test: 0018-01
+  os: iOS 14.2
+  user_agent: Safari
+  assistive_tech: VoiceOver
+  assistive_tech_config: null
+  contents:
+  - procedure: 右スワイプで順を追って読み上げ
+    actual: '文学作品に関するクイズです。
+
+      ハムレットの作者は？, フォームの開始位置です
+
+      ウィリアム・シェイクスピア, ラジオボタン, checked, 5の1
+
+      ラドヤード・キップリング, ラジオボタン, unchecked, 5の2
+
+      ジョージ・バーナード・ショー, ラジオボタン, unchecked, 5の3
+
+      アーネスト・ヘミングウェイ, ラジオボタン, unchecked, 5の4
+
+      チャールズ・ディケンズ, ラジオボタン, unchecked, 5の4'
+    judgment: ○
+  - procedure: 右スワイプで順を追って読み上げ
+    actual: '坊っちゃんの作者は？, フォームの開始位置です
+
+      芥川龍之介, ラジオボタン, checked, 3の1
+
+      夏目漱石, ラジオボタン, unchecked, 3の2
+
+      森鴎外, ラジオボタン, unchecked, 3の3'
+    judgment: ○
+  - procedure: 順を追ってスワイプし、川端康成のラジオボタンを読み上げた後に一つ前にスワイプで移動した
+    actual: '川端康成, ラジオボタン, unchecked
+
+      坊っちゃんの作者は？, 森鴎外, ラジオボタン, unchecked, 3の3'
+    judgment: ○
+  comment: null
+  tester: 桝田 草一
+- id: 339
+  test: 0018-02
+  os: iOS 14.2
+  user_agent: Safari
+  assistive_tech: VoiceOver
+  assistive_tech_config: null
+  contents:
+  - procedure: ローターを Form Control に設定して下にスワイプ
+    actual: 好きな外国の作家は？, ウィリアム・シェイクスピア, チェックボックス, unchecked, Double tap to toggle settings
+    judgment: ○
+  - procedure: 操作内容(1)から右スワイプ
+    actual: ラドヤード・キップリング, チェックボックス, unchecked, Double tap to toggle settings
+    judgment: ×
+  - procedure: 順を追ってスワイプし、川端康成のラジオボタンまで読み上げる
+    actual: 川端康成, チェックボックス, unchecked, Double tab to toggle settigns
+    judgment: ×
+  - procedure: fieldset 要素の最初から最後まで右スワイプで読み上げる
+    actual: '好きな外国の作家は？, フォームの開始位置です
+
+      ウィリアム・シェイクスピア, チェックボックス, unchecked, Double tap to toggle settings
+
+      ラドヤード・キップリング, チェックボックス, unchecked, Double tap to toggle settings
+
+      ジョージ・バーナード・ショー, チェックボックス, unchecked, Double tap to toggle settings
+
+      アーネスト・ヘミングウェイ, チェックボックス, unchecked, Double tap to toggle settings
+
+      チャールズ・ディケンズ, チェックボックス, unchecked, Double tap to toggle settings'
+    judgment: ×
+  comment: null
+  tester: 桝田 草一
+- id: 340
+  test: 0024-01
+  os: Windows 10 Pro 2004
+  user_agent: Firefox 84.0
+  assistive_tech: NVDA 2020.2jp
+  assistive_tech_config: null
+  contents:
+  - procedure: テストコードのファイルリンクから遷移
+    actual: タブキーで操作するとナビゲーションランドマーク、ホームリンクと順に読み上げられた
+    judgment: ○
+  comment: null
+  tester: 佐々木 将
+- id: 341
+  test: 0024-02
+  os: Windows 10 Pro 2004
+  user_agent: Firefox 84.0
+  assistive_tech: NVDA 2020.2jp
+  assistive_tech_config: null
+  contents:
+  - procedure: テストコードのファイルリンクから遷移
+    actual: タブキーで操作するとナビゲーションランドマーク、組織リンクと順に読み上げられ、次のNAV要素のリンクが順に読み上げられる
+    judgment: ○
+  comment: null
+  tester: 佐々木 将
+- id: 342
+  test: 0025-01
+  os: Windows 10 Pro 2004
+  user_agent: Firefox 84.0
+  assistive_tech: NVDA 2020.2jp
+  assistive_tech_config: null
+  contents:
+  - procedure: テストコードのファイルリンクから遷移
+    actual: ページを開くと見出しレベル１から順にfigcaptionの内容と代替テキストの内容とp タグの内容が読み上げられるがfigure 要素の判別は不可
+    judgment: ×
+  comment: null
+  tester: 佐々木 将
+- id: 343
+  test: 0026-01
+  os: Windows 10 Pro 2004
+  user_agent: Firefox 84.0
+  assistive_tech: NVDA 2020.2jp
+  assistive_tech_config: null
+  contents:
+  - procedure: テストコードのファイルリンクから遷移
+    actual: ページを開くと見出しの後にメインランドマークWAIC の最新情報はと読み上げられ順に読み上げられるがmain ランドマークの終了位置は読み上げられない
+    judgment: ×
+  comment: null
+  tester: 佐々木 将
+- id: 344
+  test: 0026-02
+  os: Windows 10 Pro 2004
+  user_agent: Firefox 84.0
+  assistive_tech: NVDA 2020.2jp
+  assistive_tech_config: null
+  contents:
+  - procedure: テストコードのファイルリンクから遷移
+    actual: ページを開くと見出しの後にメインランドマークWAIC の最新情報はと読み上げられ順に読み上げられるがmain ランドマークの終了位置は読み上げられない
+    judgment: ×
+  comment: null
+  tester: 佐々木 将
+- id: 345
+  test: 0026-03
+  os: Windows 10 Pro 2004
+  user_agent: Firefox 84.0
+  assistive_tech: NVDA 2020.2jp
+  assistive_tech_config: null
+  contents:
+  - procedure: テストコードのファイルリンクから遷移
+    actual: ページを開くと見出しの後にメインランドマークWAIC の最新情報はと読み上げられ順に読み上げられるがmain ランドマークの終了位置は読み上げられない
+    judgment: ×
+  comment: null
+  tester: 佐々木 将
+- id: 346
+  test: 0026-01
+  os: ''
+  user_agent: Firefox 84.0
+  assistive_tech: NVDA 2020.3jp
+  assistive_tech_config: null
+  contents:
+  - procedure: テストコードのリンクから遷移
+    actual: 読み上げが開始され、mainランドマークの箇所がわかるように読み上げられる
+    judgment: ○
+  comment: null
+  tester: 小出淳子
+- id: 347
+  test: 0024-02
+  os: Windows 10 Pro 2004
+  user_agent: FireFox 83.0
+  assistive_tech: PC-Talker 10
+  assistive_tech_config: null
+  contents:
+  - procedure: M キーを押した
+    actual: リンク「組織」へ移動し、「ナビゲーション ランドマーク」と読み上げた。
+    judgment: ○
+  - procedure: M キーを押した
+    actual: リンク「ホーム」へ移動し、「ナビゲーション ランドマーク」と読み上げた
+    judgment: ○
+  comment: null
+  tester: 諸熊
+- id: 348
+  test: 0024-02
+  os: Windows 10 Pro 2004
+  user_agent: Google Chrome 87.0.4280.88
+  assistive_tech: PC-Talker 10
+  assistive_tech_config: null
+  contents:
+  - procedure: M キーを押した
+    actual: リンク「組織」へ移動し、「ナビゲーション ランドマーク」と読み上げた。
+    judgment: ○
+  - procedure: M キーを押した
+    actual: リンク「ホーム」へ移動し、「ナビゲーション ランドマーク」と読み上げた
+    judgment: ○
+  comment: null
+  tester: 諸熊
+- id: 349
+  test: 0024-02
+  os: Windows 10 Pro 2004
+  user_agent: Microsoft Edge 87.0.664.60
+  assistive_tech: PC-Talker 10
+  assistive_tech_config: null
+  contents:
+  - procedure: M キーを押した
+    actual: リンク「組織」へ移動し、「ナビゲーション ランドマーク」と読み上げた。
+    judgment: ○
+  - procedure: M キーを押した
+    actual: リンク「ホーム」へ移動し、「ナビゲーション ランドマーク」と読み上げた
+    judgment: ○
+  comment: null
+  tester: 諸熊
+- id: 350
+  test: 0025-01
+  os: Windows 10 Pro 2004
+  user_agent: FireFox 83.0
+  assistive_tech: PC-Talker 10
+  assistive_tech_config: null
+  contents:
+  - procedure: テキスト「セッション1の様子」を選択した
+    actual: figure 要素であることは読み上げなかった
+    judgment: ×
+  - procedure: テキスト「セッション1の様子」を選択した
+    actual: figcaption 要素であることは読み上げなかった
+    judgment: ×
+  - procedure: テキスト「セッション1の様子」を選択した
+    actual: ユニークな要素であることは読み上げなかった
+    judgment: ×
+  comment: null
+  tester: 諸熊
+- id: 351
+  test: 0025-01
+  os: Windows 10 Pro 2004
+  user_agent: Google Chrome 87.0.4280.88
+  assistive_tech: PC-Talker 10
+  assistive_tech_config: null
+  contents:
+  - procedure: テキスト「セッション1の様子」を選択した
+    actual: figure 要素であることは読み上げなかった
+    judgment: ×
+  - procedure: テキスト「セッション1の様子」を選択した
+    actual: figcaption 要素であることは読み上げなかった
+    judgment: ×
+  - procedure: テキスト「セッション1の様子」を選択した
+    actual: ユニークな要素であることは読み上げなかった
+    judgment: ×
+  comment: null
+  tester: 諸熊
+- id: 352
+  test: 0025-01
+  os: Windows 10 Pro 2004
+  user_agent: Microsoft Edge 87.0.664.60
+  assistive_tech: PC-Talker 10
+  assistive_tech_config: null
+  contents:
+  - procedure: テキスト「セッション1の様子」を選択した
+    actual: figure 要素であることは読み上げなかった
+    judgment: ×
+  - procedure: テキスト「セッション1の様子」を選択した
+    actual: figcaption 要素であることは読み上げなかった
+    judgment: ×
+  - procedure: テキスト「セッション1の様子」を選択した
+    actual: ユニークな要素であることは読み上げなかった
+    judgment: ×
+  comment: null
+  tester: 諸熊
+- id: 353
+  test: 0026-01
+  os: Windows 10 Pro 2004
+  user_agent: FireFox 83.0
+  assistive_tech: PC-Talker 10
+  assistive_tech_config: null
+  contents:
+  - procedure: テキスト「WAIC の最新情報は以下をご参照ください。」を選択した。
+    actual: 「メイン ランドマーク」と読み上げた。
+    judgment: ○
+  - procedure: テキスト「Twitter や Facebook でも情報発信しています。」を選択した後、「セミナーなどのお知らせも行っています。」を選択した。
+    actual: "「メイン ランドマーク」と読み上げた。\r\n"
+    judgment: ○
+  comment: null
+  tester: 諸熊
+- id: 354
+  test: 0026-01
+  os: Windows 10 Pro 2004
+  user_agent: Google Chrome 87.0.4280.88
+  assistive_tech: PC-Talker 10
+  assistive_tech_config: null
+  contents:
+  - procedure: テキスト「WAIC の最新情報は以下をご参照ください。」を選択した。
+    actual: 「メイン ランドマーク」と読み上げた。
+    judgment: ○
+  - procedure: テキスト「Twitter や Facebook でも情報発信しています。」を選択した後、「セミナーなどのお知らせも行っています。」を選択した。
+    actual: "「メイン ランドマーク」と読み上げた。\r\n"
+    judgment: ○
+  comment: null
+  tester: 諸熊
+- id: 355
+  test: 0026-01
+  os: Windows 10 Pro 2004
+  user_agent: Microsoft Edge 87.0.664.60
+  assistive_tech: PC-Talker 10
+  assistive_tech_config: null
+  contents:
+  - procedure: テキスト「WAIC の最新情報は以下をご参照ください。」を選択した。
+    actual: 「メイン ランドマーク」と読み上げた。
+    judgment: ○
+  - procedure: テキスト「Twitter や Facebook でも情報発信しています。」を選択した後、「セミナーなどのお知らせも行っています。」を選択した。
+    actual: "「メイン ランドマーク」と読み上げた。\r\n"
+    judgment: ○
+  comment: null
+  tester: 諸熊
+- id: 356
+  test: 0026-02
+  os: Windows 10 Pro 2004
+  user_agent: FireFox 83.0
+  assistive_tech: PC-Talker 10
+  assistive_tech_config: null
+  contents:
+  - procedure: テキスト「WAIC の最新情報は以下をご参照ください。」を選択した。
+    actual: 「メイン ランドマーク」と読み上げた。
+    judgment: ○
+  - procedure: テキスト「Twitter や Facebook でも情報発信しています。」を選択した後、「セミナーなどのお知らせも行っています。」を選択した。
+    actual: "「メイン ランドマーク」と読み上げた。\r\n"
+    judgment: ○
+  comment: null
+  tester: 諸熊
+- id: 357
+  test: 0026-02
+  os: Windows 10 Pro 2004
+  user_agent: Google Chrome 87.0.4280.88
+  assistive_tech: PC-Talker 10
+  assistive_tech_config: null
+  contents:
+  - procedure: テキスト「WAIC の最新情報は以下をご参照ください。」を選択した。
+    actual: 「メイン ランドマーク」と読み上げた。
+    judgment: ○
+  - procedure: テキスト「Twitter や Facebook でも情報発信しています。」を選択した後、「セミナーなどのお知らせも行っています。」を選択した。
+    actual: "「メイン ランドマーク」と読み上げた。\r\n"
+    judgment: ○
+  comment: null
+  tester: 諸熊
+- id: 358
+  test: 0026-02
+  os: Windows 10 Pro 2004
+  user_agent: Microsoft Edge 87.0.664.60
+  assistive_tech: PC-Talker 10
+  assistive_tech_config: null
+  contents:
+  - procedure: テキスト「WAIC の最新情報は以下をご参照ください。」を選択した。
+    actual: 「メイン ランドマーク」と読み上げた。
+    judgment: ○
+  - procedure: テキスト「Twitter や Facebook でも情報発信しています。」を選択した後、「セミナーなどのお知らせも行っています。」を選択した。
+    actual: "「メイン ランドマーク」と読み上げた。\r\n"
+    judgment: ○
+  comment: null
+  tester: 諸熊
+- id: 359
+  test: 0026-03
+  os: Windows 10 Pro 2004
+  user_agent: FireFox 83.0
+  assistive_tech: PC-Talker 10
+  assistive_tech_config: null
+  contents:
+  - procedure: テキスト「WAIC の最新情報は以下をご参照ください。」を選択した。
+    actual: 「メイン ランドマーク」と読み上げた。
+    judgment: ○
+  - procedure: テキスト「WAIC の最新情報は以下をご参照ください。」を選択した。
+    actual: 「メイン ランドマーク」の読み上げが二重に通知されることは無かった。
+    judgment: ○
+  - procedure: テキスト「Twitter や Facebook でも情報発信しています。」を選択した後、「セミナーなどのお知らせも行っています。」を選択した。
+    actual: "「メイン ランドマーク」と読み上げた。\r\n"
+    judgment: ○
+  comment: null
+  tester: 諸熊
+- id: 360
+  test: 0026-03
+  os: Windows 10 Pro 2004
+  user_agent: Google Chrome 87.0.4280.88
+  assistive_tech: PC-Talker 10
+  assistive_tech_config: null
+  contents:
+  - procedure: テキスト「WAIC の最新情報は以下をご参照ください。」を選択した。
+    actual: 「メイン ランドマーク」と読み上げた。
+    judgment: ○
+  - procedure: テキスト「WAIC の最新情報は以下をご参照ください。」を選択した。
+    actual: 「メイン ランドマーク」の読み上げが二重に通知されることは無かった。
+    judgment: ○
+  - procedure: テキスト「Twitter や Facebook でも情報発信しています。」を選択した後、「セミナーなどのお知らせも行っています。」を選択した。
+    actual: "「メイン ランドマーク」と読み上げた。\r\n"
+    judgment: ○
+  comment: null
+  tester: 諸熊
+- id: 361
+  test: 0026-03
+  os: Windows 10 Pro 2004
+  user_agent: Microsoft Edge 87.0.664.60
+  assistive_tech: PC-Talker 10
+  assistive_tech_config: null
+  contents:
+  - procedure: テキスト「WAIC の最新情報は以下をご参照ください。」を選択した。
+    actual: 「メイン ランドマーク」と読み上げた。
+    judgment: ○
+  - procedure: テキスト「WAIC の最新情報は以下をご参照ください。」を選択した。
+    actual: 「メイン ランドマーク」の読み上げが二重に通知されることは無かった。
+    judgment: ○
+  - procedure: テキスト「Twitter や Facebook でも情報発信しています。」を選択した後、「セミナーなどのお知らせも行っています。」を選択した。
+    actual: "「メイン ランドマーク」と読み上げた。\r\n"
+    judgment: ○
+  comment: null
+  tester: 諸熊
+- id: 362
+  test: 0019-01
+  os: Windows 10 Pro 2004
+  user_agent: FireFox 83.0
+  assistive_tech: PC-Talker 10
+  assistive_tech_config: null
+  contents:
+  - procedure: リンク「こちら」を選択し、情報読み(CTRL+ALT+H)を実行
+    actual: リスト項目内のリンクであることのみを読み上げた。
+    judgment: ×
+  comment: null
+  tester: 諸熊
+- id: 363
+  test: 0019-01
+  os: Windows 10 Pro 2004
+  user_agent: Google Chrome 87.0.4280.88
+  assistive_tech: PC-Talker 10
+  assistive_tech_config: null
+  contents:
+  - procedure: リンク「こちら」を選択し、情報読み(CTRL+ALT+H)を実行
+    actual: リスト項目内のリンクであることのみを読み上げた。
+    judgment: ×
+  comment: null
+  tester: 諸熊
+- id: 364
+  test: 0019-01
+  os: Windows 10 Pro 2004
+  user_agent: Microsoft Edge 87.0.664.60
+  assistive_tech: PC-Talker 10
+  assistive_tech_config: null
+  contents:
+  - procedure: リンク「こちら」を選択し、情報読み(CTRL+ALT+H)を実行
+    actual: リスト項目内のリンクであることのみを読み上げた。
+    judgment: ×
+  comment: null
+  tester: 諸熊
+- id: 365
+  test: 0019-02
+  os: Windows 10 Pro 2004
+  user_agent: FireFox 83.0
+  assistive_tech: PC-Talker 10
+  assistive_tech_config: null
+  contents:
+  - procedure: リンク「続きを読む」を選択し、情報読み(CTRL+ALT+H)を実行
+    actual: フォーカスのある段落については何も読み上げなかった。
+    judgment: ×
+  comment: null
+  tester: 諸熊
+- id: 366
+  test: 0019-02
+  os: Windows 10 Pro 2004
+  user_agent: Google Chrome 87.0.4280.88
+  assistive_tech: PC-Talker 10
+  assistive_tech_config: null
+  contents:
+  - procedure: リンク「続きを読む」を選択し、情報読み(CTRL+ALT+H)を実行
+    actual: フォーカスのある段落については何も読み上げなかった。
+    judgment: ×
+  comment: null
+  tester: 諸熊
+- id: 367
+  test: 0019-02
+  os: Windows 10 Pro 2004
+  user_agent: Microsoft Edge 87.0.664.60
+  assistive_tech: PC-Talker 10
+  assistive_tech_config: null
+  contents:
+  - procedure: リンク「続きを読む」を選択し、情報読み(CTRL+ALT+H)を実行
+    actual: フォーカスのある段落については何も読み上げなかった。
+    judgment: ×
+  comment: null
+  tester: 諸熊
+- id: 368
+  test: 0024-01
+  os: iOS 14.2
+  user_agent: Safari
+  assistive_tech: VoiceOver
+  assistive_tech_config: null
+  contents:
+  - procedure: 左右スワイプでページ内を移動
+    actual: 「ホーム」のリンクで「ホーム　リンク　ナビゲーション　ランドマーク」と読み上げられた。
+    judgment: ○
+  comment: null
+  tester: 岡上洋子
+- id: 369
+  test: 0024-02
+  os: iOS 14.2
+  user_agent: Safari
+  assistive_tech: VoiceOver
+  assistive_tech_config: null
+  contents:
+  - procedure: 上下スワイプを「ランドマーク」に設定して上下にスワイプ
+    actual: 上下スワイプで「組織」と「ホーム」のリンクへジャンプしそれぞれ「組織　リンク　ナビゲーション　ランドマーク」「ホーム　リンク　ナビゲーション　ランドマーク」と読み上げられた。
+    judgment: ○
+  comment: null
+  tester: 岡上洋子
+- id: 370
+  test: 0025-01
+  os: iOS 14.2
+  user_agent: Safari
+  assistive_tech: VoiceOver
+  assistive_tech_config: null
+  contents:
+  - procedure: 左右スワイプでページ内を移動
+    actual: figure要素であることは通知されない。figcaptionについても区別できない。
+    judgment: ×
+  comment: null
+  tester: 岡上洋子
+- id: 371
+  test: 0026-01
+  os: iOS 14.2
+  user_agent: Safari
+  assistive_tech: VoiceOver
+  assistive_tech_config: null
+  contents:
+  - procedure: 左右スワイプでページ内を移動
+    actual: 直下の段落を読み上げた後「メイン　ランドマーク」と読み上げられた。二つ目の段落（role属性にmainが指定されているdivの最後の段落）は読み上げ後「エンド　メイン」と読み上げた。
+    judgment: ○
+  - procedure: 上下スワイプを「ランドマーク」に設定して上下にスワイプ
+    actual: 上下スワイプで直下の段落へ移動し、段落内テキストを読み上げ後「メイン　ランドマーク」と読み上げる。
+    judgment: ○
+  comment: null
+  tester: 岡上洋子
+- id: 372
+  test: 0026-02
+  os: iOS 14.2
+  user_agent: Safari
+  assistive_tech: VoiceOver
+  assistive_tech_config: null
+  contents:
+  - procedure: 左右スワイプでページ内を移動
+    actual: 直下の段落を読み上げた後「メイン　ランドマーク」と読み上げられた。二つ目の段落（role属性にmainが指定されているdivの最後の段落）は読み上げ後「エンド　メイン」と読み上げた。
+    judgment: ○
+  - procedure: 上下スワイプを「ランドマーク」に設定して上下にスワイプ
+    actual: 上下スワイプで直下の段落へ移動し、段落内テキストを読み上げ後「メイン　ランドマーク」と読み上げる。
+    judgment: ○
+  comment: null
+  tester: 岡上洋子
+- id: 373
+  test: 0026-03
+  os: iOS 14.2
+  user_agent: Safari
+  assistive_tech: VoiceOver
+  assistive_tech_config: null
+  contents:
+  - procedure: 左右スワイプでページ内を移動
+    actual: 直下の段落を読み上げた後「メイン　ランドマーク」と読み上げられた。二つ目の段落（role属性にmainが指定されているdivの最後の段落）は読み上げ後「エンド　メイン」と読み上げた。
+    judgment: ○
+  - procedure: 上下スワイプを「ランドマーク」に設定して上下にスワイプ
+    actual: 上下スワイプで直下の段落へ移動し、段落内テキストを読み上げ後「メイン　ランドマーク」と読み上げる。
+    judgment: ○
+  comment: null
+  tester: 岡上洋子
+- id: 374
+  test: 0024-01
+  os: Windows 10 Pro 20H2
+  user_agent: Microsoft Edge 87.0.664.60
+  assistive_tech: Narrator
+  assistive_tech_config: null
+  contents:
+  - procedure: 1)テストコードのページをブラウザで開き、コンテンツの先頭からスキャンモード/下矢印キーで読み上げていく
+    actual: 1)先頭行が見出し、2/3/4/5行目がリンク、5行目でページの最後尾、であることがわかる
+    judgment: ×
+  - procedure: 2)ナレーターキー＋F5でランドマークの一覧を取得し、ナビゲーションランドマークの場所に移動して先頭からスキャンモード/下矢印キーで読み上げていく
+    actual: 2)1行戻ると先頭行の見出しであることがわかり、ナビゲーションランドマークの先頭は2行目であることがわかる。ナビゲーションランドマークの最後尾がどこか、はわからない。
+    judgment: ×
+  comment: null
+  tester: 四方田正夫
+- id: 375
+  test: 0024-02
+  os: Windows 10 Pro 20H2
+  user_agent: Microsoft Edge 87.0.664.60
+  assistive_tech: Narrator
+  assistive_tech_config: null
+  contents:
+  - procedure: 1)テストコードのページをブラウザで開き、ナレーターキー＋F5でランドマークの一覧を取得して、ナビゲーションランドマークが２つあることを確認する。上下矢印キーでランドマーク一覧より一方のナビゲーションランドマークの場所に移動して先頭からスキャンモード/下矢印キーで読み上げていく。続いて再度ナレーターキー＋F5でランドマークの一覧を取得し、上下矢印キーでランドマーク一覧よりもう一方のナビゲーションランドマークの場所に移動して先頭からスキャンモード/下矢印キーで読み上げていく。
+    actual: 1)最初のナビゲーションランドマークの先頭から1行戻ると先頭行の見出しであることがわかり、最初のナビゲーションランドマークの先頭は2行目であることがわかる。最初のナビゲーションランドマークの最後尾がどこか、はわからない。２つめのナビゲーションランドマークの先頭から1行戻ると5行目のリンクでないテキストであることがわかり、2番目のナビゲーションランドマークの先頭は6行目のリンクテキストであることがわかる。2番目のナビゲーションランドマークの最後尾がどこか、はわからない。
+    judgment: ×
+  comment: null
+  tester: 四方田正夫
+- id: 376
+  test: 0025-01
+  os: Windows 10 Pro 20H2
+  user_agent: Microsoft Edge 87.0.664.60
+  assistive_tech: Narrator
+  assistive_tech_config: null
+  contents:
+  - procedure: 1)テストコードのページをブラウザで開き、コンテンツの先頭からスキャンモード/下矢印キーで読み上げていく
+    actual: '1)先頭行が見出しであることがわかる.
+
+      2行目は「セッション１の様子」3行目は「タブレットを手にプレゼンする伊敷の写真 イメージ」4行目は「今後の WAIC セミナー開催予定については以下をご参照ください」と読み上げられる。
+
+      以下の1.2.3.いずれも満たしていない。
+
+      1.figure 要素に差し掛かると、この部分が figure 要素であることを判別できるように通知される
+
+      2.figure 要素の開始位置及び終了位置を知るための何らかの手段が提供されている
+
+      3.figcaption 要素の内容が他の要素と区別できる何らかの手段が提供されている'
+    judgment: ×
+  comment: null
+  tester: 四方田正夫
+- id: 377
+  test: 0026-01
+  os: Windows 10 Home 20H2
+  user_agent: Google Chrome 87.0.4280.88
+  assistive_tech: NVDA 2020.3jp
+  assistive_tech_config: フォーカスハイライト有効
+  contents:
+  - procedure: 新しいタブでテスト対象を開く
+    actual: '以下が読み上げられる。
+
+      「クリック可能 見出しレベル1 ウェブアクセシビリティ基盤委員会
+
+      メイン ランドマーク WAICの最新情報は以下をご参照ください。
+
+      セミナーなどのお知らせも行っています。
+
+      Twitter や Facebook でも情報発信しています。」'
+    judgment: ○
+  - procedure: 一番上の行から下矢印キーで下に向かって読み上げを確認しながら移動する。続いて、一番下の行から上矢印キーで上に向かって読み上げを確認しながら移動する。
+    actual: '上から下に向かって移動すると以下の行が見つかる。
+
+      「メイン ランドマーク WAICの最新情報は以下をご参照ください」
+
+      下から上に移動すると以下の行が見つかる。
+
+      「メイン ランドマーク セミナーなどのお知らせも行っています。」'
+    judgment: ○
+  comment: null
+  tester: 西本卓也
+- id: 378
+  test: 0026-01
+  os: Windows 10 Home 20H2
+  user_agent: Microsoft Edge 87.0.664.60
+  assistive_tech: NVDA 2020.3jp
+  assistive_tech_config: フォーカスハイライト有効
+  contents:
+  - procedure: 新しいタブでテスト対象を開く
+    actual: '以下が読み上げられる。
+
+      「クリック可能 見出しレベル1 ウェブアクセシビリティ基盤委員会
+
+      メイン ランドマーク WAICの最新情報は以下をご参照ください。
+
+      セミナーなどのお知らせも行っています。
+
+      Twitter や Facebook でも情報発信しています。」'
+    judgment: ○
+  - procedure: 一番上の行から下矢印キーで下に向かって読み上げを確認しながら移動する。続いて、一番下の行から上矢印キーで上に向かって読み上げを確認しながら移動する。
+    actual: '上から下に向かって移動すると以下の行が見つかる。
+
+      「メイン ランドマーク WAICの最新情報は以下をご参照ください」
+
+      下から上に移動すると以下の行が見つかる。
+
+      「メイン ランドマーク セミナーなどのお知らせも行っています。」'
+    judgment: ○
+  comment: null
+  tester: 西本卓也
+- id: 379
+  test: 0026-01
+  os: Windows 10 Home 20H2
+  user_agent: Firefox 84.0
+  assistive_tech: NVDA 2020.3jp
+  assistive_tech_config: フォーカスハイライト有効
+  contents:
+  - procedure: 新しいタブでテスト対象を開く
+    actual: '以下が読み上げられる。
+
+      「見出しレベル1 ウェブアクセシビリティ基盤委員会
+
+      メイン ランドマーク WAICの最新情報は以下をご参照ください。
+
+      セミナーなどのお知らせも行っています。
+
+      Twitter や Facebook でも情報発信しています。」'
+    judgment: ○
+  - procedure: 一番上の行から下矢印キーで下に向かって読み上げを確認しながら移動する。続いて、一番下の行から上矢印キーで上に向かって読み上げを確認しながら移動する。
+    actual: '上から下に向かって移動すると以下の行が見つかる。
+
+      「メイン ランドマーク WAICの最新情報は以下をご参照ください」
+
+      下から上に移動すると以下の行が見つかる。
+
+      「メイン ランドマーク セミナーなどのお知らせも行っています。」'
+    judgment: ○
+  comment: null
+  tester: 西本卓也
+- id: 380
+  test: 0026-01
+  os: Windows 10 Home 20H2
+  user_agent: Internet Exprorer 11.0
+  assistive_tech: NVDA 2020.3jp
+  assistive_tech_config: フォーカスハイライト有効
+  contents:
+  - procedure: 新しいタブでテスト対象を開く
+    actual: '以下が読み上げられる。
+
+      「見出しレベル1 ウェブアクセシビリティ基盤委員会
+
+      メイン ランドマーク WAICの最新情報は以下をご参照ください。
+
+      セミナーなどのお知らせも行っています。
+
+      Twitter や Facebook でも情報発信しています。」'
+    judgment: ○
+  - procedure: 一番上の行から下矢印キーで下に向かって読み上げを確認しながら移動する。続いて、一番下の行から上矢印キーで上に向かって読み上げを確認しながら移動する。
+    actual: '上から下に向かって移動すると以下の行が見つかる。
+
+      「メイン ランドマーク WAICの最新情報は以下をご参照ください」
+
+      下から上に移動すると以下の行が見つかる。
+
+      「メイン ランドマーク セミナーなどのお知らせも行っています。」'
+    judgment: ○
+  comment: null
+  tester: 西本卓也
+- id: 381
+  test: 0024-01
+  os: iOS 14.2
+  user_agent: Safari
+  assistive_tech: VoiceOver
+  assistive_tech_config: null
+  contents:
+  - procedure: 見出し「ウェブアクセシビリティ基盤委員会」から右フリック1回。
+    actual: 「ホーム」に差し掛かると「ホーム リンク ナビゲーション ランドマーク」と読み上げた。
+    judgment: ○
+  - procedure: 'リンク「お問い合わせ」から右フリック1回。
+
+      逆に、リンク「ニュース一覧」からも右フリック1回。'
+    actual: 「お問い合わせ リンク エンド ナビゲーション」と読み上げた。逆の場合も同様に読み上げた。
+    judgment: ○
+  comment: null
+  tester: SAWADA STANDARD DESIGN
+- id: 382
+  test: 0024-02
+  os: iOS 14.2
+  user_agent: Safari
+  assistive_tech: VoiceOver
+  assistive_tech_config: ローターの設定：ランドマークをチェック
+  contents:
+  - procedure: リンク「組織」から縦フリック1回。
+    actual: 次のランドマークにジャンプし、「ホーム リンク ナビゲーション ランドマーク」と読み上げた。
+    judgment: ○
+  comment: null
+  tester: SAWADA STANDARD DESIGN
+- id: 383
+  test: 0025-01
+  os: iOS 14.2
+  user_agent: Safari
+  assistive_tech: VoiceOver
+  assistive_tech_config: null
+  contents:
+  - procedure: 見出し「2017年度第1回WAICセミナー」から右フリックで各要素を順次読み上げ。
+    actual: 「セッション1の様子 タブレットを手にプレゼンする伊敷の写真 加工した木材 成人 演壇 今後のWAICセミナー開催予定については以下をご参照ください。」とだけ読み上げた。figure要素であることは分からない。
+    judgment: ×
+  - procedure: 見出し「2017年度第1回WAICセミナー」から右フリックで各要素を順次読み上げ。
+    actual: 「セッション1の様子 タブレットを手にプレゼンする伊敷の写真 加工した木材 成人 演壇 今後のWAICセミナー開催予定については以下をご参照ください。」とだけ読み上げた。figure要素の開始位置／終了位置は分からない。
+    judgment: ×
+  - procedure: 見出し「2017年度第1回WAICセミナー」から右フリックで各要素を順次読み上げ。
+    actual: 「セッション1の様子 タブレットを手にプレゼンする伊敷の写真 加工した木材 成人 演壇 今後のWAICセミナー開催予定については以下をご参照ください。」とだけ読み上げた。figure要素と他の要素の区別はつかない。
+    judgment: ×
+  comment: null
+  tester: SAWADA STANDARD DESIGN

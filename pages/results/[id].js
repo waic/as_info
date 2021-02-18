@@ -23,7 +23,13 @@ const nl2br = (source) => {
   })}</div>;
 };
 
-const getTesterName = (result_id) => {
+const getTesterName = (result) => {
+  if (typeof result.tester !== 'undefined') {
+    return result.tester;
+  }
+  // 2020年3月版 (result_id 332 まで) は results.yaml と testers.yaml が分離している
+  // 実施者が testers.yaml に記載されていない場合は四方田さんである
+  const result_id = result.id;
   const tester_ids = Object.keys(testers).filter(
     key => {
       if (testers[key].results !== null) {
@@ -36,7 +42,10 @@ const getTesterName = (result_id) => {
   if (tester_ids.length >= 1) {
     return testers[tester_ids[0]].name;
   }
-  return '四方田正夫';
+  if (result_id <= 332) {
+    return '四方田正夫';
+  }
+  return '不明';
 };
 
 function Comment(props) {
@@ -76,7 +85,7 @@ const ResultTableRow = (props) => {
       <td style={larger_th_style}>
         {nl2br(contents[0].actual)}
       </td>
-      <td style={larger_th_style}>{getTesterName(result.id)}</td>
+      <td style={larger_th_style}>{getTesterName(result)}</td>
       <td style={larger_th_style}><Comment result={result}/></td>
     </tr>
     );
@@ -107,7 +116,7 @@ const ResultTableRow = (props) => {
         </td>
         {index === 0 && (
           <>
-          <td rowSpan={contents.length} style={larger_th_style}>{getTesterName(result.id)}</td>
+          <td rowSpan={contents.length} style={larger_th_style}>{getTesterName(result)}</td>
           <td rowSpan={contents.length} style={larger_th_style}><Comment result={result}/></td>
           </>
         )}
