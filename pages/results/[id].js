@@ -48,7 +48,10 @@ const getTesterName = (result) => {
   return '不明';
 };
 
-const getTestDate = (result) => {
+const getDate = (result) => {
+  if (typeof result.date !== 'undefined' && result.date != null) {
+    return result.date;
+  }
   return '不明';
 };
 
@@ -90,7 +93,7 @@ const ResultTableRow = (props) => {
         {nl2br(contents[0].actual)}
       </td>
       <td style={larger_th_style}>{getTesterName(result)}</td>
-      <td style={larger_th_style}>{getTestDate(result)}</td>
+      <td style={larger_th_style}>{getDate(result)}</td>
       <td style={larger_th_style}><Comment result={result}/></td>
     </tr>
     );
@@ -122,7 +125,7 @@ const ResultTableRow = (props) => {
         {index === 0 && (
           <>
           <td rowSpan={contents.length} style={larger_th_style}>{getTesterName(result)}</td>
-          <td rowSpan={contents.length} style={larger_th_style}>{getTestDate(result)}</td>
+          <td rowSpan={contents.length} style={larger_th_style}>{getDate(result)}</td>
           <td rowSpan={contents.length} style={larger_th_style}><Comment result={result}/></td>
           </>
         )}

@@ -5894,6 +5894,7 @@
     judgment: 満たしている
   comment: null
   tester: 諸熊
+  date: '2020-12-17'
 - id: 335
   test: 0024-01
   os: Windows 10 Pro 2004
@@ -5908,6 +5909,7 @@
     judgment: 満たしている
   comment: null
   tester: 諸熊
+  date: '2020-12-17'
 - id: 336
   test: 0024-01
   os: Windows 10 Pro 2004
@@ -5922,6 +5924,7 @@
     judgment: 満たしている
   comment: null
   tester: 諸熊
+  date: '2020-12-17'
 - id: 337
   test: 0014-03
   os: iOS 14.2
@@ -5954,6 +5957,7 @@
     judgment: ○
   comment: null
   tester: 桝田 草一
+  date: '2020-12-17'
 - id: 338
   test: 0018-01
   os: iOS 14.2
@@ -5992,6 +5996,7 @@
     judgment: ○
   comment: null
   tester: 桝田 草一
+  date: '2020-12-17'
 - id: 339
   test: 0018-02
   os: iOS 14.2
@@ -6023,6 +6028,7 @@
     judgment: ×
   comment: null
   tester: 桝田 草一
+  date: '2020-12-17'
 - id: 340
   test: 0024-01
   os: Windows 10 Pro 2004
@@ -6035,6 +6041,7 @@
     judgment: ○
   comment: null
   tester: 佐々木 将
+  date: '2020-12-17'
 - id: 341
   test: 0024-02
   os: Windows 10 Pro 2004
@@ -6047,6 +6054,7 @@
     judgment: ○
   comment: null
   tester: 佐々木 将
+  date: '2020-12-17'
 - id: 342
   test: 0025-01
   os: Windows 10 Pro 2004
@@ -6059,6 +6067,7 @@
     judgment: ×
   comment: null
   tester: 佐々木 将
+  date: '2020-12-17'
 - id: 343
   test: 0026-01
   os: Windows 10 Pro 2004
@@ -6071,6 +6080,7 @@
     judgment: ×
   comment: null
   tester: 佐々木 将
+  date: '2020-12-17'
 - id: 344
   test: 0026-02
   os: Windows 10 Pro 2004
@@ -6083,6 +6093,7 @@
     judgment: ×
   comment: null
   tester: 佐々木 将
+  date: '2020-12-17'
 - id: 345
   test: 0026-03
   os: Windows 10 Pro 2004
@@ -6095,6 +6106,7 @@
     judgment: ×
   comment: null
   tester: 佐々木 将
+  date: '2020-12-17'
 - id: 346
   test: 0026-01
   os: ''
@@ -6107,6 +6119,7 @@
     judgment: ○
   comment: null
   tester: 小出淳子
+  date: '2020-12-17'
 - id: 347
   test: 0024-02
   os: Windows 10 Pro 2004
@@ -6122,6 +6135,7 @@
     judgment: ○
   comment: null
   tester: 諸熊
+  date: '2020-12-17'
 - id: 348
   test: 0024-02
   os: Windows 10 Pro 2004
@@ -6137,6 +6151,7 @@
     judgment: ○
   comment: null
   tester: 諸熊
+  date: '2020-12-17'
 - id: 349
   test: 0024-02
   os: Windows 10 Pro 2004
@@ -6152,6 +6167,7 @@
     judgment: ○
   comment: null
   tester: 諸熊
+  date: '2020-12-17'
 - id: 350
   test: 0025-01
   os: Windows 10 Pro 2004
@@ -6170,6 +6186,7 @@
     judgment: ×
   comment: null
   tester: 諸熊
+  date: '2020-12-17'
 - id: 351
   test: 0025-01
   os: Windows 10 Pro 2004
@@ -6188,6 +6205,7 @@
     judgment: ×
   comment: null
   tester: 諸熊
+  date: '2020-12-17'
 - id: 352
   test: 0025-01
   os: Windows 10 Pro 2004
@@ -6206,6 +6224,7 @@
     judgment: ×
   comment: null
   tester: 諸熊
+  date: '2020-12-17'
 - id: 353
   test: 0026-01
   os: Windows 10 Pro 2004
@@ -6221,6 +6240,7 @@
     judgment: ○
   comment: null
   tester: 諸熊
+  date: '2020-12-17'
 - id: 354
   test: 0026-01
   os: Windows 10 Pro 2004
@@ -6236,6 +6256,7 @@
     judgment: ○
   comment: null
   tester: 諸熊
+  date: '2020-12-17'
 - id: 355
   test: 0026-01
   os: Windows 10 Pro 2004
@@ -6251,6 +6272,7 @@
     judgment: ○
   comment: null
   tester: 諸熊
+  date: '2020-12-17'
 - id: 356
   test: 0026-02
   os: Windows 10 Pro 2004
@@ -6266,6 +6288,7 @@
     judgment: ○
   comment: null
   tester: 諸熊
+  date: '2020-12-17'
 - id: 357
   test: 0026-02
   os: Windows 10 Pro 2004
@@ -6281,6 +6304,7 @@
     judgment: ○
   comment: null
   tester: 諸熊
+  date: '2020-12-17'
 - id: 358
   test: 0026-02
   os: Windows 10 Pro 2004
@@ -6296,6 +6320,7 @@
     judgment: ○
   comment: null
   tester: 諸熊
+  date: '2020-12-17'
 - id: 359
   test: 0026-03
   os: Windows 10 Pro 2004
@@ -6314,6 +6339,7 @@
     judgment: ○
   comment: null
   tester: 諸熊
+  date: '2020-12-17'
 - id: 360
   test: 0026-03
   os: Windows 10 Pro 2004
@@ -6332,6 +6358,7 @@
     judgment: ○
   comment: null
   tester: 諸熊
+  date: '2020-12-17'
 - id: 361
   test: 0026-03
   os: Windows 10 Pro 2004
@@ -6350,6 +6377,7 @@
     judgment: ○
   comment: null
   tester: 諸熊
+  date: '2020-12-17'
 - id: 362
   test: 0019-01
   os: Windows 10 Pro 2004
@@ -6362,6 +6390,7 @@
     judgment: ×
   comment: null
   tester: 諸熊
+  date: '2020-12-17'
 - id: 363
   test: 0019-01
   os: Windows 10 Pro 2004
@@ -6374,6 +6403,7 @@
     judgment: ×
   comment: null
   tester: 諸熊
+  date: '2020-12-17'
 - id: 364
   test: 0019-01
   os: Windows 10 Pro 2004
@@ -6386,6 +6416,7 @@
     judgment: ×
   comment: null
   tester: 諸熊
+  date: '2020-12-17'
 - id: 365
   test: 0019-02
   os: Windows 10 Pro 2004
@@ -6398,6 +6429,7 @@
     judgment: ×
   comment: null
   tester: 諸熊
+  date: '2020-12-17'
 - id: 366
   test: 0019-02
   os: Windows 10 Pro 2004
@@ -6410,6 +6442,7 @@
     judgment: ×
   comment: null
   tester: 諸熊
+  date: '2020-12-17'
 - id: 367
   test: 0019-02
   os: Windows 10 Pro 2004
@@ -6422,6 +6455,7 @@
     judgment: ×
   comment: null
   tester: 諸熊
+  date: '2020-12-17'
 - id: 368
   test: 0024-01
   os: iOS 14.2
@@ -6434,6 +6468,7 @@
     judgment: ○
   comment: null
   tester: 岡上洋子
+  date: '2020-12-17'
 - id: 369
   test: 0024-02
   os: iOS 14.2
@@ -6446,6 +6481,7 @@
     judgment: ○
   comment: null
   tester: 岡上洋子
+  date: '2020-12-17'
 - id: 370
   test: 0025-01
   os: iOS 14.2
@@ -6458,6 +6494,7 @@
     judgment: ×
   comment: null
   tester: 岡上洋子
+  date: '2020-12-17'
 - id: 371
   test: 0026-01
   os: iOS 14.2
@@ -6473,6 +6510,7 @@
     judgment: ○
   comment: null
   tester: 岡上洋子
+  date: '2020-12-17'
 - id: 372
   test: 0026-02
   os: iOS 14.2
@@ -6488,6 +6526,7 @@
     judgment: ○
   comment: null
   tester: 岡上洋子
+  date: '2020-12-17'
 - id: 373
   test: 0026-03
   os: iOS 14.2
@@ -6503,6 +6542,7 @@
     judgment: ○
   comment: null
   tester: 岡上洋子
+  date: '2020-12-17'
 - id: 374
   test: 0024-01
   os: Windows 10 Pro 20H2
@@ -6518,6 +6558,7 @@
     judgment: ×
   comment: null
   tester: 四方田正夫
+  date: '2020-12-17'
 - id: 375
   test: 0024-02
   os: Windows 10 Pro 20H2
@@ -6530,6 +6571,7 @@
     judgment: ×
   comment: null
   tester: 四方田正夫
+  date: '2020-12-17'
 - id: 376
   test: 0025-01
   os: Windows 10 Pro 20H2
@@ -6552,6 +6594,7 @@
     judgment: ×
   comment: null
   tester: 四方田正夫
+  date: '2020-12-17'
 - id: 377
   test: 0026-01
   os: Windows 10 Home 20H2
@@ -6581,6 +6624,7 @@
     judgment: ○
   comment: null
   tester: 西本卓也
+  date: '2020-12-17'
 - id: 378
   test: 0026-01
   os: Windows 10 Home 20H2
@@ -6610,6 +6654,7 @@
     judgment: ○
   comment: null
   tester: 西本卓也
+  date: '2020-12-17'
 - id: 379
   test: 0026-01
   os: Windows 10 Home 20H2
@@ -6639,6 +6684,7 @@
     judgment: ○
   comment: null
   tester: 西本卓也
+  date: '2020-12-17'
 - id: 380
   test: 0026-01
   os: Windows 10 Home 20H2
@@ -6668,6 +6714,7 @@
     judgment: ○
   comment: null
   tester: 西本卓也
+  date: '2020-12-17'
 - id: 381
   test: 0024-01
   os: iOS 14.2
@@ -6685,6 +6732,7 @@
     judgment: ○
   comment: null
   tester: SAWADA STANDARD DESIGN
+  date: '2020-12-17'
 - id: 382
   test: 0024-02
   os: iOS 14.2
@@ -6697,6 +6745,7 @@
     judgment: ○
   comment: null
   tester: SAWADA STANDARD DESIGN
+  date: '2020-12-17'
 - id: 383
   test: 0025-01
   os: iOS 14.2
@@ -6715,3 +6764,4 @@
     judgment: ×
   comment: null
   tester: SAWADA STANDARD DESIGN
+  date: '2020-12-17'
