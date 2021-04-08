@@ -48,6 +48,10 @@ const getTesterName = (result) => {
   return '不明';
 };
 
+const getTestDate = (result) => {
+  return '不明';
+};
+
 function Comment(props) {
   const result = props.result;
   let comments = '';
@@ -86,6 +90,7 @@ const ResultTableRow = (props) => {
         {nl2br(contents[0].actual)}
       </td>
       <td style={larger_th_style}>{getTesterName(result)}</td>
+      <td style={larger_th_style}>{getTestDate(result)}</td>
       <td style={larger_th_style}><Comment result={result}/></td>
     </tr>
     );
@@ -117,6 +122,7 @@ const ResultTableRow = (props) => {
         {index === 0 && (
           <>
           <td rowSpan={contents.length} style={larger_th_style}>{getTesterName(result)}</td>
+          <td rowSpan={contents.length} style={larger_th_style}>{getTestDate(result)}</td>
           <td rowSpan={contents.length} style={larger_th_style}><Comment result={result}/></td>
           </>
         )}
@@ -208,6 +214,7 @@ const Result = ({ query }) => {
             <th scope="col">操作内容</th>
             <th scope="col">得られた結果</th>
             <th scope="col">テスト実施者</th>
+            <th scope="col">実施日</th>
             <th scope="col">備考</th>
           </tr>
         </thead>
