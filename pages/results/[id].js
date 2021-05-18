@@ -7,7 +7,6 @@ import tests from '../../data/tests.yaml'
 import criteria from '../../data/criteria.yaml'
 import techs from '../../data/techs.yaml'
 import results from '../../data/results.yaml'
-import testers from '../../data/testers.yaml'
 import NextSeo from 'next-seo'
 import SEO from '../../next-seo.config'
 
@@ -26,24 +25,6 @@ const nl2br = (source) => {
 const getTesterName = (result) => {
   if (typeof result.tester !== 'undefined') {
     return result.tester;
-  }
-  // 2020年3月版 (result_id 332 まで) は results.yaml と testers.yaml が分離している
-  // 実施者が testers.yaml に記載されていない場合は四方田さんである
-  const result_id = result.id;
-  const tester_ids = Object.keys(testers).filter(
-    key => {
-      if (testers[key].results !== null) {
-        return testers[key].results.includes(result_id);
-      } else {
-        return false;
-      }
-    }
-  );
-  if (tester_ids.length >= 1) {
-    return testers[tester_ids[0]].name;
-  }
-  if (result_id <= 332) {
-    return '四方田正夫';
   }
   return '不明';
 };

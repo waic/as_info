@@ -10,8 +10,8 @@
     actual: リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみが表示され、画像のファイル名や URL 等は表示されなかった。
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2018-12-26'
+  tester: 安倍 英樹
+  date: 2018/12/26
 - id: 2
   test: 0001-02
   os: macOS 10.14.2
@@ -24,8 +24,8 @@
     actual: リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみが表示され、画像のファイル名や URL 等は表示されなかった。
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2018-12-26'
+  tester: 安倍 英樹
+  date: 2018/12/26
 - id: 3
   test: 0001-01
   os: macOS 10.14.2
@@ -38,8 +38,8 @@
     actual: リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみ読み上げられた。
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2018-12-26'
+  tester: 安倍 英樹
+  date: 2018/12/26
 - id: 4
   test: 0001-02
   os: macOS 10.14.2
@@ -52,8 +52,8 @@
     actual: リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみ読み上げられた。
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2018-12-26'
+  tester: 安倍 英樹
+  date: 2018/12/26
 - id: 5
   test: 0001-03
   os: macOS 10.14.2
@@ -66,8 +66,8 @@
     actual: テキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみ読み上げられた。
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2018-12-26'
+  tester: 安倍 英樹
+  date: 2018/12/26
 - id: 6
   test: 0010-01
   os: Windows 10 1809
@@ -81,7 +81,7 @@
     judgment: 満たしている
   comment: null
   tester: 嶌田喬行
-  date: '2018-12-26'
+  date: 2018/12/26
 - id: 7
   test: 0002-01
   os: macOS 10.14.2
@@ -94,8 +94,8 @@
     actual: 代替テキストとテキスト「ウェブアクセシビリティ基盤委員会 公式サイト」と読み上げられた。
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2018-12-27'
+  tester: 安倍 英樹
+  date: 2018/12/27
 - id: 8
   test: 0002-02
   os: macOS 10.14.2
@@ -108,8 +108,8 @@
     actual: リンクテキストとアイコン画像の代替テキストのみが続けて「施設ご利用の手引き PDFファイル」と読み上げられた。
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2018-12-27'
+  tester: 安倍 英樹
+  date: 2018/12/27
 - id: 9
   test: 0003-01
   os: macOS 10.14.2
@@ -162,8 +162,8 @@
     actual: Tabキーを押下してもVoiceOverのフォーカスが移動せず読み上げも行われない。
     judgment: 満たしていない
   comment: SafariではTabキーの押下で期待される結果 (音声閲覧環境)が得られるので、操作に誤りはなくFirefoxの問題ではないかと考えました。
-  tester: 安倍英樹
-  date: '2018-12-27'
+  tester: 安倍 英樹
+  date: 2018/12/27
 - id: 10
   test: 0004-01
   os: macOS 10.14.2
@@ -179,8 +179,8 @@
 
 
     VOキー＋Aキーで自動読み上げをさせた場合は、area要素のalt属性も順に読み上げられました。ただし、イメージマップであることは分かりません。'
-  tester: 安倍英樹
-  date: '2018-12-27'
+  tester: 安倍 英樹
+  date: 2018/12/27
 - id: 11
   test: 0004-02
   os: macOS 10.14.2
@@ -194,8 +194,8 @@
     actual: イメージマップ画像の代替テキスト “デパートのフロアガイド。各階について詳しくお知りになりたい場合は各階をクリックしてください。” が読み上げられた。
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2018-12-27'
+  tester: 安倍 英樹
+  date: 2018/12/27
 - id: 12
   test: 0004-03
   os: macOS 10.14.2
@@ -210,8 +210,8 @@
       が読み上げられた。
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2018-12-27'
+  tester: 安倍 英樹
+  date: 2018/12/27
 - id: 13
   test: 0004-04
   os: macOS 10.14.2
@@ -224,8 +224,8 @@
     actual: area要素のhref属性で指定されたURLへ遷移した。
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2018-12-27'
+  tester: 安倍 英樹
+  date: 2018/12/27
 - id: 14
   test: 0004-05
   os: macOS 10.14.2
@@ -238,8 +238,8 @@
     actual: 「リンク 1F生鮮食品」のように、代替テキストの前に「リンク」と読み上げられた。
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2018-12-27'
+  tester: 安倍 英樹
+  date: 2018/12/27
 - id: 15
   test: 0003-01
   os: Windows 10 Home Version 1809
@@ -332,8 +332,8 @@
       入力内容のリセット'
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2018-12-27'
+  tester: 安倍 英樹
+  date: 2018/12/27
 - id: 16
   test: 0005-01
   os: macOS 10.14.2
@@ -346,8 +346,8 @@
     actual: title要素のテキスト「ウェブアクセシビリティ基盤委員会」が読み上げられた。
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2018-12-28'
+  tester: 安倍 英樹
+  date: 2018/12/28
 - id: 17
   test: 0006-01
   os: macOS 10.14.2
@@ -360,8 +360,8 @@
     actual: リンクテキスト「ウェブアクセシビリティ基盤委員会」が読み上げられた。
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2018-12-28'
+  tester: 安倍 英樹
+  date: 2018/12/28
 - id: 18
   test: 0006-02
   os: macOS 10.14.2
@@ -374,8 +374,8 @@
     actual: リンク画像の代替テキスト「ウェブアクセシビリティ基盤委員会」が読み上げられた。
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2018-12-28'
+  tester: 安倍 英樹
+  date: 2018/12/28
 - id: 19
   test: 0006-03
   os: macOS 10.14.2
@@ -390,8 +390,8 @@
     actual: リンクテキスト「Home」のみ読み上げられた。
     judgment: 満たしていない
   comment: null
-  tester: 安倍英樹
-  date: '2018-12-28'
+  tester: 安倍 英樹
+  date: 2018/12/28
 - id: 20
   test: 0007-01
   os: macOS 10.14.2
@@ -408,8 +408,8 @@
     actual: WAIC-CODE-0007-01-ref.htmlに遷移した。またURLの末尾に入力したメールアドレスがURLエンコードされた状態で付加されていた。
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2018-12-28'
+  tester: 安倍 英樹
+  date: 2018/12/28
 - id: 21
   test: 0008-01
   os: macOS 10.14.2
@@ -422,8 +422,8 @@
     actual: ボタン画像の代替テキスト「送信」が読み上げられた。
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2018-12-28'
+  tester: 安倍 英樹
+  date: 2018/12/28
 - id: 22
   test: 0009-01
   os: macOS 10.14.2
@@ -436,8 +436,8 @@
     actual: 画像の代替テキスト「ウェブアクセシビリティ基盤委員会」が読み上げられた。
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2018-12-28'
+  tester: 安倍 英樹
+  date: 2018/12/28
 - id: 23
   test: 0010-01
   os: macOS 10.14.2
@@ -450,8 +450,8 @@
     actual: 表にフォーカスした時、「営業部連絡先一覧 ひょう 0行５列」のように、caption要素の内容と「ひょう 0行５列」が読み上げられた。
     judgment: 満たしている
   comment: 読み上げ内容の「0行5列」に違和感がありますが、一応caption要素を読み上げているので満たしていると判断しました。
-  tester: 安倍英樹
-  date: '2018-12-28'
+  tester: 安倍 英樹
+  date: 2018/12/28
 - id: 24
   test: 0010-02
   os: macOS 10.14.2
@@ -464,8 +464,8 @@
     actual: 表の開始位置（caption要素）で「[caption要素の内容] + ひょう 0行5列」、最後のセルを読み終わった後にVOキー＋右矢印キーを押下したとき「表の終わり」と読み上げられた。
     judgment: 満たしている
   comment: 満たしていると判断しましたが、「表の終わり」を「おもてのおわり」と誤読しているのは気になりました。（表の開始時は「ひょう」と読み上げます。）
-  tester: 安倍英樹
-  date: '2018-12-28'
+  tester: 安倍 英樹
+  date: 2018/12/28
 - id: 25
   test: 0010-03
   os: macOS 10.14.2
@@ -478,8 +478,8 @@
     actual: 「[caption要素の内容] 表 0行 5列」と読み上げられた。
     judgment: 満たしていない
   comment: 列数は正しいが行数が誤っているので、満たしていないと判断いたしました。
-  tester: 安倍英樹
-  date: '2018-12-28'
+  tester: 安倍 英樹
+  date: 2018/12/28
 - id: 27
   test: 0010-05
   os: macOS 10.14.2
@@ -494,8 +494,9 @@
 
       2. セルに移動すると列見出しとリンクである旨とテキストが読み上げられた。（例: SNS リンク Twitter）'
     judgment: 満たしている
-  tester: 安倍英樹
-  date: '2018-12-29'
+  comment: null
+  tester: 安倍 英樹
+  date: 2018/12/29
 - id: 28
   test: 0010-04
   os: macOS 10.14.2
@@ -511,8 +512,8 @@
       2. クリーブ・ロイドの行のリンクテキスト「Twitter」から直下のセルへ移動すると「ゴードン・グリーニッジ リンク Twitter」と読み上げられた。'
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2018-12-29'
+  tester: 安倍 英樹
+  date: 2018/12/29
 - id: 29
   test: 0010-06
   os: macOS 10.14.2
@@ -533,8 +534,8 @@
   comment: 'VOキー＋右矢印キーで表の上から順に読み上げていった場合は、「Clive」の行の各セルに移動してもデータセルの内容のみ読み上げられ「Clive」とは読み上げられません。
 
     よって、期待される結果の「1. “Clive” の行へ移動すると」を「表の上から順に読み上げていって「Clive」の行へ到達した場合」と解釈した場合は「期待される結果を満たしていない」と判断することになります。'
-  tester: 安倍英樹
-  date: '2018-12-29'
+  tester: 安倍 英樹
+  date: 2018/12/29
 - id: 30
   test: 0010-07
   os: macOS 10.14.2
@@ -552,8 +553,8 @@
       2. 「City」のみ読み上げられた。'
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2018-12-29'
+  tester: 安倍 英樹
+  date: 2018/12/29
 - id: 31
   test: 0010-08
   os: macOS 10.14.2
@@ -566,8 +567,8 @@
     actual: 「大阪 15%」と読み上げられた。
     judgment: 満たしていない
   comment: null
-  tester: 安倍英樹
-  date: '2018-12-29'
+  tester: 安倍 英樹
+  date: 2018/12/29
 - id: 32
   test: 0011-01
   os: macOS 10.14.2
@@ -585,8 +586,8 @@
       \  \n見出しレベル 2 人間と果物のかかわり"
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2018-12-29'
+  tester: 安倍 英樹
+  date: 2018/12/29
 - id: 33
   test: 0011-02
   os: macOS 10.14.2
@@ -604,8 +605,8 @@
       \  \n見出しレベル 1 人間と果物のかかわり"
     judgment: 満たしていない
   comment: null
-  tester: 安倍英樹
-  date: '2018-12-29'
+  tester: 安倍 英樹
+  date: 2018/12/29
 - id: 34
   test: 0011-03
   os: macOS 10.14.2
@@ -620,8 +621,8 @@
       キーを併用した場合は1つ前の見出し）が読み上げられた。'
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2018-12-29'
+  tester: 安倍 英樹
+  date: 2018/12/29
 - id: 35
   test: 0012-01
   os: macOS 10.14.2
@@ -645,8 +646,8 @@
       電話番号 テキスト'
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2018-12-29'
+  tester: 安倍 英樹
+  date: 2018/12/29
 - id: 36
   test: 0012-02
   os: macOS 10.14.2
@@ -663,8 +664,8 @@
       \ \n"
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2018-12-29'
+  tester: 安倍 英樹
+  date: 2018/12/29
 - id: 37
   test: 0012-03
   os: macOS 10.14.2
@@ -681,8 +682,8 @@
       \ ラジオボタン” \n“3.” のラジオボタン : “すっきり抹茶タイプ ラジオボタン” \n“4.” のラジオボタン : “はちみつがけタイプ ラジオボタン” "
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2018-12-30'
+  tester: 安倍 英樹
+  date: 2018/12/30
 - id: 38
   test: 0012-04
   os: macOS 10.14.2
@@ -695,8 +696,8 @@
     actual: '"このサイト内 検索範囲を選択 ポップアップボタン"と読み上げられた。'
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2018-12-30'
+  tester: 安倍 英樹
+  date: 2018/12/30
 - id: 39
   test: 0012-05
   os: macOS 10.14.2
@@ -721,8 +722,8 @@
       “3.” : “3. テキスト”'
     judgment: 満たしていない
   comment: null
-  tester: 安倍英樹
-  date: '2018-12-30'
+  tester: 安倍 英樹
+  date: 2018/12/30
 - id: 40
   test: 0013-01
   os: macOS 10.14.2
@@ -739,8 +740,8 @@
     actual: 「会員数の遷移グラフ イメージ」のみ読み上げられた。
     judgment: 満たしていない
   comment: null
-  tester: 安倍英樹
-  date: '2018-12-30'
+  tester: 安倍 英樹
+  date: 2018/12/30
 - id: 41
   test: 0014-01
   os: macOS 10.14.2
@@ -770,8 +771,8 @@
     judgment: 満たしていない
   comment: 順序付きリスト (ol) であることが分からない（試しにulに変更して読み上げさせましたが、読み上げ内容に差がありませんでした）、またリスト項目
     (li) の開始位置及び終了位置を知ることができないことから、「満たしていない」と判断しました。
-  tester: 安倍英樹
-  date: '2018-12-30'
+  tester: 安倍 英樹
+  date: 2018/12/30
 - id: 42
   test: 0014-02
   os: macOS 10.14.2
@@ -800,8 +801,8 @@
       「リストの終わり」'
     judgment: 満たしていない
   comment: 順序なしリスト (ul) であることであることが分からない、またリスト項目 (li) の開始位置及び終了位置を知ることができないことから、「満たしていない」と判断しました。
-  tester: 安倍英樹
-  date: '2018-12-30'
+  tester: 安倍 英樹
+  date: 2018/12/30
 - id: 43
   test: 0014-03
   os: macOS 10.14.2
@@ -833,8 +834,8 @@
       ※xはdt,ddを通しで数えたときの順番が入ります…「ASCII アート」なら「3」'
     judgment: 満たしていない
   comment: null
-  tester: 安倍英樹
-  date: '2018-12-30'
+  tester: 安倍 英樹
+  date: 2018/12/30
 - id: 44
   test: 0015-01
   os: macOS 10.14.2
@@ -853,8 +854,8 @@
     actual: '各文のテキストがそのまま読み上げられた。（例: つねづね思っていることですが、猫はかわいらしい動物です。）'
     judgment: 満たしていない
   comment: null
-  tester: 安倍英樹
-  date: '2018-12-30'
+  tester: 安倍 英樹
+  date: 2018/12/30
 - id: 45
   test: 0015-02
   os: macOS 10.14.2
@@ -873,8 +874,8 @@
     actual: '各文が単純に読み上げられた。（例: そして、犬はとても従順な動物です。）'
     judgment: 満たしていない
   comment: null
-  tester: 安倍英樹
-  date: '2018-12-30'
+  tester: 安倍 英樹
+  date: 2018/12/30
 - id: 46
   test: 0015-03
   os: macOS 10.14.2
@@ -891,8 +892,8 @@
     actual: 文章のみが読み上げられ、引用であることは通知されなかった。
     judgment: 満たしていない
   comment: null
-  tester: 安倍英樹
-  date: '2018-12-30'
+  tester: 安倍 英樹
+  date: 2018/12/30
 - id: 47
   test: 0015-04
   os: macOS 10.14.2
@@ -909,8 +910,8 @@
     actual: 文章のみが読み上げられ、引用であることは通知されなかった。
     judgment: 満たしていない
   comment: null
-  tester: 安倍英樹
-  date: '2018-12-30'
+  tester: 安倍 英樹
+  date: 2018/12/30
 - id: 48
   test: 0015-05
   os: macOS 10.14.2
@@ -923,8 +924,8 @@
     actual: 「亜鉛イオンは Zn」のみ読み上げられた。（上付き文字は読み上げられない。）
     judgment: 満たしていない
   comment: null
-  tester: 安倍英樹
-  date: '2018-12-30'
+  tester: 安倍 英樹
+  date: 2018/12/30
 - id: 49
   test: 0015-06
   os: macOS 10.14.2
@@ -937,8 +938,8 @@
     actual: 「水の化学式は H」のみ読み上げられた。（下付き文字以降は読み上げられない。）
     judgment: 満たしていない
   comment: null
-  tester: 安倍英樹
-  date: '2018-12-30'
+  tester: 安倍 英樹
+  date: 2018/12/30
 - id: 50
   test: 0016-01
   os: macOS 10.14.2
@@ -952,8 +953,8 @@
     judgment: 満たしていない
   comment: Safariでは英語の音声合成エンジンで読み上げられたので、Firefoxの問題と判断しました。
   reviewer_comment: '[WAIC注] 再テストを行いましたが、本テスト結果と同じ結果は得られませんでした。'
-  tester: 安倍英樹
-  date: '2018-12-30'
+  tester: 安倍 英樹
+  date: 2018/12/30
 - id: 51
   test: 0017-01
   os: macOS 10.14.2
@@ -972,8 +973,8 @@
     judgment: 満たしていない
   comment: null
   reviewer_comment: '[WAIC注] サーバー環境に問題があり、テストが実施できていません。'
-  tester: 安倍英樹
-  date: '2018-12-30'
+  tester: 安倍 英樹
+  date: 2018/12/30
 - id: 52
   test: 0018-01
   os: macOS 10.14.2
@@ -992,8 +993,8 @@
     actual: 上から順にテキストやラジオボタンが読み上げられた。（fieldset・legend要素は読み上げに影響しない。）
     judgment: 満たしていない
   comment: null
-  tester: 安倍英樹
-  date: '2018-12-30'
+  tester: 安倍 英樹
+  date: 2018/12/30
 - id: 53
   test: 0001-02
   os: macOS 10.14.2
@@ -1006,8 +1007,8 @@
     actual: リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみが表示され、画像のファイル名や URL 等は表示されなかった。
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2018-12-31'
+  tester: 安倍 英樹
+  date: 2018/12/31
 - id: 54
   test: 0001-03
   os: macOS 10.14.2
@@ -1020,8 +1021,8 @@
     actual: テキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみが表示され、画像のファイル名や URL 等は表示されなかった。
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2018-12-31'
+  tester: 安倍 英樹
+  date: 2018/12/31
 - id: 55
   test: 0002-01
   os: macOS 10.14.2
@@ -1034,8 +1035,8 @@
     actual: 代替テキスト「ウェブアクセシビリティ基盤委員会」とテキスト「公式サイト」が表示された。
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2018-12-31'
+  tester: 安倍 英樹
+  date: 2018/12/31
 - id: 56
   test: 0002-02
   os: macOS 10.14.2
@@ -1048,8 +1049,8 @@
     actual: リンクテキスト “施設ご利用の手引き” に続き、アイコン画像の代替テキスト “PDF ファイル” が表示された。
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2018-12-31'
+  tester: 安倍 英樹
+  date: 2018/12/31
 - id: 57
   test: 0003-01
   os: macOS 10.14.2
@@ -1142,6 +1143,8 @@
       入力内容のリセット'
     judgment: 満たしている
   comment: null
+  tester: 安倍 英樹
+  date: 2019/01/02
 - id: 58
   test: 0003-02
   os: macOS 10.14.2
@@ -1170,8 +1173,8 @@
       サイトマップ'
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2019-01-02'
+  tester: 安倍 英樹
+  date: 2019/01/02
 - id: 59
   test: 0003-03
   os: macOS 10.14.2
@@ -1187,8 +1190,8 @@
       リンク 5\nリンク 7"
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2019-01-02'
+  tester: 安倍 英樹
+  date: 2019/01/02
 - id: 60
   test: 0003-04
   os: macOS 10.14.2
@@ -1202,8 +1205,8 @@
     actual: "次の順序でフォーカスが移動した。\nリンク 1 \nリンク 3 \nリンク 2\nリンク 4"
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2019-01-02'
+  tester: 安倍 英樹
+  date: 2019/01/02
 - id: 61
   test: 0004-02
   os: macOS 10.14.2
@@ -1218,8 +1221,8 @@
       が表示された。
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2019-01-02'
+  tester: 安倍 英樹
+  date: 2019/01/02
 - id: 62
   test: 0004-03
   os: macOS 10.14.2
@@ -1233,8 +1236,8 @@
     actual: 各 area 要素の alt 属性に指定した代替テキストは表示されなかった。
     judgment: 満たしていない
   comment: null
-  tester: 安倍英樹
-  date: '2019-01-02'
+  tester: 安倍 英樹
+  date: 2019/01/02
 - id: 63
   test: 0004-04
   os: macOS 10.14.2
@@ -1248,8 +1251,8 @@
     judgment: 満たしていない
   comment: img要素の代替テキストが青字（下線なし）で表示されています。
   reviewer_comment: '[WAIC注] テスト手順に問題があり、適切に判定できていません。'
-  tester: 安倍英樹
-  date: '2019-01-02'
+  tester: 安倍 英樹
+  date: 2019/01/02
 - id: 64
   test: 0005-01
   os: macOS 10.14.2
@@ -1262,8 +1265,8 @@
     actual: タブに「ウェブアクセシビリティ基盤委員会」と表示されている。
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2019-01-02'
+  tester: 安倍 英樹
+  date: 2019/01/02
 - id: 65
   test: 0006-02
   os: macOS 10.14.2
@@ -1276,8 +1279,8 @@
     actual: リンク画像の代替テキスト “ウェブアクセシビリティ基盤委員会” が表示された。
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2019-01-02'
+  tester: 安倍 英樹
+  date: 2019/01/02
 - id: 66
   test: 0006-03
   os: macOS 10.14.2
@@ -1300,8 +1303,8 @@
     judgment: 満たしていない
   comment: null
   reviewer_comment: '[WAIC注] テスト手順に問題があり、適切に判定できていません。'
-  tester: 安倍英樹
-  date: '2019-01-02'
+  tester: 安倍 英樹
+  date: 2019/01/02
 - id: 67
   test: 0007-01
   os: macOS 10.14.2
@@ -1321,8 +1324,8 @@
       の末尾に付加されていた。
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2019-01-07'
+  tester: 安倍 英樹
+  date: 2019/01/07
 - id: 68
   test: 0008-01
   os: macOS 10.14.2
@@ -1335,8 +1338,8 @@
     actual: 画像の代わりに代替テキスト “送信” が表示された。
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2019-01-07'
+  tester: 安倍 英樹
+  date: 2019/01/07
 - id: 69
   test: 0009-01
   os: macOS 10.14.2
@@ -1349,8 +1352,8 @@
     actual: 画像の代わりに代替テキスト “ウェブアクセシビリティ基盤委員会” が表示された。
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2019-01-07'
+  tester: 安倍 英樹
+  date: 2019/01/07
 - id: 70
   test: 0010-01
   os: macOS 10.14.2
@@ -1363,8 +1366,8 @@
     actual: caption 要素の内容 “営業部連絡先一覧” 及び “マーケティング部連絡先一覧” が表示された。
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2019-01-07'
+  tester: 安倍 英樹
+  date: 2019/01/07
 - id: 71
   test: 0012-01
   os: macOS 10.14.2
@@ -1383,8 +1386,8 @@
       \ \n5. “ハイフンは不要” をクリックしても “4.” のテキスト入力フィールドにフォーカスが移動しなかった。"
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2019-01-07'
+  tester: 安倍 英樹
+  date: 2019/01/07
 - id: 72
   test: 0012-02
   os: macOS 10.14.2
@@ -1402,8 +1405,8 @@
     judgment: 満たしている
   comment: ラベルをクリックした時にフォーカスリングがチェックボックスに表示されないように思うが、チェックボックスのチェック状態が切り替わるので、テストの目的「label
     要素に指定したラベルとチェックボックスが関連付いているか」は確認できたと考え、満たしていると判断した。
-  tester: 安倍英樹
-  date: '2019-01-07'
+  tester: 安倍 英樹
+  date: 2019/01/07
 - id: 73
   test: 0012-03
   os: macOS 10.14.2
@@ -1430,8 +1433,8 @@
     judgment: 満たしている
   comment: 先に送信した0012-03同様、ラベルをクリックした時にラジオボタンにフォーカスリングは表示されなかった。しかし、ラジオボタンの選択状態が切り替わることから「label
     要素に指定したラベルとラジオボタンが関連付いているかの確認」は確認できていると考え、満たしていると判断した。
-  tester: 安倍英樹
-  date: '2019-01-07'
+  tester: 安倍 英樹
+  date: 2019/01/07
 - id: 74
   test: 0012-04
   os: macOS 10.14.2
@@ -1454,8 +1457,8 @@
       2. キーボード操作 : セレクトメニューにフォーカスを移動させても、title 属性の値 “検索範囲を選択” は表示されなかった。'
     judgment: 満たしていない
   comment: null
-  tester: 安倍英樹
-  date: '2019-01-07'
+  tester: 安倍 英樹
+  date: 2019/01/07
 - id: 75
   test: 0012-05
   os: macOS 10.14.2
@@ -1494,8 +1497,8 @@
       '
     judgment: 満たしていない
   comment: null
-  tester: 安倍英樹
-  date: '2019-01-07'
+  tester: 安倍 英樹
+  date: 2019/01/07
 - id: 76
   test: 0015-05
   os: macOS 10.14.2
@@ -1508,8 +1511,8 @@
     actual: “Zn2+” の “2+” が上付き表示された。
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2019-01-07'
+  tester: 安倍 英樹
+  date: 2019/01/07
 - id: 77
   test: 0015-06
   os: macOS 10.14.2
@@ -1522,8 +1525,8 @@
     actual: “H2O” の “2” が下付き表示された。
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2019-01-07'
+  tester: 安倍 英樹
+  date: 2019/01/07
 - id: 78
   test: 0001-01
   os: Windows 10 Home Version 1809
@@ -1536,8 +1539,8 @@
     actual: アイコン画像の代替テキストは何も読み上げられず、リンクテキスト “ウェブアクセシビリティ基盤委員会公開サイト” のみが読み上げられた。
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2019-01-07'
+  tester: 安倍 英樹
+  date: 2019/01/07
 - id: 79
   test: 0001-02
   os: Windows 10 Home Version 1809
@@ -1550,8 +1553,8 @@
     actual: アイコン画像の代替テキストは何も読み上げられず、リンクテキスト “ウェブアクセシビリティ基盤委員会公開サイト” のみが読み上げられた。
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2019-01-07'
+  tester: 安倍 英樹
+  date: 2019/01/07
 - id: 80
   test: 0001-03
   os: Windows 10 Home Version 1809
@@ -1564,8 +1567,8 @@
     actual: アイコン画像の代替テキストは何も読み上げられず、テキスト “ウェブアクセシビリティ基盤委員会公開サイト” のみが読み上げられた。
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2019-01-07'
+  tester: 安倍 英樹
+  date: 2019/01/07
 - id: 81
   test: 0002-01
   os: Windows 10 Home Version 1809
@@ -1578,8 +1581,8 @@
     actual: アイコン画像の代替テキストとリンクテキストが続けて “ウェブアクセシビリティ基盤委員会 公式サイト” と読み上げられた。
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2019-01-07'
+  tester: 安倍 英樹
+  date: 2019/01/07
 - id: 82
   test: 0002-02
   os: Windows 10 Home Version 1809
@@ -1592,8 +1595,8 @@
     actual: リンクテキストとアイコン画像の代替テキストが続けて “施設ご利用の手引き 画像 PDFファイル” と読み上げられた。
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2019-01-07'
+  tester: 安倍 英樹
+  date: 2019/01/07
 - id: 83
   test: 0003-02
   os: Windows 10 Home Version 1809
@@ -1622,8 +1625,8 @@
       サイトマップ'
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2019-01-08'
+  tester: 安倍 英樹
+  date: 2019/01/08
 - id: 84
   test: 0003-03
   os: Windows 10 Home Version 1809
@@ -1654,8 +1657,8 @@
       2. リンク 6 にはフォーカスが移動しなかった。'
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2019-01-08'
+  tester: 安倍 英樹
+  date: 2019/01/08
 - id: 85
   test: 0003-04
   os: Windows 10 Home Version 1809
@@ -1669,8 +1672,8 @@
     actual: "次の順序でフォーカスが移動した。\nリンク 1\nリンク 3 \nリンク 2\nリンク 4"
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2019-01-08'
+  tester: 安倍 英樹
+  date: 2019/01/08
 - id: 86
   test: 0004-01
   os: Windows 10 Home Version 1809
@@ -1683,8 +1686,8 @@
     actual: 画像の代替テキストとarea属性の代替テキストのみが続けて読み上げられた。
     judgment: 満たしていない
   comment: Tabキーで移動した場合、「リンク」の後に「Poly」と発音しているように思います。
-  tester: 安倍英樹
-  date: '2019-01-08'
+  tester: 安倍 英樹
+  date: 2019/01/08
 - id: 87
   test: 0004-02
   os: Windows 10 Home Version 1809
@@ -1699,8 +1702,8 @@
       が読み上げられた。
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2019-01-08'
+  tester: 安倍 英樹
+  date: 2019/01/08
 - id: 88
   test: 0004-03
   os: Windows 10 Home Version 1809
@@ -1715,8 +1718,8 @@
       と画像の代替テキストが続けて読み上げられた。
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2019-01-09'
+  tester: 安倍 英樹
+  date: 2019/01/09
 - id: 89
   test: 0001-01
   os: Windows 10 Pro 1803
@@ -1730,7 +1733,7 @@
     judgment: 満たしている
   comment: null
   tester: 中野利保
-  date: '2019-01-09'
+  date: 2019/01/09
 - id: 90
   test: 0004-04
   os: Windows 10 Home Version 1809
@@ -1743,8 +1746,8 @@
     actual: 各リンク先へ遷移した。
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2019-01-09'
+  tester: 安倍 英樹
+  date: 2019/01/09
 - id: 91
   test: 0004-05
   os: Windows 10 Home Version 1809
@@ -1757,8 +1760,8 @@
     actual: 代替テキストと「リンク Poly」が続けて読み上げられた。
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2019-01-09'
+  tester: 安倍 英樹
+  date: 2019/01/09
 - id: 92
   test: 0001-01
   os: Windows 10 Pro 1803
@@ -1772,7 +1775,7 @@
     judgment: 満たしている
   comment: null
   tester: 中野利保
-  date: '2019-01-09'
+  date: 2019/01/09
 - id: 93
   test: 0005-01
   os: Windows 10 Home Version 1809
@@ -1785,8 +1788,8 @@
     actual: タイトルテキスト「ウェブアクセシビリティ基盤委員会」が読み上げられた。
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2019-01-09'
+  tester: 安倍 英樹
+  date: 2019/01/09
 - id: 94
   test: 0006-01
   os: Windows 10 Home Version 1809
@@ -1799,8 +1802,8 @@
     actual: リンクテキスト “ウェブアクセシビリティ基盤委員会” が読み上げられた。
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2019-01-09'
+  tester: 安倍 英樹
+  date: 2019/01/09
 - id: 95
   test: 0006-02
   os: Windows 10 Home Version 1809
@@ -1813,8 +1816,8 @@
     actual: リンク画像の代替テキスト “ウェブアクセシビリティ基盤委員会” が読み上げられた。
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2019-01-09'
+  tester: 安倍 英樹
+  date: 2019/01/09
 - id: 96
   test: 0006-03
   os: Windows 10 Home Version 1809
@@ -1829,8 +1832,8 @@
     actual: リンクテキスト「Home」のみ読み上げられた。
     judgment: 満たしていない
   comment: リンクにフォーカスしてNVDAキー＋Tabキーを押下すると、リンクテキストに加えtitle属性値「ウェブアクセシビリティ基盤委員会公式サイト」が読み上げられ、期待される結果を満たすこととなる。
-  tester: 安倍英樹
-  date: '2019-01-09'
+  tester: 安倍 英樹
+  date: 2019/01/09
 - id: 97
   test: 0001-02
   os: Windows 10 Pro 1803
@@ -1844,7 +1847,7 @@
     judgment: 満たしている
   comment: null
   tester: 中野利保
-  date: '2019-01-09'
+  date: 2019/01/09
 - id: 98
   test: 0007-01
   os: Windows 10 Home Version 1809
@@ -1865,8 +1868,8 @@
       2. 入力したメールアドレスが URL エンコーディングされ、URL の末尾に付加されていた。'
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2019-01-09'
+  tester: 安倍 英樹
+  date: 2019/01/09
 - id: 99
   test: 0001-03
   os: Windows 10 Pro 1803
@@ -1880,7 +1883,7 @@
     judgment: 満たしている
   comment: null
   tester: 中野利保
-  date: '2019-01-09'
+  date: 2019/01/09
 - id: 100
   test: 0008-01
   os: Windows 10 Home Version 1809
@@ -1893,8 +1896,8 @@
     actual: ボタン画像の代替テキスト “送信” が読み上げられた。
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2019-01-09'
+  tester: 安倍 英樹
+  date: 2019/01/09
 - id: 101
   test: 0009-01
   os: Windows 10 Home Version 1809
@@ -1907,8 +1910,8 @@
     actual: 画像の代替テキスト “ウェブアクセシビリティ基盤委員会” が読み上げられた。
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2019-01-09'
+  tester: 安倍 英樹
+  date: 2019/01/09
 - id: 102
   test: 0002-01
   os: Windows 10 Pro 1803
@@ -1922,7 +1925,7 @@
     judgment: 満たしている
   comment: null
   tester: 中野利保
-  date: '2019-01-10'
+  date: 2019/01/10
 - id: 103
   test: 0002-02
   os: Windows 10 Pro 1803
@@ -1936,7 +1939,7 @@
     judgment: 満たしている
   comment: null
   tester: 中野利保
-  date: '2019-01-10'
+  date: 2019/01/10
 - id: 104
   test: 0010-01
   os: Windows 10 Home Version 1809
@@ -1949,8 +1952,8 @@
     actual: caption 要素の内容 “営業部連絡先一覧” 及び “マーケティング部連絡先一覧” が読み上げられた。
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2019-01-09'
+  tester: 安倍 英樹
+  date: 2019/01/09
 - id: 105
   test: 0010-02
   os: Windows 10 Home Version 1809
@@ -1963,8 +1966,8 @@
     actual: テーブルの開始位置では「テーブル」、テーブルの終了位置では「テーブルの外」と読み上げられた。
     judgment: 満たしている
   comment: null
-  tester: 安倍英樹
-  date: '2019-01-09'
+  tester: 安倍 英樹
+  date: 2019/01/09
 - id: 106
   test: 0010-03
   os: Windows 10 Home Version 1809
@@ -1977,6 +1980,8 @@
     actual: 「5行5列のテーブル」と読み上げられた。
     judgment: 満たしている
   comment: null
+  tester: 安倍 英樹
+  date: 2019/01/10
 - id: 107
   test: 0010-04
   os: Windows 10 Home Version 1809
@@ -1993,6 +1998,8 @@
       2. 今いる行の上または下の行のリンクに移動した場合は、例えば"ジョエル・ガーナー 4行 リンク Twitter"のように読み上げられた。'
     judgment: 満たしている
   comment: null
+  tester: 安倍 英樹
+  date: 2019/01/10
 - id: 108
   test: 0010-05
   os: Windows 10 Home Version 1809
@@ -2009,6 +2016,8 @@
       2. “営業部連絡先一覧” のテーブルにおいて、 “ヒューストン” から "Twitter" へ移動すると、 “SNS 5列 Twitter” と読み上げられた。'
     judgment: 満たしている
   comment: null
+  tester: 安倍 英樹
+  date: 2019/01/10
 - id: 109
   test: 0010-06
   os: Windows 10 Home Version 1809
@@ -2029,6 +2038,8 @@
       2. セル “Greenidge” から “Gordon” に移動すると、“Clive” は読み上げられなかった。'
     judgment: 満たしている
   comment: null
+  tester: 安倍 英樹
+  date: 2019/01/10
 - id: 110
   test: 0010-07
   os: Windows 10 Home Version 1809
@@ -2043,6 +2054,8 @@
       \ “Last Name” が読み上げられる \n2. セル “Pittsburgh” から “City” に移動すると、“Last Name” は読み上げられない"
     judgment: 満たしている
   comment: null
+  tester: 安倍 英樹
+  date: 2019/01/10
 - id: 111
   test: 0010-08
   os: Windows 10 Home Version 1809
@@ -2055,6 +2068,8 @@
     actual: 東京の女性の数値を表す “15%” のセルに移動すると、セルの内容とともに “大阪 3列” が読み上げられた。（男性は読み上げられない）
     judgment: 満たしていない
   comment: null
+  tester: 安倍 英樹
+  date: 2019/01/10
 - id: 112
   test: 0011-01
   os: Windows 10 Home Version 1809
@@ -2073,6 +2088,8 @@
       \    \n見出しレベル 6 : スイカの発見    \n見出しレベル 2 : 人間と果物のかかわり"
     judgment: 満たしている
   comment: null
+  tester: 安倍 英樹
+  date: 2019/01/10
 - id: 113
   test: 0011-02
   os: Windows 10 Home Version 1809
@@ -2094,6 +2111,8 @@
       3. 全て「見出しレベル1」と読み上げられ、マークアップされているhx要素のレベルがそのまま読み上げられた。'
     judgment: 満たしていない
   comment: section要素とh1要素を併用している場合でも、読み上げられる見出しレベルは変化しなかった。
+  tester: 安倍 英樹
+  date: 2019/01/10
 - id: 114
   test: 0011-03
   os: Windows 10 Home Version 1809
@@ -2106,6 +2125,8 @@
     actual: 見出しのみが読み上げられた。
     judgment: 満たしている
   comment: null
+  tester: 安倍 英樹
+  date: 2019/01/10
 - id: 115
   test: 0012-01
   os: Windows 10 Home Version 1809
@@ -2124,6 +2145,8 @@
       \ は読み上げられなかった。"
     judgment: 満たしている
   comment: null
+  tester: 安倍 英樹
+  date: 2019/01/11
 - id: 116
   test: 0012-02
   os: Windows 10 Home Version 1809
@@ -2140,6 +2163,8 @@
       \ \n2. “3.” のチェックボックスにフォーカスを移動しても、 “定期借家” は読み上げられなかった。"
     judgment: 満たしている
   comment: null
+  tester: 安倍 英樹
+  date: 2019/01/11
 - id: 117
   test: 0012-03
   os: Windows 10 Home Version 1809
@@ -2157,6 +2182,8 @@
       \ \n“4.” のラジオボタン : “はちみつがけタイプ” \n2. “3.” のラジオボタンにフォーカスが移動しても、 “期間限定” は読み上げられなかった。"
     judgment: 満たしている
   comment: null
+  tester: 安倍 英樹
+  date: 2019/01/11
 - id: 118
   test: 0012-04
   os: Windows 10 Home Version 1809
@@ -2169,6 +2196,8 @@
     actual: セレクトメニューにフォーカスを移動すると、title 属性値 “検索範囲を選択” が読み上げられた。
     judgment: 満たしている
   comment: null
+  tester: 安倍 英樹
+  date: 2019/01/11
 - id: 119
   test: 0012-05
   os: Windows 10 Home Version 1809
@@ -2193,6 +2222,8 @@
       “3.” : “加入者番号”'
     judgment: 満たしている
   comment: null
+  tester: 安倍 英樹
+  date: 2019/01/11
 - id: 120
   test: 0013-01
   os: Windows 10 Home Version 1809
@@ -2211,6 +2242,8 @@
       2. NVDAキー＋Dキーを押下するとlongdescで指定されたURLが新しいタブで開いた。'
     judgment: 満たしている
   comment: null
+  tester: 安倍 英樹
+  date: 2019/01/11
 - id: 121
   test: 0014-01
   os: Windows 10 Home Version 1809
@@ -2240,6 +2273,8 @@
     judgment: 満たしている
   comment: ol要素かどうかは分からなかったが、「例えば、“2項目のリスト リストの開始 1. ボウルにたまごと牛乳を入れ、混ぜます。 2. 塩とコショウを加えます。
     リストの終了” と読み上げられる場合は OK と判断」とあるので、満たすと判断しました。
+  tester: 安倍 英樹
+  date: 2019/01/11
 - id: 122
   test: 0014-02
   os: Windows 10 Home Version 1809
@@ -2265,6 +2300,8 @@
     judgment: 満たしている
   comment: ul要素がどうかは分からなかったが、「例えば、“3項目のリスト リストの開始 牛乳 卵 バター リストの終了” と読み上げられる場合は OK
     と判断」とあるので、満たすと判断しました。
+  tester: 安倍 英樹
+  date: 2019/01/11
 - id: 123
   test: 0014-03
   os: Windows 10 Home Version 1809
@@ -2289,6 +2326,8 @@
       3.および4. Iキーを押下するとdt要素を順に読み上げた。ddはスキップした。'
     judgment: 満たしていない
   comment: null
+  tester: 安倍 英樹
+  date: 2019/01/11
 - id: 124
   test: 0015-01
   os: Windows 10 Home Version 1809
@@ -2307,6 +2346,8 @@
     actual: 段落内のテキストが単純に読み上げられた。
     judgment: 満たしていない
   comment: null
+  tester: 安倍 英樹
+  date: 2019/01/11
 - id: 125
   test: 0015-02
   os: Windows 10 Home Version 1809
@@ -2325,6 +2366,8 @@
     actual: 各段落が単純に読み上げられた。
     judgment: 満たしていない
   comment: null
+  tester: 安倍 英樹
+  date: 2019/01/11
 - id: 126
   test: 0015-03
   os: Windows 10 Home Version 1809
@@ -2341,6 +2384,8 @@
     actual: 引用の開始位置では「引用」、引用の終了位置では「引用の外」と読み上げられた。
     judgment: 満たしている
   comment: null
+  tester: 安倍 英樹
+  date: 2019/01/11
 - id: 127
   test: 0015-04
   os: Windows 10 Home Version 1809
@@ -2357,6 +2402,8 @@
     actual: 文章が単純に読み上げられ、引用があることは分からなかった。
     judgment: 満たしていない
   comment: null
+  tester: 安倍 英樹
+  date: 2019/01/11
 - id: 128
   test: 0015-05
   os: Windows 10 Home Version 1809
@@ -2369,6 +2416,8 @@
     actual: 文章が単純に読み上げられ、上付き文字の通知は無かった。
     judgment: 満たしていない
   comment: null
+  tester: 安倍 英樹
+  date: 2019/01/11
 - id: 129
   test: 0015-06
   os: Windows 10 Home Version 1809
@@ -2381,6 +2430,8 @@
     actual: 文章が単純に読み上げられ、下付き文字の通知は無かった。
     judgment: 満たしていない
   comment: null
+  tester: 安倍 英樹
+  date: 2019/01/11
 - id: 130
   test: 0016-01
   os: Windows 10 Home Version 1809
@@ -2393,6 +2444,8 @@
     actual: 日本語の読み上げとは異なる音声合成エンジンで読み上げられた。
     judgment: 満たしている
   comment: null
+  tester: 安倍 英樹
+  date: 2019/01/11
 - id: 131
   test: 0017-01
   os: Windows 10 Home Version 1809
@@ -2410,6 +2463,8 @@
     actual: title 属性値 “ウェブアクセシビリティ基盤委員会”、およびtitle 属性値 “WCAG2.0 日本語訳”が読み上げられた。
     judgment: 満たしている
   comment: null
+  tester: 安倍 英樹
+  date: 2019/01/11
 - id: 132
   test: 0017-02
   os: Windows 10 Home Version 1809
@@ -2422,6 +2477,8 @@
     actual: iframeの外に移動した。
     judgment: 満たしている
   comment: null
+  tester: 安倍 英樹
+  date: 2019/01/13
 - id: 133
   test: 0018-01
   os: Windows 10 Home Version 1809
@@ -2446,6 +2503,8 @@
       3. “川端康成” に差し掛かると、直前の fieldset 要素内のグループの一要素であると誤解されるような通知はされなかった。'
     judgment: 満たしている
   comment: null
+  tester: 安倍 英樹
+  date: 2019/01/13
 - id: 134
   test: 0018-02
   os: Windows 10 Home Version 1809
@@ -2472,6 +2531,8 @@
       3. “川端康成” に差し掛かると、直前の fieldset 要素内のグループの一要素であると誤解されるような通知をされなかった。'
     judgment: 満たしている
   comment: fieldset 要素内のラジオボタン/チェックボックスが初めて読み上げられるときに、legend要素の内容が読み上げられます。グループ内のラジオボタン/チェックボックスを引き続き読み上げる場合は、legend要素の内容は読み上げられません。
+  tester: 安倍 英樹
+  date: 2019/01/13
 - id: 135
   test: 0018-03
   os: Windows 10 Home Version 1809
@@ -2496,6 +2557,8 @@
       3. Fキーでテキスト入力フィールドに移動した場合のみfieldset 要素の開始位置は通知されたが、終了位置を知ることはできなかった。下矢印キーで移動していった場合は、legend要素の内容のみが読み上げられた。'
     judgment: 満たしていない
   comment: null
+  tester: 安倍 英樹
+  date: 2019/01/13
 - id: 136
   test: 0019-01
   os: Windows 10 Home Version 1809
@@ -2509,6 +2572,8 @@
     actual: 「ウェブアクセシビリティ基盤委員会の詳細は リンク こちら。」のように、li要素の内容とリンクである旨が読み上げられた。
     judgment: 満たしている
   comment: null
+  tester: 安倍 英樹
+  date: 2019/01/13
 - id: 137
   test: 0019-02
   os: Windows 10 Home Version 1809
@@ -2522,6 +2587,8 @@
     actual: 「2016年3月、JIS X 8341-3が改正されました リンク 続きを読む...」のように、段落の内容とリンクである旨が読み上げられた。
     judgment: 満たしている
   comment: NVDAキー＋上矢印キーは現在行の読み上げを行います。
+  tester: 安倍 英樹
+  date: 2019/01/13
 - id: 138
   test: 0022-01
   os: Windows 10 Home Version 1809
@@ -2538,6 +2605,8 @@
     actual: option要素のみ読み上げられた。optgroup要素にはアクセスできなかった。
     judgment: 満たしていない
   comment: null
+  tester: 安倍 英樹
+  date: 2019/01/13
 - id: 139
   test: 0001-01
   os: macOS 10.14.2
@@ -2551,6 +2620,8 @@
     actual: 音声閲覧環境）リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみ読み上げられた。
     judgment: 満たしている
   comment: null
+  tester: 佐藤 哲裕
+  date: 2019/01/13
 - id: 140
   test: 0001-02
   os: macOS 10.14.2
@@ -2563,6 +2634,8 @@
     actual: （音声閲覧環境）リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみ読み上げられた。
     judgment: 満たしている
   comment: null
+  tester: 佐藤哲裕
+  date: 2019/01/13
 - id: 141
   test: 0001-03
   os: macOS 10.14.2
@@ -2577,6 +2650,8 @@
     actual: （音声閲覧環境）リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみ読み上げられた。
     judgment: 満たしている
   comment: null
+  tester: 佐藤哲裕
+  date: 2019/01/13
 - id: 142
   test: 0001-01
   os: Windows 10 HOME
@@ -2589,6 +2664,8 @@
     actual: リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみが表示され、画像のファイル名や URL 等は表示されなかった
     judgment: 満たしている
   comment: null
+  tester: yukiko makino
+  date: 2019/01/13
 - id: 143
   test: 0001-01
   os: macOS 10.13.6
@@ -2604,6 +2681,8 @@
     actual: （音声閲覧環境）「リンク ウェブアクセシビリティ基盤委員会公開サイト」と読み上げられました。
     judgment: 満たしている
   comment: null
+  tester: やまもといずみ
+  date: 2019/01/13
 - id: 144
   test: 0001-01
   os: Windows 10 Home 64bit
@@ -2616,6 +2695,8 @@
     actual: リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみ読み上げられた
     judgment: 満たしている
   comment: null
+  tester: yukiko makino
+  date: 2019/01/13
 - id: 145
   test: 0001-01
   os: Windows 10 Home Version 1809
@@ -2628,6 +2709,8 @@
     actual: リンク「ウェブアクセシビリティ基盤委員会公開サイト」が読み上げられた
     judgment: 満たしている
   comment: null
+  tester: 辻勝利
+  date: 2019/01/13
 - id: 146
   test: 0001-01
   os: macOS 10.13.6
@@ -2640,6 +2723,8 @@
     actual: （視覚閲覧環境）リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみが表示され、画像のファイル名や URL 等は表示されなかった。
     judgment: 満たしている
   comment: null
+  tester: やまもといずみ
+  date: 2019/01/13
 - id: 147
   test: 0001-01
   os: iOS 12.0.1
@@ -2652,6 +2737,8 @@
     actual: リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみ読み上げられた
     judgment: 満たしている
   comment: null
+  tester: yukiko makino
+  date: 2019/01/13
 - id: 148
   test: 0001-01
   os: macOS 10.14.2
@@ -2666,6 +2753,8 @@
       「リンク ウェブアクセシビリティ基盤委員会公開サイト」と読み上げられた。'
     judgment: 満たしている
   comment: null
+  tester: 佐藤哲裕
+  date: 2019/01/13
 - id: 149
   test: 0001-02
   os: Windows 10 Home 64bit
@@ -2678,6 +2767,8 @@
     actual: リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみが表示され、画像のファイル名や URL 等は表示されなかった。
     judgment: 満たしている
   comment: null
+  tester: yukiko makino
+  date: 2019/01/13
 - id: 150
   test: 0002-02
   os: macOS 10.14.2
@@ -2690,6 +2781,8 @@
     actual: （音声閲覧環境）「リンク 施設ご利用の手引き PDFファイル」と読み上げた
     judgment: 満たしている
   comment: null
+  tester: 佐藤哲裕
+  date: 2019/01/13
 - id: 151
   test: 0001-02
   os: macOS 10.13.6
@@ -2706,6 +2799,8 @@
     actual: （音声閲覧環境）リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみ読み上げられた。
     judgment: 満たしている
   comment: null
+  tester: やまもといずみ
+  date: 2019/01/13
 - id: 152
   test: 0001-02
   os: Windows10 Home Version 1809
@@ -2718,6 +2813,8 @@
     actual: リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみ読み上げられた。
     judgment: 満たしている
   comment: null
+  tester: 辻勝利
+  date: 2019/01/13
 - id: 153
   test: 0001-02
   os: Windows 10 Home 64bit
@@ -2730,6 +2827,8 @@
     actual: リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみ読み上げられた
     judgment: 満たしている
   comment: null
+  tester: yukiko makino
+  date: 2019/01/13
 - id: 154
   test: 0001-03
   os: macOS 10.13.6
@@ -2746,6 +2845,8 @@
     actual: （音声閲覧環境）テキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみ読み上げられた。
     judgment: 満たしている
   comment: null
+  tester: やまもといずみ
+  date: 2019/01/13
 - id: 155
   test: 0002-01
   os: macOS 10.13.6
@@ -2762,6 +2863,8 @@
     actual: （音声閲覧環境）リンクテキスト「ウェブアクセシビリティ基盤委員会公式サイト」と読まれた
     judgment: 満たしている
   comment: null
+  tester: やまもといずみ
+  date: 2019/01/13
 - id: 156
   test: 0003-01
   os: macOS 10.14.2
@@ -2856,6 +2959,8 @@
       入力内容のリセット'
     judgment: 満たしている
   comment: null
+  tester: 佐藤哲裕
+  date: 2019/01/13
 - id: 157
   test: 0001-03
   os: Windows 10 Home Version 1809
@@ -2868,6 +2973,8 @@
     actual: 「ウェブアクセシビリティ基盤委員会公開サイト」と読み上げられた
     judgment: 満たしている
   comment: null
+  tester: 辻勝利
+  date: 2019/01/13
 - id: 158
   test: 0002-02
   os: macOS 10.13.6
@@ -2884,6 +2991,8 @@
     actual: ' (音声閲覧環境)「 リンク 施設ご利用の手引き PDFファイル」 と読み上げられた'
     judgment: 満たしている
   comment: null
+  tester: やまもといずみ
+  date: 2019/01/13
 - id: 159
   test: 0003-01
   os: 'macOS 10.14.2 '
@@ -2980,6 +3089,8 @@
       '
     judgment: 満たしている
   comment: null
+  tester: 佐藤哲裕
+  date: 2019/01/13
 - id: 160
   test: 0003-02
   os: macOS 10.14.2
@@ -3010,6 +3121,8 @@
       サイトマップ'
     judgment: 満たしている
   comment: null
+  tester: 佐藤哲裕
+  date: 2019/01/13
 - id: 161
   test: 0003-02
   os: macOS 10.14.2
@@ -3042,6 +3155,8 @@
       サイトマップ'
     judgment: 満たしている
   comment: null
+  tester: 佐藤哲裕
+  date: 2019/01/13
 - id: 162
   test: 0002-01
   os: Windows10 Home Version 1809
@@ -3054,6 +3169,8 @@
     actual: 「リンク画像ウェブアクセシビリティ基盤委員会 公式サイト」と読み上げられ。た
     judgment: 満たしている
   comment: null
+  tester: 辻勝利
+  date: 2019/01/13
 - id: 163
   test: 0003-03
   os: macOS 10.14.2
@@ -3072,6 +3189,8 @@
       \ 7 (0)\n2. リンク 6 (tabindex=\"-1\") にはフォーカスが移動しない"
     judgment: 満たしている
   comment: null
+  tester: 佐藤哲裕
+  date: 2019/01/13
 - id: 164
   test: 0003-01
   os: macOS 10.13.6
@@ -3210,6 +3329,8 @@
       入力内容のリセット　ボタン'
     judgment: 満たしていない
   comment: ラジオボタンの「花火」は読まれませんでした。
+  tester: やまもといずみ
+  date: 2019/01/13
 - id: 165
   test: 0002-02
   os: Windows10 Home Version 1809
@@ -3222,6 +3343,8 @@
     actual: 「リンク施設ご利用の手引き画像PDFファイル」と読み上げられた。
     judgment: 満たしている
   comment: null
+  tester: 辻勝利
+  date: 2019/01/13
 - id: 166
   test: 0003-03
   os: macOS 10.14.2
@@ -3240,6 +3363,8 @@
       \ 7 (0)\n2. リンク 6 (tabindex=\"-1\") にはフォーカスが移動しない\n\n（VoiceOverの操作になれていないだけかもしれないですが）VoiceOverの操作をコンテンツエリアにフォーカスした状態からtabを押すとリンク1からフォーカスが当たるようになった。その後は上記の順番に従ってフォーカスがあたる。"
     judgment: 満たしている
   comment: null
+  tester: 佐藤哲裕
+  date: 2019/01/13
 - id: 167
   test: 0003-02
   os: macOS 10.13.6
@@ -3292,6 +3417,8 @@
     環境設定ー詳細ーアクセシビリティのチェック
 
     '
+  tester: やまもといずみ
+  date: 2019/01/13
 - id: 168
   test: 0003-04
   os: macOS 10.14.2
@@ -3308,6 +3435,8 @@
       \ (2)"
     judgment: 満たしている
   comment: null
+  tester: 佐藤哲裕
+  date: 2019/01/13
 - id: 169
   test: 0003-04
   os: macOS 10.14.2
@@ -3324,6 +3453,8 @@
       \ \nリンク 3 (1) \nリンク 2 (2)\nリンク 4 (2)"
     judgment: 満たしている
   comment: null
+  tester: 佐藤哲裕
+  date: 2019/01/13
 - id: 170
   test: 0003-03
   os: macOS 10.13.6
@@ -3344,6 +3475,8 @@
     actual: (音声閲覧環境) 期待される結果と同じです。
     judgment: 満たしている
   comment: null
+  tester: やまもといずみ
+  date: 2019/01/13
 - id: 171
   test: 0003-04
   os: macOS 10.13.6
@@ -3370,6 +3503,8 @@
       リンク 4'
     judgment: 満たしている
   comment: null
+  tester: やまもといずみ
+  date: 2019/01/13
 - id: 172
   test: 0003-01
   os: Windows10 Home Version 1809
@@ -3462,6 +3597,8 @@
     actual: 想定していた順番で読み上げられた
     judgment: 満たしている
   comment: null
+  tester: 辻勝利
+  date: 2019/01/13
 - id: 173
   test: 0004-01
   os: macOS 10.13.6
@@ -3474,6 +3611,8 @@
     actual: (音声閲覧環境)期待される結果と同じでした
     judgment: 満たしている
   comment: null
+  tester: やまもといずみ
+  date: 2019/01/13
 - id: 174
   test: 0003-02
   os: Windows10 Home Version 1809
@@ -3494,6 +3633,8 @@
     actual: 想定通りに読み上げられた。
     judgment: 満たしている
   comment: null
+  tester: 辻勝利
+  date: 2019/01/13
 - id: 175
   test: 0004-02
   os: macOS 10.13.6
@@ -3512,6 +3653,8 @@
     actual: (音声閲覧環境) 期待される結果と同じでした
     judgment: 満たしている
   comment: null
+  tester: やまもといずみ
+  date: 2019/01/13
 - id: 176
   test: 0004-03
   os: macOS 10.13.6
@@ -3530,6 +3673,8 @@
     actual: (音声閲覧環境)期待される結果と同じでした
     judgment: 満たしている
   comment: null
+  tester: やまもといずみ
+  date: 2019/01/13
 - id: 177
   test: 0004-01
   os: macOS 10.14.2
@@ -3552,6 +3697,8 @@
       イメージマップであることはわかるようには読み上げられなかった。'
     judgment: 満たしていない
   comment: null
+  tester: 佐藤哲裕
+  date: 2019/01/13
 - id: 178
   test: 0004-01
   os: macOS 10.13.6
@@ -3565,6 +3712,8 @@
       書籍」「現在、あなたはイメージマップ内のリンクの上にいます。このリンクをクリックするには、コントロール-Option-スペースを押します。」と読まれる。以下のリンクに移動（Option＋Shift＋下矢印）すると「リンク、３階衣料品　現在、あなたはイメージマップ内のリンクの上にいます。このリンクをクリックするには、コントロール-Option-スペースを押します。」のように読まれる。
     judgment: 満たしている
   comment: MacOSが最新のバージョンではありません。また、不慣れなため動作に関する表現等伝わりにくいかと思います。これでもお役に立てるならうれしいです。
+  tester: Okaue Yoko
+  date: 2019/01/13
 - id: 179
   test: 0004-02
   os: macOS 10.14.2
@@ -3583,6 +3732,8 @@
       イメージマップに用いられている画像の代替テキスト “デパートのフロアガイド。各階について詳しくお知りになりたい場合は各階をクリックしてください。” が表示された。'
     judgment: 満たしている
   comment: null
+  tester: 佐藤哲裕
+  date: 2019/01/13
 - id: 180
   test: 0004-04
   os: macOS 10.13.6
@@ -3599,6 +3750,8 @@
     actual: (音声閲覧環境) 各リンク先へ遷移しました
     judgment: 満たしている
   comment: null
+  tester: やまもといずみ
+  date: 2019/01/13
 - id: 181
   test: 0004-02
   os: macOS 10.14.2
@@ -3617,6 +3770,8 @@
       イメージマップに用いられている画像の代替テキスト “デパートのフロアガイド。各階について詳しくお知りになりたい場合は各階をクリックしてください。” が読み上げられた。'
     judgment: 満たしている
   comment: null
+  tester: 佐藤哲裕
+  date: 2019/01/13
 - id: 182
   test: 0003-03
   os: Windows10 Home Version 1809
@@ -3635,6 +3790,8 @@
       '
     judgment: 満たしている
   comment: null
+  tester: 辻勝利
+  date: 2019/01/13
 - id: 183
   test: 0001-01
   os: Windows10 Pro 64ビット
@@ -3647,6 +3804,8 @@
     actual: リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみが表示され、画像のファイル名や URL 等は表示されなかった。
     judgment: 満たしている
   comment: null
+  tester: 佐藤美華
+  date: 2019/01/13
 - id: 184
   test: 0004-01
   os: macOS 10.14.2
@@ -3669,6 +3828,8 @@
       になっています。'
     judgment: 満たしていない
   comment: null
+  tester: 佐藤哲裕
+  date: 2019/01/13
 - id: 185
   test: 0004-05
   os: macOS 10.13.6
@@ -3689,6 +3850,8 @@
     actual: (音声閲覧環境)「リンク 4F 雑貨書籍」と読まれました
     judgment: 満たしている
   comment: null
+  tester: やまもといずみ
+  date: 2019/01/13
 - id: 186
   test: 0004-02
   os: macOS 10.14.2
@@ -3707,6 +3870,8 @@
       イメージマップに用いられている画像の代替テキスト “デパートのフロアガイド。各階について詳しくお知りになりたい場合は各階をクリックしてください。” が表示された。'
     judgment: 満たしている
   comment: null
+  tester: 佐藤哲裕
+  date: 2019/01/13
 - id: 187
   test: 0005-01
   os: macOS 10.13.6
@@ -3723,6 +3888,8 @@
     actual: (音声閲覧環境) 一番最初にタイトルタグの内容が読み上げられました
     judgment: 満たしている
   comment: null
+  tester: やまもといずみ
+  date: 2019/01/13
 - id: 188
   test: 0004-02
   os: macOS 10.14.2
@@ -3741,6 +3908,8 @@
       イメージマップに用いられている画像の代替テキスト “デパートのフロアガイド。各階について詳しくお知りになりたい場合は各階をクリックしてください。” が読み上げられる'
     judgment: 満たしている
   comment: null
+  tester: 佐藤哲裕
+  date: 2019/01/13
 - id: 189
   test: 0006-01
   os: macOS 10.13.6
@@ -3753,6 +3922,8 @@
     actual: （音声閲覧環境）「リンク　ウェブアクセシビリティ基盤委員会」と読まれました。
     judgment: 満たしている
   comment: null
+  tester: やまもといずみ
+  date: 2019/01/13
 - id: 190
   test: 0006-02
   os: macOS 10.13.6
@@ -3769,6 +3940,8 @@
     actual: (音声閲覧環境)「りんく　イメージ　アクセシビリティ基盤委員会」と読まれました
     judgment: 満たしている
   comment: null
+  tester: やまもといずみ
+  date: 2019/01/13
 - id: 191
   test: 0004-03
   os: macOS 10.14.2
@@ -3785,6 +3958,8 @@
     actual: img の alt は表示されるが、area の alt は表示されませんでした。
     judgment: 満たしていない
   comment: null
+  tester: 佐藤哲裕
+  date: 2019/01/13
 - id: 192
   test: 0004-03
   os: macOS 10.14.2
@@ -3804,6 +3979,8 @@
     judgment: 満たしていない
   comment: null
   reviewer_comment: '[WAIC注] 再テストを行いましたが、本テスト結果と同じ結果は得られませんでした。'
+  tester: 佐藤哲裕
+  date: 2019/01/13
 - id: 193
   test: 0006-03
   os: macOS 10.13.6
@@ -3825,6 +4002,8 @@
     actual: (音声閲覧環境) タイトル属性は読み上げられませんでした
     judgment: 満たしていない
   comment: null
+  tester: やまもといずみ
+  date: 2019/01/13
 - id: 194
   test: 0004-04
   os: macOS 10.14.2
@@ -3845,6 +4024,8 @@
       各リンク先へ遷移した。'
     judgment: 満たしている
   comment: null
+  tester: 佐藤哲裕
+  date: 2019/01/13
 - id: 195
   test: 0004-04
   os: macOS 10.14.2
@@ -3863,6 +4044,8 @@
       各リンク先へ遷移した。'
     judgment: 満たしている
   comment: null
+  tester: 佐藤哲裕
+  date: 2019/01/13
 - id: 196
   test: 0001-03
   os: Windows 10 Home 64bit
@@ -3875,6 +4058,8 @@
     actual: テキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみが表示され、画像のファイル名や URL 等は表示されなかった
     judgment: 満たしている
   comment: null
+  tester: yukiko makino
+  date: 2019/01/13
 - id: 197
   test: 0003-04
   os: Windows10 Home Version 1809
@@ -3888,6 +4073,8 @@
     actual: 想定していた順番で項目が読み上げられた。
     judgment: 満たしている
   comment: null
+  tester: 辻勝利
+  date: 2019/01/13
 - id: 198
   test: 0007-01
   os: macOS 10.13.6
@@ -3912,26 +4099,8 @@
     actual: (音声閲覧環境) 1. 2. とも満たしていました。
     judgment: 満たしている
   comment: null
-# - id: 199
-#   test: 0004-05
-#   os: macOS 10.14.2
-#   user_agent: Google Chrome 71.0.3578.98
-#   assistive_tech: VoiceOver
-#   assistive_tech_config: null
-#   contents:
-#   - expected: '(視覚閲覧環境) :
-
-#       マウス操作 : 各 area 要素にマウスポインタを重ね、挙動を確認
-
-#       キーボード操作 : 各 area 要素にフォーカスを移動し、挙動を確認'
-#     procedure: ' (視覚閲覧環境) :
-
-#       マウスポインタの形状変化や、フォーカスの枠線表示などの視覚効果が提供されている場合は OK と判断'
-#     actual: ' (視覚閲覧環境) :
-
-#       マウス操作もキーボード操作もブラウザの左下に遷移先のURLのみ表示された。'
-#     judgment: 満たしている
-#   comment: null
+  tester: やまもといずみ
+  date: 2019/01/13
 - id: 200
   test: 0004-05
   os: macOS 10.14.2
@@ -3953,8 +4122,10 @@
 
       キーボード操作はフォーカスの線が表示される'
     judgment: 満たしていない
-#   comment: こちらが正しいです。
+  comment: null
   reviewer_comment: '[WAIC注] 再テストを行いましたが、本テスト結果と同じ結果は得られませんでした。'
+  tester: 佐藤哲裕
+  date: 2019/01/13
 - id: 201
   test: 0004-05
   os: macOS 10.14.2
@@ -3975,6 +4146,8 @@
       「リンク」と読み上げられた。'
     judgment: 満たしている
   comment: null
+  tester: 佐藤哲裕
+  date: 2019/01/13
 - id: 202
   test: 0008-01
   os: macOS 10.13.6
@@ -3991,6 +4164,8 @@
     actual: (音声閲覧環境) 「送信　ボタン」と読み上げられました。
     judgment: 満たしている
   comment: null
+  tester: やまもといずみ
+  date: 2019/01/13
 - id: 203
   test: 0001-03
   os: Windows 10 Home 64bit
@@ -4003,6 +4178,8 @@
     actual: テキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみ読み上げられた
     judgment: 満たしている
   comment: null
+  tester: yukiko makino
+  date: 2019/01/13
 - id: 204
   test: 0009-01
   os: macOS 10.13.6
@@ -4019,6 +4196,8 @@
     actual: (音声閲覧環境) 画像の代替テキストがよまれました。
     judgment: 満たしている
   comment: null
+  tester: やまもといずみ
+  date: 2019/01/13
 - id: 205
   test: 0003-04
   os: Windows10 Home Version 1809
@@ -4032,6 +4211,8 @@
     actual: 想定通りの順番でフォーカスが移動した。
     judgment: 満たしている
   comment: null
+  tester: 辻勝利
+  date: 2019/01/13
 - id: 206
   test: 0005-01
   os: macOS 10.14.2
@@ -4048,6 +4229,8 @@
     actual: (視覚閲覧環境) :タブに Title の内容が表示されている。
     judgment: 満たしている
   comment: null
+  tester: 佐藤哲裕
+  date: 2019/01/13
 - id: 207
   test: 0005-01
   os: macOS 10.14.2
@@ -4066,6 +4249,8 @@
       ページタイトルを読み上げてくれた。'
     judgment: 満たしている
   comment: null
+  tester: 佐藤哲裕
+  date: 2019/01/13
 - id: 208
   test: 0005-01
   os: Windows 10 Home 64bit
@@ -4079,6 +4264,8 @@
     judgment: 満たしている
   comment: null
   reviewer_comment: '[WAIC注] テスト手順に問題があり、適切に判定できていません。'
+  tester: yukiko makino
+  date: 2019/01/13
 - id: 209
   test: 0022-01
   os: macOS 10.13.6
@@ -4095,6 +4282,8 @@
     actual: "(音声閲覧環境) \n1.  label 属性値はわかりました。\n2. 切り替わる位置はわかりませんでした。"
     judgment: 満たしていない
   comment: null
+  tester: やまもといずみ
+  date: 2019/01/13
 - id: 210
   test: 0006-01
   os: macOS 10.14.2
@@ -4111,6 +4300,8 @@
     actual: " (音声閲覧環境) :\n “ウェブアクセシビリティ基盤委員会” が読み上げられた"
     judgment: 満たしている
   comment: null
+  tester: 佐藤哲裕
+  date: 2019/01/13
 - id: 211
   test: 0015-01
   os: macOS 10.13.6
@@ -4131,6 +4322,8 @@
       3. 通知はされませんでした。'
     judgment: 満たしていない
   comment: null
+  tester: やまもといずみ
+  date: 2019/01/13
 - id: 212
   test: 0006-02
   os: macOS 10.14.2
@@ -4147,6 +4340,8 @@
     actual: "(視覚閲覧環境) :\n “ウェブアクセシビリティ基盤委員会” が表示された"
     judgment: 満たしている
   comment: null
+  tester: 佐藤哲裕
+  date: 2019/01/13
 - id: 213
   test: 0001-01
   os: Windows10 Pro 64ビット
@@ -4179,7 +4374,9 @@
 
       期待される結果のように、該当文のみ読み上げられた'
     judgment: 満たしている
-  comment: null  # '使用機種：FMVWC2U28T タッチ対応 スーパーファイン液晶'
+  comment: null
+  tester: 佐藤美華
+  date: 2019/01/13
 - id: 214
   test: 0015-03
   os: macOS 10.13.6
@@ -4196,6 +4393,8 @@
     actual: (音声閲覧環境) 引用部分は通知されませんでした
     judgment: 満たしていない
   comment: null
+  tester: やまもといずみ
+  date: 2019/01/13
 - id: 215
   test: 0006-02
   os: macOS 10.14.2
@@ -4212,6 +4411,8 @@
     actual: "\n (音声閲覧環境) :\nリンク画像の代替テキスト “ウェブアクセシビリティ基盤委員会” が読み上げられた。"
     judgment: 満たしている
   comment: null
+  tester: 佐藤哲裕
+  date: 2019/01/13
 - id: 216
   test: 0015-05
   os: macOS 10.13.6
@@ -4228,6 +4429,8 @@
     actual: (音声閲覧環境)なにもわかりませんでした
     judgment: 満たしていない
   comment: null
+  tester: やまもといずみ
+  date: 2019/01/13
 - id: 217
   test: 0005-01
   os: Windows 10 Home 64bit
@@ -4240,6 +4443,8 @@
     actual: 「ウェブアクセシビリティ基盤委員会マイナスグーグルクロームシークレットモード」と読み上げられた
     judgment: 満たしている
   comment: コマンドがわかっていないとそもそも操作ができない
+  tester: yukiko makino
+  date: 2019/01/13
 - id: 218
   test: 0015-06
   os: macOS 10.13.6
@@ -4258,6 +4463,8 @@
     actual: (音声閲覧環境) 提供されていませんでした
     judgment: 満たしていない
   comment: null
+  tester: やまもといずみ
+  date: 2019/01/13
 - id: 219
   test: 0008-01
   os: Windows 10 Home 64bit
@@ -4270,6 +4477,8 @@
     actual: 何も表示されなかった
     judgment: 満たしていない
   comment: null
+  tester: yukiko makino
+  date: 2019/01/13
 - id: 220
   test: 0006-03
   os: macOS 10.14.2
@@ -4293,6 +4502,8 @@
       キーボード操作でのフォーカスでは Title が表示されない。'
     judgment: 満たしていない
   comment: null
+  tester: 佐藤哲裕
+  date: 2019/01/13
 - id: 221
   test: 0016-01
   os: macOS 10.13.6
@@ -4306,6 +4517,8 @@
     judgment: 満たしている
   comment: null
   reviewer_comment: '[WAIC注] 再テストを行いましたが、本テスト結果と同じ結果は得られませんでした。'
+  tester: やまもといずみ
+  date: 2019/01/13
 - id: 222
   test: 0006-03
   os: macOS 10.14.2
@@ -4322,6 +4535,8 @@
     actual: title 属性は読まれなかった。
     judgment: 満たしていない
   comment: null
+  tester: 佐藤哲裕
+  date: 2019/01/13
 - id: 223
   test: 0017-01
   os: macOS 10.13.6
@@ -4342,6 +4557,8 @@
     judgment: 満たしていない
   comment: null
   reviewer_comment: '[WAIC注] サーバー環境に問題があり、テストが実施できていません。'
+  tester: やまもといずみ
+  date: 2019/01/13
 - id: 224
   test: 0017-02
   os: macOS 10.13.6
@@ -4355,6 +4572,8 @@
     judgment: 満たしていない
   comment: null
   reviewer_comment: '[WAIC注] サーバー環境に問題があり、テストが実施できていません。'
+  tester: やまもといずみ
+  date: 2019/01/13
 - id: 225
   test: 0008-01
   os: Windows 10 Home 64bit
@@ -4371,6 +4590,8 @@
       Tab：「WAIC-CODE-0008-01　ボタン送信」と読み上げられた'
     judgment: 満たしていない
   comment: null
+  tester: yukiko makino
+  date: 2019/01/13
 - id: 226
   test: 0004-01
   os: Windows10 Home Version 1809
@@ -4383,6 +4604,8 @@
     actual: リンク項目であることは読み上げられるが、イメージマップの項目であることは判別できなかった。
     judgment: 満たしていない
   comment: null
+  tester: 辻勝利
+  date: 2019/01/13
 - id: 227
   test: 0007-01
   os: macOS 10.14.2
@@ -4407,6 +4630,8 @@
       1、2ともにできました。'
     judgment: 満たしている
   comment: null
+  tester: 佐藤哲裕
+  date: 2019/01/13
 - id: 228
   test: 0007-01
   os: macOS 10.14.2
@@ -4427,6 +4652,8 @@
     actual: 1、2を満たしている。
     judgment: 満たしている
   comment: null
+  tester: 佐藤哲裕
+  date: 2019/01/13
 - id: 229
   test: 0007-02
   os: macOS 10.14.2
@@ -4453,6 +4680,8 @@
       '
     judgment: 満たしていない
   comment: null
+  tester: 佐藤哲裕
+  date: 2019/01/13
 - id: 230
   test: 0001-02
   os: Windows10 Pro 64ビット
@@ -4494,7 +4723,9 @@
 
       該当文「ウェブアクセシビリティ基盤委員会公開サイト」のみ読み上げられた。'
     judgment: 満たしている
-  comment: null  # 機種名：FMVWC2U タッチ対応 スーパーファイン液晶
+  comment: null
+  tester: 佐藤美華
+  date: 2019/01/13
 - id: 231
   test: 0004-01
   os: Windows 10 Pro 1803
@@ -4507,6 +4738,8 @@
     actual: ”4F 雑貨 書籍 リンク マップ"と読み上げた
     judgment: 満たしている
   comment: null
+  tester: 中野利保
+  date: 2019/01/15
 - id: 232
   test: 0004-02
   os: Windows 10 Pro 1803
@@ -4520,6 +4753,8 @@
     actual: 「デパートのフロアガイド。各階について詳しくお知りになりたい場合は各階をクリックしてください。　画像」と読み上げられた。
     judgment: 満たしている
   comment: null
+  tester: 中野利保
+  date: 2019/01/15
 - id: 233
   test: 0004-04
   os: Windows 10 Pro 1803
@@ -4532,6 +4767,8 @@
     actual: リンク先へ遷移した
     judgment: 満たしている
   comment: null
+  tester: 中野利保
+  date: 2019/01/15
 - id: 234
   test: 0004-05
   os: Windows 10 Pro 1803
@@ -4544,6 +4781,8 @@
     actual: 「4F雑貨 書籍 リンク」とリンクであることを読み上げた
     judgment: 満たしている
   comment: null
+  tester: 中野利保
+  date: 2019/01/16
 - id: 235
   test: 0005-01
   os: Windows 10 Pro 1803
@@ -4556,6 +4795,8 @@
     actual: タイトル「ウェブアクセシビリティ基盤委員会」と「Internet Explorer」と読み上げられた
     judgment: 満たしている
   comment: null
+  tester: 中野利保
+  date: 2019/01/16
 - id: 236
   test: 0006-01
   os: Windows 10 Pro 1803
@@ -4570,6 +4811,8 @@
       リンクテキスト “ウェブアクセシビリティ基盤委員会” を読み上げた'
     judgment: 満たしている
   comment: null
+  tester: 中野利保
+  date: 2019/01/17
 - id: 237
   test: 0006-02
   os: Windows 10 Pro 1803
@@ -4582,6 +4825,8 @@
     actual: リンク画像の代替テキスト “ウェブアクセシビリティ基盤委員会” を読み上げた
     judgment: 満たしている
   comment: null
+  tester: 中野利保
+  date: 2019/01/17
 - id: 238
   test: 0006-03
   os: Windows 10 Pro 1803
@@ -4594,6 +4839,8 @@
     actual: リンクテキスト"Home”を読み上げ、続いてtilte属性値"ウェブアクセシビリティ基盤委員会公式サイト"を読み上げた
     judgment: 満たしている
   comment: null
+  tester: 中野利保
+  date: 2019/01/17
 - id: 239
   test: 0011-03
   os: Windows10 pro 1803
@@ -4606,6 +4853,8 @@
     actual: 「果物について」見出しレベル1「定義」見出しレベル2「野菜との違い」見出しレベル3「実は果物ではないもの」見出しレベル4「スイカが野菜である理由」見出しレベル5「スイカの発見」見出しレベル6「人間と果物のかかわり」見出しレベル2　と読み上げた。上に戻ると見出し下から順に読み上げた。数字の3で「野菜との違い」見出しレベル3と読み上げた。
     judgment: 満たしている
   comment: null
+  tester: 小枝　繁子
+  date: 2019/01/18
 - id: 240
   test: 0012-01
   os: Windows10 pro バージョン：1803
@@ -4629,6 +4878,8 @@
     actual: 「:電話番号」のみ読み上げた。
     judgment: 満たしている
   comment: null
+  tester: 小枝　繁子
+  date: 2019/01/18
 - id: 241
   test: 0012-02
   os: Windows10 pro バージョン：1803
@@ -4654,6 +4905,8 @@
     actual: '“3.” のチェックボックス : ラベル の「佐藤マンション」のみ読み上げた。'
     judgment: 満たしている
   comment: null
+  tester: 小枝　繁子
+  date: 2019/01/18
 - id: 242
   test: 0012-03
   os: Windows10 pro バージョン：1803
@@ -4673,6 +4926,8 @@
     actual: ラベルの「すっきり抹茶タイプ」のみ読み上げた。
     judgment: 満たしている
   comment: null
+  tester: 小枝　繁子
+  date: 2019/01/18
 - id: 243
   test: 0012-04
   os: Windows10 pro バージョン：1803
@@ -4685,6 +4940,8 @@
     actual: 「検索範囲を選択」と読み上げた。
     judgment: 満たしている
   comment: null
+  tester: 小枝　繁子
+  date: 2019/01/18
 - id: 244
   test: 0012-05
   os: Windows10 pro バージョン：1803
@@ -4698,6 +4955,8 @@
     actual: 1つ目のテキスト入力フィールド「市外局番」、2つ目のテキスト入力フィールド「市内局番」、3つ目のテキスト入力フィールド「加入者番号」と読み上げた。
     judgment: 満たしている
   comment: null
+  tester: 小枝　繁子
+  date: 2019/01/18
 - id: 245
   test: 0013-01
   os: Windows10 pro バージョン：1803
@@ -4714,22 +4973,8 @@
     actual: 画像「詳細説明あり　会員数の遷移グラフ」としか読み上げずリンク先の情報は読み上げない。
     judgment: 満たしていない
   comment: null
-- id: 246
-  test: 0013-01
-  os: Windows10 pro バージョン：1803
-  user_agent: Fierfox ver64.0.2
-  assistive_tech: NVDA ver2018.4.1jp
-  assistive_tech_config: 
-  contents:
-  - expected: 画像に longdesc 属性が指定されていることを知るための何らかの手段が提供されている
-    procedure: 矢印キー下向きで操作した。
-    actual: 「詳細説明あり」と読み上げた。
-    judgment: 満たしている
-  - expected: longdesc 属性の値として指定されたリンク先の記述内容を知るための何らかの手段が提供されている
-    procedure: 矢印キー下向きで操作した。
-    actual: 画像「詳細説明あり 会員数の遷移グラフ」としか読み上げずリンク先の情報は読み上げない。
-    judgment: 満たしていない
-  comment: null
+  tester: 小枝　繁子
+  date: 2019/01/18
 - id: 247
   test: 0011-01
   os: Android 8.0.0 ビルド番号：41.3.B.161
@@ -4753,6 +4998,8 @@
       \ 実は果物ではないもの：見出し4 \n スイカが野菜である理由：見出し 5 \n スイカの発見：見出し6 \n 人間と果物のかかわり：見出し2\n と読み上げた。"
     judgment: 満たしている
   comment: null
+  tester: 小枝　繁子
+  date: 2019/01/21
 - id: 248
   test: 0011-02
   os: Android 8.0.0 ビルド番号：41.3.B.161
@@ -4777,6 +5024,8 @@
       \ スイカの発見：見出し1\n 人間と果物のかかわり：見出し1\n と読み上げた。"
     judgment: 満たしていない
   comment: null
+  tester: 小枝　繁子
+  date: 2019/01/21
 - id: 249
   test: 0011-03
   os: Android 8.0.0 ビルド番号：41.3.B.161
@@ -4789,8 +5038,10 @@
     actual: 右フリックすると「果物について：見出し1」「定義：見出し2」と下へ読み上げ、見出し3から左フリックすると「定義：見出し2」「果物について：見出し1」と読み上げた。
     judgment: 満たしている
   comment: null
+  tester: 小枝　繁子
+  date: 2019/01/21
 - id: 250
-  test: 0012-02
+  test: 0012-01
   os: Android 8.0.0 ビルド番号：41.3.B.161
   user_agent: Google Chrome 71.0.3578.99
   assistive_tech: Android Accessibility Suite(TalkBack) 7.2.0.220693075
@@ -4808,6 +5059,8 @@
     actual: “4.” のテキスト入力フィールドにフォーカスを移動すると「電話番号」と読み上げた。
     judgment: 満たしている
   comment: null
+  tester: 小枝　繁子
+  date: 2019/01/21
 - id: 251
   test: 0012-02
   os: Android 8.0.0 ビルド番号：41.3.B.161
@@ -4828,6 +5081,8 @@
     actual: “3.” のチェックボックスにフォーカスを移動すると「佐藤マンション」と読み上げた。
     judgment: 満たしている
   comment: null
+  tester: 小枝　繁子
+  date: 2019/01/21
 - id: 252
   test: 0012-04
   os: Android 8.0.0 ビルド番号：41.3.B.161
@@ -4847,6 +5102,8 @@
     actual: '“3.” のラジオボタン : 「すっきり抹茶タイプ」と読み上げた。'
     judgment: 満たしている
   comment: null
+  tester: 小枝　繁子
+  date: 2019/01/21
 - id: 253
   test: 0012-04
   os: Android 8.0.0 ビルド番号：41.3.B.161
@@ -4859,6 +5116,8 @@
     actual: 「折りたたまれています。このサイト内ポッブアップボタン。検索範囲を選択」と読み上げた。
     judgment: 満たしている
   comment: null
+  tester: 小枝　繁子
+  date: 2019/01/21
 - id: 254
   test: 0012-05
   os: Android 8.0.0 ビルド番号：41.3.B.161
@@ -4872,6 +5131,8 @@
     actual: '“1.” : 「市外局番」 “2.” : 「市内局番」 “3.” : 「加入者番号」と読み上げた。'
     judgment: 満たしている
   comment: null
+  tester: 小枝　繁子
+  date: 2019/01/21
 - id: 255
   test: 0013-01
   os: Android 8.0.0 ビルド番号：41.3.B.161
@@ -4888,6 +5149,8 @@
     actual: 「会員数の遷移グラフ」と読み上げた。
     judgment: 満たしていない
   comment: null
+  tester: 小枝　繁子
+  date: 2019/01/21
 - id: 256
   test: 0007-01
   os: macOS 10.13.6
@@ -4901,6 +5164,8 @@
       \ ボタンを選択すると、選択したページに遷移した。"
     judgment: 満たしている
   comment: null
+  tester: 安倍 英樹
+  date: 2019/01/24
 - id: 257
   test: 0013-01
   os: Windows 7 Professional Edition, 32bit
@@ -4915,6 +5180,8 @@
       \ OCR文字認識ですので、それが正しい内容かはわかりません。"
     judgment: 満たしていない
   comment: "実は、スクリーンリーダーモードでも試してみました。\n その結果、リンクのない画像だからなのか、「WAIC-CODE-0013-01」というページタイトルしか読みませんでした！"
+  tester: ISHI-JUN
+  date: 2019/01/24
 - id: 258
   test: 0007-01
   os: Windows 10 Pro 1803
@@ -4931,6 +5198,8 @@
     actual: 入力したメールアドレスが URL エンコーディングされ、URL の末尾に付加されていた。
     judgment: 満たしている
   comment: null
+  tester: 中野利保
+  date: 2019/01/30
 - id: 259
   test: 0007-02
   os: Windows 10 Pro 1803
@@ -4947,6 +5216,8 @@
     actual: 選択したページに遷移した。
     judgment: 満たしている
   comment: null
+  tester: 中野利保
+  date: 2019/01/30
 - id: 260
   test: 0008-01
   os: Windows 10 Pro 1803
@@ -4959,6 +5230,8 @@
     actual: ボタン画像の代替テキスト “送信” が読み上げられた。
     judgment: 満たしている
   comment: null
+  tester: 中野利保
+  date: 2019/01/30
 - id: 261
   test: 0003-01
   os: Windows 10 Pro 1803
@@ -4977,6 +5250,8 @@
       注文内容の確認 入力内容のリセット'
     judgment: 満たしている
   comment: null
+  tester: 中野利保
+  date: 2019/02/01
 - id: 262
   test: 0003-02
   os: Windows 10 Pro 1803
@@ -4989,6 +5264,8 @@
     actual: '次の順序でフォーカスが移動した : テキストフィールド “検索” ボタン 携帯サイト サイトマップ'
     judgment: 満たしている
   comment: null
+  tester: 中野利保
+  date: 2019/02/01
 - id: 263
   test: 0003-03
   os: Windows 10 Pro 1803
@@ -5006,6 +5283,8 @@
     actual: リンク6に移動しなかった。
     judgment: 満たしている
   comment: null
+  tester: 中野利保
+  date: 2019/02/01
 - id: 264
   test: 0003-04
   os: Windows 10 Pro 1803
@@ -5019,6 +5298,8 @@
     actual: 次の順序でフォーカスが移動した。:リンク 1、リンク 3 、リンク 2、リンク 4
     judgment: 満たしている
   comment: null
+  tester: 中野利保
+  date: 2019/02/01
 - id: 265
   test: 0009-01
   os: Windows 10 Pro 1803
@@ -5031,6 +5312,8 @@
     actual: 画像の代替テキスト “ウェブアクセシビリティ基盤委員会” が読み上げられた
     judgment: 満たしている
   comment: null
+  tester: 中野利保
+  date: 2019/02/01
 - id: 266
   test: 0010-01
   os: Windows 10 Pro 1803
@@ -5043,6 +5326,8 @@
     actual: caption要素のテキスト “営業部連絡先一覧” 及び “マーケティング部連絡先一覧” が読み上げられた。
     judgment: 満たしている
   comment: null
+  tester: 中野利保
+  date: 2019/02/01
 - id: 267
   test: 0010-02
   os: Windows 10 Pro 1803
@@ -5055,6 +5340,8 @@
     actual: テーブルの開始位置及び終了位置を読み上げなかった。情報読み(Alt+Ctrl+G)コマンドで表内ということは確認できる。
     judgment: 満たしていない
   comment: null
+  tester: 中野利保
+  date: 2019/02/06
 - id: 268
   test: 0010-03
   os: Windows 10 Pro 1803
@@ -5067,6 +5354,8 @@
     actual: 表の情報 行数および列数を読み上げた。
     judgment: 満たしている
   comment: null
+  tester: 中野利保
+  date: 2019/02/06
 - id: 269
   test: 0010-04
   os: Windows 10 Pro 1803
@@ -5083,6 +5372,8 @@
     actual: 行見出しが読み上げられた。
     judgment: 満たしている
   comment: null
+  tester: 中野利保
+  date: 2019/02/06
 - id: 270
   test: 0010-05
   os: Windows 10 Pro 1803
@@ -5099,6 +5390,8 @@
     actual: 表の情報 列見出しを読み上げた。
     judgment: 満たしている
   comment: null
+  tester: 中野利保
+  date: 2019/02/08
 - id: 271
   test: 0010-06
   os: Windows 10 Pro 1803
@@ -5115,6 +5408,8 @@
     actual: データセルの内容"Gordon"のみ読み上げられた。
     judgment: 満たしている
   comment: null
+  tester: 中野利保
+  date: 2019/02/08
 - id: 272
   test: 0010-07
   os: Windows 10 Pro 1803
@@ -5128,9 +5423,9 @@
     judgment: 満たしている
   - expected: セル “Pittsburgh” から “City” に移動すると、“Last Name” は読み上げられない
     procedure: “Pittsburgh” から “City” に移動する方法がない。
-    actual: ''
-    judgment: ''
   comment: null
+  tester: 中野利保
+  date: 2019/02/08
 - id: 273
   test: 0010-08
   os: Windows 10 Pro 1803
@@ -5143,6 +5438,8 @@
     actual: セルの内容のみ読み上げられ、“大阪 男性” は読み上げられなかった。
     judgment: 満たしていない
   comment: セルの移動では読み上げられないが、情報読み(Ctrl+Alt+G)で"大阪" "男性"を読みあげた。
+  tester: 中野利保
+  date: 2019/02/08
 - id: 274
   test: 0001-01
   os: Chrome OS 71
@@ -5161,6 +5458,8 @@
       \ 検索 プラス スペースキーで有効にします。"
     judgment: 満たしている
   comment: null
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 275
   test: 0001-02
   os: Chrome OS 71
@@ -5176,6 +5475,8 @@
       \ 検索 プラス スペースキーで有効にします。"
     judgment: 満たしている
   comment: null
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 276
   test: 0001-03
   os: Chrome OS 71
@@ -5190,6 +5491,8 @@
     actual: "以下のように読み上げる。\n \n WAIC-CODE-0001-03 ウェブアクセシビリティ基盤委員会公開サイト"
     judgment: 満たしている
   comment: null
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 277
   test: 0002-01
   os: Chrome OS 71
@@ -5205,6 +5508,8 @@
       \ 検索 プラス スペースキーで有効にします。"
     judgment: 満たしている
   comment: null
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 278
   test: 0002-02
   os: Chrome OS 71
@@ -5220,6 +5525,8 @@
       \ スペースキーで有効にします。"
     judgment: 満たしている
   comment: null
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 279
   test: 0003-01
   os: Chrome OS 71
@@ -5251,6 +5558,8 @@
       \ \n 入力内容のリセット ボタン 検索プラススペースキーで有効にします。"
     judgment: 満たしていない
   comment: "ラジオボタンの選択肢はタブキーでは移動しない。ChromeVoxの挙動が適切で、期待される結果が不適切と思われる。\n \n ラジオボタンの選択肢はタブキーでは移動しない。ChromeVox稼働中であるか否かにかからわず、ラジオボタングループの中ではタブキーではなく上下矢印キーでフォーカスを切り替える。"
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 280
   test: 0003-02
   os: Chrome OS 71
@@ -5265,6 +5574,8 @@
       \ リンク リスト項目 検索プラス スペースキーで有効にします。"
     judgment: 満たしている
   comment: null
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 281
   test: 0003-03
   os: Chrome OS 71
@@ -5282,6 +5593,8 @@
       \ 7 リンク 検索プラススペースキーで有効にします。"
     judgment: 満たしている
   comment: null
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 282
   test: 0003-04
   os: Chrome OS 71
@@ -5297,6 +5610,8 @@
       \ 検索プラススペースキーで有効にします。"
     judgment: 満たしている
   comment: null
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 283
   test: 0004-01
   os: Chrome OS 71
@@ -5309,6 +5624,8 @@
     actual: 読み上げるための操作ができない
     judgment: 満たしていない
   comment: "参考：アクセシビリティ・サポーティッド（AS)情報：H37-2\n https://waic.jp/docs/as/info/201406/H37-2.html"
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 284
   test: 0004-02
   os: Chrome OS 71
@@ -5322,6 +5639,8 @@
     actual: 読み上げるための操作ができない
     judgment: 満たしていない
   comment: "参考：アクセシビリティ・サポーティッド（AS)情報：H37-2\n https://waic.jp/docs/as/info/201406/H37-2.html"
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 285
   test: 0004-03
   os: Chrome OS 71
@@ -5338,6 +5657,8 @@
       \ リンク 検索プラススペースキーで有効にします。"
     judgment: 満たしている
   comment: null
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 286
   test: 0004-04
   os: Chrome OS 71
@@ -5352,6 +5673,8 @@
       \ リンク先へ遷移する\n \n （周辺地図 遷移しない）"
     judgment: 満たしている
   comment: null
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 287
   test: 0004-05
   os: Chrome OS 71
@@ -5367,6 +5690,8 @@
       \ リンク 検索プラススペースキーで有効にします。"
     judgment: 満たしている
   comment: null
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 288
   test: 0005-01
   os: Chrome OS 71
@@ -5380,6 +5705,8 @@
     actual: "検索キー＋Aの後、Wを押下すると以下を読み上げる。\n \n ウェブアクセシビリティ基盤委員会"
     judgment: 満たしている
   comment: null
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 289
   test: 0006-01
   os: Chrome OS 71
@@ -5392,6 +5719,8 @@
     actual: "TABキーを押下すると、以下を読み上げる。\n \n ウェブアクセシビリティ基盤委員会 アクセス済み リンク 検索プラススペースキーで有効にします。"
     judgment: 満たしている
   comment: null
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 290
   test: 0006-02
   os: Chrome OS 71
@@ -5404,6 +5733,8 @@
     actual: "TABキーを押下すると、以下を読み上げる。\n \n ウェブアクセシビリティ基盤委員会 アクセス済み リンク 検索プラススペースキーで有効にします。"
     judgment: 満たしている
   comment: null
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 291
   test: 0006-03
   os: Chrome OS 71
@@ -5418,6 +5749,8 @@
     actual: "TABキーを押下すると、以下を読み上げる。\n \n Home アクセス済み リンク ウェブアクセシビリティ基盤委員会公式サイト 検索プラススペースキーで有効にします。"
     judgment: 満たしている
   comment: null
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 292
   test: 0007-01
   os: Chrome OS 71
@@ -5432,6 +5765,8 @@
       \ URL エンコーディングされ、URL の末尾に付加されている"
     judgment: 満たしている
   comment: null
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 293
   test: 0007-02
   os: Chrome OS 71
@@ -5447,6 +5782,8 @@
       \ ERR_NAME_NOT_RESOLVED\n 選択肢 ブログ→同様にNG\n 選択肢 チュートリアル→同様にNG\n 選択肢 検索→同様にNG"
     judgment: 満たしている
   comment: ChromeVoxを起動しない状況での挙動と同じ→期待されている結果を満たしている、とみなした
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 294
   test: 0008-01
   os: Chrome OS 71
@@ -5459,6 +5796,8 @@
     actual: "TABキーを押下すると、以下を読み上げる。\n \n 送信 ボタン フォーム 検索プラススペースキーで有効にします。"
     judgment: 満たしている
   comment: null
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 295
   test: 0009-01
   os: Chrome OS 71
@@ -5471,6 +5810,8 @@
     actual: "検索キー＋下矢印キーを押下すると、以下を読み上げる。\n \n ウェブアクセシビリティ基盤委員会 画像"
     judgment: 満たしている
   comment: null
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 296
   test: 0010-01
   os: Chrome OS 71
@@ -5484,6 +5825,8 @@
       \ \n マーケティング部連絡先一覧 表「マーケティング部連絡先一覧」（5x5）検索プラスcontrolプラスAltキーを押しながら矢印キーを押して、セル間を移動します。"
     judgment: 満たしている
   comment: null
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 297
   test: 0010-02
   os: Chrome OS 71
@@ -5499,6 +5842,8 @@
       \ ・下端の行のセルで検索プラスcontrolプラスAltキーを押しながら下矢印キーを押すと 下にセルはありません と読みあげる。"
     judgment: 満たしている
   comment: null
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 298
   test: 0010-03
   os: Chrome OS 71
@@ -5512,6 +5857,8 @@
       \ \n マーケティング部連絡先一覧 表「マーケティング部連絡先一覧」（5x5）検索プラスcontrolプラスAltキーを押しながら矢印キーを押して、セル間を移動します。"
     judgment: 満たしている
   comment: null
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 299
   test: 0010-04
   os: Chrome OS 71
@@ -5531,6 +5878,8 @@
       \ 行5列5 ステファニー・ウェン 検索プラススペースキーで有効にします。"
     judgment: 満たしている
   comment: null
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 300
   test: 0010-05
   os: Chrome OS 71
@@ -5549,6 +5898,8 @@
       \ \n Twitter リンク 行4列5 SNS 検索プラススペースキーで有効にします。"
     judgment: 満たしている
   comment: null
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 301
   test: 0010-06
   os: Chrome OS 71
@@ -5564,6 +5915,8 @@
       \ へ検索プラスcontrolプラスAltキーを押しながら左矢印キーを押して移動すると、以下を読み上げる\n \n Gorden 行4列2"
     judgment: 満たしている
   comment: null
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 302
   test: 0010-07
   os: Chrome OS 71
@@ -5580,6 +5933,8 @@
       \ から “City” へ検索プラスcontrolプラスAltキーを押しながら上矢印キーを押して移動すると、以下を読み上げる\n \n City 行1列4"
     judgment: 満たしている
   comment: null
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 303
   test: 0010-08
   os: Chrome OS 71
@@ -5593,6 +5948,8 @@
       \ 行3列3"
     judgment: 満たしていない
   comment: null
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 304
   test: 0011-01
   os: Chrome OS 71
@@ -5611,6 +5968,8 @@
       \ 世界で初めてスイカが発見されたのは三点リーダー\n 人間と果物のかかわり 見出し2\n 古くから人間は三点リーダー"
     judgment: 満たしている
   comment: null
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 305
   test: 0011-02
   os: Chrome OS 71
@@ -5630,6 +5989,8 @@
       \ 世界で初めてスイカが発見されたのは三点リーダー\n 人間と果物のかかわり 見出し1\n 古くから人間は三点リーダー"
     judgment: 満たしていない
   comment: null
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 306
   test: 0011-03
   os: Chrome OS 71
@@ -5644,6 +6005,8 @@
       \ 実は果物ではないもの 見出し4\n スイカが野菜である理由 見出し5\n スイカの発見 見出し6\n 人間と果物のかかわり 見出し2"
     judgment: 満たしている
   comment: null
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 307
   test: 0012-01
   os: Chrome OS 71
@@ -5661,6 +6024,8 @@
       \ テキスト編集"
     judgment: 満たしている
   comment: null
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 308
   test: 0012-02
   os: Chrome OS 71
@@ -5679,6 +6044,8 @@
       \ 田中アパート チェックボックス オフ 検索プラススペースキーで切り替えます。\n 佐藤マンション チェックボックス オフ 検索プラススペースキーで切り替えます。"
     judgment: 満たしている
   comment: null
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 309
   test: 0012-03
   os: Chrome OS 71
@@ -5698,6 +6065,8 @@
       \ 検索プラススペースキーで切り替えます。"
     judgment: 満たしている
   comment: null
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 310
   test: 0012-04
   os: Chrome OS 71
@@ -5711,6 +6080,8 @@
       \ 折りたたみ表示中 検索プラススペースキーで有効にします。"
     judgment: 満たしている
   comment: null
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 311
   test: 0012-05
   os: Chrome OS 71
@@ -5724,6 +6095,8 @@
     actual: "TABキーを押下していくと、以下の順に読み上げる。\n \n 市外局番 テキスト編集\n 市内局番 テキスト編集\n 加入者番号 テキスト編集"
     judgment: 満たしている
   comment: null
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 312
   test: 0013-01
   os: Chrome OS 71
@@ -5738,6 +6111,8 @@
       \ 画像"
     judgment: 満たしていない
   comment: null
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 313
   test: 0014-01
   os: Chrome OS 71
@@ -5756,6 +6131,8 @@
       \ (li) に移動する機能は提供されていない"
     judgment: 満たしている
   comment: ”リストに2件の項目”と読み上げている
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 314
   test: 0014-02
   os: Chrome OS 71
@@ -5773,6 +6150,8 @@
       \ ※次のリスト項目 (li) に移動する機能は提供されていない"
     judgment: 満たしている
   comment: ”箇条書き”、”リストに3件の項目”と読み上げている
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 315
   test: 0014-03
   os: Chrome OS 71
@@ -5793,6 +6172,8 @@
       \ 似ている言葉として閃光がある。\n 詳細については文末の用語集をご参照ください。"
     judgment: 満たしていない
   comment: null
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 316
   test: 0015-01
   os: Chrome OS 71
@@ -5809,6 +6190,8 @@
       \ さらに、亀は長生きする動物です。"
     judgment: 満たしていない
   comment: null
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 317
   test: 0015-02
   os: Chrome OS 71
@@ -5825,6 +6208,8 @@
       \ さらに、亀は長生きする動物です。"
     judgment: 満たしていない
   comment: null
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 318
   test: 0015-03
   os: Chrome OS 71
@@ -5841,6 +6226,8 @@
       \ 夏目漱石はこのほかにも、「坊っちゃん」や「三四郎」など多くの作品を著しています。"
     judgment: 満たしていない
   comment: null
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 319
   test: 0015-04
   os: Chrome OS 71
@@ -5856,6 +6243,8 @@
       \ 私たちは世の中で決して賢明なことができないでしょう。」と。この言葉は私の中で\n とても強く印象に残っています。"
     judgment: 満たしていない
   comment: null
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 320
   test: 0015-05
   os: Chrome OS 71
@@ -5869,6 +6258,8 @@
     actual: "検索キー＋下矢印キーを押下していくと、以下の順に読み上げる。\n \n 亜鉛イオンは Zn\n 2+"
     judgment: 満たしていない
   comment: null
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 321
   test: 0015-06
   os: Chrome OS 71
@@ -5882,6 +6273,8 @@
     actual: "検索キー＋下矢印キーを押下していくと、以下の順に読み上げる。\n \n 水の化学式は H\n 2\n O です。"
     judgment: 満たしていない
   comment: null
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 322
   test: 0016-01
   os: Chrome OS 71
@@ -5896,6 +6289,8 @@
       \ →選択した新しい言語の音声が再生される。完了したら、Ctrl+W キーを押しChromeVoxのオブション画面を閉じる。"
     judgment: 満たしている
   comment: null
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 323
   test: 0017-01
   os: Chrome OS 71
@@ -5913,6 +6308,8 @@
   comment: 「このページは承認されていないソースからのスクリプトを読み込もうとしています」とアドレスバーにアラートが示される。この時点で iframe 要素の
     title 属性値も代替コンテンツを知るための何らかの手段も不明である。そのためAlertダイアログで”安全でないスクリプトを読み込む”が、iframe 要素の
     title 属性値も代替コンテンツを知るための何らかの手段も不明のままである。
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 324
   test: 0017-02
   os: Chrome OS 71
@@ -5926,6 +6323,8 @@
       \ \n インラインフレームの中で検索キー＋左矢印キーを押すと、インラインフレームの中の最初に移動する。次に検索キー＋上矢印キーを押すとインラインフレームの前の要素にフォーカスが移動する。"
     judgment: 満たしている
   comment: null
+  tester: 四方田正夫
+  date: 2018/01/13
 - id: 325
   test: 0018-01
   os: Chrome OS 71
@@ -5947,6 +6346,8 @@
       \ 正解はウェブサイトをご確認ください。"
     judgment: 満たしている
   comment: null
+  tester: 四方田正夫
+  date: 2019/01/14
 - id: 326
   test: 0018-02
   os: Chrome OS 71
@@ -5970,6 +6371,8 @@
       \ 新しい行 好きな日本の作家は？\n  森鴎外、チェックボックス オフ 検索プラススペースキーで切り替えます。\n （＊2以下省略）"
     judgment: 満たしている
   comment: null
+  tester: 四方田正夫
+  date: 2019/01/14
 - id: 327
   test: 0018-03
   os: Chrome OS 71
@@ -5986,6 +6389,8 @@
       \ 記入が済みましたら「お支払い情報の選択」へお進みください。フォームの外に出ました。"
     judgment: 満たしている
   comment: null
+  tester: 四方田正夫
+  date: 2019/01/14
 - id: 328
   test: 0019-01
   os: Chrome OS 71
@@ -6000,6 +6405,8 @@
       \ リンク。リスト項目 リストに1件の項目"
     judgment: 満たしている
   comment: null
+  tester: 四方田正夫
+  date: 2019/01/14
 - id: 329
   test: 0019-02
   os: Chrome OS 71
@@ -6014,6 +6421,8 @@
       \ X 8341-3が改正されました。[続きを読む三点リーダー] リンク アクセス済み"
     judgment: 満たしている
   comment: null
+  tester: 四方田正夫
+  date: 2019/01/14
 - id: 330
   test: 0019-03
   os: Chrome OS 71
@@ -6035,6 +6444,8 @@
       \ 7,400円 リンク 行2列6 E社 検索プラススペースキーで有効にします。\n 右にセルはありません。"
     judgment: 満たしている
   comment: null
+  tester: 四方田正夫
+  date: 2019/01/14
 - id: 331
   test: 0019-04
   os: Chrome OS 71
@@ -6052,6 +6463,8 @@
       \ リンク リスト項目\n 箇条書き ご予約 リンク リスト項目"
     judgment: 満たしていない
   comment: しかし検索キー＋Shiftキー＋hキーで前の見出しにフォーカスを戻し読み上げることはできる。
+  tester: 四方田正夫
+  date: 2019/01/14
 - id: 332
   test: 0019-05
   os: Chrome OS 71
@@ -6068,6 +6481,8 @@
       \ (PDF) リンク リスト項目\n (RTF) リンク リスト項目"
     judgment: 満たしていない
   comment: null
+  tester: 四方田正夫
+  date: 2019/01/14
 - id: 333
   test: 0022-01
   os: Chrome OS 71
@@ -6086,6 +6501,8 @@
       \ 9分の9\n （下矢印キーを押しても反応しない）"
     judgment: 満たしていない
   comment: null
+  tester: 四方田正夫
+  date: 2019/01/14
 - id: 334
   test: 0024-01
   os: Windows 10 Pro 2004
@@ -6100,7 +6517,7 @@
     judgment: 満たしている
   comment: null
   tester: 諸熊
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 335
   test: 0024-01
   os: Windows 10 Pro 2004
@@ -6115,7 +6532,7 @@
     judgment: 満たしている
   comment: null
   tester: 諸熊
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 336
   test: 0024-01
   os: Windows 10 Pro 2004
@@ -6130,7 +6547,7 @@
     judgment: 満たしている
   comment: null
   tester: 諸熊
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 337
   test: 0014-03
   os: iOS 14.2
@@ -6163,7 +6580,7 @@
     judgment: ○
   comment: null
   tester: 桝田 草一
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 338
   test: 0018-01
   os: iOS 14.2
@@ -6202,7 +6619,7 @@
     judgment: ○
   comment: null
   tester: 桝田 草一
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 339
   test: 0018-02
   os: iOS 14.2
@@ -6234,7 +6651,7 @@
     judgment: ×
   comment: null
   tester: 桝田 草一
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 340
   test: 0024-01
   os: Windows 10 Pro 2004
@@ -6247,7 +6664,7 @@
     judgment: ○
   comment: null
   tester: 佐々木 将
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 341
   test: 0024-02
   os: Windows 10 Pro 2004
@@ -6260,7 +6677,7 @@
     judgment: ○
   comment: null
   tester: 佐々木 将
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 342
   test: 0025-01
   os: Windows 10 Pro 2004
@@ -6273,7 +6690,7 @@
     judgment: ×
   comment: null
   tester: 佐々木 将
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 343
   test: 0026-01
   os: Windows 10 Pro 2004
@@ -6286,7 +6703,7 @@
     judgment: ×
   comment: null
   tester: 佐々木 将
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 344
   test: 0026-02
   os: Windows 10 Pro 2004
@@ -6299,7 +6716,7 @@
     judgment: ×
   comment: null
   tester: 佐々木 将
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 345
   test: 0026-03
   os: Windows 10 Pro 2004
@@ -6312,10 +6729,10 @@
     judgment: ×
   comment: null
   tester: 佐々木 将
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 346
   test: 0026-01
-  os: ''
+  os: Windows
   user_agent: Firefox 84.0
   assistive_tech: NVDA 2020.3jp
   assistive_tech_config: null
@@ -6325,7 +6742,7 @@
     judgment: ○
   comment: null
   tester: 小出淳子
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 347
   test: 0024-02
   os: Windows 10 Pro 2004
@@ -6341,7 +6758,7 @@
     judgment: ○
   comment: null
   tester: 諸熊
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 348
   test: 0024-02
   os: Windows 10 Pro 2004
@@ -6357,7 +6774,7 @@
     judgment: ○
   comment: null
   tester: 諸熊
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 349
   test: 0024-02
   os: Windows 10 Pro 2004
@@ -6373,7 +6790,7 @@
     judgment: ○
   comment: null
   tester: 諸熊
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 350
   test: 0025-01
   os: Windows 10 Pro 2004
@@ -6392,7 +6809,7 @@
     judgment: ×
   comment: null
   tester: 諸熊
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 351
   test: 0025-01
   os: Windows 10 Pro 2004
@@ -6411,7 +6828,7 @@
     judgment: ×
   comment: null
   tester: 諸熊
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 352
   test: 0025-01
   os: Windows 10 Pro 2004
@@ -6430,7 +6847,7 @@
     judgment: ×
   comment: null
   tester: 諸熊
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 353
   test: 0026-01
   os: Windows 10 Pro 2004
@@ -6446,7 +6863,7 @@
     judgment: ○
   comment: null
   tester: 諸熊
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 354
   test: 0026-01
   os: Windows 10 Pro 2004
@@ -6462,7 +6879,7 @@
     judgment: ○
   comment: null
   tester: 諸熊
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 355
   test: 0026-01
   os: Windows 10 Pro 2004
@@ -6478,7 +6895,7 @@
     judgment: ○
   comment: null
   tester: 諸熊
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 356
   test: 0026-02
   os: Windows 10 Pro 2004
@@ -6494,7 +6911,7 @@
     judgment: ○
   comment: null
   tester: 諸熊
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 357
   test: 0026-02
   os: Windows 10 Pro 2004
@@ -6510,7 +6927,7 @@
     judgment: ○
   comment: null
   tester: 諸熊
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 358
   test: 0026-02
   os: Windows 10 Pro 2004
@@ -6526,7 +6943,7 @@
     judgment: ○
   comment: null
   tester: 諸熊
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 359
   test: 0026-03
   os: Windows 10 Pro 2004
@@ -6545,7 +6962,7 @@
     judgment: ○
   comment: null
   tester: 諸熊
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 360
   test: 0026-03
   os: Windows 10 Pro 2004
@@ -6564,7 +6981,7 @@
     judgment: ○
   comment: null
   tester: 諸熊
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 361
   test: 0026-03
   os: Windows 10 Pro 2004
@@ -6583,7 +7000,7 @@
     judgment: ○
   comment: null
   tester: 諸熊
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 362
   test: 0019-01
   os: Windows 10 Pro 2004
@@ -6596,7 +7013,7 @@
     judgment: ×
   comment: null
   tester: 諸熊
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 363
   test: 0019-01
   os: Windows 10 Pro 2004
@@ -6609,7 +7026,7 @@
     judgment: ×
   comment: null
   tester: 諸熊
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 364
   test: 0019-01
   os: Windows 10 Pro 2004
@@ -6622,7 +7039,7 @@
     judgment: ×
   comment: null
   tester: 諸熊
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 365
   test: 0019-02
   os: Windows 10 Pro 2004
@@ -6635,7 +7052,7 @@
     judgment: ×
   comment: null
   tester: 諸熊
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 366
   test: 0019-02
   os: Windows 10 Pro 2004
@@ -6648,7 +7065,7 @@
     judgment: ×
   comment: null
   tester: 諸熊
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 367
   test: 0019-02
   os: Windows 10 Pro 2004
@@ -6661,7 +7078,7 @@
     judgment: ×
   comment: null
   tester: 諸熊
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 368
   test: 0024-01
   os: iOS 14.2
@@ -6674,7 +7091,7 @@
     judgment: ○
   comment: null
   tester: 岡上洋子
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 369
   test: 0024-02
   os: iOS 14.2
@@ -6687,7 +7104,7 @@
     judgment: ○
   comment: null
   tester: 岡上洋子
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 370
   test: 0025-01
   os: iOS 14.2
@@ -6700,7 +7117,7 @@
     judgment: ×
   comment: null
   tester: 岡上洋子
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 371
   test: 0026-01
   os: iOS 14.2
@@ -6716,7 +7133,7 @@
     judgment: ○
   comment: null
   tester: 岡上洋子
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 372
   test: 0026-02
   os: iOS 14.2
@@ -6732,7 +7149,7 @@
     judgment: ○
   comment: null
   tester: 岡上洋子
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 373
   test: 0026-03
   os: iOS 14.2
@@ -6748,7 +7165,7 @@
     judgment: ○
   comment: null
   tester: 岡上洋子
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 374
   test: 0024-01
   os: Windows 10 Pro 20H2
@@ -6764,7 +7181,7 @@
     judgment: ×
   comment: null
   tester: 四方田正夫
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 375
   test: 0024-02
   os: Windows 10 Pro 20H2
@@ -6777,7 +7194,7 @@
     judgment: ×
   comment: null
   tester: 四方田正夫
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 376
   test: 0025-01
   os: Windows 10 Pro 20H2
@@ -6800,7 +7217,7 @@
     judgment: ×
   comment: null
   tester: 四方田正夫
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 377
   test: 0026-01
   os: Windows 10 Home 20H2
@@ -6830,7 +7247,7 @@
     judgment: ○
   comment: null
   tester: 西本卓也
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 378
   test: 0026-01
   os: Windows 10 Home 20H2
@@ -6860,7 +7277,7 @@
     judgment: ○
   comment: null
   tester: 西本卓也
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 379
   test: 0026-01
   os: Windows 10 Home 20H2
@@ -6890,7 +7307,7 @@
     judgment: ○
   comment: null
   tester: 西本卓也
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 380
   test: 0026-01
   os: Windows 10 Home 20H2
@@ -6920,7 +7337,7 @@
     judgment: ○
   comment: null
   tester: 西本卓也
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 381
   test: 0024-01
   os: iOS 14.2
@@ -6938,7 +7355,7 @@
     judgment: ○
   comment: null
   tester: SAWADA STANDARD DESIGN
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 382
   test: 0024-02
   os: iOS 14.2
@@ -6951,7 +7368,7 @@
     judgment: ○
   comment: null
   tester: SAWADA STANDARD DESIGN
-  date: '2020-12-17'
+  date: 2020/12/17
 - id: 383
   test: 0025-01
   os: iOS 14.2
@@ -6970,4 +7387,4 @@
     judgment: ×
   comment: null
   tester: SAWADA STANDARD DESIGN
-  date: '2020-12-17'
+  date: 2020/12/17
