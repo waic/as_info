@@ -7170,7 +7170,6 @@
     actual: 見出しにジャンプできた。
     judgment: 満たしている
   comment:
-  reviewer_comment: '[WAIC注] テスト手順に問題があり、適切に判定できていません。'
   tester: 中野利保
   date: 2019/02/20
 - id: 387
