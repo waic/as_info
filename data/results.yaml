@@ -5031,7 +5031,7 @@
     judgment: 満たしている
   comment:
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 275
   test: 0001-02
   os: Chrome OS 71
@@ -5050,7 +5050,7 @@
     judgment: 満たしている
   comment:
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 276
   test: 0001-03
   os: Chrome OS 71
@@ -5068,7 +5068,7 @@
     judgment: 満たしている
   comment:
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 277
   test: 0002-01
   os: Chrome OS 71
@@ -5087,7 +5087,7 @@
     judgment: 満たしている
   comment:
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 278
   test: 0002-02
   os: Chrome OS 71
@@ -5106,7 +5106,7 @@
     judgment: 満たしている
   comment:
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 279
   test: 0003-01
   os: Chrome OS 71
@@ -5141,7 +5141,7 @@
     judgment: 満たしていない
   comment: "ラジオボタンの選択肢はタブキーでは移動しない。ChromeVoxの挙動が適切で、期待される結果が不適切と思われる。\n \n ラジオボタンの選択肢はタブキーでは移動しない。ChromeVox稼働中であるか否かにかからわず、ラジオボタングループの中ではタブキーではなく上下矢印キーでフォーカスを切り替える。"
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 280
   test: 0003-02
   os: Chrome OS 71
@@ -5159,7 +5159,7 @@
     judgment: 満たしている
   comment:
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 281
   test: 0003-03
   os: Chrome OS 71
@@ -5180,7 +5180,7 @@
     judgment: 満たしている
   comment:
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 282
   test: 0003-04
   os: Chrome OS 71
@@ -5199,7 +5199,7 @@
     judgment: 満たしている
   comment:
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 283
   test: 0004-01
   os: Chrome OS 71
@@ -5217,7 +5217,7 @@
     参考：アクセシビリティ・サポーティッド（AS)情報：H37-2
      https://waic.jp/docs/as/info/201406/H37-2.html
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 284
   test: 0004-02
   os: Chrome OS 71
@@ -5236,7 +5236,7 @@
     参考：アクセシビリティ・サポーティッド（AS)情報：H37-2
      https://waic.jp/docs/as/info/201406/H37-2.html
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 285
   test: 0004-03
   os: Chrome OS 71
@@ -5256,7 +5256,7 @@
     judgment: 満たしている
   comment:
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 286
   test: 0004-04
   os: Chrome OS 71
@@ -5274,7 +5274,7 @@
     judgment: 満たしている
   comment:
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 287
   test: 0004-05
   os: Chrome OS 71
@@ -5293,7 +5293,7 @@
     judgment: 満たしている
   comment:
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 288
   test: 0005-01
   os: Chrome OS 71
@@ -5310,7 +5310,7 @@
     judgment: 満たしている
   comment:
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 289
   test: 0006-01
   os: Chrome OS 71
@@ -5326,7 +5326,7 @@
     judgment: 満たしている
   comment:
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 290
   test: 0006-02
   os: Chrome OS 71
@@ -5342,7 +5342,7 @@
     judgment: 満たしている
   comment:
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 291
   test: 0006-03
   os: Chrome OS 71
@@ -5360,7 +5360,7 @@
     judgment: 満たしている
   comment:
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 292
   test: 0007-01
   os: Chrome OS 71
@@ -5378,7 +5378,7 @@
     judgment: 満たしている
   comment:
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 293
   test: 0007-02
   os: Chrome OS 71
@@ -5397,7 +5397,7 @@
     judgment: 満たしている
   comment: ChromeVoxを起動しない状況での挙動と同じ→期待されている結果を満たしている、とみなした
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 294
   test: 0008-01
   os: Chrome OS 71
@@ -5413,7 +5413,7 @@
     judgment: 満たしている
   comment:
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 295
   test: 0009-01
   os: Chrome OS 71
@@ -5429,7 +5429,7 @@
     judgment: 満たしている
   comment:
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 296
   test: 0010-01
   os: Chrome OS 71
@@ -5446,7 +5446,7 @@
     judgment: 満たしている
   comment:
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 297
   test: 0010-02
   os: Chrome OS 71
@@ -5467,7 +5467,7 @@
     judgment: 満たしている
   comment:
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 298
   test: 0010-03
   os: Chrome OS 71
@@ -5484,7 +5484,7 @@
     judgment: 満たしている
   comment:
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 299
   test: 0010-04
   os: Chrome OS 71
@@ -5507,7 +5507,7 @@
     judgment: 満たしている
   comment:
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 300
   test: 0010-05
   os: Chrome OS 71
@@ -5529,7 +5529,7 @@
     judgment: 満たしている
   comment:
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 301
   test: 0010-06
   os: Chrome OS 71
@@ -5548,7 +5548,7 @@
     judgment: 満たしている
   comment:
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 302
   test: 0010-07
   os: Chrome OS 71
@@ -5568,7 +5568,7 @@
     judgment: 満たしている
   comment:
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 303
   test: 0010-08
   os: Chrome OS 71
@@ -5585,7 +5585,7 @@
     judgment: 満たしていない
   comment:
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 304
   test: 0011-01
   os: Chrome OS 71
@@ -5607,7 +5607,7 @@
     judgment: 満たしている
   comment:
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 305
   test: 0011-02
   os: Chrome OS 71
@@ -5630,7 +5630,7 @@
     judgment: 満たしていない
   comment:
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 306
   test: 0011-03
   os: Chrome OS 71
@@ -5648,7 +5648,7 @@
     judgment: 満たしている
   comment:
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 307
   test: 0012-01
   os: Chrome OS 71
@@ -5669,7 +5669,7 @@
     judgment: 満たしている
   comment:
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 308
   test: 0012-02
   os: Chrome OS 71
@@ -5691,7 +5691,7 @@
     judgment: 満たしている
   comment:
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 309
   test: 0012-03
   os: Chrome OS 71
@@ -5714,7 +5714,7 @@
     judgment: 満たしている
   comment:
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 310
   test: 0012-04
   os: Chrome OS 71
@@ -5731,7 +5731,7 @@
     judgment: 満たしている
   comment:
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 311
   test: 0012-05
   os: Chrome OS 71
@@ -5748,7 +5748,7 @@
     judgment: 満たしている
   comment:
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 312
   test: 0013-01
   os: Chrome OS 71
@@ -5766,7 +5766,7 @@
     judgment: 満たしていない
   comment:
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 313
   test: 0014-01
   os: Chrome OS 71
@@ -5788,7 +5788,7 @@
     judgment: 満たしている
   comment: ”リストに2件の項目”と読み上げている
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 314
   test: 0014-02
   os: Chrome OS 71
@@ -5809,7 +5809,7 @@
     judgment: 満たしている
   comment: ”箇条書き”、”リストに3件の項目”と読み上げている
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 315
   test: 0014-03
   os: Chrome OS 71
@@ -5833,7 +5833,7 @@
     judgment: 満たしていない
   comment:
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 316
   test: 0015-01
   os: Chrome OS 71
@@ -5853,7 +5853,7 @@
     judgment: 満たしていない
   comment:
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 317
   test: 0015-02
   os: Chrome OS 71
@@ -5873,7 +5873,7 @@
     judgment: 満たしていない
   comment:
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 318
   test: 0015-03
   os: Chrome OS 71
@@ -5893,7 +5893,7 @@
     judgment: 満たしていない
   comment:
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 319
   test: 0015-04
   os: Chrome OS 71
@@ -5912,7 +5912,7 @@
     judgment: 満たしていない
   comment:
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 320
   test: 0015-05
   os: Chrome OS 71
@@ -5929,7 +5929,7 @@
     judgment: 満たしていない
   comment:
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 321
   test: 0015-06
   os: Chrome OS 71
@@ -5946,7 +5946,7 @@
     judgment: 満たしていない
   comment:
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 322
   test: 0016-01
   os: Chrome OS 71
@@ -5964,7 +5964,7 @@
     judgment: 満たしている
   comment:
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 323
   test: 0017-01
   os: Chrome OS 71
@@ -5985,7 +5985,7 @@
     title 属性値も代替コンテンツを知るための何らかの手段も不明である。そのためAlertダイアログで”安全でないスクリプトを読み込む”が、iframe 要素の
     title 属性値も代替コンテンツを知るための何らかの手段も不明のままである。
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 324
   test: 0017-02
   os: Chrome OS 71
@@ -6002,7 +6002,7 @@
     judgment: 満たしている
   comment:
   tester: 四方田正夫
-  date: 2018/01/13
+  date: 2019/01/13
 - id: 325
   test: 0018-01
   os: Chrome OS 71
@@ -6302,6 +6302,7 @@
       坊っちゃんの作者は？, 森鴎外, ラジオボタン, unchecked, 3の3
     judgment: 満たしている
   comment:
+  reviewer_comment: '[WAIC注] テスト手順に問題があり、適切に判定できていません。'
   tester: 桝田 草一
   date: 2020/12/17
 - id: 339
@@ -6330,6 +6331,7 @@
       チャールズ・ディケンズ, チェックボックス, unchecked, Double tap to toggle settings
     judgment: 満たしていない
   comment:
+  reviewer_comment: '[WAIC注] テスト手順に問題があり、適切に判定できていません。'
   tester: 桝田 草一
   date: 2020/12/17
 - id: 340
@@ -6343,6 +6345,7 @@
     actual: タブキーで操作するとナビゲーションランドマーク、ホームリンクと順に読み上げられた
     judgment: 満たしている
   comment:
+  reviewer_comment: '[WAIC注] テスト手順に問題があり、適切に判定できていません。'
   tester: 佐々木 将
   date: 2020/12/17
 - id: 341
@@ -6356,6 +6359,7 @@
     actual: タブキーで操作するとナビゲーションランドマーク、組織リンクと順に読み上げられ、次のNAV要素のリンクが順に読み上げられる
     judgment: 満たしている
   comment:
+  reviewer_comment: '[WAIC注] テスト手順に問題があり、適切に判定できていません。'
   tester: 佐々木 将
   date: 2020/12/17
 - id: 342
@@ -6421,6 +6425,7 @@
     actual: 読み上げが開始され、mainランドマークの箇所がわかるように読み上げられる
     judgment: 満たしている
   comment:
+  reviewer_comment: '[WAIC注] テスト手順に問題があり、適切に判定できていません。'
   tester: 小出淳子
   date: 2020/12/17
 - id: 347
@@ -6488,6 +6493,7 @@
     actual: ユニークな要素であることは読み上げなかった
     judgment: 満たしていない
   comment:
+  reviewer_comment: '[WAIC注] テスト手順に問題があり、適切に判定できていません。'
   tester: 諸熊
   date: 2020/12/17
 - id: 351
@@ -6507,6 +6513,7 @@
     actual: ユニークな要素であることは読み上げなかった
     judgment: 満たしていない
   comment:
+  reviewer_comment: '[WAIC注] テスト手順に問題があり、適切に判定できていません。'
   tester: 諸熊
   date: 2020/12/17
 - id: 352
@@ -6526,6 +6533,7 @@
     actual: ユニークな要素であることは読み上げなかった
     judgment: 満たしていない
   comment:
+  reviewer_comment: '[WAIC注] テスト手順に問題があり、適切に判定できていません。'
   tester: 諸熊
   date: 2020/12/17
 - id: 353
@@ -6779,6 +6787,7 @@
     actual: 「ホーム」のリンクで「ホーム　リンク　ナビゲーション　ランドマーク」と読み上げられた。
     judgment: 満たしている
   comment:
+  reviewer_comment: '[WAIC注] テスト手順に問題があり、適切に判定できていません。'
   tester: 岡上洋子
   date: 2020/12/17
 - id: 369
@@ -6821,6 +6830,7 @@
     actual: 上下スワイプで直下の段落へ移動し、段落内テキストを読み上げ後「メイン　ランドマーク」と読み上げる。
     judgment: 満たしている
   comment:
+  reviewer_comment: '[WAIC注] テスト手順に問題があり、適切に判定できていません。'
   tester: 岡上洋子
   date: 2020/12/17
 - id: 372
@@ -6837,6 +6847,7 @@
     actual: 上下スワイプで直下の段落へ移動し、段落内テキストを読み上げ後「メイン　ランドマーク」と読み上げる。
     judgment: 満たしている
   comment:
+  reviewer_comment: '[WAIC注] テスト手順に問題があり、適切に判定できていません。'
   tester: 岡上洋子
   date: 2020/12/17
 - id: 373
@@ -6853,6 +6864,7 @@
     actual: 上下スワイプで直下の段落へ移動し、段落内テキストを読み上げ後「メイン　ランドマーク」と読み上げる。
     judgment: 満たしている
   comment:
+  reviewer_comment: '[WAIC注] テスト手順に問題があり、適切に判定できていません。'
   tester: 岡上洋子
   date: 2020/12/17
 - id: 374
@@ -6882,6 +6894,7 @@
     actual: 1)最初のナビゲーションランドマークの先頭から1行戻ると先頭行の見出しであることがわかり、最初のナビゲーションランドマークの先頭は2行目であることがわかる。最初のナビゲーションランドマークの最後尾がどこか、はわからない。２つめのナビゲーションランドマークの先頭から1行戻ると5行目のリンクでないテキストであることがわかり、2番目のナビゲーションランドマークの先頭は6行目のリンクテキストであることがわかる。2番目のナビゲーションランドマークの最後尾がどこか、はわからない。
     judgment: 満たしていない
   comment:
+  reviewer_comment: '[WAIC注] テスト手順に問題があり、適切に判定できていません。'
   tester: 四方田正夫
   date: 2020/12/17
 - id: 376
@@ -7108,8 +7121,8 @@
     procedure: H'キーで次の見出し、Shift+'H'キーで前の見出しに移動した。
     actual: 見出しにジャンプできた。
     judgment: 満たしている
-  - judgment: 満たしている
   comment:
+  reviewer_comment: '[WAIC注] テスト手順に問題があり、適切に判定できていません。'
   tester: 中野利保
   date: 2019/02/20
 - id: 387
