@@ -39,7 +39,6 @@ const Tech = ({ query }) => {
         second={`${true_id}: ${tech.title}`}
       />
       <ul>
-        <li>公開日：{metadata.pub_date}</li>
         <li>作成者：{metadata.author}</li>
         <li><a href="../">戻る</a></li>
       </ul>
