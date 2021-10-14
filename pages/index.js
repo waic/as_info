@@ -10,11 +10,12 @@ export default () =>
 <>
   <NextSeo config={Object.assign(SEO, {title:'ホーム'})}/>
   <Logo/>
-  <h1>アクセシビリティ サポーテッド（AS）情報：{metadata.edition}</h1>
+  <h1>アクセシビリティ サポーテッド（AS）情報</h1>
   <ul>
     <li>公開日：{metadata.pub_date}</li>
+    <li>更新日：{metadata.mod_date}</li>
     <li>作成者：{metadata.author}</li>
-    <li>前のバージョン：<a href="https://waic.jp/docs/as/info/201406/index.html">2014年6月版（2014年7月4日公開）</a></li>
+    <li><a href=" https://waic.jp/guideline/as/#past_results">過去のアクセシビリティ サポーテッド検証結果</a></li>
   </ul>
   <h2>検証結果を含む達成基準</h2>
   <ul>

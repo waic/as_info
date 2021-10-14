@@ -7,7 +7,6 @@ import tests from '../../data/tests.yaml'
 import criteria from '../../data/criteria.yaml'
 import techs from '../../data/techs.yaml'
 import results from '../../data/results.yaml'
-import testers from '../../data/testers.yaml'
 import NextSeo from 'next-seo'
 import SEO from '../../next-seo.config'
 
@@ -23,20 +22,18 @@ const nl2br = (source) => {
   })}</div>;
 };
 
-const getTesterName = (result_id) => {
-  const tester_ids = Object.keys(testers).filter(
-    key => {
-      if (testers[key].results !== null) {
-        return testers[key].results.includes(result_id);
-      } else {
-        return false;
-      }
-    }
-  );
-  if (tester_ids.length >= 1) {
-    return testers[tester_ids[0]].name;
+const getTesterName = (result) => {
+  if (typeof result.tester !== 'undefined') {
+    return result.tester;
   }
-  return '四方田正夫';
+  return '不明';
+};
+
+const getDate = (result) => {
+  if (typeof result.date !== 'undefined' && result.date != null) {
+    return result.date;
+  }
+  return '不明';
 };
 
 function Comment(props) {
@@ -76,7 +73,8 @@ const ResultTableRow = (props) => {
       <td style={larger_th_style}>
         {nl2br(contents[0].actual)}
       </td>
-      <td style={larger_th_style}>{getTesterName(result.id)}</td>
+      <td style={larger_th_style}>{getTesterName(result)}</td>
+      <td style={larger_th_style}>{getDate(result)}</td>
       <td style={larger_th_style}><Comment result={result}/></td>
     </tr>
     );
@@ -107,7 +105,8 @@ const ResultTableRow = (props) => {
         </td>
         {index === 0 && (
           <>
-          <td rowSpan={contents.length} style={larger_th_style}>{getTesterName(result.id)}</td>
+          <td rowSpan={contents.length} style={larger_th_style}>{getTesterName(result)}</td>
+          <td rowSpan={contents.length} style={larger_th_style}>{getDate(result)}</td>
           <td rowSpan={contents.length} style={larger_th_style}><Comment result={result}/></td>
           </>
         )}
@@ -160,7 +159,6 @@ const Result = ({ query }) => {
         second={`${true_id}: ${test.title}`}
       />
       <ul>
-        <li>公開日：{metadata.pub_date}</li>
         <li>作成者：{metadata.author}</li>
         <li><a href="../">戻る</a></li>
       </ul>
@@ -199,6 +197,7 @@ const Result = ({ query }) => {
             <th scope="col">操作内容</th>
             <th scope="col">得られた結果</th>
             <th scope="col">テスト実施者</th>
+            <th scope="col">実施日</th>
             <th scope="col">備考</th>
           </tr>
         </thead>
