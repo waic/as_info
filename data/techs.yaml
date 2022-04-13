@@ -176,10 +176,16 @@ H97:
   criteria:
   - 1.3.1
 C6:
-  title: ''
-  target: ''
-  criteria: []
+  title: 構造を示すマークアップに基づいてコンテンツを配置する
+  target:
+  criteria:
+  - 2.4.1
+  - 1.3.2
+  - 1.4.5
+  - 1.4.9
 ARIA1:
-  title: ''
-  target: ''
-  criteria: []
+  title: ユーザインターフェース コントロールに対する説明ラベルを提供するために、aria-describedby プロパティを使用する
+  target:
+  criteria:
+  - 1.3.1
+  - 3.3.2

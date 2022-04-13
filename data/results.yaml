@@ -7620,24 +7620,6 @@
   comment: （項目移動、通し読みでは読まなかった。要素をタップで読み上げた）
   tester: 立川くるみ
   date: 2022/03/04
-- id: 413
-  test: 0028-02
-  os: Windows 10 Pro 20H2
-  user_agent: NetReader Neo
-  assistive_tech: PC-Talker Neo
-  assistive_tech_config:
-  contents:
-  - procedure: 通常の状態でページ内を読み上げた。その後、スタイルシートを無効にする機能は無いため、代わりにソースコードを開いて内容を確認した。
-    actual: |-
-      いずれの方法でも、読み上げの順序は変化しなかった。
-
-      製品
-      2021年6月9日
-      製品情報についておしらせします。
-    judgment: 満たしている
-  comment:
-  tester: 諸熊
-  date: 2022/03/04
 - id: 414
   test: 0026-03
   os: Windows 11
@@ -7985,32 +7967,6 @@
       「バナー ウェブアクセシビリティ基盤委員会」
       「本文 WAIC の最新情報は以下をご参照ください。」
       「コンテンツの情報 Twitter や Facebook でも情報発信しています。」
-    judgment: 満たしていない
-  comment:
-  tester: SAWADA STANDARD DESIGN
-  date: 2022/03/04
-- id: 437
-  test: 0028-01
-  os: Android 12
-  user_agent: Google Chrome 98.0.4758.101
-  assistive_tech: TalkBack
-  assistive_tech_config:
-  contents:
-  - procedure: CSSを無効にする設定がないためテストできない。
-    actual: 「製品 電話 コンピュータ MP3プレーヤー 地域 東京 神奈川」
-    judgment: 満たしていない
-  comment:
-  tester: SAWADA STANDARD DESIGN
-  date: 2022/03/04
-- id: 438
-  test: 0028-02
-  os: Android 12
-  user_agent: Google Chrome 98.0.4758.101
-  assistive_tech: TalkBack
-  assistive_tech_config:
-  contents:
-  - procedure: CSSを無効にする設定がないためテストできない。
-    actual: 「製品 2021年6月9日 製品情報についておしらせします。」
     judgment: 満たしていない
   comment:
   tester: SAWADA STANDARD DESIGN
