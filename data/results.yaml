@@ -7344,3 +7344,687 @@
   comment:
   tester: 中野利保
   date: 2019/03/13
+- id: 396
+  test: 0018-01
+  os: Windows 10 Pro 20H2
+  user_agent: NetReader Neo
+  assistive_tech: PC-Talker Neo
+  assistive_tech_config: 句読点読み, 括弧読み, 記号読み Off
+  contents:
+  - procedure: タブキーを押して、「ウィリアム・シェイクスピア」のラジオボタンを選択した。
+    actual: 「ハムレットの作者は？ ウィリアム・シェイクスピアのラジオボタン 選択 ウィリアム・シェイクスピア ラジオ1 オン」と読み上げた
+    judgment: 満たしている
+  - procedure: タブキーを押して「芥川龍之介」のラジオボタンを選択した。
+    actual: 「坊っちゃんの作者は？ 芥川龍之介のラジオボタンの選択 川龍之のラジオボタン」と読み上げた。
+    judgment: 満たしている
+  - procedure: タブキーを押して「川端康成」を選択した。
+    actual: 「川端康成 ラジオ1」と読み上げられた。「坊っちゃんの作者は？」に所属するかどうかは読み上げからは判断できなかった。
+    judgment: 満たしていない
+  comment:
+  tester: 諸熊浩人
+  date: 2021/09/28
+- id: 397
+  test: 0018-01
+  os: iOS 15.0
+  user_agent: Safari
+  assistive_tech: VoiceOver
+  assistive_tech_config:
+  contents:
+  - procedure: ローターをフォームコントロールへの移動にして、下に一度スワイプし「ウィリアム・シェイクスピア」へ移動した
+    actual: 「ハムレットの作者は？, ウィリアム 中黒 シェイクスピア, ラジオボタン, チェックマークが付きました, 5の1」と読み上げられた
+    judgment: 満たしている
+  - procedure: ローターをフォームコントロールにして、「芥川龍之介」のラジオボタンに到達するまで下にスワイプ
+    actual: 「坊っちゃんの作者は？, 芥川龍之介, ラジオボタン, チェックマークが付きました, 3の1」
+    judgment: 満たしている
+  - procedure: ローターをフォームコントロールにしてページ最上部から「川端康成」に到達するまでスワイプ
+    actual: 「川端康成, ラジオボタン, チェックマークが付きました」と読み上げられた。
+    judgment: 満たしている
+  comment:
+  tester: 桝田 草一
+  date: 2021/09/28
+- id: 398
+  test: 0018-01
+  os: Windows 10 Home 20H2
+  user_agent: Microsoft Edge 87.0.664.60
+  assistive_tech: NVDA 2021.2jp
+  assistive_tech_config:
+  contents:
+  - procedure: ブラウズモードでページの一番上からFキーで最初のラジオボタンに移動
+    actual: 「ハムレットの作者は？  グループ  ウィリアム・シェイクスピア  ラジオボタン  チェック 」と読み上げた。
+    judgment: 満たしている
+  - procedure: 結果1の操作に続いてFキーを5回押して「芥川龍之介」に移動した。
+    actual: 「坊っちゃんの作者は？  グループ  芥川龍之介  ラジオボタン  チェック」と読み上げた。
+    judgment: 満たしている
+  - procedure: 上下矢印キーで移動して「川端康成」に移動した。
+    actual: 「グループの外  ラジオボタン  チェックなし    川端康成」と読み上げた。
+    judgment: 満たしている
+  comment: 3番はFキーによる移動ではグループの外であることを把握できなかった。
+  tester: 西本卓也
+  date: 2021/09/28
+- id: 399
+  test: 0018-01
+  os: Windows 10 Home 20H2
+  user_agent: Firefox 92.0.1
+  assistive_tech: PC-Talker 10
+  assistive_tech_config:
+  contents:
+  - procedure: ページの先頭からCtrl+下矢印キーでラジオボタンに移動
+    actual: 「ハムレットの作者は？ ウィリアムなかてんシェイクスピアのラジオボタン 選択 チェック」と読み上げられた。
+    judgment: 満たしている
+  - procedure: ページの先頭からCtrl+下矢印キーでラジオボタンに移動
+    actual: 「坊っちゃんの作者は？  芥川龍之介の ラジオボタン 選択 チェック」と読み上げられた。
+    judgment: 満たしている
+  - procedure: ページの先頭からCtrl+下矢印キーでラジオボタンに移動
+    actual: 「川端康成の ラジオボタン 選択 チェック」と読み上げられた。
+    judgment: 満たしている
+  comment:
+  tester: 佐々木　将
+  date: 2021/09/28
+- id: 400
+  test: 0004-04
+  os: Android 11
+  user_agent: Google Chrome 93.0.4577.82
+  assistive_tech: TalkBack
+  assistive_tech_config:
+  contents:
+  - procedure: 右スワイプでarea要素に移動。リンクであることを確認し、ダブルタップ。
+    actual: 「4F雑貨書籍」ページにリンクした。
+    judgment: 満たしている
+  comment:
+  tester: SAWADA STANDARD DESIGN
+  date: 2021/09/28
+- id: 401
+  test: 0006-03
+  os: Android 11
+  user_agent: Google Chrome 93.0.4577.82
+  assistive_tech: TalkBack
+  assistive_tech_config:
+  contents:
+  - procedure: 右スワイプでa要素に移動。
+    actual: 「ホーム リンク ウェブアクセシビリティ基盤委員会公式サイト ダブルタップすると有効になります。リンクを使用できます。上にスワイプしてから右にスワイプで確認できます。」と読み上げた。
+    judgment: 満たしている
+  comment:
+  tester: SAWADA STANDARD DESIGN
+  date: 2021/09/28
+- id: 402
+  test: 0005-01
+  os: Android 11
+  user_agent: Google Chrome 93.0.4577.82
+  assistive_tech: TalkBack
+  assistive_tech_config:
+  contents:
+  - procedure: テストコード（テストファイルへのリンク）のリンクから移動。
+    actual: 「ウェブアクセシビリティ基盤委員会 ウェブ表示」と読み上げた。
+    judgment: 満たしている
+  comment:
+  tester: SAWADA STANDARD DESIGN
+  date: 2021/09/28
+- id: 403
+  test: 0024-01
+  os: Windows 10 Pro 20H2
+  user_agent: NetReader Neo
+  assistive_tech: PC-Talker Neo Plus
+  assistive_tech_config:
+  contents:
+  - procedure: 矢印キーを押して順に読み上げた。
+    actual: 「ホーム」に差し掛かった時、「目次領域」という情報が提示された。
+    judgment: 満たしている
+  - procedure: 矢印キーを押してコンテンツを順に読み上げた。
+    actual: 「ニュース一覧」から一つ前に戻った時に、「目次領域」と読み上げたため、目次領域の開始と終了地点がわかった。
+    judgment: 満たしている
+  comment:
+  tester: 諸熊
+  date: 2022/03/04
+- id: 404
+  test: 0024-02
+  os: Windows 10 Pro 20H2
+  user_agent: NetReader Neo
+  assistive_tech: PC-Talker Neo Plus
+  assistive_tech_config:
+  contents:
+  - procedure: ランドマークへ移動するショートカット「D」キーを押下
+    actual: 「目次領域」と読み上げられる「組織」及び、「ホーム」へと移動した。
+    judgment: 満たしている
+  comment:
+  tester: 諸熊
+  date: 2022/03/04
+- id: 405
+  test: 0024-01
+  os: iOS 15.3.1
+  user_agent: Safari
+  assistive_tech: VoiceOver
+  assistive_tech_config:
+  contents:
+  - procedure: VoiceOverを立ち上げた状態でテストサイトに行き、サイト上部から通しで読み上げさせたあと、キーボードで一項目ずつ戻ってみた。
+    actual: ナビゲーションの先頭に来たとき「ホーム　リンク　ナビゲーション　ランドマーク」と読み上げられた。最後に来たときは「お問合せ　リンク　エンドナビゲーション」と読み上げられた。
+    judgment: 満たしている
+  - procedure: 一項目ずつキーボードで移動した。
+    actual: 1の回答と同様。
+    judgment: 満たしている
+  comment:
+  tester: 立川くるみ
+  date: 2022/03/04
+- id: 406
+  test: 0025-01
+  os: Windows 10 Pro 20H2
+  user_agent: NetReader Neo
+  assistive_tech: PC-Talker Neo Plus
+  assistive_tech_config:
+  contents:
+  - procedure: ページ内を全て読み上げた。
+    actual: figure 要素であることがわかるような通知は無かった。
+    judgment: 満たしていない
+  - procedure: ページ内を全て音声で読み上げた。
+    actual: figure 要素を通知しなかったので、開始位置や終了位置を知ることはできなかった。また、 figure 要素の位置へ移動できる手段は無かった。
+    judgment: 満たしていない
+  - procedure: ページ内を全て読み上げた。
+    actual: figcaption 要素であることは通知されなかった。
+    judgment: 満たしていない
+  comment:
+  tester: 諸熊
+  date: 2022/03/04
+- id: 407
+  test: 0026-02
+  os: Windows 10 Home 21H1
+  user_agent: NetReader Neo
+  assistive_tech: PC-Talker Neo Plus
+  assistive_tech_config:
+  contents:
+  - procedure: ページ内容を全て読み上げた。
+    actual: figure 要素であることがわかる通知は無かった。
+    judgment: 満たしていない
+  - procedure: ページ内を全て読み上げた。
+    actual: figure 要素を通知しなかったので、開始、終了位置を見つけることはできなかった。また、 figure 要素を指定して移動できる手段は無かった。
+    judgment: 満たしていない
+  - procedure: ページ内を全て読み上げた。
+    actual: figcaption 要素であることを示す通知は無かった。
+    judgment: 満たしていない
+  comment:
+  tester: 諸熊
+  date: 2022/03/04
+- id: 408
+  test: 0026-01
+  os: Windows 10 Pro 20H2
+  user_agent: NetReader Neo
+  assistive_tech: PC-Talker Neo Plus
+  assistive_tech_config:
+  contents:
+  - procedure: ページ内を全て読み上げた。
+    actual: 「WAIC の最新情報は以下をご参照ください。」を読み上げた時、メイン領域「という情報が追加で読み上げられた。
+    judgment: 満たしている
+  - procedure: ページ内を矢印キーを使って行き来した。
+    actual: 最後の文から、「セミナーなどのお知らせも行っています。」を選択した時に、「メイン領域」と読み上げたことから、開始位置、終了位置を特定することができた。
+    judgment: 満たしている
+  comment:
+  tester: 諸熊
+  date: 2022/03/04
+- id: 409
+  test: 0024-02
+  os: iOS 15.3.1
+  user_agent: Safari
+  assistive_tech: VoiceOver
+  assistive_tech_config: ローターにランドマークを追加（デフォルトかもしれませんが）
+  contents:
+  - procedure: テストサイトにVoiceOverを立ち上げた状態で入った。スクリーンカーテンオンとオフ状態を両方試みた。通しで読むことと、ローターをランドマークに合わせて移動することと両方試みた。
+    actual: ローターをランドマークに合わせて移動した場合、「組織　リンク　ナビゲーションランドマーク　「2個のランドマーク」情報　リンク　ランドマーク」と読み上げられた。なお、「2個のランドマーク」は読んだり読み上げられなかったりした。
+    judgment: 満たしている
+  comment: そもそもこのランドマークが配置されているウェブサイトがほとんどない上に、ランドマークが何を意味するのか検索をかけても横浜のランドマークしか出てこなかった経験があります。よって、デフォルトでローターにランドマークが入っていたかもしれませんが、外していました。
+  tester: 立川くるみ
+  date: 2022/03/04
+- id: 410
+  test: 0029-08
+  os: Windows 10 Pro 20H2
+  user_agent: NetReader Neo
+  assistive_tech: PC-Talker Neo Plus
+  assistive_tech_config:
+  contents:
+  - procedure: タブキーを押して button 要素をフォーカスした。
+    actual: |-
+      「フォント」ボタンをフォーカスすると、「フォント ボタン」「このページで使用するフォントフェイスとサイズの選択 ボタンを押下しフォントを選択してください」と続けて読み上げられた。
+      同様に、「色」、「カスタマイズ」ボタンをフォーカスした時にも、ボタン名の後、説明文が読み上げられた。
+    judgment: 満たしている
+  comment:
+  tester: 諸熊
+  date: 2022/03/04
+- id: 411
+  test: 0029-01
+  os: Windows 10 Pro 20H2
+  user_agent: NetReader Neo
+  assistive_tech: PC-Talker Neo Plus
+  assistive_tech_config:
+  contents:
+  - procedure: タブキーを押して、「閉じる」ボタンをフォーカスした。
+    actual: |-
+      「閉じる ボタン」に続いて、「このウィンドウを閉じると、入力された情報は破棄され、メインページに戻ります。
+      」という音声が読み上げられた。
+    judgment: 満たしている
+  comment:
+  tester: 諸熊
+  date: 2022/03/04
+- id: 412
+  test: 0025-01
+  os: iOS 15.3.1
+  user_agent: Safari
+  assistive_tech: VoiceOver
+  assistive_tech_config:
+  contents:
+  - procedure: VoiceOverを立ち上げ、テストサイトを上から通し読み、フリックまたはキーボードによる項目移動、そして画面上を指でなぞるの順に試みた。
+    actual: 通し読みとフリック・キーボードによる項目移動では画像の内容が読み上げられなかったが、偶然指で画面を触ったところは画像の内容「タブレットを手にプレゼンするイシキの写真」と読み上げられた。
+    judgment: 満たしていない
+  - procedure: 1と同様
+    actual: そもそもFigua要素があるかどうかも不明。
+    judgment: 満たしていない
+  - procedure: 1と同様
+    actual: そもそも要素があるかどうかも認識困難。
+    judgment: 満たしていない
+  comment: （項目移動、通し読みでは読まなかった。要素をタップで読み上げた）
+  tester: 立川くるみ
+  date: 2022/03/04
+- id: 413
+  test: 0028-02
+  os: Windows 10 Pro 20H2
+  user_agent: NetReader Neo
+  assistive_tech: PC-Talker Neo
+  assistive_tech_config:
+  contents:
+  - procedure: 通常の状態でページ内を読み上げた。その後、スタイルシートを無効にする機能は無いため、代わりにソースコードを開いて内容を確認した。
+    actual: |-
+      いずれの方法でも、読み上げの順序は変化しなかった。
+
+      製品
+      2021年6月9日
+      製品情報についておしらせします。
+    judgment: 満たしている
+  comment:
+  tester: 諸熊
+  date: 2022/03/04
+- id: 414
+  test: 0026-03
+  os: Windows 11
+  user_agent: Microsoft Edge 99.0.1150.30
+  assistive_tech: NVDA 2021.3.3jp
+  assistive_tech_config: ラップトップ配列、ブラウズモードでページを自動的に読み上げない
+  contents:
+  - procedure: NVDA+A でページを上から下に向かって読み上げる
+    actual: |-
+      読み上げる内容
+      「見出し    レベル1  ウェブアクセシビリティ基盤委員会
+      メイン ランドマーク    WAIC の最新情報は以下をご参照ください。
+      セミナーなどのお知らせも行っています。
+      Twitter や Facebook でも情報発信しています。」
+    judgment: 満たしている
+  - procedure: NVDA+A でページを上から下に向かって読み上げる
+    actual: |-
+      読み上げる内容
+      「見出し    レベル1  ウェブアクセシビリティ基盤委員会
+      メイン ランドマーク    WAIC の最新情報は以下をご参照ください。
+      セミナーなどのお知らせも行っています。
+      Twitter や Facebook でも情報発信しています。」
+    judgment: 満たしている
+  - procedure: 1の手順に続いて上矢印キーで移動して読み上げる
+    actual: |
+      上矢印キーで読み上げる内容
+      「メイン ランドマーク    セミナーなどのお知らせも行っています。」
+    judgment: 満たしている
+  comment:
+  tester: 西本卓也
+  date: 2022/03/04
+- id: 415
+  test: 0027-01
+  os: Windows 11
+  user_agent: Microsoft Edge 99.0.1150.30
+  assistive_tech: NVDA 2021.3.3jp
+  assistive_tech_config: ラップトップ配列、ブラウズモードでページを自動的に読み上げない
+  contents:
+  - procedure: Dを押す。さらに下矢印キーを数回押し、最後に Shift+D を押す。
+    actual: |
+      Dで読み上げる内容
+      「メイン ランドマーク    WAIC の最新情報は以下をご参照ください。」
+      下矢印キーで読み上げる内容
+      「セミナーなどのお知らせも行っています。」
+      「Twitter や Facebook でも情報発信しています。」
+      Shift+Dで読み上げる内容
+      「メイン ランドマーク    WAIC の最新情報は以下をご参照ください。
+    judgment: 満たしている
+  comment: ランドマークが main であるかどうかを区別していません。
+  tester: 西本卓也
+  date: 2022/03/04
+- id: 416
+  test: 0027-02
+  os: Windows 11
+  user_agent: Microsoft Edge 99.0.1150.30
+  assistive_tech: NVDA 2021.3.3jp
+  assistive_tech_config: ラップトップ配列、ブラウズモードでページを自動的に読み上げない
+  contents:
+  - procedure: Dを押す。
+    actual: メイン ランドマーク    WAIC の最新情報は以下をご参照ください。
+    judgment: 満たしている
+  comment: ページを開いた直後に現在位置である1個目のランドマークにすでにいるため、Dを押すと2個目のランドマークである main に移動しています。
+  tester: 西本卓也
+  date: 2022/03/04
+- id: 417
+  test: 0029-01
+  os: iOS 15.3.1
+  user_agent: Safari
+  assistive_tech: VoiceOver
+  assistive_tech_config:
+  contents:
+  - procedure: buttonにDOM順にフォーカス
+    actual: 「閉じる、ボタン、このウィンドウを閉じると、入力された情報は破棄され、メインページに戻ります」
+    judgment: 満たしている
+  comment:
+  tester: 桝田 草一
+  date: 2022/03/04
+- id: 418
+  test: 0029-02
+  os: iOS 15.3.1
+  user_agent: Safari
+  assistive_tech: VoiceOver
+  assistive_tech_config:
+  contents:
+  - procedure: タップしてinputにフォーカス
+    actual: 「名前, テキストフィールド, aria-describedbyでリンクされたこの分野のちょっとした指示です。」
+    judgment: 満たしている
+  comment:
+  tester: 桝田 草一
+  date: 2022/03/04
+- id: 419
+  test: 0029-03
+  os: iOS 15.3.1
+  user_agent: Safari
+  assistive_tech: VoiceOver
+  assistive_tech_config:
+  contents:
+  - procedure: 3つのbutton要素にDOM順にフォーカス
+    actual: |-
+      「フォント, ボタン, このページで使用するフォントフェイスとサイズの選択」
+      「色, ボタン, このページで使用する色を選択」
+      「カスタマイズ, ボタン, このページで使われているレイアウトやスタイルをカスタマイズ」
+    judgment: 満たしている
+  comment:
+  tester: 桝田 草一
+  date: 2022/03/04
+- id: 420
+  test: 0029-04
+  os: iOS 15.3.1
+  user_agent: Safari
+  assistive_tech: VoiceOver
+  assistive_tech_config:
+  contents:
+  - procedure: DOM順にinputにフォーカス
+    actual: 「名前, テキストフィールド, 名前は任意です。」
+    judgment: 満たしている
+  comment:
+  tester: 桝田 草一
+  date: 2022/03/04
+- id: 421
+  test: 0029-05
+  os: iOS 15.3.1
+  user_agent: Safari
+  assistive_tech: VoiceOver
+  assistive_tech_config:
+  contents:
+  - procedure: 3つのbutton要素にDOM順にフォーカス
+    actual: |-
+      「フォント, ボタン, このページで使用するフォントフェイスとサイズの選択」
+      「色, ボタン, このページで使用する色を選択」
+      「カスタマイズ, ボタン, このページで使われているレイアウトやスタイルをカスタマイズ」
+    judgment: 満たしている
+  comment:
+  tester: 桝田 草一
+  date: 2022/03/04
+- id: 422
+  test: 0029-06
+  os: iOS 15.3.1
+  user_agent: Safari
+  assistive_tech: VoiceOver
+  assistive_tech_config:
+  contents:
+  - procedure: buttonにDOM順にフォーカス
+    actual: 「閉じる、ボタン、このウィンドウを閉じると、入力された情報は破棄され、メインページに戻ります」
+    judgment: 満たしている
+  comment:
+  tester: 桝田 草一
+  date: 2022/03/04
+- id: 423
+  test: 0029-07
+  os: iOS 15.3.1
+  user_agent: Safari
+  assistive_tech: VoiceOver
+  assistive_tech_config:
+  contents:
+  - procedure: ローターをフォームコントロールにしてbuttonにフォーカス
+    actual: |-
+      「フォント, ボタン, このページで使用するフォントフェイスとサイズの選択」
+      「色の選択, ボタン, このページで使用する色を選択」
+      「その他のカスタマイズの選択, ボタン, このページで使われているレイアウトやスタイルをカスタマイズ」
+    judgment: 満たしている
+  comment:
+  tester: 桝田 草一
+  date: 2022/03/04
+- id: 424
+  test: 0029-08
+  os: iOS 15.3.1
+  user_agent: Safari
+  assistive_tech: VoiceOver
+  assistive_tech_config:
+  contents:
+  - procedure: ローターをフォームコントロールにしてbuttonにフォーカス
+    actual: |-
+      「フォント, ボタン, このページで使用するフォントフェイスとサイズの選択 ボタンを押下しフォントを選択してください」
+      「色, ボタン, このページで使用する色を選択 ボタンを押下し色を選択してください」
+      「カスタマイズ, ボタン, このページで使われているレイアウトやスタイルをカスタマイズ ボタンを押下しレイアウトやスタイルを選択してください」
+    judgment: 満たしている
+  comment:
+  tester: 桝田 草一
+  date: 2022/03/04
+- id: 425
+  test: 0029-01
+  os: Windows 10 Home 21H1
+  user_agent: Microsoft Edge 99.0.1150.30
+  assistive_tech: PC-Talker Neo Plus（クリエーター版）
+  assistive_tech_config:
+  contents:
+  - procedure: buttonにDOM順にフォーカス
+    actual: 「閉じるの 確認 このウィンドウを閉じると、入力された情報は破棄され、メインページに戻ります」
+    judgment: 満たしている
+  comment:
+  tester: 桝田 草一
+  date: 2022/03/04
+- id: 426
+  test: 0029-02
+  os: Windows 10 Home 21H1
+  user_agent: Microsoft Edge 99.0.1150.30
+  assistive_tech: PC-Talker Neo Plus（クリエーター版）
+  assistive_tech_config:
+  contents:
+  - procedure: inputにDOM順にフォーカス
+    actual: 「名前の 文字入力 aria-describedbyでリンクされたこの分野のちょっとした指示です。」
+    judgment: 満たしている
+  comment:
+  tester: 桝田 草一
+  date: 2022/03/04
+- id: 427
+  test: 0029-03
+  os: Windows 10 Home 21H1
+  user_agent: Microsoft Edge 99.0.1150.30
+  assistive_tech: PC-Talker Neo Plus（クリエーター版）
+  assistive_tech_config:
+  contents:
+  - procedure: 3つのbutton要素にDOM順にフォーカス
+    actual: |-
+      「フォントの 確認 このページで使用するフォントフェイスとサイズの選択」
+      「色の選択の 確認 このページで使用する色を選択」
+      「カスタマイズの 確認 このページで使われているレイアウトやスタイルをカスタマイズ」
+    judgment: 満たしている
+  comment:
+  tester: 桝田 草一
+  date: 2022/03/04
+- id: 428
+  test: 0029-04
+  os: Windows 10 Home 21H1
+  user_agent: Microsoft Edge 99.0.1150.30
+  assistive_tech: PC-Talker Neo Plus（クリエーター版）
+  assistive_tech_config:
+  contents:
+  - procedure: DOM順にinputにフォーカス
+    actual: 「名前の 文字入力 名前は任意です。」
+    judgment: 満たしている
+  comment:
+  tester: 桝田 草一
+  date: 2022/03/04
+- id: 429
+  test: 0029-05
+  os: Windows 10 Home 21H1
+  user_agent: Microsoft Edge 99.0.1150.30
+  assistive_tech: PC-Talker Neo Plus（クリエーター版）
+  assistive_tech_config:
+  contents:
+  - procedure: 3つのbutton要素にDOM順にフォーカス
+    actual: |-
+      「フォントの 確認 このページで使用するフォントフェイスとサイズの選択」
+      「色の 確認 このページで使用する色を選択」
+      「カスタマイズの 確認 このページで使われているレイアウトやスタイルをカスタマイズ」
+    judgment: 満たしている
+  comment:
+  tester: 桝田 草一
+  date: 2022/03/04
+- id: 430
+  test: 0029-06
+  os: Windows 10 Home 21H1
+  user_agent: Microsoft Edge 99.0.1150.30
+  assistive_tech: PC-Talker Neo Plus（クリエーター版）
+  assistive_tech_config:
+  contents:
+  - procedure: buttonにDOM順にフォーカス
+    actual: 「閉じるの 確認 このウィンドウを閉じると、入力された情報は破棄され、メインページに戻ります」
+    judgment: 満たしている
+  comment:
+  tester: 桝田 草一
+  date: 2022/03/04
+- id: 431
+  test: 0027-01
+  os: Android 12
+  user_agent: Google Chrome 98.0.4758.101
+  assistive_tech: TalkBack
+  assistive_tech_config: 「読み上げコントロール」に「ランドマーク」を追加
+  contents:
+  - procedure: TalkBackのフォーカスがウェブ表示エリア全体を指した状態で、1本指下フリック
+    actual: 「本文 WAIC の最新情報は以下をご参照ください。セミナーなどのお知らせも行っています。」と読み上げた。
+    judgment: 満たしている
+  comment:
+  tester: SAWADA STANDARD DESIGN
+  date: 2022/03/04
+- id: 432
+  test: 0027-02
+  os: Android 12
+  user_agent: Google Chrome 98.0.4758.101
+  assistive_tech: TalkBack
+  assistive_tech_config: 「読み上げコントロール」に「ランドマーク」を追加
+  contents:
+  - procedure: ランドマークを順にジャンプすることはできるが、mainランドマークを指定してジャンプすることはできない。
+    actual: |-
+      「バナー ウェブアクセシビリティ基盤委員会」
+      「本文 WAIC の最新情報は以下をご参照ください。」
+      「コンテンツの情報 Twitter や Facebook でも情報発信しています。」
+    judgment: 満たしていない
+  comment:
+  tester: SAWADA STANDARD DESIGN
+  date: 2022/03/04
+- id: 433
+  test: 0027-03
+  os: Android 12
+  user_agent: Google Chrome 98.0.4758.101
+  assistive_tech: TalkBack
+  assistive_tech_config: 「読み上げコントロール」に「ランドマーク」を追加
+  contents:
+  - procedure: TalkBackのフォーカスがウェブ表示エリア全体を指した状態で、1本指下フリック
+    actual: 「本文 WAIC の最新情報は以下をご参照ください。セミナーなどのお知らせも行っています。」と読み上げた。
+    judgment: 満たしている
+  comment:
+  tester: SAWADA STANDARD DESIGN
+  date: 2022/03/04
+- id: 434
+  test: 0027-04
+  os: Android 12
+  user_agent: Google Chrome 98.0.4758.101
+  assistive_tech: TalkBack
+  assistive_tech_config: 「読み上げコントロール」に「ランドマーク」を追加
+  contents:
+  - procedure: ランドマークを順にジャンプすることはできるが、mainランドマークを指定してジャンプすることはできない。
+    actual: |-
+      「バナー ウェブアクセシビリティ基盤委員会」
+      「本文 WAIC の最新情報は以下をご参照ください。」
+      「コンテンツの情報 Twitter や Facebook でも情報発信しています。」
+    judgment: 満たしていない
+  comment:
+  tester: SAWADA STANDARD DESIGN
+  date: 2022/03/04
+- id: 435
+  test: 0027-05
+  os: Android 12
+  user_agent: Google Chrome 98.0.4758.101
+  assistive_tech: TalkBack
+  assistive_tech_config: 「読み上げコントロール」に「ランドマーク」を追加
+  contents:
+  - procedure: TalkBackのフォーカスがウェブ表示エリア全体を指した状態で、1本指下フリック
+    actual: 「本文 WAIC の最新情報は以下をご参照ください。セミナーなどのお知らせも行っています。」と読み上げた。
+    judgment: 満たしている
+  comment:
+  tester: SAWADA STANDARD DESIGN
+  date: 2022/03/04
+- id: 436
+  test: 0027-06
+  os: Android 12
+  user_agent: Google Chrome 98.0.4758.101
+  assistive_tech: TalkBack
+  assistive_tech_config: 「読み上げコントロール」に「ランドマーク」を追加
+  contents:
+  - procedure: ランドマークを順にジャンプすることはできるが、mainランドマークを指定してジャンプすることはできない。
+    actual: |-
+      「バナー ウェブアクセシビリティ基盤委員会」
+      「本文 WAIC の最新情報は以下をご参照ください。」
+      「コンテンツの情報 Twitter や Facebook でも情報発信しています。」
+    judgment: 満たしていない
+  comment:
+  tester: SAWADA STANDARD DESIGN
+  date: 2022/03/04
+- id: 437
+  test: 0028-01
+  os: Android 12
+  user_agent: Google Chrome 98.0.4758.101
+  assistive_tech: TalkBack
+  assistive_tech_config:
+  contents:
+  - procedure: CSSを無効にする設定がないためテストできない。
+    actual: 「製品 電話 コンピュータ MP3プレーヤー 地域 東京 神奈川」
+    judgment: 満たしていない
+  comment:
+  tester: SAWADA STANDARD DESIGN
+  date: 2022/03/04
+- id: 438
+  test: 0028-02
+  os: Android 12
+  user_agent: Google Chrome 98.0.4758.101
+  assistive_tech: TalkBack
+  assistive_tech_config:
+  contents:
+  - procedure: CSSを無効にする設定がないためテストできない。
+    actual: 「製品 2021年6月9日 製品情報についておしらせします。」
+    judgment: 満たしていない
+  comment:
+  tester: SAWADA STANDARD DESIGN
+  date: 2022/03/04
+- id: 439
+  test: 0029-01
+  os: Android 12
+  user_agent: Google Chrome 98.0.4758.101
+  assistive_tech: TalkBack
+  assistive_tech_config:
+  contents:
+  - procedure: 1本指右スワイプでボタンに移動。
+    actual: 「閉じる ボタン このウィンドウを閉じると、入力された情報は破棄され、メインページに戻ります。ダブルタップで有効になります。」
+    judgment: 満たしている
+  comment:
+  tester: SAWADA STANDARD DESIGN
+  date: 2022/03/04
