@@ -639,3 +639,66 @@
   - 3.3.2
   techs:
   - ARIA1
+0029-02:
+  title: 'ユーザインターフェース コントロールに対する説明ラベルを提供するために、aria-describedby 属性を使用する'
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0029-02.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0029-02.md
+  criteria:
+  - 1.3.1
+  - 3.3.2
+  techs:
+  - ARIA1
+0029-03:
+  title: 'ユーザインターフェース コントロールに対する説明ラベルを提供するために、aria-describedby プロパティを使用する'
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0029-03.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0029-03.md
+  criteria:
+  - 1.3.1
+  - 3.3.2
+  techs:
+  - ARIA1
+0029-04:
+  title: 'ユーザインターフェース コントロールに対する説明ラベルを提供するために、aria-describedby プロパティを使用する'
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0029-04.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0029-04.md
+  criteria:
+  - 1.3.1
+  - 3.3.2
+  techs:
+  - ARIA1
+0029-05:
+  title: 'ユーザインターフェース コントロールに対する説明ラベルを提供するために、aria-describedby プロパティを使用する'
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0029-05.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0029-05.md
+  criteria:
+  - 1.3.1
+  - 3.3.2
+  techs:
+  - ARIA1
+0029-06:
+  title: 'ユーザインターフェース コントロールに対する説明ラベルを提供するために、aria-describedby プロパティを使用する'
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0029-06.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0029-06.md
+  criteria:
+  - 1.3.1
+  - 3.3.2
+  techs:
+  - ARIA1
+0029-07:
+  title: 'ユーザインターフェース コントロールに対する説明ラベルを提供するために、aria-describedby プロパティを使用する'
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0029-07.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0029-07.md
+  criteria:
+  - 1.3.1
+  - 3.3.2
+  techs:
+  - ARIA1
+0029-08:
+  title: 'ユーザインターフェース コントロールに対する説明ラベルを提供するために、aria-describedby プロパティを使用する'
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0029-08.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0029-08.md
+  criteria:
+  - 1.3.1
+  - 3.3.2
+  techs:
+  - ARIA1
