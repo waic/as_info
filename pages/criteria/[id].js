@@ -5,24 +5,9 @@ import { useRouter } from 'next/router'
 import metadata from '../../data/metadata.yaml'
 import criteria from '../../data/criteria.yaml'
 import techs from '../../data/techs.yaml'
-import tests from '../../data/tests.yaml'
 import NextSeo from 'next-seo'
 import SEO from '../../next-seo.config'
-
-const queryTechs = (criterion_id) => {
-  const techs = [];
-  Object.keys(tests).forEach(test => {
-    if (tests[test].criteria.includes(criterion_id)) {
-      tests[test].techs.forEach(tech => {
-        if (!techs.includes(tech)) {
-          techs.push(tech);
-        }
-      });
-    }
-  });
-  techs.sort();
-  return techs;
-};
+import { queryTechs } from '../../functions/queryTechs'
 
 const Criterion = ({ query }) => {
   const router = useRouter()
