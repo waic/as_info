@@ -23,6 +23,8 @@
     "@fortawesome/react-fontawesome": "^0.1.4",
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
+    "browserslist": "^4.20.3",
+    "caniuse-lite": "^1.0.30001339",
     "js-yaml-loader": "^1.2.2",
     "next": "^9.0.5",
     "next-seo": "^1.12.0",
