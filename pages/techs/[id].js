@@ -5,29 +5,21 @@ import { useRouter } from 'next/router'
 import metadata from '../../data/metadata.yaml'
 import techs from '../../data/techs.yaml'
 import tests from '../../data/tests.yaml'
-import results from '../../data/results.yaml'
 import criteria from '../../data/criteria.yaml'
-import { queryTechs } from '../../functions/queryTechs'
+import { queryCriteria } from '../../functions/queryCriteria'
+import { getResultsCount } from '../../functions/getResultsCount'
 import NextSeo from 'next-seo'
 import SEO from '../../next-seo.config'
-
-const getResultsCount = (test_id) => {
-  return results.filter(result => result.test === test_id).length;
-}
 
 const Tech = ({ query }) => {
   const router = useRouter()
   const { id } = router.query
   const true_id = id.replace(/.html$/, '') // '.html' is appended to the routing path when exporting, so remove it.
   const tech = techs[true_id];
-  const criterion_ids = Object.keys(criteria).filter(
-    key => {
-      return queryTechs(key).includes(true_id);
-    }
-  );
   const test_ids = Object.keys(tests).filter(
     key => tests[key].techs.includes(true_id)
   );
+  const criterion_ids = queryCriteria(test_ids, true_id);
   return (
     <>
       <NextSeo config={Object.assign(SEO, { title: '達成方法' + true_id })} />
