@@ -7379,7 +7379,7 @@
   - procedure: ローターをフォームコントロールにしてページ最上部から「川端康成」に到達するまでスワイプ
     actual: 「川端康成, ラジオボタン, チェックマークが付きました」と読み上げられた。
     judgment: 満たしている
-  comment:
+  comment: '[WAIC注] 期待する結果3については、適切に判定できていません。'
   tester: 桝田 草一
   date: 2021/09/28
 - id: 398
@@ -7417,7 +7417,7 @@
   - procedure: ページの先頭からCtrl+下矢印キーでラジオボタンに移動
     actual: 「川端康成の ラジオボタン 選択 チェック」と読み上げられた。
     judgment: 満たしている
-  comment:
+  comment: '[WAIC注] 期待する結果3については、適切に判定できていません。'
   tester: 佐々木　将
   date: 2021/09/28
 - id: 400
@@ -7523,25 +7523,6 @@
   comment:
   tester: 諸熊
   date: 2022/03/04
-- id: 407
-  test: 0026-02
-  os: Windows 10 Home 21H1
-  user_agent: NetReader Neo
-  assistive_tech: PC-Talker Neo Plus
-  assistive_tech_config:
-  contents:
-  - procedure: ページ内容を全て読み上げた。
-    actual: figure 要素であることがわかる通知は無かった。
-    judgment: 満たしていない
-  - procedure: ページ内を全て読み上げた。
-    actual: figure 要素を通知しなかったので、開始、終了位置を見つけることはできなかった。また、 figure 要素を指定して移動できる手段は無かった。
-    judgment: 満たしていない
-  - procedure: ページ内を全て読み上げた。
-    actual: figcaption 要素であることを示す通知は無かった。
-    judgment: 満たしていない
-  comment:
-  tester: 諸熊
-  date: 2022/03/04
 - id: 408
   test: 0026-01
   os: Windows 10 Pro 20H2
@@ -7617,7 +7598,10 @@
   - procedure: 1と同様
     actual: そもそも要素があるかどうかも認識困難。
     judgment: 満たしていない
-  comment: （項目移動、通し読みでは読まなかった。要素をタップで読み上げた）
+  comment: |-
+    （項目移動、通し読みでは読まなかった。要素をタップで読み上げた）
+
+    [WAIC注] テスト手順に問題があり、適切に判定できていません。
   tester: 立川くるみ
   date: 2022/03/04
 - id: 414
@@ -7781,7 +7765,7 @@
       「色の選択, ボタン, このページで使用する色を選択」
       「その他のカスタマイズの選択, ボタン, このページで使われているレイアウトやスタイルをカスタマイズ」
     judgment: 満たしている
-  comment:
+  comment: '[WAIC注] 適切に判定できていません。'
   tester: 桝田 草一
   date: 2022/03/04
 - id: 424
@@ -7909,7 +7893,7 @@
       「バナー ウェブアクセシビリティ基盤委員会」
       「本文 WAIC の最新情報は以下をご参照ください。」
       「コンテンツの情報 Twitter や Facebook でも情報発信しています。」
-    judgment: 満たしていない
+    judgment: 満たしている
   comment:
   tester: SAWADA STANDARD DESIGN
   date: 2022/03/04
@@ -7938,7 +7922,7 @@
       「バナー ウェブアクセシビリティ基盤委員会」
       「本文 WAIC の最新情報は以下をご参照ください。」
       「コンテンツの情報 Twitter や Facebook でも情報発信しています。」
-    judgment: 満たしていない
+    judgment: 満たしている
   comment:
   tester: SAWADA STANDARD DESIGN
   date: 2022/03/04
@@ -7967,7 +7951,7 @@
       「バナー ウェブアクセシビリティ基盤委員会」
       「本文 WAIC の最新情報は以下をご参照ください。」
       「コンテンツの情報 Twitter や Facebook でも情報発信しています。」
-    judgment: 満たしていない
+    judgment: 満たしている
   comment:
   tester: SAWADA STANDARD DESIGN
   date: 2022/03/04
