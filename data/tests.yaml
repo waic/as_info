@@ -609,7 +609,7 @@
   - 2.4.1
   techs: []
 0028-01:
-  title: '構造を示すマークアップに基づいてコンテンツを配置'
+  title: '構造を示すマークアップに基づいてコンテンツを配置 (positionプロパティ)'
   code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0028-01.html
   document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0028-01.md
   criteria:
@@ -620,7 +620,7 @@
   techs:
   - C6
 0028-02:
-  title: '構造を示すマークアップに基づいてコンテンツを配置'
+  title: '構造を示すマークアップに基づいてコンテンツを配置 (positionプロパティ : 視覚的な表示順序の変更)'
   code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0028-02.html
   document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0028-02.md
   criteria:
@@ -631,7 +631,7 @@
   techs:
   - C6
 0029-01:
-  title: 'ユーザインターフェース コントロールに対する説明ラベルを提供するために、aria-describedby プロパティを使用する'
+  title: 'ユーザインターフェース コントロールに対する説明ラベルを提供するために、aria-describedby 属性を使用する (button要素 : aria-label属性と併用)'
   code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0029-01.html
   document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0029-01.md
   criteria:
@@ -640,7 +640,7 @@
   techs:
   - ARIA1
 0029-02:
-  title: 'ユーザインターフェース コントロールに対する説明ラベルを提供するために、aria-describedby 属性を使用する'
+  title: 'ユーザインターフェース コントロールに対する説明ラベルを提供するために、aria-describedby 属性を使用する (input要素)'
   code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0029-02.html
   document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0029-02.md
   criteria:
@@ -649,7 +649,7 @@
   techs:
   - ARIA1
 0029-03:
-  title: 'ユーザインターフェース コントロールに対する説明ラベルを提供するために、aria-describedby プロパティを使用する'
+  title: 'ユーザインターフェース コントロールに対する説明ラベルを提供するために、aria-describedby 属性を使用する (button要素)'
   code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0029-03.html
   document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0029-03.md
   criteria:
@@ -658,7 +658,7 @@
   techs:
   - ARIA1
 0029-04:
-  title: 'ユーザインターフェース コントロールに対する説明ラベルを提供するために、aria-describedby プロパティを使用する'
+  title: 'ユーザインターフェース コントロールに対する説明ラベルを提供するために、aria-describedby 属性を使用する (input要素 : 隠された要素と関連付け)'
   code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0029-04.html
   document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0029-04.md
   criteria:
@@ -667,7 +667,7 @@
   techs:
   - ARIA1
 0029-05:
-  title: 'ユーザインターフェース コントロールに対する説明ラベルを提供するために、aria-describedby プロパティを使用する'
+  title: 'ユーザインターフェース コントロールに対する説明ラベルを提供するために、aria-describedby 属性を使用する (input要素 : xhtml文書)'
   code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0029-05.html
   document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0029-05.md
   criteria:
@@ -676,7 +676,7 @@
   techs:
   - ARIA1
 0029-06:
-  title: 'ユーザインターフェース コントロールに対する説明ラベルを提供するために、aria-describedby プロパティを使用する'
+  title: 'ユーザインターフェース コントロールに対する説明ラベルを提供するために、aria-describedby 属性を使用する (button要素 : aria-label属性と併用 : aria-describedby属性を script で生成)'
   code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0029-06.html
   document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0029-06.md
   criteria:
@@ -685,7 +685,7 @@
   techs:
   - ARIA1
 0029-07:
-  title: 'ユーザインターフェース コントロールに対する説明ラベルを提供するために、aria-describedby プロパティを使用する'
+  title: 'ユーザインターフェース コントロールに対する説明ラベルを提供するために、aria-describedby 属性を使用する (button要素 : aria-labelledby属性と併用)'
   code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0029-07.html
   document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0029-07.md
   criteria:
@@ -694,7 +694,7 @@
   techs:
   - ARIA1
 0029-08:
-  title: 'ユーザインターフェース コントロールに対する説明ラベルを提供するために、aria-describedby プロパティを使用する'
+  title: 'ユーザインターフェース コントロールに対する説明ラベルを提供するために、aria-describedby 属性を使用する (button要素 : 複数のaria-describedby属性値)'
   code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0029-08.html
   document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0029-08.md
   criteria:
