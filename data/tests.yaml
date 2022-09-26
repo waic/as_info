@@ -667,7 +667,7 @@
   techs:
   - ARIA1
 0029-05:
-  title: 'aria-describedby 属性による説明ラベルの提供 (input要素 : xhtml文書)'
+  title: 'aria-describedby 属性による説明ラベルの提供 (input要素 : XHTML文書)'
   code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0029-05.html
   document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0029-05.md
   criteria:
