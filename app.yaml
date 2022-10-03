@@ -1,3 +1,2 @@
 runtime: nodejs14
-env_variables:
-  PORT: 8080
+entrypoint: npx next -p 8080
