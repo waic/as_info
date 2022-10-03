@@ -1,5 +1,5 @@
 name: ci
-on: push
+on: [push, pull_request]
 
 jobs:
   deplay-staging:
@@ -15,4 +15,3 @@ jobs:
           project_id: ${{ secrets.GCP_PROJECT_ID }}
           deliverables: app.yaml
           credentials: ${{ secrets.GCP_SA_KEY }}
-          version: v1
