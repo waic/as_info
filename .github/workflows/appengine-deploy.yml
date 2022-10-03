@@ -8,7 +8,9 @@ jobs:
   deploy:
     name: GAE deploy
     runs-on: ubuntu-latest
-    environment: as-info-next
+    environment:
+      name: as-info-next
+      url: https://waic-as-info.an.r.appspot.com/
     steps:
       - uses: actions/checkout@v3
 
