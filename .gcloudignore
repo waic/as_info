@@ -1,0 +1,9 @@
+.gcloudignore
+.git
+.gitignore
+node_modules/
+Procfile
+README.md
+development.md
+docs
+.vscode

@@ -12,5 +12,6 @@
   },
   "name": "as-info-next-review-app",
   "scripts": {
-  }
+  },
+  "stack": "heroku-20"
 }
