@@ -10,6 +10,7 @@
     "dev": "next",
     "start": "next start -p $PORT",
     "build": "next build",
+    "gcp-build": "next build",
     "export": "next export --outdir=./docs",
     "format": "prettier-stylelint --quiet --write ./styles/global.scss",
     "test": "echo \"Error: no test specified\" && exit 1"
