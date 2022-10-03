@@ -2,7 +2,7 @@ name: ci
 on: pull_request
 
 jobs:
-  deplay-staging:
+  deplay:
     name: GAE deplay
     runs-on: ubuntu-latest
     steps:
@@ -15,3 +15,6 @@ jobs:
           project_id: ${{ secrets.GCP_PROJECT_ID }}
           deliverables: app.yaml
           credentials: ${{ secrets.GCP_SA_KEY }}
+
+      - name: Show output
+        run: echo ${{ steps.deploy-app.outputs.url }}
