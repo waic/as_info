@@ -1,4 +1,4 @@
-name: ci
+name: gae-deploy
 on:
   pull_request:
     branches:
