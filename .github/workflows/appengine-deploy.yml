@@ -2,12 +2,13 @@ name: ci
 on:
   pull_request:
     branches:
-      - next
+      - master
 
 jobs:
   deploy:
     name: GAE deploy
     runs-on: ubuntu-latest
+    environment: as-info-next
     steps:
       - uses: actions/checkout@v3
 
