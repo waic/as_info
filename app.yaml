@@ -1,2 +1,2 @@
 runtime: nodejs14
-entrypoint: npx next -p 8080
+entrypoint: npx next build; npx next start -p 8080
