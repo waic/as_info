@@ -1,0 +1,31 @@
+name: gae-deploy
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    name: GAE deploy
+    runs-on: ubuntu-latest
+    environment:
+      name: as-info-next
+      url: https://waic-as-info.an.r.appspot.com/
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Authenticating via Service Account Key JSON
+        id: auth
+        uses: google-github-actions/auth@v0
+        with:
+          credentials_json: '${{ secrets.GCP_SA_KEY }}'
+
+      - name: Deploy an App Engine app
+        id: deploy
+        uses: google-github-actions/deploy-appengine@v0
+        with:
+          project_id: ${{ secrets.GCP_PROJECT_ID }}
+          deliverables: app.yaml
+
+      - name: Test
+        run: curl ${{ steps.deploy.outputs.url }}
