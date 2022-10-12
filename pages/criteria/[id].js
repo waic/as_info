@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 import metadata from '../../data/metadata.yaml'
 import criteria from '../../data/criteria.yaml'
 import techs from '../../data/techs.yaml'
-import NextSeo from 'next-seo'
+import { NextSeo } from 'next-seo'
 import SEO from '../../next-seo.config'
 import { queryTechs } from '../../functions/queryTechs'
 
@@ -16,7 +16,7 @@ const Criterion = ({ query }) => {
   const criterion = criteria[true_id];
   return (
     <>
-      <NextSeo config={Object.assign(SEO, { title: '達成基準' + true_id })} />
+      <NextSeo {...Object.assign(SEO, { title: '達成基準' + true_id })} />
       <Logo />
       <H1
         first='アクセシビリティ サポーテッド（AS）情報：達成基準'
