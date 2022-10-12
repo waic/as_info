@@ -27,7 +27,7 @@
     "browserslist": "^4.20.3",
     "caniuse-lite": "^1.0.30001339",
     "js-yaml-loader": "^1.2.2",
-    "next": "^9.2.2",
+    "next": "^12.1.0",
     "next-seo": "^2.0.0",
     "node-sass": "^7.0.3",
     "normalize.css": "^8.0.1",
