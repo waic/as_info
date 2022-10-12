@@ -1,7 +1,7 @@
 import React from 'react';
 import App from 'next/app';
 
-import NextSeo from 'next-seo';
+import { NextSeo } from 'next-seo';
 import SEO from '../next-seo.config';
 
 class MyApp extends App {
@@ -20,7 +20,7 @@ class MyApp extends App {
 
     return (
       <>
-        <NextSeo config={SEO} />
+        <NextSeo {...SEO} />
         <Component {...pageProps} />
       </>
     );

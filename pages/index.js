@@ -3,12 +3,12 @@ import Logo from '../components/Logo'
 import metadata from '../data/metadata.yaml'
 import tests from '../data/tests.yaml'
 import criteria from '../data/criteria.yaml'
-import NextSeo from 'next-seo'
+import { NextSeo } from 'next-seo'
 import SEO from '../next-seo.config'
 
 export default () => 
 <>
-  <NextSeo config={Object.assign(SEO, {title:'ホーム'})}/>
+  <NextSeo {...Object.assign(SEO, {title:'ホーム'})}/>
   <Logo/>
   <h1>アクセシビリティ サポーテッド（AS）情報</h1>
   <ul>

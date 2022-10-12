@@ -8,7 +8,7 @@ import tests from '../../data/tests.yaml'
 import criteria from '../../data/criteria.yaml'
 import { queryCriteria } from '../../functions/queryCriteria'
 import { getResultsCount } from '../../functions/getResultsCount'
-import NextSeo from 'next-seo'
+import { NextSeo } from 'next-seo'
 import SEO from '../../next-seo.config'
 
 const Tech = ({ query }) => {
@@ -22,7 +22,7 @@ const Tech = ({ query }) => {
   const criterion_ids = queryCriteria(test_ids, true_id);
   return (
     <>
-      <NextSeo config={Object.assign(SEO, { title: '達成方法' + true_id })} />
+      <NextSeo {...Object.assign(SEO, { title: '達成方法' + true_id })} />
       <Logo />
       <H1
         first='アクセシビリティ サポーテッド（AS）情報：達成方法'

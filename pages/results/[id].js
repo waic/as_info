@@ -7,7 +7,7 @@ import tests from '../../data/tests.yaml'
 import criteria from '../../data/criteria.yaml'
 import techs from '../../data/techs.yaml'
 import results from '../../data/results.yaml'
-import NextSeo from 'next-seo'
+import { NextSeo } from 'next-seo'
 import SEO from '../../next-seo.config'
 
 const larger_th_style = { minWidth: '6em', maxWidth: '10em', overflowWrap: 'break-word' };
@@ -152,7 +152,7 @@ const Result = ({ query }) => {
   }
   return (
     <>
-      <NextSeo config={Object.assign(SEO, {title:'テスト' + true_id})}/>
+      <NextSeo {...Object.assign(SEO, {title:'テスト' + true_id})}/>
       <Logo/>
       <H1
         first='アクセシビリティ サポーテッド (AS) 情報：テストケース'
