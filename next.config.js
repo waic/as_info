@@ -1,11 +1,9 @@
 const isProd = process.env.NODE_ENV === 'production'
 const assetPrefix = './'
 
-const withSass = require('@zeit/next-sass');
-const withCSS = require('@zeit/next-css')
 const yaml = require('js-yaml')
 const fs = require('fs')
-module.exports = withCSS(withSass({
+module.exports = {
   distDir: 'build_dir',
 
   assetPrefix,
@@ -41,7 +39,7 @@ module.exports = withCSS(withSass({
     ).reduce(
       (pages, key) =>
         Object.assign({}, pages, {
-          [`/criteria/${key}.html`]: {
+          [`/criteria/${key}`]: {
             page: `/criteria/[id]`,
             query: { id: key }
           }
@@ -53,7 +51,7 @@ module.exports = withCSS(withSass({
     ).reduce(
       (pages, key) =>
         Object.assign({}, pages, {
-          [`/results/${key}.html`]: {
+          [`/results/${key}`]: {
             page: `/results/[id]`,
             query: { id: key }
           }
@@ -65,7 +63,7 @@ module.exports = withCSS(withSass({
     ).reduce(
       (pages, key) =>
         Object.assign({}, pages, {
-          [`/techs/${key}.html`]: {
+          [`/techs/${key}`]: {
             page: `/techs/[id]`,
             query: { id: key }
           }
@@ -77,4 +75,4 @@ module.exports = withCSS(withSass({
     })
     return exportMap
   },
-}))
+}
