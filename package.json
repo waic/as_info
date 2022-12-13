@@ -18,6 +18,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@babel/runtime-corejs2": "^7.20.6",
     "@fortawesome/fontawesome-svg-core": "^1.2.22",
     "@fortawesome/free-brands-svg-icons": "^5.10.2",
     "@fortawesome/free-solid-svg-icons": "^5.10.2",
