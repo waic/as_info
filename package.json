@@ -39,7 +39,7 @@
     "prettier": "^1.18.2",
     "prettier-eslint-cli": "^5.0.0",
     "prettier-stylelint": "^0.4.2",
-    "styled-jsx": "^3.2.2",
+    "styled-jsx": "^5.1.0",
     "styled-jsx-css-loader": "^0.3.0",
     "stylelint-config-standard": "^18.3.0"
   }
