@@ -25,6 +25,7 @@
     "@fortawesome/react-fontawesome": "^0.1.4",
     "browserslist": "^4.20.3",
     "caniuse-lite": "^1.0.30001339",
+    "eslint": "^8.29.0",
     "eslint-config-next": "^13.0.6",
     "js-yaml-loader": "^1.2.2",
     "next": "^13.0.6",
