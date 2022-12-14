@@ -75,4 +75,7 @@ module.exports = {
     })
     return exportMap
   },
+  images: {
+    domains: ['waic.jp', 'mirrors.creativecommons.org'],
+  },
 }

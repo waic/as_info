@@ -9,6 +9,7 @@ import techs from '../../data/techs.yaml'
 import results from '../../data/results.yaml'
 import { NextSeo } from 'next-seo'
 import SEO from '../../next-seo.config'
+import Image from 'next/image';
 
 const larger_th_style = { minWidth: '6em', maxWidth: '10em', overflowWrap: 'break-word' };
 const list_item_style = { overflowWrap: 'break-word' };
@@ -211,7 +212,7 @@ const Result = ({ query }) => {
       </>)}
       <h2>ライセンス</h2>
       <p>各検証結果は、それぞれの作成者を原著作者とし、クリエイティブ・コモンズ・ライセンスの下でライセンスされています。原著作者名は、それぞれの検証結果をご覧ください。また、ご利用になる前に利用許諾条項を必ずご確認ください。</p>
-      <p><a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja"><img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-sa.png" alt="by-sa" width="88" height="31"/> 利用許諾条項（表示 – 継承 4.0 国際）の確認</a></p>
+      <p><a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja"><Image src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-sa.png" alt="by-sa" width="88" height="31"/> 利用許諾条項（表示 – 継承 4.0 国際）の確認</a></p>
     </>
   )
 }

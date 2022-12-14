@@ -6,7 +6,7 @@ import criteria from '../data/criteria.yaml'
 import { NextSeo } from 'next-seo'
 import SEO from '../next-seo.config'
 
-export default () => 
+const Index = () => 
 <>
   <NextSeo {...Object.assign(SEO, {title:'ホーム'})}/>
   <Logo/>
@@ -34,3 +34,5 @@ export default () =>
     )}
   </ul>
 </>
+
+export default Index;
