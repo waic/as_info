@@ -35,7 +35,7 @@ module.exports = {
     { dev, dir, outDir, distDir, buildId }
   ) {
     const criteria = Object.keys(
-      yaml.safeLoad(fs.readFileSync('./data/criteria.yaml', 'utf8'))
+      yaml.load(fs.readFileSync('./data/criteria.yaml', 'utf8'))
     ).reduce(
       (pages, key) =>
         Object.assign({}, pages, {
@@ -47,7 +47,7 @@ module.exports = {
       {}
     )
     const results = Object.keys(
-      yaml.safeLoad(fs.readFileSync('./data/tests.yaml', 'utf8'))
+      yaml.load(fs.readFileSync('./data/tests.yaml', 'utf8'))
     ).reduce(
       (pages, key) =>
         Object.assign({}, pages, {
@@ -59,7 +59,7 @@ module.exports = {
       {}
     )
     const techs = Object.keys(
-      yaml.safeLoad(fs.readFileSync('./data/techs.yaml', 'utf8'))
+      yaml.load(fs.readFileSync('./data/techs.yaml', 'utf8'))
     ).reduce(
       (pages, key) =>
         Object.assign({}, pages, {
@@ -77,5 +77,6 @@ module.exports = {
   },
   images: {
     domains: ['waic.jp', 'mirrors.creativecommons.org'],
+    unoptimized: true
   },
 }
