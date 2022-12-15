@@ -12,39 +12,20 @@
     "build": "next build",
     "gcp-build": "next build",
     "export": "next export --outdir=./docs",
-    "format": "prettier-stylelint --quiet --write ./styles/global.scss",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@babel/runtime-corejs2": "^7.20.6",
-    "@fortawesome/fontawesome-svg-core": "^1.2.22",
-    "@fortawesome/free-brands-svg-icons": "^5.10.2",
-    "@fortawesome/free-solid-svg-icons": "^5.10.2",
-    "@fortawesome/react-fontawesome": "^0.1.4",
-    "browserslist": "^4.20.3",
-    "caniuse-lite": "^1.0.30001339",
-    "eslint": "^8.29.0",
     "eslint-config-next": "^13.0.6",
-    "glob-parent": "^5.1.2",
+    "js-yaml": "^4.1.0",
     "js-yaml-loader": "^1.2.2",
     "next": "^13.0.6",
-    "next-seo": "^2.0.0",
-    "node-sass": "^7.0.3",
-    "normalize.css": "^8.0.1",
+    "next-seo": "^5.15.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "trim": "^0.0.3",
-    "trim-newlines": "^3.0.1"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "file-loader": "^4.2.0",
-    "prettier": "^1.18.2",
-    "prettier-eslint-cli": "^5.0.0",
-    "prettier-stylelint": "^0.4.2",
-    "styled-jsx": "^5.1.0",
-    "styled-jsx-css-loader": "^0.3.0",
-    "stylelint-config-standard": "^18.3.0"
+    "eslint": "^8.29.0"
   }
 }
