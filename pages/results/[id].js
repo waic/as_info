@@ -161,7 +161,7 @@ const Result = ({ query }) => {
       />
       <ul>
         <li>作成者：{metadata.author}</li>
-        <li><a href="../">アクセシビリティ サポーテッド（AS）情報のインデクスに戻る</a></li>
+        <li><a href="../">アクセシビリティ サポーテッド（AS）情報のホームへ</a></li>
       </ul>
       <h2>テストの対象となる達成基準</h2>
       <ul>
