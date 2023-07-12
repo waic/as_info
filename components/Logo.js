@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 function Logo(props) {
   return (
-    <div id="logo">
+    <header id="logo">
       <a href="https://waic.jp/">
         <Image
           src="https://waic.jp/wp-content/themes/waic/images/header_logo.png"
@@ -11,7 +11,7 @@ function Logo(props) {
           width={314} height={72}
         />
       </a>
-    </div>
+    </header>
   )
 }
 export default Logo;

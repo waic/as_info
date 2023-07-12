@@ -6,33 +6,35 @@ import criteria from '../data/criteria.yaml'
 import { NextSeo } from 'next-seo'
 import SEO from '../next-seo.config'
 
-const Index = () => 
-<>
-  <NextSeo {...Object.assign(SEO, {title:'ホーム'})}/>
-  <Logo/>
-  <h1>アクセシビリティ サポーテッド（AS）情報</h1>
-  <ul>
-    <li>公開日：{metadata.pub_date}</li>
-    <li>更新日：{metadata.mod_date}</li>
-    <li>作成者：{metadata.author}</li>
-    <li><a href="https://waic.jp/guideline/as/#past_results">過去のアクセシビリティ サポーテッド検証結果</a></li>
-  </ul>
-  <h2>検証結果を含む達成基準</h2>
-  <ul>
-    {Object.keys(criteria).map(
-      key => <li key={key}>
-        <a href={'criteria/' + key + '.html'}>{key} {criteria[key].title}</a>
-      </li>
-    )}
-  </ul>
-  <h2>テストの一覧</h2>
-  <ul>
-    {Object.keys(tests).map(
-      key => <li key={key}>
-        <a href={'results/' + key + '.html'}>{key}: {tests[key].title}</a>
-      </li>
-    )}
-  </ul>
-</>
+const Index = () =>
+  <>
+    <NextSeo {...Object.assign(SEO, { title: 'ホーム' })} />
+    <Logo />
+    <main>
+      <h1>アクセシビリティ サポーテッド（AS）情報</h1>
+      <ul>
+        <li>公開日：{metadata.pub_date}</li>
+        <li>更新日：{metadata.mod_date}</li>
+        <li>作成者：{metadata.author}</li>
+        <li><a href="https://waic.jp/guideline/as/#past_results">過去のアクセシビリティ サポーテッド検証結果</a></li>
+      </ul>
+      <h2>検証結果を含む達成基準</h2>
+      <ul>
+        {Object.keys(criteria).map(
+          key => <li key={key}>
+            <a href={'criteria/' + key + '.html'}>{key} {criteria[key].title}</a>
+          </li>
+        )}
+      </ul>
+      <h2>テストの一覧</h2>
+      <ul>
+        {Object.keys(tests).map(
+          key => <li key={key}>
+            <a href={'results/' + key + '.html'}>{key}: {tests[key].title}</a>
+          </li>
+        )}
+      </ul>
+    </main>
+  </>
 
 export default Index;
