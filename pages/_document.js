@@ -1,7 +1,7 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 
 export default class MyDocument extends Document {
-  render () {
+  render() {
     return (
       <Html lang="ja">
         <Head>
@@ -13,8 +13,23 @@ export default class MyDocument extends Document {
           <meta name="keywords" content="ウェブ,アクセシビリティ,基盤,委員会,WAIC,web,accessibility,infrastructure,committee,アクセシビリティ,サポーテッド,AS,情報" />
           <meta name="description" content="アクセシビリティ サポーテッド（AS）情報に関する解説文書" />
           <link rel="stylesheet" type="text/css" href="https://waic.jp/cmn/css/docs.css" />
-          <style type="text/css" dangerouslySetInnerHTML={{__html: "table{empty-cells: show;}tr.warn{background: #ffd;}tr.ng{background: #fdd;}" }} />
-          <style type="text/css" dangerouslySetInnerHTML={{__html: "hr{display: block !important; margin: 2em 0 2em 0;}" }} />
+          <style>
+            {`
+            table {
+              empty-cells: show;
+            }
+            tr.warn {
+              background: #ffd;
+            }
+            tr.ng {
+                background: #fdd;
+            }
+            hr {
+              display: block !important;
+              margin: 2em 0 2em 0;
+            }
+            `}
+          </style>
         </Head>
         <body>
           <Main />
