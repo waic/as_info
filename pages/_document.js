@@ -14,6 +14,7 @@ export default class MyDocument extends Document {
           <meta name="description" content="アクセシビリティ サポーテッド（AS）情報に関する解説文書" />
           <link rel="stylesheet" type="text/css" href="https://waic.jp/cmn/css/docs.css" />
           <style type="text/css" dangerouslySetInnerHTML={{__html: "table{empty-cells: show;}tr.warn{background: #ffd;}tr.ng{background: #fdd;}" }} />
+          <style type="text/css" dangerouslySetInnerHTML={{__html: "hr{display: block !important; margin: 2em 0 2em 0;}" }} />
         </Head>
         <body>
           <Main />

@@ -31,7 +31,6 @@ const Tech = ({ query }) => {
         />
         <ul>
           <li>作成者：{metadata.author}</li>
-          <li><a href="../">アクセシビリティ サポーテッド（AS）情報のホームへ</a></li>
         </ul>
         <h2>テストの対象となる達成基準</h2>
         <ul>
@@ -48,6 +47,10 @@ const Tech = ({ query }) => {
               <a href={'../results/' + test_id + '.html'}>{test_id}: {tests[test_id].title} (結果:{getResultsCount(test_id)}件)</a>
             </li>
           ))}
+        </ul>
+        <hr />
+        <ul>
+          <li><a href="../">アクセシビリティ サポーテッド（AS）情報のホームへ</a></li>
         </ul>
       </main>
     </>
