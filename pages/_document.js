@@ -22,7 +22,7 @@ export default class MyDocument extends Document {
               background: #ffd;
             }
             tr.ng {
-                background: #fdd;
+              background: #fdd;
             }
             hr {
               display: block !important;
