@@ -12,6 +12,9 @@ import { queryTechs } from '../../functions/queryTechs'
 const Criterion = ({ query }) => {
   const router = useRouter()
   const { id } = router.query
+  if (typeof id !== 'string') {
+    throw new Error("id is an array");
+  }
   const true_id = id.replace(/.html$/, '') // '.html' is appended to the routing path when exporting, so remove it.
   const criterion = criteria[true_id];
   return (
