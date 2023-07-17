@@ -24,30 +24,35 @@ const Tech = ({ query }) => {
     <>
       <NextSeo {...Object.assign(SEO, { title: '達成方法' + true_id })} />
       <Logo />
-      <H1
-        first='アクセシビリティ サポーテッド（AS）情報：達成方法'
-        second={`${true_id}: ${tech.title}`}
-      />
-      <ul>
-        <li>作成者：{metadata.author}</li>
-        <li><a href="../">戻る</a></li>
-      </ul>
-      <h2>テストの対象となる達成基準</h2>
-      <ul>
-        {criterion_ids.map(criterion_id => (
-          <li key={criterion_id}>
-            <a href={'../criteria/' + criterion_id + '.html'}>{criterion_id} {criteria[criterion_id].title} (レベル{criteria[criterion_id].level})</a>
-          </li>
-        ))}
-      </ul>
-      <h2>検証結果を含むテストケース</h2>
-      <ul>
-        {test_ids.map(test_id => (
-          <li key={test_id}>
-            <a href={'../results/' + test_id + '.html'}>{test_id}: {tests[test_id].title} (結果:{getResultsCount(test_id)}件)</a>
-          </li>
-        ))}
-      </ul>
+      <main>
+        <H1
+          first='アクセシビリティ サポーテッド（AS）情報：達成方法'
+          second={`${true_id}: ${tech.title}`}
+        />
+        <ul>
+          <li>作成者：{metadata.author}</li>
+        </ul>
+        <h2>テストの対象となる達成基準</h2>
+        <ul>
+          {criterion_ids.map(criterion_id => (
+            <li key={criterion_id}>
+              <a href={'../criteria/' + criterion_id + '.html'}>{criterion_id} {criteria[criterion_id].title} (レベル{criteria[criterion_id].level})</a>
+            </li>
+          ))}
+        </ul>
+        <h2>検証結果を含むテストケース</h2>
+        <ul>
+          {test_ids.map(test_id => (
+            <li key={test_id}>
+              <a href={'../results/' + test_id + '.html'}>{test_id}: {tests[test_id].title} (結果:{getResultsCount(test_id)}件)</a>
+            </li>
+          ))}
+        </ul>
+        <hr />
+        <ul>
+          <li><a href="../">アクセシビリティ サポーテッド（AS）情報のホームへ</a></li>
+        </ul>
+      </main>
     </>
   )
 }
