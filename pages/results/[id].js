@@ -11,7 +11,9 @@ import { NextSeo } from 'next-seo'
 import SEO from '../../next-seo.config'
 import Image from 'next/image';
 
+/** @type {React.CSSProperties} */
 const larger_th_style = { minWidth: '6em', maxWidth: '10em', overflowWrap: 'break-word' };
+/** @type {React.CSSProperties} */
 const list_item_style = { overflowWrap: 'break-word' };
 
 const nl2br = (source) => {
@@ -120,6 +122,9 @@ const ResultTableRow = (props) => {
 const Result = ({ query }) => {
   const router = useRouter()
   const { id } = router.query
+  if (typeof id !== 'string') {
+    throw new Error("id is an array");
+  }
   const true_id = id.replace(/.html$/, '') // '.html' is appended to the routing path when exporting, so remove it.
   const test = tests[true_id];
   const criterion_ids = test.criteria;
