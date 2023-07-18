@@ -7,7 +7,7 @@
     "node": "16.x"
   },
   "scripts": {
-    "dev": "next build && next start",
+    "dev": "next dev",
     "start": "next start -p $PORT",
     "build": "next build",
     "gcp-build": "next build",
