@@ -7,7 +7,7 @@
     "node": "16.x"
   },
   "scripts": {
-    "dev": "next dev",
+    "dev": "next build & next start",
     "start": "next start -p $PORT",
     "build": "next build",
     "gcp-build": "next build",
@@ -20,7 +20,7 @@
     "eslint-config-next": "^13.0.6",
     "js-yaml": "^4.1.0",
     "js-yaml-loader": "^1.2.2",
-    "next": "^13.0.6",
+    "next": "^13.4.10",
     "next-seo": "^5.15.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
