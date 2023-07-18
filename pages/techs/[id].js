@@ -14,6 +14,9 @@ import SEO from '../../next-seo.config'
 const Tech = ({ query }) => {
   const router = useRouter()
   const { id } = router.query
+  if (typeof id !== 'string') {
+    throw new Error("id is an array");
+  }
   const true_id = id.replace(/.html$/, '') // '.html' is appended to the routing path when exporting, so remove it.
   const tech = techs[true_id];
   const test_ids = Object.keys(tests).filter(
