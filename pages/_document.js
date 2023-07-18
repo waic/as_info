@@ -24,9 +24,31 @@ export default class MyDocument extends Document {
             tr.ng {
               background: #fdd;
             }
-            hr {
-              display: block !important;
-              margin: 2em 0 2em 0;
+            #main .related_link
+            {
+              margin:0;
+              padding:3em 0 3em 0;
+            }
+            #main .related_link:after
+            {
+              content:"";
+              display:block;
+              clear:both;
+              height:0;
+              visibility:hidden;
+            }
+            #main .related_link li
+            {
+              list-style:none;
+              float: right;
+              clear: right;
+            }
+            #main .related_link a
+            {
+              display:inline-block;
+              padding-left:21px;
+              background:url(https://waic.jp/wp-content/themes/waic/images/icon_related_link.png) no-repeat 1px .4em ;
+              background-size:11px 17px;
             }
             `}
           </style>

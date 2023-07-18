@@ -27,7 +27,7 @@ const Tech = ({ query }) => {
     <>
       <NextSeo {...Object.assign(SEO, { title: '達成方法' + true_id })} />
       <Logo />
-      <main>
+      <main id="main">
         <H1
           first='アクセシビリティ サポーテッド（AS）情報：達成方法'
           second={`${true_id}: ${tech.title}`}
@@ -51,8 +51,7 @@ const Tech = ({ query }) => {
             </li>
           ))}
         </ul>
-        <hr />
-        <ul>
+        <ul className="related_link">
           <li><a href="../">アクセシビリティ サポーテッド（AS）情報のホームへ</a></li>
         </ul>
       </main>

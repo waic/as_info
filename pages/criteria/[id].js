@@ -21,7 +21,7 @@ const Criterion = ({ query }) => {
     <>
       <NextSeo {...Object.assign(SEO, { title: '達成基準' + true_id })} />
       <Logo />
-      <main>
+      <main id="main">
         <H1
           first='アクセシビリティ サポーテッド（AS）情報：達成基準'
           second={`${true_id} ${criterion.title} (レベル ${criterion.level})`}
@@ -42,8 +42,7 @@ const Criterion = ({ query }) => {
             );
           })}
         </ul>
-        <hr />
-        <ul>
+        <ul className="related_link">
           <li><a href="../">アクセシビリティ サポーテッド（AS）情報のホームへ</a></li>
         </ul>
       </main>
