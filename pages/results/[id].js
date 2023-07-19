@@ -160,7 +160,7 @@ const Result = ({ query }) => {
     <>
       <NextSeo {...Object.assign(SEO, { title: 'テスト' + true_id })} />
       <Logo />
-      <main>
+      <main id="main">
         <H1
           first='アクセシビリティ サポーテッド (AS) 情報：テストケース'
           second={`${true_id}: ${test.title}`}
@@ -195,7 +195,7 @@ const Result = ({ query }) => {
         </ul>
         {result_ids.length > 0 && (<>
           <h3>テスト結果の詳細</h3>
-          <table>
+          <table tabIndex={0}>
             <thead>
               <tr>
                 <th scope="col">ID</th>
@@ -218,8 +218,7 @@ const Result = ({ query }) => {
         <h2>ライセンス</h2>
         <p>各検証結果は、それぞれの作成者を原著作者とし、クリエイティブ・コモンズ・ライセンスの下でライセンスされています。原著作者名は、それぞれの検証結果をご覧ください。また、ご利用になる前に利用許諾条項を必ずご確認ください。</p>
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja"><Image src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-sa.png" alt="by-sa" width="88" height="31" /> 利用許諾条項（表示 – 継承 4.0 国際）の確認</a></p>
-        <hr />
-        <ul>
+        <ul className="related_link">
           <li><a href="../">アクセシビリティ サポーテッド（AS）情報のホームへ</a></li>
         </ul>
       </main>
