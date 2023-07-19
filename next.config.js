@@ -1,5 +1,5 @@
 const isProd = process.env.NODE_ENV === 'production'
-const assetPrefix = './'
+const assetPrefix = isProd ? '/docs/as/info/' : ''
 
 const yaml = require('js-yaml')
 const fs = require('fs')

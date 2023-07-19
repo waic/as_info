@@ -8,9 +8,13 @@ import techs from '../../data/techs.yaml'
 import { NextSeo } from 'next-seo'
 import SEO from '../../next-seo.config'
 import { queryTechs } from '../../functions/queryTechs'
+import Link from 'next/link'
 
 const Criterion = ({ query }) => {
   const router = useRouter()
+  if (router.isFallback) {
+    return <div>Loading...</div>
+  }
   const { id } = router.query
   if (typeof id !== 'string') {
     throw new Error("id is an array");
@@ -36,14 +40,14 @@ const Criterion = ({ query }) => {
             return (
               <li key={tech_id}>
                 {tech ? (
-                  <a href={'../techs/' + tech_id + '.html'}>{tech_id}: {tech.title}</a>
+                  <Link href={'../techs/' + tech_id + '.html'}>{tech_id}: {tech.title}</Link>
                 ) : tech_id}
               </li>
             );
           })}
         </ul>
         <ul className="related_link">
-          <li><a href="../">アクセシビリティ サポーテッド（AS）情報のホームへ</a></li>
+          <li><Link href="../">アクセシビリティ サポーテッド（AS）情報のホームへ</Link></li>
         </ul>
       </main>
     </>
