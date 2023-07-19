@@ -50,7 +50,7 @@ export default class MyDocument extends Document {
             #main .related_link a {
               display: inline-block;
               padding-left: 21px;
-              background: url(https://waic.jp/wp-content/themes/waic/images/icon_related_link.png) no-repeat 1px .4em ;
+              background: url(https://waic.jp/wp-content/themes/waic/images/icon_related_link.png) no-repeat 1px .4em;
               background-size: 11px 17px;
             }
             `}
