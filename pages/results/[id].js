@@ -195,7 +195,7 @@ const Result = ({ query }) => {
         </ul>
         {result_ids.length > 0 && (<>
           <h3>テスト結果の詳細</h3>
-          <table>
+          <table tabIndex={0}>
             <thead>
               <tr>
                 <th scope="col">ID</th>
