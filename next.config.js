@@ -1,6 +1,6 @@
+const isAppEngine = !!process.env.GAE_APPLICATION
 const isProd = process.env.NODE_ENV === 'production'
-const isTest = process.env.NODE_ENV === 'test'
-const assetPrefix = isProd ? '/docs/as/info/' : (isTest ? '/' : '')
+const assetPrefix = isAppEngine ? '/' : (isProd ? '/docs/as/info/' : '')
 
 const yaml = require('js-yaml')
 const fs = require('fs')
@@ -11,6 +11,7 @@ module.exports = {
 
   env: {
     ASSET_PREFIX: assetPrefix,
+    IS_APP_ENGINE: !!process.env.GAE_APPLICATION,
   },
 
   webpack: config => {
