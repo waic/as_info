@@ -5,6 +5,7 @@ import tests from '../data/tests.yaml'
 import criteria from '../data/criteria.yaml'
 import { NextSeo } from 'next-seo'
 import SEO from '../next-seo.config'
+import Link from 'next/link'
 
 const Index = () =>
   <>
@@ -22,7 +23,7 @@ const Index = () =>
       <ul>
         {Object.keys(criteria).map(
           key => <li key={key}>
-            <a href={'criteria/' + key + '.html'}>{key} {criteria[key].title}</a>
+            <Link href={'criteria/' + key + '.html'}>{key} {criteria[key].title}</Link>
           </li>
         )}
       </ul>
@@ -30,7 +31,7 @@ const Index = () =>
       <ul>
         {Object.keys(tests).map(
           key => <li key={key}>
-            <a href={'results/' + key + '.html'}>{key}: {tests[key].title}</a>
+            <Link href={'results/' + key + '.html'}>{key}: {tests[key].title}</Link>
           </li>
         )}
       </ul>

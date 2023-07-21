@@ -10,9 +10,13 @@ import { queryCriteria } from '../../functions/queryCriteria'
 import { getResultsCount } from '../../functions/getResultsCount'
 import { NextSeo } from 'next-seo'
 import SEO from '../../next-seo.config'
+import Link from 'next/link'
 
 const Tech = ({ query }) => {
   const router = useRouter()
+  if (router.isFallback) {
+    return <div>Loading...</div>
+  }
   const { id } = router.query
   if (typeof id !== 'string') {
     throw new Error("id is an array");
@@ -39,7 +43,7 @@ const Tech = ({ query }) => {
         <ul>
           {criterion_ids.map(criterion_id => (
             <li key={criterion_id}>
-              <a href={'../criteria/' + criterion_id + '.html'}>{criterion_id} {criteria[criterion_id].title} (レベル{criteria[criterion_id].level})</a>
+              <Link href={'../criteria/' + criterion_id + '.html'}>{criterion_id} {criteria[criterion_id].title} (レベル{criteria[criterion_id].level})</Link>
             </li>
           ))}
         </ul>
@@ -47,12 +51,12 @@ const Tech = ({ query }) => {
         <ul>
           {test_ids.map(test_id => (
             <li key={test_id}>
-              <a href={'../results/' + test_id + '.html'}>{test_id}: {tests[test_id].title} (結果:{getResultsCount(test_id)}件)</a>
+              <Link href={'../results/' + test_id + '.html'}>{test_id}: {tests[test_id].title} (結果:{getResultsCount(test_id)}件)</Link>
             </li>
           ))}
         </ul>
         <ul className="related_link">
-          <li><a href="../">アクセシビリティ サポーテッド（AS）情報のホームへ</a></li>
+          <li><Link href="../">アクセシビリティ サポーテッド（AS）情報のホームへ</Link></li>
         </ul>
       </main>
     </>

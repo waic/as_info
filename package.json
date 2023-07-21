@@ -4,14 +4,14 @@
   "description": "",
   "main": "index.js",
   "engines": {
-    "node": "16.x"
+    "node": "18.x"
   },
   "scripts": {
-    "dev": "next build && next start",
-    "start": "next start -p $PORT",
+    "dev": "next dev",
+    "start": "next start",
     "build": "next build",
     "gcp-build": "next build",
-    "export": "next export --outdir=./docs",
+    "export": "NODE_ENV=production next build && next export --outdir=./docs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
