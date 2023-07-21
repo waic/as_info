@@ -19,10 +19,14 @@ const Index = () =>
           </li>
         )}
       </ul>
-      <ul className="related_link">
-        <li><Link href="../">アクセシビリティ サポーテッド（AS）情報のホームへ</Link></li>
-      </ul>
     </main>
+    <nav>
+      <h2>リンク</h2>
+      <ul className="related_link">
+        <li><Link href="../criteria">達成基準の一覧</Link></li>
+        <li><Link href="../">アクセシビリティ サポーテッド（AS）情報のホーム</Link></li>
+      </ul>
+    </nav>
   </>
 
 export default Index;

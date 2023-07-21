@@ -19,7 +19,6 @@ const Index = () =>
         <li>公開日：{metadata.pub_date}</li>
         <li>更新日：{metadata.mod_date}</li>
         <li>作成者：{metadata.author}</li>
-        <li><a href="https://waic.jp/guideline/as/#past_results">過去のアクセシビリティ サポーテッド検証結果</a></li>
       </ul>
       <h2>検証結果を含む達成基準</h2>
       <ul>
@@ -44,6 +43,18 @@ const Index = () =>
         )}
       </ul>
     </main>
+    <nav>
+      <h2>リンク</h2>
+      <ul className="related_link">
+        <li><Link href="criteria">達成基準の一覧</Link></li>
+        <li><Link href="techs">達成方法の一覧</Link></li>
+        <li>
+          <Link href="https://waic.jp/guideline/as/#past_results">
+            過去のアクセシビリティ サポーテッド検証結果
+          </Link>
+        </li>
+      </ul>
+    </nav>
   </>
 
 export default Index;

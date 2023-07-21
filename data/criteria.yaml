@@ -4,6 +4,7 @@
   level: A
   wcag20url: text-equiv-all.html
   wcag21url: non-text-content.html
+  asinfo201406: true
 1.2.1:
   title: 音声のみ及び映像のみ (収録済)
   level: A
@@ -19,6 +20,7 @@
   level: A
   wcag20url: media-equiv-audio-desc.html
   wcag21url: audio-description-or-media-alternative-prerecorded.html
+  asinfo201406: true
 1.2.4:
   title: キャプション (ライブ)
   level: AA
@@ -54,6 +56,7 @@
   level: A
   wcag20url: content-structure-separation-programmatic.html
   wcag21url: info-and-relationships.html
+  asinfo201406: true
 1.3.2:
   title: 意味のある順序
   level: A
@@ -96,6 +99,7 @@
   level: AA
   wcag20url: visual-audio-contrast-scale.html
   wcag21url: resize-text.html
+  asinfo201406: true
 1.4.5:
   title: 文字画像
   level: AA
@@ -142,11 +146,13 @@
   level: A
   wcag20url: keyboard-operation-keyboard-operable.html
   wcag21url: keyboard.html
+  asinfo201406: true
 2.1.2:
   title: キーボードトラップなし
   level: A
   wcag20url: keyboard-operation-all-funcs.html
   wcag21url: no-keyboard-trap.html
+  asinfo201406: true
 2.1.3:
   title: キーボード (例外なし)
   level: AAA
@@ -166,6 +172,7 @@
   level: A
   wcag20url: time-limits-pause.html
   wcag21url: pause-stop-hide.html
+  asinfo201406: true
 2.2.3:
   title: タイミング非依存
   level: AAA
@@ -200,6 +207,7 @@
   level: A
   wcag20url: navigation-mechanisms-skip.html
   wcag21url: bypass-blocks.html
+  asinfo201406: true
 2.4.2:
   title: ページタイトル
   level: A
@@ -210,11 +218,13 @@
   level: A
   wcag20url: navigation-mechanisms-focus-order.html
   wcag21url: focus-order.html
+  asinfo201406: true
 2.4.4:
   title: リンクの目的 (コンテキスト内)
   level: A
   wcag20url: navigation-mechanisms-refs.html
   wcag21url: link-purpose-in-context.html
+  asinfo201406: true
 2.4.5:
   title: 複数の手段
   level: AA
@@ -230,6 +240,7 @@
   level: AA
   wcag20url: navigation-mechanisms-refs.html
   wcag21url: focus-visible.html
+  asinfo201406: true
 2.4.8:
   title: 現在位置
   level: AAA
@@ -250,11 +261,13 @@
   level: A
   wcag20url: meaning-doc-lang-id.html
   wcag21url: language-of-page.html
+  asinfo201406: true
 3.1.2:
   title: 一部分の言語
   level: AA
   wcag20url: meaning-other-lang-id.html
   wcag21url: language-of-parts.html
+  asinfo201406: true
 3.1.3:
   title: 一般的ではない用語
   level: AAA
@@ -305,16 +318,19 @@
   level: A
   wcag20url: minimize-error-identified.html
   wcag21url: error-identification.html
+  asinfo201406: true
 3.3.2:
   title: ラベル又は説明
   level: A
   wcag20url: minimize-error-cues.html
   wcag21url: labels-or-instructions.html
+  asinfo201406: true
 3.3.3:
   title: エラー修正の提案
   level: AA
   wcag20url: minimize-error-suggestions.html
   wcag21url: error-suggestion.html
+  asinfo201406: true
 3.3.4:
   title: エラー回避 (法的、金融、データ)
   level: AA
@@ -340,6 +356,7 @@
   level: A
   wcag20url: ensure-compat-rsv.html
   wcag21url: name-role-value.html
+  asinfo201406: true
 4.1.3:
   title: ステータスメッセージ
   level: AA

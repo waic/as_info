@@ -35,36 +35,51 @@ const Criterion = ({ query }) => {
           <li>作成者：{metadata.author}</li>
         </ul>
         <h2>検証結果を含む達成方法</h2>
-        <ul>
-          {queryTechs(true_id).map(tech_id => {
-            const tech = techs[tech_id];
-            return (
-              <li key={tech_id}>
-                {tech ? (
-                  <Link href={'../techs/' + tech_id + '.html'}>{tech_id}: {tech.title}</Link>
-                ) : tech_id}
-              </li>
-            );
-          })}
-        </ul>
+        {queryTechs(true_id).length > 0 ? (
+          <ul>
+            {queryTechs(true_id).map(tech_id => {
+              const tech = techs[tech_id];
+              return (
+                <li key={tech_id}>
+                  {tech ? (
+                    <Link href={'../techs/' + tech_id + '.html'}>{tech_id}: {tech.title}</Link>
+                  ) : tech_id}
+                </li>
+              );
+            })}
+          </ul>
+        ) : (
+          <div>なし</div>
+        )}
+      </main>
+      <nav>
+        <h2>リンク</h2>
         <ul className="related_link">
+          {criterion.asinfo201406 &&
+            <li>
+              <Link href={`https://waic.jp/docs/as/info/201406/7.${true_id}.html`}>
+                達成基準{true_id}に関するアクセシビリティ・サポーテッド（AS）情報
+                2014年版
+              </Link>
+            </li>
+          }
           {criterion.wcag20url &&
             <li>
               <Link href={`https://waic.jp/translations/UNDERSTANDING-WCAG20/${criterion.wcag20url}`}>
-                WCAG 2.0 解説書「達成基準 {true_id} を理解する」へ
+                WCAG 2.0 解説書「達成基準 {true_id} を理解する」
               </Link>
             </li>
           }
           {criterion.wcag21url &&
             <li>
               <Link href={`https://waic.jp/translations/WCAG21/Understanding/${criterion.wcag21url}`}>
-                WCAG 2.1 解説書「達成基準 {true_id} を理解する」へ
+                WCAG 2.1 解説書「達成基準 {true_id} を理解する」
               </Link>
             </li>
           }
-          <li><Link href="../">アクセシビリティ サポーテッド（AS）情報のホームへ</Link></li>
+          <li><Link href="../">アクセシビリティ サポーテッド（AS）情報のホーム</Link></li>
         </ul>
-      </main>
+      </nav>
     </>
   )
 }

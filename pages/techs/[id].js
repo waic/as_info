@@ -62,11 +62,14 @@ const Tech = ({ query }) => {
             </li>
           ))}
         </ul>
-        <ul className="related_link">
-          <li><Link href={`https://waic.jp/translations/WCAG-TECHS/${true_id}.html`}>WCAG 2.0 達成方法集 {true_id}へ</Link></li>
-          <li><Link href="../">アクセシビリティ サポーテッド（AS）情報のホームへ</Link></li>
-        </ul>
       </main>
+      <nav>
+        <h2>リンク</h2>
+        <ul className="related_link">
+          <li><Link href={`https://waic.jp/translations/WCAG-TECHS/${true_id}.html`}>WCAG 2.0 達成方法集 {true_id}</Link></li>
+          <li><Link href="../">アクセシビリティ サポーテッド（AS）情報のホーム</Link></li>
+        </ul>
+      </nav>
     </>
   )
 }
