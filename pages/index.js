@@ -6,6 +6,8 @@ import criteria from '../data/criteria.yaml'
 import { NextSeo } from 'next-seo'
 import SEO from '../next-seo.config'
 import Link from 'next/link'
+import { getCriterionLevel } from '../functions/getCriterionLevel'
+import { queryCriteriaWithTests } from '../functions/queryCriteriaWithTests'
 
 const Index = () =>
   <>
@@ -21,9 +23,15 @@ const Index = () =>
       </ul>
       <h2>検証結果を含む達成基準</h2>
       <ul>
-        {Object.keys(criteria).map(
+        {queryCriteriaWithTests().map(
           key => <li key={key}>
-            <Link href={'criteria/' + key + '.html'}>{key} {criteria[key].title}</Link>
+            <Link href={'criteria/' + key + '.html'}>
+              {key}
+              &nbsp;
+              {criteria[key].title}
+              &nbsp;
+              {getCriterionLevel(criteria[key])}
+            </Link>
           </li>
         )}
       </ul>

@@ -11,6 +11,7 @@ import { NextSeo } from 'next-seo'
 import SEO from '../../next-seo.config'
 import Image from 'next/image';
 import Link from 'next/link'
+import { getCriterionLevel } from '../../functions/getCriterionLevel'
 
 /** @type {React.CSSProperties} */
 const larger_th_style = { minWidth: '6em', maxWidth: '10em', overflowWrap: 'break-word' };
@@ -176,7 +177,15 @@ const Result = ({ query }) => {
         <ul>
           {criterion_ids.map(criterion_id => (
             <li key={criterion_id}>
-              <Link href={'../criteria/' + criterion_id + '.html'}>{criterion_id} {criteria[criterion_id].title} (レベル{criteria[criterion_id].level}) に関連するAS情報</Link>
+              <Link href={'../criteria/' + criterion_id + '.html'}>
+                {criterion_id}
+                &nbsp;
+                {criteria[criterion_id].title}
+                &nbsp;
+                {getCriterionLevel(criteria[criterion_id])}
+                &nbsp;
+                に関連するAS情報
+                </Link>
             </li>
           ))}
         </ul>

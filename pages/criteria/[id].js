@@ -9,6 +9,7 @@ import { NextSeo } from 'next-seo'
 import SEO from '../../next-seo.config'
 import { queryTechs } from '../../functions/queryTechs'
 import Link from 'next/link'
+import { getCriterionLevel } from '../../functions/getCriterionLevel'
 
 const Criterion = ({ query }) => {
   const router = useRouter()
@@ -28,7 +29,7 @@ const Criterion = ({ query }) => {
       <main id="main">
         <H1
           first='アクセシビリティ サポーテッド（AS）情報：達成基準'
-          second={`${true_id} ${criterion.title} (レベル ${criterion.level})`}
+          second={`${true_id} ${criterion.title} ${getCriterionLevel(criterion)}`}
         />
         <ul>
           <li>作成者：{metadata.author}</li>
@@ -47,6 +48,20 @@ const Criterion = ({ query }) => {
           })}
         </ul>
         <ul className="related_link">
+          {criterion.wcag20url &&
+            <li>
+              <Link href={`https://waic.jp/translations/UNDERSTANDING-WCAG20/${criterion.wcag20url}`}>
+                WCAG 2.0 解説書「達成基準 {true_id} を理解する」へ
+              </Link>
+            </li>
+          }
+          {criterion.wcag21url &&
+            <li>
+              <Link href={`https://waic.jp/translations/WCAG21/Understanding/${criterion.wcag21url}`}>
+                WCAG 2.1 解説書「達成基準 {true_id} を理解する」へ
+              </Link>
+            </li>
+          }
           <li><Link href="../">アクセシビリティ サポーテッド（AS）情報のホームへ</Link></li>
         </ul>
       </main>

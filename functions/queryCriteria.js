@@ -1,6 +1,6 @@
 import tests from '../data/tests.yaml';
 
-export const queryCriteria = (test_ids, tech_id) => {
+export const queryCriteria = (/** @type {string[]} */ test_ids, /** @type {string} */ tech_id) => {
   const criteria = [];
   test_ids.forEach(test => {
     if (tests[test].techs.includes(tech_id)) {
