@@ -2,10 +2,18 @@ import React from 'react'
 import Logo from '../../components/Logo'
 import H1 from '../../components/H1'
 import { useRouter } from 'next/router'
-import metadata from '../../data/metadata.yaml'
-import techs from '../../data/techs.yaml'
-import tests from '../../data/tests.yaml'
-import criteria from '../../data/criteria.yaml'
+import { Metadata } from '../../types/metadata';
+import metadataRaw from '../../data/metadata.yaml'
+const metadata = metadataRaw as Metadata;
+import { TechData } from '../../types/tech';
+import techsRaw from '../../data/techs.yaml';
+const techs = techsRaw as Record<string, TechData>;
+import { TestData } from '../../types/test';
+import testsRaw from '../../data/tests.yaml'
+const tests = testsRaw as Record<string, TestData>;
+import { CriterionData } from '../../types/criterion';
+import criteriaRaw from '../../data/criteria.yaml';
+const criteria = criteriaRaw as Record<string, CriterionData>;
 import { queryCriteria } from '../../functions/queryCriteria'
 import { getResultsCount } from '../../functions/getResultsCount'
 import { NextSeo } from 'next-seo'

@@ -1,6 +1,6 @@
-import { Test } from '../types/test';
+import { TestData } from '../types/test';
 import testsRaw from '../data/tests.yaml';
-const tests = testsRaw as Record<string, Test>;
+const tests = testsRaw as Record<string, TestData>;
 
 export const queryTechs = (criterion_id: string) => {
   const techs = [];

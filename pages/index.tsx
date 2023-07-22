@@ -1,8 +1,14 @@
 import React from 'react'
 import Logo from '../components/Logo'
-import metadata from '../data/metadata.yaml'
-import tests from '../data/tests.yaml'
-import criteria from '../data/criteria.yaml'
+import { Metadata } from '../types/metadata';
+import metadataRaw from '../data/metadata.yaml'
+const metadata = metadataRaw as Metadata;
+import { TestData } from '../types/test';
+import testsRaw from '../data/tests.yaml'
+const tests = testsRaw as Record<string, TestData>;
+import { CriterionData } from '../types/criterion';
+import criteriaRaw from '../data/criteria.yaml';
+const criteria = criteriaRaw as Record<string, CriterionData>;
 import { NextSeo } from 'next-seo'
 import SEO from '../next-seo.config'
 import Link from 'next/link'

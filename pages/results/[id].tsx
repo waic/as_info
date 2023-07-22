@@ -2,11 +2,21 @@ import React from 'react'
 import Logo from '../../components/Logo'
 import H1 from '../../components/H1'
 import { useRouter } from 'next/router'
-import metadata from '../../data/metadata.yaml'
-import tests from '../../data/tests.yaml'
-import criteria from '../../data/criteria.yaml'
-import techs from '../../data/techs.yaml'
-import results from '../../data/results.yaml'
+import { Metadata } from '../../types/metadata';
+import metadataRaw from '../../data/metadata.yaml'
+const metadata = metadataRaw as Metadata;
+import { TestData } from '../../types/test';
+import testsRaw from '../../data/tests.yaml';
+const tests = testsRaw as Record<string, TestData>;
+import { CriterionData } from '../../types/criterion';
+import criteriaRaw from '../../data/criteria.yaml';
+const criteria = criteriaRaw as Record<string, CriterionData>;
+import { TechData } from '../../types/tech';
+import techsRaw from '../../data/techs.yaml';
+const techs = techsRaw as Record<string, TechData>;
+import { ResultData } from '../../types/result';
+import resultsRaw from '../../data/results.yaml';
+const results: ResultData[] = resultsRaw;
 import { NextSeo } from 'next-seo'
 import SEO from '../../next-seo.config'
 import Image from 'next/image';
@@ -25,14 +35,14 @@ const nl2br = (source) => {
   })}</div>;
 };
 
-const getTesterName = (result) => {
+const getTesterName = (result: ResultData) => {
   if (typeof result.tester !== 'undefined') {
     return result.tester;
   }
   return '不明';
 };
 
-const getDate = (result) => {
+const getDate = (result: ResultData) => {
   if (typeof result.date !== 'undefined' && result.date != null) {
     return result.date;
   }
@@ -142,23 +152,6 @@ const Result = ({ query }) => {
     }
     return -1;
   });
-  let test_code_elem;
-  if (typeof test.code === 'string') {
-    test_code_elem = (
-      <a href={test.code}>テストコード {true_id} をユーザーエージェントで表示</a>
-    );
-  } else {
-    test_code_elem = (
-      <>
-        <div>テストコード {true_id} をユーザーエージェントで表示</div>
-        <ul>
-          {test.code.map((item, index) => (
-            <li key={index}><a href={item}>{item.split("/").slice(-1)[0]}</a></li>
-          ))}
-        </ul>
-      </>
-    );
-  }
   return (
     <>
       <NextSeo {...Object.assign(SEO, { title: 'テスト' + true_id })} />
@@ -183,7 +176,7 @@ const Result = ({ query }) => {
                 {getCriterionLevel(criteria[criterion_id])}
                 &nbsp;
                 に関連するAS情報
-                </Link>
+              </Link>
             </li>
           ))}
         </ul>
@@ -198,7 +191,20 @@ const Result = ({ query }) => {
         <h2>テスト詳細</h2>
         <ul>
           <li><a href={test.document}>テストケース {true_id} の詳細を表示</a></li>
-          <li>{test_code_elem}</li>
+          <li>
+            {typeof test.code === 'string' ?
+              <a href={test.code}>テストコード {true_id} をユーザーエージェントで表示</a>
+              :
+              <>
+                <div>テストコード {true_id} をユーザーエージェントで表示</div>
+                <ul>
+                  {test.code.map((item, index) => (
+                    <li key={index}><a href={item}>{item.split("/").slice(-1)[0]}</a></li>
+                  ))}
+                </ul>
+              </>
+            }
+          </li>
         </ul>
         <h2>検証結果一覧</h2>
         <ul>

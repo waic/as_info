@@ -1,6 +1,11 @@
 import React from 'react'
 import Logo from '../../components/Logo'
-import criteria from '../../data/criteria.yaml'
+import { Metadata } from '../../types/metadata';
+import metadataRaw from '../../data/metadata.yaml'
+const metadata = metadataRaw as Metadata;
+import { CriterionData } from '../../types/criterion';
+import criteriaRaw from '../../data/criteria.yaml';
+const criteria = criteriaRaw as Record<string, CriterionData>;
 import { NextSeo } from 'next-seo'
 import SEO from '../../next-seo.config'
 import Link from 'next/link'
@@ -12,6 +17,9 @@ const Index = () =>
     <Logo />
     <main id="main">
       <h1>アクセシビリティ サポーテッド（AS）情報</h1>
+      <ul>
+        <li>作成者：{metadata.author}</li>
+      </ul>
       <h2>達成基準の一覧</h2>
       <ul>
       {Object.keys(criteria).map(

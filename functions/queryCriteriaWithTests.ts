@@ -1,6 +1,6 @@
-import { Criterion } from '../types/criterion';
+import { CriterionData } from '../types/criterion';
 import criteriaRaw from '../data/criteria.yaml';
-const criteria = criteriaRaw as Record<string, Criterion>;
+const criteria = criteriaRaw as Record<string, CriterionData>;
 import { getTestsCount } from './getTestsCount';
 
 export const queryCriteriaWithTests = () => {

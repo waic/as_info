@@ -1,4 +1,4 @@
-export interface Tech {
+export interface TechData {
   title: string;
   target: string;
 }

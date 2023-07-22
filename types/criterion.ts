@@ -1,4 +1,4 @@
-export interface Criterion {
+export interface CriterionData {
   title: string;
   level: string;
   wcag20url?: number;

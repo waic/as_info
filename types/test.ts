@@ -1,6 +1,6 @@
-export interface Test {
+export interface TestData {
   title: string;
-  code: string;
+  code: string | string[];
   document: string;
   criteria: string[];
   techs: string[];
