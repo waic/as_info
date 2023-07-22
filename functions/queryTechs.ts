@@ -1,10 +1,12 @@
-import tests from '../data/tests.yaml';
+import { Test } from '../types/test';
+import testsRaw from '../data/tests.yaml';
+const tests = testsRaw as Record<string, Test>;
 
 export const queryTechs = (criterion_id: string) => {
   const techs = [];
   Object.keys(tests).forEach(test => {
     if (tests[test].criteria.includes(criterion_id)) {
-      tests[test].techs.forEach((tech: any) => {
+      tests[test].techs.forEach((tech: string) => {
         if (!techs.includes(tech)) {
           techs.push(tech);
         }

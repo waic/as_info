@@ -1,4 +1,6 @@
-import tests from '../data/tests.yaml';
+import { Test } from '../types/test';
+import testsRaw from '../data/tests.yaml';
+const tests = testsRaw as Record<string, Test>;
 
 export const getTestsCount = (criterion_id: string) => {
   // Return the number of tests that include criterion_id in test.criteria
