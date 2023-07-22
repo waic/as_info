@@ -30,7 +30,7 @@
   title: 音声解説 (収録済)
   level: AA
   wcag20url: media-equiv-audio-desc-only.html
-  wcag21url: audio-description-or-media-alternative-prerecorded.html
+  wcag21url: audio-description-prerecorded.html
 1.2.6:
   title: 手話 (収録済)
   level: AAA
