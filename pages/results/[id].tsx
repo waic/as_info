@@ -13,10 +13,8 @@ import Image from 'next/image';
 import Link from 'next/link'
 import { getCriterionLevel } from '../../functions/getCriterionLevel'
 
-/** @type {React.CSSProperties} */
-const larger_th_style = { minWidth: '6em', maxWidth: '10em', overflowWrap: 'break-word' };
-/** @type {React.CSSProperties} */
-const list_item_style = { overflowWrap: 'break-word' };
+const larger_th_style: React.CSSProperties = { minWidth: '6em', maxWidth: '10em', overflowWrap: 'break-word' };
+const list_item_style: React.CSSProperties = { overflowWrap: 'break-word' };
 
 const nl2br = (source) => {
   if (source === null || typeof source === 'undefined') {
