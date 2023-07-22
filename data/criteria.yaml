@@ -256,6 +256,30 @@
   level: AAA
   wcag20url: navigation-mechanisms-headings.html
   wcag21url: section-headings.html
+2.5.1:
+  title: ポインタのジェスチャ
+  level: A
+  wcag21url: pointer-gestures.html
+2.5.2:
+  title: ポインタのキャンセル
+  level: A
+  wcag21url: pointer-cancellation.html
+2.5.3:
+  title: 名前(name)のラベル
+  level: A
+  wcag21url: label-in-name.html
+2.5.4:
+  title: 動きによる起動
+  level: A
+  wcag21url: motion-actuation.html
+2.5.5:
+  title: ターゲットのサイズ
+  level: AAA
+  wcag21url: target-size.html
+2.5.6:
+  title: 入力メカニズム非依存
+  level: AAA
+  wcag21url: concurrent-input-mechanisms.html
 3.1.1:
   title: ページの言語
   level: A
