@@ -181,13 +181,17 @@ const Result = ({ query }) => {
           ))}
         </ul>
         <h2>関連する達成方法</h2>
-        <ul>
-          {tech_ids.map(tech_id => (
-            <li key={tech_id}>
-              <Link href={'../techs/' + tech_id + '.html'}>{tech_id}:「{techs[tech_id].title}」に関連するAS情報</Link>
-            </li>
-          ))}
-        </ul>
+        {tech_ids.length > 0 ? (
+          <ul>
+            {tech_ids.map(tech_id => (
+              <li key={tech_id}>
+                <Link href={'../techs/' + tech_id + '.html'}>{tech_id}:「{techs[tech_id].title}」に関連するAS情報</Link>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <div>なし</div>
+        )}
         <h2>テスト詳細</h2>
         <ul>
           <li><a href={test.document}>テストケース {true_id} の詳細を表示</a></li>
