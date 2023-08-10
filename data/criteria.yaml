@@ -2,81 +2,386 @@
 1.1.1:
   title: 非テキストコンテンツ
   level: A
-# 1.2.1:
-#   title: 音声のみ及び映像のみ (収録済)
-#   level: A
-# 1.2.2:
-#   title: キャプション (収録済)
-#   level: A
-# 1.2.3:
-#   title: 音声解説、又はメディアに対する代替 (収録済)
-#   level: A
-# 1.2.4:
-#   title: キャプション (ライブ)
-#   level: AA
-# 1.2.5:
-#   title: 音声解説 (収録済)
-#   level: AA
-# 1.2.6:
-#   title: 手話 (収録済)
-#   level: AAA
-# 1.2.7:
-#   title: 拡張音声解説 (収録済)
-#   level: AAA
-# 1.2.8:
-#   title: メディアに対する代替 (収録済)
-#   level: AAA
-# 1.2.9:
-#   title: 音声のみ (ライブ)
-#   level: AAA
+  wcag20url: text-equiv-all.html
+  wcag21url: non-text-content.html
+  asinfo201406: true
+1.2.1:
+  title: 音声のみ及び映像のみ (収録済)
+  level: A
+  wcag20url: media-equiv-av-only-alt.html
+  wcag21url: audio-only-and-video-only-prerecorded.html
+1.2.2:
+  title: キャプション (収録済)
+  level: A
+  wcag20url: media-equiv-captions.html
+  wcag21url: captions-prerecorded.html
+1.2.3:
+  title: 音声解説、又はメディアに対する代替 (収録済)
+  level: A
+  wcag20url: media-equiv-audio-desc.html
+  wcag21url: audio-description-or-media-alternative-prerecorded.html
+  asinfo201406: true
+1.2.4:
+  title: キャプション (ライブ)
+  level: AA
+  wcag20url: media-equiv-real-time-captions.html
+  wcag21url: captions-live.html
+1.2.5:
+  title: 音声解説 (収録済)
+  level: AA
+  wcag20url: media-equiv-audio-desc-only.html
+  wcag21url: audio-description-prerecorded.html
+1.2.6:
+  title: 手話 (収録済)
+  level: AAA
+  wcag20url: media-equiv-sign.html
+  wcag21url: sign-language-prerecorded.html
+1.2.7:
+  title: 拡張音声解説 (収録済)
+  level: AAA
+  wcag20url: media-equiv-extended-ad.html
+  wcag21url: extended-audio-description-prerecorded.html
+1.2.8:
+  title: メディアに対する代替 (収録済)
+  level: AAA
+  wcag20url: media-equiv-text-doc.html
+  wcag21url: media-alternative-prerecorded.html
+1.2.9:
+  title: 音声のみ (ライブ)
+  level: AAA
+  wcag20url: media-equiv-live-audio-only.html
+  wcag21url: audio-only-live.html
 1.3.1:
   title: 情報及び関係性
   level: A
+  wcag20url: content-structure-separation-programmatic.html
+  wcag21url: info-and-relationships.html
+  asinfo201406: true
 1.3.2:
   title: 意味のある順序
   level: A
-# 1.3.3:
-#   title: 感覚的な特徴
-#   level: A
-# 1.4.1:
-#   title: 色の使用
-#   level: A
-# 1.4.2:
-#   title: 音声の制御
-#   level: A
+  wcag20url: content-structure-separation-sequence.html
+  wcag21url: meaningful-sequence.html
+1.3.3:
+  title: 感覚的な特徴
+  level: A
+  wcag20url: content-structure-separation-understanding.html
+  wcag21url: sensory-characteristics.html
+1.3.4:
+  title: 表示の向き
+  level: AA
+  wcag21url: orientation.html
+1.3.5:
+  title: 入力目的の特定
+  level: AA
+  wcag21url: identify-purpose.html
+1.3.6:
+  title: 目的の特定
+  level: AAA
+  wcag21url: headings-and-labels.html
+1.4.1:
+  title: 色の使用
+  level: A
+  wcag20url: visual-audio-contrast-without-color.html
+  wcag21url: use-of-color.html
+1.4.2:
+  title: 音声の制御
+  level: A
+  wcag20url: visual-audio-contrast-dis-audio.html
+  wcag21url: audio-control.html
+1.4.3:
+  title: コントラスト (最低限)
+  level: AA
+  wcag20url: visual-audio-contrast-contrast.html
+  wcag21url: contrast-minimum.html
+1.4.4:
+  title: テキストのサイズ変更
+  level: AA
+  wcag20url: visual-audio-contrast-scale.html
+  wcag21url: resize-text.html
+  asinfo201406: true
 1.4.5:
   title: 文字画像
   level: AA
-1.4.9:
-  title: 文字画像（例外なし）
+  wcag20url: visual-audio-contrast-text-presentation.html
+  wcag21url: images-of-text.html
+1.4.6:
+  title: コントラスト (高度)
   level: AAA
+  wcag20url: visual-audio-contrast7.html
+  wcag21url: contrast-enhanced.html
+1.4.7:
+  title: 小さな背景音、又は背景音なし
+  level: AAA
+  wcag20url: visual-audio-contrast-noaudio.html
+  wcag21url: low-or-no-background-audio.html
+1.4.8:
+  title: 視覚的提示
+  level: AAA
+  wcag20url: visual-audio-contrast-visual-presentation.html
+  wcag21url: visual-presentation.html
+1.4.9:
+  title: 文字画像 (例外なし)
+  level: AAA
+  wcag20url: visual-audio-contrast-text-images.html
+  wcag21url: images-of-text-no-exception.html
+1.4.10:
+  title: リフロー
+  level: AA
+  wcag21url: reflow.html
+1.4.11:
+  title: 非テキストのコントラスト
+  level: AA
+  wcag21url: non-text-contrast.html
+1.4.12:
+  title: テキストの間隔
+  level: AA
+  wcag21url: text-spacing.html
+1.4.13:
+  title: ホバー又はフォーカスで表示されるコンテンツ
+  level: AA
+  wcag21url: content-on-hover-or-focus.html
+2.1.1:
+  title: キーボード
+  level: A
+  wcag20url: keyboard-operation-keyboard-operable.html
+  wcag21url: keyboard.html
+  asinfo201406: true
+2.1.2:
+  title: キーボードトラップなし
+  level: A
+  wcag20url: keyboard-operation-all-funcs.html
+  wcag21url: no-keyboard-trap.html
+  asinfo201406: true
+2.1.3:
+  title: キーボード (例外なし)
+  level: AAA
+  wcag20url: keyboard-operation-all-funcs.html
+  wcag21url: keyboard-no-exception.html
+2.1.4:
+  title: 文字キーのショートカット
+  level: A
+  wcag21url: character-key-shortcuts.html
+2.2.1:
+  title: タイミング調整可能
+  level: A
+  wcag20url: time-limits-required-behaviors.html
+  wcag21url: timing-adjustable.html
+2.2.2:
+  title: 一時停止、停止、非表示
+  level: A
+  wcag20url: time-limits-pause.html
+  wcag21url: pause-stop-hide.html
+  asinfo201406: true
+2.2.3:
+  title: タイミング非依存
+  level: AAA
+  wcag20url: time-limits-no-exceptions.html
+  wcag21url: no-timing.html
+2.2.4:
+  title: 割り込み
+  level: AAA
+  wcag20url: time-limits-postponed.html
+  wcag21url: interruptions.html
+2.2.5:
+  title: 再認証
+  level: AAA
+  wcag20url: time-limits-server-timeout.html
+  wcag21url: re-authenticating.html
+2.3.1:
+  title: 3回の閃光、又は閾値以下
+  level: A
+  wcag20url: seizure-does-not-violate.html
+  wcag21url: three-flashes-or-below-threshold.html
+2.3.2:
+  title: 3回の閃光
+  level: AAA
+  wcag20url: seizure-three-times.html
+  wcag21url: three-flashes.html
+2.3.3:
+  title: インタラクションによるアニメーション
+  level: AAA
+  wcag21url: animation-from-interactions.html
 2.4.1:
   title: ブロックスキップ
   level: A
+  wcag20url: navigation-mechanisms-skip.html
+  wcag21url: bypass-blocks.html
+  asinfo201406: true
 2.4.2:
   title: ページタイトル
   level: A
+  wcag20url: navigation-mechanisms-title.html
+  wcag21url: page-titled.html
 2.4.3:
   title: フォーカス順序
   level: A
+  wcag20url: navigation-mechanisms-focus-order.html
+  wcag21url: focus-order.html
+  asinfo201406: true
 2.4.4:
-  title: リンクの目的（コンテキスト内）
+  title: リンクの目的 (コンテキスト内)
   level: A
+  wcag20url: navigation-mechanisms-refs.html
+  wcag21url: link-purpose-in-context.html
+  asinfo201406: true
+2.4.5:
+  title: 複数の手段
+  level: AA
+  wcag20url: navigation-mechanisms-mult-loc.html
+  wcag21url: multiple-ways.html
+2.4.6:
+  title: 見出し及びラベル
+  level: AA
+  wcag20url: navigation-mechanisms-descriptive.html
+  wcag21url: headings-and-labels.html
+2.4.7:
+  title: フォーカスの可視化
+  level: AA
+  wcag20url: navigation-mechanisms-refs.html
+  wcag21url: focus-visible.html
+  asinfo201406: true
+2.4.8:
+  title: 現在位置
+  level: AAA
+  wcag20url: navigation-mechanisms-location.html
+  wcag21url: location.html
 2.4.9:
   title: リンクの目的 (リンクのみ)
   level: AAA
+  wcag20url: navigation-mechanisms-link.html
+  wcag21url: link-purpose-link-only.html
 2.4.10:
   title: セクション見出し
+  level: AAA
+  wcag20url: navigation-mechanisms-headings.html
+  wcag21url: section-headings.html
+2.5.1:
+  title: ポインタのジェスチャ
   level: A
+  wcag21url: pointer-gestures.html
+2.5.2:
+  title: ポインタのキャンセル
+  level: A
+  wcag21url: pointer-cancellation.html
+2.5.3:
+  title: 名前(name)のラベル
+  level: A
+  wcag21url: label-in-name.html
+2.5.4:
+  title: 動きによる起動
+  level: A
+  wcag21url: motion-actuation.html
+2.5.5:
+  title: ターゲットのサイズ
+  level: AAA
+  wcag21url: target-size.html
+2.5.6:
+  title: 入力メカニズム非依存
+  level: AAA
+  wcag21url: concurrent-input-mechanisms.html
 3.1.1:
   title: ページの言語
   level: A
+  wcag20url: meaning-doc-lang-id.html
+  wcag21url: language-of-page.html
+  asinfo201406: true
+3.1.2:
+  title: 一部分の言語
+  level: AA
+  wcag20url: meaning-other-lang-id.html
+  wcag21url: language-of-parts.html
+  asinfo201406: true
+3.1.3:
+  title: 一般的ではない用語
+  level: AAA
+  wcag20url: meaning-idioms.html
+  wcag21url: unusual-words.html
+3.1.4:
+  title: 略語
+  level: AAA
+  wcag20url: meaning-located.html
+  wcag21url: abbreviations.html
+3.1.5:
+  title: 読解レベル
+  level: AAA
+  wcag20url: meaning-supplements.html
+  wcag21url: reading-level.html
+3.1.6:
+  title: 発音
+  level: AAA
+  wcag20url: meaning-pronunciation.html
+  wcag21url: pronunciation.html
+3.2.1:
+  title: フォーカス時
+  level: A
+  wcag20url: consistent-behavior-receive-focus.html
+  wcag21url: on-focus.html
 3.2.2:
   title: 入力時
   level: A
+  wcag20url: consistent-behavior-unpredictable-change.html
+  wcag21url: on-input.html
+3.2.3:
+  title: 一貫したナビゲーション
+  level: AA
+  wcag20url: consistent-behavior-consistent-locations.html
+  wcag21url: consistent-navigation.html
+3.2.4:
+  title: 一貫した識別性
+  level: AA
+  wcag20url: consistent-behavior-consistent-functionality.html
+  wcag21url: consistent-identification.html
+3.2.5:
+  title: 要求による変化
+  level: AAA
+  wcag20url: consistent-behavior-no-extreme-changes-context.html
+  wcag21url: change-on-request.html
+3.3.1:
+  title: エラーの特定
+  level: A
+  wcag20url: minimize-error-identified.html
+  wcag21url: error-identification.html
+  asinfo201406: true
 3.3.2:
   title: ラベル又は説明
   level: A
-4.1.2:
-  title: 名前・役割及び値
+  wcag20url: minimize-error-cues.html
+  wcag21url: labels-or-instructions.html
+  asinfo201406: true
+3.3.3:
+  title: エラー修正の提案
+  level: AA
+  wcag20url: minimize-error-suggestions.html
+  wcag21url: error-suggestion.html
+  asinfo201406: true
+3.3.4:
+  title: エラー回避 (法的、金融、データ)
+  level: AA
+  wcag20url: minimize-error-reversible.html
+  wcag21url: error-prevention-legal-financial-data.html
+3.3.5:
+  title: ヘルプ
+  level: AAA
+  wcag20url: minimize-error-context-help.html
+  wcag21url: help.html
+3.3.6:
+  title: エラー回避 (すべて)
+  level: AAA
+  wcag20url: minimize-error-reversible-all.html
+  wcag21url: error-prevention-all.html
+4.1.1:
+  title: 構文解析
   level: A
+  wcag20url: ensure-compat-parses.html
+  wcag21url: parsing.html
+4.1.2:
+  title: 名前(name)・役割(role)及び値(value)
+  level: A
+  wcag20url: ensure-compat-rsv.html
+  wcag21url: name-role-value.html
+  asinfo201406: true
+4.1.3:
+  title: ステータスメッセージ
+  level: AA
+  wcag21url: status-messages.html

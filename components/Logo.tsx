@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-function Logo(props) {
+function Logo() {
   return (
     <header id="logo">
       <a href="https://waic.jp/">

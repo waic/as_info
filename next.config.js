@@ -74,6 +74,8 @@ module.exports = {
     )
     const exportMap = Object.assign({}, criteria, results, techs, {
       '/': { page: '/' },
+      '/criteria': { page: '/criteria' },
+      '/techs': { page: '/techs' },
     })
     return exportMap
   },
