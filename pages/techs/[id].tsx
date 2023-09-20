@@ -75,6 +75,7 @@ const Tech = ({ query }) => {
         <h2>リンク</h2>
         <ul className="related_link">
           <li><Link href={`https://waic.jp/translations/WCAG-TECHS/${true_id}.html`}>WCAG 2.0 達成方法集 {true_id}</Link></li>
+          <li><Link href={`https://waic.jp/translations/WCAG21/Techniques/html/${true_id}`}>WCAG 2.1 達成方法集 {true_id}</Link></li>
           <li><Link href="../">アクセシビリティ サポーテッド（AS）情報のホーム</Link></li>
         </ul>
       </nav>
