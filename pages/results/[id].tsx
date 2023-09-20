@@ -14,7 +14,7 @@ const criteria = criteriaRaw as Record<string, CriterionData>;
 import { TechData } from '../../types/tech';
 import techsRaw from '../../data/techs.yaml';
 const techs = techsRaw as Record<string, TechData>;
-import { ResultData } from '../../types/result';
+import { ResultContent, ResultData } from '../../types/result';
 import resultsRaw from '../../data/results.yaml';
 const results: ResultData[] = resultsRaw;
 import { NextSeo } from 'next-seo'
@@ -26,7 +26,7 @@ import { getCriterionLevel } from '../../functions/getCriterionLevel'
 const larger_th_style: React.CSSProperties = { minWidth: '6em', maxWidth: '10em', overflowWrap: 'break-word' };
 const list_item_style: React.CSSProperties = { overflowWrap: 'break-word' };
 
-const nl2br = (source) => {
+const nl2br = (source: string) => {
   if (source === null || typeof source === 'undefined') {
     return <></>;
   }
@@ -49,7 +49,7 @@ const getDate = (result: ResultData) => {
   return '不明';
 };
 
-function Comment(props) {
+function Comment(props: { result: ResultData; }) {
   const result = props.result;
   let comments = '';
   if (typeof result.comment !== 'undefined' && result.comment != null) {
@@ -64,7 +64,7 @@ function Comment(props) {
   return nl2br(comments);
 }
 
-const ResultTableRow = (props) => {
+const ResultTableRow = (props: { result: ResultData; }) => {
   const result = props.result;
   const contents = result.contents;
   if (contents.length === 1) {
@@ -94,7 +94,7 @@ const ResultTableRow = (props) => {
   }
   return (
     <>
-      {contents.map((item, index) => (
+      {contents.map((item: ResultContent, index: React.Key) => (
         <tr key={index}>
           {index === 0 && (
             <>
@@ -231,7 +231,7 @@ const Result = ({ query }) => {
             </thead>
             <tbody>
               {result_ids.map((result, index) => (
-                <ResultTableRow result={result} index={index} key={index} />
+                <ResultTableRow result={result} key={index} />
               ))}
             </tbody>
           </table>

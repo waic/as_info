@@ -26,9 +26,13 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@markuplint/html-parser": "^3.10.0",
+    "@markuplint/jsx-parser": "^3.9.0",
+    "@markuplint/react-spec": "^3.10.0",
     "@types/node": "^20.4.2",
     "@types/react": "^18.2.15",
     "eslint": "^8.29.0",
+    "markuplint": "^3.12.0",
     "typescript": "^5.1.6"
   }
 }

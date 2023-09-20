@@ -12,6 +12,7 @@ export interface ResultData {
   assistive_tech: string;
   assistive_tech_config: string;
   contents: ResultContent[];
+  reviewer_comment: string;
   comment: string;
   tester: string;
   date: string;
