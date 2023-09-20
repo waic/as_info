@@ -1,0 +1,25 @@
+{
+  "extends": [
+    "markuplint:recommended-react"
+  ],
+  "parser": {
+    ".[jt]sx$": "@markuplint/jsx-parser"
+  },
+  "specs": {
+    ".[jt]sx$": "@markuplint/react-spec"
+  },
+  "rules": {
+    "no-hard-code-id": false,
+    "required-attr": false,
+    "invalid-attr": {
+      "option": {
+        "allowAttrs": [
+          {
+            "httpEquiv": "Content-Type",
+            "content": "text/html; charset=utf-8"
+          }
+        ]
+      }
+    }
+  }
+}
