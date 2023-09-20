@@ -20,6 +20,7 @@ import { NextSeo } from 'next-seo'
 import SEO from '../../next-seo.config'
 import Link from 'next/link'
 import { getCriterionLevel } from '../../functions/getCriterionLevel'
+import { getTechDir } from '../../functions/getTechDir';
 
 const Tech = ({ query }) => {
   const router = useRouter()
@@ -35,6 +36,7 @@ const Tech = ({ query }) => {
   const test_ids = Object.keys(tests).filter(
     key => tests[key].techs.includes(true_id)
   );
+  const tech_dir = getTechDir(true_id);
   const criterion_ids = queryCriteria(test_ids, true_id);
   return (
     <>
@@ -75,7 +77,7 @@ const Tech = ({ query }) => {
         <h2>リンク</h2>
         <ul className="related_link">
           <li><Link href={`https://waic.jp/translations/WCAG-TECHS/${true_id}.html`}>WCAG 2.0 達成方法集 {true_id}</Link></li>
-          <li><Link href={`https://waic.jp/translations/WCAG21/Techniques/html/${true_id}`}>WCAG 2.1 達成方法集 {true_id}</Link></li>
+          <li><Link href={`https://waic.jp/translations/WCAG21/Techniques/${tech_dir}/${true_id}`}>WCAG 2.1 達成方法集 {true_id}</Link></li>
           <li><Link href="../">アクセシビリティ サポーテッド（AS）情報のホーム</Link></li>
         </ul>
       </nav>
