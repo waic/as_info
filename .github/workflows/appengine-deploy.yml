@@ -28,4 +28,9 @@ jobs:
           deliverables: app.yaml
 
       - name: Test
-        run: curl ${{ steps.deploy.outputs.url }}
+        run: |
+          response=$(curl -s -o /dev/null -w "%{http_code}" ${{ steps.deploy.outputs.url }})
+          if [ $response -eq 502 ]; then
+            echo "502 Bad Gateway error"
+            exit 1
+          fi
