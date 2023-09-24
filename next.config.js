@@ -5,7 +5,8 @@ const assetPrefix = isAppEngine ? '/' : (isProd ? '/docs/as/info/' : '')
 const yaml = require('js-yaml')
 const fs = require('fs')
 module.exports = {
-  distDir: 'build_dir',
+  output: 'export',
+  distDir: 'docs',
 
   assetPrefix,
 

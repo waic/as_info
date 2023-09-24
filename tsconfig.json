@@ -28,7 +28,6 @@
   ],
   "exclude": [
     "node_modules",
-    "build_dir",
     "data",
     "docs"
   ]

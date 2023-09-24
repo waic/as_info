@@ -1,6 +1,5 @@
 .next
 node_modules
-build_dir
 docs
 .vscode
 tsconfig.tsbuildinfo
