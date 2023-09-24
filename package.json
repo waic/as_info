@@ -11,7 +11,7 @@
     "start": "next start",
     "build": "next build",
     "gcp-build": "next build",
-    "export": "NODE_ENV=production next build",
+    "export": "NODE_ENV=production next build && next export --outdir=./docs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -21,7 +21,7 @@
     "js-yaml": "^4.1.0",
     "js-yaml-loader": "^1.2.2",
     "next": "^13.5.2",
-    "next-seo": "^6.1.0",
+    "next-seo": "^5.15.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

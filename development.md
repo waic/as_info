@@ -18,8 +18,9 @@ Run `dev`.
 ## Generate a static site
 
 
-Run `build` to generate a static site.
+Run `build` and `export` to generate a static site.
 
     npm run build
+    npm run export
 
 
