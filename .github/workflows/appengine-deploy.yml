@@ -28,4 +28,5 @@ jobs:
           deliverables: app.yaml
 
       - name: Test
-        run: curl ${{ steps.deploy.outputs.url }}
+        run: |
+          curl -f ${{ steps.deploy.outputs.url }}
