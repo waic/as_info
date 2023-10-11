@@ -795,3 +795,28 @@
   - 2.4.7
   techs:
   - C15
+0038-01:
+  title: aria-labelによるラベルの提供(複数のナビゲーションランドマーク)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0038-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0038-01.md
+  criteria:
+  - 1.1.1
+  techs:
+  - ARIA6
+0039-01:
+  title: aria-label 属性によるラベルの提供（a 要素）
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0039-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0039-01.md
+  criteria:
+  - 2.4.4
+  - 2.4.9
+  techs:
+  - ARIA8
+0041-01:
+  title: リンクの目的を示すために aria-labelledby を使用する
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0041-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0041-01.md
+  criteria:
+  - 2.4.4
+  techs:
+  - ARIA7
