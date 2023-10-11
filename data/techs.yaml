@@ -119,3 +119,54 @@ ARIA2:
 ARIA4:
   title: ユーザインターフェース コンポーネントの役割 (role) を明示するために、WAI-ARIA ロールを使用する
   target:
+ARIA6:
+  title: オブジェクトのラベルを提供するために aria-label を使用する
+  target:
+ARIA7:
+  title: リンクの目的を示すために aria-labelledby を使用する
+  target:
+ARIA8:
+  title: リンクの目的を示すために aria-label を使用する
+  target:
+ARIA9:
+  title: 複数のテキストノードをつなげて一つのラベルにするために、aria-labelledby を使用する
+  target:
+ARIA10:
+  title: 非テキストコンテンツに対してテキストによる代替を提供するために aria-labelledby を使用する
+  target:
+ARIA11:
+  title: ページのリージョンを特定するために ARIA ランドマークを使用する
+  target:
+ARIA12:
+  title: 見出しを特定するために role=heading を使用する
+  target:
+ARIA13:
+  title: リージョンとランドマークに名前 (name) を付けるために、aria-labelledby を使用する
+  target:
+ARIA14:
+  title: 可視ラベルが使用できない場所で不可視ラベルを提供するために、aria-label を使用する
+  target:
+ARIA15:
+  title: 画像の説明を提供するために aria-describedby を使用する
+  target:
+ARIA16:
+  title: ユーザインターフェース コントロールの名前 (name) を提供するために、aria-labelledby を使用する
+  target:
+ARIA17:
+  title: 関連するフォームコントロールを特定するために、グルーピングロールを使用する
+  target:
+ARIA18:
+  title: エラーを特定するために aria-alertdialog を使用する
+  target:
+ARIA19:
+  title: エラーを特定するために、ARIA role=alert 又はライブリージョン (Live Regions) を使用する
+  target:
+ARIA20:
+  title: ページのリージョンを特定するために region ロールを使用する
+  target:
+ARIA21:
+  title: エラーフィールドを示すために aria-invalid を使用する
+  target:
+ARIA24:
+  title: アイコンフォントを意味的に識別するために role="img" を使用する
+  target:
