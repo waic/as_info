@@ -170,3 +170,4 @@ ARIA21:
 ARIA24:
   title: アイコンフォントを意味的に識別するために role="img" を使用する
   target:
+  skip_wcag20link: true
