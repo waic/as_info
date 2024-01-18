@@ -119,6 +119,9 @@ ARIA2:
 ARIA4:
   title: ユーザインターフェース コンポーネントの役割 (role) を明示するために、WAI-ARIA ロールを使用する
   target:
+ARIA5:
+  title: ユーザインタフェース コンポーネントの状態 (state) を明示するために、WAI-ARIA ステート及びプロパティ属性を使用する
+  target:
 ARIA6:
   title: オブジェクトのラベルを提供するために aria-label を使用する
   target:
