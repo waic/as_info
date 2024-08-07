@@ -830,3 +830,142 @@
   - 2.4.1
   techs:
   - ARIA11
+0045-01:
+  title: role 属性による見出しの特定(見出しレベルを指定しない場合)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0045-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0045-01.md
+  criteria:
+  - 1.3.1
+  techs:
+  - ARIA12
+0046-01:
+  title: 画像の説明を提供するために aria-describedby を使用する
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0046-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0046-01.md
+  criteria:
+  - 1.1.1
+  techs:
+  - ARIA15
+0047-01:
+  title: テキストフィールドにラベルを付けるために aria-labelledby を使用する
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0047-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0047-01.md
+  criteria: []
+  techs:
+  - ARIA16
+0047-02:
+  title: スライダーコントロールにラベルを付けるために aria-labelledby を使用する
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0047-02.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0047-02.md
+  criteria: []
+  techs:
+  - ARIA16
+0047-03:
+  title: 複数のラベルを付けるために aria-labelledby を使用する
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0047-03.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0047-03.md
+  criteria: []
+  techs:
+  - ARIA9、ARIA16
+0048-01:
+  title: role 属性によるフォームのグループ化(role="group"の使用)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0048-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0048-01.md
+  criteria:
+  - 1.3.1、3.3.2
+  techs:
+  - ARIA17
+0049-01:
+  title: role 属性によるエラーの通知（alertdialog：aria-labelledby属性、aria-describedby属性と併用）
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0049-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0049-01.md
+  criteria:
+  - 3.3.1, 3.3.3, 4.1.3
+  techs:
+  - ARIA18
+0050-01:
+  title: エラーを特定するために ARIA role=alert を使用する
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0050-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0050-01.md
+  criteria:
+  - 3.3.1, 4.1.3
+  techs:
+  - ARIA19
+0051-01:
+  title: role 属性による領域の特定
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0051-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0051-01.md
+  criteria:
+  - 1.3.1
+  techs:
+  - ARIA20
+0052-01:
+  title: エラーフィールドを示すために aria-invalid を使用する
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0052-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0052-01.md
+  criteria:
+  - 3.3.1
+  techs:
+  - ARIA21
+0052-02:
+  title: エラーフィールドを示すために aria-invalid を使用する
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0052-02.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0052-02.md
+  criteria:
+  - 3.3.1
+  techs:
+  - ARIA21
+0053-01:
+  title: アイコンフォントに意味を付与するために role="img" を使用
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0053-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0053-01.md
+  criteria: []
+  techs:
+  - ARIA24
+0054-01:
+  title: aria-labelによるラベルの提供(可視ラベルが使用できないbutton要素)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0054-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0054-01.md
+  criteria:
+  - 4.1.2
+  techs:
+  - ARIA14
+0054-02:
+  title: aria-label による不可視ラベルの提供 (複数の input 要素に分かれた入力欄)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0054-02.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0054-02.md
+  criteria:
+  - 4.1.2
+  techs:
+  - ARIA14
+0055-01:
+  title: CSS によるフォーカスされた要素のハイライト (a 要素)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0055-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0055-01.md
+  criteria:
+  - 2.4.7, 1.4.1 (参考)
+  techs:
+  - C15
+0055-02:
+  title: CSS によるフォーカスされた要素のハイライト (input 要素)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0055-02.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0055-02.md
+  criteria:
+  - 2.4.7, 1.4.1 (参考)
+  techs:
+  - C15
+0056-01:
+  title: レイアウトデザインのためのスペーサー画像ではなく、CSS を使用する（マージンとパディング）
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0056-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0056-01.md
+  criteria: []
+  techs:
+  - C18
+0057-01:
+  title: aria-pressed 属性による状態の明示 (ボタン要素)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0057-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0057-01.md
+  criteria:
+  - 4.1.2
+  techs:
+  - ARIA5
