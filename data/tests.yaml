@@ -965,7 +965,8 @@
   title: レイアウトデザインのためのスペーサー画像ではなく、CSS を使用する（マージンとパディング）
   code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0056-01.html
   document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0056-01.md
-  criteria: []
+  criteria:
+  - 1.1.1
   techs:
   - C18
 0057-01:

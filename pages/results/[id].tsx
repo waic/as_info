@@ -64,6 +64,12 @@ function Comment(props: { result: ResultData; }) {
   return nl2br(comments);
 }
 
+const lastReviewedResultId = 439;
+
+const InReview = ({ resultId }: { resultId: number }) => {
+  return resultId > lastReviewedResultId ? <span>[WAICレビュー作業中]</span> : null;
+};
+
 const ResultTableRow = (props: { result: ResultData; }) => {
   const result = props.result;
   const contents = result.contents;
@@ -88,7 +94,10 @@ const ResultTableRow = (props: { result: ResultData; }) => {
         </td>
         <td style={larger_th_style}>{getTesterName(result)}</td>
         <td style={larger_th_style}>{getDate(result)}</td>
-        <td style={larger_th_style}><Comment result={result} /></td>
+        <td style={larger_th_style}>
+          <InReview resultId={result.id} />
+          <Comment result={result} />
+        </td>
       </tr>
     );
   }
@@ -120,13 +129,31 @@ const ResultTableRow = (props: { result: ResultData; }) => {
             <>
               <td rowSpan={contents.length} style={larger_th_style}>{getTesterName(result)}</td>
               <td rowSpan={contents.length} style={larger_th_style}>{getDate(result)}</td>
-              <td rowSpan={contents.length} style={larger_th_style}><Comment result={result} /></td>
+              <td rowSpan={contents.length} style={larger_th_style}>
+                <InReview resultId={result.id} />
+                <Comment result={result} />
+              </td>
             </>
           )}
         </tr>
       ))}
     </>
   )
+};
+
+const sortByOS = (a: ResultData, b: ResultData) => {
+  let a_env = (typeof a.os === 'undefined') ? '' : a.os.toLowerCase();
+  let b_env = (typeof b.os === 'undefined') ? '' : b.os.toLowerCase();
+  if (a_env > b_env) {
+    return 1;
+  } else if (a_env == b_env) {
+    return 0;
+  }
+  return -1;
+};
+
+const sortByResultId = (a: ResultData, b: ResultData) => {
+  return a.id - b.id;
 };
 
 const Result = ({ query }) => {
@@ -142,16 +169,7 @@ const Result = ({ query }) => {
   const test = tests[true_id];
   const criterion_ids = test.criteria;
   const tech_ids = test.techs;
-  const result_ids = results.filter(result => result.test === true_id).sort((a, b) => {
-    let a_env = (typeof a.os === 'undefined') ? '' : a.os.toLowerCase();
-    let b_env = (typeof b.os === 'undefined') ? '' : b.os.toLowerCase();
-    if (a_env > b_env) {
-      return 1;
-    } else if (a_env == b_env) {
-      return 0;
-    }
-    return -1;
-  });
+  const result_ids = results.filter(result => result.test === true_id).sort(sortByResultId);
   return (
     <>
       <NextSeo {...Object.assign(SEO, { title: 'テスト' + true_id })} />
