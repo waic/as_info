@@ -11,7 +11,7 @@ module.exports = {
 
   env: {
     ASSET_PREFIX: assetPrefix,
-    IS_APP_ENGINE: !!process.env.GAE_APPLICATION,
+    IS_APP_ENGINE: process.env.GAE_APPLICATION ? 'true' : 'false',
   },
 
   webpack: config => {
