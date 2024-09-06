@@ -64,10 +64,9 @@ function Comment(props: { result: ResultData; }) {
   return nl2br(comments);
 }
 
-const lastReviewedResultId = 439;
-
 const InReview = ({ resultId }: { resultId: number }) => {
-  return resultId > lastReviewedResultId ? <span>[WAICレビュー作業中]</span> : null;
+  const { last_reviewed_result_id } = metadata;
+  return resultId > last_reviewed_result_id ? <span>[WAICレビュー作業中]</span> : null;
 };
 
 function Judgment(props: { resultContent: ResultContent; }) {
@@ -193,6 +192,7 @@ const Result = ({ query }) => {
         />
         <ul>
           <li>作成者：{metadata.author}</li>
+          {metadata.status && <li>注記：{metadata.status}</li>}
         </ul>
         <h2>テストの対象となる達成基準</h2>
         <ul>

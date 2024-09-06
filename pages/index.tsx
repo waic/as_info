@@ -25,6 +25,7 @@ const Index = () =>
         <li>公開日：{metadata.pub_date}</li>
         <li>更新日：{metadata.mod_date}</li>
         <li>作成者：{metadata.author}</li>
+        {metadata.status && <li>注記：{metadata.status}</li>}
       </ul>
       <h2>検証結果を含む達成基準</h2>
       <ul>
