@@ -14,6 +14,7 @@ import SEO from '../next-seo.config'
 import Link from 'next/link'
 import { getCriterionLevel } from '../functions/getCriterionLevel'
 import { queryCriteriaWithTests } from '../functions/queryCriteriaWithTests'
+import { getResultsCount } from '../functions/getResultsCount';
 
 const Index = () =>
   <>
@@ -45,7 +46,7 @@ const Index = () =>
       <ul>
         {Object.keys(tests).map(
           key => <li key={key}>
-            <Link href={'results/' + key + '.html'}>{key}: {tests[key].title}</Link>
+            <Link href={'results/' + key + '.html'}>{key}: {tests[key].title} (結果: {getResultsCount(key)}件)</Link>
           </li>
         )}
       </ul>
