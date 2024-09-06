@@ -70,6 +70,18 @@ const InReview = ({ resultId }: { resultId: number }) => {
   return resultId > lastReviewedResultId ? <span>[WAICレビュー作業中]</span> : null;
 };
 
+function Judgment(props: { resultContent: ResultContent; }) {
+  const { judgment } = props.resultContent;
+  switch (judgment) {
+    case '満たしている':
+      return <>○</>;
+    case '満たしていない':
+      return <>×</>;
+    default:
+      return <>{judgment}</>;
+  }
+};
+
 const ResultTableRow = (props: { result: ResultData; }) => {
   const result = props.result;
   const contents = result.contents;
@@ -84,7 +96,7 @@ const ResultTableRow = (props: { result: ResultData; }) => {
           {result.assistive_tech_config && (<li style={list_item_style}>{nl2br(result.assistive_tech_config)}</li>)}
         </ul></td>
         <td>
-          {contents[0].judgment === '満たしている' ? '○' : '×'}
+          <Judgment resultContent={contents[0]}/>
         </td>
         <td style={larger_th_style}>
           {nl2br(contents[0].procedure)}
@@ -117,7 +129,7 @@ const ResultTableRow = (props: { result: ResultData; }) => {
             </>
           )}
           <td>
-            {item.judgment === '満たしている' ? '○' : '×'}
+            <Judgment resultContent={item} />
           </td>
           <td style={larger_th_style}>
             {nl2br(item.procedure)}
