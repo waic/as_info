@@ -850,21 +850,27 @@
   title: テキストフィールドにラベルを付けるために aria-labelledby を使用する
   code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0047-01.html
   document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0047-01.md
-  criteria: []
+  criteria:
+  - 1.3.1
+  - 4.1.2
   techs:
   - ARIA16
 0047-02:
   title: スライダーコントロールにラベルを付けるために aria-labelledby を使用する
   code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0047-02.html
   document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0047-02.md
-  criteria: []
+  criteria:
+  - 1.3.1
+  - 4.1.2
   techs:
   - ARIA16
 0047-03:
   title: 複数のラベルを付けるために aria-labelledby を使用する
   code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0047-03.html
   document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0047-03.md
-  criteria: []
+  criteria:
+  - 1.3.1
+  - 4.1.2
   techs:
   - ARIA9
   - ARIA16
@@ -924,7 +930,8 @@
   title: アイコンフォントに意味を付与するために role="img" を使用
   code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0053-01.html
   document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0053-01.md
-  criteria: []
+  criteria:
+  - 1.3.1
   techs:
   - ARIA24
 0054-01:
