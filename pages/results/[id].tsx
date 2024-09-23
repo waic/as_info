@@ -64,10 +64,21 @@ function Comment(props: { result: ResultData; }) {
   return nl2br(comments);
 }
 
-const lastReviewedResultId = 439;
-
 const InReview = ({ resultId }: { resultId: number }) => {
-  return resultId > lastReviewedResultId ? <span>[WAICレビュー作業中]</span> : null;
+  const { last_reviewed_result_id } = metadata;
+  return resultId > last_reviewed_result_id ? <span>[WAICレビュー作業中]</span> : null;
+};
+
+function Judgment(props: { resultContent: ResultContent; }) {
+  const { judgment } = props.resultContent;
+  switch (judgment) {
+    case '満たしている':
+      return <>○</>;
+    case '満たしていない':
+      return <>×</>;
+    default:
+      return <>{judgment}</>;
+  }
 };
 
 const ResultTableRow = (props: { result: ResultData; }) => {
@@ -84,7 +95,7 @@ const ResultTableRow = (props: { result: ResultData; }) => {
           {result.assistive_tech_config && (<li style={list_item_style}>{nl2br(result.assistive_tech_config)}</li>)}
         </ul></td>
         <td>
-          {contents[0].judgment === '満たしている' ? '○' : '×'}
+          <Judgment resultContent={contents[0]}/>
         </td>
         <td style={larger_th_style}>
           {nl2br(contents[0].procedure)}
@@ -117,7 +128,7 @@ const ResultTableRow = (props: { result: ResultData; }) => {
             </>
           )}
           <td>
-            {item.judgment === '満たしている' ? '○' : '×'}
+            <Judgment resultContent={item} />
           </td>
           <td style={larger_th_style}>
             {nl2br(item.procedure)}
@@ -181,6 +192,7 @@ const Result = ({ query }) => {
         />
         <ul>
           <li>作成者：{metadata.author}</li>
+          {metadata.status && <li>注記：{metadata.status}</li>}
         </ul>
         <h2>テストの対象となる達成基準</h2>
         <ul>

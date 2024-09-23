@@ -19,6 +19,7 @@ const Index = () =>
       <h1>アクセシビリティ サポーテッド（AS）情報</h1>
       <ul>
         <li>作成者：{metadata.author}</li>
+        {metadata.status && <li>注記：{metadata.status}</li>}
       </ul>
       <h2>達成基準の一覧</h2>
       <ul>
