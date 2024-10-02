@@ -718,6 +718,14 @@
   - 3.3.3
   techs:
   - ARIA2
+0030-03:
+  title: aria-required 属性による必須項目の特定（role属性）
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0030-03.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0030-03.md
+  criteria:
+  - 1.3.1, 3.3.3
+  techs:
+  - ARIA2
 0030-05:
   title: JavaScriptによって挿入されたaria-required 属性による必須項目の特定（input要素、select要素、textarea要素）
   code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0030-05.html
@@ -812,6 +820,14 @@
   - 2.4.9
   techs:
   - ARIA8
+0040-01:
+  title: 'aria-labelledby 属性による複数のラベルの提供（input 要素 : 複数のaria-labelledby属性値）'
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0040-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0040-01.md
+  criteria:
+  - 1.1.1, 3.3.2
+  techs:
+  - ARIA9
 0041-01:
   title: リンクの目的を示すために aria-labelledby を使用する
   code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0041-01.html
@@ -820,6 +836,29 @@
   - 2.4.4
   techs:
   - ARIA7
+0042-01:
+  title: aria-labelledby による代替テキストの提供（img要素）
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0042-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0042-01.md
+  criteria: []
+  techs:
+  - ARIA10
+0043-01:
+  title: リージョンとランドマークに名前 (name) を付けるために、aria-labelledby を使用する
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0043-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0043-01.md
+  criteria:
+  - 1.3.1
+  techs:
+  - ARIA13
+0043-02:
+  title: リージョンとランドマークに名前 (name) を付けるために、aria-labelledby を使用する
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0043-02.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0043-02.md
+  criteria:
+  - 1.3.1
+  techs:
+  - ARIA13
 0044-01:
   title: ページのリージョンを特定するために ARIA ランドマークを使用する
   code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0044-01.html
@@ -984,3 +1023,11 @@
   - 4.1.2
   techs:
   - ARIA5
+0121-01:
+  title: 制限時間が切れようとしていることを利用者に警告するスクリプトを提供する
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0060-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0121-01.md
+  criteria:
+  - 2.2.1
+  techs:
+  - SCR16
