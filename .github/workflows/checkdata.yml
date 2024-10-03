@@ -17,7 +17,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          ref: master
+          fetch-depth: 0
+
+      - name: プルリクエストの場合、PRブランチをチェックアウト
+        if: github.event_name == 'pull_request'
+        run: git checkout ${{ github.event.pull_request.head.sha }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
