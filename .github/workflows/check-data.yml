@@ -29,5 +29,13 @@ jobs:
           python -m pip install --upgrade pip
           pip install pyyaml
 
+
+      - name: Show current directory
+        run: pwd
+
+      - name: List files
+        run: ls -R
+
       - name: Run check_data.py
         run: python3 .github/workflows/check_data.py
+        shell: bash -e {0}
