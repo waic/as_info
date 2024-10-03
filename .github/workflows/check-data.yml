@@ -36,5 +36,5 @@ jobs:
         run: ls -aR
 
       - name: Run check_data.py
-        run: python3 python/check_data.py
+        run: python3 $GITHUB_WORKSPACE/python/check_data.py
         shell: bash -e {0}
