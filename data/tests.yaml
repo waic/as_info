@@ -723,7 +723,8 @@
   code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0030-03.html
   document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0030-03.md
   criteria:
-  - 1.3.1, 3.3.3
+  - 1.3.1
+  - 3.3.3
   techs:
   - ARIA2
 0030-05:
@@ -825,7 +826,8 @@
   code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0040-01.html
   document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0040-01.md
   criteria:
-  - 1.1.1, 3.3.2
+  - 1.1.1
+  - 3.3.2
   techs:
   - ARIA9
 0041-01:
