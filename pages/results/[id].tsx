@@ -95,7 +95,7 @@ const ResultTableRow = (props: { result: ResultData; }) => {
           {result.assistive_tech_config && (<li style={list_item_style}>{nl2br(result.assistive_tech_config)}</li>)}
         </ul></td>
         <td>
-          <Judgment resultContent={contents[0]}/>
+          <Judgment resultContent={contents[0]} />
         </td>
         <td style={larger_th_style}>
           {nl2br(contents[0].procedure)}
@@ -273,6 +273,15 @@ const Result = ({ query }) => {
       <nav>
         <h2>リンク</h2>
         <ul className="related_link">
+          <li>
+            <Link href="https://waic.jp/translations/WCAG22/">WCAG 2.2</Link>
+          </li>
+          <li>
+            <Link href="https://waic.jp/translations/WCAG21/">WCAG 2.1</Link>
+          </li>
+          <li>
+            <Link href="https://waic.jp/translations/WCAG20/">WCAG 2.0</Link>
+          </li>
           <li><Link href="../">アクセシビリティ サポーテッド（AS）情報のホーム</Link></li>
         </ul>
       </nav>

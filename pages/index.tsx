@@ -61,6 +61,15 @@ const Index = () =>
             過去のアクセシビリティ サポーテッド検証結果
           </Link>
         </li>
+        <li>
+          <Link href="https://waic.jp/translations/WCAG22/">WCAG 2.2</Link>
+        </li>
+        <li>
+          <Link href="https://waic.jp/translations/WCAG21/">WCAG 2.1</Link>
+        </li>
+        <li>
+          <Link href="https://waic.jp/translations/WCAG20/">WCAG 2.0</Link>
+        </li>
       </ul>
     </nav>
   </>

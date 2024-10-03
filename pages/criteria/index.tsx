@@ -23,7 +23,7 @@ const Index = () =>
       </ul>
       <h2>達成基準の一覧</h2>
       <ul>
-      {Object.keys(criteria).map(
+        {Object.keys(criteria).map(
           key => <li key={key}>
             <Link href={'criteria/' + key + '.html'}>
               {key}
@@ -40,6 +40,15 @@ const Index = () =>
       <h2>リンク</h2>
       <ul className="related_link">
         <li><Link href="../techs">達成方法の一覧</Link></li>
+        <li>
+          <Link href="https://waic.jp/translations/WCAG22/">WCAG 2.2</Link>
+        </li>
+        <li>
+          <Link href="https://waic.jp/translations/WCAG21/">WCAG 2.1</Link>
+        </li>
+        <li>
+          <Link href="https://waic.jp/translations/WCAG20/">WCAG 2.0</Link>
+        </li>
         <li><Link href="../">アクセシビリティ サポーテッド（AS）情報のホーム</Link></li>
       </ul>
     </nav>
