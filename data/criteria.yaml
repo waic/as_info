@@ -188,6 +188,10 @@
   level: AAA
   wcag20url: time-limits-server-timeout.html
   wcag21url: re-authenticating.html
+2.2.6:
+  title: タイムアウト
+  level: AAA
+  wcag21url: timeouts.html
 2.3.1:
   title: 3回の閃光、又は閾値以下
   level: A
@@ -256,6 +260,18 @@
   level: AAA
   wcag20url: navigation-mechanisms-headings.html
   wcag21url: section-headings.html
+2.4.11:
+  title: 隠されないフォーカス (最低限)
+  level: AA
+  wcag22url: tbd
+2.4.12:
+  title: 隠されないフォーカス (高度)
+  level: AAA
+  wcag22url: tbd
+2.4.13:
+  title: フォーカスの外観
+  level: AAA
+  wcag22url: tbd
 2.5.1:
   title: ポインタのジェスチャ
   level: A
@@ -280,6 +296,14 @@
   title: 入力メカニズム非依存
   level: AAA
   wcag21url: concurrent-input-mechanisms.html
+2.5.7:
+  title: ドラッグ動作
+  level: AA
+  wcag22url: tbd
+2.5.8:
+  title: ターゲットのサイズ (最低限)
+  level: AA
+  wcag22url: tbd
 3.1.1:
   title: ページの言語
   level: A
@@ -337,6 +361,10 @@
   level: AAA
   wcag20url: consistent-behavior-no-extreme-changes-context.html
   wcag21url: change-on-request.html
+3.2.6:
+  title: 一貫したヘルプ
+  level: A
+  wcag22url: tbd
 3.3.1:
   title: エラーの特定
   level: A
@@ -370,11 +398,24 @@
   level: AAA
   wcag20url: minimize-error-reversible-all.html
   wcag21url: error-prevention-all.html
+3.3.7:
+  title: 冗長な入力項目
+  level: A
+  wcag22url: tbd
+3.3.8:
+  title: アクセシブルな認証 (最低限)
+  level: AA
+  wcag22url: tbd
+3.3.9:
+  title: アクセシブルな認証 (高度)
+  level: AAA
+  wcag22url: tbd
 4.1.1:
   title: 構文解析
   level: A
   wcag20url: ensure-compat-parses.html
   wcag21url: parsing.html
+  wcag22note: 廃止・削除
 4.1.2:
   title: 名前(name)・役割(role)及び値(value)
   level: A
