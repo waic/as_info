@@ -31,4 +31,3 @@ jobs:
 
       - name: Run checkdata.py
         run: python3 .github/workflows/checkdata.py
-        shell: bash -e {0}
