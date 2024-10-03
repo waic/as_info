@@ -10,7 +10,7 @@ on:
       - master
 
 jobs:
-  check-data:
+  checkdata:
     if: github.event.pull_request.merged == true || github.event_name == 'push' || github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     steps:
