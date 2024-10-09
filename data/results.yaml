@@ -7968,3 +7968,2176 @@
   comment:
   tester: SAWADA STANDARD DESIGN
   date: 2022/03/04
+- id: 440
+  test: 0035-01
+  os: Windows 11 22H2 22621.2215
+  user_agent: Google Chrome 116.0.5845.111
+  assistive_tech: NVDA 2023.1jp
+  assistive_tech_config: ''
+  contents:
+  - procedure: 当該ページを開き、下矢印で読み進む
+    actual: 「ウェブアクセシビリティ基盤委員会公開サイト」と読み上げる。他には何も読み上げない。
+    judgment: ○
+  comment: 装飾目的の背景画像を読み上げていないと判断しました。
+  tester: 西本 卓也
+  date: '2023-08-24'
+- id: 441
+  test: 0035-01
+  os: Windows10 22H2
+  user_agent: Firefox 116.0.3
+  assistive_tech: NVDA 2022.4jp
+  assistive_tech_config: ''
+  contents:
+  - procedure: WebDeveloperにてCSS Disable
+    actual: 背景画像が消えた
+    judgment: ○
+  - procedure: 下向き矢印を押して、p要素を読んだ
+    actual: ウェブアクセシビリティ基盤委員会公開サイト
+    judgment: ○
+  comment: CSSをオフにする手順は一般的には難しいので、オフにしなくてもCSSの背景画像有り無しが比べられる方法に切り替えた方がよい気がします。
+  tester: 澤田望
+  date: '2023-08-24'
+- id: 442
+  test: 0030-01
+  os: Windows 11 22H2
+  user_agent: Google Chrome 116.0.5845.110
+  assistive_tech: NVDA 2023.1jp
+  assistive_tech_config: ''
+  contents:
+  - procedure: タブキーを押し、[ログインネーム]のテキストフィールドにフォーカスを移動
+    actual: 「ログインネーム エディット 必須」と読み上げられ、必須であることが伝わる
+    judgment: ○
+  - procedure: タブキーを押し、[パスワード]のテキストフィールドへとフォーカスを移動
+    actual: '[パスワード  エディット  保護付き  必須]と読み上げられ、入力必須であることが伝わる'
+    judgment: ○
+  - procedure: タブキーを押し、[利用しているOS(PC)]のセレクトボックスへとフォーカスを移動
+    actual: '[利用しているOS(PC)  コンボボックス  Windows  折りたたみ  必須]と読み上げ、必須であることgあ伝わる'
+    judgment: ○
+  - procedure: タブキーを押し、[利用しているOS(モバイル)]のセレクトボックスへとフォーカスを移動
+    actual: '[利用しているOS(モバイル)  コンボボックス  選択してください  折りたたみ  必須]と読み上げられ、必須であることが伝わる'
+    judgment: ○
+  - procedure: タブキーを押し、[スクリーンリーダーの利用状況]を選択するラジオボタンへとフォーカスを移動
+    actual: '[スクリーンリーダーの利用状況  グループ  必須]と読み上げられ、必須であることが伝わる'
+    judgment: ○
+  comment: ''
+  tester: 大塚 勇哉
+  date: '2023-08-24'
+- id: 443
+  test: 0035-04
+  os: Windows 11 22H2 22621.2283
+  user_agent: Firefox 117.0.1
+  assistive_tech: NVDA 2023.2jp-r2
+  assistive_tech_config: ''
+  contents:
+  - procedure: 当該ページを開き、下矢印で読み進む
+    actual: 「リンク ホーム」と読み上げる。他には何も読み上げない。
+    judgment: ○
+  - procedure: 当該ページを開き、下矢印で読み進む
+    actual: 「リンク　会社概要」と読み上げる。他には何も読み上げない。
+    judgment: ○
+  comment: ''
+  tester: 西本 卓也
+  date: '2023-09-28'
+- id: 444
+  test: 0035-01
+  os: Windows 11 22H2 22621.2283
+  user_agent: Firefox 117.0.1
+  assistive_tech: NVDA 2023.2jp-r2
+  assistive_tech_config: ''
+  contents:
+  - procedure: 当該ページを開き、下矢印で読み進む
+    actual: 「ウェブアクセシビリティ基盤委員会公開サイト」と読み上げる。他には何も読み上げない。
+    judgment: ○
+  comment: ''
+  tester: 西本 卓也
+  date: '2023-09-28'
+- id: 445
+  test: 0034-01
+  os: Windows 11 22H2 22621.2283
+  user_agent: Firefox 117.0.1
+  assistive_tech: NVDA 2023.2jp-r2
+  assistive_tech_config: ''
+  contents:
+  - procedure: 当該ページを開き、下矢印で読み進む
+    actual: 「見出しレベル２ とうきょうと」「見出しレベル２ とうきょうと」
+    judgment: ○
+  - procedure: 当該ページを開き、下矢印で読み進む
+    actual: 「見出しレベル２ とうきょうと」「見出しレベル２ ひがしきょうみやこ」
+    judgment: ○
+  comment: ''
+  tester: 西本 卓也
+  date: '2023-09-28'
+- id: 446
+  test: 0032-01
+  os: Windows 11 22H2 22621.2283
+  user_agent: Firefox 117.0.1
+  assistive_tech: NVDA 2023.2jp-r2
+  assistive_tech_config: ''
+  contents:
+  - procedure: 当該ページを開き、下矢印で読み進む
+    actual: 「リンク ワシントンが経済成長を刺激する」「リンク 全文表示」の２つを読み上げる
+    judgment: ○
+  comment: ''
+  tester: 西本 卓也
+  date: '2023-09-28'
+- id: 447
+  test: 0032-01
+  os: Windows 11 22H2 22621.2283
+  user_agent: Edge 117.0.2045.43
+  assistive_tech: NVDA 2023.2jp-r2
+  assistive_tech_config: ''
+  contents:
+  - procedure: 当該ページを開き、下矢印で読み進む
+    actual: 「リンク ワシントンが経済成長を刺激する全文表示」を読み上げる
+    judgment: ○
+  comment: ''
+  tester: 西本 卓也
+  date: '2023-09-28'
+- id: 448
+  test: 0032-01
+  os: Windows 11 22H2 22621.2283
+  user_agent: Chrome 117.0.5938.132
+  assistive_tech: NVDA 2023.2jp-r2
+  assistive_tech_config: ''
+  contents:
+  - procedure: 当該ページを開き、下矢印で読み進む
+    actual: 「リンク ワシントンが経済成長を刺激する全文表示」を読み上げる
+    judgment: ○
+  comment: ''
+  tester: 西本 卓也
+  date: '2023-09-28'
+- id: 449
+  test: 0032-01
+  os: Windows 11 22H2 22621.2283
+  user_agent: Edge 117.0.2045.43
+  assistive_tech: ナレーター
+  assistive_tech_config: ''
+  contents:
+  - procedure: 当該ページを開き、下矢印で読み進む
+    actual: 「リンク ワシントンが経済成長を刺激する」「全文表示」の２つを読み上げる
+    judgment: ○
+  comment: ''
+  tester: 西本 卓也
+  date: '2023-09-28'
+- id: 450
+  test: 0032-01
+  os: Windows 11 22H2 22621.2283
+  user_agent: NetReader Neo
+  assistive_tech: PC-Talker Neo クリエイター版
+  assistive_tech_config: ''
+  contents:
+  - procedure: 当該ページを開き、右矢印で読み進む
+    actual: 「ワシントンが経済成長を刺激する全文表示 リンク」と音声キャプションに表示される
+    judgment: ○
+  comment: ''
+  tester: 西本 卓也
+  date: '2023-09-28'
+- id: 451
+  test: 0031-02
+  os: Windows 11 22H2 22621.2283
+  user_agent: Firefox 117.0.1
+  assistive_tech: NVDA 2023.2jp-r2
+  assistive_tech_config: フォーカスモードに切り替える
+  contents:
+  - procedure: Tabでフォーカスを移動
+    actual: 「ツリービュー」と読み上げる
+    judgment: ○
+  - procedure: Tabでフォーカスを移動
+    actual: 「鳥 1の2 レベル1」
+    judgment: ×
+  - procedure: Tabを2回押してフォーカス移動
+    actual: 「グループ」
+    judgment: ○
+  comment: ''
+  tester: 西本 卓也
+  date: '2023-09-28'
+- id: 452
+  test: 0031-02
+  os: Windows 11 22H2 22621.2283
+  user_agent: Chrome 117.0.5938.132
+  assistive_tech: NVDA 2023.2jp-r2
+  assistive_tech_config: フォーカスモードに切り替える
+  contents:
+  - procedure: Tabでフォーカスを移動
+    actual: 「ツリービュー」と読み上げる
+    judgment: ○
+  - procedure: Tabでフォーカスを移動
+    actual: 「鳥 1の2 レベル1」
+    judgment: ×
+  - procedure: Tabを2回押してフォーカス移動
+    actual: 「グループ」
+    judgment: ○
+  comment: ''
+  tester: 西本 卓也
+  date: '2023-09-28'
+- id: 453
+  test: 0031-02
+  os: Windows 11 22H2 22621.2283
+  user_agent: Edge 117.0.2045.43
+  assistive_tech: NVDA 2023.2jp-r2
+  assistive_tech_config: フォーカスモードに切り替える
+  contents:
+  - procedure: Tabでフォーカスを移動
+    actual: 「ツリービュー」と読み上げる
+    judgment: ○
+  - procedure: Tabでフォーカスを移動
+    actual: 「鳥 1の2 レベル1」
+    judgment: ×
+  - procedure: Tabを2回押してフォーカス移動
+    actual: 「グループ」
+    judgment: ○
+  comment: ''
+  tester: 西本 卓也
+  date: '2023-09-28'
+- id: 454
+  test: 0031-02
+  os: Windows 11 22H2 22621.2283
+  user_agent: Edge 117.0.2045.43
+  assistive_tech: ナレーター
+  assistive_tech_config: ''
+  contents:
+  - procedure: Tabでフォーカスを移動
+    actual: 「ツリービュー」と読み上げる
+    judgment: ○
+  - procedure: Tabでフォーカスを移動
+    actual: 「鳥 2の1 レベル1」
+    judgment: ×
+  - procedure: Tabを2回押してフォーカス移動
+    actual: 「グループ」
+    judgment: ○
+  comment: ''
+  tester: 西本 卓也
+  date: '2023-09-28'
+- id: 455
+  test: 0001-01
+  os: Windows 11 Pro 22H2 22621.2283
+  user_agent: Google Chrome 117.0.5938.132
+  assistive_tech: NVDA application 2023.1jp
+  assistive_tech_config: ''
+  contents:
+  - procedure: '表示 : ブラウザの設定を変更して画像非表示にし、表示内容を確認'
+    actual: 代替テキストや、コンテンツと誤解されるようなファイル名や URL などは表示されず、リンクテキスト “ウェブアクセシビリティ基盤委員会公開サイト”
+      のみが表示される
+    judgment: 満たしている
+  comment: 視覚閲覧環境
+  tester: me_tks
+  date: '2023-09-28'
+- id: 456
+  test: 0001-02
+  os: Windows 11 Pro 22H2 22621.2283
+  user_agent: Google Chrome 117.0.5938.132
+  assistive_tech: NVDA application 2023.1jp
+  assistive_tech_config: ''
+  contents:
+  - procedure: '表示 : ブラウザの設定を変更して画像非表示にし、表示内容を確認'
+    actual: 代替テキストや、コンテンツと誤解されるようなファイル名や URL などは表示されず、リンクテキスト “ウェブアクセシビリティ基盤委員会公開サイト”
+      のみが表示される
+    judgment: 満たしている
+  comment: 視覚閲覧環境
+  tester: me_tks
+  date: '2023-09-28'
+- id: 457
+  test: 0001-03
+  os: Windows 11 Pro 22H2 22621.2283
+  user_agent: Google Chrome 117.0.5938.132
+  assistive_tech: NVDA application 2023.1jp
+  assistive_tech_config: ''
+  contents:
+  - procedure: '表示 : ブラウザの設定を変更して画像非表示にし、表示内容を確認'
+    actual: 代替テキストや、コンテンツと誤解されるようなファイル名や URL などは表示されず、テキスト “ウェブアクセシビリティ基盤委員会公開サイト”
+      のみが表示される
+    judgment: 満たしている
+  comment: 視覚閲覧環境
+  tester: me_tks
+  date: '2023-09-28'
+- id: 458
+  test: 0002-01
+  os: Windows 11 Pro 22H2 22621.2283
+  user_agent: Google Chrome 117.0.5938.132
+  assistive_tech: NVDA application 2023.1jp
+  assistive_tech_config: ''
+  contents:
+  - procedure: '表示 : ブラウザの設定を変更して画像非表示にし、表示内容を確認'
+    actual: アイコン画像の代わりに、代替テキスト “ウェブアクセシビリティ基盤委員会” が表示される
+    judgment: 満たしている
+  comment: 視覚閲覧環境
+  tester: me_tks
+  date: '2023-09-28'
+- id: 459
+  test: 0002-02
+  os: Windows 11 Pro 22H2 22621.2283
+  user_agent: Google Chrome 117.0.5938.132
+  assistive_tech: NVDA application 2023.1jp
+  assistive_tech_config: ''
+  contents:
+  - procedure: '表示 : ブラウザの設定を変更して画像非表示にし、表示内容を確認'
+    actual: リンクテキスト “施設ご利用の手引き” に続き、アイコン画像の代替テキスト “PDF ファイル” が表示される
+    judgment: 満たしている
+  comment: 視覚閲覧環境
+  tester: me_tks
+  date: '2023-09-28'
+- id: 460
+  test: 0004-01
+  os: Windows 11 22h2
+  user_agent: Google Chrome 117.0.5938.132（Official Bu
+  assistive_tech: NVDA 2023.2jp-r2 (2023.2.0.3096)
+  assistive_tech_config: ''
+  contents:
+  - procedure: 下矢印キーを押して項目を確認
+    actual: 各項目がリンクであることは読み上げられるが、イメージマップであることが判別できる情報は読み上げられない
+    judgment: 満たしていない
+  comment: 音声閲覧環境
+  tester: yuyaroid
+  date: '2023-09-28'
+- id: 461
+  test: 0004-02
+  os: Windows 11 22h2
+  user_agent: Google Chrome 117.0.5938.132（Official Bu
+  assistive_tech: NVDA 2023.2jp-r2 (2023.2.0.3096)
+  assistive_tech_config: ''
+  contents:
+  - procedure: 下矢印キーを押して項目を確認
+    actual: 代替テキストは読み上げられなかった
+    judgment: 満たしていない
+  - procedure: ページの先頭で[g]キーを押して次の画像を探索した
+    actual: 「次の画像はありません」と読み上げられ、代替テキストは読み上げられない
+    judgment: 満たしていない
+  comment: 音声閲覧環境
+  tester: yuyaroid
+  date: '2023-09-28'
+- id: 462
+  test: 0004-03
+  os: Windows 11 22h2
+  user_agent: Google Chrome 117.0.5938.132（Official Bu
+  assistive_tech: NVDA 2023.2jp-r2 (2023.2.0.3096)
+  assistive_tech_config: ''
+  contents:
+  - procedure: 下矢印キーを押してそれぞれの項目を確認
+    actual: それぞれのテキストは読み上げられたが、alt属性として設定されていることは読み上げられない
+    judgment: 満たしていない
+  comment: 音声閲覧環境
+  tester: yuyaroid
+  date: '2023-09-28'
+- id: 463
+  test: 0004-04
+  os: Windows 11 22h2
+  user_agent: Google Chrome 117.0.5938.132（Official Bu
+  assistive_tech: NVDA 2023.2jp-r2 (2023.2.0.3096)
+  assistive_tech_config: ''
+  contents:
+  - procedure: '[tab]キーを押してそれぞれの項目へ移動し、[enter]キーを押してリンク先へ遷移するかを確認した'
+    actual: それぞれの項目について、リンク先へと遷移した
+    judgment: 満たしている
+  comment: 音声閲覧環境
+  tester: yuyaroid
+  date: '2023-09-28'
+- id: 464
+  test: 0004-05
+  os: Windows 11 22h2
+  user_agent: Google Chrome 117.0.5938.132（Official Bu
+  assistive_tech: NVDA 2023.2jp-r2 (2023.2.0.3096)
+  assistive_tech_config: ''
+  contents:
+  - procedure: '[tab]キーを押してそれぞれの項目を確認'
+    actual: テキストとともに「リンク」と読み上げられ、リンクであることを判別できる
+    judgment: 満たしている
+  comment: 音声閲覧環境
+  tester: yuyaroid
+  date: '2023-09-28'
+- id: 465
+  test: 0005-01
+  os: Windows 11 22h2
+  user_agent: Google Chrome 117.0.5938.132（Official Bu
+  assistive_tech: NVDA 2023.2jp-r2 (2023.2.0.3096)
+  assistive_tech_config: ''
+  contents:
+  - procedure: テストファイルをブラウザで読み込んだ
+    actual: タイトル(ウェブアクセシビリティ基盤委員会)が読み上げられた
+    judgment: 満たしている
+  - procedure: テストファイルを開いた状態で[alt+tab]キーを押し、ブラウザのウインドウのタイトルを読み上げ
+    actual: 「ウェブアクセシビリティ基盤委員会 - Google Chrome 2列2の4」と読み上げられ、ページタイトルを確認できる
+    judgment: 満たしている
+  comment: 音声閲覧環境
+  tester: yuyaroid
+  date: '2023-09-28'
+- id: 466
+  test: 0006-01
+  os: Windows 11 22h2
+  user_agent: Google Chrome 117.0.5938.132（Official Bu
+  assistive_tech: NVDA 2023.2jp-r2 (2023.2.0.3096)
+  assistive_tech_config: ''
+  contents:
+  - procedure: 下矢印キーを押して項目を確認
+    actual: リンクテキストの内容が読み上げられた
+    judgment: 満たしている
+  comment: 音声閲覧環境
+  tester: yuyaroid
+  date: '2023-09-28'
+- id: 467
+  test: 0006-02
+  os: Windows 11 22h2
+  user_agent: Google Chrome 117.0.5938.132（Official Bu
+  assistive_tech: NVDA 2023.2jp-r2 (2023.2.0.3096)
+  assistive_tech_config: ''
+  contents:
+  - procedure: 下矢印キーを押して項目を確認
+    actual: リンク画像の代替テキストが読み上げられた
+    judgment: 満たしている
+  comment: 音声閲覧環境
+  tester: yuyaroid
+  date: '2023-09-28'
+- id: 468
+  test: 0032-01
+  os: Windows 10 Pro 22H2
+  user_agent: Google Chrome 117.0.5938.132
+  assistive_tech: なし（視覚閲覧環境）
+  assistive_tech_config: ''
+  contents:
+  - procedure: テストファイルを操作し、結果を確認。
+    actual: “ワシントンが経済成長を刺激する”は表示されず、 “全文表示”のリンクテキストのみが表示される
+    judgment: ○
+  comment: ''
+  tester: 山崎 規弘
+  date: '2023-09-28'
+- id: 469
+  test: 0032-01
+  os: Windows 10 Pro 22H2
+  user_agent: Firefox 118.0 (64 ビット)
+  assistive_tech: なし（視覚閲覧環境）
+  assistive_tech_config: ''
+  contents:
+  - procedure: テストファイルを操作し、結果を確認。
+    actual: “ワシントンが経済成長を刺激する”は表示されず、 “全文表示”のリンクテキストのみが表示される
+    judgment: ○
+  comment: ''
+  tester: 山崎 規弘
+  date: '2023-09-28'
+- id: 470
+  test: 0032-01
+  os: Windows 10 Pro 22H2
+  user_agent: Microsoft Edge for Business バージョン 117.0.2045.43 (公式ビルド) (64 ビット)
+  assistive_tech: なし（視覚閲覧環境）
+  assistive_tech_config: ''
+  contents:
+  - procedure: テストファイルを操作し、結果を確認。
+    actual: “ワシントンが経済成長を刺激する”は表示されず、 “全文表示”のリンクテキストのみが表示される
+    judgment: ○
+  comment: ''
+  tester: 山崎 規弘
+  date: '2023-09-28'
+- id: 471
+  test: 0032-01
+  os: Windows 10 Pro 22H2
+  user_agent: Google Chrome 117.0.5938.132
+  assistive_tech: NVDA 2023.2jp-r2(2023.2.0.3096)
+  assistive_tech_config: ''
+  contents:
+  - procedure: テストファイルを操作し、結果を確認。
+    actual: “ワシントンが経済成長を刺激する 全文表示” が読み上げられる
+    judgment: ○
+  comment: ''
+  tester: 山崎 規弘
+  date: '2023-09-28'
+- id: 472
+  test: 0032-01
+  os: Windows 10 Pro 22H2
+  user_agent: Firefox 118.0 (64 ビット)
+  assistive_tech: NVDA 2023.2jp-r2(2023.2.0.3096)
+  assistive_tech_config: ''
+  contents:
+  - procedure: テストファイルを操作し、結果を確認。
+    actual: “リンク ワシントンが経済成長を刺激する”と“リンク 全文表示”と別々のリンクとして読み上げられる
+    judgment: ''
+  comment: 別々のリンクとして読み上げられることを除けば「“ワシントンが経済成長を刺激する 全文表示” が読み上げられる」という期待される結果は満たしているが、ひとつのリンクとして読み上げられるということまで期待されているかわからず、○か×かの判断ができなかった
+  tester: 山崎 規弘
+  date: '2023-09-28'
+- id: 473
+  test: 0032-01
+  os: Windows 10 Pro 22H2
+  user_agent: Microsoft Edge for Business バージョン 117.0.2045.43 (公式ビルド) (64 ビット)
+  assistive_tech: NVDA 2023.2jp-r2(2023.2.0.3096)
+  assistive_tech_config: ''
+  contents:
+  - procedure: テストファイルを操作し、結果を確認。
+    actual: “ワシントンが経済成長を刺激する 全文表示” が読み上げられる
+    judgment: ○
+  comment: ''
+  tester: 山崎 規弘
+  date: '2023-09-28'
+- id: 474
+  test: 0034-01
+  os: Windows 10 Pro 22H2
+  user_agent: Google Chrome 117.0.5938.132
+  assistive_tech: なし（視覚閲覧環境）
+  assistive_tech_config: ''
+  contents:
+  - procedure: 表示内容を確認
+    actual: CSSで文字間隔を調整した2番目のＨ2要素「東京都」の文字間隔の広がりが確認できる
+    judgment: ○
+  comment: ''
+  tester: 山崎 規弘
+  date: '2023-09-28'
+- id: 475
+  test: 0034-01
+  os: Windows 10 Pro 22H2
+  user_agent: Firefox 118.0 (64 ビット)
+  assistive_tech: なし（視覚閲覧環境）
+  assistive_tech_config: ''
+  contents:
+  - procedure: 表示内容を確認
+    actual: CSSで文字間隔を調整した2番目のＨ2要素「東京都」の文字間隔の広がりが確認できる
+    judgment: ○
+  comment: ''
+  tester: 山崎 規弘
+  date: '2023-09-28'
+- id: 476
+  test: 0034-01
+  os: Windows 10 Pro 22H2
+  user_agent: Microsoft Edge for Business バージョン 117.0.2045.43 (公式ビルド) (64 ビット)
+  assistive_tech: なし（視覚閲覧環境）
+  assistive_tech_config: ''
+  contents:
+  - procedure: 表示内容を確認
+    actual: CSSで文字間隔を調整した2番目のＨ2要素「東京都」の文字間隔の広がりが確認できる
+    judgment: ○
+  comment: ''
+  tester: 山崎 規弘
+  date: '2023-09-28'
+- id: 477
+  test: 0034-01
+  os: Windows 10 Pro 22H2
+  user_agent: Google Chrome 117.0.5938.132
+  assistive_tech: NVDA 2023.2jp-r2(2023.2.0.3096)
+  assistive_tech_config: ''
+  contents:
+  - procedure: '1.1番目のH2要素「東京都」と2番目のH2要素「東京都」を読み上げ、内容を確認
+
+      2.2番目のH2要素「東京都」と3番目のH2要素「東 京 都」を読み上げ、内容を確認'
+    actual: '次の 1. ～ 2. をすべて満たしている
+
+      1.テスト手順(音声閲覧環境) 1 の結果、どちらも「とうきょうと」と読み上げられる
+
+      2.テスト手順(音声閲覧環境) 2 の結果、「とうきょうと」と「ひがし　きょう　みやこ」と異なる読み上げ結果となる'
+    judgment: ○
+  comment: ''
+  tester: 山崎 規弘
+  date: '2023-09-28'
+- id: 478
+  test: 0034-01
+  os: Windows 10 Pro 22H2
+  user_agent: Firefox 118.0 (64 ビット)
+  assistive_tech: NVDA 2023.2jp-r2(2023.2.0.3096)
+  assistive_tech_config: ''
+  contents:
+  - procedure: '1.1番目のH2要素「東京都」と2番目のH2要素「東京都」を読み上げ、内容を確認
+
+      2.2番目のH2要素「東京都」と3番目のH2要素「東 京 都」を読み上げ、内容を確認'
+    actual: '次の 1. ～ 2. をすべて満たしている
+
+      1.テスト手順(音声閲覧環境) 1 の結果、どちらも「とうきょうと」と読み上げられる
+
+      2.テスト手順(音声閲覧環境) 2 の結果、「とうきょうと」と「ひがし　きょう　みやこ」と異なる読み上げ結果となる'
+    judgment: ○
+  comment: ''
+  tester: 山崎 規弘
+  date: '2023-09-28'
+- id: 479
+  test: 0034-01
+  os: Windows 10 Pro 22H2
+  user_agent: Microsoft Edge for Business バージョン 117.0.2045.43 (公式ビルド) (64 ビット)
+  assistive_tech: NVDA 2023.2jp-r2(2023.2.0.3096)
+  assistive_tech_config: ''
+  contents:
+  - procedure: '1.1番目のH2要素「東京都」と2番目のH2要素「東京都」を読み上げ、内容を確認
+
+      2.2番目のH2要素「東京都」と3番目のH2要素「東 京 都」を読み上げ、内容を確認'
+    actual: '次の 1. ～ 2. をすべて満たしている
+
+      1.テスト手順(音声閲覧環境) 1 の結果、どちらも「とうきょうと」と読み上げられる
+
+      2.テスト手順(音声閲覧環境) 2 の結果、「とうきょうと」と「ひがし　きょう　みやこ」と異なる読み上げ結果となる'
+    judgment: ○
+  comment: ''
+  tester: 山崎 規弘
+  date: '2023-09-28'
+- id: 480
+  test: 0035-01
+  os: Windows 10 Pro 22H2
+  user_agent: Google Chrome 117.0.5938.132
+  assistive_tech: なし（視覚閲覧環境）
+  assistive_tech_config: ''
+  contents:
+  - procedure: テストファイルを操作し、結果を確認。 ユーザエージェントでスタイルシート無効にし内容を確認
+    actual: スタイルシート無効により画像が非表示となる。
+    judgment: ○
+  comment: スタイルシートの無効化には拡張機能Web Developer を使用
+  tester: 山崎 規弘
+  date: '2023-09-28'
+- id: 481
+  test: 0035-01
+  os: Windows 10 Pro 22H2
+  user_agent: Firefox 118.0 (64 ビット)
+  assistive_tech: なし（視覚閲覧環境）
+  assistive_tech_config: ''
+  contents:
+  - procedure: テストファイルを操作し、結果を確認。 ユーザエージェントでスタイルシート無効にし内容を確認
+    actual: スタイルシート無効により画像が非表示となる。
+    judgment: ○
+  comment: スタイルシートの無効化には拡張機能Web Developer を使用
+  tester: 山崎 規弘
+  date: '2023-09-28'
+- id: 482
+  test: 0035-01
+  os: Windows 10 Pro 22H2
+  user_agent: Microsoft Edge for Business バージョン 117.0.2045.43 (公式ビルド) (64 ビット)
+  assistive_tech: なし（視覚閲覧環境）
+  assistive_tech_config: ''
+  contents:
+  - procedure: テストファイルを操作し、結果を確認。 ユーザエージェントでスタイルシート無効にし内容を確認
+    actual: スタイルシート無効により画像が非表示となる。
+    judgment: ○
+  comment: スタイルシートの無効化には拡張機能Web Developer を使用
+  tester: 山崎 規弘
+  date: '2023-09-28'
+- id: 483
+  test: 0035-01
+  os: Windows 10 Pro 22H2
+  user_agent: Google Chrome 117.0.5938.132
+  assistive_tech: NVDA 2023.2jp-r2(2023.2.0.3096)
+  assistive_tech_config: ''
+  contents:
+  - procedure: テストファイルを操作し、結果を確認。
+    actual: 画像として読み上げられない。
+    judgment: ○
+  comment: ''
+  tester: 山崎 規弘
+  date: '2023-09-28'
+- id: 484
+  test: 0035-01
+  os: Windows 10 Pro 22H2
+  user_agent: Firefox 118.0 (64 ビット)
+  assistive_tech: NVDA 2023.2jp-r2(2023.2.0.3096)
+  assistive_tech_config: ''
+  contents:
+  - procedure: テストファイルを操作し、結果を確認。
+    actual: 画像として読み上げられない。
+    judgment: ○
+  comment: ''
+  tester: 山崎 規弘
+  date: '2023-09-28'
+- id: 485
+  test: 0035-01
+  os: Windows 10 Pro 22H2
+  user_agent: Microsoft Edge for Business バージョン 117.0.2045.43 (公式ビルド) (64 ビット)
+  assistive_tech: NVDA 2023.2jp-r2(2023.2.0.3096)
+  assistive_tech_config: ''
+  contents:
+  - procedure: テストファイルを操作し、結果を確認。
+    actual: 画像として読み上げられない。
+    judgment: ○
+  comment: ''
+  tester: 山崎 規弘
+  date: '2023-09-28'
+- id: 486
+  test: 0029-01
+  os: macOS 13.5.2
+  user_agent: Safari 16.6 (18615.3.12.11.2)
+  assistive_tech: VoiceOver
+  assistive_tech_config: ''
+  contents:
+  - procedure: Tabキーで「X」ボタンにフォーカスを移動。
+    actual: '閉じる、ボタン
+
+      このウィンドウを閉じると、入力された情報は破棄され、メインページに戻ります。'
+    judgment: ○
+  comment: ''
+  tester: SAWADA STANDARD DESIGN
+  date: '2023-09-28'
+- id: 487
+  test: 0029-02
+  os: macOS 13.5.2
+  user_agent: Safari 16.6 (18615.3.12.11.2)
+  assistive_tech: VoiceOver
+  assistive_tech_config: ''
+  contents:
+  - procedure: Tabキーで「名前」入力欄（input要素）にフォーカスを移動。
+    actual: '名前、テキストを編集
+
+      aria-describedbyでリンクされたこの分野のちょっとした指示です。'
+    judgment: ○
+  comment: ''
+  tester: SAWADA STANDARD DESIGN
+  date: '2023-09-28'
+- id: 488
+  test: 0029-03
+  os: macOS 13.5.2
+  user_agent: Safari 16.6 (18615.3.12.11.2)
+  assistive_tech: VoiceOver
+  assistive_tech_config: ''
+  contents:
+  - procedure: 'Tabキーで「フォント」ボタンにフォーカスを移動。
+
+      Tabキーで「色」ボタンにフォーカスを移動。
+
+      Tabキーで「カスタマイズ」ボタンにフォーカスを移動。'
+    actual: 'フォント、ボタン
+
+      このページで使用するフォントフェイスとサイズの選択
+
+      色、ボタン
+
+      このページで使用する色を選択
+
+      カスタマイズ、ボタン
+
+      このページで使われているレイアウトやスタイルをカスタマイズ'
+    judgment: ○
+  comment: 3つのボタンでテストをすることになっていますが、何が違うのか不明でした。
+  tester: SAWADA STANDARD DESIGN
+  date: '2023-09-28'
+- id: 489
+  test: 0029-04
+  os: macOS 13.5.2
+  user_agent: Safari 16.6 (18615.3.12.11.2)
+  assistive_tech: VoiceOver
+  assistive_tech_config: ''
+  contents:
+  - procedure: Tabキーで「名前」入力欄（input要素）にフォーカスを移動。
+    actual: '名前、テキストを編集
+
+      名前は任意です。'
+    judgment: ○
+  comment: '「名前は任意です。」について、テストケースでは「隠された」と説明されているが、テストコード上では画面に表示されており、aria-hidden="true"
+    なので意図は分かりますが、やや戸惑います。
+
+    '
+  tester: SAWADA STANDARD DESIGN
+  date: '2023-09-28'
+- id: 490
+  test: 0029-05
+  os: macOS 13.5.2
+  user_agent: Safari 16.6 (18615.3.12.11.2)
+  assistive_tech: VoiceOver
+  assistive_tech_config: ''
+  contents:
+  - procedure: 'Tabキーで「フォント」ボタンにフォーカスを移動。
+
+      Tabキーで「色」ボタンにフォーカスを移動。
+
+      Tabキーで「カスタマイズ」ボタンにフォーカスを移動。'
+    actual: 'フォント、ボタン
+
+      このページで使用するフォントフェイスとサイズの選択
+
+      色、ボタン
+
+      このページで使用する色を選択
+
+      カスタマイズ、ボタン
+
+      このページで使われているレイアウトやスタイルをカスタマイズ'
+    judgment: ○
+  comment: 3つのボタンでテストをすることになっていますが、何が違うのか不明でした。
+  tester: SAWADA STANDARD DESIGN
+  date: '2023-09-28'
+- id: 491
+  test: 0029-06
+  os: macOS 13.5.2
+  user_agent: Safari 16.6 (18615.3.12.11.2)
+  assistive_tech: VoiceOver
+  assistive_tech_config: ''
+  contents:
+  - procedure: Tabキーで「X」ボタンにフォーカスを移動。
+    actual: '閉じる、ボタン
+
+      このウィンドウを閉じると、入力された情報は破棄され、メインページに戻ります。'
+    judgment: ○
+  comment: テストケースには「script で生成された aria-describedby 属性」と説明されているが、onload で describedby
+    属性が挿入されているので、挿入されている感が少ないかもしれません。
+  tester: SAWADA STANDARD DESIGN
+  date: '2023-09-28'
+- id: 492
+  test: 0029-07
+  os: macOS 13.5.2
+  user_agent: Safari 16.6 (18615.3.12.11.2)
+  assistive_tech: VoiceOver
+  assistive_tech_config: ''
+  contents:
+  - procedure: 'Tabキーで「フォント」ボタンにフォーカスを移動。
+
+      Tabキーで「色」ボタンにフォーカスを移動。
+
+      Tabキーで「カスタマイズ」ボタンにフォーカスを移動。'
+    actual: "フォントの選択、ボタン\nこのページで使用するフォントフェイスとサイズの選択 \n色の選択、ボタン\nこのページで使用する色を選択\nその他のカスタマイズの選択、ボタン\n\
+      このページで使われているレイアウトやスタイルをカスタマイズ"
+    judgment: ○
+  comment: 3つのボタンでテストをすることになっていますが、何が違うのか不明でした。
+  tester: SAWADA STANDARD DESIGN
+  date: '2023-09-28'
+- id: 493
+  test: 0029-08
+  os: macOS 13.5.2
+  user_agent: Safari 16.6 (18615.3.12.11.2)
+  assistive_tech: VoiceOver
+  assistive_tech_config: ''
+  contents:
+  - procedure: 'Tabキーで「フォント」ボタンにフォーカスを移動。
+
+      Tabキーで「色」ボタンにフォーカスを移動。
+
+      Tabキーで「カスタマイズ」ボタンにフォーカスを移動。'
+    actual: 'フォント、ボタン
+
+      このページで使用するフォントフェイスとサイズの選択 ボタンを押下しフォントを選択してください
+
+      色、ボタン
+
+      このページで使用する色を選択 ボタンを押下し色を選択してください
+
+      カスタマイズ、ボタン
+
+      このページで使われているレイアウトやスタイルをカスタマイズ ボタンを押下しレイアウトやスタイルを選択してください'
+    judgment: ○
+  comment: 3つのボタンでテストをすることになっていますが、何が違うのか不明でした。
+  tester: SAWADA STANDARD DESIGN
+  date: '2023-09-28'
+- id: 494
+  test: 0030-01
+  os: macOS 13.5.2
+  user_agent: Safari 16.6 (18615.3.12.11.2)
+  assistive_tech: VoiceOver
+  assistive_tech_config: ''
+  contents:
+  - procedure: Tabキーで各コントロールにフォーカスを移動。
+    actual: "ログインネーム、必須、自動入力メニューでテキストを編集\nパスワード、必須、保護されたテキストを編集\nWindows、利用しているOS(PC)\
+      \  、必須、ポップアップボタン\n選択してください、利用しているOS(モバイル)、必須、ポップアップボタン  \n利用している、ラジオボタン、1/2、スクリーンリーダーの利用状況、スクリーンリーダーの利用状況、必須、グループ\n\
+      PC-Talker、必須 チェックされていない、チェックボックス\nその他コメント[*]、必須、テキストを編集\n\nログインネーム、自動入力メニューでテキストを編集\n\
+      パスワード、保護されたテキストを編集\nWindows、利用しているOS(PC)  、ポップアップボタン\n選択してください、利用しているOS(モバイル)、ポップアップボタン\
+      \  \n利用している、ラジオボタン、1/2、スクリーンリーダーの利用状況、スクリーンリーダーの利用状況、グループ\nPC-Talker、チェックされていない、チェックボックス\n\
+      その他コメント[*]、テキストを編集"
+    judgment: ○
+  comment: '操作方法が抽象的すぎて戸惑いました。
+
+    操作が多く、読み上げる量が多いのに、記入するセルが一つだけなので記入しにくいかもしれないです。'
+  tester: SAWADA STANDARD DESIGN
+  date: '2023-09-28'
+- id: 495
+  test: 0001-01
+  os: Windows 11 Home 22H2 22621.2283
+  user_agent: Microsoft Edge 117.0.2045.43
+  assistive_tech: ''
+  assistive_tech_config: ''
+  contents:
+  - procedure: 「設定」の「サイトのアクセス許可」欄から「イメージ」をクリックして「すべて表示」をオフ
+    actual: 代替テキストは無く、リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみが表示された
+    judgment: 満たしている
+  comment: ''
+  tester: akimayu
+  date: '2023-09-28'
+- id: 496
+  test: 0001-01
+  os: Windows 11 Home 22H2 22621.2283
+  user_agent: Microsoft Edge 117.0.2045.43
+  assistive_tech: NVDA application 2023.2jp-r2
+  assistive_tech_config: ''
+  contents:
+  - procedure: NVDAでウィンドウにフォーカスを当て、下矢印キーで読み上げを行った
+    actual: アイコン画像の代替テキストは何も読み上げられず、リンク “ウェブアクセシビリティ基盤委員会公開サイト”と読み上げられた
+    judgment: 満たしている
+  comment: ''
+  tester: akimayu
+  date: '2023-09-28'
+- id: 497
+  test: 0001-02
+  os: Windows 11 Home 22H2 22621.2283
+  user_agent: Microsoft Edge 117.0.2045.43
+  assistive_tech: ''
+  assistive_tech_config: ''
+  contents:
+  - procedure: 「設定」の「サイトのアクセス許可」欄から「イメージ」をクリックして「すべて表示」をオフ
+    actual: リンクテキスト “ウェブアクセシビリティ基盤委員会公開サイト” のみが表示された
+    judgment: 満たしている
+  comment: ''
+  tester: akimayu
+  date: '2023-09-28'
+- id: 498
+  test: 0001-02
+  os: Windows 11 Home 22H2 22621.2283
+  user_agent: Microsoft Edge 117.0.2045.43
+  assistive_tech: NVDA application 2023.2jp-r2
+  assistive_tech_config: ''
+  contents:
+  - procedure: NVDAでウィンドウにフォーカスを当て、下矢印キーで読み上げを行った
+    actual: アイコン画像の代替テキストは何も読み上げられず、リンク “ウェブアクセシビリティ基盤委員会公開サイト”と読み上げられた
+    judgment: 満たしている
+  comment: ''
+  tester: akimayu
+  date: '2023-09-28'
+- id: 499
+  test: 0001-03
+  os: Windows 11 Home 22H2 22621.2283
+  user_agent: Microsoft Edge 117.0.2045.43
+  assistive_tech: ''
+  assistive_tech_config: ''
+  contents:
+  - procedure: 「設定」の「サイトのアクセス許可」欄から「イメージ」をクリックして「すべて表示」をオフ
+    actual: 代替テキストは無く、テキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみが表示された
+    judgment: 満たしている
+  comment: ''
+  tester: akimayu
+  date: '2023-09-28'
+- id: 500
+  test: 0001-03
+  os: Windows 11 Home 22H2 22621.2283
+  user_agent: Microsoft Edge 117.0.2045.43
+  assistive_tech: NVDA application 2023.2jp-r2
+  assistive_tech_config: ''
+  contents:
+  - procedure: NVDAでウィンドウにフォーカスを当て、下矢印キーで読み上げを行った
+    actual: アイコン画像の代替テキストは何も読み上げられず、 “ウェブアクセシビリティ基盤委員会公開サイト”と読み上げられた
+    judgment: 満たしている
+  comment: ''
+  tester: akimayu
+  date: '2023-09-28'
+- id: 501
+  test: 0002-01
+  os: Windows 11 Home 22H2 22621.2283
+  user_agent: Microsoft Edge 117.0.2045.43
+  assistive_tech: ''
+  assistive_tech_config: ''
+  contents:
+  - procedure: 「設定」の「サイトのアクセス許可」欄から「イメージ」をクリックして「すべて表示」をオフ
+    actual: 画像のリンク切れアイコンとともに、代替テキスト"ウェブアクセシビリティ基盤委員会"が表示される
+    judgment: 満たしている
+  comment: ''
+  tester: akimayu
+  date: '2023-09-28'
+- id: 502
+  test: 0002-01
+  os: Windows 11 Home 22H2 22621.2283
+  user_agent: Microsoft Edge 117.0.2045.43
+  assistive_tech: NVDA application 2023.2jp-r2
+  assistive_tech_config: ''
+  contents:
+  - procedure: NVDAでウィンドウにフォーカスを当て、下矢印キーで読み上げを行った
+    actual: リンク・画像と読み上げられ、“ウェブアクセシビリティ基盤委員会 公式サイト” と読み上げられた
+    judgment: 満たしている
+  comment: ''
+  tester: akimayu
+  date: '2023-09-28'
+- id: 503
+  test: 0001-01
+  os: Windows 10
+  user_agent: Google Chrome (120.0.6099.217)
+  assistive_tech: ''
+  assistive_tech_config: ''
+  contents:
+  - procedure: "(視覚閲覧環境)\n ブラウザの設定を変更して画像非表示にし、表示内容を確認する"
+    actual: '(視覚閲覧環境)
+
+      代替テキストや、コンテンツと誤解されるようなファイル名や URL などは表示されず、リンクテキスト “ウェブアクセシビリティ基盤委員会公開サイト” のみが表示された'
+    judgment: ○
+  comment: ''
+  tester: yamanaka
+  date: '2024-01-18'
+- id: 504
+  test: 0024-01
+  os: iOS(17.1.2)
+  user_agent: Safari
+  assistive_tech: ''
+  assistive_tech_config: ''
+  contents:
+  - procedure: '(音声閲覧環境)
+
+      テストファイルをすべて読み上げ、内容を確認'
+    actual: '(音声閲覧環境)
+
+      ナビゲーションの先頭に来たとき「ホーム　リンク　ナビゲーション　ランドマーク」と読み上げられた。
+
+      ナビゲーションの末端に来たときは「お問合せ　リンク　エンドナビゲーション」と読み上げられた。'
+    judgment: ○
+  comment: ''
+  tester: yamanaka
+  date: '2024-01-18'
+- id: 505
+  test: 0026-01
+  os: iOS(17.1.2)
+  user_agent: Safari
+  assistive_tech: ''
+  assistive_tech_config: ''
+  contents:
+  - procedure: '(音声閲覧環境)
+
+      テストファイルを開いて、その内容をすべて読み上げる'
+    actual: 'main要素に差し掛かると「メイン　ランドマーク」と読み上げられた。
+
+      main要素が終了する際「エンド　メイン」と読み上げられた'
+    judgment: ○
+  comment: ''
+  tester: yamanaka
+  date: '2024-01-18'
+- id: 506
+  test: 0008-01
+  os: Windows 10
+  user_agent: Google Chrome (120.0.6099.217)
+  assistive_tech: ''
+  assistive_tech_config: ''
+  contents:
+  - procedure: '(視覚閲覧環境)
+
+      ブラウザの設定を変更して画像非表示にし、表示内容を確認'
+    actual: '画像の代わりに代替テキスト “送信送信”と表示された。 '
+    judgment: ×
+  comment: ''
+  tester: yamanaka
+  date: '2024-01-18'
+- id: 507
+  test: 0011-01
+  os: Windows 11 Pro 22H2 22621.3007
+  user_agent: Chrome 120.0.6099.225
+  assistive_tech: NVDA 2023.1jp(2023.1.0.1991)
+  assistive_tech_config: ''
+  contents:
+  - procedure: 見出しを読み上げ、内容を確認
+    actual: "次の 1. 〜 3. をすべて満たしている\n 1. 見出し要素に差し掛かかると、それが見出しであることが通知される \n 2. 見出しレベルを知るための何らかの手段が提供されている\
+      \ \n 3. 次のように見出しの内容と見出しレベルが合致している \n 見出しレベル 1 : 果物について \n 見出しレベル 2 : 定義 \n 見出しレベル\
+      \ 3 : 野菜との違い \n 見出しレベル 4 : 実は果物ではないもの \n 見出しレベル 5 : スイカが野菜である理由 \n 見出しレベル 6\
+      \ : スイカの発見 \n 見出しレベル 2 : 人間と果物のかかわり"
+    judgment: 満たしている
+  comment: ''
+  tester: me_tks_
+  date: '2024-01-18'
+- id: 508
+  test: 0011-02
+  os: Windows 11 Pro 22H2 22621.3007
+  user_agent: Chrome 120.0.6099.225
+  assistive_tech: NVDA 2023.1jp(2023.1.0.1991)
+  assistive_tech_config: ''
+  contents:
+  - procedure: 見出しを読み上げ、内容を確認
+    actual: "次の 1. 〜 3. をすべて満たしている\n 1. 見出し要素に差し掛かかると、それが見出しであることが通知される \n 2. 見出しレベルを知るための何らかの手段が提供されている\
+      \ \n 3. 1. 及び 2. において、次のように見出しの内容と見出しレベルが合致している \n 見出しレベル 1 : 果物について \n 見出しレベル\
+      \ 2 : 定義 \n 見出しレベル 3 : 野菜との違い \n 見出しレベル 4 : 実は果物ではないもの \n 見出しレベル 5 : スイカが野菜である理由\
+      \ \n 見出しレベル 6 : スイカの発見 \n 見出しレベル 2 : 人間と果物のかかわり"
+    judgment: 満たしていない
+  comment: ''
+  tester: me_tks_
+  date: '2024-01-18'
+- id: 509
+  test: 0011-03
+  os: Windows 11 Pro 22H2 22621.3007
+  user_agent: Chrome 120.0.6099.225
+  assistive_tech: NVDA 2023.1jp(2023.1.0.1991)
+  assistive_tech_config: ''
+  contents:
+  - procedure: "見出し間を移動し、挙動を確認\n \n テスト実施時の注意点\n 例えば、見出しジャンプや見出しリストのような機能が実装されていれば\
+      \ OK と判断"
+    actual: 直前または直後の見出し要素に移動するための何らかの手段が提供されている
+    judgment: 満たしている
+  comment: ''
+  tester: me_tks_
+  date: '2024-01-18'
+- id: 510
+  test: 0012-01
+  os: Windows 11 Pro 22H2 22621.3007
+  user_agent: Chrome 120.0.6099.225
+  assistive_tech: NVDA 2023.1jp(2023.1.0.1991)
+  assistive_tech_config: ''
+  contents:
+  - procedure: "テストファイルを操作し、結果を確認\n \n テスト実施時の注意点\n 2. では、テキスト入力フィールドとラベルの位置関係による関連付けではなく、label\
+      \ 要素 (内のテキストのみ) による関連付けかどうかを確認している"
+    actual: "次の 1. 〜 2. をすべて満たしている\n 1. それぞれのテキスト入力フィールドにフォーカスを移動すると、次のように関連付けられたラベルを知るための何らかの手段が提供されている\n\
+      \ “1.” のテキスト入力フィールド : ラベル “姓” \n “2.” のテキスト入力フィールド : ラベル “名” \n “3.” のテキスト入力フィールド\
+      \ : ラベル “住所” \n “4.” のテキスト入力フィールド : ラベル “電話番号” \n 2. “4.” のテキスト入力フィールドにフォーカスを移動すると、\
+      \ “ハイフンは不要” は読み上げられない"
+    judgment: 満たしている
+  comment: ''
+  tester: me_tks_
+  date: '2024-01-18'
+- id: 511
+  test: 0012-02
+  os: Windows 11 Pro 22H2 22621.3007
+  user_agent: Chrome 120.0.6099.225
+  assistive_tech: NVDA 2023.1jp(2023.1.0.1991)
+  assistive_tech_config: ''
+  contents:
+  - procedure: "テストファイルを操作し、結果を確認\n \n テスト実施時の注意点\n 2. では、チェックボックスとラベルの位置関係による関連付けではなく、label\
+      \ 要素 (内のテキストのみ) による関連付けかどうかを確認している"
+    actual: "次の 1. 〜 2. をすべて満たしている\n 1. それぞれのチェックボックスにフォーカスを移動すると、次のように関連付けられたラベルを知るための何らかの手段が提供されている\n\
+      \ “1.” のチェックボックス : ラベル “山田荘” \n “2.” のチェックボックス : ラベル “田中アパート” \n “3.” のチェックボックス\
+      \ : ラベル “佐藤マンション” \n 2. “3.” のチェックボックスにフォーカスを移動すると、 “定期借家” は読み上げられない"
+    judgment: 満たしている
+  comment: ''
+  tester: me_tks_
+  date: '2024-01-18'
+- id: 512
+  test: 0012-03
+  os: Windows 11 Pro 22H2 22621.3007
+  user_agent: Chrome 120.0.6099.225
+  assistive_tech: NVDA 2023.1jp(2023.1.0.1991)
+  assistive_tech_config: ''
+  contents:
+  - procedure: "テストファイルを操作し、結果を確認\n \n テスト実施時の注意点\n 2. では、ラジオボタンとラベルの位置関係による関連付けではなく、label\
+      \ 要素 (内のテキストのみ) による関連付けかどうかを確認している"
+    actual: "次の 1. 〜 2. をすべて満たしている\n 1. それぞれのラジオボタンにフォーカスを移動すると、次のように関連付けられたラベルを知るための何らかの手段が提供されている\n\
+      \ “1.” のラジオボタン : ラベル “チョコレートタイプ” \n “2.” のラジオボタン : ラベル “クリームたっぷりタイプ” \n “3.”\
+      \ のラジオボタン : ラベル “すっきり抹茶タイプ” \n “4.” のラジオボタン : ラベル “はちみつがけタイプ” \n 2. “3.” のラジオボタンにフォーカスが移動すると、\
+      \ “期間限定” は読み上げられない"
+    judgment: 満たしている
+  comment: ''
+  tester: me_tks_
+  date: '2024-01-18'
+- id: 513
+  test: 0012-04
+  os: Windows 11 Pro 22H2 22621.3007
+  user_agent: Chrome 120.0.6099.225
+  assistive_tech: NVDA 2023.1jp(2023.1.0.1991)
+  assistive_tech_config: ''
+  contents:
+  - procedure: テストファイルを操作し、結果を確認
+    actual: セレクトメニューにフォーカスを移動すると、title 属性値 “検索範囲を選択” が読み上げられる
+    judgment: 満たしている
+  comment: ''
+  tester: me_tks_
+  date: '2024-01-18'
+- id: 514
+  test: 0012-05
+  os: Windows 11 Pro 22H2 22621.3007
+  user_agent: Chrome 120.0.6099.225
+  assistive_tech: NVDA 2023.1jp(2023.1.0.1991)
+  assistive_tech_config: ''
+  contents:
+  - procedure: テストファイルを操作し、結果を確認
+    actual: "テキスト入力フィールドにフォーカスを移動すると、次のように title 属性値が読み上げられる\n “1.” : “市外局番”\n “2.”\
+      \ : “市内局番”\n “3.” : “加入者番号”"
+    judgment: 満たしている
+  comment: ''
+  tester: me_tks_
+  date: '2024-01-18'
+- id: 515
+  test: 0013-01
+  os: Windows 11 Pro 22H2 22621.3007
+  user_agent: Chrome 120.0.6099.225
+  assistive_tech: NVDA 2023.1jp(2023.1.0.1991)
+  assistive_tech_config: ''
+  contents:
+  - procedure: テストファイルを操作し、結果を確認
+    actual: "次の 1. 〜 2. が両方とも満たされていない。\n 1. 画像に longdesc 属性が指定されていることを知るための何らかの手段が提供されている\n\
+      \ 2. longdesc 属性の値として指定されたリンク先の記述内容を知るための何らかの手段が提供されている"
+    judgment: 満たしていない
+  comment: ''
+  tester: me_tks_
+  date: '2024-01-18'
+- id: 516
+  test: 0014-01
+  os: Windows 11 Pro 22H2 22621.3007
+  user_agent: Chrome 120.0.6099.225
+  assistive_tech: NVDA 2023.1jp(2023.1.0.1991)
+  assistive_tech_config: ''
+  contents:
+  - procedure: "順序付きリストを読み上げ、内容を確認\n \n テスト実施時の注意点\n 例えば、“2項目のリスト リストの開始 1. ボウルにたまごと牛乳を入れ、混ぜます。\
+      \ 2. 塩とコショウを加えます。 リストの終了” と読み上げられる場合は OK と判断\n 4. については、次のリスト項目 (li) に移動する機能を提供している場合も\
+      \ OK と判断"
+    actual: "次の 1. 〜 3. を満たしている\n 1. 順序付きリスト (ol) の開始位置及び終了位置を知るための何らかの手段が提供されている\n\
+      \ 2. 各リスト項目の番号が読み上げられる\n 3. リスト項目 (li) の開始位置及び終了位置を知るための何らかの手段が提供されている"
+    judgment: 満たしている
+  - procedure: "順序付きリストを読み上げ、内容を確認\n \n テスト実施時の注意点\n 例えば、“2項目のリスト リストの開始 1. ボウルにたまごと牛乳を入れ、混ぜます。\
+      \ 2. 塩とコショウを加えます。 リストの終了” と読み上げられる場合は OK と判断\n 4. については、次のリスト項目 (li) に移動する機能を提供している場合も\
+      \ OK と判断"
+    actual: "下記に関しては満たされていない\n ・順序付きリスト (ol) であること及びリスト項目 (li) の数を知る何らかの手段が提供されている"
+    judgment: 満たしていない
+  comment: ''
+  tester: me_tks_
+  date: '2024-01-18'
+- id: 517
+  test: 0022-01
+  os: Windows　10.0.22621.3007
+  user_agent: Firefox 121.0.1
+  assistive_tech: NVDA 2023.3.1jp
+  assistive_tech_config: ''
+  contents:
+  - procedure: NVDAがフォーカスモードの状態で、alt下矢印でコンボボックスを開いて、上下の矢印キーで移動した。
+    actual: みかんからにんじんに移動するときに「野菜 グループ にんじん 3の1 レベル2」と読み上げた。
+    judgment: 満たしている
+  - procedure: さらに上下の矢印キーで移動した。
+    actual: 上矢印で戻ると「フルーツ グループ みかん 4の4 レベル2」と読み上げた。再度下矢印で移動するとまた「野菜 グループ にんじん 3の1 レベル2」と読み上げた。
+    judgment: 満たしている
+  comment: ''
+  tester: 西本卓也
+  date: '2024-01-18'
+- id: 518
+  test: 0024-01
+  os: Windows　10.0.22621.3007
+  user_agent: Firefox 121.0.1
+  assistive_tech: NVDA 2023.3.1jp
+  assistive_tech_config: ''
+  contents:
+  - procedure: NVDAのブラウズモードで下矢印キーを使って内容を確認した。
+    actual: 「ナビゲーション ランドマーク リンク ホーム」と読み上げた。
+    judgment: 満たしている
+  - procedure: NVDAのブラウズモードで「ナビゲーション ランドマーク リンク ホーム」の場所でコンマ（コンテナの直後に移動）を押し、さらに上矢印を押した。
+    actual: 「ニュース一覧 リンク」に移動し、上矢印で「ナビゲーション ランドマーク リンク お問い合わせ」に移動した。これにより「お問い合わせ」が終了位置であることがわかった。
+    judgment: 満たしている
+  comment: ''
+  tester: 西本卓也
+  date: '2024-01-18'
+- id: 519
+  test: 0024-02
+  os: Windows　10.0.22621.3007
+  user_agent: Firefox 121.0.1
+  assistive_tech: NVDA 2023.3.1jp
+  assistive_tech_config: ''
+  contents:
+  - procedure: NVDAのブラウズモードでDを2回押し、Shift+Dを押した。
+    actual: 「ナビゲーション ランドマーク 組織 リンク」「ナビゲーション ランドマーク ホーム リンク」「ナビゲーション ランドマーク 組織 リンク」のように前後のナビゲーションに移動できた。
+    judgment: 満たしている
+  comment: ''
+  tester: 西本卓也
+  date: '2024-01-18'
+- id: 520
+  test: 0039-01
+  os: Windows 10 Pro 22H2
+  user_agent: Firefox 121.0.1
+  assistive_tech: NVDA 2023.3.1jp (2023.3.1.3368)
+  assistive_tech_config: ''
+  contents:
+  - procedure: リンク要素にフォーカスを合わせる。 読み上げる内容を確認する。
+    actual: リンク要素では「JIS X 8341-3 改正の続きを読む」と読み上げられる。
+    judgment: ○
+  comment: ''
+  tester: 山崎 規弘
+  date: '2024-01-18'
+- id: 521
+  test: 0039-01
+  os: Windows 10 Pro 22H2
+  user_agent: Google Chrome 120.0.6099.225
+  assistive_tech: NVDA 2023.3.1jp (2023.3.1.3368)
+  assistive_tech_config: ''
+  contents:
+  - procedure: リンク要素にフォーカスを合わせる。 読み上げる内容を確認する。
+    actual: リンク要素では「JIS X 8341-3 改正の続きを読む」と読み上げられる。
+    judgment: ○
+  comment: ''
+  tester: 山崎 規弘
+  date: '2024-01-18'
+- id: 522
+  test: 0039-01
+  os: Windows 10 Pro 22H2
+  user_agent: Microsoft Edge 120.0.2210.144
+  assistive_tech: NVDA 2023.3.1jp (2023.3.1.3368)
+  assistive_tech_config: ''
+  contents:
+  - procedure: リンク要素にフォーカスを合わせる。 読み上げる内容を確認する。
+    actual: リンク要素では「JIS X 8341-3 改正の続きを読む」と読み上げられる。
+    judgment: ○
+  comment: ''
+  tester: 山崎 規弘
+  date: '2024-01-18'
+- id: 523
+  test: 0039-01
+  os: macOS 14.2.1
+  user_agent: Safari 17.2.1
+  assistive_tech: VoiceOver
+  assistive_tech_config: ''
+  contents:
+  - procedure: リンク要素にフォーカスを合わせる。 読み上げる内容を確認する。
+    actual: リンク要素では「JIS X 8341-3 改正の続きを読む」と読み上げられる。
+    judgment: ○
+  comment: ''
+  tester: 山崎 規弘
+  date: '2024-01-18'
+- id: 524
+  test: 0039-01
+  os: macOS 14.2.1
+  user_agent: Firefox 117.0.1
+  assistive_tech: VoiceOver
+  assistive_tech_config: ''
+  contents:
+  - procedure: リンク要素にフォーカスを合わせる。 読み上げる内容を確認する。
+    actual: リンク要素では「JIS X 8341-3 改正の続きを読む」と読み上げられる。
+    judgment: ○
+  comment: ''
+  tester: 山崎 規弘
+  date: '2024-01-18'
+- id: 525
+  test: 0039-01
+  os: macOS 14.2.1
+  user_agent: Google Chrome 120.0.6099.234
+  assistive_tech: VoiceOver
+  assistive_tech_config: ''
+  contents:
+  - procedure: リンク要素にフォーカスを合わせる。 読み上げる内容を確認する。
+    actual: リンク要素では「JIS X 8341-3 改正の続きを読む」と読み上げられる。
+    judgment: ○
+  comment: ''
+  tester: 山崎 規弘
+  date: '2024-01-18'
+- id: 526
+  test: 0039-01
+  os: macOS 14.2.1
+  user_agent: Microsoft Edge 120.0.2210.144
+  assistive_tech: VoiceOver
+  assistive_tech_config: ''
+  contents:
+  - procedure: リンク要素にフォーカスを合わせる。 読み上げる内容を確認する。
+    actual: リンク要素では「JIS X 8341-3 改正の続きを読む」と読み上げられる。
+    judgment: ○
+  comment: ''
+  tester: 山崎 規弘
+  date: '2024-01-18'
+- id: 527
+  test: 0006-03
+  os: Windows 11 22h2
+  user_agent: Google Chrome 117.0.5938.132（Official Bu
+  assistive_tech: NVDA 2023.3.1jp
+  assistive_tech_config: ''
+  contents:
+  - procedure: タブキーを押し、リンクへフォーカスを移動する
+    actual: リンクテキストに加え、title属性の内容が読み上げられた
+    judgment: 満たしている
+  comment: 音声閲覧環境
+  tester: yuyaroid
+  date: '2024-01-18'
+- id: 528
+  test: 0007-01
+  os: Windows 11 22h2
+  user_agent: Google Chrome 117.0.5938.132（Official Bu
+  assistive_tech: NVDA 2023.3.1jp
+  assistive_tech_config: ''
+  contents:
+  - procedure: メールアドレスを入力し、[申し込む]ボタンを押した
+    actual: WAIC-CODE-0007-01-ref.htmlが表示され、URLの末尾にメールアドレスが追加されていた
+    judgment: 満たしている
+  comment: 音声閲覧環境
+  tester: yuyaroid
+  date: '2024-01-18'
+- id: 529
+  test: 0007-02
+  os: Windows 11 22h2
+  user_agent: Google Chrome 117.0.5938.132（Official Bu
+  assistive_tech: NVDA 2023.3.1jp
+  assistive_tech_config: ''
+  contents:
+  - procedure: セレクトメニューでそれぞれの選択肢を選び、[選択したページへ移動する]ボタンを押した
+    actual: '[選択したページへ移動する]ボタンを押した時点でそれぞれのページへと遷移した'
+    judgment: 満たしている
+  comment: 音声閲覧環境
+  tester: yuyaroid
+  date: '2024-01-18'
+- id: 530
+  test: 0008-01
+  os: Windows 11 22h2
+  user_agent: Google Chrome 117.0.5938.132（Official Bu
+  assistive_tech: NVDA 2023.3.1jp
+  assistive_tech_config: ''
+  contents:
+  - procedure: タブキーを押してボタンへフォーカスを移動した
+    actual: 代替テキストの内容が読み上げられた
+    judgment: 満たしている
+  comment: 音声閲覧環境
+  tester: yuyaroid
+  date: '2024-01-18'
+- id: 531
+  test: 0009-01
+  os: Windows 11 22h2
+  user_agent: Google Chrome 117.0.5938.132（Official Bu
+  assistive_tech: NVDA 2023.3.1jp
+  assistive_tech_config: ''
+  contents:
+  - procedure: 矢印キーを押し、画像へフォーカスを移動した
+    actual: 代替テキストの内容が読み上げられた
+    judgment: 満たしている
+  comment: 音声閲覧環境
+  tester: yuyaroid
+  date: '2024-01-18'
+- id: 532
+  test: 0010-01
+  os: Windows 11 22h2
+  user_agent: Google Chrome 117.0.5938.132（Official Bu
+  assistive_tech: NVDA 2023.3.1jp
+  assistive_tech_config: ''
+  contents:
+  - procedure: '[t]キーを押してそれぞれのテーブルへ移動した'
+    actual: それぞれオンキャプション要素の内容が読み上げられた
+    judgment: 満たしている
+  comment: 音声閲覧環境
+  tester: yuyaroid
+  date: '2024-01-18'
+- id: 533
+  test: 0014-01
+  os: WindowsNT ver10.0
+  user_agent: Firefox Browser 121.0.1
+  assistive_tech: NVDA 2023.3.1jp
+  assistive_tech_config: ''
+  contents:
+  - procedure: NVDAのブラウザモードでページ内のコンテンツすべての読み上げを行った。
+    actual: "読み上げられた内容は次のようになった。\n“リスト  2項目  \n1. ボウルにたまごと牛乳を入れ、混ぜます。\n2. 塩とコショウを加えます。\
+      \  リストの外 “"
+    judgment: ○
+  comment: ''
+  tester: 江﨑　和敬
+  date: '2024-01-18'
+- id: 534
+  test: 0044-01
+  os: iOS 17.2.1
+  user_agent: Safari
+  assistive_tech: VoiceOver
+  assistive_tech_config: ''
+  contents:
+  - procedure: 1本指右フリックで、順に読み進めた。
+    actual: "「世界への扉 旅行プランをご紹介」見出し レベル1 バナー ランドマーク\n「サイト検索」テキストフィールド ダブルタップして編集します\
+      \ ローターを使用してスペルミスのある単語にアクセスします\n「検索」ボタン エンド 検索\n「ホーム」リンク リストの開始位置です ランドマーク\n\
+      「サービス」リンク \n「会社概要」リンク\n「お問い合わせ」リンク リストの終了位置です エンド エンド ナビゲーション\n「オタワ」見出しレベル2\
+      \ メイン ランドマーク\n省略記号 オタワはカナダの首都 省略記号 エンド メイン\n4個のピリオド 「ここに広告」 補足 ランドマーク\n「(c)フリーダムカンパニー、123\
+      \ フリーダムウェイ、ヘルプビル、USA」コンテンツ情報 ランドマーク"
+    judgment: ○
+  comment: 手順が分かれていないため、複数の読み上げ結果を一つのセルに入れなければならない。
+  tester: SAWADA STANDARD DESIGN
+  date: '2024-01-18'
+- id: 535
+  test: 0043-01
+  os: iOS 17.2.1
+  user_agent: Safari
+  assistive_tech: VoiceOver
+  assistive_tech_config: ''
+  contents:
+  - procedure: 1本指右フリックで、順に読み進めた。
+    actual: 「トップニュース記事」見出しレベル1 「トップニュース記事」 補足 ランドマーク
+    judgment: ○
+  comment: ランドマークに入って、一番最初に読む見出しがaria-labelledbyされている要素なので、要素の内容を読み上げているのか、関連づけられたnameを読み上げているのか、区別がつきづらい。
+  tester: SAWADA STANDARD DESIGN
+  date: '2024-01-18'
+- id: 536
+  test: 0043-02
+  os: iOS 17.2.1
+  user_agent: Safari
+  assistive_tech: VoiceOver
+  assistive_tech_config: ''
+  contents:
+  - procedure: 1本指右フリックで、順に読み進めた。
+    actual: 「カレンダー」音声ガイド 「ボストンレッドソックスの試合スケジュールのカレンダーです」見出しレベル1
+    judgment: ○
+  comment: iOSではapplicationランドマークを「音声ガイド」と読み上げる
+  tester: SAWADA STANDARD DESIGN
+  date: '2024-01-18'
+- id: 537
+  test: 0042-01
+  os: iOS 17.2.1
+  user_agent: Safari
+  assistive_tech: VoiceOver
+  assistive_tech_config: ''
+  contents:
+  - procedure: 画像を読んだ後、1本指右フリックで、順に読み進めた。
+    actual: '「五つ星中四つ星」画像
+
+
+      「五つ星中四つ星」'
+    judgment: ○
+  comment: '「ID属性の内容を読み上げる」とは？
+
+    期待される結果 (音声閲覧環境)、テスト実施時の注意点 (音声閲覧環境)、それぞれに書かれていることが矛盾しているように読める。
+
+    画像を読む時に2回読むということ？
+
+    次の要素に進んだら読むということ？'
+  tester: SAWADA STANDARD DESIGN
+  date: '2024-01-18'
+- id: 538
+  test: 0041-01
+  os: iOS 17.2.1
+  user_agent: Safari
+  assistive_tech: VoiceOver
+  assistive_tech_config: ''
+  contents:
+  - procedure: 1本指右フリックで、順に読み進めた。
+    actual: 「東海岸で暴風雨 続きを読む 省略記号」
+    judgment: ○
+  comment: ''
+  tester: SAWADA STANDARD DESIGN
+  date: '2024-01-18'
+- id: 539
+  test: 0022-01
+  os: Windows 11 Pro 23H2 (22631.3737)
+  user_agent: Chrome 126.0.6478.57
+  assistive_tech: NVDA 2024.1jp (2024.4.0.3578)
+  assistive_tech_config: ''
+  contents:
+  - procedure: テストファイルを読み上げ、内容を確認
+    actual: アクセスできない
+    judgment: ×
+  - procedure: 読み上げカーソルを上下移動させoptgroup要素をまたぐ
+    actual: optgroup要素を無視した格好で、単にoption要素が9個連なっている状態と同じ読み上げになる
+    judgment: ×
+  comment: ''
+  tester: 森田雄
+  date: '2024-06-13'
+- id: 540
+  test: 0024-01
+  os: Windows 11 Pro 23H2 (22631.3737)
+  user_agent: Chrome 126.0.6478.57
+  assistive_tech: NVDA 2024.1jp (2024.4.0.3578)
+  assistive_tech_config: ''
+  contents:
+  - procedure: テストファイルをすべて読み上げ、内容を確認
+    actual: nav要素部分に差し掛かると、「ナビゲーションランドマークリンクホーム」と読み上げる。ニュース一覧リンクのほうから戻ると「ナビゲーションランドマークリンクお問い合わせ」と読み上げる。
+    judgment: ○
+  - procedure: 読み上げカーソルを上下移動させる等して、nav要素の始まりと終わりの位置を読み上げる
+    actual: nav要素内の最初の要素は、「ランドマーク」の読み上げにより分かるが、nav要素内の最後の要素が何であるかを知ることはできない。お問い合わせリンクとニュース一覧リンクがそれぞれnavの内側と外側にあるということは、最初から順に読み上げている時点ではわからない。逆方向に読み上げて初めてお問い合わせリンクがnav要素の中にあることがわかる。
+    judgment: ×
+  comment: ''
+  tester: 森田雄
+  date: '2024-06-13'
+- id: 541
+  test: 0024-02
+  os: Windows 11 Pro 23H2 (22631.3737)
+  user_agent: Chrome 126.0.6478.57
+  assistive_tech: NVDA 2024.1jp (2024.4.0.3578)
+  assistive_tech_config: ''
+  contents:
+  - procedure: テストファイルをすべて読み上げ、内容を確認
+    actual: nav要素部分に差し掛かると、「ランドマークナビゲーションランドマークリンク組織」「ナビゲーションランドマークリンクホーム」と読み上げる。「テストファイルをすべて読み上げ、内容を確認」の文章から戻ると（nav要素を通り過ぎたほうから、nav要素に戻ると）「ナビゲーションランドマークリンクイベント」と読み上げる。
+    judgment: ○
+  - procedure: 読み上げカーソルを上下移動させ等して、nav要素の始まりと終わりの位置を読み上げる
+    actual: nav要素内の最初の要素は「ランドマーク」の読み上げにより分かるが、nav要素内の最後の要素が何であるかを知ることはできない。
+    judgment: ×
+  comment: ''
+  tester: 森田雄
+  date: '2024-06-13'
+- id: 542
+  test: 0025-01
+  os: Windows 11 Pro 23H2 (22631.3737)
+  user_agent: Chrome 126.0.6478.57
+  assistive_tech: NVDA 2024.1jp (2024.4.0.3578)
+  assistive_tech_config: ''
+  contents:
+  - procedure: テストファイルをすべて読み上げ、内容を確認
+    actual: figure要素に差し掛かると「詳細ありキャプションセッション1の様子」と読み上げる。figure要素を通り越えてから逆側から差し掛かると「詳細あり画像タブレットを手にプレゼンする伊敷の写真」と読み上げる。
+    judgment: ○
+  - procedure: 読み上げカーソルを上下移動させ等して、figure要素の始まりと終わりの位置を読み上げる
+    actual: figure要素内の最初の要素は、「詳細あり」の読み上げにより分かるが、figure要素内の最後の要素が何であるかを知ることはできない。
+    judgment: ×
+  - procedure: 読み上げカーソルを上下移動させ等して、figcaption要素を読み上げる
+    actual: figcaption要素であることは「キャプション」の読み上げにより分かる。
+    judgment: ○
+  comment: ''
+  tester: 森田雄
+  date: '2024-06-13'
+- id: 543
+  test: 0025-02
+  os: Windows 11 Pro 23H2 (22631.3737)
+  user_agent: Chrome 126.0.6478.57
+  assistive_tech: NVDA 2024.1jp (2024.4.0.3578)
+  assistive_tech_config: ''
+  contents:
+  - procedure: テストファイルをすべて読み上げ、内容を確認
+    actual: figure要素に差し掛かると「詳細あり画像タブレットを手にプレゼンする伊敷の写真」と読み上げる。figure要素を通り越えてから逆側から差し掛かると「詳細ありキャプションセッション1の様子」と読み上げる。
+    judgment: ○
+  - procedure: 読み上げカーソルを上下移動させ等して、figure要素の始まりと終わりの位置を読み上げる
+    actual: figure要素内の最初の要素は、「詳細あり」の読み上げにより分かるが、figure要素内の最後の要素が何であるかを知ることはできない。
+    judgment: ×
+  - procedure: 読み上げカーソルを上下移動させ等して、figcaption要素を読み上げる
+    actual: figcaption要素であることは「キャプション」の読み上げにより分かる。
+    judgment: ○
+  comment: ''
+  tester: 森田雄
+  date: '2024-06-13'
+- id: 544
+  test: 0001-01
+  os: Windows10
+  user_agent: googleChrome
+  assistive_tech: NVDA
+  assistive_tech_config: ''
+  contents:
+  - procedure: リンクを読み上げ、内容を確認
+    actual: アイコン画像の代替テキストは何も読み上げられず、リンクテキスト “ウェブアクセシビリティ基盤委員会公開サイト” のみが読み上げられる
+    judgment: 満たしている
+  comment: ''
+  tester: tokami
+  date: '2024-06-13'
+- id: 545
+  test: 0001-02
+  os: Windows10
+  user_agent: googleChrome
+  assistive_tech: NVDA
+  assistive_tech_config: ''
+  contents:
+  - procedure: リンクを読み上げ、内容を確認
+    actual: アイコン画像の代替テキストは何も読み上げられず、リンクテキスト “ウェブアクセシビリティ基盤委員会公開サイト” のみが読み上げられる
+    judgment: 満たしている
+  comment: ''
+  tester: tokami
+  date: '2024-06-13'
+- id: 546
+  test: 0001-03
+  os: Windows10
+  user_agent: googleChrome
+  assistive_tech: NVDA
+  assistive_tech_config: ''
+  contents:
+  - procedure: 段落を読み上げ、内容を確認
+    actual: アイコン画像の代替テキストは何も読み上げられず、テキスト “ウェブアクセシビリティ基盤委員会公開サイト” のみが読み上げられる
+    judgment: 満たしている
+  comment: ''
+  tester: tokami
+  date: '2024-06-13'
+- id: 547
+  test: 0002-01
+  os: Windows10
+  user_agent: googleChrome
+  assistive_tech: NVDA
+  assistive_tech_config: ''
+  contents:
+  - procedure: リンクを読み上げ、内容を確認
+    actual: アイコン画像の代替テキストとリンクテキストが別に ”ウェブアクセシビリティ基盤委員会” ” 公式サイト” と別にカーソルが乗った部分のみ読み上げられる
+    judgment: 満たしていない
+  comment: ''
+  tester: tokami
+  date: '2024-06-13'
+- id: 548
+  test: 0002-02
+  os: Windows10
+  user_agent: googleChrome
+  assistive_tech: NVDA
+  assistive_tech_config: ''
+  contents:
+  - procedure: リンクを読み上げ、内容を確認
+    actual: リンクテキストとアイコン画像の代替テキストが続けて “施設ご利用の手引き”と” PDFファイル” 別にカーソルが乗った部分のみ読み上げられる
+    judgment: 満たしていない
+  comment: ''
+  tester: tokami
+  date: '2024-06-13'
+- id: 549
+  test: 0003-01
+  os: Windows10
+  user_agent: googleChrome
+  assistive_tech: NVDA
+  assistive_tech_config: ''
+  contents:
+  - procedure: 'キーボード操作 : Tab キーを押下し、フォーカスの移動順序を確認'
+    actual: ''
+    judgment: 満たしていない
+  comment: ''
+  tester: tokami
+  date: '2024-06-13'
+- id: 550
+  test: 0003-02
+  os: Windows10
+  user_agent: googleChrome
+  assistive_tech: NVDA
+  assistive_tech_config: ''
+  contents:
+  - procedure: 'キーボード操作 : Tab キーを押下し、フォーカスの移動順序を確認'
+    actual: "次の順序でフォーカスが移動する :\n 携帯サイト\n サイトマップ"
+    judgment: 満たしていない
+  comment: ''
+  tester: tokami
+  date: '2024-06-13'
+- id: 551
+  test: 0001-01
+  os: Windows
+  user_agent: Google Chrome
+  assistive_tech: NVDA
+  assistive_tech_config: ''
+  contents:
+  - procedure: ブラウザの設定で画像を非表示にし、テストページを閲覧
+    actual: リンクテキストのみが表示された
+    judgment: ○
+  - procedure: ブラウザの設定で画像を表示にし、NVDAを起動した状態でテストページを開いた
+    actual: 「ウェブアクセシビリティ基盤委員会公開サイト」 のみが読み上げられた
+    judgment: ○
+  comment: ''
+  tester: 中村 泰士
+  date: '2024-06-13'
+- id: 552
+  test: 0001-02
+  os: Windows
+  user_agent: Google Chrome
+  assistive_tech: NVDA
+  assistive_tech_config: ''
+  contents:
+  - procedure: ブラウザの設定で画像を非表示にし、テストページを閲覧
+    actual: リンクテキストのみが表示された
+    judgment: ○
+  - procedure: ブラウザの設定で画像を表示にし、NVDAを起動した状態でテストページを開いた
+    actual: 「ウェブアクセシビリティ基盤委員会公開サイト」のみが読み上げられた
+    judgment: ○
+  comment: ''
+  tester: 中村 泰士
+  date: '2024-06-13'
+- id: 553
+  test: 0001-03
+  os: Windows
+  user_agent: Google Chrome
+  assistive_tech: NVDA
+  assistive_tech_config: ''
+  contents:
+  - procedure: ブラウザの設定で画像を非表示にし、テストページを閲覧
+    actual: テキスト “ウェブアクセシビリティ基盤委員会公開サイト” のみが表示された
+    judgment: ○
+  - procedure: ブラウザの設定で画像を表示にし、NVDAを起動した状態でテストページを開いた
+    actual: 「ウェブアクセシビリティ基盤委員会公開サイト」のみが読み上げられた
+    judgment: ○
+  comment: ''
+  tester: 中村 泰士
+  date: '2024-06-13'
+- id: 554
+  test: 0002-01
+  os: Windows
+  user_agent: Google Chrome
+  assistive_tech: NVDA
+  assistive_tech_config: ''
+  contents:
+  - procedure: ブラウザの設定で画像を非表示にし、テストページを閲覧
+    actual: 画像が見つからないことを示すアイコンの後に「ウェブアクセシビリティ基盤委員会 公式サイト」と表示された
+    judgment: ○
+  - procedure: ブラウザの設定で画像を表示にし、NVDAを起動した状態でテストページを開いた
+    actual: 「ウェブアクセシビリティ基盤委員会画像 公式サイト」が読み上げられた。「画像」の読み上げが余計
+    judgment: ×
+  comment: ''
+  tester: 中村 泰士
+  date: '2024-06-13'
+- id: 555
+  test: 0002-02
+  os: Windows
+  user_agent: Google Chrome
+  assistive_tech: NVDA
+  assistive_tech_config: ''
+  contents:
+  - procedure: ブラウザの設定で画像を非表示にし、テストページを閲覧
+    actual: 「施設ご利用の手引き」の後に「PDFファイル」と表示される
+    judgment: ○
+  - procedure: ブラウザの設定で画像を表示にし、NVDAを起動した状態でテストページを開いた
+    actual: 「施設ご利用の手引きPDFファイルリンク」と読み上げられた
+    judgment: ○
+  comment: ''
+  tester: 中村 泰士
+  date: '2024-06-13'
+- id: 556
+  test: 0003-01
+  os: Windows
+  user_agent: Google Chrome
+  assistive_tech: NVDA
+  assistive_tech_config: ''
+  contents:
+  - procedure: Tabキーでフォーム項目を移動
+    actual: 送り先1、送り先2ともに「花火」にラジオボタンのフォーカスが当たらなかった
+    judgment: ×
+  - procedure: NVDAを起動した状態でテストページを開いた
+    actual: その項目をスクリーンリーダーが読み上げているのかわからない
+    judgment: ×
+  comment: ''
+  tester: 中村 泰士
+  date: '2024-06-13'
+- id: 557
+  test: 0001-01
+  os: macOS
+  user_agent: Google Chrome
+  assistive_tech: VoiceOver
+  assistive_tech_config: ''
+  contents:
+  - procedure: '（視覚閲覧環境）
+
+      ブラウザの設定を変更して画像非表示にし、表示内容を確認'
+    actual: '（視覚閲覧環境）
+
+      「ウェブアクセシビリティ基盤委員会公開サイト」と表示された'
+    judgment: ○
+  - procedure: ' (音声閲覧環境)
+
+      VoiceOverでリンクを読み上げ、内容を確認'
+    actual: ' (音声閲覧環境)
+
+      VoiceOverで「閲覧済み、リンク、ウェブアクセシビリティ基盤委員会公開サイト」読み上げられた'
+    judgment: ○
+  comment: ''
+  tester: tokunaga
+  date: '2024-06-13'
+- id: 558
+  test: 0001-02
+  os: macOS
+  user_agent: Google Chrome
+  assistive_tech: VoiceOver
+  assistive_tech_config: ''
+  contents:
+  - procedure: '（視覚閲覧環境）
+
+      ブラウザの設定を変更して画像非表示にし、表示内容を確認'
+    actual: '（視覚閲覧環境）
+
+      「ウェブアクセシビリティ基盤委員会公開サイト」と表示された'
+    judgment: ○
+  - procedure: ' (音声閲覧環境)
+
+      VoiceOverでリンクを読み上げ、内容を確認'
+    actual: ' (音声閲覧環境)
+
+      VoiceOverで「閲覧済み、リンク、ウェブアクセシビリティ基盤委員会公開サイト」読み上げられた'
+    judgment: ○
+  comment: ''
+  tester: tokunaga
+  date: '2024-06-13'
+- id: 559
+  test: 0001-03
+  os: macOS
+  user_agent: Google Chrome
+  assistive_tech: VoiceOver
+  assistive_tech_config: ''
+  contents:
+  - procedure: '（視覚閲覧環境）
+
+      ブラウザの設定を変更して画像非表示にし、表示内容を確認'
+    actual: '（視覚閲覧環境）
+
+      「ウェブアクセシビリティ基盤委員会公開サイト」と表示された'
+    judgment: ○
+  - procedure: ' (音声閲覧環境)
+
+      VoiceOverでリンクを読み上げ、内容を確認'
+    actual: ' (音声閲覧環境)
+
+      VoiceOverで「ウェブアクセシビリティ基盤委員会公開サイト」読み上げられた'
+    judgment: ○
+  comment: ''
+  tester: tokunaga
+  date: '2024-06-13'
+- id: 560
+  test: 0002-01
+  os: macOS
+  user_agent: Google Chrome
+  assistive_tech: VoiceOver
+  assistive_tech_config: ''
+  contents:
+  - procedure: '（視覚閲覧環境）
+
+      ブラウザの設定を変更して画像非表示にし、表示内容を確認'
+    actual: '（視覚閲覧環境）
+
+      「リンク切れ画像のアイコン」＋「ウェブアクセシビリティ基盤委員会 公式サイト」と表示された
+
+
+      ーーーーーーーーーー
+
+      以下、結果ではなくコメントです。
+
+      「リンク切れ画像のアイコン」はChromeの仕様で、PNGのリンク切れなどでは一律で表示されるのかと思い、○としております'
+    judgment: ○
+  - procedure: ' (音声閲覧環境)
+
+      VoiceOverでリンクを読み上げ、内容を確認'
+    actual: ' (音声閲覧環境)
+
+      VoiceOverで「閲覧済み、リンク、ウェブアクセシビリティ基盤委員会 公式サイト」読み上げられた'
+    judgment: ○
+  comment: ''
+  tester: tokunaga
+  date: '2024-06-13'
+- id: 561
+  test: 0001-01
+  os: mac
+  user_agent: Coogle Chrome
+  assistive_tech: VoiceOver
+  assistive_tech_config: ''
+  contents:
+  - procedure: ブラウザの設定→プライバシーとセキュリティ→サイトの設定→画像の項目から、「サイトに画像の表示を許可しない」を選択してページを開く
+    actual: リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみ表示される
+    judgment: ○
+  - procedure: ブラウザの設定→プライバシーとセキュリティ→サイトの設定→画像の項目から、「サイトに画像の表示を許可しない」を選択してページを開き、VoiceOverでページを読み上げ
+    actual: 「ウェブアクセシビリティ基盤委員会公開サイト」のみが読み上げられる
+    judgment: ○
+  comment: ''
+  tester: 内田 晴風
+  date: '2024-06-13'
+- id: 562
+  test: 0001-02
+  os: mac
+  user_agent: Coogle Chrome
+  assistive_tech: VoiceOver
+  assistive_tech_config: ''
+  contents:
+  - procedure: ブラウザの設定→プライバシーとセキュリティ→サイトの設定→画像の項目から、「サイトに画像の表示を許可しない」を選択してページを開く
+    actual: リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみ表示される
+    judgment: ○
+  - procedure: ブラウザの設定→プライバシーとセキュリティ→サイトの設定→画像の項目から、「サイトに画像の表示を許可しない」を選択してページを開き、VoiceOverでページを読み上げ
+    actual: 「ウェブアクセシビリティ基盤委員会公開サイト」のみが読み上げられる
+    judgment: ○
+  comment: ''
+  tester: 内田 晴風
+  date: '2024-06-13'
+- id: 563
+  test: 0001-03
+  os: mac
+  user_agent: Coogle Chrome
+  assistive_tech: VoiceOver
+  assistive_tech_config: ''
+  contents:
+  - procedure: ブラウザの設定→プライバシーとセキュリティ→サイトの設定→画像の項目から、「サイトに画像の表示を許可しない」を選択してページを開く
+    actual: テキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみ表示される
+    judgment: ○
+  - procedure: ブラウザの設定→プライバシーとセキュリティ→サイトの設定→画像の項目から、「サイトに画像の表示を許可しない」を選択してページを開き、VoiceOverでページを読み上げ
+    actual: 「ウェブアクセシビリティ基盤委員会公開サイト」のみが読み上げられる
+    judgment: ○
+  comment: ''
+  tester: 内田 晴風
+  date: '2024-06-13'
+- id: 564
+  test: 0002-01
+  os: mac
+  user_agent: Coogle Chrome
+  assistive_tech: VoiceOver
+  assistive_tech_config: ''
+  contents:
+  - procedure: ブラウザの設定→プライバシーとセキュリティ→サイトの設定→画像の項目から、「サイトに画像の表示を許可しない」を選択してページを開く
+    actual: アイコン画像の代わりに、代替テキスト「ウェブアクセシビリティ基盤委員会」が表示される
+    judgment: ○
+  - procedure: ブラウザの設定→プライバシーとセキュリティ→サイトの設定→画像の項目から、「サイトに画像の表示を許可しない」を選択してページを開き、VoiceOverでページを読み上げ
+    actual: アイコン画像の代替テキストとリンクテキストが続けて “ウェブアクセシビリティ基盤委員会 公式サイト” と読み上げられる
+    judgment: ○
+  comment: ''
+  tester: 内田 晴風
+  date: '2024-06-13'
+- id: 565
+  test: 0002-02
+  os: mac
+  user_agent: Coogle Chrome
+  assistive_tech: VoiceOver
+  assistive_tech_config: ''
+  contents:
+  - procedure: ブラウザの設定→プライバシーとセキュリティ→サイトの設定→画像の項目から、「サイトに画像の表示を許可しない」を選択してページを開く
+    actual: リンクテキスト “施設ご利用の手引き” に続き、アイコン画像の代替テキスト “PDF ファイル” が表示される
+    judgment: ○
+  - procedure: ブラウザの設定→プライバシーとセキュリティ→サイトの設定→画像の項目から、「サイトに画像の表示を許可しない」を選択してページを開き、VoiceOverでページを読み上げ
+    actual: リンクテキストとアイコン画像の代替テキストが続けて “施設ご利用の手引き PDFファイル” と読み上げられる
+    judgment: ○
+  comment: ''
+  tester: 内田 晴風
+  date: '2024-06-13'
+- id: 566
+  test: 0003-01
+  os: mac
+  user_agent: Coogle Chrome
+  assistive_tech: VoiceOver
+  assistive_tech_config: ''
+  contents:
+  - procedure: Tab キーを押下してフォーカスを移動
+    actual: ラジオボタン2番目の"花火"にフォーカスが移らない。それ以外は期待された結果通りにフォーカスが移動する。
+    judgment: ×
+  - procedure: Tab キーを押下してフォーカスを移動
+    actual: ラジオボタン2番目の"花火"にフォーカスが移らない。それ以外は期待された結果通りにフォーカスが移動する。
+    judgment: ○
+  comment: ''
+  tester: 内田 晴風
+  date: '2024-06-13'
+- id: 567
+  test: 0004-01
+  os: macOS
+  user_agent: Google Chrome 126.0.6478.127
+  assistive_tech: VoiceOver
+  assistive_tech_config: 当該ページを開き、Control＋Optionキー+Shiftキーを押してコンテンツ内に入る
+  contents:
+  - procedure: Control+Optionキーと左右矢印キーを押してusemap属性が設定されたimg要素を読み上げる
+    actual: 「デパートのフロアガイド。各階について詳しくお知りになりたい場合は各階をクリックしてください。、グループ」と読まれる
+    judgment: ×
+  comment: ''
+  tester: 久保田翔太
+  date: '2024-07-03'
+- id: 568
+  test: 0004-02
+  os: macOS
+  user_agent: Google Chrome 126.0.6478.127
+  assistive_tech: VoiceOver
+  assistive_tech_config: 当該ページを開き、Control＋Optionキー+Shiftキーを押してコンテンツ内に入る
+  contents:
+  - procedure: Control+Optionキーと左右矢印キーを押してusemap属性が設定されたimg要素を読み上げる
+    actual: 「デパートのフロアガイド。各階について詳しくお知りになりたい場合は各階をクリックしてください。、グループ」と読まれる
+    judgment: ○
+  comment: ''
+  tester: 久保田翔太
+  date: '2024-07-03'
+- id: 569
+  test: 0004-03
+  os: macOS
+  user_agent: Google Chrome 126.0.6478.127
+  assistive_tech: VoiceOver
+  assistive_tech_config: 当該ページを開き、Control＋Optionキー+Shiftキーを押してコンテンツ内に入る
+  contents:
+  - procedure: Control+Optionキーと左右矢印キーを押してそれぞれのarea要素を読み上げる
+    actual: 「リンク、4F雑貨 書籍」「リンク、3F衣料品」「リンク、2Fお菓子 その他食品」「リンク、1F生鮮食品」とそれぞれ読まれた
+    judgment: ○
+  comment: ''
+  tester: 久保田翔太
+  date: '2024-07-03'
+- id: 570
+  test: 0004-04
+  os: macOS
+  user_agent: Google Chrome 126.0.6478.127
+  assistive_tech: VoiceOver
+  assistive_tech_config: 当該ページを開き、Control＋Optionキー+Shiftキーを押してコンテンツ内に入る
+  contents:
+  - procedure: Control+Optionキーと左右矢印キーを押してそれぞれのarea要素を選択し、Enterキーを押す
+    actual: それぞれのarea要素は意図したページへ遷移した
+    judgment: ○
+  comment: ''
+  tester: 久保田翔太
+  date: '2024-07-03'
+- id: 571
+  test: 0004-05
+  os: macOS
+  user_agent: Google Chrome 126.0.6478.127
+  assistive_tech: VoiceOver
+  assistive_tech_config: 当該ページを開き、Control＋Optionキー+Shiftキーを押してコンテンツ内に入る
+  contents:
+  - procedure: Control+Optionキーと左右矢印キーを押してそれぞれのarea要素を読み上げる
+    actual: 「リンク、4F雑貨 書籍」「リンク、3F衣料品」「リンク、2Fお菓子 その他食品」「リンク、1F生鮮食品」とそれぞれ読まれて、リンクであることが分かった
+    judgment: ○
+  comment: ''
+  tester: 久保田翔太
+  date: '2024-07-03'
+- id: 572
+  test: 0001-01
+  os: Windows 11 22h2
+  user_agent: Chrome 126.0.6478.57
+  assistive_tech: PC-Talker Neo 2404(ビルド57)
+  assistive_tech_config: ''
+  contents:
+  - procedure: タブキーを押してリンクへとフォーカスを移動
+    actual: 「ウェブアクセシビリティ基盤委員会公開サイト リンク」と読み上げられた
+    judgment: 満たしている
+  comment: 音声閲覧環境
+  tester: yuyaroid
+  date: '2024-06-13'
+- id: 573
+  test: 0001-02
+  os: Windows 11 22h2
+  user_agent: Chrome 126.0.6478.57
+  assistive_tech: PC-Talker Neo 2404(ビルド57)
+  assistive_tech_config: ''
+  contents:
+  - procedure: タブキーを押してリンクへとフォーカスを移動
+    actual: 「ウェブアクセシビリティ基盤委員会公開サイト リンク」と読み上げられた
+    judgment: 満たしている
+  comment: 音声閲覧環境
+  tester: yuyaroid
+  date: '2024-06-13'
+- id: 574
+  test: 0001-03
+  os: Windows 11 22h2
+  user_agent: Chrome 126.0.6478.57
+  assistive_tech: PC-Talker Neo 2404(ビルド57)
+  assistive_tech_config: ''
+  contents:
+  - procedure: 下矢印キーを押して段落の内容を確認
+    actual: 「ウェブアクセシビリティ基盤委員会公開サイト」というテキストのみが読み上げられた
+    judgment: 満たしている
+  comment: 音声閲覧環境
+  tester: yuyaroid
+  date: '2024-06-13'
+- id: 575
+  test: 0002-01
+  os: Windows 11 22h2
+  user_agent: Chrome 126.0.6478.57
+  assistive_tech: PC-Talker Neo 2404(ビルド57)
+  assistive_tech_config: ''
+  contents:
+  - procedure: タブキーを押してリンクへとフォーカスを移動
+    actual: 「ウェブアクセシビリティ基盤委員会 公式サイト リンク」と読み上げられた
+    judgment: 満たしている
+  comment: 音声閲覧環境
+  tester: yuyaroid
+  date: '2024-06-13'
+- id: 576
+  test: 0002-02
+  os: Windows 11 22h2
+  user_agent: Chrome 126.0.6478.57
+  assistive_tech: PC-Talker Neo 2404(ビルド57)
+  assistive_tech_config: ''
+  contents:
+  - procedure: タブキーを押してリンクへとフォーカスを移動
+    actual: 「施設ご利用の手引き PDFファイル リンク」と読み上げられた
+    judgment: 満たしている
+  - procedure: 矢印キーを押してリンクへとフォーカスを移動
+    actual: 「施設ご利用の手引 リンク」「PDFファイル リンク」と分けて読み上げられた
+    judgment: 満たしていない
+  comment: 音声閲覧環境
+  tester: yuyaroid
+  date: '2024-06-13'
+- id: 577
+  test: 0057-01
+  os: macOS 13.6.6
+  user_agent: Safari 17.4.1
+  assistive_tech: VoiceOver
+  assistive_tech_config: ''
+  contents:
+  - procedure: Tabキーを押し、フォーカスをボタン1へ移動
+    actual: ボタン1、切り替えボタン
+    judgment: ○
+  - procedure: Tabキーを押し、フォーカスをボタン2へ移動
+    actual: ボタン2、選択中、切り替えボタン
+    judgment: ○
+  - procedure: Tabキーを押し、フォーカスをボタン3へ移動
+    actual: ボタン3、部分的チェックされている、切り替えボタン
+    judgment: ○
+  comment: ''
+  tester: SAWADA STANDARD DESIGN
+  date: '2024-06-13'
+- id: 578
+  test: 0056-01
+  os: macOS 13.6.6
+  user_agent: Safari 17.4.1
+  assistive_tech: VoiceOver
+  assistive_tech_config: ''
+  contents:
+  - procedure: ブラウザーで画面表示内容を確認
+    actual: スタイルシートが適用された表組には余白があり、スタイルシートが無効な表組には余白がないことを視認
+    judgment: ○
+  comment: 「マージンとパディングが使用されて外側とセル内にスペースがあり、」の「外側」が何の外側なのか、具体的に書いた方が良いですね。「マージンとパディングの設定が適用されていないことが確認できる」は開発者ツールで確認してしまいました。もう少し具体的に確認方法がわかると良い気がします。
+  tester: SAWADA STANDARD DESIGN
+  date: '2024-06-13'
+- id: 579
+  test: 0055-01
+  os: macOS 13.6.6
+  user_agent: Safari 17.4.1
+  assistive_tech: VoiceOver
+  assistive_tech_config: ''
+  contents:
+  - procedure: トラックパッドで「サービス」の上にポインターをホバーさせた
+    actual: 「サービス」の背景色が水色に変化した
+    judgment: ○
+  - procedure: トラックパッドで「サービス」の上からポインターを外した
+    actual: 「サービス」の背景色が白に戻った
+    judgment: ○
+  - procedure: Tab キーで「サービス」にフォーカスを移動した
+    actual: 「サービス」の背景色が水色に変化した
+    judgment: ○
+  - procedure: option + Tab キーで「サービス」からフォーカスを外した
+    actual: 「サービス」の背景色が白に戻った
+    judgment: ○
+  comment: ''
+  tester: SAWADA STANDARD DESIGN
+  date: '2024-06-13'
+- id: 580
+  test: 0055-02
+  os: macOS 13.6.6
+  user_agent: Safari 17.4.1
+  assistive_tech: VoiceOver
+  assistive_tech_config: ''
+  contents:
+  - procedure: Tab キーを押下し、「名前」の入力欄にフォーカスを移動した
+    actual: 「氏名」の入力欄の背景色が緑に変化した
+    judgment: ○
+  - procedure: 'Tab キーを押下し、ラジオボタン「男性」にフォーカスを移動した
+
+      '
+    actual: '「氏名」の入力欄の背景色が元に戻った
+
+      「男性」のラベルの背景色が黄色に変化した'
+    judgment: ○
+  - procedure: '下矢印キーを押下し、ラジオボタン「男性」から「女性」にフォーカスを移動した
+
+      '
+    actual: '「男性」のラベルの背景色が元に戻った
+
+      「女性」のラベルの背景色が黄色に変化した'
+    judgment: ○
+  comment: テスト手順の「名前」は間違いで「氏名」が正しいですね。
+  tester: SAWADA STANDARD DESIGN
+  date: '2024-06-13'

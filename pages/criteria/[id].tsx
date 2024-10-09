@@ -39,6 +39,7 @@ const Criterion = ({ query }) => {
         />
         <ul>
           <li>作成者：{metadata.author}</li>
+          {metadata.status && <li>注記：{metadata.status}</li>}
         </ul>
         <h2>検証結果を含む達成方法</h2>
         {queryTechs(true_id).length > 0 ? (
@@ -83,6 +84,15 @@ const Criterion = ({ query }) => {
               </Link>
             </li>
           }
+          <li>
+            <Link href="https://waic.jp/translations/WCAG22/">WCAG 2.2</Link>
+          </li>
+          <li>
+            <Link href="https://waic.jp/translations/WCAG21/">WCAG 2.1</Link>
+          </li>
+          <li>
+            <Link href="https://waic.jp/translations/WCAG20/">WCAG 2.0</Link>
+          </li>
           <li><Link href="../">アクセシビリティ サポーテッド（AS）情報のホーム</Link></li>
         </ul>
       </nav>
