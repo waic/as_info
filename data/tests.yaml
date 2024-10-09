@@ -1025,6 +1025,19 @@
   - 4.1.2
   techs:
   - ARIA5
+0092-01:
+  title: CSS によるフォントサイズのem指定
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0092-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0092-01.md
+  criteria:
+  - 1.4.4
+  - 1.4.5
+  - 1.4.8
+  - 1.4.9
+  techs:
+  - C12
+  - C13
+  - C14
 0121-01:
   title: 制限時間が切れようとしていることを利用者に警告するスクリプトを提供する
   code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0060-01.html
