@@ -177,6 +177,15 @@ ARIA24:
   title: アイコンフォントを意味的に識別するために role="img" を使用する
   target:
   skip_wcag20link: true
+C12:
+  title: フォントサイズにパーセントを使用する
+  target: css
+C13:
+  title: 名前付きフォントサイズを使用する
+  target: css
+C14:
+  title: フォントサイズに em 単位を使用する
+  target: css
 SCR16:
   title: 制限時間が切れようとしていることを利用者に警告するスクリプトを提供する
   target:
