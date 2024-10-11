@@ -70,17 +70,17 @@ const Criterion = ({ query }) => {
               </Link>
             </li>
           }
-          {criterion.wcag20url &&
-            <li>
-              <Link href={`https://waic.jp/translations/UNDERSTANDING-WCAG20/${criterion.wcag20url}`}>
-                WCAG 2.0 解説書「達成基準 {true_id} を理解する」
-              </Link>
-            </li>
-          }
           {criterion.wcag21url &&
             <li>
               <Link href={`https://waic.jp/translations/WCAG21/Understanding/${criterion.wcag21url}`}>
                 WCAG 2.1 解説書「達成基準 {true_id} を理解する」
+              </Link>
+            </li>
+          }
+          {criterion.wcag20url &&
+            <li>
+              <Link href={`https://waic.jp/translations/UNDERSTANDING-WCAG20/${criterion.wcag20url}`}>
+                WCAG 2.0 解説書「達成基準 {true_id} を理解する」
               </Link>
             </li>
           }
