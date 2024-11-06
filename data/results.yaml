@@ -10141,3 +10141,581 @@
   comment: テスト手順の「名前」は間違いで「氏名」が正しいですね。
   tester: SAWADA STANDARD DESIGN
   date: '2024-06-13'
+- id: 581
+  test: 0004-01
+  os: macOS
+  user_agent: Google Chrome 126.0.6478.127
+  assistive_tech: VoiceOver
+  assistive_tech_config: 当該ページを開き、Control＋Optionキー+Shiftキーを押してコンテンツ内に入る
+  contents:
+  - procedure: Control+Optionキーと左右矢印キーを押してusemap属性が設定されたimg要素を読み上げる
+    actual: 「デパートのフロアガイド。各階について詳しくお知りになりたい場合は各階をクリックしてください。、グループ」と読まれる
+    judgment: ×
+  comment: ''
+  tester: 久保田翔太
+  date: '2024-07-03'
+- id: 582
+  test: 0004-02
+  os: macOS
+  user_agent: Google Chrome 126.0.6478.127
+  assistive_tech: VoiceOver
+  assistive_tech_config: 当該ページを開き、Control＋Optionキー+Shiftキーを押してコンテンツ内に入る
+  contents:
+  - procedure: Control+Optionキーと左右矢印キーを押してusemap属性が設定されたimg要素を読み上げる
+    actual: 「デパートのフロアガイド。各階について詳しくお知りになりたい場合は各階をクリックしてください。、グループ」と読まれる
+    judgment: ○
+  comment: ''
+  tester: 久保田翔太
+  date: '2024-07-03'
+- id: 583
+  test: 0004-03
+  os: macOS
+  user_agent: Google Chrome 126.0.6478.127
+  assistive_tech: VoiceOver
+  assistive_tech_config: 当該ページを開き、Control＋Optionキー+Shiftキーを押してコンテンツ内に入る
+  contents:
+  - procedure: Control+Optionキーと左右矢印キーを押してそれぞれのarea要素を読み上げる
+    actual: 「リンク、4F雑貨 書籍」「リンク、3F衣料品」「リンク、2Fお菓子 その他食品」「リンク、1F生鮮食品」とそれぞれ読まれた
+    judgment: ○
+  comment: ''
+  tester: 久保田翔太
+  date: '2024-07-03'
+- id: 584
+  test: 0004-04
+  os: macOS
+  user_agent: Google Chrome 126.0.6478.127
+  assistive_tech: VoiceOver
+  assistive_tech_config: 当該ページを開き、Control＋Optionキー+Shiftキーを押してコンテンツ内に入る
+  contents:
+  - procedure: Control+Optionキーと左右矢印キーを押してそれぞれのarea要素を選択し、Enterキーを押す
+    actual: それぞれのarea要素は意図したページへ遷移した
+    judgment: ○
+  comment: ''
+  tester: 久保田翔太
+  date: '2024-07-03'
+- id: 585
+  test: 0004-05
+  os: macOS
+  user_agent: Google Chrome 126.0.6478.127
+  assistive_tech: VoiceOver
+  assistive_tech_config: 当該ページを開き、Control＋Optionキー+Shiftキーを押してコンテンツ内に入る
+  contents:
+  - procedure: Control+Optionキーと左右矢印キーを押してそれぞれのarea要素を読み上げる
+    actual: 「リンク、4F雑貨 書籍」「リンク、3F衣料品」「リンク、2Fお菓子 その他食品」「リンク、1F生鮮食品」とそれぞれ読まれて、リンクであることが分かった
+    judgment: ○
+  comment: ''
+  tester: 久保田翔太
+  date: '2024-07-03'
+- id: 586
+  test: 0029-02
+  os: Windows 11 Pro　23H2
+  user_agent: Microsoft Edge バージョン 129.0.2792.79 (公式ビルド) (64 ビット)
+  assistive_tech: NVDA 2024.1jp 2024.1.0.3578
+  assistive_tech_config: ''
+  contents:
+  - procedure: テストコードを表示後、タブキーを2回押下して入力フォームにフォーカス
+    actual: aria-describedbyによって、<p id="int2">に設定されたテキストが読み上げられた。
+    judgment: ○
+  comment: ''
+  tester: 土永 崇之
+  date: '2024-10-10'
+- id: 587
+  test: 0048-01
+  os: Windows 11 Pro　23H3
+  user_agent: Microsoft Edge バージョン 129.0.2792.79 (公式ビルド) (64 ビット)
+  assistive_tech: NVDA 2024.1jp 2024.1.0.3579
+  assistive_tech_config: ''
+  contents:
+  - procedure: h2見出し「郵便番号入力」を読みあげ後、カーソルキー「↓」を2回押下。
+    actual: 'カーソルキー「↓」を押下するごとに、下記のテキストが読み上げられた。
+
+      「グループ 前半3桁と後半4桁に分けて入力します」
+
+      「郵便番号 アスタリスク 前半3ケタエディット必須 マイナス 後半4ケタエディット必須」
+
+      '
+    judgment: ○
+  - procedure: 期待される結果１の結果を読みあげた後、カーソルキー「↓」を押下。
+    actual: '下記のテキストが読み上げられた。
+
+      「グループの外 郵便番号を入力してください。」'
+    judgment: ○
+  comment: ''
+  tester: 土永 崇之
+  date: '2024-10-10'
+- id: 588
+  test: 0057-01
+  os: Windows 11 Pro　23H4
+  user_agent: Microsoft Edge バージョン 129.0.2792.79 (公式ビルド) (64 ビット)
+  assistive_tech: NVDA 2024.1jp 2024.1.0.3580
+  assistive_tech_config: ''
+  contents:
+  - procedure: タブキーによって「ボタン1」へフォーカス
+    actual: 「ボタン1 トグルボタン 押されていません」と読み上げられた。
+    judgment: ○
+  - procedure: タブキーによって「ボタン2」へフォーカス
+    actual: 「ボタン2 トグルボタン 押されています」と読み上げられた。
+    judgment: ○
+  - procedure: タブキーによって「ボタン3」へフォーカス
+    actual: 「ボタン3 トグルボタン 押されていません 一部チェック」と読み上げられた。
+    judgment: ○
+  comment: ''
+  tester: 土永 崇之
+  date: '2024-10-10'
+- id: 589
+  test: 0053-01
+  os: Windows 11 Pro　23H5
+  user_agent: Microsoft Edge バージョン 129.0.2792.79 (公式ビルド) (64 ビット)
+  assistive_tech: NVDA 2024.1jp 2024.1.0.3581
+  assistive_tech_config: ''
+  contents:
+  - procedure: テストコードを表示後、カーソルキー「↓」を押下。
+    actual: 「クリック可能 スター」と読み上げられた。
+    judgment: ×
+  - procedure: 期待される結果１の結果を読みあげた後、カーソルキー「↓」を2回押下。
+    actual: カーソルキー「↓」を押下するごとに、「アイコンフォントB」「画像 フェイバリット」と読み上げられた。
+    judgment: ○
+  comment: ''
+  tester: 土永 崇之
+  date: '2024-10-10'
+- id: 590
+  test: 0092-01
+  os: Windows 11 Pro　23H6
+  user_agent: Microsoft Edge バージョン 129.0.2792.79 (公式ビルド) (64 ビット)
+  assistive_tech: ''
+  assistive_tech_config: ''
+  contents:
+  - procedure: ブラウザの設定画面からフォントサイズを「大」に変更
+    actual: 「ユーザー」と「非常に」が他のテキストよりも大きく表示され、「ユーザー」は「非常に」よりも大きく表示された。
+    judgment: ○
+  comment: ''
+  tester: 土永 崇之
+  date: '2024-10-10'
+- id: 591
+  test: 0121-01
+  os: Windows 11 Pro　23H5
+  user_agent: Microsoft Edge バージョン 129.0.2792.79 (公式ビルド) (64 ビット)
+  assistive_tech: ''
+  assistive_tech_config: ''
+  contents:
+  - procedure: テストコードを表示し、40秒待機
+    actual: 40秒経過時点でブラウザ上部に「このページは20秒後に更新されます。表示時間を延長しますか?」と書かれたポップアップが表示され、延長の有無を選択できた。
+    judgment: ○
+  comment: ''
+  tester: 土永 崇之
+  date: '2024-10-10'
+- id: 592
+  test: 0092-01
+  os: edi:Win 11 Pro ver:23H2 OSbld:22631.4317
+  user_agent: firefox 131.0.2 (64 ビット)
+  assistive_tech: NVDA
+  assistive_tech_config: スピーチビューアーの設定変更あり
+  contents:
+  - procedure: firefoxの文字サイズを200％へ変更して確認
+    actual: 相対的に文字サイズが大きくなっていることを確認
+    judgment: 満たしている
+  - procedure: firefoxの文字サイズを200％へ変更して確認
+    actual: "h1>strongの方が\n p>strongより大きくなっていることを確認"
+    judgment: 満たしている
+  comment: ''
+  tester: fujiid
+  date: '2024-10-10'
+- id: 593
+  test: 0053-01
+  os: edi:Win 11 Pro ver:23H2 OSbld:22631.4317
+  user_agent: firefox 131.0.2 (64 ビット)
+  assistive_tech: NVDA
+  assistive_tech_config: スピーチビューアーの設定変更あり
+  contents:
+  - procedure: ページを開いて確認
+    actual: アイコンフォントAでは「star」、アイコンフォントBでは「★」と表示
+    judgment: 満たしている
+  comment: ''
+  tester: fujiid
+  date: '2024-10-10'
+- id: 594
+  test: 0053-01
+  os: edi:Win 11 Pro ver:23H2 OSbld:22631.4317
+  user_agent: firefox 131.0.2 (64 ビット)
+  assistive_tech: NVDA
+  assistive_tech_config: スピーチビューアーの設定変更あり
+  contents:
+  - procedure: NVDA:矢印キーで読み上げ箇所を移動
+    actual: "▼読み上げ結果\n アイコンフォントA\n star"
+    judgment: 満たしている
+  - procedure: 矢印キーで移動
+    actual: "▼読み上げ結果\n アイコンフォントB\n 画像 Favorite"
+    judgment: 満たしている
+  comment: ''
+  tester: fujiid
+  date: '2024-10-10'
+- id: 595
+  test: 0054-01
+  os: edi:Win 11 Pro ver:23H2 OSbld:22631.4317
+  user_agent: firefox 131.0.2 (64 ビット)
+  assistive_tech: NVDA
+  assistive_tech_config: スピーチビューアーの設定変更あり
+  contents:
+  - procedure: NVDA:リンクをエンターでクリックして読み上げ
+    actual: 'ボタンに差し掛かったとき「X」は読み上げられずaria-labelを読み上げ。
+
+      ▼読み上げ結果
+
+      ボタン 閉じる'
+    judgment: 満たしている
+  comment: ''
+  tester: fujiid
+  date: '2024-10-10'
+- id: 596
+  test: 0121-01
+  os: edi:Win 11 Pro ver:23H2 OSbld:22631.4317
+  user_agent: firefox 131.0.2 (64 ビット)
+  assistive_tech: NVDA
+  assistive_tech_config: スピーチビューアーの設定変更あり
+  contents:
+  - procedure: ページを表示して時間経過を待つ
+    actual: "現在の時刻が表示されていることを確認。\n しばらく待ってダイアログの表示も確認\n タブで開いたまま別タブを表示して戻ったときにもダイアログの表示を確認\n\
+      \ 別のアプリで作業をして非アクティブ状態とし、戻ったときにもダイアログの表示を確認"
+    judgment: 満たしている
+  comment: ''
+  tester: fujiid
+  date: '2024-10-10'
+- id: 597
+  test: 0121-01
+  os: edi:Win 11 Pro ver:23H2 OSbld:22631.4317
+  user_agent: firefox 131.0.2 (64 ビット)
+  assistive_tech: NVDA
+  assistive_tech_config: スピーチビューアーの設定変更あり
+  contents:
+  - procedure: NVDA:ページを表示して読み上げ
+    actual: "現在の時刻表示を確認\n ・ダイアログの表示を確認\n ・アクティブでない別タブで開いておき、アクティブにした際ダイアログの表示を確認\n\
+      \ ・別アプリを操作して戻ったときにダイアログの表示を確認\n▼読み上げ結果\nhttps://waic.github.io のページから:  ダイアログ\
+      \  このページは20秒後に更新されます。表示時間を延長しますか?  \nOK  ボタン"
+    judgment: 満たしている
+  comment: 通知はブラウザもしくはタブをアクティブにした段階で初めて読み上げられた
+  tester: fujiid
+  date: '2024-10-10'
+- id: 598
+  test: 0001-01
+  os: Windows
+  user_agent: Google Chrome
+  assistive_tech: NVDA
+  assistive_tech_config: ''
+  contents:
+  - procedure: ブラウザの設定を変更して画像非表示にし、表示内容を確認
+    actual: 代替テキストや、コンテンツと誤解されるようなファイル名や URL などは表示されず、リンクテキスト “ウェブアクセシビリティ基盤委員会公開サイト”
+      のみが表示される
+    judgment: ○
+  - procedure: リンクを読み上げ、内容を確認
+    actual: アイコン画像の代替テキストは何も読み上げられず、リンクテキスト “ウェブアクセシビリティ基盤委員会公開サイト” のみが読み上げられる
+    judgment: ○
+  comment: ''
+  tester: taeko　kojima
+  date: '2024-10-10'
+- id: 599
+  test: 0001-02
+  os: Windows
+  user_agent: Google Chrome
+  assistive_tech: NVDA
+  assistive_tech_config: ''
+  contents:
+  - procedure: ブラウザの設定を変更して画像非表示にし、表示内容を確認
+    actual: 代替テキストや、コンテンツと誤解されるようなファイル名や URL などは表示されず、リンクテキスト “ウェブアクセシビリティ基盤委員会公開サイト”
+      のみが表示される
+    judgment: ○
+  - procedure: リンクを読み上げ、内容を確認
+    actual: アイコン画像の代替テキストは何も読み上げられず、リンクテキスト “ウェブアクセシビリティ基盤委員会公開サイト” のみが読み上げられる
+    judgment: ○
+  comment: ''
+  tester: taeko　kojima
+  date: '2024-10-10'
+- id: 600
+  test: 0001-03
+  os: Windows
+  user_agent: Google Chrome
+  assistive_tech: NVDA
+  assistive_tech_config: ''
+  contents:
+  - procedure: ブラウザの設定を変更して画像非表示にし、表示内容を確認
+    actual: 代替テキストや、コンテンツと誤解されるようなファイル名や URL などは表示されず、リンクテキスト “ウェブアクセシビリティ基盤委員会公開サイト”
+      のみが表示される
+    judgment: ○
+  - procedure: リンクを読み上げ、内容を確認
+    actual: アイコン画像の代替テキストは何も読み上げられず、リンクテキスト “ウェブアクセシビリティ基盤委員会公開サイト” のみが読み上げられる
+    judgment: ○
+  comment: ''
+  tester: taeko　kojima
+  date: '2024-10-10'
+- id: 601
+  test: 0002-01
+  os: Windows
+  user_agent: Google Chrome
+  assistive_tech: NVDA
+  assistive_tech_config: ''
+  contents:
+  - procedure: ブラウザの設定を変更して画像非表示にし、表示内容を確認
+    actual: アイコン画像の代替テキストとリンクテキストが続けて “ウェブアクセシビリティ基盤委員会 公式サイト” と読み上げられる
+    judgment: ○
+  comment: ''
+  tester: taeko　kojima
+  date: '2024-10-10'
+- id: 602
+  test: 0002-02
+  os: Windows
+  user_agent: Google Chrome
+  assistive_tech: NVDA
+  assistive_tech_config: ''
+  contents:
+  - procedure: ブラウザの設定を変更して画像非表示にし、表示内容を確認
+    actual: リンクテキスト “施設ご利用の手引き” に続き、アイコン画像の代替テキスト “PDF ファイル” が表示される
+    judgment: ○
+  comment: ''
+  tester: taeko　kojima
+  date: '2024-10-10'
+- id: 603
+  test: 0003-01
+  os: Windows
+  user_agent: Google Chrome
+  assistive_tech: NVDA
+  assistive_tech_config: ''
+  contents:
+  - procedure: 'キーボード操作 : Tab キーを押下し、フォーカスの移動順序を確認'
+    actual: 花火が選択できない
+    judgment: ○
+  comment: ''
+  tester: taeko　kojima
+  date: '2024-10-10'
+- id: 604
+  test: 0001-01
+  os: Windows 11 Pro　23H2 22631.4169
+  user_agent: chrom 129.0.6668.101
+  assistive_tech: NVDA, Windows拡大鏡
+  assistive_tech_config: ''
+  contents:
+  - procedure: 'ctrl+home
+
+      ブラウズモードを確認
+
+      下矢印'
+    actual: '既読リンク、
+
+      ウェブアクセシビリティ基盤委員会公開サイトｋK'
+    judgment: 満たしている
+  comment: 音声閲覧環境
+  tester: かえる
+  date: '2024-10-10'
+- id: 605
+  test: 0001-02
+  os: Windows 11 Pro　23H2 22631.4169
+  user_agent: chrom 129.0.6668.101
+  assistive_tech: NVDA, Windows拡大鏡
+  assistive_tech_config: ''
+  contents:
+  - procedure: 'ctrl+home
+
+      tabで、リンクをフォーカス'
+    actual: ウェブアクセシビリティ基盤委員会公開サイト、既読リンクと読まれる
+    judgment: 満たしている
+  comment: 音声閲覧環境
+  tester: かえる
+  date: '2024-10-10'
+- id: 606
+  test: 0001-03
+  os: Windows 11 Pro　23H2 22631.4169
+  user_agent: chrom 129.0.6668.101
+  assistive_tech: NVDA, Windows拡大鏡
+  assistive_tech_config: ''
+  contents:
+  - procedure: ctrl+home
+    actual: ウェブアクセシビリティ基盤委員会公開サイト、のみが読まれる
+    judgment: 満たしている
+  comment: 音声閲覧環境
+  tester: かえる
+  date: '2024-10-10'
+- id: 607
+  test: 0002-01
+  os: Windows 11 Pro　23H2 22631.4169
+  user_agent: chrom 129.0.6668.101
+  assistive_tech: NVDA, Windows拡大鏡
+  assistive_tech_config: ''
+  contents:
+  - procedure: NVDA+上矢印
+    actual: “ウェブアクセシビリティ基盤委員会 公式サイト” のみが読まれる
+    judgment: 満たしている
+  comment: 音声閲覧環境
+  tester: かえる
+  date: '2024-10-10'
+- id: 608
+  test: 0092-01
+  os: Windows 10 Pro 22H2
+  user_agent: 'Firefox 131.0.2 '
+  assistive_tech: なし（視覚閲覧環境）
+  assistive_tech_config: ''
+  contents:
+  - procedure: ブラウザの文字サイズ変更機能を用いて、文字サイズのみを拡大する
+    actual: h1 要素の行頭にある「ユーザー」と、p 要素の行末にある「非常に」が周囲のテキストよりも大きく表示される
+    judgment: ○
+  - procedure: ブラウザの文字サイズ変更機能を用いて、文字サイズのみを拡大する
+    actual: h1 要素の行頭にある「ユーザー」と、p 要素の行末にある「非常に」では、h1 要素の行頭にある「ユーザー」のほうが大きく表示される
+    judgment: ○
+  comment: ''
+  tester: 山崎 規弘
+  date: '2024-10-10'
+- id: 609
+  test: 0092-01
+  os: Windows 10 Pro 22H2
+  user_agent: Google Chrome 129.0.6668.101
+  assistive_tech: なし（視覚閲覧環境）
+  assistive_tech_config: ''
+  contents:
+  - procedure: ブラウザの文字サイズ変更機能を用いて、文字サイズのみを拡大する
+    actual: h1 要素の行頭にある「ユーザー」と、p 要素の行末にある「非常に」が周囲のテキストよりも大きく表示される
+    judgment: ○
+  - procedure: ブラウザの文字サイズ変更機能を用いて、文字サイズのみを拡大する
+    actual: h1 要素の行頭にある「ユーザー」と、p 要素の行末にある「非常に」では、h1 要素の行頭にある「ユーザー」のほうが大きく表示される
+    judgment: ○
+  comment: ''
+  tester: 山崎 規弘
+  date: '2024-10-10'
+- id: 610
+  test: 0092-01
+  os: Windows 10 Pro 22H2
+  user_agent: Microsoft Edge 129.0.2792.79
+  assistive_tech: なし（視覚閲覧環境）
+  assistive_tech_config: ''
+  contents:
+  - procedure: ブラウザの文字サイズ変更機能を用いて、文字サイズのみを拡大する
+    actual: h1 要素の行頭にある「ユーザー」と、p 要素の行末にある「非常に」が周囲のテキストよりも大きく表示される
+    judgment: ○
+  - procedure: ブラウザの文字サイズ変更機能を用いて、文字サイズのみを拡大する
+    actual: h1 要素の行頭にある「ユーザー」と、p 要素の行末にある「非常に」では、h1 要素の行頭にある「ユーザー」のほうが大きく表示される
+    judgment: ○
+  comment: ''
+  tester: 山崎 規弘
+  date: '2024-10-10'
+- id: 611
+  test: 0092-01
+  os: macOS 14.6.1
+  user_agent: 'Firefox 131.0.2 '
+  assistive_tech: なし（視覚閲覧環境）
+  assistive_tech_config: ''
+  contents:
+  - procedure: ブラウザの文字サイズ変更機能を用いて、文字サイズのみを拡大する
+    actual: h1 要素の行頭にある「ユーザー」と、p 要素の行末にある「非常に」が周囲のテキストよりも大きく表示される
+    judgment: ○
+  - procedure: ブラウザの文字サイズ変更機能を用いて、文字サイズのみを拡大する
+    actual: h1 要素の行頭にある「ユーザー」と、p 要素の行末にある「非常に」では、h1 要素の行頭にある「ユーザー」のほうが大きく表示される
+    judgment: ○
+  comment: ''
+  tester: 山崎 規弘
+  date: '2024-10-10'
+- id: 612
+  test: 0092-01
+  os: macOS 14.6.1
+  user_agent: Google Chrome 129.0.6668.101
+  assistive_tech: なし（視覚閲覧環境）
+  assistive_tech_config: ''
+  contents:
+  - procedure: ブラウザの文字サイズ変更機能を用いて、文字サイズのみを拡大する
+    actual: h1 要素の行頭にある「ユーザー」と、p 要素の行末にある「非常に」が周囲のテキストよりも大きく表示される
+    judgment: ○
+  - procedure: ブラウザの文字サイズ変更機能を用いて、文字サイズのみを拡大する
+    actual: h1 要素の行頭にある「ユーザー」と、p 要素の行末にある「非常に」では、h1 要素の行頭にある「ユーザー」のほうが大きく表示される
+    judgment: ○
+  comment: ''
+  tester: 山崎 規弘
+  date: '2024-10-10'
+- id: 613
+  test: 0092-01
+  os: macOS 14.6.1
+  user_agent: Microsoft Edge 129.0.2792.79
+  assistive_tech: なし（視覚閲覧環境）
+  assistive_tech_config: ''
+  contents:
+  - procedure: ブラウザの文字サイズ変更機能を用いて、文字サイズのみを拡大する
+    actual: h1 要素の行頭にある「ユーザー」と、p 要素の行末にある「非常に」が周囲のテキストよりも大きく表示される
+    judgment: ○
+  - procedure: ブラウザの文字サイズ変更機能を用いて、文字サイズのみを拡大する
+    actual: h1 要素の行頭にある「ユーザー」と、p 要素の行末にある「非常に」では、h1 要素の行頭にある「ユーザー」のほうが大きく表示される
+    judgment: ○
+  comment: ''
+  tester: 山崎 規弘
+  date: '2024-10-10'
+- id: 615
+  test: 0121-01
+  os: Windows 10 Pro 22H2
+  user_agent: 'Firefox 131.0.2 '
+  assistive_tech: なし（視覚閲覧環境）
+  assistive_tech_config: ''
+  contents:
+  - procedure: ページを表示し、「このページを表示した時刻」に現在の時刻が表示されていることを確認する。そのまま40秒待つ
+    actual: 40秒待つと、「このページは20秒後に更新されます。表示時間を延長しますか?」というダイアログが表示される
+    judgment: ○
+  comment: ''
+  tester: 山崎 規弘
+  date: '2024-10-10'
+- id: 616
+  test: 0121-01
+  os: Windows 10 Pro 22H2
+  user_agent: Google Chrome 129.0.6668.101
+  assistive_tech: なし（視覚閲覧環境）
+  assistive_tech_config: ''
+  contents:
+  - procedure: ページを表示し、「このページを表示した時刻」に現在の時刻が表示されていることを確認する。そのまま40秒待つ
+    actual: 40秒待つと、「このページは20秒後に更新されます。表示時間を延長しますか?」というダイアログが表示される
+    judgment: ○
+  comment: ウィンドウを最小化した場合にもダイアログは表示されるが、それに気づく手段はなかった（Firefoxはタスクバーのアイコンの点滅があったため、何かがあったということには気づけた）
+  tester: 山崎 規弘
+  date: '2024-10-10'
+- id: 617
+  test: 0121-01
+  os: Windows 10 Pro 22H2
+  user_agent: Microsoft Edge 129.0.2792.79
+  assistive_tech: なし（視覚閲覧環境）
+  assistive_tech_config: ''
+  contents:
+  - procedure: ページを表示し、「このページを表示した時刻」に現在の時刻が表示されていることを確認する。そのまま40秒待つ
+    actual: 40秒待つと、「このページは20秒後に更新されます。表示時間を延長しますか?」というダイアログが表示される
+    judgment: ○
+  comment: ウィンドウを最小化した場合にもダイアログは表示されるが、それに気づく手段はなかった（Firefoxはタスクバーのアイコンの点滅があったため、何かがあったということには気づけた）
+  tester: 山崎 規弘
+  date: '2024-10-10'
+- id: 618
+  test: 0121-01
+  os: Windows 10 Pro 22H2
+  user_agent: 'Firefox 131.0.2 '
+  assistive_tech: NVDA 2024.3.1jp (2024.3.1.3700)
+  assistive_tech_config: ''
+  contents:
+  - procedure: ページを表示し、「このページを表示した時刻」に現在の時刻が表示されていることを確認する。そのまま40秒待つ
+    actual: 40秒待つと、「このページは20秒後に更新されます。表示時間を延長しますか?」という警告メッセージが通知される
+    judgment: ×
+  comment: ウィンドウがアクティブな時は通知が読み上げられるが非アクティブな時には読み上げられなかった
+  tester: 山崎 規弘
+  date: '2024-10-10'
+- id: 619
+  test: 0121-01
+  os: Windows 10 Pro 22H2
+  user_agent: Google Chrome 129.0.6668.101
+  assistive_tech: NVDA 2024.3.1jp (2024.3.1.3700)
+  assistive_tech_config: ''
+  contents:
+  - procedure: ページを表示し、「このページを表示した時刻」に現在の時刻が表示されていることを確認する。そのまま40秒待つ
+    actual: 40秒待つと、「このページは20秒後に更新されます。表示時間を延長しますか?」という警告メッセージが通知される
+    judgment: ×
+  comment: ウィンドウがアクティブな時は通知が読み上げられるが非アクティブな時には読み上げられなかった
+  tester: 山崎 規弘
+  date: '2024-10-10'
+- id: 620
+  test: 0121-01
+  os: Windows 10 Pro 22H2
+  user_agent: Microsoft Edge 129.0.2792.79
+  assistive_tech: NVDA 2024.3.1jp (2024.3.1.3700)
+  assistive_tech_config: ''
+  contents:
+  - procedure: ページを表示し、「このページを表示した時刻」に現在の時刻が表示されていることを確認する。そのまま40秒待つ
+    actual: 40秒待つと、「このページは20秒後に更新されます。表示時間を延長しますか?」という警告メッセージが通知される
+    judgment: ×
+  comment: ウィンドウがアクティブな時は通知が読み上げられるが非アクティブな時には読み上げられなかった
+  tester: 山崎 規弘
+  date: '2024-10-10'
