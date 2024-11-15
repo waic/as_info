@@ -10641,7 +10641,7 @@
   comment: ''
   tester: 山崎 規弘
   date: '2024-10-10'
-- id: 615
+- id: 614
   test: 0121-01
   os: Windows 10 Pro 22H2
   user_agent: 'Firefox 131.0.2 '
@@ -10654,10 +10654,23 @@
   comment: ''
   tester: 山崎 規弘
   date: '2024-10-10'
-- id: 616
+- id: 615
   test: 0121-01
   os: Windows 10 Pro 22H2
   user_agent: Google Chrome 129.0.6668.101
+  assistive_tech: なし（視覚閲覧環境）
+  assistive_tech_config: ''
+  contents:
+  - procedure: ページを表示し、「このページを表示した時刻」に現在の時刻が表示されていることを確認する。そのまま40秒待つ
+    actual: 40秒待つと、「このページは20秒後に更新されます。表示時間を延長しますか?」というダイアログが表示される
+    judgment: ○
+  comment: ウィンドウを最小化した場合にもダイアログは表示されるが、それに気づく手段はなかった（Firefoxはタスクバーのアイコンの点滅があったため、何かがあったということには気づけた）
+  tester: 山崎 規弘
+  date: '2024-10-10'
+- id: 616
+  test: 0121-01
+  os: Windows 10 Pro 22H2
+  user_agent: Microsoft Edge 129.0.2792.79
   assistive_tech: なし（視覚閲覧環境）
   assistive_tech_config: ''
   contents:
@@ -10670,19 +10683,6 @@
 - id: 617
   test: 0121-01
   os: Windows 10 Pro 22H2
-  user_agent: Microsoft Edge 129.0.2792.79
-  assistive_tech: なし（視覚閲覧環境）
-  assistive_tech_config: ''
-  contents:
-  - procedure: ページを表示し、「このページを表示した時刻」に現在の時刻が表示されていることを確認する。そのまま40秒待つ
-    actual: 40秒待つと、「このページは20秒後に更新されます。表示時間を延長しますか?」というダイアログが表示される
-    judgment: ○
-  comment: ウィンドウを最小化した場合にもダイアログは表示されるが、それに気づく手段はなかった（Firefoxはタスクバーのアイコンの点滅があったため、何かがあったということには気づけた）
-  tester: 山崎 規弘
-  date: '2024-10-10'
-- id: 618
-  test: 0121-01
-  os: Windows 10 Pro 22H2
   user_agent: 'Firefox 131.0.2 '
   assistive_tech: NVDA 2024.3.1jp (2024.3.1.3700)
   assistive_tech_config: ''
@@ -10693,7 +10693,7 @@
   comment: ウィンドウがアクティブな時は通知が読み上げられるが非アクティブな時には読み上げられなかった
   tester: 山崎 規弘
   date: '2024-10-10'
-- id: 619
+- id: 618
   test: 0121-01
   os: Windows 10 Pro 22H2
   user_agent: Google Chrome 129.0.6668.101
@@ -10706,7 +10706,7 @@
   comment: ウィンドウがアクティブな時は通知が読み上げられるが非アクティブな時には読み上げられなかった
   tester: 山崎 規弘
   date: '2024-10-10'
-- id: 620
+- id: 619
   test: 0121-01
   os: Windows 10 Pro 22H2
   user_agent: Microsoft Edge 129.0.2792.79
@@ -10718,4 +10718,224 @@
     judgment: ×
   comment: ウィンドウがアクティブな時は通知が読み上げられるが非アクティブな時には読み上げられなかった
   tester: 山崎 規弘
+  date: '2024-10-10'
+- id: 620
+  test: 0052-01
+  os: WindowsNT ver10.0
+  user_agent: NetReader ネオモード 5.2407.59.125
+  assistive_tech: PC-Talker Neo 12.2408.59.2302
+  assistive_tech_config: ''
+  contents:
+  - procedure: ページ内の入力フォームを全て未入力にして、「送信」ボタンを押した。
+    actual: 「必須の入力欄すべてに入力してから再送信してください (残り3項目)」と読み上げた。一方で、「指名」、「ふりがな」、「メールアドレス」それぞれを選択した時には、未入力であることを知らせる読み上げが無かった。
+    judgment: 満たしていない
+  comment: 音声閲覧環境
+  tester: 諸熊
+  date: '2024-10-10'
+- id: 621
+  test: 0052-02
+  os: WindowsNT ver10.0
+  user_agent: NetReader ネオモード 5.2407.59.125
+  assistive_tech: PC-Talker Neo 12.2408.59.2302
+  assistive_tech_config: ''
+  contents:
+  - procedure: 「電子メールアドレス」に何も入力せず、送信ボタンお下を。
+    actual: 'エラーがあります、1項目 と読み上げた。また、「電子メールアドレス」の入力欄を選択すると、「エラー: データが入力されていません」と読み上げた。'
+    judgment: 満たしている
+  - procedure: 「電子メールアドレス」に「example.com」と入力し、送信ボタンを押した。
+    actual: '電子メールアドレス」の入力欄を選択した際に、「エラー: データの形式が正しくありません」と読み上げた。'
+    judgment: 満たしている
+  comment: 音声閲覧環境
+  tester: 諸熊
+  date: '2024-10-10'
+- id: 622
+  test: 0053-01
+  os: WindowsNT ver10.0
+  user_agent: NetReader ネオモード 5.2407.59.125
+  assistive_tech: PC-Talker Neo 12.2408.59.2302
+  assistive_tech_config: ''
+  contents:
+  - procedure: 矢印キーを押して、アイコンフォントAと、その次のテキストを確認した。
+    actual: 通知されたのは、アイコンフォントA、及び、スターだった。
+    judgment: 満たしている
+  - procedure: 矢印キーを押して、アイコンフォントBと、その次のテキストまで読み上げさせた。
+    actual: 通知した内容は「アイコンフォントB」テキストと、「Favorite」画像だった。
+    judgment: 満たしている
+  comment: 音声閲覧環境
+  tester: 諸熊
+  date: '2024-10-10'
+- id: 623
+  test: 0054-01
+  os: WindowsNT ver10.0
+  user_agent: NetReader ネオモード 5.2407.59.125
+  assistive_tech: PC-Talker Neo 12.2408.59.2302
+  assistive_tech_config: ''
+  contents:
+  - procedure: 'タブキーを押して「ポップアップボックスを表示」リンクを選択し、エンターキーを押下。
+
+      その後、タブキーを押して「閉じる」ボタンを選択した。'
+    actual: ボタンの読み上げは「閉じる」のみだった。
+    judgment: 満たしている
+  comment: 音声閲覧環境
+  tester: 諸熊
+  date: '2024-10-10'
+- id: 624
+  test: 0054-02
+  os: WindowsNT ver10.0
+  user_agent: NetReader ネオモード 5.2407.59.125
+  assistive_tech: PC-Talker Neo 12.2408.59.2302
+  assistive_tech_config: ''
+  contents:
+  - procedure: タブキーを押して、3つのエディトボックスにフォーカスを移動した。
+    actual: それぞれを選択した時、「市外局番」、「市内局番」、「加入者番号」と読み上げた。
+    judgment: 満たしている
+  comment: 音声閲覧環境
+  tester: 諸熊
+  date: '2024-10-10'
+- id: 625
+  test: 0057-01
+  os: WindowsNT ver10.0
+  user_agent: NetReader ネオモード 5.2407.59.125
+  assistive_tech: PC-Talker Neo 12.2408.59.2302
+  assistive_tech_config: ''
+  contents:
+  - procedure: タブキーを押して ボタン1 を選択した。
+    actual: ボタン1 のトグルボタン 切り替え チェックなし と読み上げた。
+    judgment: 満たしている
+  - procedure: タブキーを押して、ボタン2を選択した。
+    actual: ボタン2 のトグルボタン 切り替え チェック と読み上げた。
+    judgment: 満たしている
+  - procedure: タブキーを押して ボタン3 を選択した。
+    actual: ボタン3 のトグルボタン 切り替え Mix と読み上げた。
+    judgment: 満たしている
+  comment: 音声閲覧環境
+  tester: 諸熊
+  date: '2024-10-10'
+- id: 626
+  test: 0121-01
+  os: WindowsNT ver10.0
+  user_agent: NetReader ネオモード 5.2407.59.125
+  assistive_tech: PC-Talker Neo 12.2408.59.2302
+  assistive_tech_config: ''
+  contents:
+  - procedure: ブラウザーでページを表示して40秒待機した。
+    actual: ダイアログが表示され、時間を延長するかどうかを問い合わせるダイアログが表示された。OKボタンを押すと、時間が延長されたと思われる。
+    judgment: 満たしている
+  comment: 音声閲覧環境
+  tester: 諸熊
+  date: '2024-10-10'
+- id: 627
+  test: 0046-01
+  os: WindowsNT ver10.0
+  user_agent: NetReader ネオモード 5.2407.59.125
+  assistive_tech: PC-Talker Neo 12.2408.59.2302
+  assistive_tech_config: ''
+  contents:
+  - procedure: 矢印キーを押して、画像やテキストを確認した。
+    actual: '画像を選択した時に「ウェブアクセシビリティ基盤委員会画像にはウェブアクセシビリティ基盤委員会(WAIC)のロゴと「Web Accessibility
+      Infrastructure Committee ウェブアクセシビリティ基盤委員会」という文字が書かれています。」と読み上げた。また次のテキストは、「画像にはウェブアクセシビリティ基盤委員会(WAIC)のロゴと「Web
+      Accessibility Infrastructure Committee ウェブアクセシビリティ基盤委員会」という文字が書かれています。」と読み上げた。
+      '
+    judgment: 満たしている
+  comment: 音声閲覧環境
+  tester: 諸熊
+  date: '2024-10-10'
+- id: 628
+  test: 0047-01
+  os: WindowsNT ver10.0
+  user_agent: NetReader ネオモード 5.2407.59.125
+  assistive_tech: PC-Talker Neo 12.2408.59.2302
+  assistive_tech_config: ''
+  contents:
+  - procedure: タブキーを押してテキストフィールドを選択した。
+    actual: 「サイト内検索 テキストフィールド」と読み上げた。
+    judgment: 満たしている
+  comment: 音声閲覧環境
+  tester: 諸熊
+  date: '2024-10-10'
+- id: 629
+  test: 0047-02
+  os: WindowsNT ver10.0
+  user_agent: NetReader ネオモード 5.2407.59.125
+  assistive_tech: PC-Talker Neo 12.2408.59.2302
+  assistive_tech_config: ''
+  contents:
+  - procedure: スライダーコントロールにタブキーでフォーカスを移動した。
+    actual: 「旅行の日数 の トラックバー 洗濯 15」と読み上げた。
+    judgment: 満たしている
+  comment: 音声閲覧環境
+  tester: 諸熊
+  date: '2024-10-10'
+- id: 630
+  test: 0047-03
+  os: WindowsNT ver10.0
+  user_agent: NetReader ネオモード 5.2407.59.125
+  assistive_tech: PC-Talker Neo 12.2408.59.2302
+  assistive_tech_config: ''
+  contents:
+  - procedure: コンポボックスの位置へフォーカスを移動した。
+    actual: 「通知 日前に通知」と読み上げた。
+    judgment: 満たしている
+  comment: 音声閲覧環境
+  tester: 諸熊
+  date: '2024-10-10'
+- id: 631
+  test: 0048-01
+  os: WindowsNT ver10.0
+  user_agent: NetReader ネオモード 5.2407.59.125
+  assistive_tech: PC-Talker Neo 12.2408.59.2302
+  assistive_tech_config: ''
+  contents:
+  - procedure: 矢印キーを押して、郵便番号の入力欄の位置まで移動した。
+    actual: 「郵便番号 郵便番号上３桁」と読み上げた。
+    judgment: 満たしている
+  - procedure: 矢印キーを押して、「郵便番号を入力してください」の位置へ移動した。
+    actual: 「郵便番号」領域の外側であることは読み上げなかったが、上矢印キーを押すと、「郵便番号 郵便番号の下4桁」と読み上げたので、グループの外側にいたということはわかった。
+    judgment: 満たしている
+  comment: 音声閲覧環境
+  tester: 諸熊
+  date: '2024-10-10'
+- id: 632
+  test: 0049-01
+  os: WindowsNT ver10.0
+  user_agent: NetReader ネオモード 5.2407.59.125
+  assistive_tech: PC-Talker Neo 12.2408.59.2302
+  assistive_tech_config: ''
+  contents:
+  - procedure: 「エラーメッセージが含まれるアラートダイアログを表示する」ボタンを押下した。
+    actual: ボタンを押すと即座に通知が表示されることも確認できた。ただし、アラートダイアログであることは通知しなかった。また、ダイアログの内容を自動で読み上げることも無かった。
+    judgment: 満たしていない
+  - procedure: ボタン押下後のフォーカス位置を確認した。
+    actual: 「戻る」ボタンにフォーカスがあった。
+    judgment: 満たしている
+  comment: 音声閲覧環境
+  tester: 諸熊
+  date: '2024-10-10'
+- id: 633
+  test: 0050-01
+  os: WindowsNT ver10.0
+  user_agent: NetReader ネオモード 5.2407.59.125
+  assistive_tech: PC-Talker Neo 12.2408.59.2302
+  assistive_tech_config: ''
+  contents:
+  - procedure: フォームに何も入力せずに送信ボタンを押した。
+    actual: ページ上部に「ファーストネームを入力してください。ラストネームを入力してください。メールアドレスを入力してください。」というテキストが表示されたと同時に読み上げられた。
+    judgment: 満たしている
+  comment: 音声閲覧環境
+  tester: 諸熊
+  date: '2024-10-10'
+- id: 634
+  test: 0051-01
+  os: WindowsNT ver10.0
+  user_agent: NetReader ネオモード 5.2407.59.125
+  assistive_tech: PC-Talker Neo 12.2408.59.2302
+  assistive_tech_config: ''
+  contents:
+  - procedure: 矢印キーを押して、「今週の質問」と読み上げるまで移動させた。
+    actual: '直前に「領域」と読み上げた。なお、末尾から上→キーを押すと、「税制の見直しは必要だと思いますか?
+
+      」を読み上げる前に「領域」と読み上げたので、前者は何らかの領域内であると予測できる。'
+    judgment: 満たしている
+  comment: 音声閲覧環境
+  tester: 諸熊
   date: '2024-10-10'
