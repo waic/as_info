@@ -110,6 +110,9 @@ C9:
 C15:
   title: ユーザインタフェースコンポーネントがフォーカスを受けとったときの提示を変更するために、CSS を使用する
   target:
+C18:
+  title: レイアウトデザインのためのスペーサー画像ではなく、CSS のマージンとパディング規則を使用する
+  target:
 ARIA1:
   title: ユーザインターフェース コントロールに対する説明ラベルを提供するために、aria-describedby プロパティを使用する
   target:
@@ -174,3 +177,15 @@ ARIA24:
   title: アイコンフォントを意味的に識別するために role="img" を使用する
   target:
   skip_wcag20link: true
+C12:
+  title: フォントサイズにパーセントを使用する
+  target: css
+C13:
+  title: 名前付きフォントサイズを使用する
+  target: css
+C14:
+  title: フォントサイズに em 単位を使用する
+  target: css
+SCR16:
+  title: 制限時間が切れようとしていることを利用者に警告するスクリプトを提供する
+  target:
