@@ -1046,3 +1046,77 @@
   - 2.2.1
   techs:
   - SCR16
+0037-01:
+  title: required 属性による必須項目の特定（input要素、select要素、textarea要素）
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0037-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0037-01.md
+  criteria:
+  - 1.3.1
+  - 3.3.3
+  techs: []
+0085-01:
+  title: autocomplete 属性による入力内容の関連付け
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0085-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0085-01.md
+  criteria:
+  - 1.3.5
+  techs:
+  - H98
+0089-01:
+  title: HTMLのdialog要素を使用してモーダルダイアログを作成する
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0089-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0089-01.md
+  criteria:
+  - 2.4.3
+  techs:
+  - H102
+0090-01:
+  title: CSS によるフォントサイズのパーセント指定
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0090-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0090-01.md
+  criteria:
+  - 1.4.4
+  - 1.4.5
+  - 1.4.8
+  - 1.4.9
+  techs:
+  - C12
+  - C13
+  - C14
+0091-01:
+  title: CSS によるフォントサイズのキーワード指定
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0091-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0091-01.md
+  criteria:
+  - 1.4.4
+  - 1.4.5
+  - 1.4.8
+  - 1.4.9
+  techs:
+  - C12
+  - C13
+  - C14
+0119-01:
+  title: キーボード及びマウスのイベントハンドラを両方とも使用する
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0119-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0119-01.md
+  criteria:
+  - 2.1.1
+  techs:
+  - SCR2
+0142-01:
+  title: 検索結果にステータスメッセージを提供するために role="status" を使用する。
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0142-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0142-01.md
+  criteria:
+  - 4.1.3
+  techs:
+  - ARIA22
+0143-01:
+  title: role属性による逐次的な更新の通知(role="log"の使用)
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0143-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0143-01.md
+  criteria:
+  - 4.1.3
+  techs:
+  - ARIA23
