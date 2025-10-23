@@ -152,17 +152,6 @@ const ResultTableRow = (props: { result: ResultData; }) => {
   )
 };
 
-const sortByOS = (a: ResultData, b: ResultData) => {
-  let a_env = (typeof a.os === 'undefined') ? '' : a.os.toLowerCase();
-  let b_env = (typeof b.os === 'undefined') ? '' : b.os.toLowerCase();
-  if (a_env > b_env) {
-    return 1;
-  } else if (a_env == b_env) {
-    return 0;
-  }
-  return -1;
-};
-
 const sortByResultId = (a: ResultData, b: ResultData) => {
   return a.id - b.id;
 };
