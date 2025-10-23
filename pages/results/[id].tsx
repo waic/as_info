@@ -249,7 +249,7 @@ const Result = ({ query }) => {
               </tr>
             </thead>
             <tbody>
-              {result_ids.reverse().map((result, index) => (
+              {[...result_ids].reverse().map((result, index) => (
                 <ResultTableRow result={result} key={index} />
               ))}
             </tbody>
