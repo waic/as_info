@@ -64,6 +64,23 @@ function Comment(props: { result: ResultData; }) {
   return nl2br(comments);
 }
 
+const InReview = ({ resultId }: { resultId: number }) => {
+  const { last_reviewed_result_id } = metadata;
+  return resultId > last_reviewed_result_id ? <span>[WAICレビュー作業中]</span> : null;
+};
+
+function Judgment(props: { resultContent: ResultContent; }) {
+  const { judgment } = props.resultContent;
+  switch (judgment) {
+    case '満たしている':
+      return <>○</>;
+    case '満たしていない':
+      return <>×</>;
+    default:
+      return <>{judgment}</>;
+  }
+};
+
 const ResultTableRow = (props: { result: ResultData; }) => {
   const result = props.result;
   const contents = result.contents;
@@ -78,7 +95,7 @@ const ResultTableRow = (props: { result: ResultData; }) => {
           {result.assistive_tech_config && (<li style={list_item_style}>{nl2br(result.assistive_tech_config)}</li>)}
         </ul></td>
         <td>
-          {contents[0].judgment === '満たしている' ? '○' : '×'}
+          <Judgment resultContent={contents[0]} />
         </td>
         <td style={larger_th_style}>
           {nl2br(contents[0].procedure)}
@@ -88,7 +105,10 @@ const ResultTableRow = (props: { result: ResultData; }) => {
         </td>
         <td style={larger_th_style}>{getTesterName(result)}</td>
         <td style={larger_th_style}>{getDate(result)}</td>
-        <td style={larger_th_style}><Comment result={result} /></td>
+        <td style={larger_th_style}>
+          <InReview resultId={result.id} />
+          <Comment result={result} />
+        </td>
       </tr>
     );
   }
@@ -108,7 +128,7 @@ const ResultTableRow = (props: { result: ResultData; }) => {
             </>
           )}
           <td>
-            {item.judgment === '満たしている' ? '○' : '×'}
+            <Judgment resultContent={item} />
           </td>
           <td style={larger_th_style}>
             {nl2br(item.procedure)}
@@ -120,13 +140,20 @@ const ResultTableRow = (props: { result: ResultData; }) => {
             <>
               <td rowSpan={contents.length} style={larger_th_style}>{getTesterName(result)}</td>
               <td rowSpan={contents.length} style={larger_th_style}>{getDate(result)}</td>
-              <td rowSpan={contents.length} style={larger_th_style}><Comment result={result} /></td>
+              <td rowSpan={contents.length} style={larger_th_style}>
+                <InReview resultId={result.id} />
+                <Comment result={result} />
+              </td>
             </>
           )}
         </tr>
       ))}
     </>
   )
+};
+
+const sortByResultId = (a: ResultData, b: ResultData) => {
+  return a.id - b.id;
 };
 
 const Result = ({ query }) => {
@@ -142,16 +169,7 @@ const Result = ({ query }) => {
   const test = tests[true_id];
   const criterion_ids = test.criteria;
   const tech_ids = test.techs;
-  const result_ids = results.filter(result => result.test === true_id).sort((a, b) => {
-    let a_env = (typeof a.os === 'undefined') ? '' : a.os.toLowerCase();
-    let b_env = (typeof b.os === 'undefined') ? '' : b.os.toLowerCase();
-    if (a_env > b_env) {
-      return 1;
-    } else if (a_env == b_env) {
-      return 0;
-    }
-    return -1;
-  });
+  const result_ids = results.filter(result => result.test === true_id).sort(sortByResultId);
   return (
     <>
       <NextSeo {...Object.assign(SEO, { title: 'テスト' + true_id })} />
@@ -163,6 +181,7 @@ const Result = ({ query }) => {
         />
         <ul>
           <li>作成者：{metadata.author}</li>
+          {metadata.status && <li>注記：{metadata.status}</li>}
         </ul>
         <h2>テストの対象となる達成基準</h2>
         <ul>
@@ -230,7 +249,7 @@ const Result = ({ query }) => {
               </tr>
             </thead>
             <tbody>
-              {result_ids.map((result, index) => (
+              {[...result_ids].reverse().map((result, index) => (
                 <ResultTableRow result={result} key={index} />
               ))}
             </tbody>
@@ -243,6 +262,15 @@ const Result = ({ query }) => {
       <nav>
         <h2>リンク</h2>
         <ul className="related_link">
+          <li>
+            <Link href="https://waic.jp/translations/WCAG22/">WCAG 2.2</Link>
+          </li>
+          <li>
+            <Link href="https://waic.jp/translations/WCAG21/">WCAG 2.1</Link>
+          </li>
+          <li>
+            <Link href="https://waic.jp/translations/WCAG20/">WCAG 2.0</Link>
+          </li>
           <li><Link href="../">アクセシビリティ サポーテッド（AS）情報のホーム</Link></li>
         </ul>
       </nav>

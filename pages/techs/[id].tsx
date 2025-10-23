@@ -49,6 +49,7 @@ const Tech = ({ query }) => {
         />
         <ul>
           <li>作成者：{metadata.author}</li>
+          {metadata.status && <li>注記：{metadata.status}</li>}
         </ul>
         <h2>テストの対象となる達成基準</h2>
         <ul>
@@ -76,10 +77,20 @@ const Tech = ({ query }) => {
       <nav>
         <h2>リンク</h2>
         <ul className="related_link">
+          <li><Link href={`https://waic.jp/translations/WCAG22/Techniques/${tech_dir}/${true_id}`}>WCAG 2.2 テクニック集 {true_id}</Link></li>
+          <li><Link href={`https://waic.jp/translations/WCAG21/Techniques/${tech_dir}/${true_id}`}>WCAG 2.1 達成方法集 {true_id}</Link></li>
           {tech.skip_wcag20link ||
             <li><Link href={`https://waic.jp/translations/WCAG-TECHS/${true_id}.html`}>WCAG 2.0 達成方法集 {true_id}</Link></li>
           }
-          <li><Link href={`https://waic.jp/translations/WCAG21/Techniques/${tech_dir}/${true_id}`}>WCAG 2.1 達成方法集 {true_id}</Link></li>
+          <li>
+            <Link href="https://waic.jp/translations/WCAG22/">WCAG 2.2</Link>
+          </li>
+          <li>
+            <Link href="https://waic.jp/translations/WCAG21/">WCAG 2.1</Link>
+          </li>
+          <li>
+            <Link href="https://waic.jp/translations/WCAG20/">WCAG 2.0</Link>
+          </li>
           <li><Link href="../">アクセシビリティ サポーテッド（AS）情報のホーム</Link></li>
         </ul>
       </nav>
