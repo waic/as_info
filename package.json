@@ -17,7 +17,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "js-yaml": "^4.1.0",
+    "js-yaml": "^4.1.1",
     "js-yaml-loader": "^1.2.2",
     "next": "^14.2.32",
     "next-seo": "^6.1.0",
