@@ -1088,6 +1088,13 @@
     - C12
     - C13
     - C14
+0093-01:
+  title: テキストを含むコンタクトフォームの拡大縮小
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0093-01.html
+  document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0093-01.md
+  criteria:
+    - 1.4.4
+  techs: []
 0119-01:
   title: キーボード及びマウスのイベントハンドラを両方とも使用する
   code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0119-01.html
