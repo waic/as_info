@@ -40,11 +40,11 @@ const Tech = ({ query }) => {
   const criterion_ids = queryCriteria(test_ids, true_id);
   return (
     <>
-      <NextSeo {...Object.assign(SEO, { title: '達成方法' + true_id })} />
+      <NextSeo {...Object.assign(SEO, { title: '達成方法(テクニック)' + true_id })} />
       <Logo />
       <main id="main">
         <H1
-          first='アクセシビリティ サポーテッド（AS）情報：達成方法'
+          first='アクセシビリティ サポーテッド（AS）情報：達成方法(テクニック)'
           second={`${true_id}: ${tech.title}`}
         />
         <ul>
@@ -78,9 +78,9 @@ const Tech = ({ query }) => {
         <h2>リンク</h2>
         <ul className="related_link">
           <li><Link href={`https://waic.jp/translations/WCAG22/Techniques/${tech_dir}/${true_id}`}>WCAG 2.2 テクニック集 {true_id}</Link></li>
-          <li><Link href={`https://waic.jp/translations/WCAG21/Techniques/${tech_dir}/${true_id}`}>WCAG 2.1 達成方法集 {true_id}</Link></li>
+          <li><Link href={`https://waic.jp/translations/WCAG21/Techniques/${tech_dir}/${true_id}`}>WCAG 2.1 達成方法(テクニック)集 {true_id}</Link></li>
           {tech.skip_wcag20link ||
-            <li><Link href={`https://waic.jp/translations/WCAG-TECHS/${true_id}.html`}>WCAG 2.0 達成方法集 {true_id}</Link></li>
+            <li><Link href={`https://waic.jp/translations/WCAG-TECHS/${true_id}.html`}>WCAG 2.0 達成方法(テクニック)集 {true_id}</Link></li>
           }
           <li>
             <Link href="https://waic.jp/translations/WCAG22/">WCAG 2.2</Link>

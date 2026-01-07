@@ -199,7 +199,7 @@ const Result = ({ query }) => {
             </li>
           ))}
         </ul>
-        <h2>関連する達成方法</h2>
+        <h2>関連する達成方法(テクニック)</h2>
         {tech_ids.length > 0 ? (
           <ul>
             {tech_ids.map(tech_id => (

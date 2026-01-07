@@ -55,7 +55,7 @@ const Index = () =>
       <h2>リンク</h2>
       <ul className="related_link">
         <li><Link href="criteria">達成基準の一覧</Link></li>
-        <li><Link href="techs">達成方法の一覧</Link></li>
+        <li><Link href="techs">達成方法(テクニック)の一覧</Link></li>
         <li>
           <Link href="https://waic.jp/guideline/as/#past_results">
             過去のアクセシビリティ サポーテッド検証結果
