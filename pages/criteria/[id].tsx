@@ -41,7 +41,7 @@ const Criterion = ({ query }) => {
           <li>作成者：{metadata.author}</li>
           {metadata.status && <li>注記：{metadata.status}</li>}
         </ul>
-        <h2>検証結果を含む達成方法</h2>
+        <h2>検証結果を含む達成方法(テクニック)</h2>
         {queryTechs(true_id).length > 0 ? (
           <ul>
             {queryTechs(true_id).map(tech_id => {

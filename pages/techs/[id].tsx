@@ -40,11 +40,11 @@ const Tech = ({ query }) => {
   const criterion_ids = queryCriteria(test_ids, true_id);
   return (
     <>
-      <NextSeo {...Object.assign(SEO, { title: '達成方法' + true_id })} />
+      <NextSeo {...Object.assign(SEO, { title: '達成方法(テクニック)' + true_id })} />
       <Logo />
       <main id="main">
         <H1
-          first='アクセシビリティ サポーテッド（AS）情報：達成方法'
+          first='アクセシビリティ サポーテッド（AS）情報：達成方法(テクニック)'
           second={`${true_id}: ${tech.title}`}
         />
         <ul>

@@ -39,7 +39,7 @@ const Index = () =>
     <nav>
       <h2>リンク</h2>
       <ul className="related_link">
-        <li><Link href="../techs">達成方法の一覧</Link></li>
+        <li><Link href="../techs">達成方法(テクニック)の一覧</Link></li>
         <li>
           <Link href="https://waic.jp/translations/WCAG22/">WCAG 2.2</Link>
         </li>

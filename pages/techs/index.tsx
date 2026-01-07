@@ -12,7 +12,7 @@ import Link from 'next/link'
 
 const Index = () =>
   <>
-    <NextSeo {...Object.assign(SEO, { title: '達成方法の一覧' })} />
+    <NextSeo {...Object.assign(SEO, { title: '達成方法(テクニック)の一覧' })} />
     <Logo />
     <main id="main">
       <h1>アクセシビリティ サポーテッド（AS）情報</h1>
@@ -20,7 +20,7 @@ const Index = () =>
         <li>作成者：{metadata.author}</li>
         {metadata.status && <li>注記：{metadata.status}</li>}
       </ul>
-      <h2>達成方法の一覧</h2>
+      <h2>達成方法(テクニック)の一覧</h2>
       <ul>
         {Object.keys(techs).map(
           key => <li key={key}>
