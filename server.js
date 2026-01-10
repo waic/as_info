@@ -21,17 +21,23 @@ app.use((req, res, next) => {
   // /docs/as/info/ で始まるパスの場合
   if (req.path.startsWith('/docs/as/info/')) {
     const filePath = req.path.replace('/docs/as/info', '') || '/';
-    const fullPath = path.join(__dirname, 'docs', filePath);
+    // パストラバーサル対策: 正規化してdocsディレクトリ内かどうかを検証
+    const docsDir = path.resolve(__dirname, 'docs');
+    const resolvedPath = path.resolve(docsDir, filePath);
+    // docsディレクトリ外へのアクセスを防ぐ
+    if (!resolvedPath.startsWith(docsDir + path.sep) && resolvedPath !== docsDir) {
+      return res.sendFile(path.join(docsDir, 'index.html'));
+    }
     // ディレクトリの場合はindex.htmlを追加
-    if (fs.existsSync(fullPath) && fs.statSync(fullPath).isDirectory()) {
-      const indexPath = path.join(fullPath, 'index.html');
+    if (fs.existsSync(resolvedPath) && fs.statSync(resolvedPath).isDirectory()) {
+      const indexPath = path.join(resolvedPath, 'index.html');
       if (fs.existsSync(indexPath)) {
         return res.sendFile(indexPath);
       }
     }
     // ファイルが存在する場合はそのファイルを返す
-    if (fs.existsSync(fullPath) && fs.statSync(fullPath).isFile()) {
-      return res.sendFile(fullPath);
+    if (fs.existsSync(resolvedPath) && fs.statSync(resolvedPath).isFile()) {
+      return res.sendFile(resolvedPath);
     }
   }
   // ファイルが存在しない場合はindex.htmlを返す
