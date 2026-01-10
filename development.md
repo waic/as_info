@@ -6,14 +6,12 @@ Use [Astro](https://astro.build/).
 
 First, install node.js. And then, do
 
-    cd astro-migration
     npm install
 
 ## Launch a local server
 
 Run `dev` to start the development server.
 
-    cd astro-migration
     npm run dev
 
 The site will be available at `http://localhost:4321`.
@@ -22,16 +20,14 @@ The site will be available at `http://localhost:4321`.
 
 Run `build` to generate a static site.
 
-    cd astro-migration
     npm run build
 
-The static site will be generated in the `./dist/` directory.
+The static site will be generated in the `./docs/` directory.
 
 ## Preview the built site
 
 Run `preview` to preview the built site locally.
 
-    cd astro-migration
     npm run preview
 
 ## Sort data files
