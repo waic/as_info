@@ -34,4 +34,4 @@ Run `preview` to preview the built site locally.
 
 Run `sort-data` to sort data files. (Run from the project root)
 
-    node scripts/sort-data.js
+    npx tsx scripts/sort-data.ts

@@ -104,7 +104,7 @@ YAMLデータは`src/content/`ディレクトリに配置され、AstroのConten
 ### データファイルのソート
 
 ```bash
-node scripts/sort-data.js
+npx tsx scripts/sort-data.ts
 ```
 
 データファイルをソートして一貫性を保ちます。
