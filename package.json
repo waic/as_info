@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "next dev",
-    "start": "node redirect-server.js",
+    "start": "npx http-server docs -p ${PORT:-8080} -a 0.0.0.0",
     "build": "next build",
     "gcp-build": "cd astro-migration && npm ci && GAE_APPLICATION=1 npm run build",
     "export": "NODE_ENV=production next build && next export --outdir=./docs",
