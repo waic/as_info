@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "next dev",
-    "start": "next start",
+    "start": "npx serve docs -p ${PORT:-8080}",
     "build": "next build",
     "gcp-build": "cd astro-migration && npm ci && npm run build",
     "export": "NODE_ENV=production next build && next export --outdir=./docs",
