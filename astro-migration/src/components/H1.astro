@@ -1,0 +1,21 @@
+---
+/**
+ * 2段構成の見出しコンポーネント
+ */
+interface Props {
+  first: string;
+  second: string;
+}
+
+const { first, second } = Astro.props;
+---
+
+<h1>
+  <span style="font-size: 0.9em;">
+    {first}
+  </span>
+  <br />
+  <span style="font-size: 0.7em;">
+    {second}
+  </span>
+</h1>

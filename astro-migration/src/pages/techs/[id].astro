@@ -1,0 +1,89 @@
+---
+/**
+ * 達成方法詳細ページ
+ * 元: pages/techs/[id].tsx
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Logo from '../../components/Logo.astro';
+import H1 from '../../components/H1.astro';
+import Navigation from '../../components/Navigation.astro';
+import { getCriteria, getTechs, getTests, getResults, getMetadata } from '../../lib/data';
+import { getCriterionLevel, getTechDir, queryCriteria, getResultsCount } from '../../lib/utils';
+
+export async function getStaticPaths() {
+  const { getEntry } = await import('astro:content');
+  const techsEntry = await getEntry('techs', 'techs');
+  const techs = techsEntry?.data ?? {};
+
+  return Object.keys(techs).map((id) => ({
+    params: { id },
+    props: { techId: id },
+  }));
+}
+
+interface Props {
+  techId: string;
+}
+
+const { techId } = Astro.props;
+
+const metadata = await getMetadata();
+const criteria = await getCriteria();
+const techs = await getTechs();
+const tests = await getTests();
+const results = await getResults();
+
+const tech = techs[techId];
+const techDir = getTechDir(techId);
+const testIds = Object.keys(tests).filter((key) => tests[key].techs.includes(techId));
+const criterionIds = queryCriteria(tests, testIds, techId);
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout title={`達成方法(テクニック)${techId}`}>
+  <Logo />
+  <main id="main">
+    <H1
+      first="アクセシビリティ サポーテッド（AS）情報：達成方法(テクニック)"
+      second={`${techId}: ${tech.title}`}
+    />
+    <ul>
+      <li>作成者：{metadata.author}</li>
+      {metadata.status && <li>注記：{metadata.status}</li>}
+    </ul>
+
+    <h2>テストの対象となる達成基準</h2>
+    <ul>
+      {criterionIds.map((criterionId) => (
+        <li>
+          <a href={`${base}criteria/${criterionId}/`}>
+            {criterionId}
+            {' '}
+            {criteria[criterionId].title}
+            {' '}
+            {getCriterionLevel(criteria[criterionId])}
+          </a>
+        </li>
+      ))}
+    </ul>
+
+    <h2>検証結果を含むテストケース</h2>
+    <ul>
+      {testIds.map((testId) => (
+        <li>
+          <a href={`${base}results/${testId}/`}>
+            {testId}: {tests[testId].title} (結果:{getResultsCount(results, testId)}件)
+          </a>
+        </li>
+      ))}
+    </ul>
+  </main>
+
+  <Navigation
+    showTechLinks={{
+      techId,
+      techDir,
+      skipWcag20Link: tech.skip_wcag20link,
+    }}
+  />
+</BaseLayout>

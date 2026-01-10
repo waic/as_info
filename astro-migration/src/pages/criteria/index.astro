@@ -1,0 +1,43 @@
+---
+/**
+ * 達成基準一覧ページ
+ * 元: pages/criteria/index.tsx
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Logo from '../../components/Logo.astro';
+import Navigation from '../../components/Navigation.astro';
+import { getCriteria, getMetadata } from '../../lib/data';
+import { getCriterionLevel } from '../../lib/utils';
+
+const metadata = await getMetadata();
+const criteria = await getCriteria();
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout title="達成基準の一覧">
+  <Logo />
+  <main id="main">
+    <h1>アクセシビリティ サポーテッド（AS）情報</h1>
+    <ul>
+      <li>作成者：{metadata.author}</li>
+      {metadata.status && <li>注記：{metadata.status}</li>}
+    </ul>
+
+    <h2>達成基準の一覧</h2>
+    <ul>
+      {Object.keys(criteria).map((key) => (
+        <li>
+          <a href={`${base}criteria/${key}/`}>
+            {key}
+            {' '}
+            {criteria[key].title}
+            {' '}
+            {getCriterionLevel(criteria[key])}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </main>
+
+  <Navigation showTechsLink />
+</BaseLayout>

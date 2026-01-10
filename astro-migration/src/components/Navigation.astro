@@ -1,0 +1,99 @@
+---
+/**
+ * 共通ナビゲーションコンポーネント
+ */
+interface Props {
+  showCriteriaLink?: boolean;
+  showTechsLink?: boolean;
+  showPastResults?: boolean;
+  showAsinfo201406?: { criterionId: string };
+  showWcag21Understanding?: { url: string; criterionId: string };
+  showWcag20Understanding?: { url: string; criterionId: string };
+  showTechLinks?: { techId: string; techDir: string; skipWcag20Link?: boolean };
+}
+
+const {
+  showCriteriaLink = false,
+  showTechsLink = false,
+  showPastResults = false,
+  showAsinfo201406,
+  showWcag21Understanding,
+  showWcag20Understanding,
+  showTechLinks,
+} = Astro.props;
+
+const base = import.meta.env.BASE_URL;
+---
+
+<nav>
+  <h2>リンク</h2>
+  <ul class="related_link">
+    {showCriteriaLink && (
+      <li><a href={`${base}criteria/`}>達成基準の一覧</a></li>
+    )}
+    {showTechsLink && (
+      <li><a href={`${base}techs/`}>達成方法(テクニック)の一覧</a></li>
+    )}
+    {showPastResults && (
+      <li>
+        <a href="https://waic.jp/guideline/as/#past_results">
+          過去のアクセシビリティ サポーテッド検証結果
+        </a>
+      </li>
+    )}
+    {showAsinfo201406 && (
+      <li>
+        <a href={`https://waic.jp/docs/as/info/201406/7.${showAsinfo201406.criterionId}.html`}>
+          達成基準{showAsinfo201406.criterionId}に関するアクセシビリティ・サポーテッド（AS）情報 2014年版
+        </a>
+      </li>
+    )}
+    {showWcag21Understanding && (
+      <li>
+        <a href={`https://waic.jp/translations/WCAG21/Understanding/${showWcag21Understanding.url}`}>
+          WCAG 2.1 解説書「達成基準 {showWcag21Understanding.criterionId} を理解する」
+        </a>
+      </li>
+    )}
+    {showWcag20Understanding && (
+      <li>
+        <a href={`https://waic.jp/translations/UNDERSTANDING-WCAG20/${showWcag20Understanding.url}`}>
+          WCAG 2.0 解説書「達成基準 {showWcag20Understanding.criterionId} を理解する」
+        </a>
+      </li>
+    )}
+    {showTechLinks && (
+      <>
+        <li>
+          <a href={`https://waic.jp/translations/WCAG22/Techniques/${showTechLinks.techDir}/${showTechLinks.techId}`}>
+            WCAG 2.2 テクニック集 {showTechLinks.techId}
+          </a>
+        </li>
+        <li>
+          <a href={`https://waic.jp/translations/WCAG21/Techniques/${showTechLinks.techDir}/${showTechLinks.techId}`}>
+            WCAG 2.1 達成方法集 {showTechLinks.techId}
+          </a>
+        </li>
+        {!showTechLinks.skipWcag20Link && (
+          <li>
+            <a href={`https://waic.jp/translations/WCAG-TECHS/${showTechLinks.techId}.html`}>
+              WCAG 2.0 達成方法集 {showTechLinks.techId}
+            </a>
+          </li>
+        )}
+      </>
+    )}
+    <li>
+      <a href="https://waic.jp/translations/WCAG22/">WCAG 2.2</a>
+    </li>
+    <li>
+      <a href="https://waic.jp/translations/WCAG21/">WCAG 2.1</a>
+    </li>
+    <li>
+      <a href="https://waic.jp/translations/WCAG20/">WCAG 2.0</a>
+    </li>
+    <li>
+      <a href={base}>アクセシビリティ サポーテッド（AS）情報のホーム</a>
+    </li>
+  </ul>
+</nav>
