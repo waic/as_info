@@ -33,7 +33,7 @@ const base = import.meta.env.BASE_URL;
     <ul>
       {criteriaWithTests.map((key) => (
         <li>
-          <a href={`${base}criteria/${key}/`}>
+          <a href={`${base}criteria/${key}.html`}>
             {key}
             {' '}
             {criteria[key].title}
@@ -48,7 +48,7 @@ const base = import.meta.env.BASE_URL;
     <ul>
       {Object.keys(tests).map((key) => (
         <li>
-          <a href={`${base}results/${key}/`}>
+          <a href={`${base}results/${key}.html`}>
             {key}: {tests[key].title} (結果: {getResultsCount(results, key)}件)
           </a>
         </li>

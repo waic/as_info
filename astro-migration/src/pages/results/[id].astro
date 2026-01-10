@@ -97,7 +97,7 @@ const listItemStyle = 'overflow-wrap: break-word;';
     <ul>
       {criterionIds.map((criterionId: string) => (
         <li>
-          <a href={`${base}criteria/${criterionId}/`}>
+          <a href={`${base}criteria/${criterionId}.html`}>
             {criterionId}
             {' '}
             {criteria[criterionId].title}
@@ -115,7 +115,7 @@ const listItemStyle = 'overflow-wrap: break-word;';
       <ul>
         {techIds.map((techId: string) => (
           <li>
-            <a href={`${base}techs/${techId}/`}>
+            <a href={`${base}techs/${techId}.html`}>
               {techId}:「{techs[techId].title}」に関連するAS情報
             </a>
           </li>

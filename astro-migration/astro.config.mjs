@@ -14,4 +14,7 @@ export default defineConfig({
   site: 'https://waic.jp',
   base: base,
   outDir: '../docs',
+  build: {
+    format: 'file', // .html拡張子付きファイルを生成（Next.js互換）
+  },
 });
