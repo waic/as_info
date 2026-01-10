@@ -1,0 +1,47 @@
+{
+  "$ref": "#/definitions/metadata",
+  "definitions": {
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "author": {
+          "type": "string",
+          "description": "著者/組織名",
+          "markdownDescription": "著者/組織名"
+        },
+        "pub_date": {
+          "type": "string",
+          "description": "公開日",
+          "markdownDescription": "公開日"
+        },
+        "mod_date": {
+          "type": "string",
+          "description": "最終更新日",
+          "markdownDescription": "最終更新日"
+        },
+        "last_reviewed_result_id": {
+          "type": "number",
+          "description": "最後にレビューされた結果ID",
+          "markdownDescription": "最後にレビューされた結果ID"
+        },
+        "status": {
+          "type": "string",
+          "description": "ステータスメッセージ",
+          "markdownDescription": "ステータスメッセージ"
+        },
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "author",
+        "pub_date",
+        "mod_date",
+        "last_reviewed_result_id",
+        "status"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

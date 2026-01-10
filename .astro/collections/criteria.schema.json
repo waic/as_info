@@ -1,0 +1,59 @@
+{
+  "$ref": "#/definitions/criteria",
+  "definitions": {
+    "criteria": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "達成基準のタイトル（日本語）",
+            "markdownDescription": "達成基準のタイトル（日本語）"
+          },
+          "level": {
+            "type": "string",
+            "enum": [
+              "A",
+              "AA",
+              "AAA"
+            ],
+            "description": "WCAG 適合レベル",
+            "markdownDescription": "WCAG 適合レベル"
+          },
+          "wcag20url": {
+            "type": "string",
+            "description": "WCAG 2.0 仕様書へのリンク",
+            "markdownDescription": "WCAG 2.0 仕様書へのリンク"
+          },
+          "wcag21url": {
+            "type": "string",
+            "description": "WCAG 2.1 仕様書へのリンク",
+            "markdownDescription": "WCAG 2.1 仕様書へのリンク"
+          },
+          "wcag22url": {
+            "type": "string",
+            "description": "WCAG 2.2 仕様書へのリンク",
+            "markdownDescription": "WCAG 2.2 仕様書へのリンク"
+          },
+          "wcag22note": {
+            "type": "string",
+            "description": "WCAG 2.2 に関する注記",
+            "markdownDescription": "WCAG 2.2 に関する注記"
+          },
+          "asinfo201406": {
+            "type": "boolean",
+            "description": "2014年6月版のAS情報に含まれるか",
+            "markdownDescription": "2014年6月版のAS情報に含まれるか"
+          }
+        },
+        "required": [
+          "title",
+          "level"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

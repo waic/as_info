@@ -1,5 +1,5 @@
-// Sort data/tests.yaml by test ID (lex ascending)
-// Sort data/techs.yaml by prefix groups (in existing file order), numeric ascending within each group
+// Sort src/content/tests/tests.yaml by test ID (lex ascending)
+// Sort src/content/techs/techs.yaml by prefix groups (in existing file order), numeric ascending within each group
 import fs from 'fs';
 import yaml from 'js-yaml';
 
@@ -62,8 +62,8 @@ function sortTechsYaml(path: string): void {
 }
 
 function main(): void {
-  sortTestsYaml('data/tests.yaml');
-  sortTechsYaml('data/techs.yaml');
+  sortTestsYaml('src/content/tests/tests.yaml');
+  sortTechsYaml('src/content/techs/techs.yaml');
 }
 
 // ES modules: execute main if this file is run directly

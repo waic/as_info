@@ -10,7 +10,7 @@ GitHub 上でのディレクトリ構成は以下の通りです。
 
  - as_info/ # HTML 生成プログラム（使用方法は development.md 参照）
  - as_info/conponents/ # プログラムの使用するコンポーネント
- - as_info/data/ # AS テスト結果の YAML ファイル
+ - as_info/src/content/ # AS テスト結果の YAML ファイル（Content Collections）
  - as_info/pages/ # プログラムの使用するテンプレート
 
 ## テストケース・テストコードに対するコメントや修正提案の送信方法

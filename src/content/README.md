@@ -1,8 +1,8 @@
-# data ディレクトリ
+# Content Collections ディレクトリ
 
 このディレクトリには、AS情報の公開用データが YAML 形式で格納されています。
 
-**注意**: Astro移行後、実際のビルドでは`src/content/`ディレクトリのYAMLファイルが使用されます。`data/`ディレクトリはデータのソースとして維持されていますが、`src/content/`と同期する必要があります。
+AstroのContent Collections機能を使用して、YAMLデータを厳密な型定義とバリデーションで管理します。
 
 ## ファイル一覧
 
@@ -58,7 +58,7 @@ actual: リンクテキスト「ウェブアクセシビリティ基盤委員会
 
 ```bash
 cd ../as_info_publish
-uv run normalize_results_yaml.py ../as_info/data/results.yaml
+uv run normalize_results_yaml.py ../as_info/src/content/results/results.yaml
 ```
 
 正規化スクリプトは以下の処理を行います：

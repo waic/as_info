@@ -23,7 +23,6 @@
 │   └── content/           # Content Collections（YAMLデータ）
 ├── public/                # 静的アセット
 ├── docs/                  # ビルド出力先（静的ファイル）
-├── data/                  # データファイル（YAML）
 ├── scripts/               # ビルドスクリプト
 ├── astro.config.mjs       # Astro設定ファイル
 ├── app.yaml               # App Engine設定
@@ -154,7 +153,7 @@ Astroのファイルベースルーティングを使用：
 
 - [README.md](./README.md) - プロジェクト概要と利用者向け情報
 - [development.md](./development.md) - 開発手順
-- [data/README.md](./data/README.md) - データファイルの書式
+- [src/content/README.md](./src/content/README.md) - データファイルの書式
 
 ## CI/CD
 

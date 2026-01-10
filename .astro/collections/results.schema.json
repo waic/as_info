@@ -1,0 +1,217 @@
+{
+  "$ref": "#/definitions/results",
+  "definitions": {
+    "results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number",
+            "description": "テスト結果の一意識別子",
+            "markdownDescription": "テスト結果の一意識別子"
+          },
+          "test": {
+            "type": "string",
+            "description": "対応するテストケースのID",
+            "markdownDescription": "対応するテストケースのID"
+          },
+          "os": {
+            "type": "string",
+            "description": "テスト環境のOS",
+            "markdownDescription": "テスト環境のOS"
+          },
+          "user_agent": {
+            "type": "string",
+            "description": "テストに使用したブラウザ",
+            "markdownDescription": "テストに使用したブラウザ"
+          },
+          "assistive_tech": {
+            "anyOf": [
+              {
+                "anyOf": [
+                  {
+                    "not": {}
+                  },
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "使用した支援技術",
+            "markdownDescription": "使用した支援技術"
+          },
+          "assistive_tech_config": {
+            "anyOf": [
+              {
+                "anyOf": [
+                  {
+                    "not": {}
+                  },
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "支援技術の設定",
+            "markdownDescription": "支援技術の設定"
+          },
+          "contents": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "expected": {
+                  "anyOf": [
+                    {
+                      "anyOf": [
+                        {
+                          "not": {}
+                        },
+                        {
+                          "type": "string"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "description": "期待される結果",
+                  "markdownDescription": "期待される結果"
+                },
+                "procedure": {
+                  "anyOf": [
+                    {
+                      "anyOf": [
+                        {
+                          "not": {}
+                        },
+                        {
+                          "type": "string"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "description": "テスト手順",
+                  "markdownDescription": "テスト手順"
+                },
+                "actual": {
+                  "anyOf": [
+                    {
+                      "anyOf": [
+                        {
+                          "not": {}
+                        },
+                        {
+                          "type": "string"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "description": "実際の結果",
+                  "markdownDescription": "実際の結果"
+                },
+                "judgment": {
+                  "anyOf": [
+                    {
+                      "anyOf": [
+                        {
+                          "not": {}
+                        },
+                        {
+                          "type": "string"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "description": "判定結果（満たしている/満たしていない）",
+                  "markdownDescription": "判定結果（満たしている/満たしていない）"
+                }
+              },
+              "additionalProperties": false
+            },
+            "description": "テスト結果の詳細",
+            "markdownDescription": "テスト結果の詳細"
+          },
+          "comment": {
+            "anyOf": [
+              {
+                "anyOf": [
+                  {
+                    "not": {}
+                  },
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "テスターのコメント",
+            "markdownDescription": "テスターのコメント"
+          },
+          "reviewer_comment": {
+            "anyOf": [
+              {
+                "anyOf": [
+                  {
+                    "not": {}
+                  },
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "レビュアーのコメント",
+            "markdownDescription": "レビュアーのコメント"
+          },
+          "tester": {
+            "type": "string",
+            "description": "テスター名",
+            "markdownDescription": "テスター名"
+          },
+          "date": {
+            "type": "string",
+            "description": "テスト実施日",
+            "markdownDescription": "テスト実施日"
+          }
+        },
+        "required": [
+          "id",
+          "test",
+          "os",
+          "user_agent",
+          "contents",
+          "tester",
+          "date"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}
