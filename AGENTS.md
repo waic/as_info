@@ -132,9 +132,16 @@ Astroのファイルベースルーティングを使用：
 
 - **Astro**: 静的サイトジェネレーター
 - **React**: 一部のコンポーネントで使用（@astrojs/react）
-- **TypeScript**: 型安全性
+- **TypeScript**: 型安全性（Astroで推奨、必須ではないが本プロジェクトでは使用）
 - **ESLint**: コード品質チェック
 - **Markuplint**: HTML/マークアップのリンティング
+
+### 言語について
+
+- AstroはJavaScriptとTypeScriptの両方をサポート
+- TypeScriptは推奨だが必須ではない
+- 本プロジェクトではTypeScriptを使用（`.ts`ファイル、`.astro`ファイル内のTypeScript）
+- `tsconfig.json`は必須（ツールがプロジェクトを理解するために必要）
 
 ## 重要な注意事項
 
