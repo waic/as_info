@@ -8,7 +8,13 @@ import Logo from '../../components/Logo.astro';
 import H1 from '../../components/H1.astro';
 import Navigation from '../../components/Navigation.astro';
 import { getCriteria, getTechs, getTests, getResults, getMetadata } from '../../lib/data';
-import { getCriterionLevel, getTechDir, queryCriteria, getResultsCount } from '../../lib/utils';
+import {
+  getCriterionLevel,
+  getCriterionLookupId,
+  getTechDir,
+  queryCriteria,
+  getResultsCount,
+} from '../../lib/utils';
 
 export async function getStaticPaths() {
   const { getEntry } = await import('astro:content');
@@ -54,17 +60,25 @@ const base = import.meta.env.BASE_URL;
 
     <h2>テストの対象となる達成基準</h2>
     <ul>
-      {criterionIds.map((criterionId) => (
-        <li>
-          <a href={`${base}criteria/${criterionId}.html`}>
-            {criterionId}
-            {' '}
-            {criteria[criterionId].title}
-            {' '}
-            {getCriterionLevel(criteria[criterionId])}
-          </a>
-        </li>
-      ))}
+      {criterionIds.map((criterionId) => {
+        const lookupId = getCriterionLookupId(criteria, criterionId);
+        const criterion = lookupId ? criteria[lookupId] : undefined;
+        return (
+          <li>
+            {criterion ? (
+              <a href={`${base}criteria/${lookupId}.html`}>
+                {criterionId}
+                {' '}
+                {criterion.title}
+                {' '}
+                {getCriterionLevel(criterion)}
+              </a>
+            ) : (
+              <span>{criterionId}</span>
+            )}
+          </li>
+        );
+      })}
     </ul>
 
     <h2>検証結果を含むテストケース</h2>

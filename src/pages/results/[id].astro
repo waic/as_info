@@ -8,7 +8,13 @@ import Logo from '../../components/Logo.astro';
 import H1 from '../../components/H1.astro';
 import Navigation from '../../components/Navigation.astro';
 import { getCriteria, getTechs, getTests, getResults, getMetadata } from '../../lib/data';
-import { getCriterionLevel, sortByResultId, type ResultData, type ResultContent } from '../../lib/utils';
+import {
+  getCriterionLevel,
+  getCriterionLookupId,
+  sortByResultId,
+  type ResultData,
+  type ResultContent,
+} from '../../lib/utils';
 
 export async function getStaticPaths() {
   const { getEntry } = await import('astro:content');
@@ -95,19 +101,27 @@ const listItemStyle = 'overflow-wrap: break-word;';
 
     <h2>テストの対象となる達成基準</h2>
     <ul>
-      {criterionIds.map((criterionId: string) => (
-        <li>
-          <a href={`${base}criteria/${criterionId}.html`}>
-            {criterionId}
-            {' '}
-            {criteria[criterionId].title}
-            {' '}
-            {getCriterionLevel(criteria[criterionId])}
-            {' '}
-            に関連するAS情報
-          </a>
-        </li>
-      ))}
+      {criterionIds.map((criterionId: string) => {
+        const lookupId = getCriterionLookupId(criteria, criterionId);
+        const criterion = lookupId ? criteria[lookupId] : undefined;
+        return (
+          <li>
+            {criterion ? (
+              <a href={`${base}criteria/${lookupId}.html`}>
+                {criterionId}
+                {' '}
+                {criterion.title}
+                {' '}
+                {getCriterionLevel(criterion)}
+                {' '}
+                に関連するAS情報
+              </a>
+            ) : (
+              <span>{criterionId} に関連するAS情報</span>
+            )}
+          </li>
+        );
+      })}
     </ul>
 
     <h2>関連する達成方法(テクニック)</h2>

@@ -65,6 +65,23 @@ export function getCriterionLevel(criterion: CriterionData): string {
 }
 
 /**
+ * 達成基準IDの参照先を解決
+ */
+export function getCriterionLookupId(
+  criteria: Record<string, CriterionData>,
+  criterionId: string
+): string | undefined {
+  if (criteria[criterionId]) {
+    return criterionId;
+  }
+  const normalizedId = criterionId.replace(/\s*(\((参考)\)|（参考）)$/u, '');
+  if (normalizedId !== criterionId && criteria[normalizedId]) {
+    return normalizedId;
+  }
+  return undefined;
+}
+
+/**
  * 達成方法のディレクトリを取得
  */
 const techDirMap: { [key: string]: string } = {
