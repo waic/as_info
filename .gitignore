@@ -2,6 +2,7 @@
 node_modules
 build_dir
 docs
+.astro
 .vscode
 tsconfig.tsbuildinfo
 bun.lockb

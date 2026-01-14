@@ -1,0 +1,80 @@
+---
+/**
+ * 達成基準詳細ページ
+ * 元: pages/criteria/[id].tsx
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Logo from '../../components/Logo.astro';
+import H1 from '../../components/H1.astro';
+import Navigation from '../../components/Navigation.astro';
+import { getCriteria, getTechs, getTests, getMetadata } from '../../lib/data';
+import { getCriterionLevel, queryTechs } from '../../lib/utils';
+
+export async function getStaticPaths() {
+  const { getEntry } = await import('astro:content');
+  const criteriaEntry = await getEntry('criteria', 'criteria');
+  const criteria = criteriaEntry?.data ?? {};
+
+  return Object.keys(criteria).map((id) => ({
+    params: { id },
+    props: { criterionId: id },
+  }));
+}
+
+interface Props {
+  criterionId: string;
+}
+
+const { criterionId } = Astro.props;
+
+const metadata = await getMetadata();
+const criteria = await getCriteria();
+const techs = await getTechs();
+const tests = await getTests();
+
+const criterion = criteria[criterionId];
+const relatedTechs = queryTechs(tests, criterionId);
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout title={`達成基準${criterionId}`}>
+  <Logo />
+  <main id="main">
+    <H1
+      first="アクセシビリティ サポーテッド（AS）情報：達成基準"
+      second={`${criterionId} ${criterion.title} ${getCriterionLevel(criterion)}`}
+    />
+    <ul>
+      <li>作成者：{metadata.author}</li>
+      {metadata.status && <li>注記：{metadata.status}</li>}
+    </ul>
+
+    <h2>検証結果を含む達成方法(テクニック)</h2>
+    {relatedTechs.length > 0 ? (
+      <ul>
+        {relatedTechs.map((techId) => {
+          const tech = techs[techId];
+          return (
+            <li>
+              {tech ? (
+                <a href={`${base}techs/${techId}.html`}>
+                  {techId}: {tech.title}
+                </a>
+              ) : (
+                techId
+              )}
+            </li>
+          );
+        })}
+      </ul>
+    ) : (
+      <div>なし</div>
+    )}
+  </main>
+
+  <Navigation
+    showAsinfo201406={criterion.asinfo201406 ? { criterionId } : undefined}
+    showWcag21Understanding={criterion.wcag21url ? { url: criterion.wcag21url, criterionId } : undefined}
+    showWcag20Understanding={criterion.wcag20url ? { url: criterion.wcag20url, criterionId } : undefined}
+  />
+</BaseLayout>

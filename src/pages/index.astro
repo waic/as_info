@@ -1,0 +1,64 @@
+---
+/**
+ * トップページ
+ * 元: pages/index.tsx
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Logo from '../components/Logo.astro';
+import Navigation from '../components/Navigation.astro';
+import { getCriteria, getTests, getResults, getMetadata } from '../lib/data';
+import { getCriterionLevel, queryCriteriaWithTests, getResultsCount } from '../lib/utils';
+
+const metadata = await getMetadata();
+const criteria = await getCriteria();
+const tests = await getTests();
+const results = await getResults();
+
+const criteriaWithTests = queryCriteriaWithTests(criteria, tests);
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout title="ホーム">
+  <Logo />
+  <main id="main">
+    <h1>アクセシビリティ サポーテッド（AS）情報</h1>
+    <ul>
+      <li>公開日：{metadata.pub_date}</li>
+      <li>更新日：{metadata.mod_date}</li>
+      <li>作成者：{metadata.author}</li>
+      {metadata.status && <li>注記：{metadata.status}</li>}
+    </ul>
+
+    <h2>検証結果を含む達成基準</h2>
+    <ul>
+      {criteriaWithTests.map((key) => (
+        <li>
+          <a href={`${base}criteria/${key}.html`}>
+            {key}
+            {' '}
+            {criteria[key].title}
+            {' '}
+            {getCriterionLevel(criteria[key])}
+          </a>
+        </li>
+      ))}
+    </ul>
+
+    <h2>テストの一覧</h2>
+    <ul>
+      {Object.keys(tests).map((key) => (
+        <li>
+          <a href={`${base}results/${key}.html`}>
+            {key}: {tests[key].title} (結果: {getResultsCount(results, key)}件)
+          </a>
+        </li>
+      ))}
+    </ul>
+  </main>
+
+  <Navigation
+    showCriteriaLink
+    showTechsLink
+    showPastResults
+  />
+</BaseLayout>

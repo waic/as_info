@@ -35,9 +35,9 @@ def load_yaml(file_path):
 
 
 if __name__ == "__main__":
-    tests = load_yaml("data/tests.yaml")
-    techs = load_yaml("data/techs.yaml")
-    criteria = load_yaml("data/criteria.yaml")
+    tests = load_yaml("src/content/tests/tests.yaml")
+    techs = load_yaml("src/content/techs/techs.yaml")
+    criteria = load_yaml("src/content/criteria/criteria.yaml")
 
     missing_tech_ids = detect_missing_tech_ids(tests, techs)
     if missing_tech_ids:

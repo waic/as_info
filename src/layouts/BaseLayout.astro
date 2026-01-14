@@ -1,0 +1,66 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+const fullTitle = `${title}：アクセシビリティ サポーテッド（AS）情報`;
+---
+
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index, follow" />
+    <meta name="copyright" content="This document is licensed under a Creative Commons 4.0" />
+    <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
+    <meta name="author" content="ウェブアクセシビリティ基盤委員会（WAIC）" />
+    <meta name="keywords" content="ウェブ,アクセシビリティ,基盤,委員会,WAIC,web,accessibility,infrastructure,committee,アクセシビリティ,サポーテッド,AS,情報" />
+    <meta name="description" content="アクセシビリティ サポーテッド（AS）情報に関する解説文書" />
+    <link rel="stylesheet" type="text/css" href="https://waic.jp/cmn/css/docs.css" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{fullTitle}</title>
+    <style is:global>
+      table {
+        width: 100%;
+        empty-cells: show;
+      }
+      @media (max-width: 600px) {
+        table {
+          overflow-x: auto;
+          display: block;
+        }
+      }
+      tr.warn {
+        background: #ffd;
+      }
+      tr.ng {
+        background: #fdd;
+      }
+      nav .related_link {
+        margin: 0;
+        padding: 0;
+      }
+      nav .related_link:after {
+        content: "";
+        display: block;
+        clear: both;
+        height: 0;
+        visibility: hidden;
+      }
+      nav .related_link li {
+        list-style: none;
+      }
+      nav .related_link a {
+        display: inline-block;
+        padding-left: 21px;
+        background: url(https://waic.jp/wp-content/themes/waic/images/icon_related_link.png) no-repeat 1px .4em;
+        background-size: 11px 17px;
+      }
+    </style>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
