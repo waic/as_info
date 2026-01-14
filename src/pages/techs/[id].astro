@@ -15,6 +15,7 @@ import {
   queryCriteria,
   getResultsCount,
 } from '../../lib/utils';
+import { getLinkBase } from '../../lib/links';
 
 export async function getStaticPaths() {
   const { getEntry } = await import('astro:content');
@@ -43,7 +44,7 @@ const tech = techs[techId];
 const techDir = getTechDir(techId);
 const testIds = Object.keys(tests).filter((key) => tests[key].techs.includes(techId));
 const criterionIds = queryCriteria(tests, testIds, techId);
-const base = import.meta.env.BASE_URL;
+const base = getLinkBase(Astro.url.pathname);
 ---
 
 <BaseLayout title={`達成方法(テクニック)${techId}`}>

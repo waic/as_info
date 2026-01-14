@@ -8,6 +8,7 @@ import Logo from '../components/Logo.astro';
 import Navigation from '../components/Navigation.astro';
 import { getCriteria, getTests, getResults, getMetadata } from '../lib/data';
 import { getCriterionLevel, queryCriteriaWithTests, getResultsCount } from '../lib/utils';
+import { getLinkBase } from '../lib/links';
 
 const metadata = await getMetadata();
 const criteria = await getCriteria();
@@ -15,7 +16,7 @@ const tests = await getTests();
 const results = await getResults();
 
 const criteriaWithTests = queryCriteriaWithTests(criteria, tests);
-const base = import.meta.env.BASE_URL;
+const base = getLinkBase(Astro.url.pathname);
 ---
 
 <BaseLayout title="ホーム">

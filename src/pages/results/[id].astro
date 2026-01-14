@@ -15,6 +15,7 @@ import {
   type ResultData,
   type ResultContent,
 } from '../../lib/utils';
+import { getLinkBase } from '../../lib/links';
 
 export async function getStaticPaths() {
   const { getEntry } = await import('astro:content');
@@ -43,7 +44,7 @@ const test = tests[testId];
 const criterionIds = test.criteria;
 const techIds = test.techs;
 const resultIds = results.filter((result: ResultData) => result.test === testId).sort(sortByResultId);
-const base = import.meta.env.BASE_URL;
+const base = getLinkBase(Astro.url.pathname);
 
 // ヘルパー関数
 function getTesterName(result: ResultData): string {

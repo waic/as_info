@@ -24,6 +24,12 @@ Run `build` to generate a static site.
 
 The static site will be generated in the `./docs/` directory.
 
+## Generate a static site with relative links
+
+Set `PUBLIC_RELATIVE_LINKS=1` to output relative links for the site.
+
+    PUBLIC_RELATIVE_LINKS=1 npm run build
+
 ## Preview the built site
 
 Run `preview` to preview the built site locally.
