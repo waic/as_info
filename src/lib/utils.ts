@@ -31,6 +31,7 @@ type ResultData = {
   test: string;
   os: string;
   user_agent: string;
+  environment_type?: string | string[] | null;
   assistive_tech?: string | null;
   assistive_tech_config?: string | null;
   contents: ResultContent[];

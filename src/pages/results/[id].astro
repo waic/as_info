@@ -177,6 +177,13 @@ const listItemStyle = 'overflow-wrap: break-word;';
                         <li style={listItemStyle}>{result.os}</li>
                         <li style={listItemStyle}>{result.user_agent}</li>
                         {result.assistive_tech && <li style={listItemStyle}>{result.assistive_tech}</li>}
+                        {Array.isArray(result.environment_type)
+                          ? result.environment_type.map((item: string) => (
+                            <li style={listItemStyle}>{item}</li>
+                          ))
+                          : result.environment_type && (
+                            <li style={listItemStyle}>{result.environment_type}</li>
+                          )}
                         {result.assistive_tech_config && (
                           <li style={listItemStyle}>
                             {result.assistive_tech_config.split('\n').map((line: string, i: number) => (
@@ -212,6 +219,13 @@ const listItemStyle = 'overflow-wrap: break-word;';
                           <li style={listItemStyle}>{result.os}</li>
                           <li style={listItemStyle}>{result.user_agent}</li>
                           {result.assistive_tech && <li style={listItemStyle}>{result.assistive_tech}</li>}
+                          {Array.isArray(result.environment_type)
+                            ? result.environment_type.map((item: string) => (
+                              <li style={listItemStyle}>{item}</li>
+                            ))
+                            : result.environment_type && (
+                              <li style={listItemStyle}>{result.environment_type}</li>
+                            )}
                           {result.assistive_tech_config && (
                             <li style={listItemStyle}>
                               {result.assistive_tech_config.split('\n').map((line: string) => <p>{line}</p>)}
