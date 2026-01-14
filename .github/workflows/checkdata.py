@@ -22,7 +22,22 @@ def detect_missing_criterion_ids(tests, criteria):
         for criterion in content["criteria"]:
             criteria_ids_in_tests.add(criterion)
     criteria_ids = set(criteria.keys())
-    return criteria_ids_in_tests - criteria_ids
+    missing = set()
+    for criterion_id in criteria_ids_in_tests:
+        if criterion_id in criteria_ids:
+            continue
+        normalized_id = normalize_criterion_id(criterion_id)
+        if normalized_id in criteria_ids:
+            continue
+        missing.add(criterion_id)
+    return missing
+
+
+def normalize_criterion_id(criterion_id):
+    return (
+        criterion_id.replace(" (参考)", "")
+        .replace("（参考）", "")
+    )
 
 
 def load_yaml(file_path):
