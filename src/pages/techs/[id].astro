@@ -40,13 +40,13 @@ const criterionIds = queryCriteria(tests, testIds, techId);
 const base = import.meta.env.BASE_URL;
 ---
 
-<BaseLayout title={`達成方法(テクニック)${techId}`}>
+<BaseLayout title={`達成方法（テクニック）${techId}`}>
   <Logo />
   <main id="main">
-    <H1
-      first="アクセシビリティ サポーテッド（AS）情報：達成方法(テクニック)"
-      second={`${techId}: ${tech.title}`}
-    />
+    <H1>
+      達成方法（テクニック） {techId}: {tech.title}
+    </H1>
+
     <ul>
       <li>作成者：{metadata.author}</li>
       {metadata.status && <li>注記：{metadata.status}</li>}

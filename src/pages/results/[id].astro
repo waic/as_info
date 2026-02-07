@@ -84,10 +84,9 @@ const listItemStyle = 'overflow-wrap: break-word;';
 <BaseLayout title={`テスト${testId}`}>
   <Logo />
   <main id="main">
-    <H1
-      first="アクセシビリティ サポーテッド (AS) 情報：テストケース"
-      second={`${testId}: ${test.title}`}
-    />
+    <H1>
+      テストケース {testId}: {test.title}
+    </H1>
     <ul>
       <li>作成者：{metadata.author}</li>
       {metadata.status && <li>注記：{metadata.status}</li>}
@@ -110,7 +109,7 @@ const listItemStyle = 'overflow-wrap: break-word;';
       ))}
     </ul>
 
-    <h2>関連する達成方法(テクニック)</h2>
+    <h2>関連する達成方法（テクニック）</h2>
     {techIds.length > 0 ? (
       <ul>
         {techIds.map((techId: string) => (

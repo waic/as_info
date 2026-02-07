@@ -40,16 +40,15 @@ const base = import.meta.env.BASE_URL;
 <BaseLayout title={`達成基準${criterionId}`}>
   <Logo />
   <main id="main">
-    <H1
-      first="アクセシビリティ サポーテッド（AS）情報：達成基準"
-      second={`${criterionId} ${criterion.title} ${getCriterionLevel(criterion)}`}
-    />
+    <H1>
+      達成基準 {criterionId} {criterion.title} {getCriterionLevel(criterion)}
+    </H1>
     <ul>
       <li>作成者：{metadata.author}</li>
       {metadata.status && <li>注記：{metadata.status}</li>}
     </ul>
 
-    <h2>検証結果を含む達成方法(テクニック)</h2>
+    <h2>検証結果を含む達成方法（テクニック）</h2>
     {relatedTechs.length > 0 ? (
       <ul>
         {relatedTechs.map((techId) => {
