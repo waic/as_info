@@ -105,6 +105,10 @@ const resultsSchema = z.object({
   test: z.string().describe('対応するテストケースのID'),
   os: z.string().describe('テスト環境のOS'),
   user_agent: z.string().describe('テストに使用したブラウザ'),
+  environment_type: z.union([
+    z.string(),
+    z.array(z.string()),
+  ]).optional().nullable().describe('環境の種別'),
   assistive_tech: z.string().optional().nullable().describe('使用した支援技術'),
   assistive_tech_config: z.string().optional().nullable().describe('支援技術の設定'),
   contents: z.array(resultContentSchema).describe('テスト結果の詳細'),

@@ -1,4 +1,6 @@
 ---
+import { getLinkBase } from '../lib/links';
+
 /**
  * 共通ナビゲーションコンポーネント
  */
@@ -22,7 +24,7 @@ const {
   showTechLinks,
 } = Astro.props;
 
-const base = import.meta.env.BASE_URL;
+const base = getLinkBase(Astro.url.pathname);
 ---
 
 <nav>
@@ -93,7 +95,7 @@ const base = import.meta.env.BASE_URL;
       <a href="https://waic.jp/translations/WCAG20/">WCAG 2.0</a>
     </li>
     <li>
-      <a href={base}>アクセシビリティ サポーテッド（AS）情報のホーム</a>
+      <a href={`${base}index.html`}>アクセシビリティ サポーテッド（AS）情報のホーム</a>
     </li>
   </ul>
 </nav>

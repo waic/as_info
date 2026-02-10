@@ -8,7 +8,14 @@ import Logo from '../../components/Logo.astro';
 import H1 from '../../components/H1.astro';
 import Navigation from '../../components/Navigation.astro';
 import { getCriteria, getTechs, getTests, getResults, getMetadata } from '../../lib/data';
-import { getCriterionLevel, sortByResultId, type ResultData, type ResultContent } from '../../lib/utils';
+import {
+  getCriterionLevel,
+  getCriterionLookupId,
+  sortByResultId,
+  type ResultData,
+  type ResultContent,
+} from '../../lib/utils';
+import { getLinkBase } from '../../lib/links';
 
 export async function getStaticPaths() {
   const { getEntry } = await import('astro:content');
@@ -37,7 +44,7 @@ const test = tests[testId];
 const criterionIds = test.criteria;
 const techIds = test.techs;
 const resultIds = results.filter((result: ResultData) => result.test === testId).sort(sortByResultId);
-const base = import.meta.env.BASE_URL;
+const base = getLinkBase(Astro.url.pathname);
 
 // ヘルパー関数
 function getTesterName(result: ResultData): string {
@@ -95,19 +102,27 @@ const listItemStyle = 'overflow-wrap: break-word;';
 
     <h2>テストの対象となる達成基準</h2>
     <ul>
-      {criterionIds.map((criterionId: string) => (
-        <li>
-          <a href={`${base}criteria/${criterionId}.html`}>
-            {criterionId}
-            {' '}
-            {criteria[criterionId].title}
-            {' '}
-            {getCriterionLevel(criteria[criterionId])}
-            {' '}
-            に関連するAS情報
-          </a>
-        </li>
-      ))}
+      {criterionIds.map((criterionId: string) => {
+        const lookupId = getCriterionLookupId(criteria, criterionId);
+        const criterion = lookupId ? criteria[lookupId] : undefined;
+        return (
+          <li>
+            {criterion ? (
+              <a href={`${base}criteria/${lookupId}.html`}>
+                {criterionId}
+                {' '}
+                {criterion.title}
+                {' '}
+                {getCriterionLevel(criterion)}
+                {' '}
+                に関連するAS情報
+              </a>
+            ) : (
+              <span>{criterionId} に関連するAS情報</span>
+            )}
+          </li>
+        );
+      })}
     </ul>
 
     <h2>関連する達成方法(テクニック)</h2>
@@ -177,6 +192,13 @@ const listItemStyle = 'overflow-wrap: break-word;';
                         <li style={listItemStyle}>{result.os}</li>
                         <li style={listItemStyle}>{result.user_agent}</li>
                         {result.assistive_tech && <li style={listItemStyle}>{result.assistive_tech}</li>}
+                        {Array.isArray(result.environment_type)
+                          ? result.environment_type.map((item: string) => (
+                            <li style={listItemStyle}>{item}</li>
+                          ))
+                          : result.environment_type && (
+                            <li style={listItemStyle}>{result.environment_type}</li>
+                          )}
                         {result.assistive_tech_config && (
                           <li style={listItemStyle}>
                             {result.assistive_tech_config.split('\n').map((line: string, i: number) => (
@@ -212,6 +234,13 @@ const listItemStyle = 'overflow-wrap: break-word;';
                           <li style={listItemStyle}>{result.os}</li>
                           <li style={listItemStyle}>{result.user_agent}</li>
                           {result.assistive_tech && <li style={listItemStyle}>{result.assistive_tech}</li>}
+                          {Array.isArray(result.environment_type)
+                            ? result.environment_type.map((item: string) => (
+                              <li style={listItemStyle}>{item}</li>
+                            ))
+                            : result.environment_type && (
+                              <li style={listItemStyle}>{result.environment_type}</li>
+                            )}
                           {result.assistive_tech_config && (
                             <li style={listItemStyle}>
                               {result.assistive_tech_config.split('\n').map((line: string) => <p>{line}</p>)}

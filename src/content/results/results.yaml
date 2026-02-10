@@ -9,6 +9,7 @@
     procedure: ブラウザを画像非表示に設定変更し、表示内容を確認した
     actual: リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみが表示され、画像のファイル名や URL 等は表示されなかった。
     judgment: 満たしている
+  environment_type:
   comment:
   tester: 安倍 英樹
   date: 2018/12/26
@@ -23,6 +24,7 @@
     procedure: ブラウザを画像非表示に設定変更し、表示内容を確認した
     actual: リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみが表示され、画像のファイル名や URL 等は表示されなかった。
     judgment: 満たしている
+  environment_type:
   comment:
   tester: 安倍 英樹
   date: 2018/12/26
@@ -37,6 +39,7 @@
     procedure: リンク「ウェブアクセシビリティ基盤委員会公開サイト」にVoiceOverキー+右矢印キーで移動した。
     actual: リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみ読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2018/12/26
@@ -51,6 +54,7 @@
     procedure: リンク「ウェブアクセシビリティ基盤委員会公開サイト」にVoiceOverキー+右矢印キーで移動した。
     actual: リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみ読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2018/12/26
@@ -65,6 +69,7 @@
     procedure: 段落「ウェブアクセシビリティ基盤委員会公開サイト」にVoiceOverキー+右矢印キーで移動した。
     actual: テキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみ読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2018/12/26
@@ -79,6 +84,7 @@
     procedure: caption 要素のテキストに上下キーを使ってフォーカスを移動する
     actual: caption 要素の内容 “営業部連絡先一覧” 及び “マーケティング部連絡先一覧” が読み上げられた
     judgment: 満たしている
+  environment_type:
   comment:
   tester: 嶌田喬行
   date: 2018/12/26
@@ -93,6 +99,7 @@
     procedure: 「ウェブアクセシビリティ基盤委員会」ロゴ＋テキスト「公式サイト」で構成されるリンクにVoiceOverキー+右矢印キーで移動した。
     actual: 代替テキストとテキスト「ウェブアクセシビリティ基盤委員会 公式サイト」と読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2018/12/27
@@ -107,6 +114,7 @@
     procedure: テキスト「施設ご利用の手引き」＋「PDFファイル」アイコンで構成されるリンクにVoiceOverキー+右矢印キーで移動した。
     actual: リンクテキストとアイコン画像の代替テキストのみが続けて「施設ご利用の手引き PDFファイル」と読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2018/12/27
@@ -142,6 +150,7 @@
     procedure: Webコンテンツ内に移動しTabキーを押下。
     actual: Tabキーを押下してもVoiceOverのフォーカスが移動せず読み上げも行われない。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment: SafariではTabキーの押下で期待される結果 (音声閲覧環境)が得られるので、操作に誤りはなくFirefoxの問題ではないかと考えました。
   tester: 安倍 英樹
   date: 2018/12/27
@@ -156,6 +165,7 @@
     procedure: VOキー＋右矢印キーでイメージマップに移動した。
     actual: 代替テキスト「デパートのフロアガイド。各階について詳しくお知りになりたい場合は各階をクリックしてください。」のみ読み上げられ、イメージマップであることは分からなかった。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment: |-
     イメージマップ上で待っていると「このWeb領域を終了するには〜」とヒントが読み上げられるので、VOキー＋シフトキー＋下矢印キーでなにか操作ができそうなことは分かりました。
 
@@ -173,6 +183,7 @@
     procedure: VOキー＋右矢印キーでイメージマップに移動した。
     actual: イメージマップ画像の代替テキスト “デパートのフロアガイド。各階について詳しくお知りになりたい場合は各階をクリックしてください。” が読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2018/12/27
@@ -187,6 +198,7 @@
     procedure: イメージマップ上でVOキー＋シフトキー＋下矢印キーでイメージマップを操作できる状態に移行した上で、VOキー＋右矢印キーで各area要素を読み上げさせた。
     actual: 各 area 要素の alt 属性に指定した代替テキスト “4F 雑貨 書籍” “3F 衣料品” “2F お菓子 その他食品” “1F 生鮮食品” が読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2018/12/27
@@ -201,6 +213,7 @@
     procedure: イメージマップ内の各 area 要素上でVOキー＋スペースキーを押下した。
     actual: area要素のhref属性で指定されたURLへ遷移した。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2018/12/27
@@ -215,6 +228,7 @@
     procedure: イメージマップ領域を操作対象にした上で、VOキー＋右矢印キーで各area要素に移動した。
     actual: 「リンク 1F生鮮食品」のように、代替テキストの前に「リンク」と読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2018/12/27
@@ -271,6 +285,7 @@
       注文内容の確認
       入力内容のリセット
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2018/12/27
@@ -285,6 +300,7 @@
     procedure: VOキー＋シフトキー＋下矢印キーでブラウザタブ領域を操作するモードに移行し、テストファイルを表示しているタブのラベルを読み上げさせた。
     actual: title要素のテキスト「ウェブアクセシビリティ基盤委員会」が読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2018/12/28
@@ -299,6 +315,7 @@
     procedure: リンク「ウェブアクセシビリティ基盤委員会」にVOキー＋右矢印キーで移動した。
     actual: リンクテキスト「ウェブアクセシビリティ基盤委員会」が読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2018/12/28
@@ -313,6 +330,7 @@
     procedure: リンク画像「ウェブアクセシビリティ基盤委員会」にVOキー＋右矢印キーで移動した。
     actual: リンク画像の代替テキスト「ウェブアクセシビリティ基盤委員会」が読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2018/12/28
@@ -330,6 +348,7 @@
     procedure: リンク「Home」にVOキー＋右矢印キーで移動した。
     actual: リンクテキスト「Home」のみ読み上げられた。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2018/12/28
@@ -347,6 +366,7 @@
     procedure: テキストフィールドにVOキー＋右矢印キーで移動後、VOキー＋スペースを押下してテキストフィールドをアクティブにしメールアドレスを入力。その後VOキー＋右矢印キーで「申し込む」ボタンに移動してVOキー＋スペースキーでボタンを押下した。
     actual: WAIC-CODE-0007-01-ref.htmlに遷移した。またURLの末尾に入力したメールアドレスがURLエンコードされた状態で付加されていた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2018/12/28
@@ -361,6 +381,7 @@
     procedure: ボタン画像にVOキー＋右矢印キーで移動した。
     actual: ボタン画像の代替テキスト「送信」が読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2018/12/28
@@ -375,6 +396,7 @@
     procedure: ウェブアクセシビリティ基盤委員会ロゴ画像にVOキー＋右矢印キーで移動した。
     actual: 画像の代替テキスト「ウェブアクセシビリティ基盤委員会」が読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2018/12/28
@@ -389,6 +411,7 @@
     procedure: VOキー＋右矢印キーで表に移動した。さらにVOキー＋右矢印キーを操作すると、表内の各要素に移動した。
     actual: 表にフォーカスした時、「営業部連絡先一覧 ひょう 0行５列」のように、caption要素の内容と「ひょう 0行５列」が読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: 読み上げ内容の「0行5列」に違和感がありますが、一応caption要素を読み上げているので満たしていると判断しました。
   tester: 安倍 英樹
   date: 2018/12/28
@@ -403,6 +426,7 @@
     procedure: VOキー＋右矢印キーで表および表の内容へ移動した。
     actual: 表の開始位置（caption要素）で「[caption要素の内容] + ひょう 0行5列」、最後のセルを読み終わった後にVOキー＋右矢印キーを押下したとき「表の終わり」と読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: 満たしていると判断しましたが、「表の終わり」を「おもてのおわり」と誤読しているのは気になりました。（表の開始時は「ひょう」と読み上げます。）
   tester: 安倍 英樹
   date: 2018/12/28
@@ -417,6 +441,7 @@
     procedure: VOキー＋右矢印キーで表に移動した。
     actual: 「[caption要素の内容] 表 0行 5列」と読み上げられた。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment: 列数は正しいが行数が誤っているので、満たしていないと判断いたしました。
   tester: 安倍 英樹
   date: 2018/12/28
@@ -436,6 +461,7 @@
       1. セルに移動すると列見出しとセルのテキストが読み上げられた。（例: 住所 バルチモア）
       2. セルに移動すると列見出しとリンクである旨とテキストが読み上げられた。（例: SNS リンク Twitter）
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2018/12/29
@@ -455,6 +481,7 @@
       1. 「ヒューストン」から「ピッツバーグ」へ移動すると、「ジョエル・ガーナー ピッツバーグ」と読み上げられた。
       2. クリーブ・ロイドの行のリンクテキスト「Twitter」から直下のセルへ移動すると「ゴードン・グリーニッジ リンク Twitter」と読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2018/12/29
@@ -474,6 +501,7 @@
       1. 「Gordon」の行から「Clive」の行へ移動すると、データセルの内容とともに見出しセルの内容 “Clive” が読み上げられた。
       2. セル「Greenidge」から「Gordon」に移動すると、「Clive」は読み上げられない。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: |-
     VOキー＋右矢印キーで表の上から順に読み上げていった場合は、「Clive」の行の各セルに移動してもデータセルの内容のみ読み上げられ「Clive」とは読み上げられません。
     よって、期待される結果の「1. “Clive” の行へ移動すると」を「表の上から順に読み上げていって「Clive」の行へ到達した場合」と解釈した場合は「期待される結果を満たしていない」と判断することになります。
@@ -497,6 +525,7 @@
       1. データセルの内容とともに見出しセルの内容「Last Name」が読み上げられた。
       2. 「City」のみ読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2018/12/29
@@ -511,6 +540,7 @@
     procedure: VOキー＋右矢印キーで表内を移動した。
     actual: 「大阪 15%」と読み上げられた。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2018/12/29
@@ -544,6 +574,7 @@
       見出しレベル 6 スイカの発見    
       見出しレベル 2 人間と果物のかかわり
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2018/12/29
@@ -577,6 +608,7 @@
       見出しレベル 1 スイカの発見    
       見出しレベル 1 人間と果物のかかわり
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2018/12/29
@@ -593,6 +625,7 @@
       VOキー＋Commandキー＋Hキーを押す毎に次の見出し（Shift
       キーを併用した場合は1つ前の見出し）が読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2018/12/29
@@ -619,6 +652,7 @@
       住所 テキスト
       電話番号 テキスト
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2018/12/29
@@ -643,6 +677,7 @@
       “2.” のチェックボックス : “田中アパート チェックされていない チェックボックス”  
       “3.” のチェックボックス : “佐藤マンション チェックされていない チェックボックス” 
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2018/12/29
@@ -669,6 +704,7 @@
       “3.” のラジオボタン : “すっきり抹茶タイプ ラジオボタン” 
       “4.” のラジオボタン : “はちみつがけタイプ ラジオボタン” 
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2018/12/30
@@ -683,6 +719,7 @@
     procedure: セレクトメニューにVOキー＋右矢印キーで移動した。
     actual: '"このサイト内 検索範囲を選択 ポップアップボタン"と読み上げられた。'
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2018/12/30
@@ -705,6 +742,7 @@
       “2.” : “2. テキスト”
       “3.” : “3. テキスト”
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2018/12/30
@@ -722,6 +760,7 @@
     procedure: VOキー＋右矢印キーで画像に移動した。
     actual: 「会員数の遷移グラフ イメージ」のみ読み上げられた。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2018/12/30
@@ -746,6 +785,7 @@
       「塩とコショウを加えます。 2/2」
       「リストの終わり」
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment: 順序付きリスト (ol) であることが分からない（試しにulに変更して読み上げさせましたが、読み上げ内容に差がありませんでした）、またリスト項目 (li) の開始位置及び終了位置を知ることができないことから、「満たしていない」と判断しました。
   tester: 安倍 英樹
   date: 2018/12/30
@@ -770,6 +810,7 @@
       「バター 3/3」
       「リストの終わり」
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment: 順序なしリスト (ul) であることであることが分からない、またリスト項目 (li) の開始位置及び終了位置を知ることができないことから、「満たしていない」と判断しました。
   tester: 安倍 英樹
   date: 2018/12/30
@@ -796,6 +837,7 @@
 
       ※xはdt,ddを通しで数えたときの順番が入ります…「ASCII アート」なら「3」
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2018/12/30
@@ -814,6 +856,7 @@
     procedure: VOキー＋Aキーで上から順に読み上げさせた。また、VOキー＋右矢印キーで1文ずつ読み上げさせた。
     actual: '各文のテキストがそのまま読み上げられた。（例: つねづね思っていることですが、猫はかわいらしい動物です。）'
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2018/12/30
@@ -832,6 +875,7 @@
     procedure: VOキー＋Aキーで上から順に読み上げさせた。また、VOキー＋右矢印キーで各文を読み上げさせた。
     actual: '各文が単純に読み上げられた。（例: そして、犬はとても従順な動物です。）'
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2018/12/30
@@ -849,6 +893,7 @@
     procedure: VOキー＋Aキーで上から順に読み上げさせた。また、VOキー＋右矢印キーで各文を読み上げさせた。
     actual: 文章のみが読み上げられ、引用であることは通知されなかった。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2018/12/30
@@ -866,6 +911,7 @@
     procedure: VOキー＋Aキーで文書の先頭から読み上げをさせた。また、VOキー＋右矢印キーで文章を読み上げさせた。
     actual: 文章のみが読み上げられ、引用であることは通知されなかった。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2018/12/30
@@ -880,6 +926,7 @@
     procedure: VOキー＋Aキーで文書の先頭から読み上げをさせた。また、VOキー＋右矢印キーで文を読み上げさせた。
     actual: 「亜鉛イオンは Zn」のみ読み上げられた。（上付き文字は読み上げられない。）
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2018/12/30
@@ -894,6 +941,7 @@
     procedure: VOキー＋Aキーで文書の先頭から読み上げをさせた。また、VOキー＋右矢印キーで文を読み上げさせた。
     actual: 「水の化学式は H」のみ読み上げられた。（下付き文字以降は読み上げられない。）
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2018/12/30
@@ -908,6 +956,7 @@
     procedure: VOキー＋右矢印キーで文章を読み上げさせた。
     actual: 日本語の音声合成エンジンで読み上げられた。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment: Safariでは英語の音声合成エンジンで読み上げられたので、Firefoxの問題と判断しました。
   reviewer_comment: '[WAIC注] 再テストを行いましたが、本テスト結果と同じ結果は得られませんでした。'
   tester: 安倍 英樹
@@ -926,6 +975,7 @@
     procedure: VOキー＋右矢印キーで文書の先頭から順に読み上げを行った。
     actual: iframeはスキップされ読み上げられない。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注] サーバー環境に問題があり、テストが実施できていません。'
   tester: 安倍 英樹
@@ -945,6 +995,7 @@
     procedure: VOキー＋右矢印キーで文書の先頭から順に読み上げさせた。
     actual: 上から順にテキストやラジオボタンが読み上げられた。（fieldset・legend要素は読み上げに影響しない。）
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2018/12/30
@@ -959,6 +1010,7 @@
     procedure: ブラウザを画像非表示に設定変更し、表示内容を確認した。
     actual: リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみが表示され、画像のファイル名や URL 等は表示されなかった。
     judgment: 満たしている
+  environment_type:
   comment:
   tester: 安倍 英樹
   date: 2018/12/31
@@ -973,6 +1025,7 @@
     procedure: ブラウザを画像非表示に設定変更し、表示内容を確認した。
     actual: テキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみが表示され、画像のファイル名や URL 等は表示されなかった。
     judgment: 満たしている
+  environment_type:
   comment:
   tester: 安倍 英樹
   date: 2018/12/31
@@ -987,6 +1040,7 @@
     procedure: ブラウザを画像非表示に設定変更し、表示内容を確認した。
     actual: 代替テキスト「ウェブアクセシビリティ基盤委員会」とテキスト「公式サイト」が表示された。
     judgment: 満たしている
+  environment_type:
   comment:
   tester: 安倍 英樹
   date: 2018/12/31
@@ -1001,6 +1055,7 @@
     procedure: ブラウザを画像非表示に設定変更し、表示内容を確認した。
     actual: リンクテキスト “施設ご利用の手引き” に続き、アイコン画像の代替テキスト “PDF ファイル” が表示された。
     judgment: 満たしている
+  environment_type:
   comment:
   tester: 安倍 英樹
   date: 2018/12/31
@@ -1057,6 +1112,7 @@
       注文内容の確認
       入力内容のリセット
     judgment: 満たしている
+  environment_type:
   comment:
   tester: 安倍 英樹
   date: 2019/01/02
@@ -1081,6 +1137,7 @@
       携帯サイト
       サイトマップ
     judgment: 満たしている
+  environment_type:
   comment:
   tester: 安倍 英樹
   date: 2019/01/02
@@ -1111,6 +1168,7 @@
       リンク 5
       リンク 7
     judgment: 満たしている
+  environment_type:
   comment:
   tester: 安倍 英樹
   date: 2019/01/02
@@ -1135,6 +1193,7 @@
       リンク 2
       リンク 4
     judgment: 満たしている
+  environment_type:
   comment:
   tester: 安倍 英樹
   date: 2019/01/02
@@ -1149,6 +1208,7 @@
     procedure: ブラウザを画像非表示に設定変更し、表示内容を確認した。
     actual: イメージマップに用いられている画像の代替テキスト “デパートのフロアガイド。各階について詳しくお知りになりたい場合は各階をクリックしてください。” が表示された。
     judgment: 満たしている
+  environment_type:
   comment:
   tester: 安倍 英樹
   date: 2019/01/02
@@ -1163,6 +1223,7 @@
     procedure: ブラウザを画像非表示に設定変更し、表示内容を確認した。
     actual: 各 area 要素の alt 属性に指定した代替テキストは表示されなかった。
     judgment: 満たしていない
+  environment_type:
   comment:
   tester: 安倍 英樹
   date: 2019/01/02
@@ -1177,6 +1238,7 @@
     procedure: ブラウザを画像非表示に設定変更し、表示内容を確認した。
     actual: area 要素が表示されないのでリンク先へ遷移することはできなかった。
     judgment: 満たしていない
+  environment_type:
   comment: img要素の代替テキストが青字（下線なし）で表示されています。
   reviewer_comment: '[WAIC注] テスト手順に問題があり、適切に判定できていません。'
   tester: 安倍 英樹
@@ -1192,6 +1254,7 @@
     procedure: タブの表示内容を確認した。
     actual: タブに「ウェブアクセシビリティ基盤委員会」と表示されている。
     judgment: 満たしている
+  environment_type:
   comment:
   tester: 安倍 英樹
   date: 2019/01/02
@@ -1206,6 +1269,7 @@
     procedure: ブラウザを画像非表示に設定変更し、表示内容を確認した。
     actual: リンク画像の代替テキスト “ウェブアクセシビリティ基盤委員会” が表示された。
     judgment: 満たしている
+  environment_type:
   comment:
   tester: 安倍 英樹
   date: 2019/01/02
@@ -1229,6 +1293,7 @@
       リンク “Home” にマウスオーバーすると、ツールチップ “ウェブアクセシビリティ基盤委員会公式サイト” が表示された。
       リンク “Home” にフォーカスを移動しても、title属性値は表示されなかった。
     judgment: 満たしていない
+  environment_type:
   comment:
   reviewer_comment: '[WAIC注] テスト手順に問題があり、適切に判定できていません。'
   tester: 安倍 英樹
@@ -1249,6 +1314,7 @@
       また、フォームにメールアドレスを入力後、Tabキーで申し込むボタンにフォーカスしSpaceキーで押下。
     actual: マウス操作・キーボード操作共、WAIC-CODE-0007-01-ref.html に遷移した。また、入力したメールアドレスが URL エンコーディングされ、URL の末尾に付加されていた。
     judgment: 満たしている
+  environment_type:
   comment:
   tester: 安倍 英樹
   date: 2019/01/07
@@ -1263,6 +1329,7 @@
     procedure: ブラウザを画像非表示に設定変更し、表示内容を確認した。
     actual: 画像の代わりに代替テキスト “送信” が表示された。
     judgment: 満たしている
+  environment_type:
   comment:
   tester: 安倍 英樹
   date: 2019/01/07
@@ -1277,6 +1344,7 @@
     procedure: ブラウザを画像非表示に設定変更し、表示内容を確認した
     actual: 画像の代わりに代替テキスト “ウェブアクセシビリティ基盤委員会” が表示された。
     judgment: 満たしている
+  environment_type:
   comment:
   tester: 安倍 英樹
   date: 2019/01/07
@@ -1291,6 +1359,7 @@
     procedure: テストページの表示内容を確認した。
     actual: caption 要素の内容 “営業部連絡先一覧” 及び “マーケティング部連絡先一覧” が表示された。
     judgment: 満たしている
+  environment_type:
   comment:
   tester: 安倍 英樹
   date: 2019/01/07
@@ -1317,6 +1386,7 @@
       4. ラベル “電話番号” をクリックすると、“4.” のテキスト入力フィールドにフォーカスが移動した。 
       5. “ハイフンは不要” をクリックしても “4.” のテキスト入力フィールドにフォーカスが移動しなかった。
     judgment: 満たしている
+  environment_type:
   comment:
   tester: 安倍 英樹
   date: 2019/01/07
@@ -1341,6 +1411,7 @@
       3. ラベル “佐藤マンション” をクリックすると、“3.” のチェックボックスのチェック状態が切り替わった。
       4. “定期借家” をクリックしても “3.” のチェックボックスのチェック状態は切り替わらなかった。
     judgment: 満たしている
+  environment_type:
   comment: ラベルをクリックした時にフォーカスリングがチェックボックスに表示されないように思うが、チェックボックスのチェック状態が切り替わるので、テストの目的「label 要素に指定したラベルとチェックボックスが関連付いているか」は確認できたと考え、満たしていると判断した。
   tester: 安倍 英樹
   date: 2019/01/07
@@ -1367,6 +1438,7 @@
       4. ラベル “チョコレートタイプ” をクリックすると、“1.” のラジオボタンの選択状態が切り替わった。
       5. “期間限定” をクリックしても “3.” のラジオボタンの選択状態は切り替わらなかった。
     judgment: 満たしている
+  environment_type:
   comment: 先に送信した0012-03同様、ラベルをクリックした時にラジオボタンにフォーカスリングは表示されなかった。しかし、ラジオボタンの選択状態が切り替わることから「label 要素に指定したラベルとラジオボタンが関連付いているかの確認」は確認できていると考え、満たしていると判断した。
   tester: 安倍 英樹
   date: 2019/01/07
@@ -1389,6 +1461,7 @@
       1. マウス操作 : セレクトメニューにマウスポインタを重ねると、title 属性の値 “検索範囲を選択” がツールチップで表示された。
       2. キーボード操作 : セレクトメニューにフォーカスを移動させても、title 属性の値 “検索範囲を選択” は表示されなかった。
     judgment: 満たしていない
+  environment_type:
   comment:
   tester: 安倍 英樹
   date: 2019/01/07
@@ -1418,6 +1491,7 @@
       “3.” : “加入者番号”
       2. キーボード操作 : テキスト入力フィールドにフォーカスを移動してもそれぞれの title 属性の値は表示されなかった。
     judgment: 満たしていない
+  environment_type:
   comment:
   tester: 安倍 英樹
   date: 2019/01/07
@@ -1432,6 +1506,7 @@
     procedure: テストファイルの表示内容を確認した。
     actual: “Zn2+” の “2+” が上付き表示された。
     judgment: 満たしている
+  environment_type:
   comment:
   tester: 安倍 英樹
   date: 2019/01/07
@@ -1446,6 +1521,7 @@
     procedure: テストファイルの表示内容を確認した。
     actual: “H2O” の “2” が下付き表示された。
     judgment: 満たしている
+  environment_type:
   comment:
   tester: 安倍 英樹
   date: 2019/01/07
@@ -1460,6 +1536,7 @@
     procedure: リンク「ウェブアクセシビリティ基盤委員会公開サイト」に下矢印キーで移動した。
     actual: アイコン画像の代替テキストは何も読み上げられず、リンクテキスト “ウェブアクセシビリティ基盤委員会公開サイト” のみが読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/07
@@ -1474,6 +1551,7 @@
     procedure: リンク「ウェブアクセシビリティ基盤委員会公開サイト」に下矢印キーで移動した。
     actual: アイコン画像の代替テキストは何も読み上げられず、リンクテキスト “ウェブアクセシビリティ基盤委員会公開サイト” のみが読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/07
@@ -1488,6 +1566,7 @@
     procedure: 段落「ウェブアクセシビリティ基盤委員会公開サイト」に下矢印キーで移動した。
     actual: アイコン画像の代替テキストは何も読み上げられず、テキスト “ウェブアクセシビリティ基盤委員会公開サイト” のみが読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/07
@@ -1502,6 +1581,7 @@
     procedure: 画像とテキストを含むリンクに下矢印キーで移動した。
     actual: アイコン画像の代替テキストとリンクテキストが続けて “ウェブアクセシビリティ基盤委員会 公式サイト” と読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/07
@@ -1516,6 +1596,7 @@
     procedure: テキストと画像を含むリンクに下矢印キーで移動した。
     actual: リンクテキストとアイコン画像の代替テキストが続けて “施設ご利用の手引き 画像 PDFファイル” と読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/07
@@ -1540,6 +1621,7 @@
       携帯サイト
       サイトマップ
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/08
@@ -1572,6 +1654,7 @@
       リンク 7
       2. リンク 6 にはフォーカスが移動しなかった。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/08
@@ -1596,6 +1679,7 @@
       リンク 2
       リンク 4
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/08
@@ -1610,6 +1694,7 @@
     procedure: 画像に下矢印キーで移動した。またTabキーでコンテンツ内を移動した。
     actual: 画像の代替テキストとarea属性の代替テキストのみが続けて読み上げられた。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment: Tabキーで移動した場合、「リンク」の後に「Poly」と発音しているように思います。
   tester: 安倍 英樹
   date: 2019/01/08
@@ -1624,6 +1709,7 @@
     procedure: 画像に下矢印キーで移動した。
     actual: イメージマップに用いられている画像の代替テキスト “デパートのフロアガイド。各階について詳しくお知りになりたい場合は各階をクリックしてください。” が読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/08
@@ -1638,6 +1724,7 @@
     procedure: コンテンツ内をTabキーで移動した。
     actual: 各 area 要素の alt 属性に指定した代替テキスト “4F 雑貨 書籍” “3F 衣料品” “2F お菓子 その他食品” “1F 生鮮食品” と画像の代替テキストが続けて読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/09
@@ -1652,6 +1739,7 @@
     procedure: リンク「ウェブアクセシビリティ基盤委員会公開サイト」に Tab キーで移動した。
     actual: リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみ読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 中野利保
   date: 2019/01/09
@@ -1666,6 +1754,7 @@
     procedure: 各リンクにTabキーで移動してSpaceキーで遷移を実行した。
     actual: 各リンク先へ遷移した。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/09
@@ -1680,6 +1769,7 @@
     procedure: 各リンク（area要素）にTabキーで移動した。
     actual: 代替テキストと「リンク Poly」が続けて読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/09
@@ -1694,6 +1784,7 @@
     procedure: テストコード WAIC-TEST-0001-01を開いた
     actual: リンクテキスト “ウェブアクセシビリティ基盤委員会公開サイト” のみが読み上げられた
     judgment: 満たしている
+  environment_type:
   comment:
   tester: 中野利保
   date: 2019/01/09
@@ -1708,6 +1799,7 @@
     procedure: NVDAキー+Tキーで現在アクティブなウィンドウのタイトルを読み上げさせた。
     actual: タイトルテキスト「ウェブアクセシビリティ基盤委員会」が読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/09
@@ -1722,6 +1814,7 @@
     procedure: リンク「ウェブアクセシビリティ基盤委員会」に下矢印キーで移動した。
     actual: リンクテキスト “ウェブアクセシビリティ基盤委員会” が読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/09
@@ -1736,6 +1829,7 @@
     procedure: 画像を含むリンクに下矢印キーで移動した。
     actual: リンク画像の代替テキスト “ウェブアクセシビリティ基盤委員会” が読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/09
@@ -1753,6 +1847,7 @@
     procedure: リンクテキスト「Home」に下矢印キーで移動した。
     actual: リンクテキスト「Home」のみ読み上げられた。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment: リンクにフォーカスしてNVDAキー＋Tabキーを押下すると、リンクテキストに加えtitle属性値「ウェブアクセシビリティ基盤委員会公式サイト」が読み上げられ、期待される結果を満たすこととなる。
   tester: 安倍 英樹
   date: 2019/01/09
@@ -1767,6 +1862,7 @@
     procedure: リンク「ウェブアクセシビリティ基盤委員会公開サイト」に Tab キーで移動した。
     actual: リンクテキスト “ウェブアクセシビリティ基盤委員会公開サイト” のみが読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 中野利保
   date: 2019/01/09
@@ -1787,6 +1883,7 @@
       1. WAIC-CODE-0007-01-ref.html に遷移した。
       2. 入力したメールアドレスが URL エンコーディングされ、URL の末尾に付加されていた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/09
@@ -1801,6 +1898,7 @@
     procedure: 仮想カーソルコマンド(Ctrl+下矢印キー)で、テキスト「ウェブアクセシビリティ基盤委員会公開サイト」を確認した。
     actual: テキスト “ウェブアクセシビリティ基盤委員会公開サイト” のみが読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 中野利保
   date: 2019/01/09
@@ -1815,6 +1913,7 @@
     procedure: ボタン画像に下矢印キーで移動した。
     actual: ボタン画像の代替テキスト “送信” が読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/09
@@ -1829,6 +1928,7 @@
     procedure: 画像に下矢印キーで移動した。
     actual: 画像の代替テキスト “ウェブアクセシビリティ基盤委員会” が読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/09
@@ -1843,6 +1943,7 @@
     procedure: Tabキーでリンク “ウェブアクセシビリティ基盤委員会 公式サイト”に移動した
     actual: “ウェブアクセシビリティ基盤委員会 公式サイト” のみ読み上げられた
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 中野利保
   date: 2019/01/10
@@ -1857,6 +1958,7 @@
     procedure: Tabキーで「施設ご利用の手引き PDFファイル」に移動した
     actual: リンクテキストとアイコン画像の代替テキスト “施設ご利用の手引き PDFファイル” と読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 中野利保
   date: 2019/01/10
@@ -1871,6 +1973,7 @@
     procedure: 表内を下矢印キーで移動した。
     actual: caption 要素の内容 “営業部連絡先一覧” 及び “マーケティング部連絡先一覧” が読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/09
@@ -1885,6 +1988,7 @@
     procedure: コンテンツ内を下矢印キーで移動した。
     actual: テーブルの開始位置では「テーブル」、テーブルの終了位置では「テーブルの外」と読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/09
@@ -1899,6 +2003,7 @@
     procedure: テーブルにNVDAキー＋Tキーで移動した。
     actual: 「5行5列のテーブル」と読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/10
@@ -1918,6 +2023,7 @@
       1.  “営業部連絡先一覧” のテーブルにおいて、 “ヒューストン” から “ピッツバーグ” へ移動すると、“ジョエル・ガーナー 4行 ピッツバーグ” と読み上げられた。
       2. 今いる行の上または下の行のリンクに移動した場合は、例えば"ジョエル・ガーナー 4行 リンク Twitter"のように読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/10
@@ -1937,6 +2043,7 @@
       1. “営業部連絡先一覧” のテーブルにおいて、“281-511-6600” から “ヒューストン” へ移動すると、 “住所 4列 ヒューストン” と読み上げられた。
       2. “営業部連絡先一覧” のテーブルにおいて、 “ヒューストン” から "Twitter" へ移動すると、 “SNS 5列 Twitter” と読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/10
@@ -1957,6 +2064,7 @@
       1. セル "Garner" から “Clive” のに移動すると、データセルの内容とともに見出しセルの内容 “Clive” が読み上げられる
       2. セル “Greenidge” から “Gordon” に移動すると、“Clive” は読み上げられなかった。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/10
@@ -1977,6 +2085,7 @@
       1. セル “Joel” から "Garner" に移動すると、データセルの内容とともに見出しセルの内容 “Last Name” が読み上げられる 
       2. セル “Pittsburgh” から “City” に移動すると、“Last Name” は読み上げられない
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/10
@@ -1991,6 +2100,7 @@
     procedure: 表内をCtrlキー＋Altキー＋上下左右キーで移動した。
     actual: 東京の女性の数値を表す “15%” のセルに移動すると、セルの内容とともに “大阪 3列” が読み上げられた。（男性は読み上げられない）
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/10
@@ -2027,6 +2137,7 @@
       見出しレベル 6 : スイカの発見    
       見出しレベル 2 : 人間と果物のかかわり
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/10
@@ -2056,6 +2167,7 @@
       2. 見出しレベルが通知された。
       3. 全て「見出しレベル1」と読み上げられ、マークアップされているhx要素のレベルがそのまま読み上げられた。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment: section要素とh1要素を併用している場合でも、読み上げられる見出しレベルは変化しなかった。
   tester: 安倍 英樹
   date: 2019/01/10
@@ -2070,6 +2182,7 @@
     procedure: Hキーで見出しジャンプを行った。
     actual: 見出しのみが読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/10
@@ -2098,6 +2211,7 @@
       “4.” のテキスト入力フィールド : “電話番号” 
       2. “4.” のテキスト入力フィールドにフォーカスを移動しても、 “ハイフンは不要” は読み上げられなかった。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/11
@@ -2124,6 +2238,7 @@
       “3.” のチェックボックス : “佐藤マンション” 
       2. “3.” のチェックボックスにフォーカスを移動しても、 “定期借家” は読み上げられなかった。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/11
@@ -2152,6 +2267,7 @@
       “4.” のラジオボタン : “はちみつがけタイプ” 
       2. “3.” のラジオボタンにフォーカスが移動しても、 “期間限定” は読み上げられなかった。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/11
@@ -2166,6 +2282,7 @@
     procedure: Fキーでセレクトメニューに移動した。
     actual: セレクトメニューにフォーカスを移動すると、title 属性値 “検索範囲を選択” が読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/11
@@ -2188,6 +2305,7 @@
       “2.” : “市内局番”
       “3.” : “加入者番号”
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/11
@@ -2207,6 +2325,7 @@
       1. 「詳細説明あり」と読み上げられた。
       2. NVDAキー＋Dキーを押下するとlongdescで指定されたURLが新しいタブで開いた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/11
@@ -2231,6 +2350,7 @@
       3. 各リスト項目の番号が読み上げられた。
       4. Iキーでリスト項目を順に読み上げることができた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: ol要素かどうかは分からなかったが、「例えば、“2項目のリスト リストの開始 1. ボウルにたまごと牛乳を入れ、混ぜます。 2. 塩とコショウを加えます。 リストの終了” と読み上げられる場合は OK と判断」とあるので、満たすと判断しました。
   tester: 安倍 英樹
   date: 2019/01/11
@@ -2253,6 +2373,7 @@
       2. リストの開始位置では「リスト3項目」、リストの終了位置では「リストの外」と読み上げられた。
       3. Iキーでリスト項目を移動することができた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: ul要素がどうかは分からなかったが、「例えば、“3項目のリスト リストの開始 牛乳 卵 バター リストの終了” と読み上げられる場合は OK と判断」とあるので、満たすと判断しました。
   tester: 安倍 英樹
   date: 2019/01/11
@@ -2275,6 +2396,7 @@
       2. リストの開始位置では「リスト7項目」、リストの終了位置では「リストの外」と読み上げられた。
       3.および4. Iキーを押下するとdt要素を順に読み上げた。ddはスキップした。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/11
@@ -2293,6 +2415,7 @@
     procedure: 下矢印キーで各段落を読み上げさせた。
     actual: 段落内のテキストが単純に読み上げられた。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/11
@@ -2311,6 +2434,7 @@
     procedure: 下矢印キーで各段落を読み上げさせた。
     actual: 各段落が単純に読み上げられた。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/11
@@ -2328,6 +2452,7 @@
     procedure: コンテンツ内を下矢印キーで移動した。
     actual: 引用の開始位置では「引用」、引用の終了位置では「引用の外」と読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/11
@@ -2345,6 +2470,7 @@
     procedure: NVDAキー＋下矢印キーで文章を読み上げさせた。
     actual: 文章が単純に読み上げられ、引用があることは分からなかった。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/11
@@ -2359,6 +2485,7 @@
     procedure: NVDAキー＋下矢印キーで文章を読み上げさせた。
     actual: 文章が単純に読み上げられ、上付き文字の通知は無かった。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/11
@@ -2373,6 +2500,7 @@
     procedure: NVDAキー＋下矢印キーで文章を読み上げさせた。
     actual: 文章が単純に読み上げられ、下付き文字の通知は無かった。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/11
@@ -2387,6 +2515,7 @@
     procedure: NVDAキー＋下矢印キーで文章を読み上げさせた。
     actual: 日本語の読み上げとは異なる音声合成エンジンで読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/11
@@ -2404,6 +2533,7 @@
     procedure: NVDAキー＋下矢印キーでコンテンツを読み上げさせた。
     actual: title 属性値 “ウェブアクセシビリティ基盤委員会”、およびtitle 属性値 “WCAG2.0 日本語訳”が読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/11
@@ -2418,6 +2548,7 @@
     procedure: カンマキーを押下した。
     actual: iframeの外に移動した。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/13
@@ -2440,6 +2571,7 @@
       2. “芥川龍之介” に差し掛かると、legend 要素の内容である “坊っちゃんの作者は?” が通知された。
       3. “川端康成” に差し掛かると、直前の fieldset 要素内のグループの一要素であると誤解されるような通知はされなかった。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/13
@@ -2463,6 +2595,7 @@
       2. 2 番目の fieldset 要素内の各チェックボックスに差し掛かると、legend 要素の内容である “好きな日本の作家は?” が通知された。
       3. “川端康成” に差し掛かると、直前の fieldset 要素内のグループの一要素であると誤解されるような通知をされなかった。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: fieldset 要素内のラジオボタン/チェックボックスが初めて読み上げられるときに、legend要素の内容が読み上げられます。グループ内のラジオボタン/チェックボックスを引き続き読み上げる場合は、legend要素の内容は読み上げられません。
   tester: 安倍 英樹
   date: 2019/01/13
@@ -2485,6 +2618,7 @@
       2. “メールアドレス” に差し掛かると、直前の fieldset 要素内のグループの一要素であると誤解されるような通知はされなかった。
       3. Fキーでテキスト入力フィールドに移動した場合のみfieldset 要素の開始位置は通知されたが、終了位置を知ることはできなかった。下矢印キーで移動していった場合は、legend要素の内容のみが読み上げられた。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/13
@@ -2499,6 +2633,7 @@
     procedure: リンク「こちら」に移動した後、NVDAキー＋上矢印キーを押下した。
     actual: 「ウェブアクセシビリティ基盤委員会の詳細は リンク こちら。」のように、li要素の内容とリンクである旨が読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/13
@@ -2513,6 +2648,7 @@
     procedure: リンクテキスト “[続きを読む...]”にフォーカスを移動した後、NVDAキー＋上矢印キーを押下した。
     actual: 「2016年3月、JIS X 8341-3が改正されました リンク 続きを読む...」のように、段落の内容とリンクである旨が読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: NVDAキー＋上矢印キーは現在行の読み上げを行います。
   tester: 安倍 英樹
   date: 2019/01/13
@@ -2530,6 +2666,7 @@
     procedure: ドロップダウンを開き、上下矢印キーで内容を読み上げさせた。
     actual: option要素のみ読み上げられた。optgroup要素にはアクセスできなかった。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/13
@@ -2544,6 +2681,9 @@
     procedure: （視覚閲覧環境）ブラウザを画像非表示に設定変更し、表示内容を確認した（音声閲覧環境）リンク「ウェブアクセシビリティ基盤委員会公開サイト」に 自動呼び上げで移動した。
     actual: 音声閲覧環境）リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみ読み上げられた。
     judgment: 満たしている
+  environment_type:
+  - 視覚閲覧環境
+  - 音声閲覧環境
   comment:
   tester: 佐藤 哲裕
   date: 2019/01/13
@@ -2558,6 +2698,7 @@
     procedure: 音声閲覧環境）リンク「ウェブアクセシビリティ基盤委員会公開サイト」に 自動読み上げで移動した。
     actual: （音声閲覧環境）リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみ読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 佐藤哲裕
   date: 2019/01/13
@@ -2573,6 +2714,7 @@
     procedure: （音声閲覧環境）リンク「ウェブアクセシビリティ基盤委員会公開サイト」に 自動読み上げで移動した。
     actual: （音声閲覧環境）リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみ読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 佐藤哲裕
   date: 2019/01/13
@@ -2587,6 +2729,7 @@
     procedure: Chromeの設定で画像を非表示にし表示内容を確認した
     actual: リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみが表示され、画像のファイル名や URL 等は表示されなかった
     judgment: 満たしている
+  environment_type:
   comment:
   tester: yukiko makino
   date: 2019/01/13
@@ -2606,6 +2749,7 @@
       （音声閲覧環境）control+shift+option+↓ でページ内に入りました。
     actual: （音声閲覧環境）「リンク ウェブアクセシビリティ基盤委員会公開サイト」と読み上げられました。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: やまもといずみ
   date: 2019/01/13
@@ -2620,6 +2764,7 @@
     procedure: リンク「ウェブアクセシビリティ基盤委員会公開サイト」にマウスオーバーした
     actual: リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみ読み上げられた
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: yukiko makino
   date: 2019/01/13
@@ -2634,6 +2779,7 @@
     procedure: リンク「ウェブアクセシビリティ基盤委員会公開サイト」に Tab キーで移動した
     actual: リンク「ウェブアクセシビリティ基盤委員会公開サイト」が読み上げられた
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 辻勝利
   date: 2019/01/13
@@ -2648,6 +2794,7 @@
     procedure: (視覚閲覧環境) :ブラウザを画像非表示に設定変更し、表示内容を確認した
     actual: （視覚閲覧環境）リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみが表示され、画像のファイル名や URL 等は表示されなかった。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: やまもといずみ
   date: 2019/01/13
@@ -2662,6 +2809,7 @@
     procedure: リンク「ウェブアクセシビリティ基盤委員会公開サイト」にフリックで移動した
     actual: リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみ読み上げられた
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: yukiko makino
   date: 2019/01/13
@@ -2678,6 +2826,7 @@
       （音声閲覧環境）
       「リンク ウェブアクセシビリティ基盤委員会公開サイト」と読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 佐藤哲裕
   date: 2019/01/13
@@ -2692,6 +2841,7 @@
     procedure: ブラウザを画像非表示に設定変更し、表示内容を確認した
     actual: リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみが表示され、画像のファイル名や URL 等は表示されなかった。
     judgment: 満たしている
+  environment_type:
   comment:
   tester: yukiko makino
   date: 2019/01/13
@@ -2706,6 +2856,7 @@
     procedure: （音声閲覧環境）リンク「施設ご利用の手引き」に 自動読み上げで移動した。
     actual: （音声閲覧環境）「リンク 施設ご利用の手引き PDFファイル」と読み上げた
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 佐藤哲裕
   date: 2019/01/13
@@ -2724,6 +2875,7 @@
     procedure: （音声閲覧環境）ページ画面でControl+shift+option+↓で入った
     actual: （音声閲覧環境）リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみ読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: やまもといずみ
   date: 2019/01/13
@@ -2738,6 +2890,7 @@
     procedure: リンク「ウェブアクセシビリティ基盤委員会公開サイト」に Tab キーで移動した。
     actual: リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみ読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 辻勝利
   date: 2019/01/13
@@ -2752,6 +2905,7 @@
     procedure: リンク「ウェブアクセシビリティ基盤委員会公開サイト」にマウスオーバーした
     actual: リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみ読み上げられた
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: yukiko makino
   date: 2019/01/13
@@ -2770,6 +2924,7 @@
     procedure: （音声閲覧環境）control+shift+option+↓ でページ内に入った
     actual: （音声閲覧環境）テキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみ読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: やまもといずみ
   date: 2019/01/13
@@ -2788,6 +2943,7 @@
     procedure: (音声閲覧環境) control+shift+option+↓ でページ内に入った
     actual: （音声閲覧環境）リンクテキスト「ウェブアクセシビリティ基盤委員会公式サイト」と読まれた
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: やまもといずみ
   date: 2019/01/13
@@ -2845,6 +3001,7 @@
       注文内容の確認
       入力内容のリセット
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 佐藤哲裕
   date: 2019/01/13
@@ -2859,6 +3016,7 @@
     procedure: 下矢印キーを押してテキストを読み上げた
     actual: 「ウェブアクセシビリティ基盤委員会公開サイト」と読み上げられた
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 辻勝利
   date: 2019/01/13
@@ -2877,6 +3035,7 @@
     procedure: control+shift+option+↓ でページ内に入った
     actual: ' (音声閲覧環境)「 リンク 施設ご利用の手引き PDFファイル」 と読み上げられた'
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: やまもといずみ
   date: 2019/01/13
@@ -2934,6 +3093,7 @@
       注文内容の確認
       入力内容のリセット
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 佐藤哲裕
   date: 2019/01/13
@@ -2959,6 +3119,7 @@
       携帯サイト
       サイトマップ
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 佐藤哲裕
   date: 2019/01/13
@@ -2986,6 +3147,7 @@
       携帯サイト
       サイトマップ
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 佐藤哲裕
   date: 2019/01/13
@@ -3000,6 +3162,7 @@
     procedure: 下矢印キーを押してページの内容を読み上げた。
     actual: 「リンク画像ウェブアクセシビリティ基盤委員会 公式サイト」と読み上げられ。た
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 辻勝利
   date: 2019/01/13
@@ -3036,6 +3199,7 @@
       リンク 7 (0)
       2. リンク 6 (tabindex="-1") にはフォーカスが移動しない
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 佐藤哲裕
   date: 2019/01/13
@@ -3118,6 +3282,7 @@
       ひょうを終了しています。注文内容の確認　ボタン
       入力内容のリセット　ボタン
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment: ラジオボタンの「花火」は読まれませんでした。
   tester: やまもといずみ
   date: 2019/01/13
@@ -3132,6 +3297,7 @@
     procedure: 下矢印キーでページの内容を読み上げた。
     actual: 「リンク施設ご利用の手引き画像PDFファイル」と読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 辻勝利
   date: 2019/01/13
@@ -3170,6 +3336,7 @@
 
       （VoiceOverの操作になれていないだけかもしれないですが）VoiceOverの操作をコンテンツエリアにフォーカスした状態からtabを押すとリンク1からフォーカスが当たるようになった。その後は上記の順番に従ってフォーカスがあたる。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 佐藤哲裕
   date: 2019/01/13
@@ -3208,6 +3375,7 @@
       リンク　携帯サイト
       リンク　サイトマップ
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: |
     Safariの環境設定で、フォーカス当てる設定をしました。
     環境設定ー詳細ーアクセシビリティのチェック
@@ -3238,6 +3406,7 @@
       リンク 2 (2)
       リンク 4 (2)
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 佐藤哲裕
   date: 2019/01/13
@@ -3266,6 +3435,7 @@
       リンク 2 (2)
       リンク 4 (2)
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 佐藤哲裕
   date: 2019/01/13
@@ -3302,6 +3472,7 @@
     procedure: '(音声閲覧環境) キーボード操作 : Tab キーを押下し、フォーカスの移動順序を確認'
     actual: (音声閲覧環境) 期待される結果と同じです。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: やまもといずみ
   date: 2019/01/13
@@ -3340,6 +3511,7 @@
       リンク 2
       リンク 4
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: やまもといずみ
   date: 2019/01/13
@@ -3395,6 +3567,7 @@
     procedure: Tabキーを押してフォーカスを移動させた。
     actual: 想定していた順番で読み上げられた
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 辻勝利
   date: 2019/01/13
@@ -3409,6 +3582,7 @@
     procedure: (音声閲覧環境) イメージマップを読み上げ、内容を確認
     actual: (音声閲覧環境)期待される結果と同じでした
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: やまもといずみ
   date: 2019/01/13
@@ -3428,6 +3602,7 @@
     procedure: Tabキーでページ内を移動した。
     actual: 想定通りに読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 辻勝利
   date: 2019/01/13
@@ -3446,6 +3621,7 @@
     procedure: (音声閲覧環境) イメージマップを読み上げ、内容を確認
     actual: (音声閲覧環境) 期待される結果と同じでした
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: やまもといずみ
   date: 2019/01/13
@@ -3464,6 +3640,7 @@
     procedure: (音声閲覧環境) 各 area 要素を読み上げ、内容を確認
     actual: (音声閲覧環境)期待される結果と同じでした
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: やまもといずみ
   date: 2019/01/13
@@ -3486,6 +3663,7 @@
       読み上げ例：リンク、altの内容。
       イメージマップであることはわかるようには読み上げられなかった。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 佐藤哲裕
   date: 2019/01/13
@@ -3500,6 +3678,7 @@
     procedure: キーボード操作で移動し、読み上げを確認
     actual: imgのaltを読み上げたあと「イメージマップ」と読み上げられる。続いて「現在、あなたはWebコンテンツ内のイメージマップ上にいます。このWeb領域を終了するには、コントロール-Option-Shift-上矢印を押します」とガイドされる。その後要素内遷移（コントロール＋Option＋Shift＋下矢印）を行うと「操作開始　デパートのフロアガイド。各階について詳しくお知りになりたい場合は各階をクリックしてください、イメージマップ、４項目、リンク　４階雑貨 書籍」「現在、あなたはイメージマップ内のリンクの上にいます。このリンクをクリックするには、コントロール-Option-スペースを押します。」と読まれる。以下のリンクに移動（Option＋Shift＋下矢印）すると「リンク、３階衣料品　現在、あなたはイメージマップ内のリンクの上にいます。このリンクをクリックするには、コントロール-Option-スペースを押します。」のように読まれる。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: MacOSが最新のバージョンではありません。また、不慣れなため動作に関する表現等伝わりにくいかと思います。これでもお役に立てるならうれしいです。
   tester: Okaue Yoko
   date: 2019/01/13
@@ -3520,6 +3699,7 @@
       (視覚閲覧環境) :
       イメージマップに用いられている画像の代替テキスト “デパートのフロアガイド。各階について詳しくお知りになりたい場合は各階をクリックしてください。” が表示された。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 佐藤哲裕
   date: 2019/01/13
@@ -3538,6 +3718,7 @@
     procedure: (音声閲覧環境) ctorol+option+スペースを押しました
     actual: (音声閲覧環境) 各リンク先へ遷移しました
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: やまもといずみ
   date: 2019/01/13
@@ -3558,6 +3739,7 @@
       (音声閲覧環境) :
       イメージマップに用いられている画像の代替テキスト “デパートのフロアガイド。各階について詳しくお知りになりたい場合は各階をクリックしてください。” が読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 佐藤哲裕
   date: 2019/01/13
@@ -3583,6 +3765,7 @@
       1. 想定していたとおりにフォーカスが移動した
       2. 想定していたとおりにフォーカスが当たらなかった
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 辻勝利
   date: 2019/01/13
@@ -3597,6 +3780,7 @@
     procedure: ブラウザを画像非表示に設定変更し、表示内容を確認した
     actual: リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみが表示され、画像のファイル名や URL 等は表示されなかった。
     judgment: 満たしている
+  environment_type:
   comment:
   tester: 佐藤美華
   date: 2019/01/13
@@ -3619,6 +3803,7 @@
       読み上げ例：リンク、altの内容。
       になっています。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 佐藤哲裕
   date: 2019/01/13
@@ -3641,6 +3826,7 @@
     procedure: (音声閲覧環境)音声で読み上げ
     actual: (音声閲覧環境)「リンク 4F 雑貨書籍」と読まれました
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: やまもといずみ
   date: 2019/01/13
@@ -3661,6 +3847,7 @@
       (視覚閲覧環境) :
       イメージマップに用いられている画像の代替テキスト “デパートのフロアガイド。各階について詳しくお知りになりたい場合は各階をクリックしてください。” が表示された。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 佐藤哲裕
   date: 2019/01/13
@@ -3679,6 +3866,7 @@
     procedure: (音声閲覧環境) VoiceOverを起動しページを読み上げ
     actual: (音声閲覧環境) 一番最初にタイトルタグの内容が読み上げられました
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: やまもといずみ
   date: 2019/01/13
@@ -3699,6 +3887,7 @@
       (音声閲覧環境) :
       イメージマップに用いられている画像の代替テキスト “デパートのフロアガイド。各階について詳しくお知りになりたい場合は各階をクリックしてください。” が読み上げられる
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 佐藤哲裕
   date: 2019/01/13
@@ -3713,6 +3902,7 @@
     procedure: （音声閲覧環境）リンク「ウェブアクセシビリティ基盤委員会公開サイト」に Tab キーで移動した
     actual: （音声閲覧環境）「リンク　ウェブアクセシビリティ基盤委員会」と読まれました。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: やまもといずみ
   date: 2019/01/13
@@ -3731,6 +3921,7 @@
     procedure: （音声閲覧環境） Tab キーで移動した。
     actual: (音声閲覧環境)「りんく　イメージ　アクセシビリティ基盤委員会」と読まれました
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: やまもといずみ
   date: 2019/01/13
@@ -3749,6 +3940,7 @@
       表示 : ブラウザの設定を変更して画像非表示にし、表示内容を確認
     actual: img の alt は表示されるが、area の alt は表示されませんでした。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 佐藤哲裕
   date: 2019/01/13
@@ -3769,6 +3961,7 @@
       area は読み上げられませんでした。
       「デパートのフロアガイド。各階について詳しくお知りになりたい場合は各階をクリックしてください。」の部分を2回読んだあとに「店舗へのアクセスにつきましては~」うつっていきました。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注] 再テストを行いましたが、本テスト結果と同じ結果は得られませんでした。'
   tester: 佐藤哲裕
@@ -3799,6 +3992,7 @@
     procedure: ' (音声閲覧環境) リンク読み上げ'
     actual: (音声閲覧環境) タイトル属性は読み上げられませんでした
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: やまもといずみ
   date: 2019/01/13
@@ -3820,6 +4014,7 @@
       (視覚閲覧環境) :
       各リンク先へ遷移した。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 佐藤哲裕
   date: 2019/01/13
@@ -3840,6 +4035,7 @@
       (音声閲覧環境) :
       各リンク先へ遷移した。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 佐藤哲裕
   date: 2019/01/13
@@ -3854,6 +4050,7 @@
     procedure: ブラウザを画像非表示に設定変更し、表示内容を確認した
     actual: テキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみが表示され、画像のファイル名や URL 等は表示されなかった
     judgment: 満たしている
+  environment_type:
   comment:
   tester: yukiko makino
   date: 2019/01/13
@@ -3868,6 +4065,7 @@
     procedure: Tabキーでページ内を移動した。
     actual: 想定していた順番で項目が読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 辻勝利
   date: 2019/01/13
@@ -3892,6 +4090,7 @@
     procedure: (音声閲覧環境) “申し込む” ボタンを押下し、挙動を確認
     actual: (音声閲覧環境) 1. 2. とも満たしていました。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: やまもといずみ
   date: 2019/01/13
@@ -3914,6 +4113,7 @@
       マウス操作では、リンクを判別できる視覚効果がなかった。
       キーボード操作はフォーカスの線が表示される
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注] 再テストを行いましたが、本テスト結果と同じ結果は得られませんでした。'
   tester: 佐藤哲裕
@@ -3936,6 +4136,7 @@
       リンクであることを判別できる何らかの手段が提供されていた。
       「リンク」と読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 佐藤哲裕
   date: 2019/01/13
@@ -3954,6 +4155,7 @@
     procedure: (音声閲覧環境) “送信” ボタンを読み上げ、内容を確認
     actual: (音声閲覧環境) 「送信　ボタン」と読み上げられました。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: やまもといずみ
   date: 2019/01/13
@@ -3968,6 +4170,7 @@
     procedure: 「ウェブアクセシビリティ基盤委員会公開サイト」に マウスでhoverした
     actual: テキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみ読み上げられた
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: yukiko makino
   date: 2019/01/13
@@ -3986,6 +4189,7 @@
     procedure: (音声閲覧環境) 画像を読み上げ、内容を確認
     actual: (音声閲覧環境) 画像の代替テキストがよまれました。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: やまもといずみ
   date: 2019/01/13
@@ -4000,6 +4204,7 @@
     procedure: Tabキーを押してページ内を移動した。
     actual: 想定通りの順番でフォーカスが移動した。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 辻勝利
   date: 2019/01/13
@@ -4018,6 +4223,7 @@
       表示 : ページタイトルの表示内容を確認
     actual: (視覚閲覧環境) :タブに Title の内容が表示されている。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 佐藤哲裕
   date: 2019/01/13
@@ -4038,6 +4244,7 @@
       (音声閲覧環境) :
       ページタイトルを読み上げてくれた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 佐藤哲裕
   date: 2019/01/13
@@ -4052,6 +4259,7 @@
     procedure: ページを表示した後ctrl+Uでソースを表示した　F12を押して開発者ツールを表示した
     actual: ソースを表示、開発者ツール共に<title>タグを確認できた
     judgment: 満たしている
+  environment_type:
   comment:
   reviewer_comment: '[WAIC注] テスト手順に問題があり、適切に判定できていません。'
   tester: yukiko makino
@@ -4073,6 +4281,7 @@
       1.  label 属性値はわかりました。
       2. 切り替わる位置はわかりませんでした。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: やまもといずみ
   date: 2019/01/13
@@ -4093,6 +4302,7 @@
        (音声閲覧環境) :
        “ウェブアクセシビリティ基盤委員会” が読み上げられた
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 佐藤哲裕
   date: 2019/01/13
@@ -4113,6 +4323,7 @@
       (音声閲覧環境) 1. 2. 判別できませんでした。
       3. 通知はされませんでした。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: やまもといずみ
   date: 2019/01/13
@@ -4133,6 +4344,7 @@
       (視覚閲覧環境) :
        “ウェブアクセシビリティ基盤委員会” が表示された
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 佐藤哲裕
   date: 2019/01/13
@@ -4161,6 +4373,7 @@
       3.「タッチディスプレイ上で指で長押し」
       期待される結果のように、該当文のみ読み上げられた
     judgment: 満たしている
+  environment_type:
   comment:
   tester: 佐藤美華
   date: 2019/01/13
@@ -4178,6 +4391,7 @@
     procedure: ' (音声閲覧環境) 段落を読み上げ、内容を確認'
     actual: (音声閲覧環境) 引用部分は通知されませんでした
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: やまもといずみ
   date: 2019/01/13
@@ -4199,6 +4413,7 @@
        (音声閲覧環境) :
       リンク画像の代替テキスト “ウェブアクセシビリティ基盤委員会” が読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 佐藤哲裕
   date: 2019/01/13
@@ -4217,6 +4432,7 @@
     procedure: (音声閲覧環境) 段落を読み上げ、内容を確認
     actual: (音声閲覧環境)なにもわかりませんでした
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: やまもといずみ
   date: 2019/01/13
@@ -4231,6 +4447,7 @@
     procedure: ページを開いていからNVDA+Tを押下した
     actual: 「ウェブアクセシビリティ基盤委員会マイナスグーグルクロームシークレットモード」と読み上げられた
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: コマンドがわかっていないとそもそも操作ができない
   tester: yukiko makino
   date: 2019/01/13
@@ -4250,6 +4467,7 @@
     procedure: (音声閲覧環境) 段落を読み上げ、内容を確認
     actual: (音声閲覧環境) 提供されていませんでした
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: やまもといずみ
   date: 2019/01/13
@@ -4264,6 +4482,7 @@
     procedure: ブラウザを画像非表示に設定変更し表示内容を確認した
     actual: 何も表示されなかった
     judgment: 満たしていない
+  environment_type:
   comment:
   tester: yukiko makino
   date: 2019/01/13
@@ -4289,6 +4508,7 @@
       マウス操作では Title が表示されて1、2を満たしている。
       キーボード操作でのフォーカスでは Title が表示されない。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 佐藤哲裕
   date: 2019/01/13
@@ -4303,6 +4523,7 @@
     procedure: (音声閲覧環境) テストファイルを読み上げ、内容を確認
     actual: (音声閲覧環境)どのエンジンを使われているかわかりませんでしたが、英語で読まれました
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注] 再テストを行いましたが、本テスト結果と同じ結果は得られませんでした。'
   tester: やまもといずみ
@@ -4324,6 +4545,7 @@
       リンクを読み上げ、内容及び挙動を確認
     actual: title 属性は読まれなかった。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 佐藤哲裕
   date: 2019/01/13
@@ -4343,6 +4565,7 @@
       テストファイルを読み上げ、内容を確認
     actual: ' (音声閲覧環境) iframe 要素の存在がまったくありませんでした'
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注] サーバー環境に問題があり、テストが実施できていません。'
   tester: やまもといずみ
@@ -4358,6 +4581,7 @@
     procedure: (音声閲覧環境) テストファイルを操作し、結果を確認
     actual: (音声閲覧環境) iframe 要素の存在がまったくわからないのでなにもできませんでした。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注] サーバー環境に問題があり、テストが実施できていません。'
   tester: やまもといずみ
@@ -4377,6 +4601,7 @@
       hover：何も読み上げられなかった
       Tab：「WAIC-CODE-0008-01　ボタン送信」と読み上げられた
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: yukiko makino
   date: 2019/01/13
@@ -4391,6 +4616,7 @@
     procedure: リンク項目間をKキーで移動した。
     actual: リンク項目であることは読み上げられるが、イメージマップの項目であることは判別できなかった。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 辻勝利
   date: 2019/01/13
@@ -4414,6 +4640,7 @@
       (視覚閲覧環境) :
       1、2ともにできました。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 佐藤哲裕
   date: 2019/01/13
@@ -4434,6 +4661,7 @@
       “申し込む” ボタンを押下し、挙動を確認
     actual: 1、2を満たしている。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 佐藤哲裕
   date: 2019/01/13
@@ -4457,6 +4685,7 @@
       cgiが動いてない感じなので最終的な結果が得られませんでした。
       ただし、遷移する前までのマウスの操作、キーボード操作はできています。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 佐藤哲裕
   date: 2019/01/13
@@ -4493,6 +4722,7 @@
       3.タッチディスプレイ上での長押し
       該当文「ウェブアクセシビリティ基盤委員会公開サイト」のみ読み上げられた。
     judgment: 満たしている
+  environment_type:
   comment:
   tester: 佐藤美華
   date: 2019/01/13
@@ -4507,6 +4737,7 @@
     procedure: TABで”4F 雑貨 書籍"に移動し、情報読み(Ctrl+Atl+G)で読み上げを確認した。
     actual: ”4F 雑貨 書籍 リンク マップ"と読み上げた
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 中野利保
   date: 2019/01/15
@@ -4521,6 +4752,7 @@
     procedure: 仮想カーソル移動コマンド Ctrl+下矢印キーで「デパートのフロアガイド。各階について詳しくお知りになりたい場合は各階をクリックしてください。」に移動した。
     actual: 「デパートのフロアガイド。各階について詳しくお知りになりたい場合は各階をクリックしてください。　画像」と読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 中野利保
   date: 2019/01/15
@@ -4535,6 +4767,7 @@
     procedure: TABキーで「4F 雑貨 書籍」移動し、Enterキーでリンク先を開いた
     actual: リンク先へ遷移した
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 中野利保
   date: 2019/01/15
@@ -4549,6 +4782,7 @@
     procedure: TABキーで「4F雑貨 書籍」に移動した。
     actual: 「4F雑貨 書籍 リンク」とリンクであることを読み上げた
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 中野利保
   date: 2019/01/16
@@ -4563,6 +4797,7 @@
     procedure: ウインドウ名読み Alt+Ctrl+1でタイトルを確認した
     actual: タイトル「ウェブアクセシビリティ基盤委員会」と「Internet Explorer」と読み上げられた
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 中野利保
   date: 2019/01/16
@@ -4579,6 +4814,7 @@
       リンクテキスト “ウェブアクセシビリティ基盤委員会” を読み上げた
       リンクテキスト “ウェブアクセシビリティ基盤委員会” を読み上げた
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 中野利保
   date: 2019/01/17
@@ -4593,6 +4829,7 @@
     procedure: TABで画像に移動した
     actual: リンク画像の代替テキスト “ウェブアクセシビリティ基盤委員会” を読み上げた
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 中野利保
   date: 2019/01/17
@@ -4607,6 +4844,7 @@
     procedure: TABで"Home"リンクに移動した
     actual: リンクテキスト"Home”を読み上げ、続いてtilte属性値"ウェブアクセシビリティ基盤委員会公式サイト"を読み上げた
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 中野利保
   date: 2019/01/17
@@ -4621,6 +4859,7 @@
     procedure: hキーで次の見出しへ　Shift+hキーで前の見出しへ　見出し3にジャンプする時は数字の3　前の見出し3に飛ぶ時はShift+3
     actual: 「果物について」見出しレベル1「定義」見出しレベル2「野菜との違い」見出しレベル3「実は果物ではないもの」見出しレベル4「スイカが野菜である理由」見出しレベル5「スイカの発見」見出しレベル6「人間と果物のかかわり」見出しレベル2　と読み上げた。上に戻ると見出し下から順に読み上げた。数字の3で「野菜との違い」見出しレベル3と読み上げた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 小枝　繁子
   date: 2019/01/18
@@ -4643,6 +4882,7 @@
     procedure: Tabキーで移動した。
     actual: 「:電話番号」のみ読み上げた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 小枝　繁子
   date: 2019/01/18
@@ -4666,6 +4906,7 @@
     procedure: Tabキーで移動した。
     actual: '“3.” のチェックボックス : ラベル の「佐藤マンション」のみ読み上げた。'
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 小枝　繁子
   date: 2019/01/18
@@ -4684,6 +4925,7 @@
     procedure: Tabキーで移動した。
     actual: ラベルの「すっきり抹茶タイプ」のみ読み上げた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 小枝　繁子
   date: 2019/01/18
@@ -4698,6 +4940,7 @@
     procedure: Tabキーで移動した。
     actual: 「検索範囲を選択」と読み上げた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 小枝　繁子
   date: 2019/01/18
@@ -4712,6 +4955,7 @@
     procedure: Tabキーで移動した。
     actual: 1つ目のテキスト入力フィールド「市外局番」、2つ目のテキスト入力フィールド「市内局番」、3つ目のテキスト入力フィールド「加入者番号」と読み上げた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 小枝　繁子
   date: 2019/01/18
@@ -4730,6 +4974,7 @@
     procedure: 矢印キー下向きで操作した。
     actual: 画像「詳細説明あり　会員数の遷移グラフ」としか読み上げずリンク先の情報は読み上げない。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 小枝　繁子
   date: 2019/01/18
@@ -4769,6 +5014,7 @@
        人間と果物のかかわり：見出し2
        と読み上げた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 小枝　繁子
   date: 2019/01/21
@@ -4815,6 +5061,7 @@
        人間と果物のかかわり：見出し1
        と読み上げた。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 小枝　繁子
   date: 2019/01/21
@@ -4829,6 +5076,7 @@
     procedure: 左右フリック
     actual: 右フリックすると「果物について：見出し1」「定義：見出し2」と下へ読み上げ、見出し3から左フリックすると「定義：見出し2」「果物について：見出し1」と読み上げた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 小枝　繁子
   date: 2019/01/21
@@ -4857,6 +5105,7 @@
     procedure: フリック
     actual: “4.” のテキスト入力フィールドにフォーカスを移動すると「電話番号」と読み上げた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 小枝　繁子
   date: 2019/01/21
@@ -4884,6 +5133,7 @@
     procedure: フリック
     actual: “3.” のチェックボックスにフォーカスを移動すると「佐藤マンション」と読み上げた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 小枝　繁子
   date: 2019/01/21
@@ -4907,6 +5157,7 @@
     procedure: フリック
     actual: '“3.” のラジオボタン : 「すっきり抹茶タイプ」と読み上げた。'
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 小枝　繁子
   date: 2019/01/21
@@ -4921,6 +5172,7 @@
     procedure: フリック
     actual: 「折りたたまれています。このサイト内ポッブアップボタン。検索範囲を選択」と読み上げた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 小枝　繁子
   date: 2019/01/21
@@ -4935,6 +5187,7 @@
     procedure: フリック
     actual: '“1.” : 「市外局番」 “2.” : 「市内局番」 “3.” : 「加入者番号」と読み上げた。'
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 小枝　繁子
   date: 2019/01/21
@@ -4953,6 +5206,7 @@
     procedure: フリック
     actual: 「会員数の遷移グラフ」と読み上げた。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 小枝　繁子
   date: 2019/01/21
@@ -4975,6 +5229,7 @@
        セレクトメニューで選択肢を選んでも何も発生しなかった。
        “選択したページへ移動する” ボタンを選択すると、選択したページに遷移した。
     judgment: 満たしている
+  environment_type:
   comment:
   tester: 安倍 英樹
   date: 2019/01/24
@@ -5006,6 +5261,7 @@
        などと読み上げました！
        OCR文字認識ですので、それが正しい内容かはわかりません。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment: |-
     実は、スクリーンリーダーモードでも試してみました。
      その結果、リンクのない画像だからなのか、「WAIC-CODE-0013-01」というページタイトルしか読みませんでした！
@@ -5026,6 +5282,7 @@
     procedure: ページ遷移後、Tabキーでアドレスに移動し、URLの読み上げを確認した。
     actual: 入力したメールアドレスが URL エンコーディングされ、URL の末尾に付加されていた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 中野利保
   date: 2019/01/30
@@ -5044,6 +5301,7 @@
     procedure: タブキーでセレクトメニューに移動し、上下キーで選択肢を選び、Tabキーで「選択したページへ移動する」に移動後、Enterキーを押した。
     actual: 選択したページに遷移した。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 中野利保
   date: 2019/01/30
@@ -5058,6 +5316,7 @@
     procedure: Tabキーで「送信」画像ボタンに移動した
     actual: ボタン画像の代替テキスト “送信” が読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 中野利保
   date: 2019/01/30
@@ -5072,6 +5331,7 @@
     procedure: Tabキーで移動順序を確認した。
     actual: '次の順序でフォーカスが移動した : 1 番目の受取人の名字 1 番目の受取人の名前 1 番目の受取人の住所 スイカ 花火 1 番目の受取人へのオリジナルスタンプ 1 番目の受取人へメロディカード 1 番目の受取人へのメッセージ 1 番目の受取人へのカードプレビュー 2 番目の受取人の名字 2 番目の受取人の名前 2 番目の受取人の住所 スイカ 花火 2 番目の受取人へのオリジナルスタンプ 2 番目の受取人へメロディカード 2 番目の受取人へのメッセージ 2 番目の受取人へのカードのプレビュー 注文内容の確認 入力内容のリセット'
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 中野利保
   date: 2019/02/01
@@ -5086,6 +5346,7 @@
     procedure: TABキーで順番に移動を確認した。
     actual: '次の順序でフォーカスが移動した : テキストフィールド “検索” ボタン 携帯サイト サイトマップ'
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 中野利保
   date: 2019/02/01
@@ -5104,6 +5365,7 @@
     procedure: TABキーでフォーカスが移動しないことを確認した。
     actual: リンク6に移動しなかった。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 中野利保
   date: 2019/02/01
@@ -5118,6 +5380,7 @@
     procedure: TABキーを押して、移動順序を確認した。
     actual: 次の順序でフォーカスが移動した。:リンク 1、リンク 3 、リンク 2、リンク 4
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 中野利保
   date: 2019/02/01
@@ -5132,6 +5395,7 @@
     procedure: 仮想カーソル移動コマンド(Ctrl+下矢印キー)で、画像に移動した。
     actual: 画像の代替テキスト “ウェブアクセシビリティ基盤委員会” が読み上げられた
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 中野利保
   date: 2019/02/01
@@ -5146,6 +5410,7 @@
     procedure: セル内で情報読み(Alt+Ctrl+G)を実行し、表情報を確認した。
     actual: caption要素のテキスト “営業部連絡先一覧” 及び “マーケティング部連絡先一覧” が読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 中野利保
   date: 2019/02/01
@@ -5160,6 +5425,7 @@
     procedure: 仮想カーソル移動(Ctrl+下矢印キー)で、テーブル内に移動した。
     actual: テーブルの開始位置及び終了位置を読み上げなかった。情報読み(Alt+Ctrl+G)コマンドで表内ということは確認できる。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 中野利保
   date: 2019/02/06
@@ -5174,6 +5440,7 @@
     procedure: 仮想カーソル移動コマンド(Ctrl+下矢印キー)で表内に移動し、情報読み(Alt+Ctrl+G)で確認した。
     actual: 表の情報 行数および列数を読み上げた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 中野利保
   date: 2019/02/06
@@ -5192,6 +5459,7 @@
     procedure: 仮想カーソル移動コマンド(Ctrl+下矢印キー)で、表のリンクに移動し、情報読み(Ctrl+Alt+G)で確認
     actual: 行見出しが読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 中野利保
   date: 2019/02/06
@@ -5210,6 +5478,7 @@
     procedure: 仮想カーソル移動コマンド(Ctrl+下矢印キー)で、表内のリンクに移動し、情報読み(Ctrl+Alt+G)で確認
     actual: 表の情報 列見出しを読み上げた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 中野利保
   date: 2019/02/08
@@ -5228,6 +5497,7 @@
     procedure: 仮想カーソル移動コマンド(Ctrl+上矢印キー)で、セル “Greenidge” から “Gordon” に移動した。
     actual: データセルの内容"Gordon"のみ読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 中野利保
   date: 2019/02/08
@@ -5244,6 +5514,7 @@
     judgment: 満たしている
   - expected: セル “Pittsburgh” から “City” に移動すると、“Last Name” は読み上げられない
     procedure: “Pittsburgh” から “City” に移動する方法がない。
+  environment_type: 音声閲覧環境
   comment:
   tester: 中野利保
   date: 2019/02/08
@@ -5258,6 +5529,7 @@
     procedure: 仮想カーソル移動コマンド(Ctrl+下矢印キー)で、東京の女性の数値を表す “15%” のセルに移動した。
     actual: セルの内容のみ読み上げられ、“大阪 男性” は読み上げられなかった。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment: セルの移動では読み上げられないが、情報読み(Ctrl+Alt+G)で"大阪" "男性"を読みあげた。
   tester: 中野利保
   date: 2019/02/08
@@ -5279,6 +5551,7 @@
        
        WAIC-CODE-0001-01 ウェブアクセシビリティ基盤委員会公開サイト アクセス済み リンク 検索 プラス スペースキーで有効にします。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
   tester: 四方田正夫
@@ -5302,6 +5575,7 @@
        
        WAIC-CODE-0001-02 ウェブアクセシビリティ基盤委員会公開サイト アクセス済み リンク 検索 プラス スペースキーで有効にします。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
   tester: 四方田正夫
@@ -5324,6 +5598,7 @@
        
        WAIC-CODE-0001-03 ウェブアクセシビリティ基盤委員会公開サイト
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
   tester: 四方田正夫
@@ -5349,6 +5624,7 @@
        
        WAIC-CODE-0002-01 ウェブアクセシビリティ基盤委員会 公式サイト アクセス済み リンク 検索 プラス スペースキーで有効にします。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
   tester: 四方田正夫
@@ -5374,6 +5650,7 @@
        
        WAIC-CODE-0002-02 施設ご利用の手引き PDFファイル リンク リンク 検索 プラス スペースキーで有効にします。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
   tester: 四方田正夫
@@ -5468,6 +5745,7 @@
        
        入力内容のリセット ボタン 検索プラススペースキーで有効にします。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment: |-
     ラジオボタンの選択肢はタブキーでは移動しない。ChromeVoxの挙動が適切で、期待される結果が不適切と思われる。
      
@@ -5504,6 +5782,7 @@
        
        サイトマップ リンク リスト項目 検索プラス スペースキーで有効にします。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 四方田正夫
   date: 2019/01/13
@@ -5550,6 +5829,7 @@
        
        リンク 7 リンク 検索プラススペースキーで有効にします。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 四方田正夫
   date: 2019/01/13
@@ -5584,6 +5864,7 @@
        
        リンク 4 リンク 検索プラススペースキーで有効にします。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 四方田正夫
   date: 2019/01/13
@@ -5600,6 +5881,7 @@
     procedure: イメージマップを読み上げ、内容を確認
     actual: 読み上げるための操作ができない
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment: |-
     参考：アクセシビリティ・サポーティッド（AS)情報：H37-2
      https://waic.jp/docs/as/info/201406/H37-2.html
@@ -5619,6 +5901,7 @@
     procedure: イメージマップを読み上げ、内容を確認
     actual: 読み上げるための操作ができない
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment: |-
     参考：アクセシビリティ・サポーティッド（AS)情報：H37-2
      https://waic.jp/docs/as/info/201406/H37-2.html
@@ -5651,6 +5934,7 @@
        
        周辺地図 リンク 検索プラススペースキーで有効にします。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
   tester: 四方田正夫
@@ -5681,6 +5965,7 @@
        
        （周辺地図 遷移しない）
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
   tester: 四方田正夫
@@ -5711,6 +5996,7 @@
        
        周辺地図 リンク 検索プラススペースキーで有効にします。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
   tester: 四方田正夫
@@ -5734,6 +6020,7 @@
        
        ウェブアクセシビリティ基盤委員会
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
   tester: 四方田正夫
@@ -5754,6 +6041,7 @@
        
        ウェブアクセシビリティ基盤委員会 アクセス済み リンク 検索プラススペースキーで有効にします。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
   tester: 四方田正夫
@@ -5774,6 +6062,7 @@
        
        ウェブアクセシビリティ基盤委員会 アクセス済み リンク 検索プラススペースキーで有効にします。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
   tester: 四方田正夫
@@ -5799,6 +6088,7 @@
        
        Home アクセス済み リンク ウェブアクセシビリティ基盤委員会公式サイト 検索プラススペースキーで有効にします。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
   tester: 四方田正夫
@@ -5825,6 +6115,7 @@
        
        2. 入力したメールアドレスが URL エンコーディングされ、URL の末尾に付加されている
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
   tester: 四方田正夫
@@ -5855,6 +6146,7 @@
        選択肢 チュートリアル→同様にNG
        選択肢 検索→同様にNG
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: ChromeVoxを起動しない状況での挙動と同じ→期待されている結果を満たしている、とみなした
   reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
   tester: 四方田正夫
@@ -5875,6 +6167,7 @@
        
        送信 ボタン フォーム 検索プラススペースキーで有効にします。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
   tester: 四方田正夫
@@ -5895,6 +6188,7 @@
        
        ウェブアクセシビリティ基盤委員会 画像
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
   tester: 四方田正夫
@@ -5917,6 +6211,7 @@
        
        マーケティング部連絡先一覧 表「マーケティング部連絡先一覧」（5x5）検索プラスcontrolプラスAltキーを押しながら矢印キーを押して、セル間を移動します。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
   tester: 四方田正夫
@@ -5939,6 +6234,7 @@
        ・上端の行のセルで検索プラスcontrolプラスAltキーを押しながら下矢印キーを押すと 上にセルはありません と読みあげる。
        ・下端の行のセルで検索プラスcontrolプラスAltキーを押しながら下矢印キーを押すと 下にセルはありません と読みあげる。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
   tester: 四方田正夫
@@ -5961,6 +6257,7 @@
        
        マーケティング部連絡先一覧 表「マーケティング部連絡先一覧」（5x5）検索プラスcontrolプラスAltキーを押しながら矢印キーを押して、セル間を移動します。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
   tester: 四方田正夫
@@ -5994,6 +6291,7 @@
        
        Twitter アクセス済み リンク 行5列5 ステファニー・ウェン 検索プラススペースキーで有効にします。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
   tester: 四方田正夫
@@ -6027,6 +6325,7 @@
        
        Twitter リンク 行4列5 SNS 検索プラススペースキーで有効にします。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
   tester: 四方田正夫
@@ -6056,6 +6355,7 @@
        
        Gorden 行4列2
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
   tester: 四方田正夫
@@ -6085,6 +6385,7 @@
        
        City 行1列4
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
   tester: 四方田正夫
@@ -6105,6 +6406,7 @@
        
        15パーセント 行3列3
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
   tester: 四方田正夫
@@ -6159,6 +6461,7 @@
        人間と果物のかかわり 見出し2
        古くから人間は三点リーダー
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
   tester: 四方田正夫
@@ -6213,6 +6516,7 @@
        人間と果物のかかわり 見出し1
        古くから人間は三点リーダー
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
   tester: 四方田正夫
@@ -6242,6 +6546,7 @@
        スイカの発見 見出し6
        人間と果物のかかわり 見出し2
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
   tester: 四方田正夫
@@ -6280,6 +6585,7 @@
        住所: テキスト編集
        :電話番号 テキスト編集
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
   tester: 四方田正夫
@@ -6321,6 +6627,7 @@
        田中アパート チェックボックス オフ 検索プラススペースキーで切り替えます。
        佐藤マンション チェックボックス オフ 検索プラススペースキーで切り替えます。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
   tester: 四方田正夫
@@ -6359,6 +6666,7 @@
        すっきり抹茶タイプ、選択されたラジオボタン 4分の3 検索プラススペースキーで切り替えます。
        はちみつがけタイプ、選択されたラジオボタン 4分の4 検索プラススペースキーで切り替えます。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
   tester: 四方田正夫
@@ -6380,6 +6688,7 @@
        検索 テキスト編集
        このサイト内 検索範囲を選択 ボタン ポップアップあり 折りたたみ表示中 検索プラススペースキーで有効にします。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
   tester: 四方田正夫
@@ -6409,6 +6718,7 @@
        市内局番 テキスト編集
        加入者番号 テキスト編集
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
   tester: 四方田正夫
@@ -6434,6 +6744,7 @@
        
        会員数の遷移グラフ 画像
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
   tester: 四方田正夫
@@ -6472,6 +6783,7 @@
        
        ※次のリスト項目 (li) に移動する機能は提供されていない
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: ”リストに2件の項目”と読み上げている
   reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
   tester: 四方田正夫
@@ -6509,6 +6821,7 @@
        
        ※次のリスト項目 (li) に移動する機能は提供されていない
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: ”箇条書き”、”リストに3件の項目”と読み上げている
   reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
   tester: 四方田正夫
@@ -6554,6 +6867,7 @@
        似ている言葉として閃光がある。
        詳細については文末の用語集をご参照ください。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
   tester: 四方田正夫
@@ -6585,6 +6899,7 @@
        そして、犬はとても従順な動物です。
        さらに、亀は長生きする動物です。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
   tester: 四方田正夫
@@ -6619,6 +6934,7 @@
        そして、犬はとても従順な動物です。
        さらに、亀は長生きする動物です。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
   tester: 四方田正夫
@@ -6649,6 +6965,7 @@
        どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。
        夏目漱石はこのほかにも、「坊っちゃん」や「三四郎」など多くの作品を著しています。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
   tester: 四方田正夫
@@ -6677,6 +6994,7 @@
        ヘレン・ケラーは言いました、 「自己憐憫は私たちの最悪の敵です。もし、それに自らを委ねるなら、 私たちは世の中で決して賢明なことができないでしょう。」と。この言葉は私の中で
        とても強く印象に残っています。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
   tester: 四方田正夫
@@ -6701,6 +7019,7 @@
        亜鉛イオンは Zn
        2+
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
   tester: 四方田正夫
@@ -6726,6 +7045,7 @@
        2
        O です。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
   tester: 四方田正夫
@@ -6752,6 +7072,7 @@
        →デフォルトの言語がボタンのラベルに表示される。リストから別の言語を選択する。
        →選択した新しい言語の音声が再生される。完了したら、Ctrl+W キーを押しChromeVoxのオブション画面を閉じる。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
   tester: 四方田正夫
@@ -6781,6 +7102,7 @@
        
        詳細はウェブサイトをご確認ください。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment: 「このページは承認されていないソースからのスクリプトを読み込もうとしています」とアドレスバーにアラートが示される。この時点で iframe 要素の title 属性値も代替コンテンツを知るための何らかの手段も不明である。そのためAlertダイアログで”安全でないスクリプトを読み込む”が、iframe 要素の title 属性値も代替コンテンツを知るための何らかの手段も不明のままである。
   reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
   tester: 四方田正夫
@@ -6801,6 +7123,7 @@
        
        インラインフレームの中で検索キー＋左矢印キーを押すと、インラインフレームの中の最初に移動する。次に検索キー＋上矢印キーを押すとインラインフレームの前の要素にフォーカスが移動する。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
   tester: 四方田正夫
@@ -6845,6 +7168,7 @@
        川端康成、選択されていないラジオボタン 1分の1 検索プラススペースキーで切り替えます。
        正解はウェブサイトをご確認ください。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 四方田正夫
   date: 2019/01/14
@@ -6900,6 +7224,7 @@
         森鴎外、チェックボックス オフ 検索プラススペースキーで切り替えます。
        （＊2以下省略）
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 四方田正夫
   date: 2019/01/14
@@ -6930,6 +7255,7 @@
        メールアドレス: テキスト編集
        記入が済みましたら「お支払い情報の選択」へお進みください。フォームの外に出ました。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 四方田正夫
   date: 2019/01/14
@@ -6949,6 +7275,7 @@
        
        箇条書き ウェブアクセシビリティ基板委員会の詳細は こちら アクセス済み リンク。リスト項目 リストに1件の項目
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 四方田正夫
   date: 2019/01/14
@@ -6969,6 +7296,7 @@
        JIS X 8341-3 改正 見出し3
        2016年3月、JIS X 8341-3が改正されました。[続きを読む三点リーダー] リンク アクセス済み
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 四方田正夫
   date: 2019/01/14
@@ -7012,6 +7340,7 @@
        7,400円 リンク 行2列6 E社 検索プラススペースキーで有効にします。
        右にセルはありません。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 四方田正夫
   date: 2019/01/14
@@ -7044,6 +7373,7 @@
        箇条書き お客様の声 リンク リスト項目
        箇条書き ご予約 リンク リスト項目
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment: しかし検索キー＋Shiftキー＋hキーで前の見出しにフォーカスを戻し読み上げることはできる。
   tester: 四方田正夫
   date: 2019/01/14
@@ -7072,6 +7402,7 @@
        (PDF) リンク リスト項目
        (RTF) リンク リスト項目
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 四方田正夫
   date: 2019/01/14
@@ -7109,6 +7440,7 @@
        チョコレートケーキ メニュー項目 9分の9
        （下矢印キーを押しても反応しない）
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 四方田正夫
   date: 2019/01/14
@@ -7124,6 +7456,7 @@
       リンク「ホーム」を選択した時、「ナビゲーション ランドマーク」と読み上げた。
       リンク「ニュース一覧」を選択した後、リンク「お問合せ」を選択すると、「ナビゲーション ランドマーク」と読み上げた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 諸熊
   date: 2020/12/17
@@ -7139,6 +7472,7 @@
       リンク「ホーム」を選択した時、「ナビゲーション ランドマーク」と読み上げた。
       リンク「ニュース一覧」を選択した後、リンク「お問合せ」を選択すると、「ナビゲーション ランドマーク」と読み上げた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 諸熊
   date: 2020/12/17
@@ -7154,6 +7488,7 @@
       リンク「ホーム」を選択した時、「ナビゲーション ランドマーク」と読み上げた。
       リンク「ニュース一覧」を選択した後、リンク「お問合せ」を選択すると、「ナビゲーション ランドマーク」と読み上げた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 諸熊
   date: 2020/12/17
@@ -7182,6 +7517,7 @@
       点滅 (blinking), 用語 注意を引く意図で、二つの視覚的な状態を交互に切り替えること。, 定義
       似ている言葉として閃光がある。, 定義リストの終わり, 定義
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 桝田 草一
   date: 2020/12/17
@@ -7214,6 +7550,7 @@
       川端康成, ラジオボタン, unchecked
       坊っちゃんの作者は？, 森鴎外, ラジオボタン, unchecked, 3の3
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注] テスト手順に問題があり、適切に判定できていません。'
   tester: 桝田 草一
@@ -7243,6 +7580,7 @@
       アーネスト・ヘミングウェイ, チェックボックス, unchecked, Double tap to toggle settings
       チャールズ・ディケンズ, チェックボックス, unchecked, Double tap to toggle settings
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注] テスト手順に問題があり、適切に判定できていません。'
   tester: 桝田 草一
@@ -7257,6 +7595,7 @@
   - procedure: テストコードのファイルリンクから遷移
     actual: タブキーで操作するとナビゲーションランドマーク、ホームリンクと順に読み上げられた
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注] テスト手順に問題があり、適切に判定できていません。'
   tester: 佐々木 将
@@ -7271,6 +7610,7 @@
   - procedure: テストコードのファイルリンクから遷移
     actual: タブキーで操作するとナビゲーションランドマーク、組織リンクと順に読み上げられ、次のNAV要素のリンクが順に読み上げられる
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注] テスト手順に問題があり、適切に判定できていません。'
   tester: 佐々木 将
@@ -7285,6 +7625,7 @@
   - procedure: テストコードのファイルリンクから遷移
     actual: ページを開くと見出しレベル１から順にfigcaptionの内容と代替テキストの内容とp タグの内容が読み上げられるがfigure 要素の判別は不可
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 佐々木 将
   date: 2020/12/17
@@ -7298,6 +7639,7 @@
   - procedure: テストコードのファイルリンクから遷移
     actual: ページを開くと見出しの後にメインランドマークWAIC の最新情報はと読み上げられ順に読み上げられるがmain ランドマークの終了位置は読み上げられない
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 佐々木 将
   date: 2020/12/17
@@ -7311,6 +7653,7 @@
   - procedure: テストコードのファイルリンクから遷移
     actual: ページを開くと見出しの後にメインランドマークWAIC の最新情報はと読み上げられ順に読み上げられるがmain ランドマークの終了位置は読み上げられない
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 佐々木 将
   date: 2020/12/17
@@ -7324,6 +7667,7 @@
   - procedure: テストコードのファイルリンクから遷移
     actual: ページを開くと見出しの後にメインランドマークWAIC の最新情報はと読み上げられ順に読み上げられるがmain ランドマークの終了位置は読み上げられない
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 佐々木 将
   date: 2020/12/17
@@ -7337,6 +7681,7 @@
   - procedure: テストコードのリンクから遷移
     actual: 読み上げが開始され、mainランドマークの箇所がわかるように読み上げられる
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注] テスト手順に問題があり、適切に判定できていません。'
   tester: 小出淳子
@@ -7354,6 +7699,7 @@
   - procedure: M キーを押した
     actual: リンク「ホーム」へ移動し、「ナビゲーション ランドマーク」と読み上げた
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 諸熊
   date: 2020/12/17
@@ -7370,6 +7716,7 @@
   - procedure: M キーを押した
     actual: リンク「ホーム」へ移動し、「ナビゲーション ランドマーク」と読み上げた
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 諸熊
   date: 2020/12/17
@@ -7386,6 +7733,7 @@
   - procedure: M キーを押した
     actual: リンク「ホーム」へ移動し、「ナビゲーション ランドマーク」と読み上げた
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 諸熊
   date: 2020/12/17
@@ -7405,6 +7753,7 @@
   - procedure: テキスト「セッション1の様子」を選択した
     actual: ユニークな要素であることは読み上げなかった
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注] テスト手順に問題があり、適切に判定できていません。'
   tester: 諸熊
@@ -7425,6 +7774,7 @@
   - procedure: テキスト「セッション1の様子」を選択した
     actual: ユニークな要素であることは読み上げなかった
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注] テスト手順に問題があり、適切に判定できていません。'
   tester: 諸熊
@@ -7445,6 +7795,7 @@
   - procedure: テキスト「セッション1の様子」を選択した
     actual: ユニークな要素であることは読み上げなかった
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注] テスト手順に問題があり、適切に判定できていません。'
   tester: 諸熊
@@ -7463,6 +7814,7 @@
     actual: |
       「メイン ランドマーク」と読み上げた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 諸熊
   date: 2020/12/17
@@ -7480,6 +7832,7 @@
     actual: |
       「メイン ランドマーク」と読み上げた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 諸熊
   date: 2020/12/17
@@ -7497,6 +7850,7 @@
     actual: |
       「メイン ランドマーク」と読み上げた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 諸熊
   date: 2020/12/17
@@ -7514,6 +7868,7 @@
     actual: |
       「メイン ランドマーク」と読み上げた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 諸熊
   date: 2020/12/17
@@ -7531,6 +7886,7 @@
     actual: |
       「メイン ランドマーク」と読み上げた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 諸熊
   date: 2020/12/17
@@ -7548,6 +7904,7 @@
     actual: |
       「メイン ランドマーク」と読み上げた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 諸熊
   date: 2020/12/17
@@ -7568,6 +7925,7 @@
     actual: |
       「メイン ランドマーク」と読み上げた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 諸熊
   date: 2020/12/17
@@ -7588,6 +7946,7 @@
     actual: |
       「メイン ランドマーク」と読み上げた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 諸熊
   date: 2020/12/17
@@ -7608,6 +7967,7 @@
     actual: |
       「メイン ランドマーク」と読み上げた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 諸熊
   date: 2020/12/17
@@ -7621,6 +7981,7 @@
   - procedure: リンク「こちら」を選択し、情報読み(CTRL+ALT+H)を実行
     actual: リスト項目内のリンクであることのみを読み上げた。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 諸熊
   date: 2020/12/17
@@ -7634,6 +7995,7 @@
   - procedure: リンク「こちら」を選択し、情報読み(CTRL+ALT+H)を実行
     actual: リスト項目内のリンクであることのみを読み上げた。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 諸熊
   date: 2020/12/17
@@ -7647,6 +8009,7 @@
   - procedure: リンク「こちら」を選択し、情報読み(CTRL+ALT+H)を実行
     actual: リスト項目内のリンクであることのみを読み上げた。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 諸熊
   date: 2020/12/17
@@ -7660,6 +8023,7 @@
   - procedure: リンク「続きを読む」を選択し、情報読み(CTRL+ALT+H)を実行
     actual: フォーカスのある段落については何も読み上げなかった。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 諸熊
   date: 2020/12/17
@@ -7673,6 +8037,7 @@
   - procedure: リンク「続きを読む」を選択し、情報読み(CTRL+ALT+H)を実行
     actual: フォーカスのある段落については何も読み上げなかった。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 諸熊
   date: 2020/12/17
@@ -7686,6 +8051,7 @@
   - procedure: リンク「続きを読む」を選択し、情報読み(CTRL+ALT+H)を実行
     actual: フォーカスのある段落については何も読み上げなかった。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 諸熊
   date: 2020/12/17
@@ -7699,6 +8065,7 @@
   - procedure: 左右スワイプでページ内を移動
     actual: 「ホーム」のリンクで「ホーム　リンク　ナビゲーション　ランドマーク」と読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注] テスト手順に問題があり、適切に判定できていません。'
   tester: 岡上洋子
@@ -7713,6 +8080,7 @@
   - procedure: 上下スワイプを「ランドマーク」に設定して上下にスワイプ
     actual: 上下スワイプで「組織」と「ホーム」のリンクへジャンプしそれぞれ「組織　リンク　ナビゲーション　ランドマーク」「ホーム　リンク　ナビゲーション　ランドマーク」と読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 岡上洋子
   date: 2020/12/17
@@ -7726,6 +8094,7 @@
   - procedure: 左右スワイプでページ内を移動
     actual: figure要素であることは通知されない。figcaptionについても区別できない。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 岡上洋子
   date: 2020/12/17
@@ -7742,6 +8111,7 @@
   - procedure: 上下スワイプを「ランドマーク」に設定して上下にスワイプ
     actual: 上下スワイプで直下の段落へ移動し、段落内テキストを読み上げ後「メイン　ランドマーク」と読み上げる。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注] テスト手順に問題があり、適切に判定できていません。'
   tester: 岡上洋子
@@ -7759,6 +8129,7 @@
   - procedure: 上下スワイプを「ランドマーク」に設定して上下にスワイプ
     actual: 上下スワイプで直下の段落へ移動し、段落内テキストを読み上げ後「メイン　ランドマーク」と読み上げる。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注] テスト手順に問題があり、適切に判定できていません。'
   tester: 岡上洋子
@@ -7776,6 +8147,7 @@
   - procedure: 上下スワイプを「ランドマーク」に設定して上下にスワイプ
     actual: 上下スワイプで直下の段落へ移動し、段落内テキストを読み上げ後「メイン　ランドマーク」と読み上げる。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注] テスト手順に問題があり、適切に判定できていません。'
   tester: 岡上洋子
@@ -7793,6 +8165,7 @@
   - procedure: 2)ナレーターキー＋F5でランドマークの一覧を取得し、ナビゲーションランドマークの場所に移動して先頭からスキャンモード/下矢印キーで読み上げていく
     actual: 2)1行戻ると先頭行の見出しであることがわかり、ナビゲーションランドマークの先頭は2行目であることがわかる。ナビゲーションランドマークの最後尾がどこか、はわからない。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 四方田正夫
   date: 2020/12/17
@@ -7806,6 +8179,7 @@
   - procedure: 1)テストコードのページをブラウザで開き、ナレーターキー＋F5でランドマークの一覧を取得して、ナビゲーションランドマークが２つあることを確認する。上下矢印キーでランドマーク一覧より一方のナビゲーションランドマークの場所に移動して先頭からスキャンモード/下矢印キーで読み上げていく。続いて再度ナレーターキー＋F5でランドマークの一覧を取得し、上下矢印キーでランドマーク一覧よりもう一方のナビゲーションランドマークの場所に移動して先頭からスキャンモード/下矢印キーで読み上げていく。
     actual: 1)最初のナビゲーションランドマークの先頭から1行戻ると先頭行の見出しであることがわかり、最初のナビゲーションランドマークの先頭は2行目であることがわかる。最初のナビゲーションランドマークの最後尾がどこか、はわからない。２つめのナビゲーションランドマークの先頭から1行戻ると5行目のリンクでないテキストであることがわかり、2番目のナビゲーションランドマークの先頭は6行目のリンクテキストであることがわかる。2番目のナビゲーションランドマークの最後尾がどこか、はわからない。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   reviewer_comment: '[WAIC注] テスト手順に問題があり、適切に判定できていません。'
   tester: 四方田正夫
@@ -7826,6 +8200,7 @@
       2.figure 要素の開始位置及び終了位置を知るための何らかの手段が提供されている
       3.figcaption 要素の内容が他の要素と区別できる何らかの手段が提供されている
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 四方田正夫
   date: 2020/12/17
@@ -7851,6 +8226,7 @@
       下から上に移動すると以下の行が見つかる。
       「メイン ランドマーク セミナーなどのお知らせも行っています。」
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 西本卓也
   date: 2020/12/17
@@ -7876,6 +8252,7 @@
       下から上に移動すると以下の行が見つかる。
       「メイン ランドマーク セミナーなどのお知らせも行っています。」
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 西本卓也
   date: 2020/12/17
@@ -7901,6 +8278,7 @@
       下から上に移動すると以下の行が見つかる。
       「メイン ランドマーク セミナーなどのお知らせも行っています。」
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 西本卓也
   date: 2020/12/17
@@ -7926,6 +8304,7 @@
       下から上に移動すると以下の行が見つかる。
       「メイン ランドマーク セミナーなどのお知らせも行っています。」
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 西本卓也
   date: 2020/12/17
@@ -7944,6 +8323,7 @@
       逆に、リンク「ニュース一覧」からも右フリック1回。
     actual: 「お問い合わせ リンク エンド ナビゲーション」と読み上げた。逆の場合も同様に読み上げた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: SAWADA STANDARD DESIGN
   date: 2020/12/17
@@ -7957,6 +8337,7 @@
   - procedure: リンク「組織」から縦フリック1回。
     actual: 次のランドマークにジャンプし、「ホーム リンク ナビゲーション ランドマーク」と読み上げた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: SAWADA STANDARD DESIGN
   date: 2020/12/17
@@ -7976,6 +8357,7 @@
   - procedure: 見出し「2017年度第1回WAICセミナー」から右フリックで各要素を順次読み上げ。
     actual: 「セッション1の様子 タブレットを手にプレゼンする伊敷の写真 加工した木材 成人 演壇 今後のWAICセミナー開催予定については以下をご参照ください。」とだけ読み上げた。figure要素と他の要素の区別はつかない。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: SAWADA STANDARD DESIGN
   date: 2020/12/17
@@ -7998,6 +8380,7 @@
     procedure: 見出しジャンプコマンド('H'キー)で見出しにジャンプし、確認した。
     actual: 見出しレベルを正しく読み上げた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 中野利保
   date: 2019/02/19
@@ -8020,6 +8403,7 @@
     procedure: 仮想カーソル移動コマンド(Ctrl+下矢印キー)、情報読みコマンド(Alt+Ctrl+G)で確認した。
     actual: 全て"見出しレベル1"と読み上げた。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 中野利保
   date: 2019/02/20
@@ -8034,6 +8418,7 @@
     procedure: H'キーで次の見出し、Shift+'H'キーで前の見出しに移動した。
     actual: 見出しにジャンプできた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 中野利保
   date: 2019/02/20
@@ -8056,6 +8441,7 @@
     procedure: TABキーで4番目のテキスト入力フィールドにフォーカス移動した。
     actual: 4番目のテキストフィールドは、":電話番号の文字入力"と読み上げられ、"ハイフンは不要"は読み上げられなかった。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 中野利保
   date: 2019/02/20
@@ -8074,6 +8460,7 @@
     procedure: TABキーでフォーカス移動した
     actual: '"3."のチェックボックスは"佐藤マンション"と読み上げられた。'
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 中野利保
   date: 2019/02/26
@@ -8091,6 +8478,7 @@
   - procedure: “3.” のラジオボタンにフォーカスが移動すると、 “期間限定” は読み上げられない
     actual: '"3."のラジオボタンに移動すると、"すっきり抹茶タイプ"のみ読み上げられ、"期間限定"は読み上げられなかった。'
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 中野利保
   date: 2019/02/26
@@ -8105,6 +8493,7 @@
     procedure: TABキーでセレクトメニューにフォーカスを移動した。
     actual: '"検索範囲を選択"が読み上げられた。'
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 中野利保
   date: 2019/02/26
@@ -8119,6 +8508,7 @@
     procedure: TABキーでテキスト入力フィールドにフォーカスを移動した。
     actual: 順番に"市外局番の文字入力"、"市内局番の文字入力"、"加入者番号の文字入力"と読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 中野利保
   date: 2019/02/26
@@ -8136,6 +8526,7 @@
   - expected: longdesc 属性の値として指定されたリンク先の記述内容を知るための何らかの手段が提供されている
     actual: リンク先を知ることはできない
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 中野利保
   date: 2019/02/28
@@ -8160,6 +8551,7 @@
   - expected: リスト項目 (li) の開始位置及び終了位置を知るための何らかの手段が提供されている
     actual: リスト項目 (li) の開始位置及び終了位置を知るための手段はない
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 中野利保
   date: 2019/03/13
@@ -8180,6 +8572,7 @@
   - expected: リスト項目 (li) の開始位置及び終了位置を知るための何らかの手段が提供されている
     actual: リスト項目 (li) の開始位置及び終了位置を知るための何らかの手段はない
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 中野利保
   date: 2019/03/13
@@ -8203,6 +8596,7 @@
   - expected: dd 要素の開始位置及び終了位置を知るための何らかの手段が提供されている
     actual: dd 要素の開始位置及び終了位置を知るための何らかの手段はない
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 中野利保
   date: 2019/03/13
@@ -8222,6 +8616,7 @@
   - procedure: タブキーを押して「川端康成」を選択した。
     actual: 「川端康成 ラジオ1」と読み上げられた。「坊っちゃんの作者は？」に所属するかどうかは読み上げからは判断できなかった。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 諸熊浩人
   date: 2021/09/28
@@ -8241,6 +8636,7 @@
   - procedure: ローターをフォームコントロールにしてページ最上部から「川端康成」に到達するまでスワイプ
     actual: 「川端康成, ラジオボタン, チェックマークが付きました」と読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: '[WAIC注] 期待する結果3については、適切に判定できていません。'
   tester: 桝田 草一
   date: 2021/09/28
@@ -8260,6 +8656,7 @@
   - procedure: 上下矢印キーで移動して「川端康成」に移動した。
     actual: 「グループの外  ラジオボタン  チェックなし    川端康成」と読み上げた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: 3番はFキーによる移動ではグループの外であることを把握できなかった。
   tester: 西本卓也
   date: 2021/09/28
@@ -8279,6 +8676,7 @@
   - procedure: ページの先頭からCtrl+下矢印キーでラジオボタンに移動
     actual: 「川端康成の ラジオボタン 選択 チェック」と読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: '[WAIC注] 期待する結果3については、適切に判定できていません。'
   tester: 佐々木　将
   date: 2021/09/28
@@ -8292,6 +8690,7 @@
   - procedure: 右スワイプでarea要素に移動。リンクであることを確認し、ダブルタップ。
     actual: 「4F雑貨書籍」ページにリンクした。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: SAWADA STANDARD DESIGN
   date: 2021/09/28
@@ -8305,6 +8704,7 @@
   - procedure: 右スワイプでa要素に移動。
     actual: 「ホーム リンク ウェブアクセシビリティ基盤委員会公式サイト ダブルタップすると有効になります。リンクを使用できます。上にスワイプしてから右にスワイプで確認できます。」と読み上げた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: SAWADA STANDARD DESIGN
   date: 2021/09/28
@@ -8318,6 +8718,7 @@
   - procedure: テストコード（テストファイルへのリンク）のリンクから移動。
     actual: 「ウェブアクセシビリティ基盤委員会 ウェブ表示」と読み上げた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: SAWADA STANDARD DESIGN
   date: 2021/09/28
@@ -8334,6 +8735,7 @@
   - procedure: 矢印キーを押してコンテンツを順に読み上げた。
     actual: 「ニュース一覧」から一つ前に戻った時に、「目次領域」と読み上げたため、目次領域の開始と終了地点がわかった。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 諸熊
   date: 2022/03/04
@@ -8347,6 +8749,7 @@
   - procedure: ランドマークへ移動するショートカット「D」キーを押下
     actual: 「目次領域」と読み上げられる「組織」及び、「ホーム」へと移動した。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 諸熊
   date: 2022/03/04
@@ -8363,6 +8766,7 @@
   - procedure: 一項目ずつキーボードで移動した。
     actual: 1の回答と同様。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 立川くるみ
   date: 2022/03/04
@@ -8382,6 +8786,7 @@
   - procedure: ページ内を全て読み上げた。
     actual: figcaption 要素であることは通知されなかった。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: 諸熊
   date: 2022/03/04
@@ -8398,6 +8803,7 @@
   - procedure: ページ内を矢印キーを使って行き来した。
     actual: 最後の文から、「セミナーなどのお知らせも行っています。」を選択した時に、「メイン領域」と読み上げたことから、開始位置、終了位置を特定することができた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 諸熊
   date: 2022/03/04
@@ -8411,6 +8817,7 @@
   - procedure: テストサイトにVoiceOverを立ち上げた状態で入った。スクリーンカーテンオンとオフ状態を両方試みた。通しで読むことと、ローターをランドマークに合わせて移動することと両方試みた。
     actual: ローターをランドマークに合わせて移動した場合、「組織　リンク　ナビゲーションランドマーク　「2個のランドマーク」情報　リンク　ランドマーク」と読み上げられた。なお、「2個のランドマーク」は読んだり読み上げられなかったりした。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: そもそもこのランドマークが配置されているウェブサイトがほとんどない上に、ランドマークが何を意味するのか検索をかけても横浜のランドマークしか出てこなかった経験があります。よって、デフォルトでローターにランドマークが入っていたかもしれませんが、外していました。
   tester: 立川くるみ
   date: 2022/03/04
@@ -8426,6 +8833,7 @@
       「フォント」ボタンをフォーカスすると、「フォント ボタン」「このページで使用するフォントフェイスとサイズの選択 ボタンを押下しフォントを選択してください」と続けて読み上げられた。
       同様に、「色」、「カスタマイズ」ボタンをフォーカスした時にも、ボタン名の後、説明文が読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 諸熊
   date: 2022/03/04
@@ -8441,6 +8849,7 @@
       「閉じる ボタン」に続いて、「このウィンドウを閉じると、入力された情報は破棄され、メインページに戻ります。
       」という音声が読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 諸熊
   date: 2022/03/04
@@ -8460,6 +8869,7 @@
   - procedure: 1と同様
     actual: そもそも要素があるかどうかも認識困難。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment: |-
     （項目移動、通し読みでは読まなかった。要素をタップで読み上げた）
 
@@ -8494,6 +8904,7 @@
       上矢印キーで読み上げる内容
       「メイン ランドマーク    セミナーなどのお知らせも行っています。」
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 西本卓也
   date: 2022/03/04
@@ -8514,6 +8925,7 @@
       Shift+Dで読み上げる内容
       「メイン ランドマーク    WAIC の最新情報は以下をご参照ください。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: ランドマークが main であるかどうかを区別していません。
   tester: 西本卓也
   date: 2022/03/04
@@ -8527,6 +8939,7 @@
   - procedure: Dを押す。
     actual: メイン ランドマーク    WAIC の最新情報は以下をご参照ください。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: ページを開いた直後に現在位置である1個目のランドマークにすでにいるため、Dを押すと2個目のランドマークである main に移動しています。
   tester: 西本卓也
   date: 2022/03/04
@@ -8540,6 +8953,7 @@
   - procedure: buttonにDOM順にフォーカス
     actual: 「閉じる、ボタン、このウィンドウを閉じると、入力された情報は破棄され、メインページに戻ります」
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 桝田 草一
   date: 2022/03/04
@@ -8553,6 +8967,7 @@
   - procedure: タップしてinputにフォーカス
     actual: 「名前, テキストフィールド, aria-describedbyでリンクされたこの分野のちょっとした指示です。」
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 桝田 草一
   date: 2022/03/04
@@ -8569,6 +8984,7 @@
       「色, ボタン, このページで使用する色を選択」
       「カスタマイズ, ボタン, このページで使われているレイアウトやスタイルをカスタマイズ」
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 桝田 草一
   date: 2022/03/04
@@ -8582,6 +8998,7 @@
   - procedure: DOM順にinputにフォーカス
     actual: 「名前, テキストフィールド, 名前は任意です。」
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 桝田 草一
   date: 2022/03/04
@@ -8598,6 +9015,7 @@
       「色, ボタン, このページで使用する色を選択」
       「カスタマイズ, ボタン, このページで使われているレイアウトやスタイルをカスタマイズ」
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 桝田 草一
   date: 2022/03/04
@@ -8611,6 +9029,7 @@
   - procedure: buttonにDOM順にフォーカス
     actual: 「閉じる、ボタン、このウィンドウを閉じると、入力された情報は破棄され、メインページに戻ります」
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 桝田 草一
   date: 2022/03/04
@@ -8627,6 +9046,7 @@
       「色の選択, ボタン, このページで使用する色を選択」
       「その他のカスタマイズの選択, ボタン, このページで使われているレイアウトやスタイルをカスタマイズ」
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: '[WAIC注] 適切に判定できていません。'
   tester: 桝田 草一
   date: 2022/03/04
@@ -8643,6 +9063,7 @@
       「色, ボタン, このページで使用する色を選択 ボタンを押下し色を選択してください」
       「カスタマイズ, ボタン, このページで使われているレイアウトやスタイルをカスタマイズ ボタンを押下しレイアウトやスタイルを選択してください」
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 桝田 草一
   date: 2022/03/04
@@ -8656,6 +9077,7 @@
   - procedure: buttonにDOM順にフォーカス
     actual: 「閉じるの 確認 このウィンドウを閉じると、入力された情報は破棄され、メインページに戻ります」
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 桝田 草一
   date: 2022/03/04
@@ -8669,6 +9091,7 @@
   - procedure: inputにDOM順にフォーカス
     actual: 「名前の 文字入力 aria-describedbyでリンクされたこの分野のちょっとした指示です。」
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 桝田 草一
   date: 2022/03/04
@@ -8685,6 +9108,7 @@
       「色の選択の 確認 このページで使用する色を選択」
       「カスタマイズの 確認 このページで使われているレイアウトやスタイルをカスタマイズ」
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 桝田 草一
   date: 2022/03/04
@@ -8698,6 +9122,7 @@
   - procedure: DOM順にinputにフォーカス
     actual: 「名前の 文字入力 名前は任意です。」
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 桝田 草一
   date: 2022/03/04
@@ -8714,6 +9139,7 @@
       「色の 確認 このページで使用する色を選択」
       「カスタマイズの 確認 このページで使われているレイアウトやスタイルをカスタマイズ」
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 桝田 草一
   date: 2022/03/04
@@ -8727,6 +9153,7 @@
   - procedure: buttonにDOM順にフォーカス
     actual: 「閉じるの 確認 このウィンドウを閉じると、入力された情報は破棄され、メインページに戻ります」
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 桝田 草一
   date: 2022/03/04
@@ -8740,6 +9167,7 @@
   - procedure: TalkBackのフォーカスがウェブ表示エリア全体を指した状態で、1本指下フリック
     actual: 「本文 WAIC の最新情報は以下をご参照ください。セミナーなどのお知らせも行っています。」と読み上げた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: SAWADA STANDARD DESIGN
   date: 2022/03/04
@@ -8756,6 +9184,7 @@
       「本文 WAIC の最新情報は以下をご参照ください。」
       「コンテンツの情報 Twitter や Facebook でも情報発信しています。」
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: SAWADA STANDARD DESIGN
   date: 2022/03/04
@@ -8769,6 +9198,7 @@
   - procedure: TalkBackのフォーカスがウェブ表示エリア全体を指した状態で、1本指下フリック
     actual: 「本文 WAIC の最新情報は以下をご参照ください。セミナーなどのお知らせも行っています。」と読み上げた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: SAWADA STANDARD DESIGN
   date: 2022/03/04
@@ -8785,6 +9215,7 @@
       「本文 WAIC の最新情報は以下をご参照ください。」
       「コンテンツの情報 Twitter や Facebook でも情報発信しています。」
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: SAWADA STANDARD DESIGN
   date: 2022/03/04
@@ -8798,6 +9229,7 @@
   - procedure: TalkBackのフォーカスがウェブ表示エリア全体を指した状態で、1本指下フリック
     actual: 「本文 WAIC の最新情報は以下をご参照ください。セミナーなどのお知らせも行っています。」と読み上げた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: SAWADA STANDARD DESIGN
   date: 2022/03/04
@@ -8814,6 +9246,7 @@
       「本文 WAIC の最新情報は以下をご参照ください。」
       「コンテンツの情報 Twitter や Facebook でも情報発信しています。」
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: SAWADA STANDARD DESIGN
   date: 2022/03/04
@@ -8827,6 +9260,7 @@
   - procedure: 1本指右スワイプでボタンに移動。
     actual: 「閉じる ボタン このウィンドウを閉じると、入力された情報は破棄され、メインページに戻ります。ダブルタップで有効になります。」
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: SAWADA STANDARD DESIGN
   date: 2022/03/04
@@ -8840,6 +9274,7 @@
   - procedure: 当該ページを開き、下矢印で読み進む
     actual: 「ウェブアクセシビリティ基盤委員会公開サイト」と読み上げる。他には何も読み上げない。
     judgment: ○
+  environment_type: 音声閲覧環境
   comment: 装飾目的の背景画像を読み上げていないと判断しました。
   tester: 西本 卓也
   date: '2023-08-24'
@@ -8856,6 +9291,7 @@
   - procedure: 下向き矢印を押して、p要素を読んだ
     actual: ウェブアクセシビリティ基盤委員会公開サイト
     judgment: ○
+  environment_type: 音声閲覧環境
   comment: CSSをオフにする手順は一般的には難しいので、オフにしなくてもCSSの背景画像有り無しが比べられる方法に切り替えた方がよい気がします。
   tester: 澤田望
   date: '2023-08-24'
@@ -8881,6 +9317,7 @@
   - procedure: タブキーを押し、[スクリーンリーダーの利用状況]を選択するラジオボタンへとフォーカスを移動
     actual: '[スクリーンリーダーの利用状況  グループ  必須]と読み上げられ、必須であることが伝わる'
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 大塚 勇哉
   date: '2023-08-24'
@@ -8897,6 +9334,7 @@
   - procedure: 当該ページを開き、下矢印で読み進む
     actual: 「リンク　会社概要」と読み上げる。他には何も読み上げない。
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 西本 卓也
   date: '2023-09-28'
@@ -8910,6 +9348,7 @@
   - procedure: 当該ページを開き、下矢印で読み進む
     actual: 「ウェブアクセシビリティ基盤委員会公開サイト」と読み上げる。他には何も読み上げない。
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 西本 卓也
   date: '2023-09-28'
@@ -8926,6 +9365,7 @@
   - procedure: 当該ページを開き、下矢印で読み進む
     actual: 「見出しレベル２ とうきょうと」「見出しレベル２ ひがしきょうみやこ」
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 西本 卓也
   date: '2023-09-28'
@@ -8939,6 +9379,7 @@
   - procedure: 当該ページを開き、下矢印で読み進む
     actual: 「リンク ワシントンが経済成長を刺激する」「リンク 全文表示」の２つを読み上げる
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 西本 卓也
   date: '2023-09-28'
@@ -8952,6 +9393,7 @@
   - procedure: 当該ページを開き、下矢印で読み進む
     actual: 「リンク ワシントンが経済成長を刺激する全文表示」を読み上げる
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 西本 卓也
   date: '2023-09-28'
@@ -8965,6 +9407,7 @@
   - procedure: 当該ページを開き、下矢印で読み進む
     actual: 「リンク ワシントンが経済成長を刺激する全文表示」を読み上げる
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 西本 卓也
   date: '2023-09-28'
@@ -8978,6 +9421,7 @@
   - procedure: 当該ページを開き、下矢印で読み進む
     actual: 「リンク ワシントンが経済成長を刺激する」「全文表示」の２つを読み上げる
     judgment: ○
+  environment_type:
   comment:
   tester: 西本 卓也
   date: '2023-09-28'
@@ -8991,6 +9435,7 @@
   - procedure: 当該ページを開き、右矢印で読み進む
     actual: 「ワシントンが経済成長を刺激する全文表示 リンク」と音声キャプションに表示される
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 西本 卓也
   date: '2023-09-28'
@@ -9010,6 +9455,7 @@
   - procedure: Tabを2回押してフォーカス移動
     actual: 「グループ」
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 西本 卓也
   date: '2023-09-28'
@@ -9029,6 +9475,7 @@
   - procedure: Tabを2回押してフォーカス移動
     actual: 「グループ」
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 西本 卓也
   date: '2023-09-28'
@@ -9048,6 +9495,7 @@
   - procedure: Tabを2回押してフォーカス移動
     actual: 「グループ」
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 西本 卓也
   date: '2023-09-28'
@@ -9067,6 +9515,7 @@
   - procedure: Tabを2回押してフォーカス移動
     actual: 「グループ」
     judgment: ○
+  environment_type:
   comment:
   tester: 西本 卓也
   date: '2023-09-28'
@@ -9080,6 +9529,7 @@
   - procedure: '表示 : ブラウザの設定を変更して画像非表示にし、表示内容を確認'
     actual: 代替テキストや、コンテンツと誤解されるようなファイル名や URL などは表示されず、リンクテキスト “ウェブアクセシビリティ基盤委員会公開サイト” のみが表示される
     judgment: 満たしている
+  environment_type: 視覚閲覧環境
   comment: 視覚閲覧環境
   tester: me_tks
   date: '2023-09-28'
@@ -9093,6 +9543,7 @@
   - procedure: '表示 : ブラウザの設定を変更して画像非表示にし、表示内容を確認'
     actual: 代替テキストや、コンテンツと誤解されるようなファイル名や URL などは表示されず、リンクテキスト “ウェブアクセシビリティ基盤委員会公開サイト” のみが表示される
     judgment: 満たしている
+  environment_type: 視覚閲覧環境
   comment: 視覚閲覧環境
   tester: me_tks
   date: '2023-09-28'
@@ -9106,6 +9557,7 @@
   - procedure: '表示 : ブラウザの設定を変更して画像非表示にし、表示内容を確認'
     actual: 代替テキストや、コンテンツと誤解されるようなファイル名や URL などは表示されず、テキスト “ウェブアクセシビリティ基盤委員会公開サイト” のみが表示される
     judgment: 満たしている
+  environment_type: 視覚閲覧環境
   comment: 視覚閲覧環境
   tester: me_tks
   date: '2023-09-28'
@@ -9119,6 +9571,7 @@
   - procedure: '表示 : ブラウザの設定を変更して画像非表示にし、表示内容を確認'
     actual: アイコン画像の代わりに、代替テキスト “ウェブアクセシビリティ基盤委員会” が表示される
     judgment: 満たしている
+  environment_type: 視覚閲覧環境
   comment: 視覚閲覧環境
   tester: me_tks
   date: '2023-09-28'
@@ -9132,6 +9585,7 @@
   - procedure: '表示 : ブラウザの設定を変更して画像非表示にし、表示内容を確認'
     actual: リンクテキスト “施設ご利用の手引き” に続き、アイコン画像の代替テキスト “PDF ファイル” が表示される
     judgment: 満たしている
+  environment_type: 視覚閲覧環境
   comment: 視覚閲覧環境
   tester: me_tks
   date: '2023-09-28'
@@ -9145,6 +9599,7 @@
   - procedure: 下矢印キーを押して項目を確認
     actual: 各項目がリンクであることは読み上げられるが、イメージマップであることが判別できる情報は読み上げられない
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment: 音声閲覧環境
   tester: yuyaroid
   date: '2023-09-28'
@@ -9161,6 +9616,7 @@
   - procedure: ページの先頭で[g]キーを押して次の画像を探索した
     actual: 「次の画像はありません」と読み上げられ、代替テキストは読み上げられない
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment: 音声閲覧環境
   tester: yuyaroid
   date: '2023-09-28'
@@ -9174,6 +9630,7 @@
   - procedure: 下矢印キーを押してそれぞれの項目を確認
     actual: それぞれのテキストは読み上げられたが、alt属性として設定されていることは読み上げられない
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment: 音声閲覧環境
   tester: yuyaroid
   date: '2023-09-28'
@@ -9187,6 +9644,7 @@
   - procedure: '[tab]キーを押してそれぞれの項目へ移動し、[enter]キーを押してリンク先へ遷移するかを確認した'
     actual: それぞれの項目について、リンク先へと遷移した
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: 音声閲覧環境
   tester: yuyaroid
   date: '2023-09-28'
@@ -9200,6 +9658,7 @@
   - procedure: '[tab]キーを押してそれぞれの項目を確認'
     actual: テキストとともに「リンク」と読み上げられ、リンクであることを判別できる
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: 音声閲覧環境
   tester: yuyaroid
   date: '2023-09-28'
@@ -9216,6 +9675,7 @@
   - procedure: テストファイルを開いた状態で[alt+tab]キーを押し、ブラウザのウインドウのタイトルを読み上げ
     actual: 「ウェブアクセシビリティ基盤委員会 - Google Chrome 2列2の4」と読み上げられ、ページタイトルを確認できる
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: 音声閲覧環境
   tester: yuyaroid
   date: '2023-09-28'
@@ -9229,6 +9689,7 @@
   - procedure: 下矢印キーを押して項目を確認
     actual: リンクテキストの内容が読み上げられた
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: 音声閲覧環境
   tester: yuyaroid
   date: '2023-09-28'
@@ -9242,6 +9703,7 @@
   - procedure: 下矢印キーを押して項目を確認
     actual: リンク画像の代替テキストが読み上げられた
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: 音声閲覧環境
   tester: yuyaroid
   date: '2023-09-28'
@@ -9255,6 +9717,7 @@
   - procedure: テストファイルを操作し、結果を確認。
     actual: “ワシントンが経済成長を刺激する”は表示されず、 “全文表示”のリンクテキストのみが表示される
     judgment: ○
+  environment_type: 視覚閲覧環境
   comment:
   tester: 山崎 規弘
   date: '2023-09-28'
@@ -9268,6 +9731,7 @@
   - procedure: テストファイルを操作し、結果を確認。
     actual: “ワシントンが経済成長を刺激する”は表示されず、 “全文表示”のリンクテキストのみが表示される
     judgment: ○
+  environment_type: 視覚閲覧環境
   comment:
   tester: 山崎 規弘
   date: '2023-09-28'
@@ -9281,6 +9745,7 @@
   - procedure: テストファイルを操作し、結果を確認。
     actual: “ワシントンが経済成長を刺激する”は表示されず、 “全文表示”のリンクテキストのみが表示される
     judgment: ○
+  environment_type: 視覚閲覧環境
   comment:
   tester: 山崎 規弘
   date: '2023-09-28'
@@ -9294,6 +9759,7 @@
   - procedure: テストファイルを操作し、結果を確認。
     actual: “ワシントンが経済成長を刺激する 全文表示” が読み上げられる
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 山崎 規弘
   date: '2023-09-28'
@@ -9307,6 +9773,7 @@
   - procedure: テストファイルを操作し、結果を確認。
     actual: “リンク ワシントンが経済成長を刺激する”と“リンク 全文表示”と別々のリンクとして読み上げられる
     judgment:
+  environment_type: 音声閲覧環境
   comment: 別々のリンクとして読み上げられることを除けば「“ワシントンが経済成長を刺激する 全文表示” が読み上げられる」という期待される結果は満たしているが、ひとつのリンクとして読み上げられるということまで期待されているかわからず、○か×かの判断ができなかった
   tester: 山崎 規弘
   date: '2023-09-28'
@@ -9320,6 +9787,7 @@
   - procedure: テストファイルを操作し、結果を確認。
     actual: “ワシントンが経済成長を刺激する 全文表示” が読み上げられる
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 山崎 規弘
   date: '2023-09-28'
@@ -9333,6 +9801,7 @@
   - procedure: 表示内容を確認
     actual: CSSで文字間隔を調整した2番目のＨ2要素「東京都」の文字間隔の広がりが確認できる
     judgment: ○
+  environment_type: 視覚閲覧環境
   comment:
   tester: 山崎 規弘
   date: '2023-09-28'
@@ -9346,6 +9815,7 @@
   - procedure: 表示内容を確認
     actual: CSSで文字間隔を調整した2番目のＨ2要素「東京都」の文字間隔の広がりが確認できる
     judgment: ○
+  environment_type: 視覚閲覧環境
   comment:
   tester: 山崎 規弘
   date: '2023-09-28'
@@ -9359,6 +9829,7 @@
   - procedure: 表示内容を確認
     actual: CSSで文字間隔を調整した2番目のＨ2要素「東京都」の文字間隔の広がりが確認できる
     judgment: ○
+  environment_type: 視覚閲覧環境
   comment:
   tester: 山崎 規弘
   date: '2023-09-28'
@@ -9377,6 +9848,7 @@
       1.テスト手順(音声閲覧環境) 1 の結果、どちらも「とうきょうと」と読み上げられる
       2.テスト手順(音声閲覧環境) 2 の結果、「とうきょうと」と「ひがし　きょう　みやこ」と異なる読み上げ結果となる
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 山崎 規弘
   date: '2023-09-28'
@@ -9395,6 +9867,7 @@
       1.テスト手順(音声閲覧環境) 1 の結果、どちらも「とうきょうと」と読み上げられる
       2.テスト手順(音声閲覧環境) 2 の結果、「とうきょうと」と「ひがし　きょう　みやこ」と異なる読み上げ結果となる
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 山崎 規弘
   date: '2023-09-28'
@@ -9413,6 +9886,7 @@
       1.テスト手順(音声閲覧環境) 1 の結果、どちらも「とうきょうと」と読み上げられる
       2.テスト手順(音声閲覧環境) 2 の結果、「とうきょうと」と「ひがし　きょう　みやこ」と異なる読み上げ結果となる
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 山崎 規弘
   date: '2023-09-28'
@@ -9426,6 +9900,7 @@
   - procedure: テストファイルを操作し、結果を確認。 ユーザエージェントでスタイルシート無効にし内容を確認
     actual: スタイルシート無効により画像が非表示となる。
     judgment: ○
+  environment_type: 視覚閲覧環境
   comment: スタイルシートの無効化には拡張機能Web Developer を使用
   tester: 山崎 規弘
   date: '2023-09-28'
@@ -9439,6 +9914,7 @@
   - procedure: テストファイルを操作し、結果を確認。 ユーザエージェントでスタイルシート無効にし内容を確認
     actual: スタイルシート無効により画像が非表示となる。
     judgment: ○
+  environment_type: 視覚閲覧環境
   comment: スタイルシートの無効化には拡張機能Web Developer を使用
   tester: 山崎 規弘
   date: '2023-09-28'
@@ -9452,6 +9928,7 @@
   - procedure: テストファイルを操作し、結果を確認。 ユーザエージェントでスタイルシート無効にし内容を確認
     actual: スタイルシート無効により画像が非表示となる。
     judgment: ○
+  environment_type: 視覚閲覧環境
   comment: スタイルシートの無効化には拡張機能Web Developer を使用
   tester: 山崎 規弘
   date: '2023-09-28'
@@ -9465,6 +9942,7 @@
   - procedure: テストファイルを操作し、結果を確認。
     actual: 画像として読み上げられない。
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 山崎 規弘
   date: '2023-09-28'
@@ -9478,6 +9956,7 @@
   - procedure: テストファイルを操作し、結果を確認。
     actual: 画像として読み上げられない。
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 山崎 規弘
   date: '2023-09-28'
@@ -9491,6 +9970,7 @@
   - procedure: テストファイルを操作し、結果を確認。
     actual: 画像として読み上げられない。
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 山崎 規弘
   date: '2023-09-28'
@@ -9506,6 +9986,7 @@
       閉じる、ボタン
       このウィンドウを閉じると、入力された情報は破棄され、メインページに戻ります。
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: SAWADA STANDARD DESIGN
   date: '2023-09-28'
@@ -9521,6 +10002,7 @@
       名前、テキストを編集
       aria-describedbyでリンクされたこの分野のちょっとした指示です。
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: SAWADA STANDARD DESIGN
   date: '2023-09-28'
@@ -9543,6 +10025,7 @@
       カスタマイズ、ボタン
       このページで使われているレイアウトやスタイルをカスタマイズ
     judgment: ○
+  environment_type: 音声閲覧環境
   comment: 3つのボタンでテストをすることになっていますが、何が違うのか不明でした。
   tester: SAWADA STANDARD DESIGN
   date: '2023-09-28'
@@ -9558,6 +10041,7 @@
       名前、テキストを編集
       名前は任意です。
     judgment: ○
+  environment_type: 音声閲覧環境
   comment: |
     「名前は任意です。」について、テストケースでは「隠された」と説明されているが、テストコード上では画面に表示されており、aria-hidden="true" なので意図は分かりますが、やや戸惑います。
   tester: SAWADA STANDARD DESIGN
@@ -9581,6 +10065,7 @@
       カスタマイズ、ボタン
       このページで使われているレイアウトやスタイルをカスタマイズ
     judgment: ○
+  environment_type: 音声閲覧環境
   comment: 3つのボタンでテストをすることになっていますが、何が違うのか不明でした。
   tester: SAWADA STANDARD DESIGN
   date: '2023-09-28'
@@ -9596,6 +10081,7 @@
       閉じる、ボタン
       このウィンドウを閉じると、入力された情報は破棄され、メインページに戻ります。
     judgment: ○
+  environment_type: 音声閲覧環境
   comment: テストケースには「script で生成された aria-describedby 属性」と説明されているが、onload で describedby 属性が挿入されているので、挿入されている感が少ないかもしれません。
   tester: SAWADA STANDARD DESIGN
   date: '2023-09-28'
@@ -9618,6 +10104,7 @@
       その他のカスタマイズの選択、ボタン
       このページで使われているレイアウトやスタイルをカスタマイズ
     judgment: ○
+  environment_type: 音声閲覧環境
   comment: 3つのボタンでテストをすることになっていますが、何が違うのか不明でした。
   tester: SAWADA STANDARD DESIGN
   date: '2023-09-28'
@@ -9640,6 +10127,7 @@
       カスタマイズ、ボタン
       このページで使われているレイアウトやスタイルをカスタマイズ ボタンを押下しレイアウトやスタイルを選択してください
     judgment: ○
+  environment_type: 音声閲覧環境
   comment: 3つのボタンでテストをすることになっていますが、何が違うのか不明でした。
   tester: SAWADA STANDARD DESIGN
   date: '2023-09-28'
@@ -9668,6 +10156,7 @@
       PC-Talker、チェックされていない、チェックボックス
       その他コメント[*]、テキストを編集
     judgment: ○
+  environment_type: 音声閲覧環境
   comment: |-
     操作方法が抽象的すぎて戸惑いました。
     操作が多く、読み上げる量が多いのに、記入するセルが一つだけなので記入しにくいかもしれないです。
@@ -9683,6 +10172,7 @@
   - procedure: 「設定」の「サイトのアクセス許可」欄から「イメージ」をクリックして「すべて表示」をオフ
     actual: 代替テキストは無く、リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみが表示された
     judgment: 満たしている
+  environment_type:
   comment:
   tester: akimayu
   date: '2023-09-28'
@@ -9696,6 +10186,7 @@
   - procedure: NVDAでウィンドウにフォーカスを当て、下矢印キーで読み上げを行った
     actual: アイコン画像の代替テキストは何も読み上げられず、リンク “ウェブアクセシビリティ基盤委員会公開サイト”と読み上げられた
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: akimayu
   date: '2023-09-28'
@@ -9709,6 +10200,7 @@
   - procedure: 「設定」の「サイトのアクセス許可」欄から「イメージ」をクリックして「すべて表示」をオフ
     actual: リンクテキスト “ウェブアクセシビリティ基盤委員会公開サイト” のみが表示された
     judgment: 満たしている
+  environment_type:
   comment:
   tester: akimayu
   date: '2023-09-28'
@@ -9722,6 +10214,7 @@
   - procedure: NVDAでウィンドウにフォーカスを当て、下矢印キーで読み上げを行った
     actual: アイコン画像の代替テキストは何も読み上げられず、リンク “ウェブアクセシビリティ基盤委員会公開サイト”と読み上げられた
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: akimayu
   date: '2023-09-28'
@@ -9735,6 +10228,7 @@
   - procedure: 「設定」の「サイトのアクセス許可」欄から「イメージ」をクリックして「すべて表示」をオフ
     actual: 代替テキストは無く、テキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみが表示された
     judgment: 満たしている
+  environment_type:
   comment:
   tester: akimayu
   date: '2023-09-28'
@@ -9748,6 +10242,7 @@
   - procedure: NVDAでウィンドウにフォーカスを当て、下矢印キーで読み上げを行った
     actual: アイコン画像の代替テキストは何も読み上げられず、 “ウェブアクセシビリティ基盤委員会公開サイト”と読み上げられた
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: akimayu
   date: '2023-09-28'
@@ -9761,6 +10256,7 @@
   - procedure: 「設定」の「サイトのアクセス許可」欄から「イメージ」をクリックして「すべて表示」をオフ
     actual: 画像のリンク切れアイコンとともに、代替テキスト"ウェブアクセシビリティ基盤委員会"が表示される
     judgment: 満たしている
+  environment_type:
   comment:
   tester: akimayu
   date: '2023-09-28'
@@ -9774,6 +10270,7 @@
   - procedure: NVDAでウィンドウにフォーカスを当て、下矢印キーで読み上げを行った
     actual: リンク・画像と読み上げられ、“ウェブアクセシビリティ基盤委員会 公式サイト” と読み上げられた
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: akimayu
   date: '2023-09-28'
@@ -9791,6 +10288,7 @@
       (視覚閲覧環境)
       代替テキストや、コンテンツと誤解されるようなファイル名や URL などは表示されず、リンクテキスト “ウェブアクセシビリティ基盤委員会公開サイト” のみが表示された
     judgment: ○
+  environment_type:
   comment:
   tester: yamanaka
   date: '2024-01-18'
@@ -9809,6 +10307,7 @@
       ナビゲーションの先頭に来たとき「ホーム　リンク　ナビゲーション　ランドマーク」と読み上げられた。
       ナビゲーションの末端に来たときは「お問合せ　リンク　エンドナビゲーション」と読み上げられた。
     judgment: ○
+  environment_type:
   comment:
   tester: yamanaka
   date: '2024-01-18'
@@ -9826,6 +10325,7 @@
       main要素に差し掛かると「メイン　ランドマーク」と読み上げられた。
       main要素が終了する際「エンド　メイン」と読み上げられた
     judgment: ○
+  environment_type:
   comment:
   tester: yamanaka
   date: '2024-01-18'
@@ -9841,6 +10341,7 @@
       ブラウザの設定を変更して画像非表示にし、表示内容を確認
     actual: '画像の代わりに代替テキスト “送信送信”と表示された。 '
     judgment: ×
+  environment_type:
   comment:
   tester: yamanaka
   date: '2024-01-18'
@@ -9865,6 +10366,7 @@
        見出しレベル 6 : スイカの発見 
        見出しレベル 2 : 人間と果物のかかわり
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: me_tks_
   date: '2024-01-18'
@@ -9889,6 +10391,7 @@
        見出しレベル 6 : スイカの発見 
        見出しレベル 2 : 人間と果物のかかわり
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: me_tks_
   date: '2024-01-18'
@@ -9906,6 +10409,7 @@
        例えば、見出しジャンプや見出しリストのような機能が実装されていれば OK と判断
     actual: 直前または直後の見出し要素に移動するための何らかの手段が提供されている
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: me_tks_
   date: '2024-01-18'
@@ -9930,6 +10434,7 @@
        “4.” のテキスト入力フィールド : ラベル “電話番号” 
        2. “4.” のテキスト入力フィールドにフォーカスを移動すると、 “ハイフンは不要” は読み上げられない
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: me_tks_
   date: '2024-01-18'
@@ -9953,6 +10458,7 @@
        “3.” のチェックボックス : ラベル “佐藤マンション” 
        2. “3.” のチェックボックスにフォーカスを移動すると、 “定期借家” は読み上げられない
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: me_tks_
   date: '2024-01-18'
@@ -9977,6 +10483,7 @@
        “4.” のラジオボタン : ラベル “はちみつがけタイプ” 
        2. “3.” のラジオボタンにフォーカスが移動すると、 “期間限定” は読み上げられない
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: me_tks_
   date: '2024-01-18'
@@ -9990,6 +10497,7 @@
   - procedure: テストファイルを操作し、結果を確認
     actual: セレクトメニューにフォーカスを移動すると、title 属性値 “検索範囲を選択” が読み上げられる
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: me_tks_
   date: '2024-01-18'
@@ -10007,6 +10515,7 @@
        “2.” : “市内局番”
        “3.” : “加入者番号”
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: me_tks_
   date: '2024-01-18'
@@ -10023,6 +10532,7 @@
        1. 画像に longdesc 属性が指定されていることを知るための何らかの手段が提供されている
        2. longdesc 属性の値として指定されたリンク先の記述内容を知るための何らかの手段が提供されている
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: me_tks_
   date: '2024-01-18'
@@ -10055,6 +10565,7 @@
       下記に関しては満たされていない
        ・順序付きリスト (ol) であること及びリスト項目 (li) の数を知る何らかの手段が提供されている
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: me_tks_
   date: '2024-01-18'
@@ -10071,6 +10582,7 @@
   - procedure: さらに上下の矢印キーで移動した。
     actual: 上矢印で戻ると「フルーツ グループ みかん 4の4 レベル2」と読み上げた。再度下矢印で移動するとまた「野菜 グループ にんじん 3の1 レベル2」と読み上げた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 西本卓也
   date: '2024-01-18'
@@ -10087,6 +10599,7 @@
   - procedure: NVDAのブラウズモードで「ナビゲーション ランドマーク リンク ホーム」の場所でコンマ（コンテナの直後に移動）を押し、さらに上矢印を押した。
     actual: 「ニュース一覧 リンク」に移動し、上矢印で「ナビゲーション ランドマーク リンク お問い合わせ」に移動した。これにより「お問い合わせ」が終了位置であることがわかった。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 西本卓也
   date: '2024-01-18'
@@ -10100,6 +10613,7 @@
   - procedure: NVDAのブラウズモードでDを2回押し、Shift+Dを押した。
     actual: 「ナビゲーション ランドマーク 組織 リンク」「ナビゲーション ランドマーク ホーム リンク」「ナビゲーション ランドマーク 組織 リンク」のように前後のナビゲーションに移動できた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: 西本卓也
   date: '2024-01-18'
@@ -10113,6 +10627,7 @@
   - procedure: リンク要素にフォーカスを合わせる。 読み上げる内容を確認する。
     actual: リンク要素では「JIS X 8341-3 改正の続きを読む」と読み上げられる。
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 山崎 規弘
   date: '2024-01-18'
@@ -10126,6 +10641,7 @@
   - procedure: リンク要素にフォーカスを合わせる。 読み上げる内容を確認する。
     actual: リンク要素では「JIS X 8341-3 改正の続きを読む」と読み上げられる。
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 山崎 規弘
   date: '2024-01-18'
@@ -10139,6 +10655,7 @@
   - procedure: リンク要素にフォーカスを合わせる。 読み上げる内容を確認する。
     actual: リンク要素では「JIS X 8341-3 改正の続きを読む」と読み上げられる。
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 山崎 規弘
   date: '2024-01-18'
@@ -10152,6 +10669,7 @@
   - procedure: リンク要素にフォーカスを合わせる。 読み上げる内容を確認する。
     actual: リンク要素では「JIS X 8341-3 改正の続きを読む」と読み上げられる。
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 山崎 規弘
   date: '2024-01-18'
@@ -10165,6 +10683,7 @@
   - procedure: リンク要素にフォーカスを合わせる。 読み上げる内容を確認する。
     actual: リンク要素では「JIS X 8341-3 改正の続きを読む」と読み上げられる。
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 山崎 規弘
   date: '2024-01-18'
@@ -10178,6 +10697,7 @@
   - procedure: リンク要素にフォーカスを合わせる。 読み上げる内容を確認する。
     actual: リンク要素では「JIS X 8341-3 改正の続きを読む」と読み上げられる。
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 山崎 規弘
   date: '2024-01-18'
@@ -10191,6 +10711,7 @@
   - procedure: リンク要素にフォーカスを合わせる。 読み上げる内容を確認する。
     actual: リンク要素では「JIS X 8341-3 改正の続きを読む」と読み上げられる。
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 山崎 規弘
   date: '2024-01-18'
@@ -10204,6 +10725,7 @@
   - procedure: タブキーを押し、リンクへフォーカスを移動する
     actual: リンクテキストに加え、title属性の内容が読み上げられた
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: 音声閲覧環境
   tester: yuyaroid
   date: '2024-01-18'
@@ -10217,6 +10739,7 @@
   - procedure: メールアドレスを入力し、[申し込む]ボタンを押した
     actual: WAIC-CODE-0007-01-ref.htmlが表示され、URLの末尾にメールアドレスが追加されていた
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: 音声閲覧環境
   tester: yuyaroid
   date: '2024-01-18'
@@ -10230,6 +10753,7 @@
   - procedure: セレクトメニューでそれぞれの選択肢を選び、[選択したページへ移動する]ボタンを押した
     actual: '[選択したページへ移動する]ボタンを押した時点でそれぞれのページへと遷移した'
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: 音声閲覧環境
   tester: yuyaroid
   date: '2024-01-18'
@@ -10243,6 +10767,7 @@
   - procedure: タブキーを押してボタンへフォーカスを移動した
     actual: 代替テキストの内容が読み上げられた
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: 音声閲覧環境
   tester: yuyaroid
   date: '2024-01-18'
@@ -10256,6 +10781,7 @@
   - procedure: 矢印キーを押し、画像へフォーカスを移動した
     actual: 代替テキストの内容が読み上げられた
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: 音声閲覧環境
   tester: yuyaroid
   date: '2024-01-18'
@@ -10269,6 +10795,7 @@
   - procedure: '[t]キーを押してそれぞれのテーブルへ移動した'
     actual: それぞれオンキャプション要素の内容が読み上げられた
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: 音声閲覧環境
   tester: yuyaroid
   date: '2024-01-18'
@@ -10286,6 +10813,7 @@
       1. ボウルにたまごと牛乳を入れ、混ぜます。
       2. 塩とコショウを加えます。  リストの外 “
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 江﨑　和敬
   date: '2024-01-18'
@@ -10310,6 +10838,7 @@
       4個のピリオド 「ここに広告」 補足 ランドマーク
       「(c)フリーダムカンパニー、123 フリーダムウェイ、ヘルプビル、USA」コンテンツ情報 ランドマーク
     judgment: ○
+  environment_type: 音声閲覧環境
   comment: 手順が分かれていないため、複数の読み上げ結果を一つのセルに入れなければならない。
   tester: SAWADA STANDARD DESIGN
   date: '2024-01-18'
@@ -10323,6 +10852,7 @@
   - procedure: 1本指右フリックで、順に読み進めた。
     actual: 「トップニュース記事」見出しレベル1 「トップニュース記事」 補足 ランドマーク
     judgment: ○
+  environment_type: 音声閲覧環境
   comment: ランドマークに入って、一番最初に読む見出しがaria-labelledbyされている要素なので、要素の内容を読み上げているのか、関連づけられたnameを読み上げているのか、区別がつきづらい。
   tester: SAWADA STANDARD DESIGN
   date: '2024-01-18'
@@ -10336,6 +10866,7 @@
   - procedure: 1本指右フリックで、順に読み進めた。
     actual: 「カレンダー」音声ガイド 「ボストンレッドソックスの試合スケジュールのカレンダーです」見出しレベル1
     judgment: ○
+  environment_type: 音声閲覧環境
   comment: iOSではapplicationランドマークを「音声ガイド」と読み上げる
   tester: SAWADA STANDARD DESIGN
   date: '2024-01-18'
@@ -10352,6 +10883,7 @@
 
       「五つ星中四つ星」
     judgment: ○
+  environment_type: 音声閲覧環境
   comment: |-
     「ID属性の内容を読み上げる」とは？
     期待される結果 (音声閲覧環境)、テスト実施時の注意点 (音声閲覧環境)、それぞれに書かれていることが矛盾しているように読める。
@@ -10369,6 +10901,7 @@
   - procedure: 1本指右フリックで、順に読み進めた。
     actual: 「東海岸で暴風雨 続きを読む 省略記号」
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: SAWADA STANDARD DESIGN
   date: '2024-01-18'
@@ -10385,6 +10918,7 @@
   - procedure: 読み上げカーソルを上下移動させoptgroup要素をまたぐ
     actual: optgroup要素を無視した格好で、単にoption要素が9個連なっている状態と同じ読み上げになる
     judgment: ×
+  environment_type: 音声閲覧環境
   comment:
   tester: 森田雄
   date: '2024-06-13'
@@ -10401,6 +10935,7 @@
   - procedure: 読み上げカーソルを上下移動させる等して、nav要素の始まりと終わりの位置を読み上げる
     actual: nav要素内の最初の要素は、「ランドマーク」の読み上げにより分かるが、nav要素内の最後の要素が何であるかを知ることはできない。お問い合わせリンクとニュース一覧リンクがそれぞれnavの内側と外側にあるということは、最初から順に読み上げている時点ではわからない。逆方向に読み上げて初めてお問い合わせリンクがnav要素の中にあることがわかる。
     judgment: ×
+  environment_type: 音声閲覧環境
   comment:
   tester: 森田雄
   date: '2024-06-13'
@@ -10417,6 +10952,7 @@
   - procedure: 読み上げカーソルを上下移動させ等して、nav要素の始まりと終わりの位置を読み上げる
     actual: nav要素内の最初の要素は「ランドマーク」の読み上げにより分かるが、nav要素内の最後の要素が何であるかを知ることはできない。
     judgment: ×
+  environment_type: 音声閲覧環境
   comment:
   tester: 森田雄
   date: '2024-06-13'
@@ -10436,6 +10972,7 @@
   - procedure: 読み上げカーソルを上下移動させ等して、figcaption要素を読み上げる
     actual: figcaption要素であることは「キャプション」の読み上げにより分かる。
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 森田雄
   date: '2024-06-13'
@@ -10455,6 +10992,7 @@
   - procedure: 読み上げカーソルを上下移動させ等して、figcaption要素を読み上げる
     actual: figcaption要素であることは「キャプション」の読み上げにより分かる。
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 森田雄
   date: '2024-06-13'
@@ -10468,6 +11006,7 @@
   - procedure: リンクを読み上げ、内容を確認
     actual: アイコン画像の代替テキストは何も読み上げられず、リンクテキスト “ウェブアクセシビリティ基盤委員会公開サイト” のみが読み上げられる
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: tokami
   date: '2024-06-13'
@@ -10481,6 +11020,7 @@
   - procedure: リンクを読み上げ、内容を確認
     actual: アイコン画像の代替テキストは何も読み上げられず、リンクテキスト “ウェブアクセシビリティ基盤委員会公開サイト” のみが読み上げられる
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: tokami
   date: '2024-06-13'
@@ -10494,6 +11034,7 @@
   - procedure: 段落を読み上げ、内容を確認
     actual: アイコン画像の代替テキストは何も読み上げられず、テキスト “ウェブアクセシビリティ基盤委員会公開サイト” のみが読み上げられる
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: tokami
   date: '2024-06-13'
@@ -10507,6 +11048,7 @@
   - procedure: リンクを読み上げ、内容を確認
     actual: アイコン画像の代替テキストとリンクテキストが別に ”ウェブアクセシビリティ基盤委員会” ” 公式サイト” と別にカーソルが乗った部分のみ読み上げられる
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: tokami
   date: '2024-06-13'
@@ -10520,6 +11062,7 @@
   - procedure: リンクを読み上げ、内容を確認
     actual: リンクテキストとアイコン画像の代替テキストが続けて “施設ご利用の手引き”と” PDFファイル” 別にカーソルが乗った部分のみ読み上げられる
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: tokami
   date: '2024-06-13'
@@ -10533,6 +11076,7 @@
   - procedure: 'キーボード操作 : Tab キーを押下し、フォーカスの移動順序を確認'
     actual:
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: tokami
   date: '2024-06-13'
@@ -10549,6 +11093,7 @@
        携帯サイト
        サイトマップ
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment:
   tester: tokami
   date: '2024-06-13'
@@ -10565,6 +11110,7 @@
   - procedure: ブラウザの設定で画像を表示にし、NVDAを起動した状態でテストページを開いた
     actual: 「ウェブアクセシビリティ基盤委員会公開サイト」 のみが読み上げられた
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 中村 泰士
   date: '2024-06-13'
@@ -10581,6 +11127,7 @@
   - procedure: ブラウザの設定で画像を表示にし、NVDAを起動した状態でテストページを開いた
     actual: 「ウェブアクセシビリティ基盤委員会公開サイト」のみが読み上げられた
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 中村 泰士
   date: '2024-06-13'
@@ -10597,6 +11144,7 @@
   - procedure: ブラウザの設定で画像を表示にし、NVDAを起動した状態でテストページを開いた
     actual: 「ウェブアクセシビリティ基盤委員会公開サイト」のみが読み上げられた
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 中村 泰士
   date: '2024-06-13'
@@ -10613,6 +11161,7 @@
   - procedure: ブラウザの設定で画像を表示にし、NVDAを起動した状態でテストページを開いた
     actual: 「ウェブアクセシビリティ基盤委員会画像 公式サイト」が読み上げられた。「画像」の読み上げが余計
     judgment: ×
+  environment_type: 音声閲覧環境
   comment:
   tester: 中村 泰士
   date: '2024-06-13'
@@ -10629,6 +11178,7 @@
   - procedure: ブラウザの設定で画像を表示にし、NVDAを起動した状態でテストページを開いた
     actual: 「施設ご利用の手引きPDFファイルリンク」と読み上げられた
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 中村 泰士
   date: '2024-06-13'
@@ -10645,6 +11195,7 @@
   - procedure: NVDAを起動した状態でテストページを開いた
     actual: その項目をスクリーンリーダーが読み上げているのかわからない
     judgment: ×
+  environment_type: 音声閲覧環境
   comment:
   tester: 中村 泰士
   date: '2024-06-13'
@@ -10669,6 +11220,7 @@
        (音声閲覧環境)
       VoiceOverで「閲覧済み、リンク、ウェブアクセシビリティ基盤委員会公開サイト」読み上げられた
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: tokunaga
   date: '2024-06-13'
@@ -10693,6 +11245,7 @@
        (音声閲覧環境)
       VoiceOverで「閲覧済み、リンク、ウェブアクセシビリティ基盤委員会公開サイト」読み上げられた
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: tokunaga
   date: '2024-06-13'
@@ -10717,6 +11270,7 @@
        (音声閲覧環境)
       VoiceOverで「ウェブアクセシビリティ基盤委員会公開サイト」読み上げられた
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: tokunaga
   date: '2024-06-13'
@@ -10745,6 +11299,7 @@
        (音声閲覧環境)
       VoiceOverで「閲覧済み、リンク、ウェブアクセシビリティ基盤委員会 公式サイト」読み上げられた
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: tokunaga
   date: '2024-06-13'
@@ -10761,6 +11316,7 @@
   - procedure: ブラウザの設定→プライバシーとセキュリティ→サイトの設定→画像の項目から、「サイトに画像の表示を許可しない」を選択してページを開き、VoiceOverでページを読み上げ
     actual: 「ウェブアクセシビリティ基盤委員会公開サイト」のみが読み上げられる
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 内田 晴風
   date: '2024-06-13'
@@ -10777,6 +11333,7 @@
   - procedure: ブラウザの設定→プライバシーとセキュリティ→サイトの設定→画像の項目から、「サイトに画像の表示を許可しない」を選択してページを開き、VoiceOverでページを読み上げ
     actual: 「ウェブアクセシビリティ基盤委員会公開サイト」のみが読み上げられる
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 内田 晴風
   date: '2024-06-13'
@@ -10793,6 +11350,7 @@
   - procedure: ブラウザの設定→プライバシーとセキュリティ→サイトの設定→画像の項目から、「サイトに画像の表示を許可しない」を選択してページを開き、VoiceOverでページを読み上げ
     actual: 「ウェブアクセシビリティ基盤委員会公開サイト」のみが読み上げられる
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 内田 晴風
   date: '2024-06-13'
@@ -10809,6 +11367,7 @@
   - procedure: ブラウザの設定→プライバシーとセキュリティ→サイトの設定→画像の項目から、「サイトに画像の表示を許可しない」を選択してページを開き、VoiceOverでページを読み上げ
     actual: アイコン画像の代替テキストとリンクテキストが続けて “ウェブアクセシビリティ基盤委員会 公式サイト” と読み上げられる
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 内田 晴風
   date: '2024-06-13'
@@ -10825,6 +11384,7 @@
   - procedure: ブラウザの設定→プライバシーとセキュリティ→サイトの設定→画像の項目から、「サイトに画像の表示を許可しない」を選択してページを開き、VoiceOverでページを読み上げ
     actual: リンクテキストとアイコン画像の代替テキストが続けて “施設ご利用の手引き PDFファイル” と読み上げられる
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 内田 晴風
   date: '2024-06-13'
@@ -10841,6 +11401,7 @@
   - procedure: Tab キーを押下してフォーカスを移動
     actual: ラジオボタン2番目の"花火"にフォーカスが移らない。それ以外は期待された結果通りにフォーカスが移動する。
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 内田 晴風
   date: '2024-06-13'
@@ -10854,6 +11415,7 @@
   - procedure: Control+Optionキーと左右矢印キーを押してusemap属性が設定されたimg要素を読み上げる
     actual: 「デパートのフロアガイド。各階について詳しくお知りになりたい場合は各階をクリックしてください。、グループ」と読まれる
     judgment: ×
+  environment_type: 音声閲覧環境
   comment:
   tester: 久保田翔太
   date: '2024-07-03'
@@ -10867,6 +11429,7 @@
   - procedure: Control+Optionキーと左右矢印キーを押してusemap属性が設定されたimg要素を読み上げる
     actual: 「デパートのフロアガイド。各階について詳しくお知りになりたい場合は各階をクリックしてください。、グループ」と読まれる
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 久保田翔太
   date: '2024-07-03'
@@ -10880,6 +11443,7 @@
   - procedure: Control+Optionキーと左右矢印キーを押してそれぞれのarea要素を読み上げる
     actual: 「リンク、4F雑貨 書籍」「リンク、3F衣料品」「リンク、2Fお菓子 その他食品」「リンク、1F生鮮食品」とそれぞれ読まれた
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 久保田翔太
   date: '2024-07-03'
@@ -10893,6 +11457,7 @@
   - procedure: Control+Optionキーと左右矢印キーを押してそれぞれのarea要素を選択し、Enterキーを押す
     actual: それぞれのarea要素は意図したページへ遷移した
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 久保田翔太
   date: '2024-07-03'
@@ -10906,6 +11471,7 @@
   - procedure: Control+Optionキーと左右矢印キーを押してそれぞれのarea要素を読み上げる
     actual: 「リンク、4F雑貨 書籍」「リンク、3F衣料品」「リンク、2Fお菓子 その他食品」「リンク、1F生鮮食品」とそれぞれ読まれて、リンクであることが分かった
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 久保田翔太
   date: '2024-07-03'
@@ -10919,6 +11485,7 @@
   - procedure: タブキーを押してリンクへとフォーカスを移動
     actual: 「ウェブアクセシビリティ基盤委員会公開サイト リンク」と読み上げられた
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: 音声閲覧環境
   tester: yuyaroid
   date: '2024-06-13'
@@ -10932,6 +11499,7 @@
   - procedure: タブキーを押してリンクへとフォーカスを移動
     actual: 「ウェブアクセシビリティ基盤委員会公開サイト リンク」と読み上げられた
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: 音声閲覧環境
   tester: yuyaroid
   date: '2024-06-13'
@@ -10945,6 +11513,7 @@
   - procedure: 下矢印キーを押して段落の内容を確認
     actual: 「ウェブアクセシビリティ基盤委員会公開サイト」というテキストのみが読み上げられた
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: 音声閲覧環境
   tester: yuyaroid
   date: '2024-06-13'
@@ -10958,6 +11527,7 @@
   - procedure: タブキーを押してリンクへとフォーカスを移動
     actual: 「ウェブアクセシビリティ基盤委員会 公式サイト リンク」と読み上げられた
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: 音声閲覧環境
   tester: yuyaroid
   date: '2024-06-13'
@@ -10974,6 +11544,7 @@
   - procedure: 矢印キーを押してリンクへとフォーカスを移動
     actual: 「施設ご利用の手引 リンク」「PDFファイル リンク」と分けて読み上げられた
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment: 音声閲覧環境
   tester: yuyaroid
   date: '2024-06-13'
@@ -10993,6 +11564,7 @@
   - procedure: Tabキーを押し、フォーカスをボタン3へ移動
     actual: ボタン3、部分的チェックされている、切り替えボタン
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: SAWADA STANDARD DESIGN
   date: '2024-06-13'
@@ -11006,6 +11578,7 @@
   - procedure: ブラウザーで画面表示内容を確認
     actual: スタイルシートが適用された表組には余白があり、スタイルシートが無効な表組には余白がないことを視認
     judgment: ○
+  environment_type: 音声閲覧環境
   comment: 「マージンとパディングが使用されて外側とセル内にスペースがあり、」の「外側」が何の外側なのか、具体的に書いた方が良いですね。「マージンとパディングの設定が適用されていないことが確認できる」は開発者ツールで確認してしまいました。もう少し具体的に確認方法がわかると良い気がします。
   tester: SAWADA STANDARD DESIGN
   date: '2024-06-13'
@@ -11028,6 +11601,7 @@
   - procedure: option + Tab キーで「サービス」からフォーカスを外した
     actual: 「サービス」の背景色が白に戻った
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: SAWADA STANDARD DESIGN
   date: '2024-06-13'
@@ -11053,6 +11627,7 @@
       「男性」のラベルの背景色が元に戻った
       「女性」のラベルの背景色が黄色に変化した
     judgment: ○
+  environment_type: 音声閲覧環境
   comment: テスト手順の「名前」は間違いで「氏名」が正しいですね。
   tester: SAWADA STANDARD DESIGN
   date: '2024-06-13'
@@ -11066,6 +11641,7 @@
   - procedure: Control+Optionキーと左右矢印キーを押してusemap属性が設定されたimg要素を読み上げる
     actual: 「デパートのフロアガイド。各階について詳しくお知りになりたい場合は各階をクリックしてください。、グループ」と読まれる
     judgment: ×
+  environment_type: 音声閲覧環境
   comment:
   tester: 久保田翔太
   date: '2024-07-03'
@@ -11079,6 +11655,7 @@
   - procedure: Control+Optionキーと左右矢印キーを押してusemap属性が設定されたimg要素を読み上げる
     actual: 「デパートのフロアガイド。各階について詳しくお知りになりたい場合は各階をクリックしてください。、グループ」と読まれる
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 久保田翔太
   date: '2024-07-03'
@@ -11092,6 +11669,7 @@
   - procedure: Control+Optionキーと左右矢印キーを押してそれぞれのarea要素を読み上げる
     actual: 「リンク、4F雑貨 書籍」「リンク、3F衣料品」「リンク、2Fお菓子 その他食品」「リンク、1F生鮮食品」とそれぞれ読まれた
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 久保田翔太
   date: '2024-07-03'
@@ -11105,6 +11683,7 @@
   - procedure: Control+Optionキーと左右矢印キーを押してそれぞれのarea要素を選択し、Enterキーを押す
     actual: それぞれのarea要素は意図したページへ遷移した
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 久保田翔太
   date: '2024-07-03'
@@ -11118,6 +11697,7 @@
   - procedure: Control+Optionキーと左右矢印キーを押してそれぞれのarea要素を読み上げる
     actual: 「リンク、4F雑貨 書籍」「リンク、3F衣料品」「リンク、2Fお菓子 その他食品」「リンク、1F生鮮食品」とそれぞれ読まれて、リンクであることが分かった
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 久保田翔太
   date: '2024-07-03'
@@ -11131,6 +11711,7 @@
   - procedure: テストコードを表示後、タブキーを2回押下して入力フォームにフォーカス
     actual: aria-describedbyによって、<p id="int2">に設定されたテキストが読み上げられた。
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 土永 崇之
   date: '2024-10-10'
@@ -11152,6 +11733,7 @@
       下記のテキストが読み上げられた。
       「グループの外 郵便番号を入力してください。」
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 土永 崇之
   date: '2024-10-10'
@@ -11171,6 +11753,7 @@
   - procedure: タブキーによって「ボタン3」へフォーカス
     actual: 「ボタン3 トグルボタン 押されていません 一部チェック」と読み上げられた。
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 土永 崇之
   date: '2024-10-10'
@@ -11187,6 +11770,7 @@
   - procedure: 期待される結果１の結果を読みあげた後、カーソルキー「↓」を2回押下。
     actual: カーソルキー「↓」を押下するごとに、「アイコンフォントB」「画像 フェイバリット」と読み上げられた。
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: 土永 崇之
   date: '2024-10-10'
@@ -11200,6 +11784,7 @@
   - procedure: ブラウザの設定画面からフォントサイズを「大」に変更
     actual: 「ユーザー」と「非常に」が他のテキストよりも大きく表示され、「ユーザー」は「非常に」よりも大きく表示された。
     judgment: ○
+  environment_type:
   comment:
   tester: 土永 崇之
   date: '2024-10-10'
@@ -11213,6 +11798,7 @@
   - procedure: テストコードを表示し、40秒待機
     actual: 40秒経過時点でブラウザ上部に「このページは20秒後に更新されます。表示時間を延長しますか?」と書かれたポップアップが表示され、延長の有無を選択できた。
     judgment: ○
+  environment_type:
   comment:
   tester: 土永 崇之
   date: '2024-10-10'
@@ -11231,6 +11817,7 @@
       h1>strongの方が
        p>strongより大きくなっていることを確認
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: fujiid
   date: '2024-10-10'
@@ -11244,6 +11831,7 @@
   - procedure: ページを開いて確認
     actual: アイコンフォントAでは「star」、アイコンフォントBでは「★」と表示
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: fujiid
   date: '2024-10-10'
@@ -11266,6 +11854,7 @@
        アイコンフォントB
        画像 Favorite
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: fujiid
   date: '2024-10-10'
@@ -11282,6 +11871,7 @@
       ▼読み上げ結果
       ボタン 閉じる
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: fujiid
   date: '2024-10-10'
@@ -11299,6 +11889,7 @@
        タブで開いたまま別タブを表示して戻ったときにもダイアログの表示を確認
        別のアプリで作業をして非アクティブ状態とし、戻ったときにもダイアログの表示を確認
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment:
   tester: fujiid
   date: '2024-10-10'
@@ -11319,6 +11910,7 @@
       https://waic.github.io のページから:  ダイアログ  このページは20秒後に更新されます。表示時間を延長しますか?  
       OK  ボタン
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: 通知はブラウザもしくはタブをアクティブにした段階で初めて読み上げられた
   tester: fujiid
   date: '2024-10-10'
@@ -11335,6 +11927,7 @@
   - procedure: リンクを読み上げ、内容を確認
     actual: アイコン画像の代替テキストは何も読み上げられず、リンクテキスト “ウェブアクセシビリティ基盤委員会公開サイト” のみが読み上げられる
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: taeko　kojima
   date: '2024-10-10'
@@ -11351,6 +11944,7 @@
   - procedure: リンクを読み上げ、内容を確認
     actual: アイコン画像の代替テキストは何も読み上げられず、リンクテキスト “ウェブアクセシビリティ基盤委員会公開サイト” のみが読み上げられる
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: taeko　kojima
   date: '2024-10-10'
@@ -11367,6 +11961,7 @@
   - procedure: リンクを読み上げ、内容を確認
     actual: アイコン画像の代替テキストは何も読み上げられず、リンクテキスト “ウェブアクセシビリティ基盤委員会公開サイト” のみが読み上げられる
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: taeko　kojima
   date: '2024-10-10'
@@ -11380,6 +11975,7 @@
   - procedure: ブラウザの設定を変更して画像非表示にし、表示内容を確認
     actual: アイコン画像の代替テキストとリンクテキストが続けて “ウェブアクセシビリティ基盤委員会 公式サイト” と読み上げられる
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: taeko　kojima
   date: '2024-10-10'
@@ -11393,6 +11989,7 @@
   - procedure: ブラウザの設定を変更して画像非表示にし、表示内容を確認
     actual: リンクテキスト “施設ご利用の手引き” に続き、アイコン画像の代替テキスト “PDF ファイル” が表示される
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: taeko　kojima
   date: '2024-10-10'
@@ -11406,6 +12003,7 @@
   - procedure: 'キーボード操作 : Tab キーを押下し、フォーカスの移動順序を確認'
     actual: 花火が選択できない
     judgment: ○
+  environment_type: 音声閲覧環境
   comment:
   tester: taeko　kojima
   date: '2024-10-10'
@@ -11424,6 +12022,7 @@
       既読リンク、
       ウェブアクセシビリティ基盤委員会公開サイトｋK
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: 音声閲覧環境
   tester: かえる
   date: '2024-10-10'
@@ -11439,6 +12038,7 @@
       tabで、リンクをフォーカス
     actual: ウェブアクセシビリティ基盤委員会公開サイト、既読リンクと読まれる
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: 音声閲覧環境
   tester: かえる
   date: '2024-10-10'
@@ -11452,6 +12052,7 @@
   - procedure: ctrl+home
     actual: ウェブアクセシビリティ基盤委員会公開サイト、のみが読まれる
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: 音声閲覧環境
   tester: かえる
   date: '2024-10-10'
@@ -11465,6 +12066,7 @@
   - procedure: NVDA+上矢印
     actual: “ウェブアクセシビリティ基盤委員会 公式サイト” のみが読まれる
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: 音声閲覧環境
   tester: かえる
   date: '2024-10-10'
@@ -11481,6 +12083,7 @@
   - procedure: ブラウザの文字サイズ変更機能を用いて、文字サイズのみを拡大する
     actual: h1 要素の行頭にある「ユーザー」と、p 要素の行末にある「非常に」では、h1 要素の行頭にある「ユーザー」のほうが大きく表示される
     judgment: ○
+  environment_type: 視覚閲覧環境
   comment:
   tester: 山崎 規弘
   date: '2024-10-10'
@@ -11497,6 +12100,7 @@
   - procedure: ブラウザの文字サイズ変更機能を用いて、文字サイズのみを拡大する
     actual: h1 要素の行頭にある「ユーザー」と、p 要素の行末にある「非常に」では、h1 要素の行頭にある「ユーザー」のほうが大きく表示される
     judgment: ○
+  environment_type: 視覚閲覧環境
   comment:
   tester: 山崎 規弘
   date: '2024-10-10'
@@ -11513,6 +12117,7 @@
   - procedure: ブラウザの文字サイズ変更機能を用いて、文字サイズのみを拡大する
     actual: h1 要素の行頭にある「ユーザー」と、p 要素の行末にある「非常に」では、h1 要素の行頭にある「ユーザー」のほうが大きく表示される
     judgment: ○
+  environment_type: 視覚閲覧環境
   comment:
   tester: 山崎 規弘
   date: '2024-10-10'
@@ -11529,6 +12134,7 @@
   - procedure: ブラウザの文字サイズ変更機能を用いて、文字サイズのみを拡大する
     actual: h1 要素の行頭にある「ユーザー」と、p 要素の行末にある「非常に」では、h1 要素の行頭にある「ユーザー」のほうが大きく表示される
     judgment: ○
+  environment_type: 視覚閲覧環境
   comment:
   tester: 山崎 規弘
   date: '2024-10-10'
@@ -11545,6 +12151,7 @@
   - procedure: ブラウザの文字サイズ変更機能を用いて、文字サイズのみを拡大する
     actual: h1 要素の行頭にある「ユーザー」と、p 要素の行末にある「非常に」では、h1 要素の行頭にある「ユーザー」のほうが大きく表示される
     judgment: ○
+  environment_type: 視覚閲覧環境
   comment:
   tester: 山崎 規弘
   date: '2024-10-10'
@@ -11561,6 +12168,7 @@
   - procedure: ブラウザの文字サイズ変更機能を用いて、文字サイズのみを拡大する
     actual: h1 要素の行頭にある「ユーザー」と、p 要素の行末にある「非常に」では、h1 要素の行頭にある「ユーザー」のほうが大きく表示される
     judgment: ○
+  environment_type: 視覚閲覧環境
   comment:
   tester: 山崎 規弘
   date: '2024-10-10'
@@ -11574,6 +12182,7 @@
   - procedure: ページを表示し、「このページを表示した時刻」に現在の時刻が表示されていることを確認する。そのまま40秒待つ
     actual: 40秒待つと、「このページは20秒後に更新されます。表示時間を延長しますか?」というダイアログが表示される
     judgment: ○
+  environment_type: 視覚閲覧環境
   comment:
   tester: 山崎 規弘
   date: '2024-10-10'
@@ -11587,6 +12196,7 @@
   - procedure: ページを表示し、「このページを表示した時刻」に現在の時刻が表示されていることを確認する。そのまま40秒待つ
     actual: 40秒待つと、「このページは20秒後に更新されます。表示時間を延長しますか?」というダイアログが表示される
     judgment: ○
+  environment_type: 視覚閲覧環境
   comment: ウィンドウを最小化した場合にもダイアログは表示されるが、それに気づく手段はなかった（Firefoxはタスクバーのアイコンの点滅があったため、何かがあったということには気づけた）
   tester: 山崎 規弘
   date: '2024-10-10'
@@ -11600,6 +12210,7 @@
   - procedure: ページを表示し、「このページを表示した時刻」に現在の時刻が表示されていることを確認する。そのまま40秒待つ
     actual: 40秒待つと、「このページは20秒後に更新されます。表示時間を延長しますか?」というダイアログが表示される
     judgment: ○
+  environment_type: 視覚閲覧環境
   comment: ウィンドウを最小化した場合にもダイアログは表示されるが、それに気づく手段はなかった（Firefoxはタスクバーのアイコンの点滅があったため、何かがあったということには気づけた）
   tester: 山崎 規弘
   date: '2024-10-10'
@@ -11613,6 +12224,7 @@
   - procedure: ページを表示し、「このページを表示した時刻」に現在の時刻が表示されていることを確認する。そのまま40秒待つ
     actual: 40秒待つと、「このページは20秒後に更新されます。表示時間を延長しますか?」という警告メッセージが通知される
     judgment: ×
+  environment_type: 音声閲覧環境
   comment: ウィンドウがアクティブな時は通知が読み上げられるが非アクティブな時には読み上げられなかった
   tester: 山崎 規弘
   date: '2024-10-10'
@@ -11626,6 +12238,7 @@
   - procedure: ページを表示し、「このページを表示した時刻」に現在の時刻が表示されていることを確認する。そのまま40秒待つ
     actual: 40秒待つと、「このページは20秒後に更新されます。表示時間を延長しますか?」という警告メッセージが通知される
     judgment: ×
+  environment_type: 音声閲覧環境
   comment: ウィンドウがアクティブな時は通知が読み上げられるが非アクティブな時には読み上げられなかった
   tester: 山崎 規弘
   date: '2024-10-10'
@@ -11639,6 +12252,7 @@
   - procedure: ページを表示し、「このページを表示した時刻」に現在の時刻が表示されていることを確認する。そのまま40秒待つ
     actual: 40秒待つと、「このページは20秒後に更新されます。表示時間を延長しますか?」という警告メッセージが通知される
     judgment: ×
+  environment_type: 音声閲覧環境
   comment: ウィンドウがアクティブな時は通知が読み上げられるが非アクティブな時には読み上げられなかった
   tester: 山崎 規弘
   date: '2024-10-10'
@@ -11652,6 +12266,7 @@
   - procedure: ページ内の入力フォームを全て未入力にして、「送信」ボタンを押した。
     actual: 「必須の入力欄すべてに入力してから再送信してください (残り3項目)」と読み上げた。一方で、「指名」、「ふりがな」、「メールアドレス」それぞれを選択した時には、未入力であることを知らせる読み上げが無かった。
     judgment: 満たしていない
+  environment_type: 音声閲覧環境
   comment: 音声閲覧環境
   tester: 諸熊
   date: '2024-10-10'
@@ -11668,6 +12283,7 @@
   - procedure: 「電子メールアドレス」に「example.com」と入力し、送信ボタンを押した。
     actual: '電子メールアドレス」の入力欄を選択した際に、「エラー: データの形式が正しくありません」と読み上げた。'
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: 音声閲覧環境
   tester: 諸熊
   date: '2024-10-10'
@@ -11684,6 +12300,7 @@
   - procedure: 矢印キーを押して、アイコンフォントBと、その次のテキストまで読み上げさせた。
     actual: 通知した内容は「アイコンフォントB」テキストと、「Favorite」画像だった。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: 音声閲覧環境
   tester: 諸熊
   date: '2024-10-10'
@@ -11699,6 +12316,7 @@
       その後、タブキーを押して「閉じる」ボタンを選択した。
     actual: ボタンの読み上げは「閉じる」のみだった。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: 音声閲覧環境
   tester: 諸熊
   date: '2024-10-10'
@@ -11712,6 +12330,7 @@
   - procedure: タブキーを押して、3つのエディトボックスにフォーカスを移動した。
     actual: それぞれを選択した時、「市外局番」、「市内局番」、「加入者番号」と読み上げた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: 音声閲覧環境
   tester: 諸熊
   date: '2024-10-10'
@@ -11731,6 +12350,7 @@
   - procedure: タブキーを押して ボタン3 を選択した。
     actual: ボタン3 のトグルボタン 切り替え Mix と読み上げた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: 音声閲覧環境
   tester: 諸熊
   date: '2024-10-10'
@@ -11744,6 +12364,7 @@
   - procedure: ブラウザーでページを表示して40秒待機した。
     actual: ダイアログが表示され、時間を延長するかどうかを問い合わせるダイアログが表示された。OKボタンを押すと、時間が延長されたと思われる。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: 音声閲覧環境
   tester: 諸熊
   date: '2024-10-10'
@@ -11757,6 +12378,7 @@
   - procedure: 矢印キーを押して、画像やテキストを確認した。
     actual: '画像を選択した時に「ウェブアクセシビリティ基盤委員会画像にはウェブアクセシビリティ基盤委員会(WAIC)のロゴと「Web Accessibility Infrastructure Committee ウェブアクセシビリティ基盤委員会」という文字が書かれています。」と読み上げた。また次のテキストは、「画像にはウェブアクセシビリティ基盤委員会(WAIC)のロゴと「Web Accessibility Infrastructure Committee ウェブアクセシビリティ基盤委員会」という文字が書かれています。」と読み上げた。 '
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: 音声閲覧環境
   tester: 諸熊
   date: '2024-10-10'
@@ -11770,6 +12392,7 @@
   - procedure: タブキーを押してテキストフィールドを選択した。
     actual: 「サイト内検索 テキストフィールド」と読み上げた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: 音声閲覧環境
   tester: 諸熊
   date: '2024-10-10'
@@ -11783,6 +12406,7 @@
   - procedure: スライダーコントロールにタブキーでフォーカスを移動した。
     actual: 「旅行の日数 の トラックバー 洗濯 15」と読み上げた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: 音声閲覧環境
   tester: 諸熊
   date: '2024-10-10'
@@ -11796,6 +12420,7 @@
   - procedure: コンポボックスの位置へフォーカスを移動した。
     actual: 「通知 日前に通知」と読み上げた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: 音声閲覧環境
   tester: 諸熊
   date: '2024-10-10'
@@ -11812,6 +12437,7 @@
   - procedure: 矢印キーを押して、「郵便番号を入力してください」の位置へ移動した。
     actual: 「郵便番号」領域の外側であることは読み上げなかったが、上矢印キーを押すと、「郵便番号 郵便番号の下4桁」と読み上げたので、グループの外側にいたということはわかった。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: 音声閲覧環境
   tester: 諸熊
   date: '2024-10-10'
@@ -11828,6 +12454,7 @@
   - procedure: ボタン押下後のフォーカス位置を確認した。
     actual: 「戻る」ボタンにフォーカスがあった。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: 音声閲覧環境
   tester: 諸熊
   date: '2024-10-10'
@@ -11841,6 +12468,7 @@
   - procedure: フォームに何も入力せずに送信ボタンを押した。
     actual: ページ上部に「ファーストネームを入力してください。ラストネームを入力してください。メールアドレスを入力してください。」というテキストが表示されたと同時に読み上げられた。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: 音声閲覧環境
   tester: 諸熊
   date: '2024-10-10'
@@ -11856,6 +12484,1464 @@
       直前に「領域」と読み上げた。なお、末尾から上→キーを押すと、「税制の見直しは必要だと思いますか?
       」を読み上げる前に「領域」と読み上げたので、前者は何らかの領域内であると予測できる。
     judgment: 満たしている
+  environment_type: 音声閲覧環境
   comment: 音声閲覧環境
   tester: 諸熊
   date: '2024-10-10'
+- id: 635
+  test: 0010-02
+  os: Windows 11 Enterprise 24H2 26100.2894
+  user_agent: 131.0.6778.266（Official Build） （64 ビット）
+  assistive_tech: NVDA 2024.3.1jp
+  assistive_tech_config: マウスカーソル位置のテキスト報告を無効化
+  contents:
+  - procedure: 下矢印キーを押してテーブル内に移動した後、引き続き下矢印キーを押していきテーブルから出た
+    actual: テーブルに入るタイミングで「テーブル」と読み上げられ、テーブルから出るタイミングで「テーブルの外」と読み上げられた
+    judgment: ○
+  environment_type: 音声閲覧環境
+  comment:
+  tester: mehm8128
+  date: '2025-01-23'
+- id: 636
+  test: 0010-03
+  os: Windows 11 Enterprise 24H2 26100.2894
+  user_agent: 131.0.6778.266（Official Build） （64 ビット）
+  assistive_tech: NVDA 2024.3.1jp
+  assistive_tech_config: マウスカーソル位置のテキスト報告を無効化
+  contents:
+  - procedure: 下矢印キーを押してテーブル内に移動した
+    actual: テーブルに入るタイミングで「テーブル 5行 5列」と読み上げられた
+    judgment: ○
+  environment_type: 音声閲覧環境
+  comment:
+  tester: mehm8128
+  date: '2025-01-23'
+- id: 637
+  test: 0010-04
+  os: Windows 11 Enterprise 24H2 26100.2894
+  user_agent: 131.0.6778.266（Official Build） （64 ビット）
+  assistive_tech: NVDA 2024.3.1jp
+  assistive_tech_config: マウスカーソル位置のテキスト報告を無効化
+  contents:
+  - procedure: 「営業部連絡先一覧」テーブルで「ヒューストン」からCtrl+Alt+下矢印キーを押して「ピッツバーグ」に移動した
+    actual: 「ジョエル・ガーナー 4行 ピッツバーグ」と、「ピッツバーグ」の行の行見出しである「ジョエル・ガーナー」が読み上げられた
+    judgment: ○
+  - procedure: 「営業部連絡先一覧」テーブルで「ゴードン・グリーニッジ」の行の「Twitter」のセルからCtrl+Alt+下矢印キーを押して「ジョエル・ガーナー」の行の「Twittter」のセルに移動した
+    actual: |-
+      「ジョエル・ガーナー 4行 リンク Twitter
+       」と、行見出しである「ジョエル・ガーナー」が読み上げられた
+    judgment: 満たしている
+  environment_type: 音声閲覧環境
+  comment:
+  tester: mehm8128
+  date: '2025-01-23'
+- id: 638
+  test: 0010-05
+  os: Windows 11 Enterprise 24H2 26100.2894
+  user_agent: 131.0.6778.266（Official Build） （64 ビット）
+  assistive_tech: NVDA 2024.3.1jp
+  assistive_tech_config: マウスカーソル位置のテキスト報告を無効化
+  contents:
+  - procedure: 「営業部連絡先一覧」テーブルで「281-511-6600」セルからCtrl+Alt+右矢印キーで「ヒューストン」セルに移動した
+    actual: 「住所 4列 ヒューストン」と、移動先の列見出しである「住所」が読み上げられた
+    judgment: ○
+  - procedure: 「営業部連絡先一覧」テーブルで「ヒューストン」セルからCtrl+Alt+右矢印キーで「Twitter」セルに移動した
+    actual: 「SNS 5列 既読 リンク Twitter」と、移動先の列見出しである「SNS」が読み上げられた
+    judgment: 満たしている
+  environment_type: 音声閲覧環境
+  comment:
+  tester: mehm8128
+  date: '2025-01-23'
+- id: 639
+  test: 0047-03
+  os: Windows 11 Enterprise 24H2 26100.2894
+  user_agent: 131.0.6778.266（Official Build） （64 ビット）
+  assistive_tech: NVDA 2024.3.1jp
+  assistive_tech_config: マウスカーソル位置のテキスト報告を無効化
+  contents:
+  - procedure: Tabキーでselect要素にフォーカスを合わせた
+    actual: 「通知： 日前に 通知： コンボボックス 1 折りたたみ」と読み上げられた
+    judgment: ×
+  environment_type: 音声閲覧環境
+  comment:
+  tester: mehm8128
+  date: '2025-01-23'
+- id: 640
+  test: 0050-01
+  os: Windows 11 Enterprise 24H2 26100.2894
+  user_agent: 131.0.6778.266（Official Build） （64 ビット）
+  assistive_tech: NVDA 2024.3.1jp
+  assistive_tech_config: マウスカーソル位置のテキスト報告を無効化
+  contents:
+  - procedure: フォームに何も入力せずにTabキーを押して送信ボタンまで移動し、Enterを押した
+    actual: |-
+      「ファーストネームを入力してください。 ラストネームを入力してください。 メールアドレスを入力してください。 
+       」と読み上げられた
+    judgment: ○
+  environment_type: 音声閲覧環境
+  comment:
+  tester: mehm8128
+  date: '2025-01-23'
+- id: 641
+  test: 0055-01
+  os: Windows 11 Enterprise 24H2 26100.2894
+  user_agent: 131.0.6778.266（Official Build） （64 ビット）
+  assistive_tech: NVDA 2024.3.1jp
+  assistive_tech_config: マウスカーソル位置のテキスト報告を無効化
+  contents:
+  - procedure: マウスカーソルで「サービス」のリンクテキストにホバーした
+    actual: リンクテキストの背景色が変化した
+    judgment: 満たしている
+  - procedure: マウスで「サービス」リンクテキストからホバーを解除した
+    actual: リンクテキストの背景色が元に戻った
+    judgment: 満たしている
+  - procedure: Tabキーで「サービス」リンクテキストにフォーカスした
+    actual: リンクテキストの背景色が変化した
+    judgment: 満たしている
+  - procedure: Tabキーで「サービス」リンクテキストからフォーカスを移動した
+    actual: リンクテキストの背景色が元に戻った
+    judgment: 満たしている
+  environment_type: 音声閲覧環境
+  comment:
+  tester: mehm8128
+  date: '2025-01-23'
+- id: 642
+  test: 0048-01
+  os: Windows 11 Enterprise 24H2 26100.2894
+  user_agent: 131.0.6778.266（Official Build） （64 ビット）
+  assistive_tech: NVDA 2024.3.1jp
+  assistive_tech_config: マウスカーソル位置のテキスト報告を無効化
+  contents:
+  - procedure: 下矢印キーを押して郵便番号のテキストボックスまで移動した
+    actual: 「前半3桁と後半4桁に分けて入力します」が読み上げられたタイミングで「グループ」と読み上げられたが、グループの名前である「郵便番号」は読み上げられなかった
+    judgment: 満たしていない
+  - procedure: 郵便番号のテキストボックスから下矢印キーを押して「郵便番号を入力してください。」まで移動した
+    actual: 「グループの外 郵便番号を入力してください。」と読み上げられたが、グループの名前である「郵便番号」は読み上げられなかった
+    judgment: 満たしていない
+  environment_type: 音声閲覧環境
+  comment:
+  tester: mehm8128
+  date: '2025-01-23'
+- id: 643
+  test: 0055-01
+  os: Windows 11 Home 24H2
+  user_agent: Firefox 134.0.2
+  assistive_tech:
+  assistive_tech_config:
+  contents:
+  - procedure: マウスなどのポインティングデバイスによって、リンクテキスト「サービス」の上にポインターをホバーさせる
+    actual: ホバーするとリンクテキスト「サービス」の背景色が変化する
+    judgment: ○
+  - procedure: マウスなどのポインティングデバイスによって、リンクテキスト「サービス」の上からポインターを外す
+    actual: ポインターが外れるとリンクテキスト「サービス」の背景色が元に戻る
+    judgment: ○
+  - procedure: Tab キーを押下し、リンクテキスト「サービス」にフォーカスを移動
+    actual: フォーカスが当たるとリンクテキスト「サービス」の背景色が変化する
+    judgment: ○
+  - procedure: Tab キーを押下し、リンクテキスト「サービス」から他の要素にフォーカスを移動
+    actual: フォーカスが外れるとリンクテキスト「サービス」の背景色が元の色に戻る
+    judgment: ○
+  environment_type:
+  comment:
+  tester: 山崎 規弘
+  date: '2025-01-23'
+- id: 644
+  test: 0055-01
+  os: Windows 11 Home 24H2
+  user_agent: Google Chrome 132.0.6834.111
+  assistive_tech:
+  assistive_tech_config:
+  contents:
+  - procedure: マウスなどのポインティングデバイスによって、リンクテキスト「サービス」の上にポインターをホバーさせる
+    actual: ホバーするとリンクテキスト「サービス」の背景色が変化する
+    judgment: ○
+  - procedure: マウスなどのポインティングデバイスによって、リンクテキスト「サービス」の上からポインターを外す
+    actual: ポインターが外れるとリンクテキスト「サービス」の背景色が元に戻る
+    judgment: ○
+  - procedure: Tab キーを押下し、リンクテキスト「サービス」にフォーカスを移動
+    actual: フォーカスが当たるとリンクテキスト「サービス」の背景色が変化する
+    judgment: ○
+  - procedure: Tab キーを押下し、リンクテキスト「サービス」から他の要素にフォーカスを移動
+    actual: フォーカスが外れるとリンクテキスト「サービス」の背景色が元の色に戻る
+    judgment: ○
+  environment_type:
+  comment:
+  tester: 山崎 規弘
+  date: '2025-01-23'
+- id: 645
+  test: 0055-01
+  os: Windows 11 Home 24H2
+  user_agent: Microsoft Edge 132.0.2957.115
+  assistive_tech:
+  assistive_tech_config:
+  contents:
+  - procedure: マウスなどのポインティングデバイスによって、リンクテキスト「サービス」の上にポインターをホバーさせる
+    actual: ホバーするとリンクテキスト「サービス」の背景色が変化する
+    judgment: ○
+  - procedure: マウスなどのポインティングデバイスによって、リンクテキスト「サービス」の上からポインターを外す
+    actual: ポインターが外れるとリンクテキスト「サービス」の背景色が元に戻る
+    judgment: ○
+  - procedure: Tab キーを押下し、リンクテキスト「サービス」にフォーカスを移動
+    actual: フォーカスが当たるとリンクテキスト「サービス」の背景色が変化する
+    judgment: ○
+  - procedure: Tab キーを押下し、リンクテキスト「サービス」から他の要素にフォーカスを移動
+    actual: フォーカスが外れるとリンクテキスト「サービス」の背景色が元の色に戻る
+    judgment: ○
+  environment_type:
+  comment:
+  tester: 山崎 規弘
+  date: '2025-01-23'
+- id: 646
+  test: 0055-01
+  os: macOS Sonoma 14.6.1
+  user_agent: Firefox 134.0.2
+  assistive_tech:
+  assistive_tech_config:
+  contents:
+  - procedure: マウスなどのポインティングデバイスによって、リンクテキスト「サービス」の上にポインターをホバーさせる
+    actual: ホバーするとリンクテキスト「サービス」の背景色が変化する
+    judgment: ○
+  - procedure: マウスなどのポインティングデバイスによって、リンクテキスト「サービス」の上からポインターを外す
+    actual: ポインターが外れるとリンクテキスト「サービス」の背景色が元に戻る
+    judgment: ○
+  - procedure: Tab キーを押下し、リンクテキスト「サービス」にフォーカスを移動
+    actual: フォーカスが当たるとリンクテキスト「サービス」の背景色が変化する
+    judgment: ○
+  - procedure: Tab キーを押下し、リンクテキスト「サービス」から他の要素にフォーカスを移動
+    actual: フォーカスが外れるとリンクテキスト「サービス」の背景色が元の色に戻る
+    judgment: ○
+  environment_type:
+  comment:
+  tester: 山崎 規弘
+  date: '2025-01-23'
+- id: 647
+  test: 0055-01
+  os: macOS Sonoma 14.6.1
+  user_agent: Google Chrome 132.0.6834.111
+  assistive_tech:
+  assistive_tech_config:
+  contents:
+  - procedure: マウスなどのポインティングデバイスによって、リンクテキスト「サービス」の上にポインターをホバーさせる
+    actual: ホバーするとリンクテキスト「サービス」の背景色が変化する
+    judgment: ○
+  - procedure: マウスなどのポインティングデバイスによって、リンクテキスト「サービス」の上からポインターを外す
+    actual: ポインターが外れるとリンクテキスト「サービス」の背景色が元に戻る
+    judgment: ○
+  - procedure: Tab キーを押下し、リンクテキスト「サービス」にフォーカスを移動
+    actual: フォーカスが当たるとリンクテキスト「サービス」の背景色が変化する
+    judgment: ○
+  - procedure: Tab キーを押下し、リンクテキスト「サービス」から他の要素にフォーカスを移動
+    actual: フォーカスが外れるとリンクテキスト「サービス」の背景色が元の色に戻る
+    judgment: ○
+  environment_type:
+  comment:
+  tester: 山崎 規弘
+  date: '2025-01-23'
+- id: 648
+  test: 0055-01
+  os: macOS Sonoma 14.6.1
+  user_agent: Microsoft Edge 132.0.2957.115
+  assistive_tech:
+  assistive_tech_config:
+  contents:
+  - procedure: マウスなどのポインティングデバイスによって、リンクテキスト「サービス」の上にポインターをホバーさせる
+    actual: ホバーするとリンクテキスト「サービス」の背景色が変化する
+    judgment: ○
+  - procedure: マウスなどのポインティングデバイスによって、リンクテキスト「サービス」の上からポインターを外す
+    actual: ポインターが外れるとリンクテキスト「サービス」の背景色が元に戻る
+    judgment: ○
+  - procedure: Tab キーを押下し、リンクテキスト「サービス」にフォーカスを移動
+    actual: フォーカスが当たるとリンクテキスト「サービス」の背景色が変化する
+    judgment: ○
+  - procedure: Tab キーを押下し、リンクテキスト「サービス」から他の要素にフォーカスを移動
+    actual: フォーカスが外れるとリンクテキスト「サービス」の背景色が元の色に戻る
+    judgment: ○
+  environment_type:
+  comment:
+  tester: 山崎 規弘
+  date: '2025-01-23'
+- id: 649
+  test: 0055-01
+  os: macOS Sonoma 14.6.1
+  user_agent: Safari 17.6
+  assistive_tech:
+  assistive_tech_config:
+  contents:
+  - procedure: マウスなどのポインティングデバイスによって、リンクテキスト「サービス」の上にポインターをホバーさせる
+    actual: ホバーするとリンクテキスト「サービス」の背景色が変化する
+    judgment: ○
+  - procedure: マウスなどのポインティングデバイスによって、リンクテキスト「サービス」の上からポインターを外す
+    actual: ポインターが外れるとリンクテキスト「サービス」の背景色が元に戻る
+    judgment: ○
+  - procedure: Tab キーを押下し、リンクテキスト「サービス」にフォーカスを移動
+    actual: フォーカスが当たるとリンクテキスト「サービス」の背景色が変化する
+    judgment: ○
+  - procedure: Tab キーを押下し、リンクテキスト「サービス」から他の要素にフォーカスを移動
+    actual: フォーカスが外れるとリンクテキスト「サービス」の背景色が元の色に戻る
+    judgment: ○
+  environment_type:
+  comment:
+  tester: 山崎 規弘
+  date: '2025-01-23'
+- id: 650
+  test: 0055-02
+  os: Windows 11 Home 24H2
+  user_agent: Firefox 134.0.2
+  assistive_tech:
+  assistive_tech_config:
+  contents:
+  - procedure: Tab キーを押下し、「氏名」の入力欄にフォーカスを移動
+    actual: フォーカスが当たると「氏名」の入力欄の背景色が変化する
+    judgment: ○
+  - procedure: Tab キーを押下し、ラジオボタン「男性」にフォーカスを移動
+    actual: |-
+      フォーカスが外れた「氏名」の入力欄の背景色が元に戻る
+      フォーカスが当たるとラジオボタン「男性」のラベルの背景色が変化する
+    judgment: ○
+  - procedure: 下矢印キーを押下し、ラジオボタン「男性」から「女性」にフォーカスを移動
+    actual: |-
+      フォーカスが外れたラジオボタン「男性」のラベルの背景色が元に戻る
+      フォーカスが当たるとラジオボタン「女性」のラベルの背景色が変化する
+    judgment: ○
+  environment_type:
+  comment:
+  tester: 山崎 規弘
+  date: '2025-01-23'
+- id: 651
+  test: 0055-02
+  os: Windows 11 Home 24H2
+  user_agent: Google Chrome 132.0.6834.111
+  assistive_tech:
+  assistive_tech_config:
+  contents:
+  - procedure: Tab キーを押下し、「氏名」の入力欄にフォーカスを移動
+    actual: フォーカスが当たると「氏名」の入力欄の背景色が変化する
+    judgment: ○
+  - procedure: Tab キーを押下し、ラジオボタン「男性」にフォーカスを移動
+    actual: |-
+      フォーカスが外れた「氏名」の入力欄の背景色が元に戻る
+      フォーカスが当たるとラジオボタン「男性」のラベルの背景色が変化する
+    judgment: ○
+  - procedure: 下矢印キーを押下し、ラジオボタン「男性」から「女性」にフォーカスを移動
+    actual: |-
+      フォーカスが外れたラジオボタン「男性」のラベルの背景色が元に戻る
+      フォーカスが当たるとラジオボタン「女性」のラベルの背景色が変化する
+    judgment: ○
+  environment_type:
+  comment:
+  tester: 山崎 規弘
+  date: '2025-01-23'
+- id: 652
+  test: 0055-02
+  os: Windows 11 Home 24H2
+  user_agent: Microsoft Edge 132.0.2957.115
+  assistive_tech:
+  assistive_tech_config:
+  contents:
+  - procedure: Tab キーを押下し、「氏名」の入力欄にフォーカスを移動
+    actual: フォーカスが当たると「氏名」の入力欄の背景色が変化する
+    judgment: ○
+  - procedure: Tab キーを押下し、ラジオボタン「男性」にフォーカスを移動
+    actual: |-
+      フォーカスが外れた「氏名」の入力欄の背景色が元に戻る
+      フォーカスが当たるとラジオボタン「男性」のラベルの背景色が変化する
+    judgment: ○
+  - procedure: 下矢印キーを押下し、ラジオボタン「男性」から「女性」にフォーカスを移動
+    actual: |-
+      フォーカスが外れたラジオボタン「男性」のラベルの背景色が元に戻る
+      フォーカスが当たるとラジオボタン「女性」のラベルの背景色が変化する
+    judgment: ○
+  environment_type:
+  comment:
+  tester: 山崎 規弘
+  date: '2025-01-23'
+- id: 653
+  test: 0055-02
+  os: macOS Sonoma 14.6.1
+  user_agent: Firefox 134.0.2
+  assistive_tech:
+  assistive_tech_config:
+  contents:
+  - procedure: Tab キーを押下し、「氏名」の入力欄にフォーカスを移動
+    actual: フォーカスが当たると「氏名」の入力欄の背景色が変化する
+    judgment: ○
+  - procedure: Tab キーを押下し、ラジオボタン「男性」にフォーカスを移動
+    actual: |-
+      フォーカスが外れた「氏名」の入力欄の背景色が元に戻る
+      フォーカスが当たるとラジオボタン「男性」のラベルの背景色が変化する
+    judgment: ○
+  - procedure: 下矢印キーを押下し、ラジオボタン「男性」から「女性」にフォーカスを移動
+    actual: |-
+      フォーカスが外れたラジオボタン「男性」のラベルの背景色が元に戻る
+      フォーカスが当たるとラジオボタン「女性」のラベルの背景色が変化する
+    judgment: ○
+  environment_type:
+  comment:
+  tester: 山崎 規弘
+  date: '2025-01-23'
+- id: 654
+  test: 0055-02
+  os: macOS Sonoma 14.6.1
+  user_agent: Google Chrome 132.0.6834.111
+  assistive_tech:
+  assistive_tech_config:
+  contents:
+  - procedure: Tab キーを押下し、「氏名」の入力欄にフォーカスを移動
+    actual: フォーカスが当たると「氏名」の入力欄の背景色が変化する
+    judgment: ○
+  - procedure: Tab キーを押下し、ラジオボタン「男性」にフォーカスを移動
+    actual: |-
+      フォーカスが外れた「氏名」の入力欄の背景色が元に戻る
+      フォーカスが当たるとラジオボタン「男性」のラベルの背景色が変化する
+    judgment: ○
+  - procedure: 下矢印キーを押下し、ラジオボタン「男性」から「女性」にフォーカスを移動
+    actual: |-
+      フォーカスが外れたラジオボタン「男性」のラベルの背景色が元に戻る
+      フォーカスが当たるとラジオボタン「女性」のラベルの背景色が変化する
+    judgment: ○
+  environment_type:
+  comment:
+  tester: 山崎 規弘
+  date: '2025-01-23'
+- id: 655
+  test: 0055-02
+  os: macOS Sonoma 14.6.1
+  user_agent: Microsoft Edge 132.0.2957.115
+  assistive_tech:
+  assistive_tech_config:
+  contents:
+  - procedure: Tab キーを押下し、「氏名」の入力欄にフォーカスを移動
+    actual: フォーカスが当たると「氏名」の入力欄の背景色が変化する
+    judgment: ○
+  - procedure: Tab キーを押下し、ラジオボタン「男性」にフォーカスを移動
+    actual: |-
+      フォーカスが外れた「氏名」の入力欄の背景色が元に戻る
+      フォーカスが当たるとラジオボタン「男性」のラベルの背景色が変化する
+    judgment: ○
+  - procedure: 下矢印キーを押下し、ラジオボタン「男性」から「女性」にフォーカスを移動
+    actual: |-
+      フォーカスが外れたラジオボタン「男性」のラベルの背景色が元に戻る
+      フォーカスが当たるとラジオボタン「女性」のラベルの背景色が変化する
+    judgment: ○
+  environment_type:
+  comment:
+  tester: 山崎 規弘
+  date: '2025-01-23'
+- id: 656
+  test: 0055-02
+  os: macOS Sonoma 14.6.1
+  user_agent: Safari 17.6
+  assistive_tech:
+  assistive_tech_config:
+  contents:
+  - procedure: Tab キーを押下し、「氏名」の入力欄にフォーカスを移動
+    actual: フォーカスが当たると「氏名」の入力欄の背景色が変化する
+    judgment: ○
+  - procedure: Tab キーを押下し、ラジオボタン「男性」にフォーカスを移動
+    actual: |-
+      フォーカスが外れた「氏名」の入力欄の背景色が元に戻る
+      フォーカスが当たるとラジオボタン「男性」のラベルの背景色が変化する
+    judgment: ○
+  - procedure: 下矢印キーを押下し、ラジオボタン「男性」から「女性」にフォーカスを移動
+    actual: |-
+      フォーカスが外れたラジオボタン「男性」のラベルの背景色が元に戻る
+      フォーカスが当たるとラジオボタン「女性」のラベルの背景色が変化する
+    judgment: ○
+  environment_type:
+  comment:
+  tester: 山崎 規弘
+  date: '2025-01-23'
+- id: 657
+  test: 0053-01
+  os: Windows 11 Home 24H2
+  user_agent: Firefox 134.0.2
+  assistive_tech:
+  assistive_tech_config:
+  contents:
+  - procedure: テストファイルを開き、「アイコンフォントA」と「アイコンフォントB」の表示内容の違いを確認する
+    actual: アイコンフォントAでは「star」、アイコンフォントBでは「★」が表示される
+    judgment: ○
+  environment_type:
+  comment:
+  tester: 山崎 規弘
+  date: '2025-01-23'
+- id: 658
+  test: 0053-01
+  os: Windows 11 Home 24H2
+  user_agent: Google Chrome 132.0.6834.111
+  assistive_tech:
+  assistive_tech_config:
+  contents:
+  - procedure: テストファイルを開き、「アイコンフォントA」と「アイコンフォントB」の表示内容の違いを確認する
+    actual: アイコンフォントAでは「star」、アイコンフォントBでは「★」が表示される
+    judgment: ○
+  environment_type:
+  comment:
+  tester: 山崎 規弘
+  date: '2025-01-23'
+- id: 659
+  test: 0053-01
+  os: Windows 11 Home 24H2
+  user_agent: Microsoft Edge 132.0.2957.115
+  assistive_tech:
+  assistive_tech_config:
+  contents:
+  - procedure: テストファイルを開き、「アイコンフォントA」と「アイコンフォントB」の表示内容の違いを確認する
+    actual: アイコンフォントAでは「star」、アイコンフォントBでは「★」が表示される
+    judgment: ○
+  environment_type:
+  comment:
+  tester: 山崎 規弘
+  date: '2025-01-23'
+- id: 660
+  test: 0053-01
+  os: Windows 11 Home 24H2
+  user_agent: Firefox 134.0.2
+  assistive_tech: NVDA 2024.4.2jp
+  assistive_tech_config: ビジュアルハイライトを ハイライトありに変更
+  contents:
+  - procedure: テストファイルを開いた状態で矢印キーを押し、「アイコンフォントA」と通知されるまで移動する
+    actual: 「アイコンフォントA」と通知された次に、下矢印キーを押し「star」と通知される
+    judgment: ○
+  - procedure: テストファイルを開いた状態で矢印キーを押し、「アイコンフォントB」と通知されるまで移動する
+    actual: 「アイコンフォントB」と通知された次に、下矢印キーを押し「画像Favorite」と通知される
+    judgment: ○
+  environment_type: 音声閲覧環境
+  comment:
+  tester: 山崎 規弘
+  date: '2025-01-23'
+- id: 661
+  test: 0053-01
+  os: Windows 11 Home 24H2
+  user_agent: Google Chrome 132.0.6834.111
+  assistive_tech: NVDA 2024.4.2jp
+  assistive_tech_config: ビジュアルハイライトを ハイライトありに変更
+  contents:
+  - procedure: テストファイルを開いた状態で矢印キーを押し、「アイコンフォントA」と通知されるまで移動する
+    actual: 「アイコンフォントA」と通知された次に、下矢印キーを押し「star」と通知される
+    judgment: ○
+  - procedure: テストファイルを開いた状態で矢印キーを押し、「アイコンフォントB」と通知されるまで移動する
+    actual: 「アイコンフォントB」と通知された次に、下矢印キーを押し「画像Favorite」と通知される
+    judgment: ○
+  environment_type: 音声閲覧環境
+  comment:
+  tester: 山崎 規弘
+  date: '2025-01-23'
+- id: 662
+  test: 0053-01
+  os: Windows 11 Home 24H2
+  user_agent: Microsoft Edge 132.0.2957.115
+  assistive_tech: NVDA 2024.4.2jp
+  assistive_tech_config: ビジュアルハイライトを ハイライトありに変更
+  contents:
+  - procedure: テストファイルを開いた状態で矢印キーを押し、「アイコンフォントA」と通知されるまで移動する
+    actual: 「アイコンフォントA」と通知された次に、下矢印キーを押し「star」と通知される
+    judgment: ○
+  - procedure: テストファイルを開いた状態で矢印キーを押し、「アイコンフォントB」と通知されるまで移動する
+    actual: 「アイコンフォントB」と通知された次に、下矢印キーを押し「画像Favorite」と通知される
+    judgment: ○
+  environment_type: 音声閲覧環境
+  comment:
+  tester: 山崎 規弘
+  date: '2025-01-23'
+- id: 663
+  test: 0121-01
+  os: macOS 11.7.10
+  user_agent: 'Safari 16.6.1 '
+  assistive_tech:
+  assistive_tech_config:
+  contents:
+  - procedure: ページを開いて、表示される現在時刻（＝ページ読み込み時刻）を確認し、何もしないで待つ
+    actual: 表示時間の延長を尋ねるダイアログが表示され、OKを押すと、更新されないままページが保たれた。
+    judgment: ○
+  - procedure: ページを開いて、表示される現在時刻（＝ページ読み込み時刻）を確認し、別のタブをみてテストケースのページを非アクティブにして、しばらく待ったあと、テストケースを開いているタブに戻る
+    actual: 表示時間の延長を尋ねるダイアログが表示され、OK を押すと、更新されないままページが保たれた。ダイアログが表示されている間のページ表示は真っ黒だった。
+    judgment: ×
+  environment_type:
+  comment:
+  tester: たた
+  date: '2025-01-23'
+- id: 664
+  test: 0090-01
+  os: macOS 11.7.10
+  user_agent: Firefox 134.0.2(64bit)
+  assistive_tech:
+  assistive_tech_config: ブラウザの設定で、デフォルトフォントのサイズを16pxから32pxに変更した
+  contents:
+  - procedure: ページを開く
+    actual: 見出しの「ユーザ」と段落中の「非常に」が周囲のテキストより少し大きく表示された。
+    judgment: ○
+  environment_type:
+  comment:
+  tester: たた
+  date: '2025-01-23'
+- id: 665
+  test: 0091-01
+  os: macOS 11.7.10
+  user_agent: Firefox 134.0.2(64bit)
+  assistive_tech:
+  assistive_tech_config: ブラウザの設定で、デフォルトフォントのサイズを16pxから32pxに変更した
+  contents:
+  - procedure: ページを開く
+    actual: 見出しの「ユーザ」と段落中の「非常に」が周囲のテキストより少し大きく表示された。
+    judgment: ○
+  environment_type:
+  comment:
+  tester: たた
+  date: '2025-01-23'
+- id: 666
+  test: 0092-01
+  os: macOS 11.7.10
+  user_agent: Firefox 134.0.2(64bit)
+  assistive_tech:
+  assistive_tech_config: ブラウザの設定で、デフォルトフォントのサイズを16pxから32pxに変更した
+  contents:
+  - procedure: ページを開く
+    actual: 見出しの「ユーザ」と段落中の「非常に」が周囲のテキストより少し大きく表示された。
+    judgment: ○
+  - procedure: ページを開く
+    actual: 見出しの「ユーザ」と段落の「非常に」では、「ユーザ」の方が大きく表示された
+    judgment: ○
+  environment_type:
+  comment:
+  tester: たた
+  date: '2025-01-23'
+- id: 667
+  test: 0056-01
+  os: macOS 11.7.10
+  user_agent: 'Safari 16.6.1 '
+  assistive_tech:
+  assistive_tech_config:
+  contents:
+  - procedure: ページを開いて、スタイルシートが適用された表組と、無効な表組みを確認する
+    actual: スタイルシートが適用された表組では、セル内に余白があり枠線が描画されていた。スタイルシートが無効な表組みでは余白や枠線がなかった。
+    judgment: ○
+  environment_type:
+  comment:
+  tester: たた
+  date: '2025-01-23'
+- id: 668
+  test: 0032-01
+  os: Windows ver 22H2
+  user_agent: Firefox Browser 127.0.2
+  assistive_tech:
+  assistive_tech_config:
+  contents:
+  - procedure: テストファイルを操作し、結果を確認した。
+    actual: “ワシントンが経済成長を刺激する”は表示されず、“全文表示”のリンクテキストのみが表示されました。
+    judgment: ○
+  environment_type:
+  comment:
+  tester: 江﨑和敬
+  date: '2025-01-23'
+- id: 669
+  test: 0034-01
+  os: Windows ver 22H2
+  user_agent: Firefox Browser 127.0.2
+  assistive_tech:
+  assistive_tech_config:
+  contents:
+  - procedure: 表示内容を確認した。
+    actual: CSSで文字間隔を調整した2番目のＨ2要素「東京都」の文字間隔の広がりが確認できた。
+    judgment: ○
+  environment_type:
+  comment:
+  tester: 江﨑和敬
+  date: '2025-01-23'
+- id: 670
+  test: 0035-01
+  os: Windows ver 22H2
+  user_agent: Firefox Browser 127.0.2
+  assistive_tech:
+  assistive_tech_config:
+  contents:
+  - procedure: テストファイルを操作し、結果を確認。その後、ユーザエージェントでスタイルシートを無効にし、改めて内容を確認した。
+    actual: スタイルシート無効により画像が非表示となった。
+    judgment: ○
+  environment_type:
+  comment:
+  tester: 江﨑和敬
+  date: '2025-01-23'
+- id: 671
+  test: 0035-04
+  os: Windows ver 22H2
+  user_agent: Firefox Browser 127.0.2
+  assistive_tech:
+  assistive_tech_config:
+  contents:
+  - procedure: |-
+      1. 1番目のリストの項目「ホーム」のリンク要素の表示内容を確認
+      2. 2番目のリストの項目「会社概要」のリンク要素の表示内容を確認
+    actual: |-
+      1. 1番目のリストの項目「ホーム」のリンク要素の最初と最後に画像が表示されなかった。（使用したFirefoxのバージョンが古いことが原因だった）
+
+      2. 2番目のリストの項目「会社概要」のリンク要素の最初と最後に画像が表示されない。
+    judgment: ×
+  environment_type:
+  comment: 「得られた結果 1.」に記載しているように、使用したFirefoxのバージョンが古かったことにより画像が表示されていなかった。バージョン 128.0以降は表示される模様。
+  tester: 江﨑和敬
+  date: '2025-01-23'
+- id: 672
+  test: 0036-01
+  os: Windows ver 22H2
+  user_agent: Firefox Browser 127.0.2
+  assistive_tech:
+  assistive_tech_config:
+  contents:
+  - procedure: |-
+      1. タブキーでリンク要素にフォーカスを移動する。
+      2. タブキーでリンク要素のフォーカスを外す。
+    actual: |-
+      1. フォーカスしたリンク要素の背景色が変化する。
+      2. フォーカスを外したリンク要素の背景色が、 “1.” で変化する前の状態に戻る。
+    judgment: ○
+  environment_type:
+  comment:
+  tester: 江﨑和敬
+  date: '2025-01-23'
+- id: 673
+  test: 0036-02
+  os: Windows ver 22H2
+  user_agent: Firefox Browser 127.0.2
+  assistive_tech:
+  assistive_tech_config:
+  contents:
+  - procedure: |-
+      1. 入力フィールドにフォーカスを移動する。
+      2. 入力フィールドのフォーカスを外す。
+    actual: |-
+      1. 入力フィールドの背景色が変化する。
+      2. 入力フィールドの背景色が、フォーカスを受け取る前の状態となる。
+    judgment: ○
+  - procedure: |-
+      1. ラジオボタンにフォーカスを合わせる。
+      2. ラジオボタンのフォーカスを外す。
+    actual: |-
+      1. ラジオボタンの背景色が変化する。
+      2. ラジオボタンの背景色が、フォーカスを受け取る前の状態となる。
+    judgment: ○
+  environment_type:
+  comment:
+  tester: 江﨑和敬
+  date: '2025-01-23'
+- id: 674
+  test: 0053-01
+  os: Windows ver 22H2
+  user_agent: Firefox Browser 127.0.2
+  assistive_tech:
+  assistive_tech_config:
+  contents:
+  - procedure: テストファイルを開き、「アイコンフォントA」と「アイコンフォントB」の表示内容の違いを確認した。
+    actual: アイコンフォントAでは「star」、アイコンフォントBでは「★」が表示された。
+    judgment: ○
+  environment_type:
+  comment:
+  tester: 江﨑和敬
+  date: '2025-01-23'
+- id: 675
+  test: 0053-01
+  os: Windows 11 Pro 64bit Version 25H2
+  user_agent: NetReader Neo 5.2510.74.140
+  assistive_tech: PC-Talker 12.2510.66.2502
+  assistive_tech_config:
+  contents:
+  - procedure: アイコンフォントA の位置まで移動
+    actual: star と読み上げた
+    judgment: 満たしている
+  - procedure: アイコンフォントB の位置まで移動
+    actual: 画像であることと、Favoriteという読み上げがあった。
+    judgment: 満たしている
+  environment_type: 音声閲覧環境
+  comment:
+  tester: 諸熊
+  date: '2025-10-23'
+- id: 676
+  test: 0054-01
+  os: Windows 11 Pro 64bit Version 25H2
+  user_agent: NetReader Neo 5.2510.74.140
+  assistive_tech: PC-Talker 12.2510.66.2502
+  assistive_tech_config:
+  contents:
+  - procedure: 「ポップアップボックスを表示」リンクを押し、フォーカスを移動
+    actual: ボタンに対し「閉じる」と通知された。
+    judgment: 満たしている
+  environment_type: 音声閲覧環境
+  comment:
+  tester: 諸熊
+  date: '2025-10-23'
+- id: 677
+  test: 0054-02
+  os: Windows 11 Pro 64bit Version 25H2
+  user_agent: NetReader Neo 5.2510.74.140
+  assistive_tech: PC-Talker 12.2510.66.2502
+  assistive_tech_config:
+  contents:
+  - procedure: 各入力欄を選択
+    actual: それぞれを選択した時に、「市外局番」「市内局番」「加入者番号」と読み上げた。
+    judgment: 満たしている
+  environment_type: 音声閲覧環境
+  comment:
+  tester: 諸熊
+  date: '2025-10-23'
+- id: 678
+  test: 0057-01
+  os: Windows 11 Pro 64bit Version 25H2
+  user_agent: NetReader Neo 5.2510.74.140
+  assistive_tech: PC-Talker 12.2510.66.2502
+  assistive_tech_config:
+  contents:
+  - procedure: ボタン1 を選択
+    actual: トグルボタン チェックなし と読み上げられた
+    judgment: 満たしている
+  - procedure: ボタン2を選択
+    actual: トグルボタン チェック と読み上げた
+    judgment: 満たしている
+  - procedure: ボタン3を選択
+    actual: トグルボタン ミックス と読み上げた
+    judgment: 満たしている
+  environment_type: 音声閲覧環境
+  comment:
+  tester: 諸熊
+  date: '2025-10-23'
+- id: 679
+  test: 0085-01
+  os: Windows 11 Pro 64bit Version 25H2
+  user_agent: NetReader Neo 5.2510.74.140
+  assistive_tech: PC-Talker 12.2510.66.2502
+  assistive_tech_config:
+  contents:
+  - procedure: フォーカスを移動
+    actual: 名前は空欄だった。
+    judgment: 満たしていない
+  - procedure: フォーカスを移動
+    actual: メールアドレスは空欄だった
+    judgment: 満たしていない
+  - procedure: 電話番号へ移動
+    actual: 電話番号は空欄だった
+    judgment: 満たしていない
+  - procedure: 郵便番号をフォーカス
+    actual: 郵便番号は空欄だった
+    judgment: 満たしていない
+  environment_type: 音声閲覧環境
+  comment:
+  tester: 諸熊
+  date: '2025-10-23'
+- id: 680
+  test: 0089-01
+  os: Windows 11 Pro 64bit Version 25H2
+  user_agent: NetReader Neo 5.2510.74.140
+  assistive_tech: PC-Talker 12.2510.66.2502
+  assistive_tech_config:
+  contents:
+  - procedure: 「メーリングリストに登録してください！」ボタンを押した
+    actual: ダイアログが開いたという通知は無かったが、フォーカスは移動した。
+    judgment: 満たしている
+  - procedure: タブキーや矢印キーを押してフォーカスを移動させた
+    actual: モーダルダイアログの外側へは移動できなかった。
+    judgment: 満たしている
+  - procedure: 閉じる ボタンを押下
+    actual: 「メーリングリストに登録して下さい」ボタンへフォーカスが移動し、読み上げられた。
+    judgment: 満たしている
+  - procedure: タブキーや矢印キーでフォーカスを移動
+    actual: モーダルダイアログに移動したり、ダイアログ内にあった項目が読み上げられたりするようなことはなかった。
+    judgment: 満たしている
+  environment_type: 音声閲覧環境
+  comment:
+  tester: 諸熊
+  date: '2025-10-23'
+- id: 681
+  test: 0121-01
+  os: Windows 11 Pro 64bit Version 25H2
+  user_agent: NetReader Neo 5.2510.74.140
+  assistive_tech: PC-Talker 12.2510.66.2502
+  assistive_tech_config:
+  contents:
+  - procedure: ページを表示して待機
+    actual: 警告メッセージは表示された。ダイアログをアクティブにすると読み上げが行われた。
+    judgment: 満たしている
+  environment_type: 音声閲覧環境
+  comment:
+  tester: 諸熊
+  date: '2025-10-23'
+- id: 682
+  test: 0142-01
+  os: Windows 11 Pro 64bit Version 25H2
+  user_agent: NetReader Neo 5.2510.74.140
+  assistive_tech: PC-Talker 12.2510.66.2502
+  assistive_tech_config:
+  contents:
+  - procedure: 検索ボタンを押下
+    actual: ボタン謳歌後、「0 件の結果が返されました」と音声が出た。
+    judgment: 満たしている
+  environment_type: 音声閲覧環境
+  comment:
+  tester: 諸熊
+  date: '2025-10-23'
+- id: 683
+  test: 0143-01
+  os: Windows 11 Pro 64bit Version 25H2
+  user_agent: NetReader Neo 5.2510.74.140
+  assistive_tech: PC-Talker 12.2510.66.2502
+  assistive_tech_config:
+  contents:
+  - procedure: メッセージを送る ボタンを押した
+    actual: ボタン謳歌直後、「あなた：こんにちわ」と音声で通知された。
+    judgment: 満たしている
+  - procedure: タブキーを押してリンクへ移動
+    actual: リンク内容の読み上げの後にメッセージの続きを読み上げしていた。ただし、先にメッセージを全て読み上げしてしまった後だと、ただリンクを読み上げるだけだった。
+    judgment: 満たしている
+  environment_type: 音声閲覧環境
+  comment:
+  tester: 諸熊
+  date: '2025-10-23'
+- id: 684
+  test: 0090-01
+  os: macOS 15.6
+  user_agent: Google Chrome 141.0.7390.108
+  assistive_tech:
+  assistive_tech_config:
+  contents:
+  - procedure: |-
+      Chromeメニュー > 設定 > デザイン > フォントサイズを変更
+
+      ブラウザ検証ツールで「周囲のテキスト」「strong要素」のpx値を確認
+    actual: |-
+      ▼極小
+      見出し
+      　周囲のテキスト : 18px
+      　strong要素 : 21.6px
+      段落
+      　周囲のテキスト : 10px
+      　strong要素 : 10.8px
+
+      ▼小
+      見出し
+      　周囲のテキスト : 24px
+      　strong要素 : 28.8px
+      段落
+      　周囲のテキスト : 12px
+      　strong要素 : 14.4px
+
+      ▼中（推奨）
+      見出し
+      　周囲のテキスト : 32px
+      　strong要素 : 38.4px
+      段落
+      　周囲のテキスト : 16px
+      　strong要素 : 19.2px
+
+      ▼大
+      見出し
+      　周囲のテキスト : 40px
+      　strong要素 : 48px
+      段落
+      　周囲のテキスト : 20px
+      　strong要素 : 24px
+
+      ▼極大
+      見出し
+      　周囲のテキスト : 48px
+      　strong要素 : 57.6px
+      段落
+      　周囲のテキスト : 24px
+      　strong要素 : 28.8px
+    judgment: ○
+  environment_type: 視覚閲覧環境
+  comment:
+  tester: DAWN 上村
+  date: '2025-10-23'
+- id: 685
+  test: 0090-01
+  os: macOS 15.6
+  user_agent: Safari 18.6
+  assistive_tech:
+  assistive_tech_config:
+  contents:
+  - procedure: |-
+      拡大 : option + command + プラス記号 (+)
+      縮小 : option + command + マイナス記号 (-)
+
+      ※ショートカットではなく「表示」メニューを開いて、「option」キーを押しながら「文字を拡大」または「文字を縮小」を選択でも変更可能
+
+      ブラウザ検証ツールで「周囲のテキスト」「strong要素」のpx値を確認
+    actual: |-
+      ▼縮小2回
+      見出し
+      　周囲のテキスト : 22.2px
+      　strong要素 : 26.6px
+      段落
+      　周囲のテキスト : 11.1px
+      　strong要素 : 13.3px
+
+      ▼縮小1回
+      見出し
+      　周囲のテキスト : 26.6px
+      　strong要素 : 32px
+      段落
+      　周囲のテキスト : 13.3px
+      　strong要素 : 16px
+
+      ▼標準
+      見出し
+      　周囲のテキスト : 32px
+      　strong要素 : 38.4px
+      段落
+      　周囲のテキスト : 16px
+      　strong要素 : 19.2px
+
+      ▼拡大1回
+      見出し
+      　周囲のテキスト : 38.4px
+      　strong要素 : 46px
+      段落
+      　周囲のテキスト : 19.2px
+      　strong要素 : 23px
+
+      ▼拡大2回
+      見出し
+      　周囲のテキスト : 46px
+      　strong要素 : 55.2px
+      段落
+      　周囲のテキスト : 23px
+      　strong要素 : 27.6px
+    judgment: ○
+  environment_type: 視覚閲覧環境
+  comment:
+  tester: DAWN 上村
+  date: '2025-10-23'
+- id: 686
+  test: WAIC-TEST-0001-01
+  os: macOS 15.6.1
+  user_agent: Google Chrome バージョン 141.0.7390.108
+  assistive_tech: VoiceOver
+  assistive_tech_config:
+  contents:
+  - procedure: VoiceOverキー + 下矢印キーで移動。
+    actual: 「リンク ウェブアクセシビリティ基盤委員会公開サイト」と読み上げられた。
+    judgment: ○
+  environment_type: 音声閲覧環境
+  comment:
+  tester: 軽部 裕香里
+  date: '2025-10-23'
+- id: 687
+  test: WAIC-TEST-0001-02
+  os: macOS 15.6.1
+  user_agent: Google Chrome バージョン 141.0.7390.108
+  assistive_tech: VoiceOver
+  assistive_tech_config:
+  contents:
+  - procedure: VoiceOverキー + 下矢印キーで移動。
+    actual: 「ウェブアクセシビリティ基盤委員会公開サイト」と読み上げられた。
+    judgment: ○
+  environment_type: 音声閲覧環境
+  comment:
+  tester: 軽部 裕香里
+  date: '2025-10-23'
+- id: 688
+  test: WAIC-TEST-0003-01
+  os: macOS 15.6.1
+  user_agent: Google Chrome バージョン 141.0.7390.108
+  assistive_tech: VoiceOver
+  assistive_tech_config:
+  contents:
+  - procedure: 'キーボード操作 : Tab キーを押下し、フォーカスの移動順序を確認。'
+    actual: 期待される結果の通り、フォーカスが移動した。
+    judgment: ○
+  environment_type: 音声閲覧環境
+  comment:
+  tester: 軽部 裕香里
+  date: '2025-10-23'
+- id: 689
+  test: WAIC-TEST-0004-01
+  os: macOS 15.6.1
+  user_agent: Google Chrome バージョン 141.0.7390.108
+  assistive_tech: VoiceOver
+  assistive_tech_config:
+  contents:
+  - procedure: Tabキー押下で移動。
+    actual: |-
+      リンク 4F雑貨 書籍 デパートのフロアガイド。各階について詳しくお知りになりたい場合は各階をクリックしてください。
+      ↓
+      リンク 3F衣料品
+      ↓
+      リンク 2Fお菓子 その他食品
+      ↓
+      リンク 1F生鮮食品
+      とフォーカスが移動・読み上げられた。
+    judgment: ○
+  environment_type: 音声閲覧環境
+  comment:
+  tester: 軽部 裕香里
+  date: '2025-10-23'
+- id: 690
+  test: WAIC-TEST-0008-01
+  os: macOS 15.6.1
+  user_agent: Google Chrome バージョン 141.0.7390.108
+  assistive_tech: VoiceOver
+  assistive_tech_config:
+  contents:
+  - procedure: Tabキー押下で移動。
+    actual: 「送信 ボタン」と読み上げられた。
+    judgment: ○
+  environment_type: 音声閲覧環境
+  comment:
+  tester: 軽部 裕香里
+  date: '2025-10-23'
+- id: 691
+  test: WAIC-TEST-0006-01
+  os: macOS 15.6.1
+  user_agent: Google Chrome バージョン 141.0.7390.108
+  assistive_tech: VoiceOver
+  assistive_tech_config:
+  contents:
+  - procedure: Tabキー押下で移動。
+    actual: 「リンク ウェブアクセシビリティ基盤委員会」と読み上げられた。
+    judgment: ○
+  environment_type: 音声閲覧環境
+  comment:
+  tester: 軽部 裕香里
+  date: '2025-10-23'
+- id: 692
+  test: WAIC-TEST-0024-01
+  os: macOS 15.6.1
+  user_agent: Google Chrome バージョン 141.0.7390.108
+  assistive_tech: VoiceOver
+  assistive_tech_config:
+  contents:
+  - procedure: VoiceOverキー + 右矢印キーで移動。
+    actual: nav要素の開始時は「ナビゲーション」、終了位置では「終わり、ナビゲーション」と読み上げられた。
+    judgment: ○
+  environment_type: 音声閲覧環境
+  comment:
+  tester: 軽部 裕香里
+  date: '2025-10-23'
+- id: 693
+  test: WAIC-TEST-0032-01
+  os: macOS 15.6.1
+  user_agent: Google Chrome バージョン 141.0.7390.108
+  assistive_tech: VoiceOver
+  assistive_tech_config:
+  contents:
+  - procedure: Tabキー押下で移動。
+    actual: 「リンク ワシントンが経済成長を刺激する 全文表示」と読み上げられた。
+    judgment: ○
+  environment_type: 音声閲覧環境
+  comment:
+  tester: 軽部 裕香里
+  date: '2025-10-23'
+- id: 694
+  test: WAIC-TEST-0051-01
+  os: macOS 15.6.1
+  user_agent: Google Chrome バージョン 141.0.7390.108
+  assistive_tech: VoiceOver
+  assistive_tech_config:
+  contents:
+  - procedure: VoiceOverキー + 右矢印キーで移動。
+    actual: 「今週の質問 セクション」と読み上げられた。
+    judgment: ○
+  environment_type: 音声閲覧環境
+  comment:
+  tester: 軽部 裕香里
+  date: '2025-10-23'
+- id: 695
+  test: WAIC-TEST-0019-01
+  os: iPadOS 18.6.2
+  user_agent: Safari 18.6.2
+  assistive_tech: VoiceOver
+  assistive_tech_config:
+  contents:
+  - procedure: 「こちら」リンクにフォーカスを当てたまま、VoiceOverローターで「行」を選択し、その状態で上にスワイプした。
+    actual: と、「ウェブアクセシビリティ基盤委員会の詳細はこちら」と読み上げられた。
+    judgment: ○
+  environment_type: 音声閲覧環境
+  comment:
+  tester: 秦　友幸
+  date: '2025-10-23'
+- id: 696
+  test: WAIC-TEST-0041-01
+  os: iPadOS 18.6.2
+  user_agent: Safari 18.6.2
+  assistive_tech: VoiceOver
+  assistive_tech_config:
+  contents:
+  - procedure: 「続きを読む」リンクにフォーカスを当てた。
+    actual: 「東海岸で暴風雨 続きを読む」と読み上げられた。
+    judgment: ○
+  environment_type: 音声閲覧環境
+  comment:
+  tester: 秦　友幸
+  date: '2025-10-23'
+- id: 697
+  test: WAIC-TEST-0032-01
+  os: iPadOS 18.6.2
+  user_agent: Safari 18.6.2
+  assistive_tech:
+  assistive_tech_config:
+  contents:
+  - procedure: Webページを表示した。
+    actual: 「ワシントンが経済成長を刺激する」は表示されず、「全文表示」のリンクテキストのみが表示された
+    judgment: ○
+  environment_type: 視覚閲覧環境
+  comment:
+  tester: 秦　友幸
+  date: '2025-10-23'
+- id: 698
+  test: WAIC-TEST-0032-01
+  os: iPadOS 18.6.2
+  user_agent: Safari 18.6.2
+  assistive_tech: VoiceOver
+  assistive_tech_config:
+  contents:
+  - procedure: 「全文表示」リンクにフォーカスを当てた。
+    actual: 「ワシントンが経済成長を刺激する 全文表示」が読み上げられた。
+    judgment: ○
+  environment_type: 音声閲覧環境
+  comment:
+  tester: 秦　友幸
+  date: '2025-10-23'
+- id: 699
+  test: 0001-01
+  os: Windows
+  user_agent: Microsoft Edge
+  assistive_tech: NVDA
+  assistive_tech_config:
+  contents:
+  - procedure: ブラウザを画像非表示に設定変更し、表示内容を確認した
+    actual: リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみが表示され、画像のファイル名や URL 等は表示されなかった。
+    judgment: ○
+  environment_type: 音声閲覧環境
+  comment:
+  tester: hosaka
+  date: '2025-10-23'
+- id: 700
+  test: 0001-01
+  os: Windows
+  user_agent: Microsoft Edge
+  assistive_tech: NVDA
+  assistive_tech_config:
+  contents:
+  - procedure: リンク「ウェブアクセシビリティ基盤委員会公開サイト」に Tab キーで移動した。
+    actual: リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみ読み上げられた。
+    judgment: ○
+  environment_type: 音声閲覧環境
+  comment:
+  tester: hosaka
+  date: '2025-10-23'
+- id: 701
+  test: 0001-02
+  os: Windows
+  user_agent: Microsoft Edge
+  assistive_tech: NVDA
+  assistive_tech_config:
+  contents:
+  - procedure: ブラウザを画像非表示に設定変更し、表示内容を確認した
+    actual: リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみが表示され、画像のファイル名や URL 等は表示されなかった。
+    judgment: ○
+  environment_type: 音声閲覧環境
+  comment:
+  tester: hosaka
+  date: '2025-10-23'
+- id: 702
+  test: 0001-03
+  os: Windows
+  user_agent: Microsoft Edge
+  assistive_tech: NVDA
+  assistive_tech_config:
+  contents:
+  - procedure: ブラウザを画像非表示に設定変更し、表示内容を確認した
+    actual: リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみが表示され、画像のファイル名や URL 等は表示されなかった。
+    judgment: ○
+  environment_type: 音声閲覧環境
+  comment:
+  tester: hosaka
+  date: '2025-10-23'
+- id: 703
+  test: 0002-01
+  os: Windows
+  user_agent: Microsoft Edge
+  assistive_tech: NVDA
+  assistive_tech_config:
+  contents:
+  - procedure: ブラウザを画像非表示に設定変更し、表示内容を確認した
+    actual: リンクテキスト「ウェブアクセシビリティ基盤委員会 公式サイト」のみが表示され、画像のファイル名やURL等は表示されなかった
+    judgment: ×
+  environment_type: 音声閲覧環境
+  comment:
+  tester: hosaka
+  date: '2025-10-23'
+- id: 704
+  test: 0002-02
+  os: Windows
+  user_agent: Microsoft Edge
+  assistive_tech: NVDA
+  assistive_tech_config:
+  contents:
+  - procedure: ブラウザを画像非表示に設定変更し、表示内容を確認した
+    actual: リンクテキスト “施設ご利用の手引き” に続き、アイコン画像の代替テキスト “PDF ファイル” が表示された
+    judgment: ○
+  environment_type: 音声閲覧環境
+  comment:
+  tester: hosaka
+  date: '2025-10-23'
+- id: 705
+  test: 0003-01
+  os: Windows
+  user_agent: Microsoft Edge
+  assistive_tech: NVDA
+  assistive_tech_config:
+  contents:
+  - procedure: 'キーボード操作 : Tab キーを押下し、フォーカスの移動順序を確認'
+    actual: |-
+      次の順序でフォーカスが移動する :
+
+      送り先 1 の姓
+      送り先 1 の名
+      送り先 1 の住所
+      スイカ
+      オリジナルスタンプ
+      メロディカード
+      送り先 1 のメッセージ
+      1 番目の受取人へのカードプレビュー
+      送り先 2 の姓
+      送り先 2 の名
+      送り先 2 の住所
+      スイカ
+      オリジナルスタンプ
+      メロディカード
+      送り先 2 へのメッセージ
+      2 番目の受取人へのカードプレビュー
+      注文内容の確認
+      入力内容のリセット
+    judgment: ○
+  environment_type: 音声閲覧環境
+  comment:
+  tester: hosaka
+  date: '2025-10-23'
+- id: 706
+  test: 0003-02
+  os: Windows
+  user_agent: Microsoft Edge
+  assistive_tech: NVDA
+  assistive_tech_config:
+  contents:
+  - procedure: 'キーボード操作 : Tab キーを押下し、フォーカスの移動順序を確認'
+    actual: |-
+      次の順序でフォーカスが移動する :
+
+      テキストフィールド
+      “送信” ボタン
+      携帯サイト
+      サイトマップ
+    judgment: ○
+  environment_type: 音声閲覧環境
+  comment:
+  tester: hosaka
+  date: '2025-10-23'
+- id: 707
+  test: 0003-03
+  os: macOS
+  user_agent: Google Chrome
+  assistive_tech: VoiceOver
+  assistive_tech_config:
+  contents:
+  - procedure: 'キーボード操作 : Tab キーを押下し、フォーカスの移動順序を確認'
+    actual: |-
+      次の 1. 〜 2. をすべて満たしている
+
+      次の順序でフォーカスが移動する : (カッコ内は、指定されている tabindex 属性値)
+      リンク 4 (1)
+      リンク 3 (2)
+      リンク 2 (3)
+      リンク 1 (4)
+      リンク 5 (0)
+      リンク 7 (0)
+      リンク 6 (tabindex="-1") にはフォーカスが移動しない
+    judgment: ○
+  environment_type: 音声閲覧環境
+  comment:
+  tester: hosaka
+  date: '2025-10-23'
+- id: 708
+  test: 0003-04
+  os: macOS
+  user_agent: Google Chrome
+  assistive_tech: VoiceOver
+  assistive_tech_config:
+  contents:
+  - procedure: 'キーボード操作 : Tab キーを押下し、フォーカスの移動順序を確認'
+    actual: |
+      次の順序でフォーカスが移動する : (カッコ内は、指定されている tabindex 属性値)
+
+      リンク 1 (1)
+      リンク 3 (1)
+      リンク 2 (2)
+      リンク 4 (2)
+    judgment: ○
+  environment_type: 音声閲覧環境
+  comment:
+  tester: hosaka
+  date: '2025-10-23'
+- id: 709
+  test: 0004-02
+  os: macOS
+  user_agent: Google Chrome
+  assistive_tech: VoiceOver
+  assistive_tech_config:
+  contents:
+  - procedure: ブラウザを画像非表示に設定変更し、表示内容を確認した
+    actual: イメージマップに用いられている画像の代替テキスト “デパートのフロアガイド。各階について詳しくお知りになりたい場合は各階をクリックしてください。” が表示される
+    judgment: ○
+  environment_type: 音声閲覧環境
+  comment:
+  tester: hosaka
+  date: '2025-10-23'
+- id: 710
+  test: 0004-03
+  os: macOS
+  user_agent: Google Chrome
+  assistive_tech: VoiceOver
+  assistive_tech_config:
+  contents:
+  - procedure: ブラウザを画像非表示に設定変更し、表示内容を確認した
+    actual: |-
+      各売り場への直通電話番号につきましてはお問い合わせ先一覧をご参照ください。
+      デパートのフロアガイド。各階について詳しくお知りになりたい場合は各階をクリックしてください。
+      店舗へのアクセスにつきましては周辺地図をご参照ください。
+      が表示されている
+    judgment: ×
+  environment_type: 音声閲覧環境
+  comment:
+  tester: hosaka
+  date: '2025-10-23'
+- id: 711
+  test: 0004-04
+  os: macOS
+  user_agent: Google Chrome
+  assistive_tech: VoiceOver
+  assistive_tech_config:
+  contents:
+  - procedure: 各 area 要素を選択し、挙動を確認
+    actual: 各リンク先へ遷移する
+    judgment: ○
+  environment_type: 音声閲覧環境
+  comment:
+  tester: hosaka
+  date: '2025-10-23'
+- id: 712
+  test: 0004-05
+  os: macOS
+  user_agent: Google Chrome
+  assistive_tech: VoiceOver
+  assistive_tech_config:
+  contents:
+  - procedure: |-
+      マウス操作 : 各 area 要素にマウスポインタを重ね、挙動を確認
+      キーボード操作 : 各 area 要素にフォーカスを移動し、挙動を確認
+    actual: |-
+      リンクであることがマウスポインタの形で判別できる
+      キーボード操作時は、フォーカスインジケータが表示された
+    judgment: ○
+  environment_type: 音声閲覧環境
+  comment:
+  tester: hosaka
+  date: '2025-10-23'

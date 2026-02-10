@@ -31,6 +31,7 @@ type ResultData = {
   test: string;
   os: string;
   user_agent: string;
+  environment_type?: string | string[] | null;
   assistive_tech?: string | null;
   assistive_tech_config?: string | null;
   contents: ResultContent[];
@@ -61,6 +62,23 @@ export function getCriterionLevel(criterion: CriterionData): string {
     return `(WCAG 2.1 レベル${criterion.level})`;
   }
   return `(レベル${criterion.level})`;
+}
+
+/**
+ * 達成基準IDの参照先を解決
+ */
+export function getCriterionLookupId(
+  criteria: Record<string, CriterionData>,
+  criterionId: string
+): string | undefined {
+  if (criteria[criterionId]) {
+    return criterionId;
+  }
+  const normalizedId = criterionId.replace(/\s*(\((参考)\)|（参考）)$/u, '');
+  if (normalizedId !== criterionId && criteria[normalizedId]) {
+    return normalizedId;
+  }
+  return undefined;
 }
 
 /**
