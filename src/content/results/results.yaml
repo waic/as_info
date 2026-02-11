@@ -11784,7 +11784,7 @@
   - procedure: ブラウザの設定画面からフォントサイズを「大」に変更
     actual: 「ユーザー」と「非常に」が他のテキストよりも大きく表示され、「ユーザー」は「非常に」よりも大きく表示された。
     judgment: ○
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 土永 崇之
   date: '2024-10-10'
@@ -11798,7 +11798,7 @@
   - procedure: テストコードを表示し、40秒待機
     actual: 40秒経過時点でブラウザ上部に「このページは20秒後に更新されます。表示時間を延長しますか?」と書かれたポップアップが表示され、延長の有無を選択できた。
     judgment: ○
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 土永 崇之
   date: '2024-10-10'
@@ -12641,7 +12641,7 @@
   - procedure: Tab キーを押下し、リンクテキスト「サービス」から他の要素にフォーカスを移動
     actual: フォーカスが外れるとリンクテキスト「サービス」の背景色が元の色に戻る
     judgment: ○
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 山崎 規弘
   date: '2025-01-23'
@@ -12664,7 +12664,7 @@
   - procedure: Tab キーを押下し、リンクテキスト「サービス」から他の要素にフォーカスを移動
     actual: フォーカスが外れるとリンクテキスト「サービス」の背景色が元の色に戻る
     judgment: ○
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 山崎 規弘
   date: '2025-01-23'
@@ -12687,7 +12687,7 @@
   - procedure: Tab キーを押下し、リンクテキスト「サービス」から他の要素にフォーカスを移動
     actual: フォーカスが外れるとリンクテキスト「サービス」の背景色が元の色に戻る
     judgment: ○
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 山崎 規弘
   date: '2025-01-23'
@@ -12710,7 +12710,7 @@
   - procedure: Tab キーを押下し、リンクテキスト「サービス」から他の要素にフォーカスを移動
     actual: フォーカスが外れるとリンクテキスト「サービス」の背景色が元の色に戻る
     judgment: ○
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 山崎 規弘
   date: '2025-01-23'
@@ -12733,7 +12733,7 @@
   - procedure: Tab キーを押下し、リンクテキスト「サービス」から他の要素にフォーカスを移動
     actual: フォーカスが外れるとリンクテキスト「サービス」の背景色が元の色に戻る
     judgment: ○
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 山崎 規弘
   date: '2025-01-23'
@@ -12756,7 +12756,7 @@
   - procedure: Tab キーを押下し、リンクテキスト「サービス」から他の要素にフォーカスを移動
     actual: フォーカスが外れるとリンクテキスト「サービス」の背景色が元の色に戻る
     judgment: ○
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 山崎 規弘
   date: '2025-01-23'
@@ -12779,7 +12779,7 @@
   - procedure: Tab キーを押下し、リンクテキスト「サービス」から他の要素にフォーカスを移動
     actual: フォーカスが外れるとリンクテキスト「サービス」の背景色が元の色に戻る
     judgment: ○
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 山崎 規弘
   date: '2025-01-23'
@@ -12803,7 +12803,7 @@
       フォーカスが外れたラジオボタン「男性」のラベルの背景色が元に戻る
       フォーカスが当たるとラジオボタン「女性」のラベルの背景色が変化する
     judgment: ○
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 山崎 規弘
   date: '2025-01-23'
@@ -12827,7 +12827,7 @@
       フォーカスが外れたラジオボタン「男性」のラベルの背景色が元に戻る
       フォーカスが当たるとラジオボタン「女性」のラベルの背景色が変化する
     judgment: ○
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 山崎 規弘
   date: '2025-01-23'
@@ -12851,7 +12851,7 @@
       フォーカスが外れたラジオボタン「男性」のラベルの背景色が元に戻る
       フォーカスが当たるとラジオボタン「女性」のラベルの背景色が変化する
     judgment: ○
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 山崎 規弘
   date: '2025-01-23'
@@ -12875,7 +12875,7 @@
       フォーカスが外れたラジオボタン「男性」のラベルの背景色が元に戻る
       フォーカスが当たるとラジオボタン「女性」のラベルの背景色が変化する
     judgment: ○
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 山崎 規弘
   date: '2025-01-23'
@@ -12899,7 +12899,7 @@
       フォーカスが外れたラジオボタン「男性」のラベルの背景色が元に戻る
       フォーカスが当たるとラジオボタン「女性」のラベルの背景色が変化する
     judgment: ○
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 山崎 規弘
   date: '2025-01-23'
@@ -12923,7 +12923,7 @@
       フォーカスが外れたラジオボタン「男性」のラベルの背景色が元に戻る
       フォーカスが当たるとラジオボタン「女性」のラベルの背景色が変化する
     judgment: ○
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 山崎 規弘
   date: '2025-01-23'
@@ -12947,7 +12947,7 @@
       フォーカスが外れたラジオボタン「男性」のラベルの背景色が元に戻る
       フォーカスが当たるとラジオボタン「女性」のラベルの背景色が変化する
     judgment: ○
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 山崎 規弘
   date: '2025-01-23'
@@ -12961,7 +12961,7 @@
   - procedure: テストファイルを開き、「アイコンフォントA」と「アイコンフォントB」の表示内容の違いを確認する
     actual: アイコンフォントAでは「star」、アイコンフォントBでは「★」が表示される
     judgment: ○
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 山崎 規弘
   date: '2025-01-23'
@@ -12975,7 +12975,7 @@
   - procedure: テストファイルを開き、「アイコンフォントA」と「アイコンフォントB」の表示内容の違いを確認する
     actual: アイコンフォントAでは「star」、アイコンフォントBでは「★」が表示される
     judgment: ○
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 山崎 規弘
   date: '2025-01-23'
@@ -12989,7 +12989,7 @@
   - procedure: テストファイルを開き、「アイコンフォントA」と「アイコンフォントB」の表示内容の違いを確認する
     actual: アイコンフォントAでは「star」、アイコンフォントBでは「★」が表示される
     judgment: ○
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 山崎 規弘
   date: '2025-01-23'
@@ -13057,7 +13057,7 @@
   - procedure: ページを開いて、表示される現在時刻（＝ページ読み込み時刻）を確認し、別のタブをみてテストケースのページを非アクティブにして、しばらく待ったあと、テストケースを開いているタブに戻る
     actual: 表示時間の延長を尋ねるダイアログが表示され、OK を押すと、更新されないままページが保たれた。ダイアログが表示されている間のページ表示は真っ黒だった。
     judgment: ×
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: たた
   date: '2025-01-23'
@@ -13071,7 +13071,7 @@
   - procedure: ページを開く
     actual: 見出しの「ユーザ」と段落中の「非常に」が周囲のテキストより少し大きく表示された。
     judgment: ○
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: たた
   date: '2025-01-23'
@@ -13085,7 +13085,7 @@
   - procedure: ページを開く
     actual: 見出しの「ユーザ」と段落中の「非常に」が周囲のテキストより少し大きく表示された。
     judgment: ○
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: たた
   date: '2025-01-23'
@@ -13102,7 +13102,7 @@
   - procedure: ページを開く
     actual: 見出しの「ユーザ」と段落の「非常に」では、「ユーザ」の方が大きく表示された
     judgment: ○
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: たた
   date: '2025-01-23'
@@ -13116,7 +13116,7 @@
   - procedure: ページを開いて、スタイルシートが適用された表組と、無効な表組みを確認する
     actual: スタイルシートが適用された表組では、セル内に余白があり枠線が描画されていた。スタイルシートが無効な表組みでは余白や枠線がなかった。
     judgment: ○
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: たた
   date: '2025-01-23'
@@ -13130,7 +13130,7 @@
   - procedure: テストファイルを操作し、結果を確認した。
     actual: “ワシントンが経済成長を刺激する”は表示されず、“全文表示”のリンクテキストのみが表示されました。
     judgment: ○
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 江﨑和敬
   date: '2025-01-23'
@@ -13144,7 +13144,7 @@
   - procedure: 表示内容を確認した。
     actual: CSSで文字間隔を調整した2番目のＨ2要素「東京都」の文字間隔の広がりが確認できた。
     judgment: ○
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 江﨑和敬
   date: '2025-01-23'
@@ -13158,7 +13158,7 @@
   - procedure: テストファイルを操作し、結果を確認。その後、ユーザエージェントでスタイルシートを無効にし、改めて内容を確認した。
     actual: スタイルシート無効により画像が非表示となった。
     judgment: ○
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 江﨑和敬
   date: '2025-01-23'
@@ -13177,7 +13177,7 @@
 
       2. 2番目のリストの項目「会社概要」のリンク要素の最初と最後に画像が表示されない。
     judgment: ×
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment: 「得られた結果 1.」に記載しているように、使用したFirefoxのバージョンが古かったことにより画像が表示されていなかった。バージョン 128.0以降は表示される模様。
   tester: 江﨑和敬
   date: '2025-01-23'
@@ -13195,7 +13195,7 @@
       1. フォーカスしたリンク要素の背景色が変化する。
       2. フォーカスを外したリンク要素の背景色が、 “1.” で変化する前の状態に戻る。
     judgment: ○
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 江﨑和敬
   date: '2025-01-23'
@@ -13220,7 +13220,7 @@
       1. ラジオボタンの背景色が変化する。
       2. ラジオボタンの背景色が、フォーカスを受け取る前の状態となる。
     judgment: ○
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 江﨑和敬
   date: '2025-01-23'
@@ -13234,7 +13234,7 @@
   - procedure: テストファイルを開き、「アイコンフォントA」と「アイコンフォントB」の表示内容の違いを確認した。
     actual: アイコンフォントAでは「star」、アイコンフォントBでは「★」が表示された。
     judgment: ○
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 江﨑和敬
   date: '2025-01-23'
