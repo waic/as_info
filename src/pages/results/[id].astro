@@ -79,6 +79,7 @@ function isInReview(resultId: number): boolean {
 
 const largerThStyle = 'min-width: 6em; max-width: 10em; overflow-wrap: break-word;';
 const listItemStyle = 'overflow-wrap: break-word;';
+const actualResultStyle = 'min-width: 400px;';
 ---
 
 <BaseLayout title={`テスト${testId}`}>
@@ -190,7 +191,7 @@ const listItemStyle = 'overflow-wrap: break-word;';
                     <td style={largerThStyle}>
                       {contents[0].procedure?.split('\n').map((line: string) => <p>{line}</p>)}
                     </td>
-                    <td style={largerThStyle}>
+                    <td style={`${largerThStyle} ${actualResultStyle}`}>
                       {contents[0].actual?.split('\n').map((line: string) => <p>{line}</p>)}
                     </td>
                     <td style={largerThStyle}>{getTesterName(result)}</td>
