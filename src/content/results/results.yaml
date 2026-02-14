@@ -11800,6 +11800,7 @@
     judgment: ○
   environment_type: 視覚閲覧環境
   comment:
+  reviewer_comment: '[WAIC注]ウィンドウ非アクティブ時の動作を未確認と思われます。'
   tester: 土永 崇之
   date: '2024-10-10'
 - id: 592
@@ -12184,6 +12185,7 @@
     judgment: ○
   environment_type: 視覚閲覧環境
   comment:
+  reviewer_comment: '[WAIC注]他環境でのテスト結果コメントより、「Firefoxはタスクバーのアイコンの点滅があったため、何かがあったということには気づけた」とのこと。'
   tester: 山崎 規弘
   date: '2024-10-10'
 - id: 615
@@ -13059,6 +13061,7 @@
     judgment: ×
   environment_type: 視覚閲覧環境
   comment:
+  reviewer_comment: '[WAIC注]2つ目の手順についても、判断は○で問題ないと思われます。'
   tester: たた
   date: '2025-01-23'
 - id: 664
@@ -13118,6 +13121,7 @@
     judgment: ○
   environment_type: 視覚閲覧環境
   comment:
+  reviewer_comment: '[WAIC注]表組の外側の余白（マージン）が未確認と思われます。'
   tester: たた
   date: '2025-01-23'
 - id: 668
