@@ -19,7 +19,7 @@
   "license": "ISC",
   "dependencies": {
     "@astrojs/react": "^4.2.1",
-    "astro": "^5.16.7",
+    "astro": "^5.17.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
