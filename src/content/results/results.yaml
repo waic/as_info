@@ -13375,7 +13375,7 @@
   assistive_tech_config:
   contents:
   - procedure: 検索ボタンを押下
-    actual: ボタン謳歌後、「0 件の結果が返されました」と音声が出た。
+    actual: ボタン押下後、「0 件の結果が返されました」と音声が出た。
     judgment: 満たしている
   environment_type: 音声閲覧環境
   comment:
@@ -13389,7 +13389,7 @@
   assistive_tech_config:
   contents:
   - procedure: メッセージを送る ボタンを押した
-    actual: ボタン謳歌直後、「あなた：こんにちわ」と音声で通知された。
+    actual: ボタン押下直後、「あなた：こんにちわ」と音声で通知された。
     judgment: 満たしている
   - procedure: タブキーを押してリンクへ移動
     actual: リンク内容の読み上げの後にメッセージの続きを読み上げしていた。ただし、先にメッセージを全て読み上げしてしまった後だと、ただリンクを読み上げるだけだった。
