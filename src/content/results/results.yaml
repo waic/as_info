@@ -12603,8 +12603,9 @@
   - procedure: Tabキーで「サービス」リンクテキストからフォーカスを移動した
     actual: リンクテキストの背景色が元に戻った
     judgment: 満たしている
-  environment_type: 音声閲覧環境
+  environment_type: 視覚閲覧環境
   comment:
+  reviewer_comment: '[WAIC注] 音声閲覧環境と報告されましたが視覚閲覧環境のテストであると判断しました。'
   tester: mehm8128
   date: '2025-01-23'
 - id: 642
@@ -13775,6 +13776,7 @@
     judgment: ×
   environment_type: 音声閲覧環境
   comment:
+  reviewer_comment: '[WAIC注] 判定は×ですが、テストの期待を満たしていると解釈できます。'
   tester: hosaka
   date: '2025-10-23'
 - id: 704
