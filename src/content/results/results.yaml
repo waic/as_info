@@ -13867,8 +13867,9 @@
       リンク 7 (0)
       リンク 6 (tabindex="-1") にはフォーカスが移動しない
     judgment: ○
-  environment_type: 音声閲覧環境
+  environment_type: 視覚閲覧環境
   comment:
+  reviewer_comment: '[WAIC注] VoiceOver と書かれていますが視覚閲覧環境のテストであると判断しました。'
   tester: hosaka
   date: '2025-10-23'
 - id: 708
@@ -13887,8 +13888,9 @@
       リンク 2 (2)
       リンク 4 (2)
     judgment: ○
-  environment_type: 音声閲覧環境
+  environment_type: 視覚閲覧環境
   comment:
+  reviewer_comment: '[WAIC注] VoiceOver と書かれていますが視覚閲覧環境のテストであると判断しました。'
   tester: hosaka
   date: '2025-10-23'
 - id: 709
@@ -13901,8 +13903,9 @@
   - procedure: ブラウザを画像非表示に設定変更し、表示内容を確認した
     actual: イメージマップに用いられている画像の代替テキスト “デパートのフロアガイド。各階について詳しくお知りになりたい場合は各階をクリックしてください。” が表示される
     judgment: ○
-  environment_type: 音声閲覧環境
+  environment_type: 視覚閲覧環境
   comment:
+  reviewer_comment: '[WAIC注] VoiceOver と書かれていますが視覚閲覧環境のテストであると判断しました。'
   tester: hosaka
   date: '2025-10-23'
 - id: 710
@@ -13919,8 +13922,9 @@
       店舗へのアクセスにつきましては周辺地図をご参照ください。
       が表示されている
     judgment: ×
-  environment_type: 音声閲覧環境
+  environment_type: 視覚閲覧環境
   comment:
+  reviewer_comment: '[WAIC注] VoiceOver と書かれていますが視覚閲覧環境のテストであると判断しました。'
   tester: hosaka
   date: '2025-10-23'
 - id: 711
@@ -13933,8 +13937,9 @@
   - procedure: 各 area 要素を選択し、挙動を確認
     actual: 各リンク先へ遷移する
     judgment: ○
-  environment_type: 音声閲覧環境
+  environment_type: 視覚閲覧環境
   comment:
+  reviewer_comment: '[WAIC注] VoiceOver と書かれていますが視覚閲覧環境のテストであると判断しました。'
   tester: hosaka
   date: '2025-10-23'
 - id: 712
@@ -13951,7 +13956,8 @@
       リンクであることがマウスポインタの形で判別できる
       キーボード操作時は、フォーカスインジケータが表示された
     judgment: ○
-  environment_type: 音声閲覧環境
+  environment_type: 視覚閲覧環境
   comment:
+  reviewer_comment: '[WAIC注] VoiceOver と書かれていますが視覚閲覧環境のテストであると判断しました。'
   tester: hosaka
   date: '2025-10-23'
