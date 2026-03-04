@@ -2,20 +2,14 @@
 /**
  * 2段構成の見出しコンポーネント
  */
-interface Props {
-  first: string;
-  second: string;
-}
-
-const { first, second } = Astro.props;
 ---
 
 <h1>
-  <span style="font-size: 0.9em;">
-    {first}
+  <span style="font-size: 0.7em;">
+    アクセシビリティ サポーテッド（AS）情報
   </span>
   <br />
-  <span style="font-size: 0.7em;">
-    {second}
+  <span style="font-size: 0.9em;">
+    <slot />
   </span>
 </h1>

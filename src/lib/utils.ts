@@ -74,7 +74,7 @@ export function getCriterionLookupId(
   if (criteria[criterionId]) {
     return criterionId;
   }
-  const normalizedId = criterionId.replace(/\s*(\((参考)\)|（参考）)$/u, '');
+  const normalizedId = criterionId.replace(/\s*(\(参考\)|（参考）)$/u, '');
   if (normalizedId !== criterionId && criteria[normalizedId]) {
     return normalizedId;
   }
