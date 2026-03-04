@@ -13008,6 +13008,7 @@
     judgment: ○
   environment_type: 音声閲覧環境
   comment:
+  reviewer_comment: '[WAIC注] テスト方法、期待される結果がコピー＆ペーストのままになっており、実際の操作結果であると読み取れません。'
   tester: 山崎 規弘
   date: '2025-01-23'
 - id: 661
@@ -13025,6 +13026,7 @@
     judgment: ○
   environment_type: 音声閲覧環境
   comment:
+  reviewer_comment: '[WAIC注] テスト方法、期待される結果がコピー＆ペーストのままになっており、実際の操作結果であると読み取れません。'
   tester: 山崎 規弘
   date: '2025-01-23'
 - id: 662
@@ -13042,6 +13044,7 @@
     judgment: ○
   environment_type: 音声閲覧環境
   comment:
+  reviewer_comment: '[WAIC注] テスト方法、期待される結果がコピー＆ペーストのままになっており、実際の操作結果であると読み取れません。'
   tester: 山崎 規弘
   date: '2025-01-23'
 - id: 663
@@ -13655,6 +13658,7 @@
     judgment: ○
   environment_type: 音声閲覧環境
   comment:
+  reviewer_comment: '[WAIC注] ローター操作による行の移動は、テスト手順で求められた操作に合致しない可能性があります。'
   tester: 秦　友幸
   date: '2025-10-23'
 - id: 696
