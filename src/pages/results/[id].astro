@@ -8,7 +8,14 @@ import Logo from '../../components/Logo.astro';
 import H1 from '../../components/H1.astro';
 import Navigation from '../../components/Navigation.astro';
 import { getCriteria, getTechs, getTests, getResults, getMetadata } from '../../lib/data';
-import { getCriterionLevel, sortByResultId, type ResultData, type ResultContent } from '../../lib/utils';
+import {
+  getCriterionLevel,
+  getCriterionLookupId,
+  sortByResultId,
+  type ResultData,
+  type ResultContent,
+} from '../../lib/utils';
+import { getLinkBase } from '../../lib/links';
 
 export async function getStaticPaths() {
   const { getEntry } = await import('astro:content');
@@ -36,8 +43,19 @@ const results = await getResults();
 const test = tests[testId];
 const criterionIds = test.criteria;
 const techIds = test.techs;
-const resultIds = results.filter((result: ResultData) => result.test === testId).sort(sortByResultId);
-const base = import.meta.env.BASE_URL;
+const resultIds = results
+  .filter((result: ResultData) => result.test === testId)
+  .sort(sortByResultId)
+  .map((result: ResultData) => ({
+    ...result,
+    environment_type: ((): string[] => {
+      const et = result.environment_type;
+      if (Array.isArray(et)) return et;
+      if (et) return [et];
+      return [];
+    })(),
+  }));
+const base = getLinkBase(Astro.url.pathname);
 
 // ヘルパー関数
 function getTesterName(result: ResultData): string {
@@ -96,19 +114,27 @@ const actualResultStyle = 'min-width: 400px;';
 
     <h2>テストの対象となる達成基準</h2>
     <ul>
-      {criterionIds.map((criterionId: string) => (
-        <li>
-          <a href={`${base}criteria/${criterionId}.html`}>
-            {criterionId}
-            {' '}
-            {criteria[criterionId].title}
-            {' '}
-            {getCriterionLevel(criteria[criterionId])}
-            {' '}
-            に関連するAS情報
-          </a>
-        </li>
-      ))}
+      {criterionIds.map((criterionId: string) => {
+        const lookupId = getCriterionLookupId(criteria, criterionId);
+        const criterion = lookupId ? criteria[lookupId] : undefined;
+        return (
+          <li>
+            {criterion ? (
+              <a href={`${base}criteria/${lookupId}.html`}>
+                {criterionId}
+                {' '}
+                {criterion.title}
+                {' '}
+                {getCriterionLevel(criterion)}
+                {' '}
+                に関連するAS情報
+              </a>
+            ) : (
+              <span>{criterionId} に関連するAS情報</span>
+            )}
+          </li>
+        );
+      })}
     </ul>
 
     <h2>関連する達成方法（テクニック）</h2>
@@ -167,55 +193,26 @@ const actualResultStyle = 'min-width: 400px;';
             </tr>
           </thead>
           <tbody>
-            {[...resultIds].reverse().map((result: ResultData) => {
+            {[...resultIds].reverse().map((result: ResultData & { environment_type: string[] }) => {
               const contents = result.contents;
-              if (contents.length === 1) {
-                return (
-                  <tr>
-                    <th scope="row">{result.id}</th>
-                    <td style={largerThStyle}>
-                      <ul>
-                        <li style={listItemStyle}>{result.os}</li>
-                        <li style={listItemStyle}>{result.user_agent}</li>
-                        {result.assistive_tech && <li style={listItemStyle}>{result.assistive_tech}</li>}
-                        {result.assistive_tech_config && (
-                          <li style={listItemStyle}>
-                            {result.assistive_tech_config.split('\n').map((line: string, i: number) => (
-                              <p>{line}</p>
-                            ))}
-                          </li>
-                        )}
-                      </ul>
-                    </td>
-                    <td>{getJudgment(contents[0])}</td>
-                    <td style={largerThStyle}>
-                      {contents[0].procedure?.split('\n').map((line: string) => <p>{line}</p>)}
-                    </td>
-                    <td style={`${largerThStyle} ${actualResultStyle}`}>
-                      {contents[0].actual?.split('\n').map((line: string) => <p>{line}</p>)}
-                    </td>
-                    <td style={largerThStyle}>{getTesterName(result)}</td>
-                    <td style={largerThStyle}>{getDate(result)}</td>
-                    <td style={largerThStyle}>
-                      {isInReview(result.id) && <span>[WAICレビュー作業中]</span>}
-                      {getComments(result).split('\n').map((line: string) => <p>{line}</p>)}
-                    </td>
-                  </tr>
-                );
-              }
               return contents.map((item: ResultContent, index: number) => (
                 <tr>
                   {index === 0 && (
                     <>
-                      <th rowspan={contents.length} scope="rowgroup">{result.id}</th>
+                      <th rowspan={contents.length} scope={contents.length === 1 ? 'row' : 'rowgroup'}>{result.id}</th>
                       <td rowspan={contents.length} style={largerThStyle}>
                         <ul>
                           <li style={listItemStyle}>{result.os}</li>
                           <li style={listItemStyle}>{result.user_agent}</li>
                           {result.assistive_tech && <li style={listItemStyle}>{result.assistive_tech}</li>}
+                          {result.environment_type.map((env: string) => (
+                            <li style={listItemStyle}>{env}</li>
+                          ))}
                           {result.assistive_tech_config && (
                             <li style={listItemStyle}>
-                              {result.assistive_tech_config.split('\n').map((line: string) => <p>{line}</p>)}
+                              {result.assistive_tech_config.split('\n').map((line: string) => (
+                                <p>{line}</p>
+                              ))}
                             </li>
                           )}
                         </ul>
@@ -226,7 +223,7 @@ const actualResultStyle = 'min-width: 400px;';
                   <td style={largerThStyle}>
                     {item.procedure?.split('\n').map((line: string) => <p>{line}</p>)}
                   </td>
-                  <td style={largerThStyle}>
+                  <td style={`${largerThStyle} ${actualResultStyle}`}>
                     {item.actual?.split('\n').map((line: string) => <p>{line}</p>)}
                   </td>
                   {index === 0 && (

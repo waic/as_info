@@ -52,6 +52,30 @@ procedure: ブラウザを画像非表示に設定変更し、表示内容を確
 actual: リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみが表示され、画像のファイル名や URL 等は表示されなかった。
 ```
 
+#### 4. 単一の文字列または配列
+
+単一の文字列または配列を許容する項目は、次の形式で記述できます。
+
+```yaml
+environment_type: 音声閲覧環境
+```
+
+```yaml
+environment_type:
+  - 視覚閲覧環境
+  - 音声閲覧環境
+```
+
+```yaml
+code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0001-01.html
+```
+
+```yaml
+code:
+  - https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0001-01.html
+  - https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0001-02.html
+```
+
 ### 正規化
 
 `results.yaml` の書式を統一するため、`as_info_publish` リポジトリの `normalize_results_yaml.py` を使用して正規化できます。

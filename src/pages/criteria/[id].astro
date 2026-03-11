@@ -9,6 +9,7 @@ import H1 from '../../components/H1.astro';
 import Navigation from '../../components/Navigation.astro';
 import { getCriteria, getTechs, getTests, getMetadata } from '../../lib/data';
 import { getCriterionLevel, queryTechs } from '../../lib/utils';
+import { getLinkBase } from '../../lib/links';
 
 export async function getStaticPaths() {
   const { getEntry } = await import('astro:content');
@@ -34,7 +35,7 @@ const tests = await getTests();
 
 const criterion = criteria[criterionId];
 const relatedTechs = queryTechs(tests, criterionId);
-const base = import.meta.env.BASE_URL;
+const base = getLinkBase(Astro.url.pathname);
 ---
 
 <BaseLayout title={`達成基準${criterionId}`}>

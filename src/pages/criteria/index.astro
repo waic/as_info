@@ -8,10 +8,11 @@ import Logo from '../../components/Logo.astro';
 import Navigation from '../../components/Navigation.astro';
 import { getCriteria, getMetadata } from '../../lib/data';
 import { getCriterionLevel } from '../../lib/utils';
+import { getLinkBase } from '../../lib/links';
 
 const metadata = await getMetadata();
 const criteria = await getCriteria();
-const base = import.meta.env.BASE_URL;
+const base = getLinkBase(Astro.url.pathname);
 ---
 
 <BaseLayout title="達成基準の一覧">

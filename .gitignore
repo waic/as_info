@@ -7,3 +7,4 @@ docs
 tsconfig.tsbuildinfo
 bun.lockb
 .DS_Store
+*.xlsx

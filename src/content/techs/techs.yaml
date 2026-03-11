@@ -3,115 +3,115 @@ H2:
   target: a要素内にあるimg要素のalt属性
 H4:
   title: リンク、フォームコントロール、及びオブジェクトを通して、論理的なタブ順序を作成する
-  target: null
+  target:
 H24:
   title: イメージマップの area 要素にテキストによる代替を提供する
-  target: null
+  target:
 H25:
   title: title 要素を用いて、ページタイトルを提供する
-  target: null
+  target:
 H30:
   title: a要素のリンクの目的を説明するリンクテキストを提供する
   target: a要素内に単一のimg要素があるケース
 H32:
   title: 送信ボタンを提供する
-  target: null
+  target:
 H33:
   title: title 属性を用いて、リンクテキストを補足する
-  target: null
+  target:
 H36:
   title: 送信ボタンとして用いる画像の alt 属性を使用する
-  target: null
+  target:
 H37:
   title: img 要素の alt 属性を使用する
-  target: null
+  target:
 H39:
   title: データテーブルのキャプションとデータテーブルを関連付けるために、caption 要素を使用する
-  target: null
+  target:
 H42:
   title: 見出しを特定するために、h1 要素～ h6 要素を使用する
-  target: null
+  target:
 H43:
   title: データテーブルのデータセルを見出しセルと関連付けるために、id 属性及び headers 属性を使用する
-  target: null
+  target:
 H44:
   title: テキストラベルとフォームコントロールを関連付けるために、label 要素を使用する
-  target: null
+  target:
 H45:
   title: longdesc 属性を用いる
-  target: null
+  target:
 H48:
   title: リスト又はリンクのグループに、ol 要素、ul 要素、dl 要素を用いる
-  target: null
+  target:
 H49:
   title: 強調又は特別なテキストをマークアップするために、セマンティックなマークアップを使用する
-  target: null
+  target:
 H51:
   title: 表形式の情報を提示するために、テーブルのマークアップを使用する
-  target: null
+  target:
 H57:
   title: html 要素の言語属性を使用する
-  target: null
+  target:
 H63:
   title: データテーブルで見出しセルとデータセルを関連付けるために、scope 属性を使用する
-  target: null
+  target:
 H64:
   title: frame 要素及び iframe 要素の title 属性を使用する
-  target: null
+  target:
 H65:
   title: label 要素を使用できない場合に、フォームコントロールを特定するために、title 属性を使用する
-  target: null
+  target:
 H67:
   title: 支援技術が無視すべき画像に対して、img 要素の alt テキストを空にして、title 属性を付与しない
-  target: null
+  target:
 H69:
   title: コンテンツの各セクションの開始位置に見出し要素を提供する
-  target: null
+  target:
 H70:
   title: 繰り返されているコンテンツのブロックをグループ化するために、frame 要素を使用する
-  target: null
+  target:
 H71:
   title: fieldset 要素及び legend 要素を使用して、フォームコントロールのグループに関する説明を提供する
-  target: null
+  target:
 H77:
   title: データテーブルの概要を提供するために、table 要素の summary 属性を使用する
-  target: null
+  target:
 H78:
   title: リンクテキストとそれが含まれている段落とを組み合わせて、リンクの目的を特定する
-  target: null
+  target:
 H79:
   title: リンクテキストとそれが含まれているデータセル及び関連づけられた見出しセルとを組み合わせて、リンクの目的を特定する
-  target: null
+  target:
 H80:
   title: リンクテキストと先行する見出し要素とを組み合わせて、リンクの目的を特定する
-  target: null
+  target:
 H81:
   title: リストが入れ子になっている状況で、親のリスト項目と結合したリンクテキストを用いて、入れ子になったリストの中でリンクの目的を特定する
-  target: null
+  target:
 H85:
   title: select 要素内の option 要素をグループ化するために、optgroup 要素を使用する
-  target: null
+  target:
 H97:
   title: nav 要素を使用して、関連したリンクをグループ化する
-  target: null
+  target:
 H98:
   title: autocomplete 属性を使用して入力内容を関連付ける
-  target: null
+  target:
 H102:
   title: HTML の dialog 要素を使用する
-  target: null
+  target:
 C6:
   title: 構造を示すマークアップに基づいてコンテンツを配置する
-  target: null
+  target:
 C7:
   title: リンクテキストの一部を非表示にするために、CSS を使用する
-  target: null
+  target:
 C8:
   title: 単語内の文字間隔を制御するために、CSS の letter-spacing を使用する
-  target: null
+  target:
 C9:
   title: 装飾目的の画像を付加するために、CSS を使用する
-  target: null
+  target:
 C12:
   title: フォントサイズにパーセントを使用する
   target: css
@@ -123,83 +123,83 @@ C14:
   target: css
 C15:
   title: ユーザインタフェースコンポーネントがフォーカスを受けとったときの提示を変更するために、CSS を使用する
-  target: null
+  target:
 C18:
   title: レイアウトデザインのためのスペーサー画像ではなく、CSS のマージンとパディング規則を使用する
-  target: null
+  target:
 ARIA1:
   title: ユーザインターフェース コントロールに対する説明ラベルを提供するために、aria-describedby プロパティを使用する
-  target: null
+  target:
 ARIA2:
   title: aria-required プロパティによって必須項目を特定する
-  target: null
+  target:
 ARIA4:
   title: ユーザインターフェース コンポーネントの役割 (role) を明示するために、WAI-ARIA ロールを使用する
-  target: null
+  target:
 ARIA5:
   title: ユーザインタフェース コンポーネントの状態 (state) を明示するために、WAI-ARIA ステート及びプロパティ属性を使用する
-  target: null
+  target:
 ARIA6:
   title: オブジェクトのラベルを提供するために aria-label を使用する
-  target: null
+  target:
 ARIA7:
   title: リンクの目的を示すために aria-labelledby を使用する
-  target: null
+  target:
 ARIA8:
   title: リンクの目的を示すために aria-label を使用する
-  target: null
+  target:
 ARIA9:
   title: 複数のテキストノードをつなげて一つのラベルにするために、aria-labelledby を使用する
-  target: null
+  target:
 ARIA10:
   title: 非テキストコンテンツに対してテキストによる代替を提供するために aria-labelledby を使用する
-  target: null
+  target:
 ARIA11:
   title: ページのリージョンを特定するために ARIA ランドマークを使用する
-  target: null
+  target:
 ARIA12:
   title: 見出しを特定するために role=heading を使用する
-  target: null
+  target:
 ARIA13:
   title: リージョンとランドマークに名前 (name) を付けるために、aria-labelledby を使用する
-  target: null
+  target:
 ARIA14:
   title: 可視ラベルが使用できない場所で不可視ラベルを提供するために、aria-label を使用する
-  target: null
+  target:
 ARIA15:
   title: 画像の説明を提供するために aria-describedby を使用する
-  target: null
+  target:
 ARIA16:
   title: ユーザインターフェース コントロールの名前 (name) を提供するために、aria-labelledby を使用する
-  target: null
+  target:
 ARIA17:
   title: 関連するフォームコントロールを特定するために、グルーピングロールを使用する
-  target: null
+  target:
 ARIA18:
   title: エラーを特定するために aria-alertdialog を使用する
-  target: null
+  target:
 ARIA19:
   title: エラーを特定するために、ARIA role=alert 又はライブリージョン (Live Regions) を使用する
-  target: null
+  target:
 ARIA20:
   title: ページのリージョンを特定するために region ロールを使用する
-  target: null
+  target:
 ARIA21:
   title: エラーフィールドを示すために aria-invalid を使用する
-  target: null
+  target:
 ARIA22:
   title: ステータスメッセージを提供するために role="status" を使用する
-  target: null
+  target:
 ARIA23:
   title: 逐次的な更新の通知に role="log" を使用する
-  target: null
+  target:
 ARIA24:
   title: アイコンフォントを意味的に識別するために role="img" を使用する
-  target: null
+  target:
   skip_wcag20link: true
 SCR2:
   title: キーボード及びマウスのイベントハンドラを両方とも使用する
-  target: null
+  target:
 SCR16:
   title: 制限時間が切れようとしていることを利用者に警告するスクリプトを提供する
-  target: null
+  target:
