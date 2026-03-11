@@ -9530,7 +9530,7 @@
     actual: 代替テキストや、コンテンツと誤解されるようなファイル名や URL などは表示されず、リンクテキスト “ウェブアクセシビリティ基盤委員会公開サイト” のみが表示される
     judgment: 満たしている
   environment_type: 視覚閲覧環境
-  comment: 視覚閲覧環境
+  
   tester: me_tks
   date: '2023-09-28'
 - id: 456
@@ -9544,7 +9544,7 @@
     actual: 代替テキストや、コンテンツと誤解されるようなファイル名や URL などは表示されず、リンクテキスト “ウェブアクセシビリティ基盤委員会公開サイト” のみが表示される
     judgment: 満たしている
   environment_type: 視覚閲覧環境
-  comment: 視覚閲覧環境
+  
   tester: me_tks
   date: '2023-09-28'
 - id: 457
@@ -9558,7 +9558,7 @@
     actual: 代替テキストや、コンテンツと誤解されるようなファイル名や URL などは表示されず、テキスト “ウェブアクセシビリティ基盤委員会公開サイト” のみが表示される
     judgment: 満たしている
   environment_type: 視覚閲覧環境
-  comment: 視覚閲覧環境
+  
   tester: me_tks
   date: '2023-09-28'
 - id: 458
@@ -9572,7 +9572,7 @@
     actual: アイコン画像の代わりに、代替テキスト “ウェブアクセシビリティ基盤委員会” が表示される
     judgment: 満たしている
   environment_type: 視覚閲覧環境
-  comment: 視覚閲覧環境
+  
   tester: me_tks
   date: '2023-09-28'
 - id: 459
@@ -9586,7 +9586,7 @@
     actual: リンクテキスト “施設ご利用の手引き” に続き、アイコン画像の代替テキスト “PDF ファイル” が表示される
     judgment: 満たしている
   environment_type: 視覚閲覧環境
-  comment: 視覚閲覧環境
+  
   tester: me_tks
   date: '2023-09-28'
 - id: 460
@@ -9600,7 +9600,7 @@
     actual: 各項目がリンクであることは読み上げられるが、イメージマップであることが判別できる情報は読み上げられない
     judgment: 満たしていない
   environment_type: 音声閲覧環境
-  comment: 音声閲覧環境
+  
   tester: yuyaroid
   date: '2023-09-28'
 - id: 461
@@ -9617,7 +9617,7 @@
     actual: 「次の画像はありません」と読み上げられ、代替テキストは読み上げられない
     judgment: 満たしていない
   environment_type: 音声閲覧環境
-  comment: 音声閲覧環境
+  
   tester: yuyaroid
   date: '2023-09-28'
 - id: 462
@@ -9631,7 +9631,7 @@
     actual: それぞれのテキストは読み上げられたが、alt属性として設定されていることは読み上げられない
     judgment: 満たしていない
   environment_type: 音声閲覧環境
-  comment: 音声閲覧環境
+  
   tester: yuyaroid
   date: '2023-09-28'
 - id: 463
@@ -9645,7 +9645,7 @@
     actual: それぞれの項目について、リンク先へと遷移した
     judgment: 満たしている
   environment_type: 音声閲覧環境
-  comment: 音声閲覧環境
+  
   tester: yuyaroid
   date: '2023-09-28'
 - id: 464
@@ -9659,7 +9659,7 @@
     actual: テキストとともに「リンク」と読み上げられ、リンクであることを判別できる
     judgment: 満たしている
   environment_type: 音声閲覧環境
-  comment: 音声閲覧環境
+  
   tester: yuyaroid
   date: '2023-09-28'
 - id: 465
@@ -9676,7 +9676,7 @@
     actual: 「ウェブアクセシビリティ基盤委員会 - Google Chrome 2列2の4」と読み上げられ、ページタイトルを確認できる
     judgment: 満たしている
   environment_type: 音声閲覧環境
-  comment: 音声閲覧環境
+  
   tester: yuyaroid
   date: '2023-09-28'
 - id: 466
@@ -9690,7 +9690,7 @@
     actual: リンクテキストの内容が読み上げられた
     judgment: 満たしている
   environment_type: 音声閲覧環境
-  comment: 音声閲覧環境
+  
   tester: yuyaroid
   date: '2023-09-28'
 - id: 467
@@ -9704,7 +9704,7 @@
     actual: リンク画像の代替テキストが読み上げられた
     judgment: 満たしている
   environment_type: 音声閲覧環境
-  comment: 音声閲覧環境
+  
   tester: yuyaroid
   date: '2023-09-28'
 - id: 468
@@ -10726,7 +10726,7 @@
     actual: リンクテキストに加え、title属性の内容が読み上げられた
     judgment: 満たしている
   environment_type: 音声閲覧環境
-  comment: 音声閲覧環境
+  
   tester: yuyaroid
   date: '2024-01-18'
 - id: 528
@@ -10740,7 +10740,7 @@
     actual: WAIC-CODE-0007-01-ref.htmlが表示され、URLの末尾にメールアドレスが追加されていた
     judgment: 満たしている
   environment_type: 音声閲覧環境
-  comment: 音声閲覧環境
+  
   tester: yuyaroid
   date: '2024-01-18'
 - id: 529
@@ -10754,7 +10754,7 @@
     actual: '[選択したページへ移動する]ボタンを押した時点でそれぞれのページへと遷移した'
     judgment: 満たしている
   environment_type: 音声閲覧環境
-  comment: 音声閲覧環境
+  
   tester: yuyaroid
   date: '2024-01-18'
 - id: 530
@@ -10768,7 +10768,7 @@
     actual: 代替テキストの内容が読み上げられた
     judgment: 満たしている
   environment_type: 音声閲覧環境
-  comment: 音声閲覧環境
+  
   tester: yuyaroid
   date: '2024-01-18'
 - id: 531
@@ -10782,7 +10782,7 @@
     actual: 代替テキストの内容が読み上げられた
     judgment: 満たしている
   environment_type: 音声閲覧環境
-  comment: 音声閲覧環境
+  
   tester: yuyaroid
   date: '2024-01-18'
 - id: 532
@@ -10796,7 +10796,7 @@
     actual: それぞれオンキャプション要素の内容が読み上げられた
     judgment: 満たしている
   environment_type: 音声閲覧環境
-  comment: 音声閲覧環境
+  
   tester: yuyaroid
   date: '2024-01-18'
 - id: 533
@@ -11486,7 +11486,7 @@
     actual: 「ウェブアクセシビリティ基盤委員会公開サイト リンク」と読み上げられた
     judgment: 満たしている
   environment_type: 音声閲覧環境
-  comment: 音声閲覧環境
+  
   tester: yuyaroid
   date: '2024-06-13'
 - id: 573
@@ -11500,7 +11500,7 @@
     actual: 「ウェブアクセシビリティ基盤委員会公開サイト リンク」と読み上げられた
     judgment: 満たしている
   environment_type: 音声閲覧環境
-  comment: 音声閲覧環境
+  
   tester: yuyaroid
   date: '2024-06-13'
 - id: 574
@@ -11514,7 +11514,7 @@
     actual: 「ウェブアクセシビリティ基盤委員会公開サイト」というテキストのみが読み上げられた
     judgment: 満たしている
   environment_type: 音声閲覧環境
-  comment: 音声閲覧環境
+  
   tester: yuyaroid
   date: '2024-06-13'
 - id: 575
@@ -11528,7 +11528,7 @@
     actual: 「ウェブアクセシビリティ基盤委員会 公式サイト リンク」と読み上げられた
     judgment: 満たしている
   environment_type: 音声閲覧環境
-  comment: 音声閲覧環境
+  
   tester: yuyaroid
   date: '2024-06-13'
 - id: 576
@@ -11545,7 +11545,7 @@
     actual: 「施設ご利用の手引 リンク」「PDFファイル リンク」と分けて読み上げられた
     judgment: 満たしていない
   environment_type: 音声閲覧環境
-  comment: 音声閲覧環境
+  
   tester: yuyaroid
   date: '2024-06-13'
 - id: 577
@@ -12024,7 +12024,7 @@
       ウェブアクセシビリティ基盤委員会公開サイトｋK
     judgment: 満たしている
   environment_type: 音声閲覧環境
-  comment: 音声閲覧環境
+  
   tester: かえる
   date: '2024-10-10'
 - id: 605
@@ -12040,7 +12040,7 @@
     actual: ウェブアクセシビリティ基盤委員会公開サイト、既読リンクと読まれる
     judgment: 満たしている
   environment_type: 音声閲覧環境
-  comment: 音声閲覧環境
+  
   tester: かえる
   date: '2024-10-10'
 - id: 606
@@ -12054,7 +12054,7 @@
     actual: ウェブアクセシビリティ基盤委員会公開サイト、のみが読まれる
     judgment: 満たしている
   environment_type: 音声閲覧環境
-  comment: 音声閲覧環境
+  
   tester: かえる
   date: '2024-10-10'
 - id: 607
@@ -12068,7 +12068,7 @@
     actual: “ウェブアクセシビリティ基盤委員会 公式サイト” のみが読まれる
     judgment: 満たしている
   environment_type: 音声閲覧環境
-  comment: 音声閲覧環境
+  
   tester: かえる
   date: '2024-10-10'
 - id: 608
@@ -12269,7 +12269,7 @@
     actual: 「必須の入力欄すべてに入力してから再送信してください (残り3項目)」と読み上げた。一方で、「指名」、「ふりがな」、「メールアドレス」それぞれを選択した時には、未入力であることを知らせる読み上げが無かった。
     judgment: 満たしていない
   environment_type: 音声閲覧環境
-  comment: 音声閲覧環境
+  
   tester: 諸熊
   date: '2024-10-10'
 - id: 621
@@ -12286,7 +12286,7 @@
     actual: '電子メールアドレス」の入力欄を選択した際に、「エラー: データの形式が正しくありません」と読み上げた。'
     judgment: 満たしている
   environment_type: 音声閲覧環境
-  comment: 音声閲覧環境
+  
   tester: 諸熊
   date: '2024-10-10'
 - id: 622
@@ -12303,7 +12303,7 @@
     actual: 通知した内容は「アイコンフォントB」テキストと、「Favorite」画像だった。
     judgment: 満たしている
   environment_type: 音声閲覧環境
-  comment: 音声閲覧環境
+  
   tester: 諸熊
   date: '2024-10-10'
 - id: 623
@@ -12319,7 +12319,7 @@
     actual: ボタンの読み上げは「閉じる」のみだった。
     judgment: 満たしている
   environment_type: 音声閲覧環境
-  comment: 音声閲覧環境
+  
   tester: 諸熊
   date: '2024-10-10'
 - id: 624
@@ -12333,7 +12333,7 @@
     actual: それぞれを選択した時、「市外局番」、「市内局番」、「加入者番号」と読み上げた。
     judgment: 満たしている
   environment_type: 音声閲覧環境
-  comment: 音声閲覧環境
+  
   tester: 諸熊
   date: '2024-10-10'
 - id: 625
@@ -12353,7 +12353,7 @@
     actual: ボタン3 のトグルボタン 切り替え Mix と読み上げた。
     judgment: 満たしている
   environment_type: 音声閲覧環境
-  comment: 音声閲覧環境
+  
   tester: 諸熊
   date: '2024-10-10'
 - id: 626
@@ -12367,7 +12367,7 @@
     actual: ダイアログが表示され、時間を延長するかどうかを問い合わせるダイアログが表示された。OKボタンを押すと、時間が延長されたと思われる。
     judgment: 満たしている
   environment_type: 音声閲覧環境
-  comment: 音声閲覧環境
+  
   tester: 諸熊
   date: '2024-10-10'
 - id: 627
@@ -12381,7 +12381,7 @@
     actual: '画像を選択した時に「ウェブアクセシビリティ基盤委員会画像にはウェブアクセシビリティ基盤委員会(WAIC)のロゴと「Web Accessibility Infrastructure Committee ウェブアクセシビリティ基盤委員会」という文字が書かれています。」と読み上げた。また次のテキストは、「画像にはウェブアクセシビリティ基盤委員会(WAIC)のロゴと「Web Accessibility Infrastructure Committee ウェブアクセシビリティ基盤委員会」という文字が書かれています。」と読み上げた。 '
     judgment: 満たしている
   environment_type: 音声閲覧環境
-  comment: 音声閲覧環境
+  
   tester: 諸熊
   date: '2024-10-10'
 - id: 628
@@ -12395,7 +12395,7 @@
     actual: 「サイト内検索 テキストフィールド」と読み上げた。
     judgment: 満たしている
   environment_type: 音声閲覧環境
-  comment: 音声閲覧環境
+  
   tester: 諸熊
   date: '2024-10-10'
 - id: 629
@@ -12409,7 +12409,7 @@
     actual: 「旅行の日数 の トラックバー 洗濯 15」と読み上げた。
     judgment: 満たしている
   environment_type: 音声閲覧環境
-  comment: 音声閲覧環境
+  
   tester: 諸熊
   date: '2024-10-10'
 - id: 630
@@ -12423,7 +12423,7 @@
     actual: 「通知 日前に通知」と読み上げた。
     judgment: 満たしている
   environment_type: 音声閲覧環境
-  comment: 音声閲覧環境
+  
   tester: 諸熊
   date: '2024-10-10'
 - id: 631
@@ -12440,7 +12440,7 @@
     actual: 「郵便番号」領域の外側であることは読み上げなかったが、上矢印キーを押すと、「郵便番号 郵便番号の下4桁」と読み上げたので、グループの外側にいたということはわかった。
     judgment: 満たしている
   environment_type: 音声閲覧環境
-  comment: 音声閲覧環境
+  
   tester: 諸熊
   date: '2024-10-10'
 - id: 632
@@ -12457,7 +12457,7 @@
     actual: 「戻る」ボタンにフォーカスがあった。
     judgment: 満たしている
   environment_type: 音声閲覧環境
-  comment: 音声閲覧環境
+  
   tester: 諸熊
   date: '2024-10-10'
 - id: 633
@@ -12471,7 +12471,7 @@
     actual: ページ上部に「ファーストネームを入力してください。ラストネームを入力してください。メールアドレスを入力してください。」というテキストが表示されたと同時に読み上げられた。
     judgment: 満たしている
   environment_type: 音声閲覧環境
-  comment: 音声閲覧環境
+  
   tester: 諸熊
   date: '2024-10-10'
 - id: 634
@@ -12487,7 +12487,7 @@
       」を読み上げる前に「領域」と読み上げたので、前者は何らかの領域内であると予測できる。
     judgment: 満たしている
   environment_type: 音声閲覧環境
-  comment: 音声閲覧環境
+  
   tester: 諸熊
   date: '2024-10-10'
 - id: 635
