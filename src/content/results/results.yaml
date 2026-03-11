@@ -9,7 +9,7 @@
     procedure: ブラウザを画像非表示に設定変更し、表示内容を確認した
     actual: リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみが表示され、画像のファイル名や URL 等は表示されなかった。
     judgment: 満たしている
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2018/12/26
@@ -24,7 +24,7 @@
     procedure: ブラウザを画像非表示に設定変更し、表示内容を確認した
     actual: リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみが表示され、画像のファイル名や URL 等は表示されなかった。
     judgment: 満たしている
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2018/12/26
@@ -1010,7 +1010,7 @@
     procedure: ブラウザを画像非表示に設定変更し、表示内容を確認した。
     actual: リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみが表示され、画像のファイル名や URL 等は表示されなかった。
     judgment: 満たしている
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2018/12/31
@@ -1025,7 +1025,7 @@
     procedure: ブラウザを画像非表示に設定変更し、表示内容を確認した。
     actual: テキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみが表示され、画像のファイル名や URL 等は表示されなかった。
     judgment: 満たしている
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2018/12/31
@@ -1040,7 +1040,7 @@
     procedure: ブラウザを画像非表示に設定変更し、表示内容を確認した。
     actual: 代替テキスト「ウェブアクセシビリティ基盤委員会」とテキスト「公式サイト」が表示された。
     judgment: 満たしている
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2018/12/31
@@ -1055,7 +1055,7 @@
     procedure: ブラウザを画像非表示に設定変更し、表示内容を確認した。
     actual: リンクテキスト “施設ご利用の手引き” に続き、アイコン画像の代替テキスト “PDF ファイル” が表示された。
     judgment: 満たしている
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2018/12/31
@@ -1112,7 +1112,7 @@
       注文内容の確認
       入力内容のリセット
     judgment: 満たしている
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/02
@@ -1137,7 +1137,7 @@
       携帯サイト
       サイトマップ
     judgment: 満たしている
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/02
@@ -1168,7 +1168,7 @@
       リンク 5
       リンク 7
     judgment: 満たしている
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/02
@@ -1193,7 +1193,7 @@
       リンク 2
       リンク 4
     judgment: 満たしている
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/02
@@ -1208,7 +1208,7 @@
     procedure: ブラウザを画像非表示に設定変更し、表示内容を確認した。
     actual: イメージマップに用いられている画像の代替テキスト “デパートのフロアガイド。各階について詳しくお知りになりたい場合は各階をクリックしてください。” が表示された。
     judgment: 満たしている
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/02
@@ -1223,7 +1223,7 @@
     procedure: ブラウザを画像非表示に設定変更し、表示内容を確認した。
     actual: 各 area 要素の alt 属性に指定した代替テキストは表示されなかった。
     judgment: 満たしていない
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/02
@@ -1238,7 +1238,7 @@
     procedure: ブラウザを画像非表示に設定変更し、表示内容を確認した。
     actual: area 要素が表示されないのでリンク先へ遷移することはできなかった。
     judgment: 満たしていない
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment: img要素の代替テキストが青字（下線なし）で表示されています。
   reviewer_comment: '[WAIC注] テスト手順に問題があり、適切に判定できていません。'
   tester: 安倍 英樹
@@ -1254,7 +1254,7 @@
     procedure: タブの表示内容を確認した。
     actual: タブに「ウェブアクセシビリティ基盤委員会」と表示されている。
     judgment: 満たしている
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/02
@@ -1269,7 +1269,7 @@
     procedure: ブラウザを画像非表示に設定変更し、表示内容を確認した。
     actual: リンク画像の代替テキスト “ウェブアクセシビリティ基盤委員会” が表示された。
     judgment: 満たしている
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/02
@@ -1293,7 +1293,7 @@
       リンク “Home” にマウスオーバーすると、ツールチップ “ウェブアクセシビリティ基盤委員会公式サイト” が表示された。
       リンク “Home” にフォーカスを移動しても、title属性値は表示されなかった。
     judgment: 満たしていない
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   reviewer_comment: '[WAIC注] テスト手順に問題があり、適切に判定できていません。'
   tester: 安倍 英樹
@@ -1314,7 +1314,7 @@
       また、フォームにメールアドレスを入力後、Tabキーで申し込むボタンにフォーカスしSpaceキーで押下。
     actual: マウス操作・キーボード操作共、WAIC-CODE-0007-01-ref.html に遷移した。また、入力したメールアドレスが URL エンコーディングされ、URL の末尾に付加されていた。
     judgment: 満たしている
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/07
@@ -1329,7 +1329,7 @@
     procedure: ブラウザを画像非表示に設定変更し、表示内容を確認した。
     actual: 画像の代わりに代替テキスト “送信” が表示された。
     judgment: 満たしている
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/07
@@ -1344,7 +1344,7 @@
     procedure: ブラウザを画像非表示に設定変更し、表示内容を確認した
     actual: 画像の代わりに代替テキスト “ウェブアクセシビリティ基盤委員会” が表示された。
     judgment: 満たしている
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/07
@@ -1359,7 +1359,7 @@
     procedure: テストページの表示内容を確認した。
     actual: caption 要素の内容 “営業部連絡先一覧” 及び “マーケティング部連絡先一覧” が表示された。
     judgment: 満たしている
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/07
@@ -1386,7 +1386,7 @@
       4. ラベル “電話番号” をクリックすると、“4.” のテキスト入力フィールドにフォーカスが移動した。 
       5. “ハイフンは不要” をクリックしても “4.” のテキスト入力フィールドにフォーカスが移動しなかった。
     judgment: 満たしている
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/07
@@ -1411,7 +1411,7 @@
       3. ラベル “佐藤マンション” をクリックすると、“3.” のチェックボックスのチェック状態が切り替わった。
       4. “定期借家” をクリックしても “3.” のチェックボックスのチェック状態は切り替わらなかった。
     judgment: 満たしている
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment: ラベルをクリックした時にフォーカスリングがチェックボックスに表示されないように思うが、チェックボックスのチェック状態が切り替わるので、テストの目的「label 要素に指定したラベルとチェックボックスが関連付いているか」は確認できたと考え、満たしていると判断した。
   tester: 安倍 英樹
   date: 2019/01/07
@@ -1438,7 +1438,7 @@
       4. ラベル “チョコレートタイプ” をクリックすると、“1.” のラジオボタンの選択状態が切り替わった。
       5. “期間限定” をクリックしても “3.” のラジオボタンの選択状態は切り替わらなかった。
     judgment: 満たしている
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment: 先に送信した0012-03同様、ラベルをクリックした時にラジオボタンにフォーカスリングは表示されなかった。しかし、ラジオボタンの選択状態が切り替わることから「label 要素に指定したラベルとラジオボタンが関連付いているかの確認」は確認できていると考え、満たしていると判断した。
   tester: 安倍 英樹
   date: 2019/01/07
@@ -1461,7 +1461,7 @@
       1. マウス操作 : セレクトメニューにマウスポインタを重ねると、title 属性の値 “検索範囲を選択” がツールチップで表示された。
       2. キーボード操作 : セレクトメニューにフォーカスを移動させても、title 属性の値 “検索範囲を選択” は表示されなかった。
     judgment: 満たしていない
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/07
@@ -1491,7 +1491,7 @@
       “3.” : “加入者番号”
       2. キーボード操作 : テキスト入力フィールドにフォーカスを移動してもそれぞれの title 属性の値は表示されなかった。
     judgment: 満たしていない
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/07
@@ -1506,7 +1506,7 @@
     procedure: テストファイルの表示内容を確認した。
     actual: “Zn2+” の “2+” が上付き表示された。
     judgment: 満たしている
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/07
@@ -1521,7 +1521,7 @@
     procedure: テストファイルの表示内容を確認した。
     actual: “H2O” の “2” が下付き表示された。
     judgment: 満たしている
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/07
@@ -1784,7 +1784,7 @@
     procedure: テストコード WAIC-TEST-0001-01を開いた
     actual: リンクテキスト “ウェブアクセシビリティ基盤委員会公開サイト” のみが読み上げられた
     judgment: 満たしている
-  environment_type:
+  environment_type: 音声閲覧環境
   comment:
   tester: 中野利保
   date: 2019/01/09
@@ -2681,9 +2681,7 @@
     procedure: （視覚閲覧環境）ブラウザを画像非表示に設定変更し、表示内容を確認した（音声閲覧環境）リンク「ウェブアクセシビリティ基盤委員会公開サイト」に 自動呼び上げで移動した。
     actual: 音声閲覧環境）リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみ読み上げられた。
     judgment: 満たしている
-  environment_type:
-  - 視覚閲覧環境
-  - 音声閲覧環境
+  environment_type: 音声閲覧環境
   comment:
   tester: 佐藤 哲裕
   date: 2019/01/13
@@ -2729,7 +2727,7 @@
     procedure: Chromeの設定で画像を非表示にし表示内容を確認した
     actual: リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみが表示され、画像のファイル名や URL 等は表示されなかった
     judgment: 満たしている
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: yukiko makino
   date: 2019/01/13
@@ -2841,7 +2839,7 @@
     procedure: ブラウザを画像非表示に設定変更し、表示内容を確認した
     actual: リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみが表示され、画像のファイル名や URL 等は表示されなかった。
     judgment: 満たしている
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: yukiko makino
   date: 2019/01/13
@@ -3780,7 +3778,7 @@
     procedure: ブラウザを画像非表示に設定変更し、表示内容を確認した
     actual: リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみが表示され、画像のファイル名や URL 等は表示されなかった。
     judgment: 満たしている
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 佐藤美華
   date: 2019/01/13
@@ -3826,7 +3824,9 @@
     procedure: (音声閲覧環境)音声で読み上げ
     actual: (音声閲覧環境)「リンク 4F 雑貨書籍」と読まれました
     judgment: 満たしている
-  environment_type: 音声閲覧環境, 視覚閲覧環境
+  environment_type:
+  - 音声閲覧環境
+  - 視覚閲覧環境
   comment:
   tester: やまもといずみ
   date: 2019/01/13
@@ -4050,7 +4050,7 @@
     procedure: ブラウザを画像非表示に設定変更し、表示内容を確認した
     actual: テキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみが表示され、画像のファイル名や URL 等は表示されなかった
     judgment: 満たしている
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: yukiko makino
   date: 2019/01/13
@@ -4259,7 +4259,7 @@
     procedure: ページを表示した後ctrl+Uでソースを表示した　F12を押して開発者ツールを表示した
     actual: ソースを表示、開発者ツール共に<title>タグを確認できた
     judgment: 満たしている
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   reviewer_comment: '[WAIC注] テスト手順に問題があり、適切に判定できていません。'
   tester: yukiko makino
@@ -4374,6 +4374,8 @@
       期待される結果のように、該当文のみ読み上げられた
     judgment: 満たしている
   environment_type:
+  - 視覚閲覧環境
+  - 音声閲覧環境
   comment:
   tester: 佐藤美華
   date: 2019/01/13
@@ -4482,7 +4484,7 @@
     procedure: ブラウザを画像非表示に設定変更し表示内容を確認した
     actual: 何も表示されなかった
     judgment: 満たしていない
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: yukiko makino
   date: 2019/01/13
@@ -4723,6 +4725,8 @@
       該当文「ウェブアクセシビリティ基盤委員会公開サイト」のみ読み上げられた。
     judgment: 満たしている
   environment_type:
+  - 視覚閲覧環境
+  - 音声閲覧環境
   comment:
   tester: 佐藤美華
   date: 2019/01/13
@@ -5229,7 +5233,7 @@
        セレクトメニューで選択肢を選んでも何も発生しなかった。
        “選択したページへ移動する” ボタンを選択すると、選択したページに遷移した。
     judgment: 満たしている
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: 安倍 英樹
   date: 2019/01/24
@@ -10172,7 +10176,7 @@
   - procedure: 「設定」の「サイトのアクセス許可」欄から「イメージ」をクリックして「すべて表示」をオフ
     actual: 代替テキストは無く、リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみが表示された
     judgment: 満たしている
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: akimayu
   date: '2023-09-28'
@@ -10200,7 +10204,7 @@
   - procedure: 「設定」の「サイトのアクセス許可」欄から「イメージ」をクリックして「すべて表示」をオフ
     actual: リンクテキスト “ウェブアクセシビリティ基盤委員会公開サイト” のみが表示された
     judgment: 満たしている
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: akimayu
   date: '2023-09-28'
@@ -10228,7 +10232,7 @@
   - procedure: 「設定」の「サイトのアクセス許可」欄から「イメージ」をクリックして「すべて表示」をオフ
     actual: 代替テキストは無く、テキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみが表示された
     judgment: 満たしている
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: akimayu
   date: '2023-09-28'
@@ -10256,7 +10260,7 @@
   - procedure: 「設定」の「サイトのアクセス許可」欄から「イメージ」をクリックして「すべて表示」をオフ
     actual: 画像のリンク切れアイコンとともに、代替テキスト"ウェブアクセシビリティ基盤委員会"が表示される
     judgment: 満たしている
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: akimayu
   date: '2023-09-28'
@@ -10288,7 +10292,7 @@
       (視覚閲覧環境)
       代替テキストや、コンテンツと誤解されるようなファイル名や URL などは表示されず、リンクテキスト “ウェブアクセシビリティ基盤委員会公開サイト” のみが表示された
     judgment: ○
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: yamanaka
   date: '2024-01-18'
@@ -10307,7 +10311,7 @@
       ナビゲーションの先頭に来たとき「ホーム　リンク　ナビゲーション　ランドマーク」と読み上げられた。
       ナビゲーションの末端に来たときは「お問合せ　リンク　エンドナビゲーション」と読み上げられた。
     judgment: ○
-  environment_type:
+  environment_type: 音声閲覧環境
   comment:
   tester: yamanaka
   date: '2024-01-18'
@@ -10325,7 +10329,7 @@
       main要素に差し掛かると「メイン　ランドマーク」と読み上げられた。
       main要素が終了する際「エンド　メイン」と読み上げられた
     judgment: ○
-  environment_type:
+  environment_type: 音声閲覧環境
   comment:
   tester: yamanaka
   date: '2024-01-18'
@@ -10341,7 +10345,7 @@
       ブラウザの設定を変更して画像非表示にし、表示内容を確認
     actual: '画像の代わりに代替テキスト “送信送信”と表示された。 '
     judgment: ×
-  environment_type:
+  environment_type: 視覚閲覧環境
   comment:
   tester: yamanaka
   date: '2024-01-18'
