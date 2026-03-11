@@ -193,7 +193,7 @@ const actualResultStyle = 'min-width: 400px;';
             </tr>
           </thead>
           <tbody>
-            {[...resultIds].reverse().map((result: ResultData & { environment_type: string[] }) => {
+            {[...resultIds].map((result: ResultData & { environment_type: string[] }) => {
               const contents = result.contents;
               return contents.map((item: ResultContent, index: number) => (
                 <tr>
