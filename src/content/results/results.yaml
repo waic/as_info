@@ -84,7 +84,7 @@
     procedure: caption 要素のテキストに上下キーを使ってフォーカスを移動する
     actual: caption 要素の内容 “営業部連絡先一覧” 及び “マーケティング部連絡先一覧” が読み上げられた
     judgment: 満たしている
-  environment_type:
+  environment_type: 音声閲覧環境
   comment:
   tester: 嶌田喬行
   date: 2018/12/26
@@ -3826,7 +3826,7 @@
     procedure: (音声閲覧環境)音声で読み上げ
     actual: (音声閲覧環境)「リンク 4F 雑貨書籍」と読まれました
     judgment: 満たしている
-  environment_type: 音声閲覧環境
+  environment_type: 音声閲覧環境, 視覚閲覧環境
   comment:
   tester: やまもといずみ
   date: 2019/01/13
@@ -9421,7 +9421,7 @@
   - procedure: 当該ページを開き、下矢印で読み進む
     actual: 「リンク ワシントンが経済成長を刺激する」「全文表示」の２つを読み上げる
     judgment: ○
-  environment_type:
+  environment_type: 音声閲覧環境
   comment:
   tester: 西本 卓也
   date: '2023-09-28'
@@ -9515,7 +9515,7 @@
   - procedure: Tabを2回押してフォーカス移動
     actual: 「グループ」
     judgment: ○
-  environment_type:
+  environment_type: 音声閲覧環境
   comment:
   tester: 西本 卓也
   date: '2023-09-28'
