@@ -1,50 +1,75 @@
 /**
  * Content Collections からデータを読み込むヘルパー
  */
-import { getEntry } from 'astro:content';
+import { getCollection } from 'astro:content';
 
 /**
  * 達成基準データを取得
  */
 export async function getCriteria() {
-  const entry = await getEntry('criteria', 'criteria');
-  return entry?.data ?? {};
+  const entries = await getCollection('criteria');
+  return entries.reduce<Record<string, any>>((acc, entry) => {
+    acc[entry.id] = entry.data;
+    return acc;
+  }, {});
 }
 
 /**
  * 達成方法データを取得
  */
 export async function getTechs() {
-  const entry = await getEntry('techs', 'techs');
-  return entry?.data ?? {};
+  const entries = await getCollection('techs');
+  return entries.reduce<Record<string, any>>((acc, entry) => {
+    acc[entry.id] = entry.data;
+    return acc;
+  }, {});
 }
 
 /**
  * テストデータを取得
  */
 export async function getTests() {
-  const entry = await getEntry('tests', 'tests');
-  return entry?.data ?? {};
+  const entries = await getCollection('tests');
+  return entries.reduce<Record<string, any>>((acc, entry) => {
+    acc[entry.id] = entry.data;
+    return acc;
+  }, {});
 }
 
 /**
  * 結果データを取得
  */
 export async function getResults() {
-  const entry = await getEntry('results', 'results');
-  return entry?.data ?? [];
+  const entries = await getCollection('results');
+  return entries.map((entry) => entry.data);
 }
 
 /**
  * メタデータを取得
  */
 export async function getMetadata() {
-  const entry = await getEntry('metadata', 'metadata');
-  return entry?.data ?? {
+  const entries = await getCollection('metadata');
+  const defaults = {
     author: '',
     pub_date: '',
     mod_date: '',
     last_reviewed_result_id: 0,
     status: '',
+  };
+
+  const obj = entries.reduce<Record<string, any>>((acc, entry) => {
+    acc[entry.id] = entry.data;
+    return acc;
+  }, {});
+
+  return {
+    author: typeof obj.author === 'string' ? obj.author : defaults.author,
+    pub_date: typeof obj.pub_date === 'string' ? obj.pub_date : defaults.pub_date,
+    mod_date: typeof obj.mod_date === 'string' ? obj.mod_date : defaults.mod_date,
+    last_reviewed_result_id:
+      typeof obj.last_reviewed_result_id === 'number'
+        ? obj.last_reviewed_result_id
+        : Number(obj.last_reviewed_result_id ?? defaults.last_reviewed_result_id),
+    status: typeof obj.status === 'string' ? obj.status : defaults.status,
   };
 }

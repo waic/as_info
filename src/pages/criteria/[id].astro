@@ -12,13 +12,12 @@ import { getCriterionLevel, queryTechs } from '../../lib/utils';
 import { getLinkBase } from '../../lib/links';
 
 export async function getStaticPaths() {
-  const { getEntry } = await import('astro:content');
-  const criteriaEntry = await getEntry('criteria', 'criteria');
-  const criteria = criteriaEntry?.data ?? {};
+  const { getCollection } = await import('astro:content');
+  const entries = await getCollection('criteria');
 
-  return Object.keys(criteria).map((id) => ({
-    params: { id },
-    props: { criterionId: id },
+  return entries.map((entry) => ({
+    params: { id: entry.id },
+    props: { criterionId: entry.id },
   }));
 }
 
