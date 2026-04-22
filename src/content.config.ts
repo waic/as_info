@@ -3,6 +3,16 @@ import { file } from 'astro/loaders';
 
 /**
  * WCAG 達成基準 (Success Criteria) スキーマ
+ *
+ * 例:
+ * 1.1.1:
+ *   title: 非テキストコンテンツ
+ *   level: A
+ *   wcag20url: text-equiv-all.html
+ *   wcag21url: non-text-content.html
+ *   wcag22url: tbd (optional)
+ *   wcag22note: 廃止・削除 (optional)
+ *   asinfo201406: true (optional)
  */
 const criteriaSchema = z.object({
   title: z.string().describe('達成基準のタイトル（日本語）'),
@@ -16,6 +26,12 @@ const criteriaSchema = z.object({
 
 /**
  * 達成方法 (Techniques) スキーマ
+ *
+ * 例:
+ * H2:
+ *   title: 同じリソースに対して隣接する画像とテキストリンクを結合する
+ *   target: a要素内にあるimg要素のalt属性
+ *   skip_wcag20link: true (optional)
  */
 const techsSchema = z.object({
   title: z.string().describe('達成方法のタイトル（日本語）'),
@@ -25,6 +41,18 @@ const techsSchema = z.object({
 
 /**
  * テストケース (Tests) スキーマ
+ *
+ * 例:
+ * 0001-01:
+ *   title: 同じリンクの中に入れた画像 (代替テキストなし) とテキスト
+ *   code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0001-01.html
+ *   document: https://waic.github.io/as_test/WAIC-TEST/HTML/WAIC-TEST-0001-01.html
+ *   criteria:
+ *     - 1.1.1
+ *     - 2.4.4
+ *   techs:
+ *     - H2
+ *     - H30
  */
 const testsSchema = z.object({
   title: z.string().describe('テストケースのタイトル（日本語）'),
@@ -48,6 +76,23 @@ const resultContentSchema = z.object({
 
 /**
  * テスト結果 (Results) スキーマ
+ *
+ * 例:
+ * - id: 1
+ *   test: 0001-01
+ *   os: macOS 10.14.2
+ *   user_agent: Firefox 64.0
+ *   assistive_tech: (optional/nullable)
+ *   assistive_tech_config: (optional/nullable)
+ *   contents:
+ *     - expected: ...
+ *       procedure: ...
+ *       actual: ...
+ *       judgment: 満たしている
+ *   comment: (optional/nullable)
+ *   reviewer_comment: (optional/nullable)
+ *   tester: 安倍 英樹
+ *   date: 2018/12/26
  */
 const resultsSchema = z.object({
   id: z.number().describe('テスト結果の一意識別子'),
@@ -66,6 +111,13 @@ const resultsSchema = z.object({
 
 /**
  * メタデータ (Metadata) スキーマ
+ *
+ * 例:
+ * author: ウェブアクセシビリティ基盤委員会（WAIC）
+ * pub_date: 2020年4月1日
+ * mod_date: 2024年**月**日
+ * last_reviewed_result_id: 439
+ * status: レビュー作業中の情報が含まれることがあります
  */
 const metadataSchema = z.object({
   author: z.string().describe('著者/組織名'),
