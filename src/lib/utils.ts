@@ -3,8 +3,6 @@
  * 元のNext.js版 functions/ ディレクトリの関数を移植
  */
 
-import type { CollectionEntry } from 'astro:content';
-
 // 達成基準のデータ型
 type CriterionData = {
   title: string;
@@ -23,6 +21,22 @@ type TestData = {
   document: string;
   criteria: string[];
   techs: string[];
+};
+
+// 達成方法（テクニック）データ型
+type TechData = {
+  title: string;
+  target: string | null;
+  skip_wcag20link?: boolean;
+};
+
+/** サイト共通メタデータ（metadata コレクションから組み立てた形） */
+export type AsInfoMetadata = {
+  author: string;
+  pub_date: string;
+  mod_date: string;
+  last_reviewed_result_id: number;
+  status: string;
 };
 
 // 結果データ型
@@ -184,4 +198,4 @@ export function sortByResultId(a: ResultData, b: ResultData): number {
 }
 
 // 型のエクスポート
-export type { CriterionData, TestData, ResultData, ResultContent };
+export type { CriterionData, TestData, TechData, ResultData, ResultContent };
