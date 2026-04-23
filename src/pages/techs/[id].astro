@@ -18,13 +18,12 @@ import {
 import { getLinkBase } from '../../lib/links';
 
 export async function getStaticPaths() {
-  const { getEntry } = await import('astro:content');
-  const techsEntry = await getEntry('techs', 'techs');
-  const techs = techsEntry?.data ?? {};
+  const { getCollection } = await import('astro:content');
+  const entries = await getCollection('techs');
 
-  return Object.keys(techs).map((id) => ({
-    params: { id },
-    props: { techId: id },
+  return entries.map((entry) => ({
+    params: { id: entry.id },
+    props: { techId: entry.id },
   }));
 }
 
