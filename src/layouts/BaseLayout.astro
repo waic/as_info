@@ -27,8 +27,34 @@ const fullTitle = `${title}：アクセシビリティ サポーテッド（AS�
       }
       table {
         empty-cells: show;
-        margin: 0 calc(50% - 40vw);
-        width: 80vw;
+        margin: 0;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+      }
+      .table-scroll {
+        max-width: 100%;
+        overflow-x: auto;
+        margin-bottom: 15px;
+      }
+      .table-scroll:focus {
+        outline: 2px solid #2062a3;
+        outline-offset: 2px;
+      }
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+      .table-scroll > table {
+        width: max-content;
+        min-width: 100%;
       }
       @media (max-width: 600px) {
         table {
