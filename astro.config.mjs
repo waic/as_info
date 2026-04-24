@@ -2,8 +2,10 @@
 import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
 
-// Next.js実装と同じ: App Engineではbase: '/'、本番ではbase: '/docs/as/info/'
-// GitHub Pagesなどでは ASTRO_BASE / ASTRO_SITE で上書き可能にする
+// デプロイ先ごとに base を切り替える
+// - App Engine: base = '/'（GAE_APPLICATION がある）
+// - 本番(既存の静的ホスティング想定): base = '/docs/as/info/'（NODE_ENV=production）
+// - GitHub Pages: base/site を ASTRO_BASE / ASTRO_SITE で明示的に上書き
 const isAppEngine = !!process.env.GAE_APPLICATION;
 const isProd = process.env.NODE_ENV === 'production';
 const defaultBase = isAppEngine ? '/' : (isProd ? '/docs/as/info/' : '');
