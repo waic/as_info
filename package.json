@@ -18,7 +18,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@astrojs/react": "^4.2.1",
+    "@astrojs/react": "^5.0.7",
     "astro": "^6.4.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -27,12 +27,7 @@
     "esbuild": "^0.28.1",
     "uuid": "^13.0.1",
     "@babel/core": "^7.29.6",
-    "astro": {
-      "vite": "^7.3.5"
-    },
-    "@astrojs/react": {
-      "vite": "^6.4.3"
-    }
+    "vite": "^7.3.5"
   },
   "devDependencies": {
     "@markuplint/astro-parser": "^4.18.3",
