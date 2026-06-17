@@ -25,7 +25,17 @@
   },
   "overrides": {
     "esbuild": "^0.28.1",
-    "uuid": "^13.0.1"
+    "uuid": "^13.0.1",
+    "@babel/core": "^7.29.6",
+    "astro": {
+      "vite": "^7.3.5"
+    },
+    "@astrojs/react": {
+      "vite": "^6.4.3"
+    },
+    "vitefu": {
+      "vite": "^6.4.3"
+    }
   },
   "devDependencies": {
     "@markuplint/astro-parser": "^4.18.3",
