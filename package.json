@@ -19,12 +19,16 @@
   "license": "ISC",
   "dependencies": {
     "@astrojs/react": "^4.2.1",
-    "astro": "^6.1.10",
+    "astro": "^6.4.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
+  "overrides": {
+    "esbuild": "^0.28.1",
+    "uuid": "^13.0.1"
+  },
   "devDependencies": {
-    "@markuplint/astro-parser": "^4.6.22",
+    "@markuplint/astro-parser": "^4.18.3",
     "@types/js-yaml": "^4.0.9",
     "@types/node": "^20.4.2",
     "@types/react": "^18.2.15",
@@ -34,7 +38,7 @@
     "eslint": "^9.39.2",
     "eslint-plugin-astro": "^1.5.0",
     "js-yaml": "^4.1.1",
-    "markuplint": "^4.18.0",
+    "markuplint": "^4.18.3",
     "tsx": "^4.21.0",
     "typescript": "^5.1.6"
   }
