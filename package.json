@@ -32,9 +32,6 @@
     },
     "@astrojs/react": {
       "vite": "^6.4.3"
-    },
-    "vitefu": {
-      "vite": "^6.4.3"
     }
   },
   "devDependencies": {
