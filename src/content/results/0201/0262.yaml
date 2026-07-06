@@ -1,0 +1,15 @@
+id: 262
+test: 0003-02
+os: Windows 10 Pro 1803
+user_agent: Internet Explorer 11.0,101
+assistive_tech: PC-Talker 10 64bit Vesion.1.26
+assistive_tech_config:
+contents:
+  - expected: '次の順序でフォーカスが移動する : テキストフィールド “検索” ボタン 携帯サイト サイトマップ'
+    procedure: TABキーで順番に移動を確認した。
+    actual: '次の順序でフォーカスが移動した : テキストフィールド “検索” ボタン 携帯サイト サイトマップ'
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 中野利保
+date: 2019/02/01

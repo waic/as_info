@@ -1,0 +1,24 @@
+id: 652
+test: 0055-02
+os: Windows 11 Home 24H2
+user_agent: Microsoft Edge 132.0.2957.115
+assistive_tech:
+assistive_tech_config:
+contents:
+  - procedure: Tab キーを押下し、「氏名」の入力欄にフォーカスを移動
+    actual: フォーカスが当たると「氏名」の入力欄の背景色が変化する
+    judgment: ○
+  - procedure: Tab キーを押下し、ラジオボタン「男性」にフォーカスを移動
+    actual: |-
+      フォーカスが外れた「氏名」の入力欄の背景色が元に戻る
+      フォーカスが当たるとラジオボタン「男性」のラベルの背景色が変化する
+    judgment: ○
+  - procedure: 下矢印キーを押下し、ラジオボタン「男性」から「女性」にフォーカスを移動
+    actual: |-
+      フォーカスが外れたラジオボタン「男性」のラベルの背景色が元に戻る
+      フォーカスが当たるとラジオボタン「女性」のラベルの背景色が変化する
+    judgment: ○
+environment_type: 視覚閲覧環境
+comment:
+tester: 山崎 規弘
+date: '2025-01-23'

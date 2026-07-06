@@ -1,0 +1,19 @@
+id: 671
+test: 0035-04
+os: Windows ver 22H2
+user_agent: Firefox Browser 127.0.2
+assistive_tech:
+assistive_tech_config:
+contents:
+  - procedure: |-
+      1. 1番目のリストの項目「ホーム」のリンク要素の表示内容を確認
+      2. 2番目のリストの項目「会社概要」のリンク要素の表示内容を確認
+    actual: |-
+      1. 1番目のリストの項目「ホーム」のリンク要素の最初と最後に画像が表示されなかった。（使用したFirefoxのバージョンが古いことが原因だった）
+
+      2. 2番目のリストの項目「会社概要」のリンク要素の最初と最後に画像が表示されない。
+    judgment: ×
+environment_type: 視覚閲覧環境
+comment: 「得られた結果 1.」に記載しているように、使用したFirefoxのバージョンが古かったことにより画像が表示されていなかった。バージョン 128.0以降は表示される模様。
+tester: 江﨑和敬
+date: '2025-01-23'

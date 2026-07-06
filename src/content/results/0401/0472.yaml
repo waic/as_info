@@ -1,0 +1,14 @@
+id: 472
+test: 0032-01
+os: Windows 10 Pro 22H2
+user_agent: Firefox 118.0 (64 ビット)
+assistive_tech: NVDA 2023.2jp-r2(2023.2.0.3096)
+assistive_tech_config:
+contents:
+  - procedure: テストファイルを操作し、結果を確認。
+    actual: “リンク ワシントンが経済成長を刺激する”と“リンク 全文表示”と別々のリンクとして読み上げられる
+    judgment:
+environment_type: 音声閲覧環境
+comment: 別々のリンクとして読み上げられることを除けば「“ワシントンが経済成長を刺激する 全文表示” が読み上げられる」という期待される結果は満たしているが、ひとつのリンクとして読み上げられるということまで期待されているかわからず、○か×かの判断ができなかった
+tester: 山崎 規弘
+date: '2023-09-28'

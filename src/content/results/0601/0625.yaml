@@ -1,0 +1,19 @@
+id: 625
+test: 0057-01
+os: WindowsNT ver10.0
+user_agent: NetReader ネオモード 5.2407.59.125
+assistive_tech: PC-Talker Neo 12.2408.59.2302
+assistive_tech_config:
+contents:
+  - procedure: タブキーを押して ボタン1 を選択した。
+    actual: ボタン1 のトグルボタン 切り替え チェックなし と読み上げた。
+    judgment: 満たしている
+  - procedure: タブキーを押して、ボタン2を選択した。
+    actual: ボタン2 のトグルボタン 切り替え チェック と読み上げた。
+    judgment: 満たしている
+  - procedure: タブキーを押して ボタン3 を選択した。
+    actual: ボタン3 のトグルボタン 切り替え Mix と読み上げた。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+tester: 諸熊
+date: '2024-10-10'

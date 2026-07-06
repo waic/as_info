@@ -1,0 +1,26 @@
+id: 160
+test: 0003-02
+os: macOS 10.14.2
+user_agent: Google Chrome 71.0.3578.98
+assistive_tech: VoiceOver
+assistive_tech_config:
+contents:
+  - expected: |2-
+       (視覚閲覧環境) :
+      次の順序でフォーカスが移動する :
+      テキストフィールド
+      “検索” ボタン
+      携帯サイト
+      サイトマップ
+    procedure: Tab キーを押下し、フォーカスの移動順序を確認
+    actual: |-
+      （視覚閲覧環境）次の順序でフォーカスが移動しました :
+      テキストフィールド
+      “検索” ボタン
+      携帯サイト
+      サイトマップ
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 佐藤哲裕
+date: 2019/01/13

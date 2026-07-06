@@ -1,0 +1,17 @@
+id: 612
+test: 0092-01
+os: macOS 14.6.1
+user_agent: Google Chrome 129.0.6668.101
+assistive_tech: なし（視覚閲覧環境）
+assistive_tech_config:
+contents:
+  - procedure: ブラウザの文字サイズ変更機能を用いて、文字サイズのみを拡大する
+    actual: h1 要素の行頭にある「ユーザー」と、p 要素の行末にある「非常に」が周囲のテキストよりも大きく表示される
+    judgment: ○
+  - procedure: ブラウザの文字サイズ変更機能を用いて、文字サイズのみを拡大する
+    actual: h1 要素の行頭にある「ユーザー」と、p 要素の行末にある「非常に」では、h1 要素の行頭にある「ユーザー」のほうが大きく表示される
+    judgment: ○
+environment_type: 視覚閲覧環境
+comment:
+tester: 山崎 規弘
+date: '2024-10-10'

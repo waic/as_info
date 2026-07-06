@@ -1,0 +1,23 @@
+id: 488
+test: 0029-03
+os: macOS 13.5.2
+user_agent: Safari 16.6 (18615.3.12.11.2)
+assistive_tech: VoiceOver
+assistive_tech_config:
+contents:
+  - procedure: |-
+      Tabキーで「フォント」ボタンにフォーカスを移動。
+      Tabキーで「色」ボタンにフォーカスを移動。
+      Tabキーで「カスタマイズ」ボタンにフォーカスを移動。
+    actual: |-
+      フォント、ボタン
+      このページで使用するフォントフェイスとサイズの選択
+      色、ボタン
+      このページで使用する色を選択
+      カスタマイズ、ボタン
+      このページで使われているレイアウトやスタイルをカスタマイズ
+    judgment: ○
+environment_type: 音声閲覧環境
+comment: 3つのボタンでテストをすることになっていますが、何が違うのか不明でした。
+tester: SAWADA STANDARD DESIGN
+date: '2023-09-28'

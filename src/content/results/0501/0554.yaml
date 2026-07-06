@@ -1,0 +1,17 @@
+id: 554
+test: 0002-01
+os: Windows
+user_agent: Google Chrome
+assistive_tech: NVDA
+assistive_tech_config:
+contents:
+  - procedure: ブラウザの設定で画像を非表示にし、テストページを閲覧
+    actual: 画像が見つからないことを示すアイコンの後に「ウェブアクセシビリティ基盤委員会 公式サイト」と表示された
+    judgment: ○
+  - procedure: ブラウザの設定で画像を表示にし、NVDAを起動した状態でテストページを開いた
+    actual: 「ウェブアクセシビリティ基盤委員会画像 公式サイト」が読み上げられた。「画像」の読み上げが余計
+    judgment: ×
+environment_type: 音声閲覧環境
+comment:
+tester: 中村 泰士
+date: '2024-06-13'

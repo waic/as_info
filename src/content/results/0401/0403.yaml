@@ -1,0 +1,17 @@
+id: 403
+test: 0024-01
+os: Windows 10 Pro 20H2
+user_agent: NetReader Neo
+assistive_tech: PC-Talker Neo Plus
+assistive_tech_config:
+contents:
+  - procedure: 矢印キーを押して順に読み上げた。
+    actual: 「ホーム」に差し掛かった時、「目次領域」という情報が提示された。
+    judgment: 満たしている
+  - procedure: 矢印キーを押してコンテンツを順に読み上げた。
+    actual: 「ニュース一覧」から一つ前に戻った時に、「目次領域」と読み上げたため、目次領域の開始と終了地点がわかった。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 諸熊
+date: 2022/03/04

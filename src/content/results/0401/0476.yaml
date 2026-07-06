@@ -1,0 +1,14 @@
+id: 476
+test: 0034-01
+os: Windows 10 Pro 22H2
+user_agent: Microsoft Edge for Business バージョン 117.0.2045.43 (公式ビルド) (64 ビット)
+assistive_tech: なし（視覚閲覧環境）
+assistive_tech_config:
+contents:
+  - procedure: 表示内容を確認
+    actual: CSSで文字間隔を調整した2番目のＨ2要素「東京都」の文字間隔の広がりが確認できる
+    judgment: ○
+environment_type: 視覚閲覧環境
+comment:
+tester: 山崎 規弘
+date: '2023-09-28'

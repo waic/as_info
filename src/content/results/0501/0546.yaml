@@ -1,0 +1,14 @@
+id: 546
+test: 0001-03
+os: Windows10
+user_agent: googleChrome
+assistive_tech: NVDA
+assistive_tech_config:
+contents:
+  - procedure: 段落を読み上げ、内容を確認
+    actual: アイコン画像の代替テキストは何も読み上げられず、テキスト “ウェブアクセシビリティ基盤委員会公開サイト” のみが読み上げられる
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: tokami
+date: '2024-06-13'

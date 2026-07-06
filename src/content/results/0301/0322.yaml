@@ -1,0 +1,27 @@
+id: 322
+test: 0016-01
+os: Chrome OS 71
+user_agent: Chrome OS 71.0.3578.94(64bit)
+assistive_tech: 'ChromeVox Google TTS Setting : Chrome OS 日本語 インストール済み'
+assistive_tech_config: |-
+  参考：Chromebook ヘルプ / 組み込みのスクリーン リーダーを使用する
+   https://support.google.com/chromebook/answer/7031755?hl=ja
+contents:
+  - expected: |-
+      英語の音声合成エンジンを用いて読み上げられる
+       
+       テスト実施時の注意点 (音声閲覧環境) :lang 属性による音声エンジンの自動切り替えが有効な設定になっているか、テスト実施前にスクリーンリーダーの設定内容を確認すること
+    procedure: テストファイルを読み上げ、内容を確認
+    actual: |-
+      以下の方法で音声読み上げの言語を英語に変更する→ページを英語で読み上げる
+       
+       検索キーを押した状態で、O キーを 2 回押す。
+       →ChromeVoxのオブション画面が表示される。[音声] で、[Chrome OS] を選択する。
+       →デフォルトの言語がボタンのラベルに表示される。リストから別の言語を選択する。
+       →選択した新しい言語の音声が再生される。完了したら、Ctrl+W キーを押しChromeVoxのオブション画面を閉じる。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
+tester: 四方田正夫
+date: 2019/01/13

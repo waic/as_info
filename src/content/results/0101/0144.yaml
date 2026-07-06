@@ -1,0 +1,15 @@
+id: 144
+test: 0001-01
+os: Windows 10 Home 64bit
+user_agent: 'GoogleChrome バージョン: 71.0.3578.98（Official Build） （64 ビット）'
+assistive_tech: NVDA2018.4jp
+assistive_tech_config:
+contents:
+  - expected: アイコン画像の代替テキストは何も読み上げられず、リンクテキスト “ウェブアクセシビリティ基盤委員会公開サイト” のみが読み上げられる
+    procedure: リンク「ウェブアクセシビリティ基盤委員会公開サイト」にマウスオーバーした
+    actual: リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみ読み上げられた
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: yukiko makino
+date: 2019/01/13

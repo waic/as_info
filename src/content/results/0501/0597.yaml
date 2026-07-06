@@ -1,0 +1,21 @@
+id: 597
+test: 0121-01
+os: edi:Win 11 Pro ver:23H2 OSbld:22631.4317
+user_agent: firefox 131.0.2 (64 ビット)
+assistive_tech: NVDA
+assistive_tech_config: スピーチビューアーの設定変更あり
+contents:
+  - procedure: NVDA:ページを表示して読み上げ
+    actual: |-
+      現在の時刻表示を確認
+       ・ダイアログの表示を確認
+       ・アクティブでない別タブで開いておき、アクティブにした際ダイアログの表示を確認
+       ・別アプリを操作して戻ったときにダイアログの表示を確認
+      ▼読み上げ結果
+      https://waic.github.io のページから:  ダイアログ  このページは20秒後に更新されます。表示時間を延長しますか?  
+      OK  ボタン
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment: 通知はブラウザもしくはタブをアクティブにした段階で初めて読み上げられた
+tester: fujiid
+date: '2024-10-10'

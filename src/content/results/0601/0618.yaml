@@ -1,0 +1,14 @@
+id: 618
+test: 0121-01
+os: Windows 10 Pro 22H2
+user_agent: Google Chrome 129.0.6668.101
+assistive_tech: NVDA 2024.3.1jp (2024.3.1.3700)
+assistive_tech_config:
+contents:
+  - procedure: ページを表示し、「このページを表示した時刻」に現在の時刻が表示されていることを確認する。そのまま40秒待つ
+    actual: 40秒待つと、「このページは20秒後に更新されます。表示時間を延長しますか?」という警告メッセージが通知される
+    judgment: ×
+environment_type: 音声閲覧環境
+comment: ウィンドウがアクティブな時は通知が読み上げられるが非アクティブな時には読み上げられなかった
+tester: 山崎 規弘
+date: '2024-10-10'

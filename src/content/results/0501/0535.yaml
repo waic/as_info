@@ -1,0 +1,14 @@
+id: 535
+test: 0043-01
+os: iOS 17.2.1
+user_agent: Safari
+assistive_tech: VoiceOver
+assistive_tech_config:
+contents:
+  - procedure: 1本指右フリックで、順に読み進めた。
+    actual: 「トップニュース記事」見出しレベル1 「トップニュース記事」 補足 ランドマーク
+    judgment: ○
+environment_type: 音声閲覧環境
+comment: ランドマークに入って、一番最初に読む見出しがaria-labelledbyされている要素なので、要素の内容を読み上げているのか、関連づけられたnameを読み上げているのか、区別がつきづらい。
+tester: SAWADA STANDARD DESIGN
+date: '2024-01-18'

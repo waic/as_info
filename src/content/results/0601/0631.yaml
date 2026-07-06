@@ -1,0 +1,16 @@
+id: 631
+test: 0048-01
+os: WindowsNT ver10.0
+user_agent: NetReader ネオモード 5.2407.59.125
+assistive_tech: PC-Talker Neo 12.2408.59.2302
+assistive_tech_config:
+contents:
+  - procedure: 矢印キーを押して、郵便番号の入力欄の位置まで移動した。
+    actual: 「郵便番号 郵便番号上３桁」と読み上げた。
+    judgment: 満たしている
+  - procedure: 矢印キーを押して、「郵便番号を入力してください」の位置へ移動した。
+    actual: 「郵便番号」領域の外側であることは読み上げなかったが、上矢印キーを押すと、「郵便番号 郵便番号の下4桁」と読み上げたので、グループの外側にいたということはわかった。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+tester: 諸熊
+date: '2024-10-10'

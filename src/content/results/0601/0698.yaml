@@ -1,0 +1,14 @@
+id: 698
+test: WAIC-TEST-0032-01
+os: iPadOS 18.6.2
+user_agent: Safari 18.6.2
+assistive_tech: VoiceOver
+assistive_tech_config:
+contents:
+  - procedure: 「全文表示」リンクにフォーカスを当てた。
+    actual: 「ワシントンが経済成長を刺激する 全文表示」が読み上げられた。
+    judgment: ○
+environment_type: 音声閲覧環境
+comment:
+tester: 秦　友幸
+date: '2025-10-23'

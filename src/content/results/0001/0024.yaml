@@ -1,0 +1,15 @@
+id: 24
+test: 0010-02
+os: macOS 10.14.2
+user_agent: Firefox 64.0
+assistive_tech: VoiceOver
+assistive_tech_config:
+contents:
+  - expected: テーブルの開始位置及び終了位置を知るための何らかの手段が提供されている
+    procedure: VOキー＋右矢印キーで表および表の内容へ移動した。
+    actual: 表の開始位置（caption要素）で「[caption要素の内容] + ひょう 0行5列」、最後のセルを読み終わった後にVOキー＋右矢印キーを押下したとき「表の終わり」と読み上げられた。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment: 満たしていると判断しましたが、「表の終わり」を「おもてのおわり」と誤読しているのは気になりました。（表の開始時は「ひょう」と読み上げます。）
+tester: 安倍 英樹
+date: 2018/12/28

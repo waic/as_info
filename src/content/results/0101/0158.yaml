@@ -1,0 +1,19 @@
+id: 158
+test: 0002-02
+os: macOS 10.13.6
+user_agent: Safari 12.0.2
+assistive_tech: VoiceOver
+assistive_tech_config:
+contents:
+  - expected: (視覚閲覧環境) リンクテキスト “施設ご利用の手引き” に続き、アイコン画像の代替テキスト “PDF ファイル” が表示される
+    procedure: （視覚閲覧環境）ブラウザを画像非表示に設定変更し、表示内容を確認した
+    actual: （視覚閲覧環境）代替テキストは表示されなかった
+    judgment: 満たしていない
+  - expected: (音声閲覧環境) リンクテキストとアイコン画像の代替テキストが続けて “施設ご利用の手引き PDFファイル” と読み上げられる
+    procedure: control+shift+option+↓ でページ内に入った
+    actual: ' (音声閲覧環境)「 リンク 施設ご利用の手引き PDFファイル」 と読み上げられた'
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: やまもといずみ
+date: 2019/01/13

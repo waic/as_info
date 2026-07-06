@@ -1,0 +1,19 @@
+id: 225
+test: 0008-01
+os: Windows 10 Home 64bit
+user_agent: 'GoogleChrome バージョン: 71.0.3578.98（Official Build） （64 ビット）'
+assistive_tech: NVDA2018.4jp
+assistive_tech_config:
+contents:
+  - expected: ボタン画像の代替テキスト “送信” が読み上げられる
+    procedure: |-
+      ブラウザを画像非表示モードに設定変更しマウスでhoverした
+      ブラウザを画像非表示モードに設定変更しTabキーで移動した
+    actual: |-
+      hover：何も読み上げられなかった
+      Tab：「WAIC-CODE-0008-01　ボタン送信」と読み上げられた
+    judgment: 満たしていない
+environment_type: 音声閲覧環境
+comment:
+tester: yukiko makino
+date: 2019/01/13

@@ -1,0 +1,14 @@
+id: 404
+test: 0024-02
+os: Windows 10 Pro 20H2
+user_agent: NetReader Neo
+assistive_tech: PC-Talker Neo Plus
+assistive_tech_config:
+contents:
+  - procedure: ランドマークへ移動するショートカット「D」キーを押下
+    actual: 「目次領域」と読み上げられる「組織」及び、「ホーム」へと移動した。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 諸熊
+date: 2022/03/04

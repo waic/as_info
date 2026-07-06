@@ -1,0 +1,18 @@
+id: 40
+test: 0013-01
+os: macOS 10.14.2
+user_agent: Firefox 64.0
+assistive_tech: VoiceOver
+assistive_tech_config:
+contents:
+  - expected: |-
+      次の 1. 〜 2. をすべて満たしている
+      1. 画像に longdesc 属性が指定されていることを知るための何らかの手段が提供されている
+      2. longdesc 属性の値として指定されたリンク先の記述内容を知るための何らかの手段が提供されている
+    procedure: VOキー＋右矢印キーで画像に移動した。
+    actual: 「会員数の遷移グラフ イメージ」のみ読み上げられた。
+    judgment: 満たしていない
+environment_type: 音声閲覧環境
+comment:
+tester: 安倍 英樹
+date: 2018/12/30

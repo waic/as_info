@@ -1,0 +1,17 @@
+id: 236
+test: 0006-01
+os: Windows 10 Pro 1803
+user_agent: Internet Explorer 11.0,101
+assistive_tech: PC-Talker 10 64bit Vesion.1.26
+assistive_tech_config:
+contents:
+  - expected: ンクテキスト “ウェブアクセシビリティ基盤委員会” が読み上げられる
+    procedure: TABで「ウェブアクセシビリティ基盤委員会」に移動した
+    actual: |-
+      リンクテキスト “ウェブアクセシビリティ基盤委員会” を読み上げた
+      リンクテキスト “ウェブアクセシビリティ基盤委員会” を読み上げた
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 中野利保
+date: 2019/01/17

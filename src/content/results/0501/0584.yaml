@@ -1,0 +1,14 @@
+id: 584
+test: 0004-04
+os: macOS
+user_agent: Google Chrome 126.0.6478.127
+assistive_tech: VoiceOver
+assistive_tech_config: 当該ページを開き、Control＋Optionキー+Shiftキーを押してコンテンツ内に入る
+contents:
+  - procedure: Control+Optionキーと左右矢印キーを押してそれぞれのarea要素を選択し、Enterキーを押す
+    actual: それぞれのarea要素は意図したページへ遷移した
+    judgment: ○
+environment_type: 音声閲覧環境
+comment:
+tester: 久保田翔太
+date: '2024-07-03'

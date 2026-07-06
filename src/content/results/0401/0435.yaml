@@ -1,0 +1,14 @@
+id: 435
+test: 0027-05
+os: Android 12
+user_agent: Google Chrome 98.0.4758.101
+assistive_tech: TalkBack
+assistive_tech_config: 「読み上げコントロール」に「ランドマーク」を追加
+contents:
+  - procedure: TalkBackのフォーカスがウェブ表示エリア全体を指した状態で、1本指下フリック
+    actual: 「本文 WAIC の最新情報は以下をご参照ください。セミナーなどのお知らせも行っています。」と読み上げた。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: SAWADA STANDARD DESIGN
+date: 2022/03/04

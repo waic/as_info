@@ -1,0 +1,15 @@
+id: 260
+test: 0008-01
+os: Windows 10 Pro 1803
+user_agent: Internet Explorer 11.0,101
+assistive_tech: PC-Talker 10 64bit Vesion.1.26
+assistive_tech_config:
+contents:
+  - expected: “送信” ボタンを読み上げ、内容を確認
+    procedure: Tabキーで「送信」画像ボタンに移動した
+    actual: ボタン画像の代替テキスト “送信” が読み上げられた。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 中野利保
+date: 2019/01/30

@@ -1,0 +1,35 @@
+id: 282
+test: 0003-04
+os: Chrome OS 71
+user_agent: Chrome OS 71.0.3578.94(64bit)
+assistive_tech: 'ChromeVox Google TTS Setting : Chrome OS 日本語 インストール済み'
+assistive_tech_config: |-
+  参考：Chromebook ヘルプ / 組み込みのスクリーン リーダーを使用する
+   https://support.google.com/chromebook/answer/7031755?hl=ja
+contents:
+  - expected: |-
+      次の順序でフォーカスが移動する : (カッコ内は、指定されている tabindex 属性値)
+       
+       リンク 1 (1) 
+       
+       リンク 3 (1) 
+       
+       リンク 2 (2)
+       
+       リンク 4 (2)
+    procedure: 'キーボード操作 : Tab キーを押下し、フォーカスの移動順序を確認'
+    actual: |-
+      TABキーを押下すると、以下の順に読み上げていく。
+       
+       リンク 1 リンク 検索プラススペースキーで有効にします。 
+       
+       リンク 3 リンク 検索プラススペースキーで有効にします。
+       
+       リンク 2 リンク 検索プラススペースキーで有効にします。
+       
+       リンク 4 リンク 検索プラススペースキーで有効にします。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 四方田正夫
+date: 2019/01/13

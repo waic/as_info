@@ -1,0 +1,17 @@
+id: 638
+test: 0010-05
+os: Windows 11 Enterprise 24H2 26100.2894
+user_agent: 131.0.6778.266（Official Build） （64 ビット）
+assistive_tech: NVDA 2024.3.1jp
+assistive_tech_config: マウスカーソル位置のテキスト報告を無効化
+contents:
+  - procedure: 「営業部連絡先一覧」テーブルで「281-511-6600」セルからCtrl+Alt+右矢印キーで「ヒューストン」セルに移動した
+    actual: 「住所 4列 ヒューストン」と、移動先の列見出しである「住所」が読み上げられた
+    judgment: ○
+  - procedure: 「営業部連絡先一覧」テーブルで「ヒューストン」セルからCtrl+Alt+右矢印キーで「Twitter」セルに移動した
+    actual: 「SNS 5列 既読 リンク Twitter」と、移動先の列見出しである「SNS」が読み上げられた
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: mehm8128
+date: '2025-01-23'

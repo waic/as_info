@@ -1,0 +1,15 @@
+id: 103
+test: 0002-02
+os: Windows 10 Pro 1803
+user_agent: Internet Explorer 11.0,101
+assistive_tech: PC-Talker 10 64bit Vesion.1.26
+assistive_tech_config:
+contents:
+  - expected: リンクテキストとアイコン画像の代替テキストが続けて “施設ご利用の手引き PDFファイル” と読み上げられる
+    procedure: Tabキーで「施設ご利用の手引き PDFファイル」に移動した
+    actual: リンクテキストとアイコン画像の代替テキスト “施設ご利用の手引き PDFファイル” と読み上げられた。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 中野利保
+date: 2019/01/10

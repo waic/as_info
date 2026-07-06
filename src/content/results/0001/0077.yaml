@@ -1,0 +1,15 @@
+id: 77
+test: 0015-06
+os: macOS 10.14.2
+user_agent: Firefox 64.0
+assistive_tech:
+assistive_tech_config:
+contents:
+  - expected: “H2O” の “2” が下付き表示される
+    procedure: テストファイルの表示内容を確認した。
+    actual: “H2O” の “2” が下付き表示された。
+    judgment: 満たしている
+environment_type: 視覚閲覧環境
+comment:
+tester: 安倍 英樹
+date: 2019/01/07

@@ -1,0 +1,14 @@
+id: 450
+test: 0032-01
+os: Windows 11 22H2 22621.2283
+user_agent: NetReader Neo
+assistive_tech: PC-Talker Neo クリエイター版
+assistive_tech_config:
+contents:
+  - procedure: 当該ページを開き、右矢印で読み進む
+    actual: 「ワシントンが経済成長を刺激する全文表示 リンク」と音声キャプションに表示される
+    judgment: ○
+environment_type: 音声閲覧環境
+comment:
+tester: 西本 卓也
+date: '2023-09-28'

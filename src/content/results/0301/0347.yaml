@@ -1,0 +1,17 @@
+id: 347
+test: 0024-02
+os: Windows 10 Pro 2004
+user_agent: FireFox 83.0
+assistive_tech: PC-Talker 10
+assistive_tech_config:
+contents:
+  - procedure: M キーを押した
+    actual: リンク「組織」へ移動し、「ナビゲーション ランドマーク」と読み上げた。
+    judgment: 満たしている
+  - procedure: M キーを押した
+    actual: リンク「ホーム」へ移動し、「ナビゲーション ランドマーク」と読み上げた
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 諸熊
+date: 2020/12/17

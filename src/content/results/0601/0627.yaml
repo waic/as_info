@@ -1,0 +1,13 @@
+id: 627
+test: 0046-01
+os: WindowsNT ver10.0
+user_agent: NetReader ネオモード 5.2407.59.125
+assistive_tech: PC-Talker Neo 12.2408.59.2302
+assistive_tech_config:
+contents:
+  - procedure: 矢印キーを押して、画像やテキストを確認した。
+    actual: '画像を選択した時に「ウェブアクセシビリティ基盤委員会画像にはウェブアクセシビリティ基盤委員会(WAIC)のロゴと「Web Accessibility Infrastructure Committee ウェブアクセシビリティ基盤委員会」という文字が書かれています。」と読み上げた。また次のテキストは、「画像にはウェブアクセシビリティ基盤委員会(WAIC)のロゴと「Web Accessibility Infrastructure Committee ウェブアクセシビリティ基盤委員会」という文字が書かれています。」と読み上げた。 '
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+tester: 諸熊
+date: '2024-10-10'

@@ -1,0 +1,14 @@
+id: 670
+test: 0035-01
+os: Windows ver 22H2
+user_agent: Firefox Browser 127.0.2
+assistive_tech:
+assistive_tech_config:
+contents:
+  - procedure: テストファイルを操作し、結果を確認。その後、ユーザエージェントでスタイルシートを無効にし、改めて内容を確認した。
+    actual: スタイルシート無効により画像が非表示となった。
+    judgment: ○
+environment_type: 視覚閲覧環境
+comment:
+tester: 江﨑和敬
+date: '2025-01-23'

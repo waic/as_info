@@ -1,0 +1,14 @@
+id: 639
+test: 0047-03
+os: Windows 11 Enterprise 24H2 26100.2894
+user_agent: 131.0.6778.266（Official Build） （64 ビット）
+assistive_tech: NVDA 2024.3.1jp
+assistive_tech_config: マウスカーソル位置のテキスト報告を無効化
+contents:
+  - procedure: Tabキーでselect要素にフォーカスを合わせた
+    actual: 「通知： 日前に 通知： コンボボックス 1 折りたたみ」と読み上げられた
+    judgment: ×
+environment_type: 音声閲覧環境
+comment:
+tester: mehm8128
+date: '2025-01-23'

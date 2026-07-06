@@ -1,0 +1,18 @@
+id: 663
+test: 0121-01
+os: macOS 11.7.10
+user_agent: 'Safari 16.6.1 '
+assistive_tech:
+assistive_tech_config:
+contents:
+  - procedure: ページを開いて、表示される現在時刻（＝ページ読み込み時刻）を確認し、何もしないで待つ
+    actual: 表示時間の延長を尋ねるダイアログが表示され、OKを押すと、更新されないままページが保たれた。
+    judgment: ○
+  - procedure: ページを開いて、表示される現在時刻（＝ページ読み込み時刻）を確認し、別のタブをみてテストケースのページを非アクティブにして、しばらく待ったあと、テストケースを開いているタブに戻る
+    actual: 表示時間の延長を尋ねるダイアログが表示され、OK を押すと、更新されないままページが保たれた。ダイアログが表示されている間のページ表示は真っ黒だった。
+    judgment: ×
+environment_type: 視覚閲覧環境
+comment:
+reviewer_comment: '[WAIC注]2つ目の手順についても、判断は○で問題ないと思われます。'
+tester: たた
+date: '2025-01-23'

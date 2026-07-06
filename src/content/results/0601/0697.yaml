@@ -1,0 +1,14 @@
+id: 697
+test: WAIC-TEST-0032-01
+os: iPadOS 18.6.2
+user_agent: Safari 18.6.2
+assistive_tech:
+assistive_tech_config:
+contents:
+  - procedure: Webページを表示した。
+    actual: 「ワシントンが経済成長を刺激する」は表示されず、「全文表示」のリンクテキストのみが表示された
+    judgment: ○
+environment_type: 視覚閲覧環境
+comment:
+tester: 秦　友幸
+date: '2025-10-23'

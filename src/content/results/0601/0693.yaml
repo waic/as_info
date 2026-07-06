@@ -1,0 +1,14 @@
+id: 693
+test: WAIC-TEST-0032-01
+os: macOS 15.6.1
+user_agent: Google Chrome バージョン 141.0.7390.108
+assistive_tech: VoiceOver
+assistive_tech_config:
+contents:
+  - procedure: Tabキー押下で移動。
+    actual: 「リンク ワシントンが経済成長を刺激する 全文表示」と読み上げられた。
+    judgment: ○
+environment_type: 音声閲覧環境
+comment:
+tester: 軽部 裕香里
+date: '2025-10-23'

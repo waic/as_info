@@ -1,0 +1,15 @@
+id: 239
+test: 0011-03
+os: Windows10 pro 1803
+user_agent: Firefox 64.0.2
+assistive_tech: NVDA 2018.4.1jp
+assistive_tech_config:
+contents:
+  - expected: 直前または直後の見出し要素に移動するための何らかの手段が提供されている
+    procedure: hキーで次の見出しへ　Shift+hキーで前の見出しへ　見出し3にジャンプする時は数字の3　前の見出し3に飛ぶ時はShift+3
+    actual: 「果物について」見出しレベル1「定義」見出しレベル2「野菜との違い」見出しレベル3「実は果物ではないもの」見出しレベル4「スイカが野菜である理由」見出しレベル5「スイカの発見」見出しレベル6「人間と果物のかかわり」見出しレベル2　と読み上げた。上に戻ると見出し下から順に読み上げた。数字の3で「野菜との違い」見出しレベル3と読み上げた。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 小枝　繁子
+date: 2019/01/18

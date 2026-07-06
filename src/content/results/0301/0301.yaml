@@ -1,0 +1,30 @@
+id: 301
+test: 0010-06
+os: Chrome OS 71
+user_agent: Chrome OS 71.0.3578.94(64bit)
+assistive_tech: 'ChromeVox Google TTS Setting : Chrome OS 日本語 インストール済み'
+assistive_tech_config: |-
+  参考：Chromebook ヘルプ / 組み込みのスクリーン リーダーを使用する
+   https://support.google.com/chromebook/answer/7031755?hl=ja
+contents:
+  - expected: |-
+      次の 1. 〜 2. をすべて満たしている
+       
+       1. “Clive” の行へ移動すると、データセルの内容とともに見出しセルの内容 “Clive” が読み上げられる
+       
+       2. セル “Greenidge” から “Gordon” に移動すると、“Clive” は読み上げられない
+    procedure: テーブル内のセルを移動し、読み上げ内容を確認
+    actual: |-
+      1．“Contact Information” のテーブルにおいて、“Joel” から “Clive” へ検索プラスcontrolプラスAltキーを押しながら下矢印キーを押して移動すると、以下を読み上げる
+       
+       Clive Clive
+       
+       2．“Contact Information” のテーブルにおいて、“Greenidge” から “Gorden” へ検索プラスcontrolプラスAltキーを押しながら左矢印キーを押して移動すると、以下を読み上げる
+       
+       Gorden 行4列2
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
+tester: 四方田正夫
+date: 2019/01/13

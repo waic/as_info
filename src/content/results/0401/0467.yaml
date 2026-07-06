@@ -1,0 +1,13 @@
+id: 467
+test: 0006-02
+os: Windows 11 22h2
+user_agent: Google Chrome 117.0.5938.132（Official Bu
+assistive_tech: NVDA 2023.2jp-r2 (2023.2.0.3096)
+assistive_tech_config:
+contents:
+  - procedure: 下矢印キーを押して項目を確認
+    actual: リンク画像の代替テキストが読み上げられた
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+tester: yuyaroid
+date: '2023-09-28'

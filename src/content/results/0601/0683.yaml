@@ -1,0 +1,17 @@
+id: 683
+test: 0143-01
+os: Windows 11 Pro 64bit Version 25H2
+user_agent: NetReader Neo 5.2510.74.140
+assistive_tech: PC-Talker 12.2510.66.2502
+assistive_tech_config:
+contents:
+  - procedure: メッセージを送る ボタンを押した
+    actual: ボタン押下直後、「あなた：こんにちわ」と音声で通知された。
+    judgment: 満たしている
+  - procedure: タブキーを押してリンクへ移動
+    actual: リンク内容の読み上げの後にメッセージの続きを読み上げしていた。ただし、先にメッセージを全て読み上げしてしまった後だと、ただリンクを読み上げるだけだった。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 諸熊
+date: '2025-10-23'

@@ -1,0 +1,15 @@
+id: 31
+test: 0010-08
+os: macOS 10.14.2
+user_agent: Firefox 64.0
+assistive_tech: VoiceOver
+assistive_tech_config:
+contents:
+  - expected: 東京の女性の数値を表す “15%” のセルに移動すると、セルの内容とともに “大阪 男性” が読み上げられる
+    procedure: VOキー＋右矢印キーで表内を移動した。
+    actual: 「大阪 15%」と読み上げられた。
+    judgment: 満たしていない
+environment_type: 音声閲覧環境
+comment:
+tester: 安倍 英樹
+date: 2018/12/29

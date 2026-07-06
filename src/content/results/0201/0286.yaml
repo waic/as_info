@@ -1,0 +1,31 @@
+id: 286
+test: 0004-04
+os: Chrome OS 71
+user_agent: Chrome OS 71.0.3578.94(64bit)
+assistive_tech: 'ChromeVox Google TTS Setting : Chrome OS 日本語 インストール済み'
+assistive_tech_config: |-
+  参考：Chromebook ヘルプ / 組み込みのスクリーン リーダーを使用する
+   https://support.google.com/chromebook/answer/7031755?hl=ja
+contents:
+  - expected: 各リンク先へ遷移する
+    procedure: '操作 : 各 area 要素を選択し、挙動を確認'
+    actual: |-
+      TABキーを押下して各area要素を選択し、検索キー＋スペースキーを押下すると、各リンク先へ遷移する。
+       
+       （お問い合わせ先一覧 遷移しない） 
+       
+       4F雑貨 リンク先へ遷移する
+       
+       3F衣料品 リンク先へ遷移する
+       
+       2Fお菓子 リンク先へ遷移する
+       
+       1F生鮮食品 リンク先へ遷移する
+       
+       （周辺地図 遷移しない）
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
+tester: 四方田正夫
+date: 2019/01/13

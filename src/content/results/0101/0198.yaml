@@ -1,0 +1,25 @@
+id: 198
+test: 0007-01
+os: macOS 10.13.6
+user_agent: Safari 12.0.2
+assistive_tech: VoiceOver
+assistive_tech_config:
+contents:
+  - expected: |-
+      (視覚閲覧環境) 次の 1. 〜 2. をすべて満たしている
+      1. WAIC-CODE-0007-01-ref.html に遷移する
+      2. 入力したメールアドレスが URL エンコーディングされ、URL の末尾に付加されている
+    procedure: '(視覚閲覧環境) マウス操作 : “申し込む” ボタンをクリックし、挙動を確認'
+    actual: (視覚閲覧環境) 1. 2. とも期待される結果と同じでした
+    judgment: 満たしている
+  - expected: |-
+      (音声閲覧環境) 次の 1. 〜 2. をすべて満たしている
+      1. WAIC-CODE-0007-01-ref.html に遷移する
+      2. 入力したメールアドレスが URL エンコーディングされ、URL の末尾に付加されている
+    procedure: (音声閲覧環境) “申し込む” ボタンを押下し、挙動を確認
+    actual: (音声閲覧環境) 1. 2. とも満たしていました。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: やまもといずみ
+date: 2019/01/13

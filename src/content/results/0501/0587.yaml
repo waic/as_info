@@ -1,0 +1,22 @@
+id: 587
+test: 0048-01
+os: Windows 11 Pro　23H3
+user_agent: Microsoft Edge バージョン 129.0.2792.79 (公式ビルド) (64 ビット)
+assistive_tech: NVDA 2024.1jp 2024.1.0.3579
+assistive_tech_config:
+contents:
+  - procedure: h2見出し「郵便番号入力」を読みあげ後、カーソルキー「↓」を2回押下。
+    actual: |
+      カーソルキー「↓」を押下するごとに、下記のテキストが読み上げられた。
+      「グループ 前半3桁と後半4桁に分けて入力します」
+      「郵便番号 アスタリスク 前半3ケタエディット必須 マイナス 後半4ケタエディット必須」
+    judgment: ○
+  - procedure: 期待される結果１の結果を読みあげた後、カーソルキー「↓」を押下。
+    actual: |-
+      下記のテキストが読み上げられた。
+      「グループの外 郵便番号を入力してください。」
+    judgment: ○
+environment_type: 音声閲覧環境
+comment:
+tester: 土永 崇之
+date: '2024-10-10'

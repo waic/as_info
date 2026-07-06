@@ -1,0 +1,15 @@
+id: 232
+test: 0004-02
+os: Windows 10 Pro 1803
+user_agent: Internet Explorer 11.0,101
+assistive_tech: PC-Talker 10 64bit Vesion.1.26
+assistive_tech_config:
+contents:
+  - expected: イメージマップに用いられている画像の代替テキスト “デパートのフロアガイド。各階について詳しくお知りになりたい場合は各階をクリックしてください。” が読み上げられる
+    procedure: 仮想カーソル移動コマンド Ctrl+下矢印キーで「デパートのフロアガイド。各階について詳しくお知りになりたい場合は各階をクリックしてください。」に移動した。
+    actual: 「デパートのフロアガイド。各階について詳しくお知りになりたい場合は各階をクリックしてください。　画像」と読み上げられた。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 中野利保
+date: 2019/01/15

@@ -1,0 +1,15 @@
+id: 711
+test: 0004-04
+os: macOS
+user_agent: Google Chrome
+assistive_tech: VoiceOver
+assistive_tech_config:
+contents:
+  - procedure: 各 area 要素を選択し、挙動を確認
+    actual: 各リンク先へ遷移する
+    judgment: ○
+environment_type: 視覚閲覧環境
+comment:
+reviewer_comment: '[WAIC注] VoiceOver と書かれていますが視覚閲覧環境のテストであると判断しました。'
+tester: hosaka
+date: '2025-10-23'

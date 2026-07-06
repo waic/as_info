@@ -1,0 +1,15 @@
+id: 13
+test: 0004-04
+os: macOS 10.14.2
+user_agent: Firefox 64.0
+assistive_tech: VoiceOver
+assistive_tech_config:
+contents:
+  - expected: 各リンク先へ遷移する
+    procedure: イメージマップ内の各 area 要素上でVOキー＋スペースキーを押下した。
+    actual: area要素のhref属性で指定されたURLへ遷移した。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 安倍 英樹
+date: 2018/12/27

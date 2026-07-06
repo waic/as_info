@@ -1,0 +1,15 @@
+id: 243
+test: 0012-04
+os: Windows10 pro バージョン：1803
+user_agent: Fierfox ver64.0.2
+assistive_tech: ' NVDA ver2018.4.1jp'
+assistive_tech_config:
+contents:
+  - expected: セレクトメニューにフォーカスを移動すると、title 属性値 “検索範囲を選択” が読み上げられる
+    procedure: Tabキーで移動した。
+    actual: 「検索範囲を選択」と読み上げた。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 小枝　繁子
+date: 2019/01/18

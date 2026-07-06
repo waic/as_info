@@ -1,0 +1,17 @@
+id: 445
+test: 0034-01
+os: Windows 11 22H2 22621.2283
+user_agent: Firefox 117.0.1
+assistive_tech: NVDA 2023.2jp-r2
+assistive_tech_config:
+contents:
+  - procedure: 当該ページを開き、下矢印で読み進む
+    actual: 「見出しレベル２ とうきょうと」「見出しレベル２ とうきょうと」
+    judgment: ○
+  - procedure: 当該ページを開き、下矢印で読み進む
+    actual: 「見出しレベル２ とうきょうと」「見出しレベル２ ひがしきょうみやこ」
+    judgment: ○
+environment_type: 音声閲覧環境
+comment:
+tester: 西本 卓也
+date: '2023-09-28'

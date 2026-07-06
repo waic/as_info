@@ -1,0 +1,22 @@
+id: 310
+test: 0012-04
+os: Chrome OS 71
+user_agent: Chrome OS 71.0.3578.94(64bit)
+assistive_tech: 'ChromeVox Google TTS Setting : Chrome OS 日本語 インストール済み'
+assistive_tech_config: |-
+  参考：Chromebook ヘルプ / 組み込みのスクリーン リーダーを使用する
+   https://support.google.com/chromebook/answer/7031755?hl=ja
+contents:
+  - expected: セレクトメニューにフォーカスを移動すると、title 属性値 “検索範囲を選択” が読み上げられる
+    procedure: テストファイルを操作し、結果を確認
+    actual: |-
+      TABキーを押下していくと、以下の順に読み上げる。
+       
+       検索 テキスト編集
+       このサイト内 検索範囲を選択 ボタン ポップアップあり 折りたたみ表示中 検索プラススペースキーで有効にします。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
+tester: 四方田正夫
+date: 2019/01/13

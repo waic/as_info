@@ -1,0 +1,19 @@
+id: 388
+test: 0012-02
+os: Windows 10 Version 1803
+user_agent: Internet Exprorer 11.0,101
+assistive_tech: PC-Talker 10 64bit Vesion.1.26
+assistive_tech_config:
+contents:
+  - expected: それぞれのチェックボックスにフォーカスを移動すると、次のように関連付けられたラベルを知るための何らかの手段が提供されている
+    procedure: TABでフォーカスを移動し、確認した。
+    actual: TABキーで移動すると、"山田荘の切り替え"、"田中アパートの切り替え"、"佐藤マンションの切り替え"と順番に読み上げた。
+    judgment: 満たしている
+  - expected: “3.” のチェックボックスにフォーカスを移動すると、 “定期借家” は読み上げられない
+    procedure: TABキーでフォーカス移動した
+    actual: '"3."のチェックボックスは"佐藤マンション"と読み上げられた。'
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 中野利保
+date: 2019/02/26

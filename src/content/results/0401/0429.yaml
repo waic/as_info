@@ -1,0 +1,17 @@
+id: 429
+test: 0029-05
+os: Windows 10 Home 21H1
+user_agent: Microsoft Edge 99.0.1150.30
+assistive_tech: PC-Talker Neo Plus（クリエーター版）
+assistive_tech_config:
+contents:
+  - procedure: 3つのbutton要素にDOM順にフォーカス
+    actual: |-
+      「フォントの 確認 このページで使用するフォントフェイスとサイズの選択」
+      「色の 確認 このページで使用する色を選択」
+      「カスタマイズの 確認 このページで使われているレイアウトやスタイルをカスタマイズ」
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 桝田 草一
+date: 2022/03/04

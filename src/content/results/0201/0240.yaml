@@ -1,0 +1,23 @@
+id: 240
+test: 0012-01
+os: Windows10 pro バージョン：1803
+user_agent: Fierfox ver64.0.2
+assistive_tech: NVDA ver2018.4.1jp
+assistive_tech_config:
+contents:
+  - expected: |-
+      それぞれのテキスト入力フィールドにフォーカスを移動すると、次のように関連付けられたラベルを知るための何らかの手段が提供されている “1.” のテキスト入力フィールド : ラベル “姓”
+      “2.” のテキスト入力フィールド : ラベル “名”
+      “3.” のテキスト入力フィールド : ラベル “住所”
+      “4.” のテキスト入力フィールド : ラベル “電話番号”
+    procedure: テキスト入力フィールドにTabキーで移動した。
+    actual: ラベルの「姓」「名」「住所：」「：電話番号」と読み上げた。
+    judgment: 満たしている
+  - expected: “4.” のテキスト入力フィールドにフォーカスを移動すると、 “ハイフンは不要” は読み上げられない
+    procedure: Tabキーで移動した。
+    actual: 「:電話番号」のみ読み上げた。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 小枝　繁子
+date: 2019/01/18

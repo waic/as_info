@@ -1,0 +1,15 @@
+id: 273
+test: 0010-08
+os: Windows 10 Pro 1803
+user_agent: Internet Explorer 11.0,101
+assistive_tech: PC-Talker 10 64bit Vesion.1.26
+assistive_tech_config:
+contents:
+  - expected: 東京の女性の数値を表す “15%” のセルに移動すると、セルの内容とともに “大阪 男性” が読み上げられる。
+    procedure: 仮想カーソル移動コマンド(Ctrl+下矢印キー)で、東京の女性の数値を表す “15%” のセルに移動した。
+    actual: セルの内容のみ読み上げられ、“大阪 男性” は読み上げられなかった。
+    judgment: 満たしていない
+environment_type: 音声閲覧環境
+comment: セルの移動では読み上げられないが、情報読み(Ctrl+Alt+G)で"大阪" "男性"を読みあげた。
+tester: 中野利保
+date: 2019/02/08

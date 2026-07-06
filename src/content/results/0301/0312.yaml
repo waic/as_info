@@ -1,0 +1,26 @@
+id: 312
+test: 0013-01
+os: Chrome OS 71
+user_agent: Chrome OS 71.0.3578.94(64bit)
+assistive_tech: 'ChromeVox Google TTS Setting : Chrome OS 日本語 インストール済み'
+assistive_tech_config: |-
+  参考：Chromebook ヘルプ / 組み込みのスクリーン リーダーを使用する
+   https://support.google.com/chromebook/answer/7031755?hl=ja
+contents:
+  - expected: |-
+      次の 1. 〜 2. をすべて満たしている
+       
+       1. 画像に longdesc 属性が指定されていることを知るための何らかの手段が提供されている
+       
+       2. longdesc 属性の値として指定されたリンク先の記述内容を知るための何らかの手段が提供されている
+    procedure: テストファイルを操作し、結果を確認
+    actual: |-
+      検索キー＋下矢印キーを押下すると、以下のように読み上げる。Longdesc属性の値を読み上げる手段はない。
+       
+       会員数の遷移グラフ 画像
+    judgment: 満たしていない
+environment_type: 音声閲覧環境
+comment:
+reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
+tester: 四方田正夫
+date: 2019/01/13

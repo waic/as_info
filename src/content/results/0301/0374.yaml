@@ -1,0 +1,17 @@
+id: 374
+test: 0024-01
+os: Windows 10 Pro 20H2
+user_agent: Microsoft Edge 87.0.664.60
+assistive_tech: Narrator
+assistive_tech_config:
+contents:
+  - procedure: 1)テストコードのページをブラウザで開き、コンテンツの先頭からスキャンモード/下矢印キーで読み上げていく
+    actual: 1)先頭行が見出し、2/3/4/5行目がリンク、5行目でページの最後尾、であることがわかる
+    judgment: 満たしていない
+  - procedure: 2)ナレーターキー＋F5でランドマークの一覧を取得し、ナビゲーションランドマークの場所に移動して先頭からスキャンモード/下矢印キーで読み上げていく
+    actual: 2)1行戻ると先頭行の見出しであることがわかり、ナビゲーションランドマークの先頭は2行目であることがわかる。ナビゲーションランドマークの最後尾がどこか、はわからない。
+    judgment: 満たしていない
+environment_type: 音声閲覧環境
+comment:
+tester: 四方田正夫
+date: 2020/12/17

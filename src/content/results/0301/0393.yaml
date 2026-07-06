@@ -1,0 +1,25 @@
+id: 393
+test: 0014-01
+os: Windows 10 Version 1803
+user_agent: Internet Explorer 11.0,101
+assistive_tech: PC-Talker 10 64bit Vesion.1.26
+assistive_tech_config:
+contents:
+  - expected: 順序付きリスト (ol) であること及びリスト項目 (li) の数を知る何らかの手段が提供されている
+    procedure: 仮想カーソル移動(Ctrl+下矢印)でリスト項目に移動し、情報読み(Ctrl+Atl+G)で確認した。
+    actual: 順序付きリスト (ol) であること、リスト項目の数を知る手段はない
+    judgment: 満たしていない
+  - expected: 順序付きリスト (ol) の開始位置及び終了位置を知るための何らかの手段が提供されている
+    actual: 順序付きリスト (ol) の開始位置及び終了位置を知るための手段はない
+    judgment: 満たしていない
+  - expected: 各リスト項目の番号が読み上げられる
+    procedure: リスト項目に仮想カーソル移動(Ctrl+下矢印)で移動
+    actual: 項目の番号が読み上げられた
+    judgment: 満たしている
+  - expected: リスト項目 (li) の開始位置及び終了位置を知るための何らかの手段が提供されている
+    actual: リスト項目 (li) の開始位置及び終了位置を知るための手段はない
+    judgment: 満たしていない
+environment_type: 音声閲覧環境
+comment:
+tester: 中野利保
+date: 2019/03/13

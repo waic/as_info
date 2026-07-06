@@ -1,0 +1,14 @@
+id: 344
+test: 0026-02
+os: Windows 10 Pro 2004
+user_agent: Firefox 84.0
+assistive_tech: NVDA 2020.2jp
+assistive_tech_config:
+contents:
+  - procedure: テストコードのファイルリンクから遷移
+    actual: ページを開くと見出しの後にメインランドマークWAIC の最新情報はと読み上げられ順に読み上げられるがmain ランドマークの終了位置は読み上げられない
+    judgment: 満たしていない
+environment_type: 音声閲覧環境
+comment:
+tester: 佐々木 将
+date: 2020/12/17

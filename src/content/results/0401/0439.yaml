@@ -1,0 +1,14 @@
+id: 439
+test: 0029-01
+os: Android 12
+user_agent: Google Chrome 98.0.4758.101
+assistive_tech: TalkBack
+assistive_tech_config:
+contents:
+  - procedure: 1本指右スワイプでボタンに移動。
+    actual: 「閉じる ボタン このウィンドウを閉じると、入力された情報は破棄され、メインページに戻ります。ダブルタップで有効になります。」
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: SAWADA STANDARD DESIGN
+date: 2022/03/04

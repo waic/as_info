@@ -1,0 +1,20 @@
+id: 328
+test: 0019-01
+os: Chrome OS 71
+user_agent: Chrome OS 71.0.3578.94(64bit)
+assistive_tech: 'ChromeVox Google TTS Setting : Chrome OS 日本語 インストール済み'
+assistive_tech_config: |-
+  参考：Chromebook ヘルプ / 組み込みのスクリーン リーダーを使用する
+   https://support.google.com/chromebook/answer/7031755?hl=ja
+contents:
+  - expected: リンクテキスト “こちら” からフォーカスを移動させずに、それが含まれる li 要素の内容 “ウェブアクセシビリティ基盤委員会の詳細はこちら” を知るための何らかの手段が提供されている
+    procedure: テストファイルを読み上げ、内容を確認
+    actual: |-
+      検索キー＋下矢印キーを押下すると、以下のように読み上げる。
+       
+       箇条書き ウェブアクセシビリティ基板委員会の詳細は こちら アクセス済み リンク。リスト項目 リストに1件の項目
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 四方田正夫
+date: 2019/01/14

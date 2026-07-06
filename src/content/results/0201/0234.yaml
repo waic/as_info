@@ -1,0 +1,15 @@
+id: 234
+test: 0004-05
+os: Windows 10 Pro 1803
+user_agent: Internet Explorer 11.0,101
+assistive_tech: PC-Talker 10 64bit Vesion.1.26
+assistive_tech_config:
+contents:
+  - expected: リンクであることを判別できる何らかの手段が提供されている
+    procedure: TABキーで「4F雑貨 書籍」に移動した。
+    actual: 「4F雑貨 書籍 リンク」とリンクであることを読み上げた
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 中野利保
+date: 2019/01/16

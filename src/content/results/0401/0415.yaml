@@ -1,0 +1,21 @@
+id: 415
+test: 0027-01
+os: Windows 11
+user_agent: Microsoft Edge 99.0.1150.30
+assistive_tech: NVDA 2021.3.3jp
+assistive_tech_config: ラップトップ配列、ブラウズモードでページを自動的に読み上げない
+contents:
+  - procedure: Dを押す。さらに下矢印キーを数回押し、最後に Shift+D を押す。
+    actual: |
+      Dで読み上げる内容
+      「メイン ランドマーク    WAIC の最新情報は以下をご参照ください。」
+      下矢印キーで読み上げる内容
+      「セミナーなどのお知らせも行っています。」
+      「Twitter や Facebook でも情報発信しています。」
+      Shift+Dで読み上げる内容
+      「メイン ランドマーク    WAIC の最新情報は以下をご参照ください。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment: ランドマークが main であるかどうかを区別していません。
+tester: 西本卓也
+date: 2022/03/04

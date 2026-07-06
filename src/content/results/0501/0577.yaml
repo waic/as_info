@@ -1,0 +1,20 @@
+id: 577
+test: 0057-01
+os: macOS 13.6.6
+user_agent: Safari 17.4.1
+assistive_tech: VoiceOver
+assistive_tech_config:
+contents:
+  - procedure: Tabキーを押し、フォーカスをボタン1へ移動
+    actual: ボタン1、切り替えボタン
+    judgment: ○
+  - procedure: Tabキーを押し、フォーカスをボタン2へ移動
+    actual: ボタン2、選択中、切り替えボタン
+    judgment: ○
+  - procedure: Tabキーを押し、フォーカスをボタン3へ移動
+    actual: ボタン3、部分的チェックされている、切り替えボタン
+    judgment: ○
+environment_type: 音声閲覧環境
+comment:
+tester: SAWADA STANDARD DESIGN
+date: '2024-06-13'

@@ -1,0 +1,15 @@
+id: 25
+test: 0010-03
+os: macOS 10.14.2
+user_agent: Firefox 64.0
+assistive_tech: VoiceOver
+assistive_tech_config:
+contents:
+  - expected: テーブルの行数及び列数を確認する何らかの手段が提供されている
+    procedure: VOキー＋右矢印キーで表に移動した。
+    actual: 「[caption要素の内容] 表 0行 5列」と読み上げられた。
+    judgment: 満たしていない
+environment_type: 音声閲覧環境
+comment: 列数は正しいが行数が誤っているので、満たしていないと判断いたしました。
+tester: 安倍 英樹
+date: 2018/12/28

@@ -1,0 +1,14 @@
+id: 674
+test: 0053-01
+os: Windows ver 22H2
+user_agent: Firefox Browser 127.0.2
+assistive_tech:
+assistive_tech_config:
+contents:
+  - procedure: テストファイルを開き、「アイコンフォントA」と「アイコンフォントB」の表示内容の違いを確認した。
+    actual: アイコンフォントAでは「star」、アイコンフォントBでは「★」が表示された。
+    judgment: ○
+environment_type: 視覚閲覧環境
+comment:
+tester: 江﨑和敬
+date: '2025-01-23'

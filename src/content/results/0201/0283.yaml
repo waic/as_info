@@ -1,0 +1,20 @@
+id: 283
+test: 0004-01
+os: Chrome OS 71
+user_agent: Chrome OS 71.0.3578.94(64bit)
+assistive_tech: 'ChromeVox Google TTS Setting : Chrome OS 日本語 インストール済み'
+assistive_tech_config: |-
+  参考：Chromebook ヘルプ / 組み込みのスクリーン リーダーを使用する
+   https://support.google.com/chromebook/answer/7031755?hl=ja
+contents:
+  - expected: イメージマップであることを判別できるような情報が提供されている
+    procedure: イメージマップを読み上げ、内容を確認
+    actual: 読み上げるための操作ができない
+    judgment: 満たしていない
+environment_type: 音声閲覧環境
+comment: |-
+  参考：アクセシビリティ・サポーティッド（AS)情報：H37-2
+   https://waic.jp/docs/as/info/201406/H37-2.html
+reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
+tester: 四方田正夫
+date: 2019/01/13

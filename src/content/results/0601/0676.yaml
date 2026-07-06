@@ -1,0 +1,14 @@
+id: 676
+test: 0054-01
+os: Windows 11 Pro 64bit Version 25H2
+user_agent: NetReader Neo 5.2510.74.140
+assistive_tech: PC-Talker 12.2510.66.2502
+assistive_tech_config:
+contents:
+  - procedure: 「ポップアップボックスを表示」リンクを押し、フォーカスを移動
+    actual: ボタンに対し「閉じる」と通知された。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 諸熊
+date: '2025-10-23'

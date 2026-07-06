@@ -1,0 +1,13 @@
+id: 528
+test: 0007-01
+os: Windows 11 22h2
+user_agent: Google Chrome 117.0.5938.132（Official Bu
+assistive_tech: NVDA 2023.3.1jp
+assistive_tech_config:
+contents:
+  - procedure: メールアドレスを入力し、[申し込む]ボタンを押した
+    actual: WAIC-CODE-0007-01-ref.htmlが表示され、URLの末尾にメールアドレスが追加されていた
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+tester: yuyaroid
+date: '2024-01-18'

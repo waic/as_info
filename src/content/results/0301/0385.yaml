@@ -1,0 +1,23 @@
+id: 385
+test: 0011-02
+os: Windows 10 Version 1803
+user_agent: Internet Exprorer 11.0,101
+assistive_tech: PC-Talker 10 64bit Vesion.1.26
+assistive_tech_config:
+contents:
+  - expected: 見出し要素に差し掛かかると、それが見出しであることが通知される
+    procedure: 仮想カーソル移動コマンド(Ctrl+下矢印キー)で移動し確認した。
+    actual: 見出しレベルを読み上げた。ただし、レベルは正しくなかった。
+    judgment: 満たしている
+  - expected: 見出しレベルを知るための何らかの手段が提供されている
+    procedure: 情報読み(Ctrl+Alt+G)で確認した。
+    actual: 見出しレベルを読み上げた。
+    judgment: 満たしている
+  - expected: 1.及び 2. において、次のように見出しの内容と見出しレベルが合致している
+    procedure: 仮想カーソル移動コマンド(Ctrl+下矢印キー)、情報読みコマンド(Alt+Ctrl+G)で確認した。
+    actual: 全て"見出しレベル1"と読み上げた。
+    judgment: 満たしていない
+environment_type: 音声閲覧環境
+comment:
+tester: 中野利保
+date: 2019/02/20

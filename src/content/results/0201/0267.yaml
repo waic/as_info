@@ -1,0 +1,15 @@
+id: 267
+test: 0010-02
+os: Windows 10 Pro 1803
+user_agent: Internet Explorer 11.0,101
+assistive_tech: PC-Talker 10 64bit Vesion.1.26
+assistive_tech_config:
+contents:
+  - expected: テーブルの開始位置及び終了位置を知るための何らかの手段が提供されている
+    procedure: 仮想カーソル移動(Ctrl+下矢印キー)で、テーブル内に移動した。
+    actual: テーブルの開始位置及び終了位置を読み上げなかった。情報読み(Alt+Ctrl+G)コマンドで表内ということは確認できる。
+    judgment: 満たしていない
+environment_type: 音声閲覧環境
+comment:
+tester: 中野利保
+date: 2019/02/06

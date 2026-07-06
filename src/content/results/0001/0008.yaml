@@ -1,0 +1,15 @@
+id: 8
+test: 0002-02
+os: macOS 10.14.2
+user_agent: Firefox 64.0
+assistive_tech: VoiceOver
+assistive_tech_config:
+contents:
+  - expected: リンクテキストとアイコン画像の代替テキストが続けて “施設ご利用の手引き PDFファイル” と読み上げられる
+    procedure: テキスト「施設ご利用の手引き」＋「PDFファイル」アイコンで構成されるリンクにVoiceOverキー+右矢印キーで移動した。
+    actual: リンクテキストとアイコン画像の代替テキストのみが続けて「施設ご利用の手引き PDFファイル」と読み上げられた。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 安倍 英樹
+date: 2018/12/27

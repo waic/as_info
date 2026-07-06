@@ -1,0 +1,18 @@
+id: 356
+test: 0026-02
+os: Windows 10 Pro 2004
+user_agent: FireFox 83.0
+assistive_tech: PC-Talker 10
+assistive_tech_config:
+contents:
+  - procedure: テキスト「WAIC の最新情報は以下をご参照ください。」を選択した。
+    actual: 「メイン ランドマーク」と読み上げた。
+    judgment: 満たしている
+  - procedure: テキスト「Twitter や Facebook でも情報発信しています。」を選択した後、「セミナーなどのお知らせも行っています。」を選択した。
+    actual: |
+      「メイン ランドマーク」と読み上げた。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 諸熊
+date: 2020/12/17

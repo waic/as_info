@@ -1,0 +1,19 @@
+id: 592
+test: 0092-01
+os: edi:Win 11 Pro ver:23H2 OSbld:22631.4317
+user_agent: firefox 131.0.2 (64 ビット)
+assistive_tech: NVDA
+assistive_tech_config: スピーチビューアーの設定変更あり
+contents:
+  - procedure: firefoxの文字サイズを200％へ変更して確認
+    actual: 相対的に文字サイズが大きくなっていることを確認
+    judgment: 満たしている
+  - procedure: firefoxの文字サイズを200％へ変更して確認
+    actual: |-
+      h1>strongの方が
+       p>strongより大きくなっていることを確認
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: fujiid
+date: '2024-10-10'

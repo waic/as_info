@@ -1,0 +1,16 @@
+id: 411
+test: 0029-01
+os: Windows 10 Pro 20H2
+user_agent: NetReader Neo
+assistive_tech: PC-Talker Neo Plus
+assistive_tech_config:
+contents:
+  - procedure: タブキーを押して、「閉じる」ボタンをフォーカスした。
+    actual: |-
+      「閉じる ボタン」に続いて、「このウィンドウを閉じると、入力された情報は破棄され、メインページに戻ります。
+      」という音声が読み上げられた。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 諸熊
+date: 2022/03/04

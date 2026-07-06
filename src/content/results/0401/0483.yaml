@@ -1,0 +1,14 @@
+id: 483
+test: 0035-01
+os: Windows 10 Pro 22H2
+user_agent: Google Chrome 117.0.5938.132
+assistive_tech: NVDA 2023.2jp-r2(2023.2.0.3096)
+assistive_tech_config:
+contents:
+  - procedure: テストファイルを操作し、結果を確認。
+    actual: 画像として読み上げられない。
+    judgment: ○
+environment_type: 音声閲覧環境
+comment:
+tester: 山崎 規弘
+date: '2023-09-28'

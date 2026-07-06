@@ -1,0 +1,15 @@
+id: 53
+test: 0001-02
+os: macOS 10.14.2
+user_agent: Firefox 64.0
+assistive_tech:
+assistive_tech_config:
+contents:
+  - expected: 代替テキストやコンテンツと誤解されるようなファイル名や URL などが表示されない
+    procedure: ブラウザを画像非表示に設定変更し、表示内容を確認した。
+    actual: リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみが表示され、画像のファイル名や URL 等は表示されなかった。
+    judgment: 満たしている
+environment_type: 視覚閲覧環境
+comment:
+tester: 安倍 英樹
+date: 2018/12/31

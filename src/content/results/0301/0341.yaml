@@ -1,0 +1,15 @@
+id: 341
+test: 0024-02
+os: Windows 10 Pro 2004
+user_agent: Firefox 84.0
+assistive_tech: NVDA 2020.2jp
+assistive_tech_config:
+contents:
+  - procedure: テストコードのファイルリンクから遷移
+    actual: タブキーで操作するとナビゲーションランドマーク、組織リンクと順に読み上げられ、次のNAV要素のリンクが順に読み上げられる
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+reviewer_comment: '[WAIC注] テスト手順に問題があり、適切に判定できていません。'
+tester: 佐々木 将
+date: 2020/12/17

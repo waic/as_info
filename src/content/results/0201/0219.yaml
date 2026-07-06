@@ -1,0 +1,15 @@
+id: 219
+test: 0008-01
+os: Windows 10 Home 64bit
+user_agent: 'GoogleChrome バージョン: 71.0.3578.98（Official Build） （64 ビット）'
+assistive_tech:
+assistive_tech_config:
+contents:
+  - expected: 画像の代わりに代替テキスト “送信” が表示される
+    procedure: ブラウザを画像非表示に設定変更し表示内容を確認した
+    actual: 何も表示されなかった
+    judgment: 満たしていない
+environment_type: 視覚閲覧環境
+comment:
+tester: yukiko makino
+date: 2019/01/13

@@ -1,0 +1,23 @@
+id: 680
+test: 0089-01
+os: Windows 11 Pro 64bit Version 25H2
+user_agent: NetReader Neo 5.2510.74.140
+assistive_tech: PC-Talker 12.2510.66.2502
+assistive_tech_config:
+contents:
+  - procedure: 「メーリングリストに登録してください！」ボタンを押した
+    actual: ダイアログが開いたという通知は無かったが、フォーカスは移動した。
+    judgment: 満たしている
+  - procedure: タブキーや矢印キーを押してフォーカスを移動させた
+    actual: モーダルダイアログの外側へは移動できなかった。
+    judgment: 満たしている
+  - procedure: 閉じる ボタンを押下
+    actual: 「メーリングリストに登録して下さい」ボタンへフォーカスが移動し、読み上げられた。
+    judgment: 満たしている
+  - procedure: タブキーや矢印キーでフォーカスを移動
+    actual: モーダルダイアログに移動したり、ダイアログ内にあった項目が読み上げられたりするようなことはなかった。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 諸熊
+date: '2025-10-23'

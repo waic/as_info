@@ -1,0 +1,18 @@
+id: 672
+test: 0036-01
+os: Windows ver 22H2
+user_agent: Firefox Browser 127.0.2
+assistive_tech:
+assistive_tech_config:
+contents:
+  - procedure: |-
+      1. タブキーでリンク要素にフォーカスを移動する。
+      2. タブキーでリンク要素のフォーカスを外す。
+    actual: |-
+      1. フォーカスしたリンク要素の背景色が変化する。
+      2. フォーカスを外したリンク要素の背景色が、 “1.” で変化する前の状態に戻る。
+    judgment: ○
+environment_type: 視覚閲覧環境
+comment:
+tester: 江﨑和敬
+date: '2025-01-23'

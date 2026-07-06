@@ -1,0 +1,20 @@
+id: 383
+test: 0025-01
+os: iOS 14.2
+user_agent: Safari
+assistive_tech: VoiceOver
+assistive_tech_config:
+contents:
+  - procedure: 見出し「2017年度第1回WAICセミナー」から右フリックで各要素を順次読み上げ。
+    actual: 「セッション1の様子 タブレットを手にプレゼンする伊敷の写真 加工した木材 成人 演壇 今後のWAICセミナー開催予定については以下をご参照ください。」とだけ読み上げた。figure要素であることは分からない。
+    judgment: 満たしていない
+  - procedure: 見出し「2017年度第1回WAICセミナー」から右フリックで各要素を順次読み上げ。
+    actual: 「セッション1の様子 タブレットを手にプレゼンする伊敷の写真 加工した木材 成人 演壇 今後のWAICセミナー開催予定については以下をご参照ください。」とだけ読み上げた。figure要素の開始位置／終了位置は分からない。
+    judgment: 満たしていない
+  - procedure: 見出し「2017年度第1回WAICセミナー」から右フリックで各要素を順次読み上げ。
+    actual: 「セッション1の様子 タブレットを手にプレゼンする伊敷の写真 加工した木材 成人 演壇 今後のWAICセミナー開催予定については以下をご参照ください。」とだけ読み上げた。figure要素と他の要素の区別はつかない。
+    judgment: 満たしていない
+environment_type: 音声閲覧環境
+comment:
+tester: SAWADA STANDARD DESIGN
+date: 2020/12/17

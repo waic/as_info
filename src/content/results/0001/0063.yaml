@@ -1,0 +1,16 @@
+id: 63
+test: 0004-04
+os: macOS 10.14.2
+user_agent: Firefox 64.0
+assistive_tech:
+assistive_tech_config:
+contents:
+  - expected: 各リンク先へ遷移する
+    procedure: ブラウザを画像非表示に設定変更し、表示内容を確認した。
+    actual: area 要素が表示されないのでリンク先へ遷移することはできなかった。
+    judgment: 満たしていない
+environment_type: 視覚閲覧環境
+comment: img要素の代替テキストが青字（下線なし）で表示されています。
+reviewer_comment: '[WAIC注] テスト手順に問題があり、適切に判定できていません。'
+tester: 安倍 英樹
+date: 2019/01/02

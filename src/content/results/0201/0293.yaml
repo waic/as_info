@@ -1,0 +1,31 @@
+id: 293
+test: 0007-02
+os: Chrome OS 71
+user_agent: Chrome OS 71.0.3578.94(64bit)
+assistive_tech: 'ChromeVox Google TTS Setting : Chrome OS 日本語 インストール済み'
+assistive_tech_config: |-
+  参考：Chromebook ヘルプ / 組み込みのスクリーン リーダーを使用する
+   https://support.google.com/chromebook/answer/7031755?hl=ja
+contents:
+  - expected: |-
+      次の 1. 〜 2. をすべて満たしている
+       
+       1. セレクトメニューで選択肢を選んでも何も発生しない
+       
+       2. “選択したページへ移動する” ボタンを選択すると、選択したページに遷移する
+    procedure: セレクトメニューで選択肢を選び、“選択したページへ移動する” ボタンを押下し、挙動を確認
+    actual: |-
+      1. セレクトメニューで選択肢を選ぶ→何も発生しない
+       
+       2. “選択したページへ移動する” ボタンを押下すると、選択したページに遷移する
+       選択肢 トップページ→NG
+        jisx8341test.urabanezu.com/h32-2.cgi This site can't be reached ERR_NAME_NOT_RESOLVED
+       選択肢 ブログ→同様にNG
+       選択肢 チュートリアル→同様にNG
+       選択肢 検索→同様にNG
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment: ChromeVoxを起動しない状況での挙動と同じ→期待されている結果を満たしている、とみなした
+reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
+tester: 四方田正夫
+date: 2019/01/13

@@ -1,0 +1,14 @@
+id: 422
+test: 0029-06
+os: iOS 15.3.1
+user_agent: Safari
+assistive_tech: VoiceOver
+assistive_tech_config:
+contents:
+  - procedure: buttonにDOM順にフォーカス
+    actual: 「閉じる、ボタン、このウィンドウを閉じると、入力された情報は破棄され、メインページに戻ります」
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 桝田 草一
+date: 2022/03/04

@@ -1,0 +1,18 @@
+id: 533
+test: 0014-01
+os: WindowsNT ver10.0
+user_agent: Firefox Browser 121.0.1
+assistive_tech: NVDA 2023.3.1jp
+assistive_tech_config:
+contents:
+  - procedure: NVDAのブラウザモードでページ内のコンテンツすべての読み上げを行った。
+    actual: |-
+      読み上げられた内容は次のようになった。
+      “リスト  2項目  
+      1. ボウルにたまごと牛乳を入れ、混ぜます。
+      2. 塩とコショウを加えます。  リストの外 “
+    judgment: ○
+environment_type: 音声閲覧環境
+comment:
+tester: 江﨑　和敬
+date: '2024-01-18'

@@ -1,0 +1,14 @@
+id: 664
+test: 0090-01
+os: macOS 11.7.10
+user_agent: Firefox 134.0.2(64bit)
+assistive_tech:
+assistive_tech_config: ブラウザの設定で、デフォルトフォントのサイズを16pxから32pxに変更した
+contents:
+  - procedure: ページを開く
+    actual: 見出しの「ユーザ」と段落中の「非常に」が周囲のテキストより少し大きく表示された。
+    judgment: ○
+environment_type: 視覚閲覧環境
+comment:
+tester: たた
+date: '2025-01-23'

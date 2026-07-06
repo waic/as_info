@@ -1,0 +1,14 @@
+id: 586
+test: 0029-02
+os: Windows 11 Pro　23H2
+user_agent: Microsoft Edge バージョン 129.0.2792.79 (公式ビルド) (64 ビット)
+assistive_tech: NVDA 2024.1jp 2024.1.0.3578
+assistive_tech_config:
+contents:
+  - procedure: テストコードを表示後、タブキーを2回押下して入力フォームにフォーカス
+    actual: aria-describedbyによって、<p id="int2">に設定されたテキストが読み上げられた。
+    judgment: ○
+environment_type: 音声閲覧環境
+comment:
+tester: 土永 崇之
+date: '2024-10-10'

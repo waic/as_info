@@ -1,5 +1,5 @@
 import { defineCollection, z } from 'astro:content';
-import { file } from 'astro/loaders';
+import { file, glob } from 'astro/loaders';
 
 /**
  * WCAG 達成基準 (Success Criteria) スキーマ
@@ -141,7 +141,7 @@ export const collections = {
     schema: testsSchema,
   }),
   results: defineCollection({
-    loader: file('src/content/results/results.yaml'),
+    loader: glob({ pattern: '**/[0-9][0-9][0-9][0-9].yaml', base: 'src/content/results' }),
     schema: resultsSchema,
   }),
   metadata: defineCollection({

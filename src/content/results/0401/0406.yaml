@@ -1,0 +1,20 @@
+id: 406
+test: 0025-01
+os: Windows 10 Pro 20H2
+user_agent: NetReader Neo
+assistive_tech: PC-Talker Neo Plus
+assistive_tech_config:
+contents:
+  - procedure: ページ内を全て読み上げた。
+    actual: figure 要素であることがわかるような通知は無かった。
+    judgment: 満たしていない
+  - procedure: ページ内を全て音声で読み上げた。
+    actual: figure 要素を通知しなかったので、開始位置や終了位置を知ることはできなかった。また、 figure 要素の位置へ移動できる手段は無かった。
+    judgment: 満たしていない
+  - procedure: ページ内を全て読み上げた。
+    actual: figcaption 要素であることは通知されなかった。
+    judgment: 満たしていない
+environment_type: 音声閲覧環境
+comment:
+tester: 諸熊
+date: 2022/03/04

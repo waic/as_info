@@ -1,0 +1,18 @@
+id: 509
+test: 0011-03
+os: Windows 11 Pro 22H2 22621.3007
+user_agent: Chrome 120.0.6099.225
+assistive_tech: NVDA 2023.1jp(2023.1.0.1991)
+assistive_tech_config:
+contents:
+  - procedure: |-
+      見出し間を移動し、挙動を確認
+       
+       テスト実施時の注意点
+       例えば、見出しジャンプや見出しリストのような機能が実装されていれば OK と判断
+    actual: 直前または直後の見出し要素に移動するための何らかの手段が提供されている
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: me_tks_
+date: '2024-01-18'

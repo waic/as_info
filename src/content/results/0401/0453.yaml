@@ -1,0 +1,20 @@
+id: 453
+test: 0031-02
+os: Windows 11 22H2 22621.2283
+user_agent: Edge 117.0.2045.43
+assistive_tech: NVDA 2023.2jp-r2
+assistive_tech_config: フォーカスモードに切り替える
+contents:
+  - procedure: Tabでフォーカスを移動
+    actual: 「ツリービュー」と読み上げる
+    judgment: ○
+  - procedure: Tabでフォーカスを移動
+    actual: 「鳥 1の2 レベル1」
+    judgment: ×
+  - procedure: Tabを2回押してフォーカス移動
+    actual: 「グループ」
+    judgment: ○
+environment_type: 音声閲覧環境
+comment:
+tester: 西本 卓也
+date: '2023-09-28'

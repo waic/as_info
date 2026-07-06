@@ -1,0 +1,25 @@
+id: 673
+test: 0036-02
+os: Windows ver 22H2
+user_agent: Firefox Browser 127.0.2
+assistive_tech:
+assistive_tech_config:
+contents:
+  - procedure: |-
+      1. 入力フィールドにフォーカスを移動する。
+      2. 入力フィールドのフォーカスを外す。
+    actual: |-
+      1. 入力フィールドの背景色が変化する。
+      2. 入力フィールドの背景色が、フォーカスを受け取る前の状態となる。
+    judgment: ○
+  - procedure: |-
+      1. ラジオボタンにフォーカスを合わせる。
+      2. ラジオボタンのフォーカスを外す。
+    actual: |-
+      1. ラジオボタンの背景色が変化する。
+      2. ラジオボタンの背景色が、フォーカスを受け取る前の状態となる。
+    judgment: ○
+environment_type: 視覚閲覧環境
+comment:
+tester: 江﨑和敬
+date: '2025-01-23'

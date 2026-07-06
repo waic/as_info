@@ -1,0 +1,21 @@
+id: 324
+test: 0017-02
+os: Chrome OS 71
+user_agent: Chrome OS 71.0.3578.94(64bit)
+assistive_tech: 'ChromeVox Google TTS Setting : Chrome OS 日本語 インストール済み'
+assistive_tech_config: |-
+  参考：Chromebook ヘルプ / 組み込みのスクリーン リーダーを使用する
+   https://support.google.com/chromebook/answer/7031755?hl=ja
+contents:
+  - expected: iframe 要素の末尾に直接移動するための何らかの手段が提供されている
+    procedure: テストファイルを操作し、結果を確認
+    actual: |-
+      インラインフレームの中で検索キー＋右矢印キーを押すと、インラインフレームの中の最後に移動する。次に検索キー＋下矢印キーを押すとインラインフレームの次の要素にフォーカスが移動する。
+       
+       インラインフレームの中で検索キー＋左矢印キーを押すと、インラインフレームの中の最初に移動する。次に検索キー＋上矢印キーを押すとインラインフレームの前の要素にフォーカスが移動する。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
+tester: 四方田正夫
+date: 2019/01/13

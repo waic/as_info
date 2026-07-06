@@ -1,0 +1,18 @@
+id: 660
+test: 0053-01
+os: Windows 11 Home 24H2
+user_agent: Firefox 134.0.2
+assistive_tech: NVDA 2024.4.2jp
+assistive_tech_config: ビジュアルハイライトを ハイライトありに変更
+contents:
+  - procedure: テストファイルを開いた状態で矢印キーを押し、「アイコンフォントA」と通知されるまで移動する
+    actual: 「アイコンフォントA」と通知された次に、下矢印キーを押し「star」と通知される
+    judgment: ○
+  - procedure: テストファイルを開いた状態で矢印キーを押し、「アイコンフォントB」と通知されるまで移動する
+    actual: 「アイコンフォントB」と通知された次に、下矢印キーを押し「画像Favorite」と通知される
+    judgment: ○
+environment_type: 音声閲覧環境
+comment:
+reviewer_comment: '[WAIC注] テスト方法、期待される結果がコピー＆ペーストのままになっており、実際の操作結果であると読み取れません。'
+tester: 山崎 規弘
+date: '2025-01-23'

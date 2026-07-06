@@ -1,0 +1,16 @@
+id: 506
+test: 0008-01
+os: Windows 10
+user_agent: Google Chrome (120.0.6099.217)
+assistive_tech:
+assistive_tech_config:
+contents:
+  - procedure: |-
+      (視覚閲覧環境)
+      ブラウザの設定を変更して画像非表示にし、表示内容を確認
+    actual: '画像の代わりに代替テキスト “送信送信”と表示された。 '
+    judgment: ×
+environment_type: 視覚閲覧環境
+comment:
+tester: yamanaka
+date: '2024-01-18'

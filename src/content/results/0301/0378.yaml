@@ -1,0 +1,26 @@
+id: 378
+test: 0026-01
+os: Windows 10 Home 20H2
+user_agent: Microsoft Edge 87.0.664.60
+assistive_tech: NVDA 2020.3jp
+assistive_tech_config: フォーカスハイライト有効
+contents:
+  - procedure: 新しいタブでテスト対象を開く
+    actual: |-
+      以下が読み上げられる。
+      「クリック可能 見出しレベル1 ウェブアクセシビリティ基盤委員会
+      メイン ランドマーク WAICの最新情報は以下をご参照ください。
+      セミナーなどのお知らせも行っています。
+      Twitter や Facebook でも情報発信しています。」
+    judgment: 満たしている
+  - procedure: 一番上の行から下矢印キーで下に向かって読み上げを確認しながら移動する。続いて、一番下の行から上矢印キーで上に向かって読み上げを確認しながら移動する。
+    actual: |-
+      上から下に向かって移動すると以下の行が見つかる。
+      「メイン ランドマーク WAICの最新情報は以下をご参照ください」
+      下から上に移動すると以下の行が見つかる。
+      「メイン ランドマーク セミナーなどのお知らせも行っています。」
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 西本卓也
+date: 2020/12/17

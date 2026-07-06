@@ -1,0 +1,15 @@
+id: 62
+test: 0004-03
+os: macOS 10.14.2
+user_agent: Firefox 64.0
+assistive_tech:
+assistive_tech_config:
+contents:
+  - expected: 各 area 要素の alt 属性に指定した代替テキスト “4F 雑貨 書籍” “3F 衣料品” “2F お菓子 その他食品” “1F 生鮮食品” が表示される
+    procedure: ブラウザを画像非表示に設定変更し、表示内容を確認した。
+    actual: 各 area 要素の alt 属性に指定した代替テキストは表示されなかった。
+    judgment: 満たしていない
+environment_type: 視覚閲覧環境
+comment:
+tester: 安倍 英樹
+date: 2019/01/02
