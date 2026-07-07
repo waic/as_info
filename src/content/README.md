@@ -97,14 +97,14 @@ code:
 
 ### 正規化
 
-`results/` 内の各ファイルの書式を統一するため、`as_info_publish` リポジトリの `normalize_results_yaml.py` を使用して正規化できます。分割後のファイルに対しては、結合→正規化→再分割の手順で適用します。
+`results/` 内の各ファイルの書式を統一するため、`as_info_publish` リポジトリの `normalize_yaml.py` を使用して正規化できます。分割後のファイルに対しては、結合→正規化→再分割の手順で適用します。
 
 ```bash
 # 結合して単一ファイルに
 npx tsx scripts/merge-results.ts
 # 正規化
 cd ../as_info_publish
-uv run normalize_results_yaml.py ../as_info/src/content/results/results.yaml
+uv run normalize_yaml.py ../as_info/src/content/results/results.yaml
 # 再分割
 cd ../as_info
 npx tsx scripts/split-results.ts
