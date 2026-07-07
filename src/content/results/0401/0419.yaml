@@ -1,0 +1,17 @@
+id: 419
+test: 0029-03
+os: iOS 15.3.1
+user_agent: Safari
+assistive_tech: VoiceOver
+assistive_tech_config:
+contents:
+  - procedure: 3つのbutton要素にDOM順にフォーカス
+    actual: |-
+      「フォント, ボタン, このページで使用するフォントフェイスとサイズの選択」
+      「色, ボタン, このページで使用する色を選択」
+      「カスタマイズ, ボタン, このページで使われているレイアウトやスタイルをカスタマイズ」
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 桝田 草一
+date: 2022/03/04

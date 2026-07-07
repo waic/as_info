@@ -1,0 +1,15 @@
+id: 386
+test: 0011-03
+os: Windows 10 Version 1803
+user_agent: Internet Exprorer 11.0,101
+assistive_tech: PC-Talker 10 64bit Vesion.1.26
+assistive_tech_config:
+contents:
+  - expected: 直前または直後の見出し要素に移動するための何らかの手段が提供されている
+    procedure: H'キーで次の見出し、Shift+'H'キーで前の見出しに移動した。
+    actual: 見出しにジャンプできた。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 中野利保
+date: 2019/02/20

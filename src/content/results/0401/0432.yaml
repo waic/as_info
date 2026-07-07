@@ -1,0 +1,17 @@
+id: 432
+test: 0027-02
+os: Android 12
+user_agent: Google Chrome 98.0.4758.101
+assistive_tech: TalkBack
+assistive_tech_config: 「読み上げコントロール」に「ランドマーク」を追加
+contents:
+  - procedure: ランドマークを順にジャンプすることはできるが、mainランドマークを指定してジャンプすることはできない。
+    actual: |-
+      「バナー ウェブアクセシビリティ基盤委員会」
+      「本文 WAIC の最新情報は以下をご参照ください。」
+      「コンテンツの情報 Twitter や Facebook でも情報発信しています。」
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: SAWADA STANDARD DESIGN
+date: 2022/03/04

@@ -1,0 +1,18 @@
+id: 505
+test: 0026-01
+os: iOS(17.1.2)
+user_agent: Safari
+assistive_tech:
+assistive_tech_config:
+contents:
+  - procedure: |-
+      (音声閲覧環境)
+      テストファイルを開いて、その内容をすべて読み上げる
+    actual: |-
+      main要素に差し掛かると「メイン　ランドマーク」と読み上げられた。
+      main要素が終了する際「エンド　メイン」と読み上げられた
+    judgment: ○
+environment_type: 音声閲覧環境
+comment:
+tester: yamanaka
+date: '2024-01-18'

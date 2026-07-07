@@ -1,0 +1,15 @@
+id: 132
+test: 0017-02
+os: Windows 10 Home Version 1809
+user_agent: Firefox 64.0.2
+assistive_tech: NVDA 2018.4jp
+assistive_tech_config:
+contents:
+  - expected: iframe 要素の末尾に直接移動するための何らかの手段が提供されている
+    procedure: カンマキーを押下した。
+    actual: iframeの外に移動した。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 安倍 英樹
+date: 2019/01/13

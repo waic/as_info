@@ -1,0 +1,24 @@
+id: 395
+test: 0014-03
+os: Windows 10 Version 1809
+user_agent: Internet Exprorer 11.0,115
+assistive_tech: PC-Talker 10 64bit Vesion.1.28
+assistive_tech_config:
+contents:
+  - expected: 説明リスト (dl) であること及びリスト項目 (dt) の数を知る何らかの手段が提供されている
+    procedure: 仮想カーソル移動(Ctrl+下矢印)でリスト項目に移動
+    actual: 説明リスト (dl) であること及びリスト項目 (dt) の数を知る何らかの手段はない
+    judgment: 満たしていない
+  - expected: 説明リスト (dl) の開始位置及び終了位置を知るための何らかの手段が提供されている
+    actual: 説明リスト (dl) の開始位置及び終了位置を知るための何らかの手段はない
+    judgment: 満たしていない
+  - expected: リスト項目 (dt) の開始位置及び終了位置を知るための何らかの手段が提供されている
+    actual: リスト項目 (dt) の開始位置及び終了位置を知るための何らかの手段はない
+    judgment: 満たしていない
+  - expected: dd 要素の開始位置及び終了位置を知るための何らかの手段が提供されている
+    actual: dd 要素の開始位置及び終了位置を知るための何らかの手段はない
+    judgment: 満たしていない
+environment_type: 音声閲覧環境
+comment:
+tester: 中野利保
+date: 2019/03/13

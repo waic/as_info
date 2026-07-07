@@ -1,0 +1,23 @@
+id: 594
+test: 0053-01
+os: edi:Win 11 Pro ver:23H2 OSbld:22631.4317
+user_agent: firefox 131.0.2 (64 ビット)
+assistive_tech: NVDA
+assistive_tech_config: スピーチビューアーの設定変更あり
+contents:
+  - procedure: NVDA:矢印キーで読み上げ箇所を移動
+    actual: |-
+      ▼読み上げ結果
+       アイコンフォントA
+       star
+    judgment: 満たしている
+  - procedure: 矢印キーで移動
+    actual: |-
+      ▼読み上げ結果
+       アイコンフォントB
+       画像 Favorite
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: fujiid
+date: '2024-10-10'

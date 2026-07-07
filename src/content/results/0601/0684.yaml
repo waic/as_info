@@ -1,0 +1,56 @@
+id: 684
+test: 0090-01
+os: macOS 15.6
+user_agent: Google Chrome 141.0.7390.108
+assistive_tech:
+assistive_tech_config:
+contents:
+  - procedure: |-
+      Chromeメニュー > 設定 > デザイン > フォントサイズを変更
+
+      ブラウザ検証ツールで「周囲のテキスト」「strong要素」のpx値を確認
+    actual: |-
+      ▼極小
+      見出し
+      　周囲のテキスト : 18px
+      　strong要素 : 21.6px
+      段落
+      　周囲のテキスト : 10px
+      　strong要素 : 10.8px
+
+      ▼小
+      見出し
+      　周囲のテキスト : 24px
+      　strong要素 : 28.8px
+      段落
+      　周囲のテキスト : 12px
+      　strong要素 : 14.4px
+
+      ▼中（推奨）
+      見出し
+      　周囲のテキスト : 32px
+      　strong要素 : 38.4px
+      段落
+      　周囲のテキスト : 16px
+      　strong要素 : 19.2px
+
+      ▼大
+      見出し
+      　周囲のテキスト : 40px
+      　strong要素 : 48px
+      段落
+      　周囲のテキスト : 20px
+      　strong要素 : 24px
+
+      ▼極大
+      見出し
+      　周囲のテキスト : 48px
+      　strong要素 : 57.6px
+      段落
+      　周囲のテキスト : 24px
+      　strong要素 : 28.8px
+    judgment: ○
+environment_type: 視覚閲覧環境
+comment:
+tester: DAWN 上村
+date: '2025-10-23'

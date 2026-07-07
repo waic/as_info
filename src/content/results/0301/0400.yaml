@@ -1,0 +1,14 @@
+id: 400
+test: 0004-04
+os: Android 11
+user_agent: Google Chrome 93.0.4577.82
+assistive_tech: TalkBack
+assistive_tech_config:
+contents:
+  - procedure: 右スワイプでarea要素に移動。リンクであることを確認し、ダブルタップ。
+    actual: 「4F雑貨書籍」ページにリンクした。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: SAWADA STANDARD DESIGN
+date: 2021/09/28

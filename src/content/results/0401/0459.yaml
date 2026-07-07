@@ -1,0 +1,13 @@
+id: 459
+test: 0002-02
+os: Windows 11 Pro 22H2 22621.2283
+user_agent: Google Chrome 117.0.5938.132
+assistive_tech: NVDA application 2023.1jp
+assistive_tech_config:
+contents:
+  - procedure: '表示 : ブラウザの設定を変更して画像非表示にし、表示内容を確認'
+    actual: リンクテキスト “施設ご利用の手引き” に続き、アイコン画像の代替テキスト “PDF ファイル” が表示される
+    judgment: 満たしている
+environment_type: 視覚閲覧環境
+tester: me_tks
+date: '2023-09-28'

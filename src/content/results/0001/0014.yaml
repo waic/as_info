@@ -1,0 +1,15 @@
+id: 14
+test: 0004-05
+os: macOS 10.14.2
+user_agent: Firefox 64.0
+assistive_tech: VoiceOver
+assistive_tech_config:
+contents:
+  - expected: リンクであることを判別できる何らかの手段が提供されている
+    procedure: イメージマップ領域を操作対象にした上で、VOキー＋右矢印キーで各area要素に移動した。
+    actual: 「リンク 1F生鮮食品」のように、代替テキストの前に「リンク」と読み上げられた。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 安倍 英樹
+date: 2018/12/27

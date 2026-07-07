@@ -1,0 +1,13 @@
+id: 626
+test: 0121-01
+os: WindowsNT ver10.0
+user_agent: NetReader ネオモード 5.2407.59.125
+assistive_tech: PC-Talker Neo 12.2408.59.2302
+assistive_tech_config:
+contents:
+  - procedure: ブラウザーでページを表示して40秒待機した。
+    actual: ダイアログが表示され、時間を延長するかどうかを問い合わせるダイアログが表示された。OKボタンを押すと、時間が延長されたと思われる。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+tester: 諸熊
+date: '2024-10-10'

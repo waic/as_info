@@ -1,0 +1,15 @@
+id: 249
+test: 0011-03
+os: Android 8.0.0 ビルド番号：41.3.B.161
+user_agent: Google Chrome 71.0.3578.99
+assistive_tech: Android Accessibility Suite(TalkBack) 7.2.0.220693075
+assistive_tech_config:
+contents:
+  - expected: 直前または直後の見出し要素に移動するための何らかの手段が提供されている
+    procedure: 左右フリック
+    actual: 右フリックすると「果物について：見出し1」「定義：見出し2」と下へ読み上げ、見出し3から左フリックすると「定義：見出し2」「果物について：見出し1」と読み上げた。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 小枝　繁子
+date: 2019/01/21

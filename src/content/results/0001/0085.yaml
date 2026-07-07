@@ -1,0 +1,25 @@
+id: 85
+test: 0003-04
+os: Windows 10 Home Version 1809
+user_agent: Firefox 64.0
+assistive_tech: NVDA 2018.4jp
+assistive_tech_config:
+contents:
+  - expected: |-
+      次の順序でフォーカスが移動する : (カッコ内は、指定されている tabindex 属性値)
+      リンク 1 (1) 
+      リンク 3 (1) 
+      リンク 2 (2)
+      リンク 4 (2)
+    procedure: コンテンツ内をTabキーで移動した。
+    actual: |-
+      次の順序でフォーカスが移動した。
+      リンク 1
+      リンク 3 
+      リンク 2
+      リンク 4
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 安倍 英樹
+date: 2019/01/08

@@ -1,0 +1,19 @@
+id: 504
+test: 0024-01
+os: iOS(17.1.2)
+user_agent: Safari
+assistive_tech:
+assistive_tech_config:
+contents:
+  - procedure: |-
+      (音声閲覧環境)
+      テストファイルをすべて読み上げ、内容を確認
+    actual: |-
+      (音声閲覧環境)
+      ナビゲーションの先頭に来たとき「ホーム　リンク　ナビゲーション　ランドマーク」と読み上げられた。
+      ナビゲーションの末端に来たときは「お問合せ　リンク　エンドナビゲーション」と読み上げられた。
+    judgment: ○
+environment_type: 音声閲覧環境
+comment:
+tester: yamanaka
+date: '2024-01-18'

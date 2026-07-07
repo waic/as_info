@@ -1,0 +1,15 @@
+id: 99
+test: 0001-03
+os: Windows 10 Pro 1803
+user_agent: Internet Exprorer 11.0,101
+assistive_tech: PC-Talker 10 64bit Vesion.1.26
+assistive_tech_config:
+contents:
+  - expected: アイコン画像の代替テキストは何も読み上げられず、テキスト “ウェブアクセシビリティ基盤委員会公開サイト” のみが読み上げられる
+    procedure: 仮想カーソルコマンド(Ctrl+下矢印キー)で、テキスト「ウェブアクセシビリティ基盤委員会公開サイト」を確認した。
+    actual: テキスト “ウェブアクセシビリティ基盤委員会公開サイト” のみが読み上げられた。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 中野利保
+date: 2019/01/09

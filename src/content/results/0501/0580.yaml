@@ -1,0 +1,26 @@
+id: 580
+test: 0055-02
+os: macOS 13.6.6
+user_agent: Safari 17.4.1
+assistive_tech: VoiceOver
+assistive_tech_config:
+contents:
+  - procedure: Tab キーを押下し、「名前」の入力欄にフォーカスを移動した
+    actual: 「氏名」の入力欄の背景色が緑に変化した
+    judgment: ○
+  - procedure: |
+      Tab キーを押下し、ラジオボタン「男性」にフォーカスを移動した
+    actual: |-
+      「氏名」の入力欄の背景色が元に戻った
+      「男性」のラベルの背景色が黄色に変化した
+    judgment: ○
+  - procedure: |
+      下矢印キーを押下し、ラジオボタン「男性」から「女性」にフォーカスを移動した
+    actual: |-
+      「男性」のラベルの背景色が元に戻った
+      「女性」のラベルの背景色が黄色に変化した
+    judgment: ○
+environment_type: 音声閲覧環境
+comment: テスト手順の「名前」は間違いで「氏名」が正しいですね。
+tester: SAWADA STANDARD DESIGN
+date: '2024-06-13'

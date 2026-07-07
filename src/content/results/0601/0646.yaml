@@ -1,0 +1,23 @@
+id: 646
+test: 0055-01
+os: macOS Sonoma 14.6.1
+user_agent: Firefox 134.0.2
+assistive_tech:
+assistive_tech_config:
+contents:
+  - procedure: マウスなどのポインティングデバイスによって、リンクテキスト「サービス」の上にポインターをホバーさせる
+    actual: ホバーするとリンクテキスト「サービス」の背景色が変化する
+    judgment: ○
+  - procedure: マウスなどのポインティングデバイスによって、リンクテキスト「サービス」の上からポインターを外す
+    actual: ポインターが外れるとリンクテキスト「サービス」の背景色が元に戻る
+    judgment: ○
+  - procedure: Tab キーを押下し、リンクテキスト「サービス」にフォーカスを移動
+    actual: フォーカスが当たるとリンクテキスト「サービス」の背景色が変化する
+    judgment: ○
+  - procedure: Tab キーを押下し、リンクテキスト「サービス」から他の要素にフォーカスを移動
+    actual: フォーカスが外れるとリンクテキスト「サービス」の背景色が元の色に戻る
+    judgment: ○
+environment_type: 視覚閲覧環境
+comment:
+tester: 山崎 規弘
+date: '2025-01-23'

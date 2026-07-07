@@ -1,0 +1,15 @@
+id: 226
+test: 0004-01
+os: Windows10 Home Version 1809
+user_agent: Google Chrome 71.0.3578.98（Official Build） （64 ビット）
+assistive_tech: NVDA 2018.4JP
+assistive_tech_config:
+contents:
+  - expected: イメージマップであることを判別できるような情報が提供されている
+    procedure: リンク項目間をKキーで移動した。
+    actual: リンク項目であることは読み上げられるが、イメージマップの項目であることは判別できなかった。
+    judgment: 満たしていない
+environment_type: 音声閲覧環境
+comment:
+tester: 辻勝利
+date: 2019/01/13

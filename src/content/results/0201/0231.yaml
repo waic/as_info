@@ -1,0 +1,15 @@
+id: 231
+test: 0004-01
+os: Windows 10 Pro 1803
+user_agent: Internet Explorer 11.0,101
+assistive_tech: PC-Talker 10 64bit Vesion.1.26
+assistive_tech_config:
+contents:
+  - expected: イメージマップであることを判別できるような情報が提供されている
+    procedure: TABで”4F 雑貨 書籍"に移動し、情報読み(Ctrl+Atl+G)で読み上げを確認した。
+    actual: ”4F 雑貨 書籍 リンク マップ"と読み上げた
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 中野利保
+date: 2019/01/15

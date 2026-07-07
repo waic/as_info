@@ -1,0 +1,17 @@
+id: 272
+test: 0010-07
+os: Windows 10 Pro 1803
+user_agent: Internet Explorer 11.0,101
+assistive_tech: PC-Talker 10 64bit Vesion.1.26
+assistive_tech_config:
+contents:
+  - expected: “Last Name” の列へ移動すると、データセルの内容とともに見出しセルの内容 “Last Name” が読み上げられる
+    procedure: 仮想カーソル移動コマンド(Ctrl+下矢印キー)で、"Joel"から"Garner"に移動した。
+    actual: 見出しセルの内容 “Last Name”と、データセルの内容"Garner"が読み上げられた。
+    judgment: 満たしている
+  - expected: セル “Pittsburgh” から “City” に移動すると、“Last Name” は読み上げられない
+    procedure: “Pittsburgh” から “City” に移動する方法がない。
+environment_type: 音声閲覧環境
+comment:
+tester: 中野利保
+date: 2019/02/08

@@ -1,0 +1,23 @@
+id: 679
+test: 0085-01
+os: Windows 11 Pro 64bit Version 25H2
+user_agent: NetReader Neo 5.2510.74.140
+assistive_tech: PC-Talker 12.2510.66.2502
+assistive_tech_config:
+contents:
+  - procedure: フォーカスを移動
+    actual: 名前は空欄だった。
+    judgment: 満たしていない
+  - procedure: フォーカスを移動
+    actual: メールアドレスは空欄だった
+    judgment: 満たしていない
+  - procedure: 電話番号へ移動
+    actual: 電話番号は空欄だった
+    judgment: 満たしていない
+  - procedure: 郵便番号をフォーカス
+    actual: 郵便番号は空欄だった
+    judgment: 満たしていない
+environment_type: 音声閲覧環境
+comment:
+tester: 諸熊
+date: '2025-10-23'

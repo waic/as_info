@@ -1,0 +1,23 @@
+id: 119
+test: 0012-05
+os: Windows 10 Home Version 1809
+user_agent: Firefox 64.0
+assistive_tech: NVDA 2018.4jp
+assistive_tech_config:
+contents:
+  - expected: |-
+      テキスト入力フィールドにフォーカスを移動すると、次のように title 属性値が読み上げられる
+      “1.” : “市外局番”
+      “2.” : “市内局番”
+      “3.” : “加入者番号”
+    procedure: Fキーで各テキスト入力フィールドに移動した。
+    actual: |-
+      テキスト入力フィールドにフォーカスを移動すると、次のように title 属性値が読み上げられた。
+      “1.” : “市外局番”
+      “2.” : “市内局番”
+      “3.” : “加入者番号”
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 安倍 英樹
+date: 2019/01/11

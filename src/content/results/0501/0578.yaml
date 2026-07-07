@@ -1,0 +1,14 @@
+id: 578
+test: 0056-01
+os: macOS 13.6.6
+user_agent: Safari 17.4.1
+assistive_tech: VoiceOver
+assistive_tech_config:
+contents:
+  - procedure: ブラウザーで画面表示内容を確認
+    actual: スタイルシートが適用された表組には余白があり、スタイルシートが無効な表組には余白がないことを視認
+    judgment: ○
+environment_type: 音声閲覧環境
+comment: 「マージンとパディングが使用されて外側とセル内にスペースがあり、」の「外側」が何の外側なのか、具体的に書いた方が良いですね。「マージンとパディングの設定が適用されていないことが確認できる」は開発者ツールで確認してしまいました。もう少し具体的に確認方法がわかると良い気がします。
+tester: SAWADA STANDARD DESIGN
+date: '2024-06-13'

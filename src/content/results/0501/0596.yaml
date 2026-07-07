@@ -1,0 +1,18 @@
+id: 596
+test: 0121-01
+os: edi:Win 11 Pro ver:23H2 OSbld:22631.4317
+user_agent: firefox 131.0.2 (64 ビット)
+assistive_tech: NVDA
+assistive_tech_config: スピーチビューアーの設定変更あり
+contents:
+  - procedure: ページを表示して時間経過を待つ
+    actual: |-
+      現在の時刻が表示されていることを確認。
+       しばらく待ってダイアログの表示も確認
+       タブで開いたまま別タブを表示して戻ったときにもダイアログの表示を確認
+       別のアプリで作業をして非アクティブ状態とし、戻ったときにもダイアログの表示を確認
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: fujiid
+date: '2024-10-10'

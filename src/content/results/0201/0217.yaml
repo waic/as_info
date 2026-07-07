@@ -1,0 +1,15 @@
+id: 217
+test: 0005-01
+os: Windows 10 Home 64bit
+user_agent: 'GoogleChrome バージョン: 71.0.3578.98（Official Build） （64 ビット）'
+assistive_tech: NVDA2018.4jp
+assistive_tech_config:
+contents:
+  - expected: 利用者の必要に応じて、ページタイトルを確認できる何らかの手段が提供されている
+    procedure: ページを開いていからNVDA+Tを押下した
+    actual: 「ウェブアクセシビリティ基盤委員会マイナスグーグルクロームシークレットモード」と読み上げられた
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment: コマンドがわかっていないとそもそも操作ができない
+tester: yukiko makino
+date: 2019/01/13

@@ -1,0 +1,26 @@
+id: 442
+test: 0030-01
+os: Windows 11 22H2
+user_agent: Google Chrome 116.0.5845.110
+assistive_tech: NVDA 2023.1jp
+assistive_tech_config:
+contents:
+  - procedure: タブキーを押し、[ログインネーム]のテキストフィールドにフォーカスを移動
+    actual: 「ログインネーム エディット 必須」と読み上げられ、必須であることが伝わる
+    judgment: ○
+  - procedure: タブキーを押し、[パスワード]のテキストフィールドへとフォーカスを移動
+    actual: '[パスワード  エディット  保護付き  必須]と読み上げられ、入力必須であることが伝わる'
+    judgment: ○
+  - procedure: タブキーを押し、[利用しているOS(PC)]のセレクトボックスへとフォーカスを移動
+    actual: '[利用しているOS(PC)  コンボボックス  Windows  折りたたみ  必須]と読み上げ、必須であることgあ伝わる'
+    judgment: ○
+  - procedure: タブキーを押し、[利用しているOS(モバイル)]のセレクトボックスへとフォーカスを移動
+    actual: '[利用しているOS(モバイル)  コンボボックス  選択してください  折りたたみ  必須]と読み上げられ、必須であることが伝わる'
+    judgment: ○
+  - procedure: タブキーを押し、[スクリーンリーダーの利用状況]を選択するラジオボタンへとフォーカスを移動
+    actual: '[スクリーンリーダーの利用状況  グループ  必須]と読み上げられ、必須であることが伝わる'
+    judgment: ○
+environment_type: 音声閲覧環境
+comment:
+tester: 大塚 勇哉
+date: '2023-08-24'

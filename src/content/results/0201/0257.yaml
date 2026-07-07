@@ -1,0 +1,34 @@
+id: 257
+test: 0013-01
+os: Windows 7 Professional Edition, 32bit
+user_agent: NetReader2 2.32
+assistive_tech: PC-Talker7 5.27
+assistive_tech_config:
+contents:
+  - expected: |-
+      期待される結果 (音声閲覧環境)
+       画像に longdesc 属性が指定されていることを知るための何らかの手段が提供されている
+    procedure: |-
+      （音声閲覧環境）
+       「会員数の遷移グラフ」という代替テキストを読み上げたので、コントロールとエンターを押して、画像拡大表示を実行。
+       次に、コントロールと無変換キーとフルキー3を押して、OCR文字認識を実行。
+    actual: |-
+      （音声閲覧環境）
+       会員数の遷移
+       0000
+       0000
+       0000
+       0000
+       4321
+       i
+       R
+       R
+       などと読み上げました！
+       OCR文字認識ですので、それが正しい内容かはわかりません。
+    judgment: 満たしていない
+environment_type: 音声閲覧環境
+comment: |-
+  実は、スクリーンリーダーモードでも試してみました。
+   その結果、リンクのない画像だからなのか、「WAIC-CODE-0013-01」というページタイトルしか読みませんでした！
+tester: ISHI-JUN
+date: 2019/01/24

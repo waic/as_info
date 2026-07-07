@@ -1,0 +1,14 @@
+id: 440
+test: 0035-01
+os: Windows 11 22H2 22621.2215
+user_agent: Google Chrome 116.0.5845.111
+assistive_tech: NVDA 2023.1jp
+assistive_tech_config:
+contents:
+  - procedure: 当該ページを開き、下矢印で読み進む
+    actual: 「ウェブアクセシビリティ基盤委員会公開サイト」と読み上げる。他には何も読み上げない。
+    judgment: ○
+environment_type: 音声閲覧環境
+comment: 装飾目的の背景画像を読み上げていないと判断しました。
+tester: 西本 卓也
+date: '2023-08-24'

@@ -1,0 +1,29 @@
+id: 337
+test: 0014-03
+os: iOS 14.2
+user_agent: Safari
+assistive_tech: VoiceOver
+assistive_tech_config:
+contents:
+  - procedure: 右スワイプで順を追って読み上げ
+    actual: |
+      略語（abbreviation), 定義リストの始まり, 用語
+    judgment: 満たしていない
+  - procedure: 右スワイプで順を追って読み上げ
+    actual: 略語（abbreviation), 定義リストの始まり, 用語
+    judgment: 満たしている
+  - procedure: 定義リストの要素まで右スワイプで読み上げる
+    actual: 似ている言葉として閃光がある。, 定義リストの終わり, 定義
+    judgment: 満たしている
+  - procedure: 定義リスト全体右スワイプでを読み上げる
+    actual: |-
+      略語（abbreviation), 定義リストの始まり, 用語
+      単語、語句、又は名称の短縮形で、その略語が言語の一部になっていないもの。, 定義
+      ASCII アート (ASCII art), 用語 文字やグリフの空間的配置によって作られた図画 (典型的には、ASCIIで定義されている95の印字可能文字から作られる)。, 定義
+      点滅 (blinking), 用語 注意を引く意図で、二つの視覚的な状態を交互に切り替えること。, 定義
+      似ている言葉として閃光がある。, 定義リストの終わり, 定義
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 桝田 草一
+date: 2020/12/17

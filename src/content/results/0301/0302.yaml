@@ -1,0 +1,30 @@
+id: 302
+test: 0010-07
+os: Chrome OS 71
+user_agent: Chrome OS 71.0.3578.94(64bit)
+assistive_tech: 'ChromeVox Google TTS Setting : Chrome OS 日本語 インストール済み'
+assistive_tech_config: |-
+  参考：Chromebook ヘルプ / 組み込みのスクリーン リーダーを使用する
+   https://support.google.com/chromebook/answer/7031755?hl=ja
+contents:
+  - expected: |-
+      次の 1. 〜 2. をすべて満たしている
+       
+       1. “Last Name” の列へ移動すると、データセルの内容とともに見出しセルの内容 “Last Name” が読み上げられる 
+       
+       2. セル “Pittsburgh” から “City” に移動すると、“Last Name” は読み上げられない
+    procedure: テーブル内のセルを移動し、読み上げ内容を確認
+    actual: |-
+      1．“Contact Information” のテーブルにおいて、“First Name” から “Last Name” へ検索プラスcontrolプラスAltキーを押しながら右矢印キーを押して移動すると、以下を読み上げる
+       
+       Last Name 行1列3 Last Name
+       
+       2．“Contact Information” のテーブルにおいて、“Pittsburgh” から “City” へ検索プラスcontrolプラスAltキーを押しながら上矢印キーを押して移動すると、以下を読み上げる
+       
+       City 行1列4
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
+tester: 四方田正夫
+date: 2019/01/13

@@ -1,0 +1,15 @@
+id: 18
+test: 0006-02
+os: macOS 10.14.2
+user_agent: Firefox 64.0
+assistive_tech: VoiceOver
+assistive_tech_config:
+contents:
+  - expected: リンク画像の代替テキスト “ウェブアクセシビリティ基盤委員会” が読み上げられる
+    procedure: リンク画像「ウェブアクセシビリティ基盤委員会」にVOキー＋右矢印キーで移動した。
+    actual: リンク画像の代替テキスト「ウェブアクセシビリティ基盤委員会」が読み上げられた。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 安倍 英樹
+date: 2018/12/28

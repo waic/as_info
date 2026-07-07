@@ -1,0 +1,33 @@
+id: 280
+test: 0003-02
+os: Chrome OS 71
+user_agent: Chrome OS 71.0.3578.94(64bit)
+assistive_tech: 'ChromeVox Google TTS Setting : Chrome OS 日本語 インストール済み'
+assistive_tech_config: |-
+  参考：Chromebook ヘルプ / 組み込みのスクリーン リーダーを使用する
+   https://support.google.com/chromebook/answer/7031755?hl=ja
+contents:
+  - expected: |-
+      次の順序でフォーカスが移動する :テキストフィールド
+       
+       “検索” ボタン
+       
+       携帯サイト
+       
+       サイトマップ
+    procedure: 'キーボード操作 : Tab キーを押下し、フォーカスの移動順序を確認'
+    actual: |-
+      TABキーを押下すると、以下の順に読み上げていく。
+       
+       テキスト編集 フォーム
+       
+       検索 ボタン 検索プラススペースキーで有効にします。
+       
+       検索サイト リンク フォームの外に出ました。リスト項目 リストに2件の項目 検索プラス スペースキーで有効にします。
+       
+       サイトマップ リンク リスト項目 検索プラス スペースキーで有効にします。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 四方田正夫
+date: 2019/01/13

@@ -1,0 +1,15 @@
+id: 667
+test: 0056-01
+os: macOS 11.7.10
+user_agent: 'Safari 16.6.1 '
+assistive_tech:
+assistive_tech_config:
+contents:
+  - procedure: ページを開いて、スタイルシートが適用された表組と、無効な表組みを確認する
+    actual: スタイルシートが適用された表組では、セル内に余白があり枠線が描画されていた。スタイルシートが無効な表組みでは余白や枠線がなかった。
+    judgment: ○
+environment_type: 視覚閲覧環境
+comment:
+reviewer_comment: '[WAIC注]表組の外側の余白（マージン）が未確認と思われます。'
+tester: たた
+date: '2025-01-23'

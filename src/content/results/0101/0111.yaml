@@ -1,0 +1,15 @@
+id: 111
+test: 0010-08
+os: Windows 10 Home Version 1809
+user_agent: Firefox 64.0
+assistive_tech: NVDA 2018.4jp
+assistive_tech_config:
+contents:
+  - expected: 東京の女性の数値を表す “15%” のセルに移動すると、セルの内容とともに “大阪 男性” が読み上げられる
+    procedure: 表内をCtrlキー＋Altキー＋上下左右キーで移動した。
+    actual: 東京の女性の数値を表す “15%” のセルに移動すると、セルの内容とともに “大阪 3列” が読み上げられた。（男性は読み上げられない）
+    judgment: 満たしていない
+environment_type: 音声閲覧環境
+comment:
+tester: 安倍 英樹
+date: 2019/01/10

@@ -1,0 +1,19 @@
+id: 637
+test: 0010-04
+os: Windows 11 Enterprise 24H2 26100.2894
+user_agent: 131.0.6778.266（Official Build） （64 ビット）
+assistive_tech: NVDA 2024.3.1jp
+assistive_tech_config: マウスカーソル位置のテキスト報告を無効化
+contents:
+  - procedure: 「営業部連絡先一覧」テーブルで「ヒューストン」からCtrl+Alt+下矢印キーを押して「ピッツバーグ」に移動した
+    actual: 「ジョエル・ガーナー 4行 ピッツバーグ」と、「ピッツバーグ」の行の行見出しである「ジョエル・ガーナー」が読み上げられた
+    judgment: ○
+  - procedure: 「営業部連絡先一覧」テーブルで「ゴードン・グリーニッジ」の行の「Twitter」のセルからCtrl+Alt+下矢印キーを押して「ジョエル・ガーナー」の行の「Twittter」のセルに移動した
+    actual: |-
+      「ジョエル・ガーナー 4行 リンク Twitter
+       」と、行見出しである「ジョエル・ガーナー」が読み上げられた
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: mehm8128
+date: '2025-01-23'

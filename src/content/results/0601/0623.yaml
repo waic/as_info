@@ -1,0 +1,15 @@
+id: 623
+test: 0054-01
+os: WindowsNT ver10.0
+user_agent: NetReader ネオモード 5.2407.59.125
+assistive_tech: PC-Talker Neo 12.2408.59.2302
+assistive_tech_config:
+contents:
+  - procedure: |-
+      タブキーを押して「ポップアップボックスを表示」リンクを選択し、エンターキーを押下。
+      その後、タブキーを押して「閉じる」ボタンを選択した。
+    actual: ボタンの読み上げは「閉じる」のみだった。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+tester: 諸熊
+date: '2024-10-10'

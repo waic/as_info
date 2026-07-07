@@ -1,0 +1,20 @@
+id: 67
+test: 0007-01
+os: macOS 10.14.2
+user_agent: Firefox 64.0
+assistive_tech:
+assistive_tech_config:
+contents:
+  - expected: |-
+      次の 1. 〜 2. をすべて満たしている
+      1. WAIC-CODE-0007-01-ref.html に遷移する
+      2. 入力したメールアドレスが URL エンコーディングされ、URL の末尾に付加されている
+    procedure: |-
+      フォームにメールアドレスを入力後、マウスで申し込むボタンを押下。
+      また、フォームにメールアドレスを入力後、Tabキーで申し込むボタンにフォーカスしSpaceキーで押下。
+    actual: マウス操作・キーボード操作共、WAIC-CODE-0007-01-ref.html に遷移した。また、入力したメールアドレスが URL エンコーディングされ、URL の末尾に付加されていた。
+    judgment: 満たしている
+environment_type: 視覚閲覧環境
+comment:
+tester: 安倍 英樹
+date: 2019/01/07

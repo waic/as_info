@@ -1,0 +1,13 @@
+id: 633
+test: 0050-01
+os: WindowsNT ver10.0
+user_agent: NetReader ネオモード 5.2407.59.125
+assistive_tech: PC-Talker Neo 12.2408.59.2302
+assistive_tech_config:
+contents:
+  - procedure: フォームに何も入力せずに送信ボタンを押した。
+    actual: ページ上部に「ファーストネームを入力してください。ラストネームを入力してください。メールアドレスを入力してください。」というテキストが表示されたと同時に読み上げられた。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+tester: 諸熊
+date: '2024-10-10'

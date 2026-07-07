@@ -1,0 +1,20 @@
+id: 399
+test: 0018-01
+os: Windows 10 Home 20H2
+user_agent: Firefox 92.0.1
+assistive_tech: PC-Talker 10
+assistive_tech_config:
+contents:
+  - procedure: ページの先頭からCtrl+下矢印キーでラジオボタンに移動
+    actual: 「ハムレットの作者は？ ウィリアムなかてんシェイクスピアのラジオボタン 選択 チェック」と読み上げられた。
+    judgment: 満たしている
+  - procedure: ページの先頭からCtrl+下矢印キーでラジオボタンに移動
+    actual: 「坊っちゃんの作者は？  芥川龍之介の ラジオボタン 選択 チェック」と読み上げられた。
+    judgment: 満たしている
+  - procedure: ページの先頭からCtrl+下矢印キーでラジオボタンに移動
+    actual: 「川端康成の ラジオボタン 選択 チェック」と読み上げられた。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment: '[WAIC注] 期待する結果3については、適切に判定できていません。'
+tester: 佐々木　将
+date: 2021/09/28

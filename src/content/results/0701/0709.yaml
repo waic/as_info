@@ -1,0 +1,15 @@
+id: 709
+test: 0004-02
+os: macOS
+user_agent: Google Chrome
+assistive_tech: VoiceOver
+assistive_tech_config:
+contents:
+  - procedure: ブラウザを画像非表示に設定変更し、表示内容を確認した
+    actual: イメージマップに用いられている画像の代替テキスト “デパートのフロアガイド。各階について詳しくお知りになりたい場合は各階をクリックしてください。” が表示される
+    judgment: ○
+environment_type: 視覚閲覧環境
+comment:
+reviewer_comment: '[WAIC注] VoiceOver と書かれていますが視覚閲覧環境のテストであると判断しました。'
+tester: hosaka
+date: '2025-10-23'

@@ -1,0 +1,15 @@
+id: 183
+test: 0001-01
+os: Windows10 Pro 64ビット
+user_agent: Google Chrome 71.0.3578.98（Official Build）（64 ビット）
+assistive_tech:
+assistive_tech_config:
+contents:
+  - expected: Google Chrome 71.0.3578.98（Official Build）（64 ビット）
+    procedure: ブラウザを画像非表示に設定変更し、表示内容を確認した
+    actual: リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみが表示され、画像のファイル名や URL 等は表示されなかった。
+    judgment: 満たしている
+environment_type: 視覚閲覧環境
+comment:
+tester: 佐藤美華
+date: 2019/01/13

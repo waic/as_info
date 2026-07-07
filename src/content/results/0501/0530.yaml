@@ -1,0 +1,13 @@
+id: 530
+test: 0008-01
+os: Windows 11 22h2
+user_agent: Google Chrome 117.0.5938.132（Official Bu
+assistive_tech: NVDA 2023.3.1jp
+assistive_tech_config:
+contents:
+  - procedure: タブキーを押してボタンへフォーカスを移動した
+    actual: 代替テキストの内容が読み上げられた
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+tester: yuyaroid
+date: '2024-01-18'

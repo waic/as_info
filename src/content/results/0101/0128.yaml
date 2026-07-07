@@ -1,0 +1,15 @@
+id: 128
+test: 0015-05
+os: Windows 10 Home Version 1809
+user_agent: Firefox 64.0.2
+assistive_tech: NVDA 2018.4jp
+assistive_tech_config:
+contents:
+  - expected: “Zn2+” の “2+” に差し掛かかると、この部分が上付き文字であることを知るための何らかの手段が提供されている
+    procedure: NVDAキー＋下矢印キーで文章を読み上げさせた。
+    actual: 文章が単純に読み上げられ、上付き文字の通知は無かった。
+    judgment: 満たしていない
+environment_type: 音声閲覧環境
+comment:
+tester: 安倍 英樹
+date: 2019/01/11

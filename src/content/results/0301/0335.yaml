@@ -1,0 +1,16 @@
+id: 335
+test: 0024-01
+os: Windows 10 Pro 2004
+user_agent: Google chrome 87.0
+assistive_tech: PC-Talker10 V1.41
+assistive_tech_config:
+contents:
+  - procedure: テストファイルを読み上げ、内容を確認
+    actual: |-
+      リンク「ホーム」を選択した時、「ナビゲーション ランドマーク」と読み上げた。
+      リンク「ニュース一覧」を選択した後、リンク「お問合せ」を選択すると、「ナビゲーション ランドマーク」と読み上げた。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 諸熊
+date: 2020/12/17

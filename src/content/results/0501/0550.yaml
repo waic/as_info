@@ -1,0 +1,17 @@
+id: 550
+test: 0003-02
+os: Windows10
+user_agent: googleChrome
+assistive_tech: NVDA
+assistive_tech_config:
+contents:
+  - procedure: 'キーボード操作 : Tab キーを押下し、フォーカスの移動順序を確認'
+    actual: |-
+      次の順序でフォーカスが移動する :
+       携帯サイト
+       サイトマップ
+    judgment: 満たしていない
+environment_type: 音声閲覧環境
+comment:
+tester: tokami
+date: '2024-06-13'

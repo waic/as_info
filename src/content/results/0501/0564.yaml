@@ -1,0 +1,17 @@
+id: 564
+test: 0002-01
+os: mac
+user_agent: Coogle Chrome
+assistive_tech: VoiceOver
+assistive_tech_config:
+contents:
+  - procedure: ブラウザの設定→プライバシーとセキュリティ→サイトの設定→画像の項目から、「サイトに画像の表示を許可しない」を選択してページを開く
+    actual: アイコン画像の代わりに、代替テキスト「ウェブアクセシビリティ基盤委員会」が表示される
+    judgment: ○
+  - procedure: ブラウザの設定→プライバシーとセキュリティ→サイトの設定→画像の項目から、「サイトに画像の表示を許可しない」を選択してページを開き、VoiceOverでページを読み上げ
+    actual: アイコン画像の代替テキストとリンクテキストが続けて “ウェブアクセシビリティ基盤委員会 公式サイト” と読み上げられる
+    judgment: ○
+environment_type: 音声閲覧環境
+comment:
+tester: 内田 晴風
+date: '2024-06-13'

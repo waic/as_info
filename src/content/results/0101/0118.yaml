@@ -1,0 +1,15 @@
+id: 118
+test: 0012-04
+os: Windows 10 Home Version 1809
+user_agent: Firefox 64.0
+assistive_tech: NVDA 2018.4jp
+assistive_tech_config:
+contents:
+  - expected: セレクトメニューにフォーカスを移動すると、title 属性値 “検索範囲を選択” が読み上げられる
+    procedure: Fキーでセレクトメニューに移動した。
+    actual: セレクトメニューにフォーカスを移動すると、title 属性値 “検索範囲を選択” が読み上げられた。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 安倍 英樹
+date: 2019/01/11

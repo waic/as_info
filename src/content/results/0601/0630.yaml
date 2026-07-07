@@ -1,0 +1,13 @@
+id: 630
+test: 0047-03
+os: WindowsNT ver10.0
+user_agent: NetReader ネオモード 5.2407.59.125
+assistive_tech: PC-Talker Neo 12.2408.59.2302
+assistive_tech_config:
+contents:
+  - procedure: コンポボックスの位置へフォーカスを移動した。
+    actual: 「通知 日前に通知」と読み上げた。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+tester: 諸熊
+date: '2024-10-10'

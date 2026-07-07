@@ -1,0 +1,15 @@
+id: 244
+test: 0012-05
+os: Windows10 pro バージョン：1803
+user_agent: Fierfox ver64.0.2
+assistive_tech: NVDA ver2018.4.1jp
+assistive_tech_config:
+contents:
+  - expected: 'テキスト入力フィールドにフォーカスを移動すると、次のように title 属性値が読み上げられる “1.” : “市外局番” “2.” : “市内局番” “3.” : “加入者番号”'
+    procedure: Tabキーで移動した。
+    actual: 1つ目のテキスト入力フィールド「市外局番」、2つ目のテキスト入力フィールド「市内局番」、3つ目のテキスト入力フィールド「加入者番号」と読み上げた。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 小枝　繁子
+date: 2019/01/18

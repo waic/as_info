@@ -1,0 +1,14 @@
+id: 677
+test: 0054-02
+os: Windows 11 Pro 64bit Version 25H2
+user_agent: NetReader Neo 5.2510.74.140
+assistive_tech: PC-Talker 12.2510.66.2502
+assistive_tech_config:
+contents:
+  - procedure: 各入力欄を選択
+    actual: それぞれを選択した時に、「市外局番」「市内局番」「加入者番号」と読み上げた。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 諸熊
+date: '2025-10-23'

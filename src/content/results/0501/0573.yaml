@@ -1,0 +1,13 @@
+id: 573
+test: 0001-02
+os: Windows 11 22h2
+user_agent: Chrome 126.0.6478.57
+assistive_tech: PC-Talker Neo 2404(ビルド57)
+assistive_tech_config:
+contents:
+  - procedure: タブキーを押してリンクへとフォーカスを移動
+    actual: 「ウェブアクセシビリティ基盤委員会公開サイト リンク」と読み上げられた
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+tester: yuyaroid
+date: '2024-06-13'

@@ -1,0 +1,22 @@
+id: 30
+test: 0010-07
+os: macOS 10.14.2
+user_agent: Firefox 64.0
+assistive_tech: VoiceOver
+assistive_tech_config:
+contents:
+  - expected: |-
+      次の 1. 〜 2. をすべて満たしている
+      1. “Last Name” の列へ移動すると、データセルの内容とともに見出しセルの内容 “Last Name” が読み上げられる 
+      2. セル “Pittsburgh” から “City” に移動すると、“Last Name” は読み上げられない
+    procedure: |-
+      1. VOキー＋右矢印キーで表の各セルに移動した。
+      2. VOキー＋上矢印キーでセル「Pittsburgh」から「City」に移動した。
+    actual: |-
+      1. データセルの内容とともに見出しセルの内容「Last Name」が読み上げられた。
+      2. 「City」のみ読み上げられた。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 安倍 英樹
+date: 2018/12/29

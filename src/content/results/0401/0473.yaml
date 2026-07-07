@@ -1,0 +1,14 @@
+id: 473
+test: 0032-01
+os: Windows 10 Pro 22H2
+user_agent: Microsoft Edge for Business バージョン 117.0.2045.43 (公式ビルド) (64 ビット)
+assistive_tech: NVDA 2023.2jp-r2(2023.2.0.3096)
+assistive_tech_config:
+contents:
+  - procedure: テストファイルを操作し、結果を確認。
+    actual: “ワシントンが経済成長を刺激する 全文表示” が読み上げられる
+    judgment: ○
+environment_type: 音声閲覧環境
+comment:
+tester: 山崎 規弘
+date: '2023-09-28'

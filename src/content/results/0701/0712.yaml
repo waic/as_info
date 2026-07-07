@@ -1,0 +1,19 @@
+id: 712
+test: 0004-05
+os: macOS
+user_agent: Google Chrome
+assistive_tech: VoiceOver
+assistive_tech_config:
+contents:
+  - procedure: |-
+      マウス操作 : 各 area 要素にマウスポインタを重ね、挙動を確認
+      キーボード操作 : 各 area 要素にフォーカスを移動し、挙動を確認
+    actual: |-
+      リンクであることがマウスポインタの形で判別できる
+      キーボード操作時は、フォーカスインジケータが表示された
+    judgment: ○
+environment_type: 視覚閲覧環境
+comment:
+reviewer_comment: '[WAIC注] VoiceOver と書かれていますが視覚閲覧環境のテストであると判断しました。'
+tester: hosaka
+date: '2025-10-23'

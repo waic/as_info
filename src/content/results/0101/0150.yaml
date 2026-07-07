@@ -1,0 +1,15 @@
+id: 150
+test: 0002-02
+os: macOS 10.14.2
+user_agent: Google Chrome 71.0.3578.98
+assistive_tech: VoiceOver
+assistive_tech_config:
+contents:
+  - expected: （音声閲覧環境）リンクテキストとアイコン画像の代替テキストが続けて “施設ご利用の手引き PDFファイル” と読み上げられる
+    procedure: （音声閲覧環境）リンク「施設ご利用の手引き」に 自動読み上げで移動した。
+    actual: （音声閲覧環境）「リンク 施設ご利用の手引き PDFファイル」と読み上げた
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 佐藤哲裕
+date: 2019/01/13

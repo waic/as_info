@@ -1,0 +1,16 @@
+id: 632
+test: 0049-01
+os: WindowsNT ver10.0
+user_agent: NetReader ネオモード 5.2407.59.125
+assistive_tech: PC-Talker Neo 12.2408.59.2302
+assistive_tech_config:
+contents:
+  - procedure: 「エラーメッセージが含まれるアラートダイアログを表示する」ボタンを押下した。
+    actual: ボタンを押すと即座に通知が表示されることも確認できた。ただし、アラートダイアログであることは通知しなかった。また、ダイアログの内容を自動で読み上げることも無かった。
+    judgment: 満たしていない
+  - procedure: ボタン押下後のフォーカス位置を確認した。
+    actual: 「戻る」ボタンにフォーカスがあった。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+tester: 諸熊
+date: '2024-10-10'

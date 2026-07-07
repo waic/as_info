@@ -1,0 +1,14 @@
+id: 702
+test: 0001-03
+os: Windows
+user_agent: Microsoft Edge
+assistive_tech: NVDA
+assistive_tech_config:
+contents:
+  - procedure: ブラウザを画像非表示に設定変更し、表示内容を確認した
+    actual: リンクテキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみが表示され、画像のファイル名や URL 等は表示されなかった。
+    judgment: ○
+environment_type: 音声閲覧環境
+comment:
+tester: hosaka
+date: '2025-10-23'

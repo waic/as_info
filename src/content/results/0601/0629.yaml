@@ -1,0 +1,13 @@
+id: 629
+test: 0047-02
+os: WindowsNT ver10.0
+user_agent: NetReader ネオモード 5.2407.59.125
+assistive_tech: PC-Talker Neo 12.2408.59.2302
+assistive_tech_config:
+contents:
+  - procedure: スライダーコントロールにタブキーでフォーカスを移動した。
+    actual: 「旅行の日数 の トラックバー 洗濯 15」と読み上げた。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+tester: 諸熊
+date: '2024-10-10'

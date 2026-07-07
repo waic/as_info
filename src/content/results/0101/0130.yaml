@@ -1,0 +1,15 @@
+id: 130
+test: 0016-01
+os: Windows 10 Home Version 1809
+user_agent: Firefox 64.0.2
+assistive_tech: NVDA 2018.4jp
+assistive_tech_config:
+contents:
+  - expected: 英語の音声合成エンジンを用いて読み上げられる
+    procedure: NVDAキー＋下矢印キーで文章を読み上げさせた。
+    actual: 日本語の読み上げとは異なる音声合成エンジンで読み上げられた。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 安倍 英樹
+date: 2019/01/11

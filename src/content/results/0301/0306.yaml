@@ -1,0 +1,30 @@
+id: 306
+test: 0011-03
+os: Chrome OS 71
+user_agent: Chrome OS 71.0.3578.94(64bit)
+assistive_tech: 'ChromeVox Google TTS Setting : Chrome OS 日本語 インストール済み'
+assistive_tech_config: |-
+  参考：Chromebook ヘルプ / 組み込みのスクリーン リーダーを使用する
+   https://support.google.com/chromebook/answer/7031755?hl=ja
+contents:
+  - expected: |-
+      直前または直後の見出し要素に移動するための何らかの手段が提供されている
+       
+       テスト実施時の注意点 (音声閲覧環境) :例えば、見出しジャンプや見出しリストのような機能が実装されていれば OK と判断
+    procedure: 見出し間を移動し、挙動を確認
+    actual: |-
+      検索キー＋hキーを押下していくと、以下の順に読み上げる。
+       
+       果物について 見出し1
+       定義 見出し2
+       野菜との違い 見出し3
+       実は果物ではないもの 見出し4
+       スイカが野菜である理由 見出し5
+       スイカの発見 見出し6
+       人間と果物のかかわり 見出し2
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
+tester: 四方田正夫
+date: 2019/01/13

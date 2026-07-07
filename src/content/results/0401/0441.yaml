@@ -1,0 +1,17 @@
+id: 441
+test: 0035-01
+os: Windows10 22H2
+user_agent: Firefox 116.0.3
+assistive_tech: NVDA 2022.4jp
+assistive_tech_config:
+contents:
+  - procedure: WebDeveloperにてCSS Disable
+    actual: 背景画像が消えた
+    judgment: ○
+  - procedure: 下向き矢印を押して、p要素を読んだ
+    actual: ウェブアクセシビリティ基盤委員会公開サイト
+    judgment: ○
+environment_type: 音声閲覧環境
+comment: CSSをオフにする手順は一般的には難しいので、オフにしなくてもCSSの背景画像有り無しが比べられる方法に切り替えた方がよい気がします。
+tester: 澤田望
+date: '2023-08-24'

@@ -1,0 +1,13 @@
+id: 529
+test: 0007-02
+os: Windows 11 22h2
+user_agent: Google Chrome 117.0.5938.132（Official Bu
+assistive_tech: NVDA 2023.3.1jp
+assistive_tech_config:
+contents:
+  - procedure: セレクトメニューでそれぞれの選択肢を選び、[選択したページへ移動する]ボタンを押した
+    actual: '[選択したページへ移動する]ボタンを押した時点でそれぞれのページへと遷移した'
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+tester: yuyaroid
+date: '2024-01-18'

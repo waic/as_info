@@ -1,0 +1,21 @@
+id: 109
+test: 0010-06
+os: Windows 10 Home Version 1809
+user_agent: Firefox 64.0
+assistive_tech: NVDA 2018.4jp
+assistive_tech_config:
+contents:
+  - expected: |-
+      次の 1. 〜 2. をすべて満たしている
+      1. “Clive” の行へ移動すると、データセルの内容とともに見出しセルの内容 “Clive” が読み上げられる
+      2. セル “Greenidge” から “Gordon” に移動すると、“Clive” は読み上げられない
+    procedure: 表内をCtrlキー＋Altキー＋矢印キーで移動した。
+    actual: |-
+      次の 1. 〜 2. をすべて満たしている
+      1. セル "Garner" から “Clive” のに移動すると、データセルの内容とともに見出しセルの内容 “Clive” が読み上げられる
+      2. セル “Greenidge” から “Gordon” に移動すると、“Clive” は読み上げられなかった。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 安倍 英樹
+date: 2019/01/10

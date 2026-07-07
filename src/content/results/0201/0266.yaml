@@ -1,0 +1,15 @@
+id: 266
+test: 0010-01
+os: Windows 10 Pro 1803
+user_agent: Internet Explorer 11.0,101
+assistive_tech: PC-Talker 10 64bit Vesion.1.26
+assistive_tech_config:
+contents:
+  - expected: caption 要素の内容 “営業部連絡先一覧” 及び “マーケティング部連絡先一覧” を確認する何らかの手段が提供されている
+    procedure: セル内で情報読み(Alt+Ctrl+G)を実行し、表情報を確認した。
+    actual: caption要素のテキスト “営業部連絡先一覧” 及び “マーケティング部連絡先一覧” が読み上げられた。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 中野利保
+date: 2019/02/01

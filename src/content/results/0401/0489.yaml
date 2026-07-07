@@ -1,0 +1,17 @@
+id: 489
+test: 0029-04
+os: macOS 13.5.2
+user_agent: Safari 16.6 (18615.3.12.11.2)
+assistive_tech: VoiceOver
+assistive_tech_config:
+contents:
+  - procedure: Tabキーで「名前」入力欄（input要素）にフォーカスを移動。
+    actual: |-
+      名前、テキストを編集
+      名前は任意です。
+    judgment: ○
+environment_type: 音声閲覧環境
+comment: |
+  「名前は任意です。」について、テストケースでは「隠された」と説明されているが、テストコード上では画面に表示されており、aria-hidden="true" なので意図は分かりますが、やや戸惑います。
+tester: SAWADA STANDARD DESIGN
+date: '2023-09-28'

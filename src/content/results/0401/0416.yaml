@@ -1,0 +1,14 @@
+id: 416
+test: 0027-02
+os: Windows 11
+user_agent: Microsoft Edge 99.0.1150.30
+assistive_tech: NVDA 2021.3.3jp
+assistive_tech_config: ラップトップ配列、ブラウズモードでページを自動的に読み上げない
+contents:
+  - procedure: Dを押す。
+    actual: メイン ランドマーク    WAIC の最新情報は以下をご参照ください。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment: ページを開いた直後に現在位置である1個目のランドマークにすでにいるため、Dを押すと2個目のランドマークである main に移動しています。
+tester: 西本卓也
+date: 2022/03/04

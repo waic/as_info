@@ -1,0 +1,14 @@
+id: 418
+test: 0029-02
+os: iOS 15.3.1
+user_agent: Safari
+assistive_tech: VoiceOver
+assistive_tech_config:
+contents:
+  - procedure: タップしてinputにフォーカス
+    actual: 「名前, テキストフィールド, aria-describedbyでリンクされたこの分野のちょっとした指示です。」
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 桝田 草一
+date: 2022/03/04

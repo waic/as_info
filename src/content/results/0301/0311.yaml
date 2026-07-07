@@ -1,0 +1,30 @@
+id: 311
+test: 0012-05
+os: Chrome OS 71
+user_agent: Chrome OS 71.0.3578.94(64bit)
+assistive_tech: 'ChromeVox Google TTS Setting : Chrome OS 日本語 インストール済み'
+assistive_tech_config: |-
+  参考：Chromebook ヘルプ / 組み込みのスクリーン リーダーを使用する
+   https://support.google.com/chromebook/answer/7031755?hl=ja
+contents:
+  - expected: |-
+      テキスト入力フィールドにフォーカスを移動すると、次のように title 属性値が読み上げられる
+       
+       “1.” : “市外局番”
+       
+       “2.” : “市内局番”
+       
+       “3.” : “加入者番号”
+    procedure: テストファイルを操作し、結果を確認
+    actual: |-
+      TABキーを押下していくと、以下の順に読み上げる。
+       
+       市外局番 テキスト編集
+       市内局番 テキスト編集
+       加入者番号 テキスト編集
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
+tester: 四方田正夫
+date: 2019/01/13

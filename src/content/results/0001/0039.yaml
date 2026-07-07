@@ -1,0 +1,23 @@
+id: 39
+test: 0012-05
+os: macOS 10.14.2
+user_agent: Firefox 64.0
+assistive_tech: VoiceOver
+assistive_tech_config:
+contents:
+  - expected: |-
+      テキスト入力フィールドにフォーカスを移動すると、次のように title 属性値が読み上げられる
+      “1.” : “市外局番”
+      “2.” : “市内局番”
+      “3.” : “加入者番号”
+    procedure: 各テキストフィールドにVOキー＋Commandキー＋Jキーで移動した。
+    actual: |-
+      以下のように読み上げられた。
+      “1.” : “電話番号 1. テキスト”
+      “2.” : “2. テキスト”
+      “3.” : “3. テキスト”
+    judgment: 満たしていない
+environment_type: 音声閲覧環境
+comment:
+tester: 安倍 英樹
+date: 2018/12/30

@@ -1,0 +1,15 @@
+id: 591
+test: 0121-01
+os: Windows 11 Pro　23H5
+user_agent: Microsoft Edge バージョン 129.0.2792.79 (公式ビルド) (64 ビット)
+assistive_tech:
+assistive_tech_config:
+contents:
+  - procedure: テストコードを表示し、40秒待機
+    actual: 40秒経過時点でブラウザ上部に「このページは20秒後に更新されます。表示時間を延長しますか?」と書かれたポップアップが表示され、延長の有無を選択できた。
+    judgment: ○
+environment_type: 視覚閲覧環境
+comment:
+reviewer_comment: '[WAIC注]ウィンドウ非アクティブ時の動作を未確認と思われます。'
+tester: 土永 崇之
+date: '2024-10-10'

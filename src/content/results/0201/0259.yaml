@@ -1,0 +1,19 @@
+id: 259
+test: 0007-02
+os: Windows 10 Pro 1803
+user_agent: Internet Explorer 11.0,101
+assistive_tech: PC-Talker 10 64bit Vesion.1.26
+assistive_tech_config:
+contents:
+  - expected: セレクトメニューで選択肢を選んでも何も発生しない
+    procedure: Tabキーでセレクトメニューに移動し、上下キーで選択肢を変更した
+    actual: 選択肢を選んでも何もおこらなかった。
+    judgment: 満たしている
+  - expected: 選択したページへ移動する” ボタンを選択すると、選択したページに遷移する
+    procedure: タブキーでセレクトメニューに移動し、上下キーで選択肢を選び、Tabキーで「選択したページへ移動する」に移動後、Enterキーを押した。
+    actual: 選択したページに遷移した。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 中野利保
+date: 2019/01/30

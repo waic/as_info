@@ -1,0 +1,17 @@
+id: 518
+test: 0024-01
+os: Windows　10.0.22621.3007
+user_agent: Firefox 121.0.1
+assistive_tech: NVDA 2023.3.1jp
+assistive_tech_config:
+contents:
+  - procedure: NVDAのブラウズモードで下矢印キーを使って内容を確認した。
+    actual: 「ナビゲーション ランドマーク リンク ホーム」と読み上げた。
+    judgment: 満たしている
+  - procedure: NVDAのブラウズモードで「ナビゲーション ランドマーク リンク ホーム」の場所でコンマ（コンテナの直後に移動）を押し、さらに上矢印を押した。
+    actual: 「ニュース一覧 リンク」に移動し、上矢印で「ナビゲーション ランドマーク リンク お問い合わせ」に移動した。これにより「お問い合わせ」が終了位置であることがわかった。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 西本卓也
+date: '2024-01-18'

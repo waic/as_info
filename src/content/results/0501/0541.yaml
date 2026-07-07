@@ -1,0 +1,17 @@
+id: 541
+test: 0024-02
+os: Windows 11 Pro 23H2 (22631.3737)
+user_agent: Chrome 126.0.6478.57
+assistive_tech: NVDA 2024.1jp (2024.4.0.3578)
+assistive_tech_config:
+contents:
+  - procedure: テストファイルをすべて読み上げ、内容を確認
+    actual: nav要素部分に差し掛かると、「ランドマークナビゲーションランドマークリンク組織」「ナビゲーションランドマークリンクホーム」と読み上げる。「テストファイルをすべて読み上げ、内容を確認」の文章から戻ると（nav要素を通り過ぎたほうから、nav要素に戻ると）「ナビゲーションランドマークリンクイベント」と読み上げる。
+    judgment: ○
+  - procedure: 読み上げカーソルを上下移動させ等して、nav要素の始まりと終わりの位置を読み上げる
+    actual: nav要素内の最初の要素は「ランドマーク」の読み上げにより分かるが、nav要素内の最後の要素が何であるかを知ることはできない。
+    judgment: ×
+environment_type: 音声閲覧環境
+comment:
+tester: 森田雄
+date: '2024-06-13'

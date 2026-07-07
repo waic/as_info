@@ -1,0 +1,14 @@
+id: 481
+test: 0035-01
+os: Windows 10 Pro 22H2
+user_agent: Firefox 118.0 (64 ビット)
+assistive_tech: なし（視覚閲覧環境）
+assistive_tech_config:
+contents:
+  - procedure: テストファイルを操作し、結果を確認。 ユーザエージェントでスタイルシート無効にし内容を確認
+    actual: スタイルシート無効により画像が非表示となる。
+    judgment: ○
+environment_type: 視覚閲覧環境
+comment: スタイルシートの無効化には拡張機能Web Developer を使用
+tester: 山崎 規弘
+date: '2023-09-28'

@@ -1,0 +1,15 @@
+id: 56
+test: 0002-02
+os: macOS 10.14.2
+user_agent: Firefox 64.0
+assistive_tech:
+assistive_tech_config:
+contents:
+  - expected: リンクテキスト “施設ご利用の手引き” に続き、アイコン画像の代替テキスト “PDF ファイル” が表示される
+    procedure: ブラウザを画像非表示に設定変更し、表示内容を確認した。
+    actual: リンクテキスト “施設ご利用の手引き” に続き、アイコン画像の代替テキスト “PDF ファイル” が表示された。
+    judgment: 満たしている
+environment_type: 視覚閲覧環境
+comment:
+tester: 安倍 英樹
+date: 2018/12/31

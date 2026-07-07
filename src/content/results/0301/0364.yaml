@@ -1,0 +1,14 @@
+id: 364
+test: 0019-01
+os: Windows 10 Pro 2004
+user_agent: Microsoft Edge 87.0.664.60
+assistive_tech: PC-Talker 10
+assistive_tech_config:
+contents:
+  - procedure: リンク「こちら」を選択し、情報読み(CTRL+ALT+H)を実行
+    actual: リスト項目内のリンクであることのみを読み上げた。
+    judgment: 満たしていない
+environment_type: 音声閲覧環境
+comment:
+tester: 諸熊
+date: 2020/12/17

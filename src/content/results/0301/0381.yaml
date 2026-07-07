@@ -1,0 +1,19 @@
+id: 381
+test: 0024-01
+os: iOS 14.2
+user_agent: Safari
+assistive_tech: VoiceOver
+assistive_tech_config:
+contents:
+  - procedure: 見出し「ウェブアクセシビリティ基盤委員会」から右フリック1回。
+    actual: 「ホーム」に差し掛かると「ホーム リンク ナビゲーション ランドマーク」と読み上げた。
+    judgment: 満たしている
+  - procedure: |-
+      リンク「お問い合わせ」から右フリック1回。
+      逆に、リンク「ニュース一覧」からも右フリック1回。
+    actual: 「お問い合わせ リンク エンド ナビゲーション」と読み上げた。逆の場合も同様に読み上げた。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: SAWADA STANDARD DESIGN
+date: 2020/12/17

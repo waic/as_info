@@ -1,0 +1,19 @@
+id: 258
+test: 0007-01
+os: Windows 10 Pro 1803
+user_agent: Internet Explorer 11.0,101
+assistive_tech: PC-Talker 10 64bit Vesion.1.26
+assistive_tech_config:
+contents:
+  - expected: WAIC-CODE-0007-01-ref.html に遷移する
+    procedure: 「申し込む」ボタンにTabキーで移動し、Enterキーを押した。
+    actual: WAIC-CODE-0007-01-ref.html に遷移した
+    judgment: 満たしている
+  - expected: 入力したメールアドレスが URL エンコーディングされ、URL の末尾に付加されている
+    procedure: ページ遷移後、Tabキーでアドレスに移動し、URLの読み上げを確認した。
+    actual: 入力したメールアドレスが URL エンコーディングされ、URL の末尾に付加されていた。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 中野利保
+date: 2019/01/30

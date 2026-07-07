@@ -1,0 +1,14 @@
+id: 522
+test: 0039-01
+os: Windows 10 Pro 22H2
+user_agent: Microsoft Edge 120.0.2210.144
+assistive_tech: NVDA 2023.3.1jp (2023.3.1.3368)
+assistive_tech_config:
+contents:
+  - procedure: リンク要素にフォーカスを合わせる。 読み上げる内容を確認する。
+    actual: リンク要素では「JIS X 8341-3 改正の続きを読む」と読み上げられる。
+    judgment: ○
+environment_type: 音声閲覧環境
+comment:
+tester: 山崎 規弘
+date: '2024-01-18'

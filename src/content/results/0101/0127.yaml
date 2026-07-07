@@ -1,0 +1,18 @@
+id: 127
+test: 0015-04
+os: Windows 10 Home Version 1809
+user_agent: Firefox 64.0.2
+assistive_tech: NVDA 2018.4jp
+assistive_tech_config:
+contents:
+  - expected: |-
+      次の 1. 〜 2. をすべて満たしている
+      1. “自己憐憫は私たちの最悪の敵です。” に差し掛かかると、この部分が引用であることが通知される
+      2. 引用部分の開始位置及び終了位置を知るための何らかの手段が提供されている
+    procedure: NVDAキー＋下矢印キーで文章を読み上げさせた。
+    actual: 文章が単純に読み上げられ、引用があることは分からなかった。
+    judgment: 満たしていない
+environment_type: 音声閲覧環境
+comment:
+tester: 安倍 英樹
+date: 2019/01/11

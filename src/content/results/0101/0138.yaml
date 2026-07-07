@@ -1,0 +1,18 @@
+id: 138
+test: 0022-01
+os: Windows 10 Home Version 1809
+user_agent: Firefox 64.0.2
+assistive_tech: NVDA 2018.4jp
+assistive_tech_config:
+contents:
+  - expected: |-
+      次の 1. 〜 2. をすべて満たしている
+      1. optgroup 要素の label 属性値を知るための何らかの手段が提供されている
+      2. optgroup 要素の切り替わる位置 (グループの開始位置及び終了位置) を知るための何らかの手段が提供されている
+    procedure: ドロップダウンを開き、上下矢印キーで内容を読み上げさせた。
+    actual: option要素のみ読み上げられた。optgroup要素にはアクセスできなかった。
+    judgment: 満たしていない
+environment_type: 音声閲覧環境
+comment:
+tester: 安倍 英樹
+date: 2019/01/13

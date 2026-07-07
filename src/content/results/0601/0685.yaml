@@ -1,0 +1,59 @@
+id: 685
+test: 0090-01
+os: macOS 15.6
+user_agent: Safari 18.6
+assistive_tech:
+assistive_tech_config:
+contents:
+  - procedure: |-
+      拡大 : option + command + プラス記号 (+)
+      縮小 : option + command + マイナス記号 (-)
+
+      ※ショートカットではなく「表示」メニューを開いて、「option」キーを押しながら「文字を拡大」または「文字を縮小」を選択でも変更可能
+
+      ブラウザ検証ツールで「周囲のテキスト」「strong要素」のpx値を確認
+    actual: |-
+      ▼縮小2回
+      見出し
+      　周囲のテキスト : 22.2px
+      　strong要素 : 26.6px
+      段落
+      　周囲のテキスト : 11.1px
+      　strong要素 : 13.3px
+
+      ▼縮小1回
+      見出し
+      　周囲のテキスト : 26.6px
+      　strong要素 : 32px
+      段落
+      　周囲のテキスト : 13.3px
+      　strong要素 : 16px
+
+      ▼標準
+      見出し
+      　周囲のテキスト : 32px
+      　strong要素 : 38.4px
+      段落
+      　周囲のテキスト : 16px
+      　strong要素 : 19.2px
+
+      ▼拡大1回
+      見出し
+      　周囲のテキスト : 38.4px
+      　strong要素 : 46px
+      段落
+      　周囲のテキスト : 19.2px
+      　strong要素 : 23px
+
+      ▼拡大2回
+      見出し
+      　周囲のテキスト : 46px
+      　strong要素 : 55.2px
+      段落
+      　周囲のテキスト : 23px
+      　strong要素 : 27.6px
+    judgment: ○
+environment_type: 視覚閲覧環境
+comment:
+tester: DAWN 上村
+date: '2025-10-23'

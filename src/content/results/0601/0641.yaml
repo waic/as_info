@@ -1,0 +1,24 @@
+id: 641
+test: 0055-01
+os: Windows 11 Enterprise 24H2 26100.2894
+user_agent: 131.0.6778.266（Official Build） （64 ビット）
+assistive_tech: NVDA 2024.3.1jp
+assistive_tech_config: マウスカーソル位置のテキスト報告を無効化
+contents:
+  - procedure: マウスカーソルで「サービス」のリンクテキストにホバーした
+    actual: リンクテキストの背景色が変化した
+    judgment: 満たしている
+  - procedure: マウスで「サービス」リンクテキストからホバーを解除した
+    actual: リンクテキストの背景色が元に戻った
+    judgment: 満たしている
+  - procedure: Tabキーで「サービス」リンクテキストにフォーカスした
+    actual: リンクテキストの背景色が変化した
+    judgment: 満たしている
+  - procedure: Tabキーで「サービス」リンクテキストからフォーカスを移動した
+    actual: リンクテキストの背景色が元に戻った
+    judgment: 満たしている
+environment_type: 視覚閲覧環境
+comment:
+reviewer_comment: '[WAIC注] 音声閲覧環境と報告されましたが視覚閲覧環境のテストであると判断しました。'
+tester: mehm8128
+date: '2025-01-23'

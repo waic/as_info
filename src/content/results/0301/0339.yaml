@@ -1,0 +1,30 @@
+id: 339
+test: 0018-02
+os: iOS 14.2
+user_agent: Safari
+assistive_tech: VoiceOver
+assistive_tech_config:
+contents:
+  - procedure: ローターを Form Control に設定して下にスワイプ
+    actual: 好きな外国の作家は？, ウィリアム・シェイクスピア, チェックボックス, unchecked, Double tap to toggle settings
+    judgment: 満たしている
+  - procedure: 操作内容(1)から右スワイプ
+    actual: ラドヤード・キップリング, チェックボックス, unchecked, Double tap to toggle settings
+    judgment: 満たしていない
+  - procedure: 順を追ってスワイプし、川端康成のラジオボタンまで読み上げる
+    actual: 川端康成, チェックボックス, unchecked, Double tab to toggle settigns
+    judgment: 満たしていない
+  - procedure: fieldset 要素の最初から最後まで右スワイプで読み上げる
+    actual: |-
+      好きな外国の作家は？, フォームの開始位置です
+      ウィリアム・シェイクスピア, チェックボックス, unchecked, Double tap to toggle settings
+      ラドヤード・キップリング, チェックボックス, unchecked, Double tap to toggle settings
+      ジョージ・バーナード・ショー, チェックボックス, unchecked, Double tap to toggle settings
+      アーネスト・ヘミングウェイ, チェックボックス, unchecked, Double tap to toggle settings
+      チャールズ・ディケンズ, チェックボックス, unchecked, Double tap to toggle settings
+    judgment: 満たしていない
+environment_type: 音声閲覧環境
+comment:
+reviewer_comment: '[WAIC注] テスト手順に問題があり、適切に判定できていません。'
+tester: 桝田 草一
+date: 2020/12/17

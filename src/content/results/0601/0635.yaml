@@ -1,0 +1,14 @@
+id: 635
+test: 0010-02
+os: Windows 11 Enterprise 24H2 26100.2894
+user_agent: 131.0.6778.266（Official Build） （64 ビット）
+assistive_tech: NVDA 2024.3.1jp
+assistive_tech_config: マウスカーソル位置のテキスト報告を無効化
+contents:
+  - procedure: 下矢印キーを押してテーブル内に移動した後、引き続き下矢印キーを押していきテーブルから出た
+    actual: テーブルに入るタイミングで「テーブル」と読み上げられ、テーブルから出るタイミングで「テーブルの外」と読み上げられた
+    judgment: ○
+environment_type: 音声閲覧環境
+comment:
+tester: mehm8128
+date: '2025-01-23'

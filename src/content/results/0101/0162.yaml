@@ -1,0 +1,15 @@
+id: 162
+test: 0002-01
+os: Windows10 Home Version 1809
+user_agent: Google Chrome 71.0.3578.98（Official Build） （64 ビット）
+assistive_tech: NVDA 2018.4JP
+assistive_tech_config:
+contents:
+  - expected: アイコン画像の代替テキストとリンクテキストが続けて “ウェブアクセシビリティ基盤委員会 公式サイト” と読み上げられる
+    procedure: 下矢印キーを押してページの内容を読み上げた。
+    actual: 「リンク画像ウェブアクセシビリティ基盤委員会 公式サイト」と読み上げられ。た
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 辻勝利
+date: 2019/01/13

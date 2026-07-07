@@ -1,0 +1,19 @@
+id: 270
+test: 0010-05
+os: Windows 10 Pro 1803
+user_agent: Internet Explorer 11.0,101
+assistive_tech: PC-Talker 10 64bit Vesion.1.26
+assistive_tech_config:
+contents:
+  - expected: テキストのみを含むセルと関連付けられている列見出しを知るための何らかの手段が提供されている
+    procedure: 仮想カーソル移動コマンド(Ctrl+下矢印キー)で、表内のテキストに移動し、情報読み(Ctrl+Alt+G)で確認した
+    actual: 表の情報 列見出しを読み上げた。
+    judgment: 満たしている
+  - expected: リンクを含むセルと関連付けられている列見出しを知るための何らかの手段が提供されている
+    procedure: 仮想カーソル移動コマンド(Ctrl+下矢印キー)で、表内のリンクに移動し、情報読み(Ctrl+Alt+G)で確認
+    actual: 表の情報 列見出しを読み上げた。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 中野利保
+date: 2019/02/08

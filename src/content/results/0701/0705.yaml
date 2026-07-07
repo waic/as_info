@@ -1,0 +1,34 @@
+id: 705
+test: 0003-01
+os: Windows
+user_agent: Microsoft Edge
+assistive_tech: NVDA
+assistive_tech_config:
+contents:
+  - procedure: 'キーボード操作 : Tab キーを押下し、フォーカスの移動順序を確認'
+    actual: |-
+      次の順序でフォーカスが移動する :
+
+      送り先 1 の姓
+      送り先 1 の名
+      送り先 1 の住所
+      スイカ
+      オリジナルスタンプ
+      メロディカード
+      送り先 1 のメッセージ
+      1 番目の受取人へのカードプレビュー
+      送り先 2 の姓
+      送り先 2 の名
+      送り先 2 の住所
+      スイカ
+      オリジナルスタンプ
+      メロディカード
+      送り先 2 へのメッセージ
+      2 番目の受取人へのカードプレビュー
+      注文内容の確認
+      入力内容のリセット
+    judgment: ○
+environment_type: 音声閲覧環境
+comment:
+tester: hosaka
+date: '2025-10-23'

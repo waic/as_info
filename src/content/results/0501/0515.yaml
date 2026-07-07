@@ -1,0 +1,17 @@
+id: 515
+test: 0013-01
+os: Windows 11 Pro 22H2 22621.3007
+user_agent: Chrome 120.0.6099.225
+assistive_tech: NVDA 2023.1jp(2023.1.0.1991)
+assistive_tech_config:
+contents:
+  - procedure: テストファイルを操作し、結果を確認
+    actual: |-
+      次の 1. 〜 2. が両方とも満たされていない。
+       1. 画像に longdesc 属性が指定されていることを知るための何らかの手段が提供されている
+       2. longdesc 属性の値として指定されたリンク先の記述内容を知るための何らかの手段が提供されている
+    judgment: 満たしていない
+environment_type: 音声閲覧環境
+comment:
+tester: me_tks_
+date: '2024-01-18'

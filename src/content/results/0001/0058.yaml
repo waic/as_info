@@ -1,0 +1,25 @@
+id: 58
+test: 0003-02
+os: macOS 10.14.2
+user_agent: Firefox 64.0
+assistive_tech:
+assistive_tech_config:
+contents:
+  - expected: |-
+      次の順序でフォーカスが移動する :
+      テキストフィールド
+      “検索” ボタン
+      携帯サイト
+      サイトマップ
+    procedure: Webコンテンツ内をTabキーで移動した。
+    actual: |-
+      次の順序でフォーカスが移動した :
+      テキストフィールド
+      “検索” ボタン
+      携帯サイト
+      サイトマップ
+    judgment: 満たしている
+environment_type: 視覚閲覧環境
+comment:
+tester: 安倍 英樹
+date: 2019/01/02

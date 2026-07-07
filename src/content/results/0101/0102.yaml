@@ -1,0 +1,15 @@
+id: 102
+test: 0002-01
+os: Windows 10 Pro 1803
+user_agent: IE 11.0,101
+assistive_tech: PC-Talker 10 64bit Vesion.1.26
+assistive_tech_config:
+contents:
+  - expected: アイコン画像の代替テキストとリンクテキストが続けて “ウェブアクセシビリティ基盤委員会 公式サイト” と読み上げられる
+    procedure: Tabキーでリンク “ウェブアクセシビリティ基盤委員会 公式サイト”に移動した
+    actual: “ウェブアクセシビリティ基盤委員会 公式サイト” のみ読み上げられた
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 中野利保
+date: 2019/01/10

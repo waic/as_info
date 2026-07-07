@@ -1,0 +1,23 @@
+id: 297
+test: 0010-02
+os: Chrome OS 71
+user_agent: Chrome OS 71.0.3578.94(64bit)
+assistive_tech: 'ChromeVox Google TTS Setting : Chrome OS 日本語 インストール済み'
+assistive_tech_config: |-
+  参考：Chromebook ヘルプ / 組み込みのスクリーン リーダーを使用する
+   https://support.google.com/chromebook/answer/7031755?hl=ja
+contents:
+  - expected: テーブルの開始位置及び終了位置を知るための何らかの手段が提供されている
+    procedure: テーブルを読み上げ、内容を確認
+    actual: |-
+      テーブルにフォーカスを移動し、検索プラスcontrolプラスAltキーを押しながら矢印キーを押してセル間を移動する→
+       ・左端の列のセルで検索プラスcontrolプラスAltキーを押しながら左矢印キーを押すと 左にセルはありません と読みあげる。
+       ・右端の列のセルで検索プラスcontrolプラスAltキーを押しながら右矢印キーを押すと 右にセルはありません と読みあげる。
+       ・上端の行のセルで検索プラスcontrolプラスAltキーを押しながら下矢印キーを押すと 上にセルはありません と読みあげる。
+       ・下端の行のセルで検索プラスcontrolプラスAltキーを押しながら下矢印キーを押すと 下にセルはありません と読みあげる。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
+tester: 四方田正夫
+date: 2019/01/13

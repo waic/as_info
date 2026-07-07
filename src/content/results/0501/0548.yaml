@@ -1,0 +1,14 @@
+id: 548
+test: 0002-02
+os: Windows10
+user_agent: googleChrome
+assistive_tech: NVDA
+assistive_tech_config:
+contents:
+  - procedure: リンクを読み上げ、内容を確認
+    actual: リンクテキストとアイコン画像の代替テキストが続けて “施設ご利用の手引き”と” PDFファイル” 別にカーソルが乗った部分のみ読み上げられる
+    judgment: 満たしていない
+environment_type: 音声閲覧環境
+comment:
+tester: tokami
+date: '2024-06-13'

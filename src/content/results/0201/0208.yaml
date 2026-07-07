@@ -1,0 +1,16 @@
+id: 208
+test: 0005-01
+os: Windows 10 Home 64bit
+user_agent: 'GoogleChrome バージョン: 71.0.3578.98（Official Build） （64 ビット）'
+assistive_tech:
+assistive_tech_config:
+contents:
+  - expected: 利用者の必要に応じて、ページタイトルを確認できる何らかの手段が提供されている
+    procedure: ページを表示した後ctrl+Uでソースを表示した　F12を押して開発者ツールを表示した
+    actual: ソースを表示、開発者ツール共に<title>タグを確認できた
+    judgment: 満たしている
+environment_type: 視覚閲覧環境
+comment:
+reviewer_comment: '[WAIC注] テスト手順に問題があり、適切に判定できていません。'
+tester: yukiko makino
+date: 2019/01/13

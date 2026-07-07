@@ -1,0 +1,19 @@
+id: 51
+test: 0017-01
+os: macOS 10.14.2
+user_agent: Firefox 64.0
+assistive_tech: VoiceOver
+assistive_tech_config:
+contents:
+  - expected: |-
+      次の 1. 〜 2. をすべて満たしている
+      1. 1 番目の iframe 要素の title 属性値 “ウェブアクセシビリティ基盤委員会” または代替コンテンツ “WAIC ウェブサイトへ” を知るための何らかの手段が提供されている
+      2. 2 番目の iframe 要素の title 属性値 “WCAG2.0 日本語訳” または代替コンテンツ “ウェブ・コンテンツ・アクセシビリティ・ガイドライン (WCAG) 2.0” を知るための何らかの手段が提供されている
+    procedure: VOキー＋右矢印キーで文書の先頭から順に読み上げを行った。
+    actual: iframeはスキップされ読み上げられない。
+    judgment: 満たしていない
+environment_type: 音声閲覧環境
+comment:
+reviewer_comment: '[WAIC注] サーバー環境に問題があり、テストが実施できていません。'
+tester: 安倍 英樹
+date: 2018/12/30

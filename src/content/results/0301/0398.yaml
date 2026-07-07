@@ -1,0 +1,20 @@
+id: 398
+test: 0018-01
+os: Windows 10 Home 20H2
+user_agent: Microsoft Edge 87.0.664.60
+assistive_tech: NVDA 2021.2jp
+assistive_tech_config:
+contents:
+  - procedure: ブラウズモードでページの一番上からFキーで最初のラジオボタンに移動
+    actual: 「ハムレットの作者は？  グループ  ウィリアム・シェイクスピア  ラジオボタン  チェック 」と読み上げた。
+    judgment: 満たしている
+  - procedure: 結果1の操作に続いてFキーを5回押して「芥川龍之介」に移動した。
+    actual: 「坊っちゃんの作者は？  グループ  芥川龍之介  ラジオボタン  チェック」と読み上げた。
+    judgment: 満たしている
+  - procedure: 上下矢印キーで移動して「川端康成」に移動した。
+    actual: 「グループの外  ラジオボタン  チェックなし    川端康成」と読み上げた。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment: 3番はFキーによる移動ではグループの外であることを把握できなかった。
+tester: 西本卓也
+date: 2021/09/28

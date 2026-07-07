@@ -1,0 +1,14 @@
+id: 513
+test: 0012-04
+os: Windows 11 Pro 22H2 22621.3007
+user_agent: Chrome 120.0.6099.225
+assistive_tech: NVDA 2023.1jp(2023.1.0.1991)
+assistive_tech_config:
+contents:
+  - procedure: テストファイルを操作し、結果を確認
+    actual: セレクトメニューにフォーカスを移動すると、title 属性値 “検索範囲を選択” が読み上げられる
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: me_tks_
+date: '2024-01-18'

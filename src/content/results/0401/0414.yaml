@@ -1,0 +1,32 @@
+id: 414
+test: 0026-03
+os: Windows 11
+user_agent: Microsoft Edge 99.0.1150.30
+assistive_tech: NVDA 2021.3.3jp
+assistive_tech_config: ラップトップ配列、ブラウズモードでページを自動的に読み上げない
+contents:
+  - procedure: NVDA+A でページを上から下に向かって読み上げる
+    actual: |-
+      読み上げる内容
+      「見出し    レベル1  ウェブアクセシビリティ基盤委員会
+      メイン ランドマーク    WAIC の最新情報は以下をご参照ください。
+      セミナーなどのお知らせも行っています。
+      Twitter や Facebook でも情報発信しています。」
+    judgment: 満たしている
+  - procedure: NVDA+A でページを上から下に向かって読み上げる
+    actual: |-
+      読み上げる内容
+      「見出し    レベル1  ウェブアクセシビリティ基盤委員会
+      メイン ランドマーク    WAIC の最新情報は以下をご参照ください。
+      セミナーなどのお知らせも行っています。
+      Twitter や Facebook でも情報発信しています。」
+    judgment: 満たしている
+  - procedure: 1の手順に続いて上矢印キーで移動して読み上げる
+    actual: |
+      上矢印キーで読み上げる内容
+      「メイン ランドマーク    セミナーなどのお知らせも行っています。」
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 西本卓也
+date: 2022/03/04

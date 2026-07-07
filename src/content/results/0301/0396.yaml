@@ -1,0 +1,20 @@
+id: 396
+test: 0018-01
+os: Windows 10 Pro 20H2
+user_agent: NetReader Neo
+assistive_tech: PC-Talker Neo
+assistive_tech_config: 句読点読み, 括弧読み, 記号読み Off
+contents:
+  - procedure: タブキーを押して、「ウィリアム・シェイクスピア」のラジオボタンを選択した。
+    actual: 「ハムレットの作者は？ ウィリアム・シェイクスピアのラジオボタン 選択 ウィリアム・シェイクスピア ラジオ1 オン」と読み上げた
+    judgment: 満たしている
+  - procedure: タブキーを押して「芥川龍之介」のラジオボタンを選択した。
+    actual: 「坊っちゃんの作者は？ 芥川龍之介のラジオボタンの選択 川龍之のラジオボタン」と読み上げた。
+    judgment: 満たしている
+  - procedure: タブキーを押して「川端康成」を選択した。
+    actual: 「川端康成 ラジオ1」と読み上げられた。「坊っちゃんの作者は？」に所属するかどうかは読み上げからは判断できなかった。
+    judgment: 満たしていない
+environment_type: 音声閲覧環境
+comment:
+tester: 諸熊浩人
+date: 2021/09/28

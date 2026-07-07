@@ -1,0 +1,14 @@
+id: 499
+test: 0001-03
+os: Windows 11 Home 22H2 22621.2283
+user_agent: Microsoft Edge 117.0.2045.43
+assistive_tech:
+assistive_tech_config:
+contents:
+  - procedure: 「設定」の「サイトのアクセス許可」欄から「イメージ」をクリックして「すべて表示」をオフ
+    actual: 代替テキストは無く、テキスト「ウェブアクセシビリティ基盤委員会公開サイト」のみが表示された
+    judgment: 満たしている
+environment_type: 視覚閲覧環境
+comment:
+tester: akimayu
+date: '2023-09-28'

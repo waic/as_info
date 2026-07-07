@@ -1,0 +1,18 @@
+id: 20
+test: 0007-01
+os: macOS 10.14.2
+user_agent: Firefox 64.0
+assistive_tech: VoiceOver
+assistive_tech_config:
+contents:
+  - expected: |-
+      次の 1. 〜 2. をすべて満たしている
+      1. WAIC-CODE-0007-01-ref.html に遷移する
+      2. 入力したメールアドレスが URL エンコーディングされ、URL の末尾に付加されている
+    procedure: テキストフィールドにVOキー＋右矢印キーで移動後、VOキー＋スペースを押下してテキストフィールドをアクティブにしメールアドレスを入力。その後VOキー＋右矢印キーで「申し込む」ボタンに移動してVOキー＋スペースキーでボタンを押下した。
+    actual: WAIC-CODE-0007-01-ref.htmlに遷移した。またURLの末尾に入力したメールアドレスがURLエンコードされた状態で付加されていた。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 安倍 英樹
+date: 2018/12/28

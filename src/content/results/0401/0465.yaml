@@ -1,0 +1,16 @@
+id: 465
+test: 0005-01
+os: Windows 11 22h2
+user_agent: Google Chrome 117.0.5938.132（Official Bu
+assistive_tech: NVDA 2023.2jp-r2 (2023.2.0.3096)
+assistive_tech_config:
+contents:
+  - procedure: テストファイルをブラウザで読み込んだ
+    actual: タイトル(ウェブアクセシビリティ基盤委員会)が読み上げられた
+    judgment: 満たしている
+  - procedure: テストファイルを開いた状態で[alt+tab]キーを押し、ブラウザのウインドウのタイトルを読み上げ
+    actual: 「ウェブアクセシビリティ基盤委員会 - Google Chrome 2列2の4」と読み上げられ、ページタイトルを確認できる
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+tester: yuyaroid
+date: '2023-09-28'

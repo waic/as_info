@@ -1,0 +1,20 @@
+id: 706
+test: 0003-02
+os: Windows
+user_agent: Microsoft Edge
+assistive_tech: NVDA
+assistive_tech_config:
+contents:
+  - procedure: 'キーボード操作 : Tab キーを押下し、フォーカスの移動順序を確認'
+    actual: |-
+      次の順序でフォーカスが移動する :
+
+      テキストフィールド
+      “送信” ボタン
+      携帯サイト
+      サイトマップ
+    judgment: ○
+environment_type: 音声閲覧環境
+comment:
+tester: hosaka
+date: '2025-10-23'

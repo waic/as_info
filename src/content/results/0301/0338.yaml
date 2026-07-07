@@ -1,0 +1,34 @@
+id: 338
+test: 0018-01
+os: iOS 14.2
+user_agent: Safari
+assistive_tech: VoiceOver
+assistive_tech_config:
+contents:
+  - procedure: 右スワイプで順を追って読み上げ
+    actual: |-
+      文学作品に関するクイズです。
+      ハムレットの作者は？, フォームの開始位置です
+      ウィリアム・シェイクスピア, ラジオボタン, checked, 5の1
+      ラドヤード・キップリング, ラジオボタン, unchecked, 5の2
+      ジョージ・バーナード・ショー, ラジオボタン, unchecked, 5の3
+      アーネスト・ヘミングウェイ, ラジオボタン, unchecked, 5の4
+      チャールズ・ディケンズ, ラジオボタン, unchecked, 5の4
+    judgment: 満たしている
+  - procedure: 右スワイプで順を追って読み上げ
+    actual: |-
+      坊っちゃんの作者は？, フォームの開始位置です
+      芥川龍之介, ラジオボタン, checked, 3の1
+      夏目漱石, ラジオボタン, unchecked, 3の2
+      森鴎外, ラジオボタン, unchecked, 3の3
+    judgment: 満たしている
+  - procedure: 順を追ってスワイプし、川端康成のラジオボタンを読み上げた後に一つ前にスワイプで移動した
+    actual: |-
+      川端康成, ラジオボタン, unchecked
+      坊っちゃんの作者は？, 森鴎外, ラジオボタン, unchecked, 3の3
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+reviewer_comment: '[WAIC注] テスト手順に問題があり、適切に判定できていません。'
+tester: 桝田 草一
+date: 2020/12/17

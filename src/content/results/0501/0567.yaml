@@ -1,0 +1,14 @@
+id: 567
+test: 0004-01
+os: macOS
+user_agent: Google Chrome 126.0.6478.127
+assistive_tech: VoiceOver
+assistive_tech_config: 当該ページを開き、Control＋Optionキー+Shiftキーを押してコンテンツ内に入る
+contents:
+  - procedure: Control+Optionキーと左右矢印キーを押してusemap属性が設定されたimg要素を読み上げる
+    actual: 「デパートのフロアガイド。各階について詳しくお知りになりたい場合は各階をクリックしてください。、グループ」と読まれる
+    judgment: ×
+environment_type: 音声閲覧環境
+comment:
+tester: 久保田翔太
+date: '2024-07-03'

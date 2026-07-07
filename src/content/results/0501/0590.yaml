@@ -1,0 +1,14 @@
+id: 590
+test: 0092-01
+os: Windows 11 Pro　23H6
+user_agent: Microsoft Edge バージョン 129.0.2792.79 (公式ビルド) (64 ビット)
+assistive_tech:
+assistive_tech_config:
+contents:
+  - procedure: ブラウザの設定画面からフォントサイズを「大」に変更
+    actual: 「ユーザー」と「非常に」が他のテキストよりも大きく表示され、「ユーザー」は「非常に」よりも大きく表示された。
+    judgment: ○
+environment_type: 視覚閲覧環境
+comment:
+tester: 土永 崇之
+date: '2024-10-10'

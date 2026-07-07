@@ -1,0 +1,21 @@
+id: 350
+test: 0025-01
+os: Windows 10 Pro 2004
+user_agent: FireFox 83.0
+assistive_tech: PC-Talker 10
+assistive_tech_config:
+contents:
+  - procedure: テキスト「セッション1の様子」を選択した
+    actual: figure 要素であることは読み上げなかった
+    judgment: 満たしていない
+  - procedure: テキスト「セッション1の様子」を選択した
+    actual: figcaption 要素であることは読み上げなかった
+    judgment: 満たしていない
+  - procedure: テキスト「セッション1の様子」を選択した
+    actual: ユニークな要素であることは読み上げなかった
+    judgment: 満たしていない
+environment_type: 音声閲覧環境
+comment:
+reviewer_comment: '[WAIC注] テスト手順に問題があり、適切に判定できていません。'
+tester: 諸熊
+date: 2020/12/17

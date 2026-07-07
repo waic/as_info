@@ -1,0 +1,18 @@
+id: 604
+test: 0001-01
+os: Windows 11 Pro　23H2 22631.4169
+user_agent: chrom 129.0.6668.101
+assistive_tech: NVDA, Windows拡大鏡
+assistive_tech_config:
+contents:
+  - procedure: |-
+      ctrl+home
+      ブラウズモードを確認
+      下矢印
+    actual: |-
+      既読リンク、
+      ウェブアクセシビリティ基盤委員会公開サイトｋK
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+tester: かえる
+date: '2024-10-10'

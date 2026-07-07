@@ -1,0 +1,15 @@
+id: 197
+test: 0003-04
+os: Windows10 Home Version 1809
+user_agent: Google Chrome 71.0.3578.98（Official Build） （64 ビット）
+assistive_tech: NVDA 2018.4JP
+assistive_tech_config:
+contents:
+  - expected: '次の順序でフォーカスが移動する : (カッコ内は、指定されている tabindex 属性値) リンク 1 (1) リンク 3 (1) リンク 2 (2) リンク 4 (2)'
+    procedure: Tabキーでページ内を移動した。
+    actual: 想定していた順番で項目が読み上げられた。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 辻勝利
+date: 2019/01/13

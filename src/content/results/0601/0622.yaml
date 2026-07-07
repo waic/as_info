@@ -1,0 +1,16 @@
+id: 622
+test: 0053-01
+os: WindowsNT ver10.0
+user_agent: NetReader ネオモード 5.2407.59.125
+assistive_tech: PC-Talker Neo 12.2408.59.2302
+assistive_tech_config:
+contents:
+  - procedure: 矢印キーを押して、アイコンフォントAと、その次のテキストを確認した。
+    actual: 通知されたのは、アイコンフォントA、及び、スターだった。
+    judgment: 満たしている
+  - procedure: 矢印キーを押して、アイコンフォントBと、その次のテキストまで読み上げさせた。
+    actual: 通知した内容は「アイコンフォントB」テキストと、「Favorite」画像だった。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+tester: 諸熊
+date: '2024-10-10'

@@ -1,0 +1,31 @@
+id: 318
+test: 0015-03
+os: Chrome OS 71
+user_agent: Chrome OS 71.0.3578.94(64bit)
+assistive_tech: 'ChromeVox Google TTS Setting : Chrome OS 日本語 インストール済み'
+assistive_tech_config: |-
+  参考：Chromebook ヘルプ / 組み込みのスクリーン リーダーを使用する
+   https://support.google.com/chromebook/answer/7031755?hl=ja
+contents:
+  - expected: |-
+      次の 1. 〜 2. をすべて満たしている
+       
+       1. “吾輩は猫である。” に差し掛かかると、この部分が引用であることが通知される
+       
+       2. 引用部分の開始位置及び終了位置を知るための何らかの手段が提供されている
+       
+       テスト実施時の注意点 (音声閲覧環境) :行読みモードやブラウザモードなどで読み上げると、引用であることが自動的に通知されない場合は NG と判断
+    procedure: 段落を読み上げ、内容を確認
+    actual: |-
+      検索キー＋下矢印キーを押下していくと、以下の順に読み上げる。
+       
+       夏目漱石の著書「吾輩は猫である」は、以下の文章から始まります。
+       吾輩は猫である。名前はまだ無い。
+       どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。
+       夏目漱石はこのほかにも、「坊っちゃん」や「三四郎」など多くの作品を著しています。
+    judgment: 満たしていない
+environment_type: 音声閲覧環境
+comment:
+reviewer_comment: '[WAIC注]実施日を2018年から2019年に訂正しました。'
+tester: 四方田正夫
+date: 2019/01/13

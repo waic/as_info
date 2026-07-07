@@ -1,0 +1,14 @@
+id: 686
+test: WAIC-TEST-0001-01
+os: macOS 15.6.1
+user_agent: Google Chrome バージョン 141.0.7390.108
+assistive_tech: VoiceOver
+assistive_tech_config:
+contents:
+  - procedure: VoiceOverキー + 下矢印キーで移動。
+    actual: 「リンク ウェブアクセシビリティ基盤委員会公開サイト」と読み上げられた。
+    judgment: ○
+environment_type: 音声閲覧環境
+comment:
+tester: 軽部 裕香里
+date: '2025-10-23'

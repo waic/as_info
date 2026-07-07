@@ -1,0 +1,17 @@
+id: 517
+test: 0022-01
+os: Windows　10.0.22621.3007
+user_agent: Firefox 121.0.1
+assistive_tech: NVDA 2023.3.1jp
+assistive_tech_config:
+contents:
+  - procedure: NVDAがフォーカスモードの状態で、alt下矢印でコンボボックスを開いて、上下の矢印キーで移動した。
+    actual: みかんからにんじんに移動するときに「野菜 グループ にんじん 3の1 レベル2」と読み上げた。
+    judgment: 満たしている
+  - procedure: さらに上下の矢印キーで移動した。
+    actual: 上矢印で戻ると「フルーツ グループ みかん 4の4 レベル2」と読み上げた。再度下矢印で移動するとまた「野菜 グループ にんじん 3の1 レベル2」と読み上げた。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 西本卓也
+date: '2024-01-18'

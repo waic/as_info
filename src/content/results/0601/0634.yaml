@@ -1,0 +1,15 @@
+id: 634
+test: 0051-01
+os: WindowsNT ver10.0
+user_agent: NetReader ネオモード 5.2407.59.125
+assistive_tech: PC-Talker Neo 12.2408.59.2302
+assistive_tech_config:
+contents:
+  - procedure: 矢印キーを押して、「今週の質問」と読み上げるまで移動させた。
+    actual: |-
+      直前に「領域」と読み上げた。なお、末尾から上→キーを押すと、「税制の見直しは必要だと思いますか?
+      」を読み上げる前に「領域」と読み上げたので、前者は何らかの領域内であると予測できる。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+tester: 諸熊
+date: '2024-10-10'

@@ -1,0 +1,19 @@
+id: 191
+test: 0004-03
+os: macOS 10.14.2
+user_agent: Google Chrome 71.0.3578.98
+assistive_tech: VoiceOver
+assistive_tech_config:
+contents:
+  - expected: |-
+      (視覚閲覧環境) :
+      各 area 要素の alt 属性に指定した代替テキスト “4F 雑貨 書籍” “3F 衣料品” “2F お菓子 その他食品” “1F 生鮮食品” が表示される
+    procedure: |-
+      (視覚閲覧環境) :
+      表示 : ブラウザの設定を変更して画像非表示にし、表示内容を確認
+    actual: img の alt は表示されるが、area の alt は表示されませんでした。
+    judgment: 満たしていない
+environment_type: 音声閲覧環境
+comment:
+tester: 佐藤哲裕
+date: 2019/01/13
