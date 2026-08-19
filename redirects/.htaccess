@@ -1,0 +1,19 @@
+# アクセシビリティ サポーテッド（AS）情報 の URL 移転に伴うリダイレクト
+# 旧: https://waic.jp/docs/as/info/
+# 新: https://waic.github.io/as_info/
+#
+# 対象: .html 付き URL（およびディレクトリパス）
+# 注: .html なし URL（criteria/1.1.1 など）は対象外とする。
+#   （既存の別ルールで処理されるため、ここでは触れない）
+#
+# 使い方:
+#   - この .htaccess をサイトルート（/）に置く場合: このまま使用
+#   - /docs/as/info/ ディレクトリ内に置く場合:
+#       RewriteRule ^(.*\.html)$ https://waic.github.io/as_info/$1 [R=301,L]
+#     に変更する
+
+RewriteEngine On
+# ディレクトリパス（index.html を配信）
+RewriteRule ^docs/as/info/?$ https://waic.github.io/as_info/ [R=301,L]
+# .html 付きの全ページ
+RewriteRule ^docs/as/info/(.*\.html)$ https://waic.github.io/as_info/$1 [R=301,L]
