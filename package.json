@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "start": "npx http-server docs -p ${PORT:-8080} -a 0.0.0.0",
+    "start": "node scripts/redirect.js",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
