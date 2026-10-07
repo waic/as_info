@@ -7,10 +7,12 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Logo from '../../components/Logo.astro';
 import Navigation from '../../components/Navigation.astro';
 import { getTechs, getMetadata } from '../../lib/data';
+import { sortedKeysWith, techIdCompare } from '../../lib/utils';
 import { getLinkBase } from '../../lib/links';
 
 const metadata = await getMetadata();
 const techs = await getTechs();
+const techIds = sortedKeysWith(techs, techIdCompare);
 const base = getLinkBase(Astro.url.pathname);
 ---
 
@@ -26,7 +28,7 @@ const base = getLinkBase(Astro.url.pathname);
 
     <h2>達成方法（テクニック）の一覧</h2>
     <ul>
-      {Object.keys(techs).map((key) => (
+      {techIds.map((key) => (
         <li>
           <a href={`${base}techs/${key}.html`}>
             {key} {techs[key].title}

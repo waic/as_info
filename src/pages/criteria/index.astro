@@ -7,11 +7,12 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Logo from '../../components/Logo.astro';
 import Navigation from '../../components/Navigation.astro';
 import { getCriteria, getMetadata } from '../../lib/data';
-import { getCriterionLevel } from '../../lib/utils';
+import { getCriterionLevel, sortedKeys } from '../../lib/utils';
 import { getLinkBase } from '../../lib/links';
 
 const metadata = await getMetadata();
 const criteria = await getCriteria();
+const criterionIds = sortedKeys(criteria);
 const base = getLinkBase(Astro.url.pathname);
 ---
 
@@ -27,7 +28,7 @@ const base = getLinkBase(Astro.url.pathname);
 
     <h2>達成基準の一覧</h2>
     <ul>
-      {Object.keys(criteria).map((key) => (
+      {criterionIds.map((key) => (
         <li>
           <a href={`${base}criteria/${key}.html`}>
             {key}

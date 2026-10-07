@@ -14,6 +14,7 @@ import {
   getTechDir,
   queryCriteria,
   getResultsCount,
+  sortedKeys,
 } from '../../lib/utils';
 import { getLinkBase } from '../../lib/links';
 
@@ -41,7 +42,7 @@ const results = await getResults();
 
 const tech = techs[techId];
 const techDir = getTechDir(techId);
-const testIds = Object.keys(tests).filter((key) => tests[key].techs.includes(techId));
+const testIds = sortedKeys(tests).filter((key) => tests[key].techs.includes(techId));
 const criterionIds = queryCriteria(tests, testIds, techId);
 const base = getLinkBase(Astro.url.pathname);
 ---
