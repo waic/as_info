@@ -3,6 +3,41 @@
  * 元のNext.js版 functions/ ディレクトリの関数を移植
  */
 
+/**
+ * 自然順（natural sort）で文字列を比較する
+ * 例: ARIA2 が ARIA10 より前に来る
+ */
+export function naturalCompare(a: string, b: string): number {
+  return a.localeCompare(b, 'en', { numeric: true });
+}
+
+/** 達成方法IDの系統（表示順を維持する） */
+const TECH_SYSTEM_ORDER = ['H', 'C', 'ARIA', 'SCR'] as const;
+
+/** 達成方法IDから系統を取り出す（例: ARIA10 → ARIA, H2 → H） */
+function techSystem(techId: string): string {
+  const m = techId.match(/^[A-Za-z]+/);
+  return m ? m[0] : techId;
+}
+
+/**
+ * 達成方法IDを「系統順（H → C → ARIA → SCR）→ 系統内は数値順」で比較する
+ */
+export function techIdCompare(a: string, b: string): number {
+  const sa = techSystem(a);
+  const sb = techSystem(b);
+  if (sa !== sb) {
+    const ia = TECH_SYSTEM_ORDER.indexOf(sa as (typeof TECH_SYSTEM_ORDER)[number]);
+    const ib = TECH_SYSTEM_ORDER.indexOf(sb as (typeof TECH_SYSTEM_ORDER)[number]);
+    // 未知の系統は末尾にまとめて辞書順
+    if (ia === -1 && ib === -1) return naturalCompare(sa, sb);
+    if (ia === -1) return 1;
+    if (ib === -1) return -1;
+    return ia - ib;
+  }
+  return naturalCompare(a, b);
+}
+
 // 達成基準のデータ型
 type CriterionData = {
   title: string;
@@ -164,7 +199,7 @@ export function queryTechs(
       });
     }
   });
-  techs.sort();
+  techs.sort(techIdCompare);
   return techs;
 }
 
@@ -186,7 +221,7 @@ export function queryCriteria(
       });
     }
   });
-  criteria.sort();
+  criteria.sort(naturalCompare);
   return criteria;
 }
 
