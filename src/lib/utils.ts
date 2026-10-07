@@ -11,6 +11,23 @@ export function naturalCompare(a: string, b: string): number {
   return a.localeCompare(b, 'en', { numeric: true });
 }
 
+/**
+ * Record のキーを自然順に並べて返す
+ */
+export function sortedKeys<T>(record: Record<string, T>): string[] {
+  return Object.keys(record).sort(naturalCompare);
+}
+
+/**
+ * Record のキーを比較関数で並べて返す
+ */
+export function sortedKeysWith<T>(
+  record: Record<string, T>,
+  compare: (a: string, b: string) => number
+): string[] {
+  return Object.keys(record).sort(compare);
+}
+
 /** 達成方法IDの系統（表示順を維持する） */
 const TECH_SYSTEM_ORDER = ['H', 'C', 'ARIA', 'SCR'] as const;
 
@@ -177,9 +194,7 @@ export function queryCriteriaWithTests(
   criteria: Record<string, CriterionData>,
   tests: Record<string, TestData>
 ): string[] {
-  return Object.keys(criteria).filter(
-    (key) => getTestsCount(tests, key) > 0
-  );
+  return sortedKeys(criteria).filter((key) => getTestsCount(tests, key) > 0);
 }
 
 /**

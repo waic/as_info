@@ -7,12 +7,12 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Logo from '../../components/Logo.astro';
 import Navigation from '../../components/Navigation.astro';
 import { getTechs, getMetadata } from '../../lib/data';
-import { techIdCompare } from '../../lib/utils';
+import { sortedKeysWith, techIdCompare } from '../../lib/utils';
 import { getLinkBase } from '../../lib/links';
 
 const metadata = await getMetadata();
 const techs = await getTechs();
-const techIds = Object.keys(techs).sort(techIdCompare);
+const techIds = sortedKeysWith(techs, techIdCompare);
 const base = getLinkBase(Astro.url.pathname);
 ---
 
