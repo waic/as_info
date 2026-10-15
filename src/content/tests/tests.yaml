@@ -423,8 +423,8 @@
 0016-01:
   title: ページの言語
   code:
-    - https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0016-01.html
-    - https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0016-02.html
+  - https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0016-01.html
+  - https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0016-02.html
   document: https://waic.github.io/as_test/WAIC-TEST/HTML/WAIC-TEST-0016-01.html
   criteria:
   - 3.1.1
@@ -820,6 +820,14 @@
   - 1.1.1
   techs:
   - ARIA6
+0038-02:
+  title: 領域ランドマークへのaria-labelによるラベル付け
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0038-02.html
+  document: https://waic.github.io/as_test/WAIC-TEST/HTML/WAIC-TEST-0038-02.html
+  criteria:
+  - 1.1.1
+  techs:
+  - ARIA6
 0039-01:
   title: aria-label 属性によるラベルの提供（a 要素）
   code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0039-01.html
@@ -850,7 +858,8 @@
   title: aria-labelledby による代替テキストの提供（img要素）
   code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0042-01.html
   document: https://waic.github.io/as_test/WAIC-TEST/HTML/WAIC-TEST-0042-01.html
-  criteria: []
+  criteria:
+  - 1.1.1
   techs:
   - ARIA10
 0043-01:
@@ -900,8 +909,8 @@
   code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0047-01.html
   document: https://waic.github.io/as_test/WAIC-TEST/HTML/WAIC-TEST-0047-01.html
   criteria:
-    - 1.3.1
-    - 4.1.2
+  - 1.3.1
+  - 4.1.2
   techs:
   - ARIA16
 0047-02:
@@ -909,8 +918,8 @@
   code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0047-02.html
   document: https://waic.github.io/as_test/WAIC-TEST/HTML/WAIC-TEST-0047-02.html
   criteria:
-    - 1.3.1
-    - 4.1.2
+  - 1.3.1
+  - 4.1.2
   techs:
   - ARIA16
 0047-03:
@@ -918,8 +927,8 @@
   code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0047-03.html
   document: https://waic.github.io/as_test/WAIC-TEST/HTML/WAIC-TEST-0047-03.html
   criteria:
-    - 1.3.1
-    - 4.1.2
+  - 1.3.1
+  - 4.1.2
   techs:
   - ARIA9
   - ARIA16
@@ -980,7 +989,7 @@
   code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0053-01.html
   document: https://waic.github.io/as_test/WAIC-TEST/HTML/WAIC-TEST-0053-01.html
   criteria:
-    - 1.3.1
+  - 1.3.1
   techs:
   - ARIA24
 0054-01:
@@ -1022,7 +1031,7 @@
   code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0056-01.html
   document: https://waic.github.io/as_test/WAIC-TEST/HTML/WAIC-TEST-0056-01.html
   criteria:
-    - 1.1.1
+  - 1.1.1
   techs:
   - C18
 0057-01:
@@ -1041,6 +1050,14 @@
   - 1.3.5
   techs:
   - H98
+0088-02:
+  title: セマンティックな HTML 要素を用いてページの領域を識別する（事例2）
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0088-02.html
+  document: https://waic.github.io/as_test/WAIC-TEST/HTML/WAIC-TEST-0088-02.html
+  criteria:
+  - 1.3.1
+  techs:
+  - H101
 0089-01:
   title: HTMLのdialog要素を使用してモーダルダイアログを作成する
   code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0089-01.html
@@ -1054,10 +1071,10 @@
   code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0090-01.html
   document: https://waic.github.io/as_test/WAIC-TEST/HTML/WAIC-TEST-0090-01.html
   criteria:
-    - 1.4.4
-    - 1.4.5
-    - 1.4.8
-    - 1.4.9
+  - 1.4.4
+  - 1.4.5（参考）
+  - 1.4.8
+  - 1.4.9（参考）
   techs:
   - C12
   - C13
@@ -1067,10 +1084,10 @@
   code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0091-01.html
   document: https://waic.github.io/as_test/WAIC-TEST/HTML/WAIC-TEST-0091-01.html
   criteria:
-    - 1.4.4
-    - 1.4.5
-    - 1.4.8
-    - 1.4.9
+  - 1.4.4
+  - 1.4.5（参考）
+  - 1.4.8
+  - 1.4.9（参考）
   techs:
   - C12
   - C13
@@ -1100,7 +1117,7 @@
   code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0119-01.html
   document: https://waic.github.io/as_test/WAIC-TEST/HTML/WAIC-TEST-0119-01.html
   criteria:
-    - 2.1.1
+  - 2.1.1
   techs:
   - SCR2
 0121-01:

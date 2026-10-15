@@ -97,6 +97,9 @@ H97:
 H98:
   title: autocomplete 属性を使用して入力内容を関連付ける
   target:
+H101:
+  title: セマンティックな HTML 要素を使用して、ページの領域を識別する
+  target:
 H102:
   title: HTML の dialog 要素を使用する
   target:
