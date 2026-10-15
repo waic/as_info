@@ -1042,6 +1042,16 @@
   - 4.1.2
   techs:
   - ARIA5
+0057-02:
+  title: role="slider" へのステート、プロパティ指定
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0057-02.html
+  document: https://waic.github.io/as_test/WAIC-TEST/HTML/WAIC-TEST-0057-02.html
+  criteria:
+  - 4.1.2
+  techs:
+  - G10
+  - ARIA4
+  - H91
 0085-01:
   title: autocomplete 属性による入力内容の関連付け
   code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0085-01.html
