@@ -62,6 +62,7 @@ const testsSchema = z.object({
   document: z.string().describe('テストドキュメントのURL'),
   criteria: z.array(z.string()).describe('関連する達成基準のID'),
   techs: z.array(z.string()).describe('適用される達成方法のID'),
+  selectors: z.array(z.string()).optional().describe('関連する要素や属性（CSSセレクタ形式、例: input[type="text"]）'),
 });
 
 /**
