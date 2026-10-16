@@ -153,6 +153,7 @@ export function getCriterionLookupId(
 const techDirMap: { [key: string]: string } = {
   'ARIA': 'aria',
   'C': 'css',
+  'G': 'general',
   'SCR': 'client-side-script',
 };
 

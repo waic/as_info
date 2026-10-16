@@ -91,11 +91,17 @@ H81:
 H85:
   title: select 要素内の option 要素をグループ化するために、optgroup 要素を使用する
   target:
+H91:
+  title: HTML のフォームコントロール及びリンクを使用する
+  target:
 H97:
   title: nav 要素を使用して、関連したリンクをグループ化する
   target:
 H98:
   title: autocomplete 属性を使用して入力内容を関連付ける
+  target:
+H101:
+  title: セマンティックな HTML 要素を用いてページの領域を識別する
   target:
 H102:
   title: HTML の dialog 要素を使用する
@@ -202,4 +208,7 @@ SCR2:
   target:
 SCR16:
   title: 制限時間が切れようとしていることを利用者に警告するスクリプトを提供する
+  target:
+G10:
+  title: 名前 (name) 及び役割 (role) を取得し、利用者が設定可能なプロパティを直接設定可能にし、変化を通知するためにユーザエージェントが動作する、プラットフォームのアクセシビリティ API 機能をサポートするウェブコンテンツ技術を用いて、コンポーネントを作成する
   target:
