@@ -1,0 +1,14 @@
+id: 717
+test: 0001-03
+os: Windows 11 Pro 25H2
+user_agent: Google Chrome 153.0.8010.48
+assistive_tech: Windows 標準
+assistive_tech_config:
+contents:
+  - procedure: ブラウザの設定を変更して画像非表示にし、表示内容を確認
+    actual: テキスト “ウェブアクセシビリティ基盤委員会公開サイト” のみが表示される
+    judgment: 満たしている
+environment_type: 視覚閲覧環境
+comment:
+tester: 佐藤道子
+date: '2026-09-17'

@@ -1,0 +1,14 @@
+id: 797
+test: 0002-02
+os: macOS Tahoe v26.2
+user_agent: Google Chrome
+assistive_tech: mac VoiceOver
+assistive_tech_config: 特になし
+contents:
+  - procedure: Tabキーを押してリンクにフォーカスを当てた
+    actual: 「リンク、施設ご利用の手引き PDFファイル」と読み上げられた
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 小林 幸司
+date: '2026-09-17'

@@ -1,0 +1,17 @@
+id: 734
+test: 0017-01
+os: Windows11 64bit build 26200
+user_agent: NetReader Neo 5.2609.85.151
+assistive_tech: PC-Talker 12.2609.75.2502
+assistive_tech_config:
+contents:
+  - procedure: インラインフレーム内を行き来したり、フレームを読み上げたりした。
+    actual: title 属性の内容は読み上げしなかった。
+    judgment: 満たしていない
+  - procedure: インラインフレーム内を行き来したり、フレームを読み上げたりした。
+    actual: title 属性の内容の読み上げは無かった。
+    judgment: 満たしていない
+environment_type: 音声閲覧環境
+comment:
+tester: 諸熊
+date: '2026-09-17'
