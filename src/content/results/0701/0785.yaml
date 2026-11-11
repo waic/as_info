@@ -13,8 +13,7 @@ assistive_tech:
 assistive_tech_config:
 contents:
   - procedure: Tabキーでリンクに遷移し、Enterキーを押下した。
-    actual: "遷移したリンク先。\n「4F雑貨」 \n「3F衣料品」\n「2Fお菓子」 \n「1F生鮮食品」 \n\n遷移しなかったリンク先。\n「お問い合わせ一覧」\n\
-      「周辺地図」"
+    actual: "遷移したリンク先。\n「4F雑貨」 \n「3F衣料品」\n「2Fお菓子」 \n「1F生鮮食品」 \n\n遷移しなかったリンク先。\n「お問い合わせ一覧」\n「周辺地図」"
     judgment:
 environment_type: 視覚閲覧環境
 comment:
