@@ -1,0 +1,21 @@
+id: 784
+test: 0004-04
+os: |-
+  エディション    Windows 11 Pro
+  バージョン    25H2
+  インストール日    2025/10/17
+  OS ビルド    26200.9457
+  エクスペリエンス    Windows 機能エクスペリエンス パック 1000.26100.360.0
+user_agent: |-
+  Microsoft Edge
+  バージョン 153.0.4234.32 (公式ビルド) (64 ビット)
+assistive_tech: Windows11 ナレーター
+assistive_tech_config:
+contents:
+  - procedure: Tabキーでリンクに遷移し、Enterキーを押下した。
+    actual: "遷移したリンク先。\n「4F雑貨」 \n「3F衣料品」\n「2Fお菓子」 \n「1F生鮮食品」 \n\n遷移しなかったリンク先。\n「お問い合わせ一覧」\n「周辺地図」"
+    judgment:
+environment_type: 音声閲覧環境
+comment:
+tester: 前島怜佳
+date: '2026-09-22'

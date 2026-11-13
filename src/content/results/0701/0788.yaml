@@ -1,0 +1,21 @@
+id: 788
+test: 0005-01
+os: |-
+  エディション    Windows 11 Pro
+  バージョン    25H2
+  インストール日    2025/10/17
+  OS ビルド    26200.9457
+  エクスペリエンス    Windows 機能エクスペリエンス パック 1000.26100.360.0
+user_agent: |-
+  Microsoft Edge
+  バージョン 153.0.4234.32 (公式ビルド) (64 ビット)
+assistive_tech: Windows11 ナレーター
+assistive_tech_config:
+contents:
+  - procedure: 対象のページを開き、タブキーを押下した。
+    actual: 「ウェブアクセシビリティ基盤委員会」と読み上げられた。
+    judgment:
+environment_type: 音声閲覧環境
+comment:
+tester: 前島怜佳
+date: '2026-09-22'

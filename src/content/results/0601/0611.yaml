@@ -1,7 +1,7 @@
 id: 611
 test: 0092-01
 os: macOS 14.6.1
-user_agent: 'Firefox 131.0.2 '
+user_agent: 'Firefox 131.0.2'
 assistive_tech: なし（視覚閲覧環境）
 assistive_tech_config:
 contents:

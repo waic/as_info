@@ -1,0 +1,21 @@
+id: 768
+test: 0002-02
+os: |-
+  エディション    Windows 11 Pro
+  バージョン    25H2
+  インストール日    2025/10/17
+  OS ビルド    26200.9457
+  エクスペリエンス    Windows 機能エクスペリエンス パック 1000.26100.360.0
+user_agent: |-
+  Microsoft Edge
+  バージョン 153.0.4234.32 (公式ビルド) (64 ビット)
+assistive_tech:
+assistive_tech_config:
+contents:
+  - procedure: ブラウザを画像非表示に設定変更し、表示内容を確認した
+    actual: 「施設ご利用の手引きPDFファイル」とリンクテキストが表示される
+    judgment: ○
+environment_type: 視覚閲覧環境
+comment:
+tester: 前島怜佳
+date: '2026-09-18'

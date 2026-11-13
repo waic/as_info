@@ -1,0 +1,14 @@
+id: 750
+test: 0001-03
+os: Windows
+user_agent: Microsoft Edge
+assistive_tech: PC-Talker Neo
+assistive_tech_config:
+contents:
+  - procedure:
+    actual:
+    judgment: ○
+environment_type: 視覚閲覧環境
+comment:
+tester: 木村知史
+date: '2026-09-17'

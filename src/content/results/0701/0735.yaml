@@ -1,0 +1,14 @@
+id: 735
+test: 0017-02
+os: Windows11 64bit build 26200
+user_agent: NetReader Neo 5.2609.85.151
+assistive_tech: PC-Talker 12.2609.75.2502
+assistive_tech_config:
+contents:
+  - procedure: インラインフレーム間を移動できるキー m キーなどを押した。
+    actual: フレームの先頭には移動出来たが、末尾には移動できなかった。mキーを複数押下した場合、フレーム間のテキストは無視された。
+    judgment: 満たしていない
+environment_type: 音声閲覧環境
+comment:
+tester: 諸熊
+date: '2026-09-17'

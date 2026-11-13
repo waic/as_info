@@ -1,0 +1,31 @@
+id: 773
+test: 0003-03
+os: |-
+  エディション    Windows 11 Pro
+  バージョン    25H2
+  インストール日    2025/10/17
+  OS ビルド    26200.9457
+  エクスペリエンス    Windows 機能エクスペリエンス パック 1000.26100.360.0
+user_agent: |-
+  Microsoft Edge
+  バージョン 153.0.4234.32 (公式ビルド) (64 ビット)
+assistive_tech: Windows11 ナレーター
+assistive_tech_config:
+contents:
+  - procedure: Tab キーを押下し、フォーカスの移動順序を確認した。
+    actual: |-
+      次の 1. 〜 2. をすべて満たしている
+
+      次の順序でフォーカスが移動する : (カッコ内は、指定されている tabindex 属性値)
+      リンク 4 (1)
+      リンク 3 (2)
+      リンク 2 (3)
+      リンク 1 (4)
+      リンク 5 (0)
+      リンク 7 (0)
+      リンク 6 (tabindex="-1") にはフォーカスが移動しない
+    judgment: ○
+environment_type: 音声閲覧環境
+comment:
+tester: 前島怜佳
+date: '2026-09-18'

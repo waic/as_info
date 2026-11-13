@@ -1,0 +1,14 @@
+id: 728
+test: 0003-03
+os: Windows 11 Pro 25H2
+user_agent: Google Chrome 153.0.8010.48
+assistive_tech: Windows 標準
+assistive_tech_config:
+contents:
+  - procedure: ' Tab キーを押下し、フォーカスの移動順序を確認'
+    actual: '`期待される結果１` と同様にフォーカスが移動した'
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 佐藤道子
+date: '2026-09-17'
