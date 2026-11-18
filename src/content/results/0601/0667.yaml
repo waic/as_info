@@ -1,7 +1,7 @@
 id: 667
 test: 0056-01
 os: macOS 11.7.10
-user_agent: 'Safari 16.6.1 '
+user_agent: 'Safari 16.6.1'
 assistive_tech:
 assistive_tech_config:
 contents:

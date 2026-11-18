@@ -1,6 +1,6 @@
 id: 159
 test: 0003-01
-os: 'macOS 10.14.2 '
+os: 'macOS 10.14.2'
 user_agent: Google Chrome 71.0.3578.98
 assistive_tech: VoiceOver
 assistive_tech_config:

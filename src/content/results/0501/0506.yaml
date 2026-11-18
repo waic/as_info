@@ -8,7 +8,7 @@ contents:
   - procedure: |-
       (視覚閲覧環境)
       ブラウザの設定を変更して画像非表示にし、表示内容を確認
-    actual: '画像の代わりに代替テキスト “送信送信”と表示された。 '
+    actual: '画像の代わりに代替テキスト “送信送信”と表示された。'
     judgment: ×
 environment_type: 視覚閲覧環境
 comment:

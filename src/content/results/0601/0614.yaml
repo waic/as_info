@@ -1,7 +1,7 @@
 id: 614
 test: 0121-01
 os: Windows 10 Pro 22H2
-user_agent: 'Firefox 131.0.2 '
+user_agent: 'Firefox 131.0.2'
 assistive_tech: なし（視覚閲覧環境）
 assistive_tech_config:
 contents:

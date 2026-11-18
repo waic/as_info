@@ -1,0 +1,23 @@
+id: 783
+test: 0004-03
+os: |-
+  エディション    Windows 11 Pro
+  バージョン    25H2
+  インストール日    2025/10/17
+  OS ビルド    26200.9457
+  エクスペリエンス    Windows 機能エクスペリエンス パック 1000.26100.360.0
+user_agent: |-
+  Microsoft Edge
+  バージョン 153.0.4234.32 (公式ビルド) (64 ビット)
+assistive_tech:
+assistive_tech_config:
+contents:
+  - procedure: |-
+      画像を非表示に設定した。
+      プライバシー/検索/サービス/サイトのアクセス許可/すべてのアクセス許可/イメージをオフ
+    actual: 各 area 要素の alt 属性に指定した代替テキスト 「4F 雑貨 書籍」「3F 衣料品」「2F お菓子その他食品」「1F 生鮮食品」が表示されない。
+    judgment: ×
+environment_type: 視覚閲覧環境
+comment:
+tester: 前島怜佳
+date: '2026-09-21'

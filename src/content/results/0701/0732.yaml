@@ -1,0 +1,20 @@
+id: 732
+test: 0015-02
+os: Windows11 64bit build 26200
+user_agent: NetReader Neo 5.2609.85.151
+assistive_tech: PC-Talker 12.2609.75.2502
+assistive_tech_config:
+contents:
+  - procedure: 猫の部分を読み上げ
+    actual: 特に強調されたような読み方はされなかった。
+    judgment: 満たしていない
+  - procedure: 犬の部分を読み上げ
+    actual: 特に強調されたような読み方はされなかった。
+    judgment: 満たしていない
+  - procedure: 亀の部分を読み上げた。
+    actual: 誤解されるような通知以前に、普通のテキストとして読み上げていた。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 諸熊
+date: '2026-09-17'

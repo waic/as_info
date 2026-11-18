@@ -1,0 +1,17 @@
+id: 738
+test: 0019-03
+os: Windows11 64bit build 26200
+user_agent: NetReader Neo 5.2609.85.151
+assistive_tech: PC-Talker 12.2609.75.2502
+assistive_tech_config:
+contents:
+  - procedure: テーブル読みモードを起動して行方向にリンク位置へ移動
+    actual: 行見出しを読み上げた
+    judgment: 満たしている
+  - procedure: 引き続き、テーブル読みモードにて列方向への移動を確認
+    actual: リンク選択時、列見出しが通知された。
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 諸熊
+date: '2026-09-17'

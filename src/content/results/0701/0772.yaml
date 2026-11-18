@@ -1,0 +1,26 @@
+id: 772
+test: 0003-02
+os: |-
+  エディション    Windows 11 Pro
+  バージョン    25H2
+  インストール日    2025/10/17
+  OS ビルド    26200.9457
+  エクスペリエンス    Windows 機能エクスペリエンス パック 1000.26100.360.0
+user_agent: |-
+  Microsoft Edge
+  バージョン 153.0.4234.32 (公式ビルド) (64 ビット)
+assistive_tech:
+assistive_tech_config:
+contents:
+  - procedure: ' Tab キーを押下し、フォーカスの移動順序を確認した。'
+    actual: |-
+      次の順序でフォーカスが移動する :
+      テキストフィールド
+      “送信” ボタン
+      携帯サイト
+      サイトマップ
+    judgment: ○
+environment_type: 視覚閲覧環境
+comment:
+tester: 前島怜佳
+date: '2026-09-18'

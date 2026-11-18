@@ -1,0 +1,14 @@
+id: 805
+test: 0004-04
+os: macOS Tahoe v26.2
+user_agent: Google Chrome
+assistive_tech: mac VoiceOver
+assistive_tech_config: 特になし
+contents:
+  - procedure: Tabキーを押して、各階の画像にフォーカスを当てて、Enterキーを押した
+    actual: 4Fから1Fまですべて、各リンク先に移動したのち、各リンク先の内容が読み上げられた
+    judgment: 満たしている
+environment_type: 音声閲覧環境
+comment:
+tester: 小林 幸司
+date: '2026-09-17'

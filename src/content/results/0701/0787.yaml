@@ -1,0 +1,35 @@
+id: 787
+test: 0004-05
+os: |-
+  エディション    Windows 11 Pro
+  バージョン    25H2
+  インストール日    2025/10/17
+  OS ビルド    26200.9457
+  エクスペリエンス    Windows 機能エクスペリエンス パック 1000.26100.360.0
+user_agent: |-
+  Microsoft Edge
+  バージョン 153.0.4234.32 (公式ビルド) (64 ビット)
+assistive_tech:
+assistive_tech_config:
+contents:
+  - procedure: Tabキーを押下した。
+    actual: |-
+      次の個所にフォーカスが移動された。
+      周りに枠線がつき、リンクとして判別可能となった。
+      「4F雑貨書籍」
+      「3F衣料品」
+      「2Fお菓子そのほか食品」
+      「1F生鮮食品」
+    judgment: ○
+  - procedure: イメージマップにマウスポインタを当てた。
+    actual: |-
+      次の個所にポインタを動かしたとき、ポインタから指の形に変わった。
+      「4F雑貨書籍」
+      「3F衣料品」
+      「2Fお菓子そのほか食品」
+      「1F生鮮食品」
+    judgment: ○
+environment_type: 視覚閲覧環境
+comment:
+tester: 前島怜佳
+date: '2026-09-22'
