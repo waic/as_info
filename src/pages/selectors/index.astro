@@ -1,0 +1,108 @@
+---
+/**
+ * 要素・属性からテストを探すページ
+ * 各テストの「関連する要素や属性」(selectors) を、要素と属性で別々に絞り込む
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Logo from '../../components/Logo.astro';
+import Navigation from '../../components/Navigation.astro';
+import { getTests, getMetadata } from '../../lib/data';
+import { getLinkBase } from '../../lib/links';
+
+const metadata = await getMetadata();
+const tests = await getTests();
+const base = getLinkBase(Astro.url.pathname);
+
+// 各テストの selectors を、要素名と属性（名前・名前="値"・疑似クラス）に分解する
+function parseSelector(selector: string) {
+  const compounds = selector.trim().split(/\s+/);
+  const elements = compounds
+    .map((c) => c.match(/^[a-z][a-z0-9]*/i)?.[0].toLowerCase())
+    .filter((e): e is string => Boolean(e));
+  const attributes = compounds.flatMap((c) => [
+    ...[...c.matchAll(/\[([a-z][a-z0-9-]*)(?:="([^"]*)")?\]/gi)].flatMap((m) =>
+      m[2] === undefined ? [m[1]] : [m[1], `${m[1]}="${m[2]}"`],
+    ),
+    ...(c.match(/:[a-z-]+/gi) ?? []),
+  ]);
+  return { elements, attributes };
+}
+
+const entries = Object.keys(tests).map((key) => {
+  const selectors = tests[key].selectors ?? [];
+  const parsed = selectors.map(parseSelector);
+  return {
+    key,
+    title: tests[key].title,
+    selectors,
+    elements: [...new Set(parsed.flatMap((p) => p.elements))],
+    attributes: [...new Set(parsed.flatMap((p) => p.attributes))],
+  };
+});
+const allElements = [...new Set(entries.flatMap((e) => e.elements))].sort();
+const allAttributes = [...new Set(entries.flatMap((e) => e.attributes))].sort();
+---
+
+<BaseLayout title="要素・属性からテストを探す">
+  <Logo />
+  <main id="main">
+    <a href={base}>アクセシビリティ サポーテッド（AS）情報のホームへ</a>
+    <h1>アクセシビリティ サポーテッド（AS）情報</h1>
+    <ul>
+      <li>作成者：{metadata.author}</li>
+      {metadata.status && <li>注記：{metadata.status}</li>}
+    </ul>
+
+    <h2>要素・属性からテストを探す</h2>
+    <p>
+      <label for="element-filter">要素</label>
+      <select id="element-filter">
+        <option value="">すべて</option>
+        {allElements.map((e) => <option value={e}>{e}</option>)}
+      </select>
+      <label for="attribute-filter">属性</label>
+      <select id="attribute-filter">
+        <option value="">すべて</option>
+        {allAttributes.map((a) => <option value={a}>{a}</option>)}
+      </select>
+    </p>
+    <p id="filter-status" role="status">{entries.length}件のテスト</p>
+
+    <ul id="test-list">
+      {entries.map((e) => (
+        <li data-elements={JSON.stringify(e.elements)} data-attributes={JSON.stringify(e.attributes)}>
+          <a href={`${base}results/${e.key}.html`}>{e.key}: {e.title}</a>
+          {e.selectors.length > 0 && (
+            <>
+              {' '}(<code>{e.selectors.join(' , ')}</code>)
+            </>
+          )}
+        </li>
+      ))}
+    </ul>
+  </main>
+
+  <Navigation showCriteriaLink showTechsLink />
+
+  <script is:inline>
+    var elementSelect = document.getElementById('element-filter');
+    var attributeSelect = document.getElementById('attribute-filter');
+    var items = Array.prototype.slice.call(document.querySelectorAll('#test-list > li'));
+    var status = document.getElementById('filter-status');
+    function update() {
+      var element = elementSelect.value;
+      var attribute = attributeSelect.value;
+      var shown = 0;
+      items.forEach(function (li) {
+        var ok =
+          (!element || JSON.parse(li.dataset.elements).indexOf(element) >= 0) &&
+          (!attribute || JSON.parse(li.dataset.attributes).indexOf(attribute) >= 0);
+        li.hidden = !ok;
+        if (ok) shown++;
+      });
+      status.textContent = shown + '件のテスト';
+    }
+    elementSelect.addEventListener('change', update);
+    attributeSelect.addEventListener('change', update);
+  </script>
+</BaseLayout>
