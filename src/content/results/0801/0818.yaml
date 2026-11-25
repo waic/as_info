@@ -1,0 +1,20 @@
+id: 818
+test: 0057-01
+os: Windows 11
+user_agent: Chrome 157
+assistive_tech: PC-Talker Neo 2610 ビルド77
+assistive_tech_config:
+contents:
+  - procedure: 「ボタン1」の通知内容を確認する。
+    actual: ボタン1
+    judgment:
+  - procedure: 「ボタン2」の通知内容を確認する。
+    actual: ボタン2 チェック
+    judgment:
+  - procedure: 「ボタン3」の通知内容を確認する。
+    actual: ボタン3 チェック
+    judgment:
+environment_type: 音声閲覧環境
+comment:
+tester: mehm8128
+date: '2026-11-18'

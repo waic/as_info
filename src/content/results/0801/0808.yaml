@@ -1,0 +1,14 @@
+id: 808
+test: 0006-01
+os: Windows 11
+user_agent: Chrome 157
+assistive_tech: PC-Talker Neo 2610 ビルド77
+assistive_tech_config:
+contents:
+  - procedure: リンクを読み上げ、内容を確認
+    actual: ウェブアクセシビリティ基盤委員会
+    judgment:
+environment_type: 音声閲覧環境
+comment:
+tester: mehm8128
+date: '2026-11-18'

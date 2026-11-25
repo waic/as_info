@@ -1,0 +1,18 @@
+id: 813
+test: 0014-01
+os: Windows 11
+user_agent: Chrome 157
+assistive_tech: PC-Talker Neo 2610 ビルド77
+assistive_tech_config:
+contents:
+  - procedure: 順序付きリストを読み上げ、内容を確認
+    actual: |-
+      箇条書き
+      1.
+      ボウルにたまごと牛乳を入れ、混ぜます。
+      2.
+    judgment:
+environment_type: 音声閲覧環境
+comment:
+tester: mehm8128
+date: '2026-11-18'
