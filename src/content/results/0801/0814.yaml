@@ -1,0 +1,17 @@
+id: 814
+test: 0018-01
+os: Windows 11
+user_agent: Chrome 157
+assistive_tech: PC-Talker Neo 2610 ビルド77
+assistive_tech_config:
+contents:
+  - procedure: コントロール間を直接移動した際の読み上げ内容を確認
+    actual: |-
+      ハムレットの作者は？ ウィリアム・シェイクスピア チェック
+      坊っちゃんの作者は？ 芥川龍之介 チェック
+      川端康成
+    judgment:
+environment_type: 音声閲覧環境
+comment:
+tester: mehm8128
+date: '2026-11-18'

@@ -1,0 +1,20 @@
+id: 809
+test: 0007-02
+os: Windows 11
+user_agent: Chrome 157
+assistive_tech: PC-Talker Neo 2610 ビルド77
+assistive_tech_config:
+contents:
+  - procedure: セレクトメニューで選択肢を選び、“選択したページへ移動する” ボタンを押下し、挙動を確認
+    actual: |-
+      トップページ 折りたたみ
+      トップページ
+      ブログ
+      ブログ 折りたたみ
+      選択したページへ移動する
+      WAIC-CODE-0007-02-ref2
+    judgment:
+environment_type: 音声閲覧環境
+comment:
+tester: mehm8128
+date: '2026-11-18'
